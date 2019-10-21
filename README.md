@@ -1,1 +1,1 @@
-# NIntex-Process-Gallery
+# Nintex-Process-Gallery
