@@ -1,0 +1,136 @@
+<Process Id="433" Name="Onboarding" ReferenceNo="" Objective="Onboarding new staff" IsTouchModeEnabled="False" IsTextModeOn="False" PolicyModeOn="false" UseDynamicMapperImage="True" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Timothy Lee" ExpertId="35" Group="Human Resources" GroupId="4" State="Active" StateId="1" Version="2.3" PromappVersion="4.5.7.13" UniqueId="388ecbe9-1990-42d3-b32f-ae27e3a38cf0" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" IsPolicyModeOn="False" VariationId="" VanillaProcessId="" IsVirtualVariation="False" AnnualVolume="" ProcessRevisionEditId="3280">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="138" Trigger="Employee accepts offer" Frequency="Ad hoc" Volume="1 per month" UniqueId="48fe2f90-b679-47e1-9f27-47afa7c358dc" VanillaProcessTriggerUniqueId="" />
+  </Triggers>
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="9718" UniqueId="02df5b22-26a5-4151-a27a-1b56922eca32" Number="1.0" Order="0">
+      <Text>Complete new employee forms</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="9719" UniqueId="0c95d0fd-a40c-489e-93e4-68ac548dd2e4" Order="0" Number="1.0.1">
+          <Text>Fill out employee forms (A) (B) (C) [Attach/link forms to this activity as below]</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9720" UniqueId="37284c3e-04dd-4aa8-9d0f-e92859fb76aa" Order="1" Number="1.0.2">
+          <Text>[FORM]: Example Form.docx</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9721" UniqueId="f793d406-1496-46fa-9984-fe67ee91b299" Order="2" Number="1.0.3">
+          <Text>Start employee onboarding workflow</Text>
+          <Ownerships />
+        </Task>
+        <WebLink Id="-1" Number="" Order="3" UniqueId="55c614fc-78ee-dc3b-952d-79fb055fb60f">
+          <Text>Start Onboarding Workflow</Text>
+          <Attachment>https://safalo.workflowcloud.com/forms/813fcce5-a05a-4952-aa85-52412f3de97d</Attachment>
+          <Ownerships />
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9722" UniqueId="98490d6c-b610-4b78-879e-925331e9083c" Number="2.0" Order="1">
+      <Text>Set up IT equipment</Text>
+      <Ownerships>
+        <Role Id="217" Name="IT" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="9723" UniqueId="bd3cda40-cbeb-4167-b801-a1b457e77901" Order="0" Number="2.0.1">
+          <Text>Provision and assign equipment</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9724" UniqueId="e94fb297-6464-45d2-8012-732ca2dd5af6" Order="1" Number="2.0.2">
+          <Text>Allocate software licences</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9725" UniqueId="50917868-2111-45f1-94ba-8b9c0f3111d3" Number="3.0" Order="2" ParallelGroupingRef="1">
+      <Text>Set up employee in HR system</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+        <Tag Id="16" IsDisassociated="False" Name="HR System" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="False" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="9726" UniqueId="08630a98-8345-47cf-a830-5b14c5b3266f" Order="0" Number="3.0.1">
+          <Text>Add employee to HR systems</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9727" UniqueId="8c40a438-2fda-42c7-a441-953cc5ae58b6" Order="1" Number="3.0.2">
+          <Text>Order credit cards, business cards</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9728" UniqueId="0eac45eb-00ef-41ab-87df-80333cc060f2" Order="2" Number="3.0.3">
+          <Text>Send welcome swag</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9729" UniqueId="16adb778-5340-4729-b1f8-634531ca1961" Order="3" Number="3.0.4">
+          <Text>Assign workspace</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9730" UniqueId="c4967460-d12b-41de-876a-7430eb2d88a6" Number="3.1" Order="3" ParallelGroupingRef="1">
+      <Text>Schedule orientation</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Note Id="-2" Number="" Order="0" UniqueId="3dc35468-870c-71e6-f416-d7c2d7b7b9cc">
+          <Text>A task will be assigned to the manager</Text>
+          <Attachment>When you receive the email to schedule orientation, perform the steps below and reply to the task.</Attachment>
+          <Ownerships />
+        </Note>
+        <Task Id="9731" UniqueId="a80bf74e-91cf-4f84-aa1b-28a2d74489c9" Order="1" Number="3.1.1">
+          <Text>Book orientation</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9732" UniqueId="45d702af-a333-4518-a1e9-74864d2dcdea" Order="2" Number="3.1.2">
+          <Text>Arrange welcome lunch</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9733" UniqueId="12b0ab98-3e4e-4966-a159-d9e86ae1f458" Order="3" Number="3.1.3">
+          <Text>Manage reimbursements</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9734" UniqueId="0e3e9d7e-77da-4ada-a213-9db7178b9032" Number="4.0" Order="4">
+      <Text>Review and check in</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="9735" UniqueId="062e55d3-1216-415e-bfac-f4f07d689bbd" Order="0" Number="4.0.1">
+          <Text>Review first week, month</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="9736" UniqueId="d7291f2e-250e-4784-8b56-cf7d06fbcfe7" Order="1" Number="4.0.2">
+          <Text>Follow up any other tasks</Text>
+          <Ownerships />
+        </Task>
+        <Note Id="-3" Number="" Order="2" UniqueId="35f736c7-f56e-5d2d-5cce-d6698d997739">
+          <Text>Reminders</Text>
+          <Attachment>Additional tasks will be assigned to the manager to help them track the new employee's progress.</Attachment>
+          <Ownerships />
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Targets />
+  <RiskControls />
+  <SearchKeywords />
+  <Approvals />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" TimeframeHoursPerDay="" TimeframeDaysPerWeek="" ProcessTotalCost="0" />
+</Process>

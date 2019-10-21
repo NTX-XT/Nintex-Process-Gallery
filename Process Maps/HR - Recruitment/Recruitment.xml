@@ -1,0 +1,142 @@
+<Process Id="436" Name="Recruitment" ReferenceNo="" Objective="Guidelines for Safalo recruiting" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Timothy Lee" ExpertId="35" Group="Human Resources" GroupId="4" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.9" UniqueId="55fe08fc-4025-4436-9e01-ee6990d99af2" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" ProcessGroupItemId="3501" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="9766" UniqueId="345a959c-8f05-4d5c-82e3-2fecbe6a7852" Number="1.0" Order="0">
+      <Text>Complete a Job Requisition</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9767" UniqueId="3b074d6d-85ea-4ffa-86b6-ea351431c1e2" Order="1" Number="1.0.1">
+          <Text>Fill out the Job Requisition form</Text>
+        </Task>
+        <Task Id="9768" UniqueId="2ad57ebf-9f64-4480-9351-533755a8b76d" Order="2" Number="1.0.2">
+          <Text>Send to HR Manager / Department head for approval</Text>
+        </Task>
+        <Task Id="9769" UniqueId="59baef7f-183f-46a7-afbe-978838e8a65b" Order="3" Number="1.0.3">
+          <Text>[FORM]: Example Form.docx</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9770" UniqueId="4466d0b8-db8e-42b7-82ac-6ccb03d4cc5b" Number="2.0" Order="4">
+      <Text>Review Job Requisition</Text>
+      <Ownerships>
+        <Role Id="218" Name="Business Group Manager" IsVirtual="false" />
+        <Role Id="17" Name="HR Supervisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="9771" UniqueId="2b9b516d-0a45-480e-96df-89761d9b45c1" Order="5" Number="">
+          <Text>What if the requisition is incorrect or missing details?</Text>
+          <Attachment>Return the requisition to HR for completion or correction.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9772" UniqueId="fe7a7afa-d352-4eca-98d6-5283a89cf961" Number="3.0" Order="6">
+      <Text>Publish the opening on job boards</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <WebLink Id="9773" UniqueId="9365685c-25ac-4c48-b6f8-1b5582f7d331" Order="7" Number="">
+          <Text>LinkedIn</Text>
+          <Attachment>https://www.linkedin.com</Attachment>
+        </WebLink>
+        <WebLink Id="9774" UniqueId="934012e4-25d6-4705-8115-11162f2b7140" Order="8" Number="">
+          <Text>Indeed</Text>
+          <Attachment>https://www.indeed.com/</Attachment>
+        </WebLink>
+        <WebLink Id="9775" UniqueId="4ba14422-5207-46f0-9c83-acea0de82178" Order="9" Number="">
+          <Text>Dice</Text>
+          <Attachment>https://www.dice.com/</Attachment>
+        </WebLink>
+        <WebLink Id="9776" UniqueId="88bca920-6ab3-41dc-b963-c5218ec829b6" Order="10" Number="">
+          <Text>Glassdoor</Text>
+          <Attachment>https://www.glassdoor.com/</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9777" UniqueId="0c8325c4-7935-4915-a729-14d0b1542b66" Number="4.0" Order="11">
+      <Text>Pre-scan candidates and arrange interviews</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9778" UniqueId="3f9ba320-a6c3-4091-956d-1ba552ffb24d" Order="12" Number="4.0.1">
+          <Text>Review applications based on documentation presented by document routing and metadata filtering</Text>
+        </Task>
+        <Task Id="9779" UniqueId="6c8cb15f-23e8-414c-9fd6-e6562991cf42" Order="13" Number="4.0.2">
+          <Text>Arrange interviews on site where possible for suitable candidates.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9780" UniqueId="b4915006-c7e7-4b81-9f19-6fb621190036" Number="5.0" Order="14">
+      <Text>Conduct interviews and review feedback</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9781" UniqueId="7566e91d-88f1-4463-aba2-df92261ad39c" Order="15" Number="5.0.1">
+          <Text>Collate feedback from Department head, peers and interviewer</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="9782" UniqueId="02f19119-1365-4105-986d-1e281fbbcd65" Number="0.0" Order="16" DecisionLinkIsYes="true" DecisionLinkType="Activity">
+      <Text>Should we hire the candidate?</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="9783" UniqueId="0feb62f5-355f-4c65-95e8-2f4b87d10e85" Number="6.0" Order="17" LinkedDecisionUniqueId="02f19119-1365-4105-986d-1e281fbbcd65">
+      <Text>Send acceptance notification and letter</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9784" UniqueId="2332aed4-ebd0-461d-8a25-e2b926461d73" Order="18" Number="6.0.1">
+          <Text>[FORM]: Example Letter.docx</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9785" UniqueId="bf578859-37d0-4e1f-a41b-1b62f1fe2ffe" Number="7.0" Order="19">
+      <Text>Send rejection notification</Text>
+      <Ownerships>
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3113" PublishedDate="2018-11-19T23:58:01.007Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-18T22:54:18.0665754Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-18T22:54:18.0665754Z" />
+  </Metadata>
+</Process>
