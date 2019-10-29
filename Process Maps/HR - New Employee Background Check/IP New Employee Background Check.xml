@@ -1,0 +1,107 @@
+<Process Id="478" Name="IP New Employee Background Check" ReferenceNo="" Objective="Details on New Employee Background" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="To show New Employee verified for employment" Owner="DB Cooper" OwnerId="1058" Expert="DB Cooper" ExpertId="1058" Group="Human Resources" GroupId="4" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" State="Active" StateId="1" Version="3.0" PromappVersion="4.6.1.13" UniqueId="1e6c7e10-5219-460e-9721-a1bfd2871a2b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" ProcessGroupItemId="3879" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="10822" UniqueId="4762eecc-f63f-3646-db17-456954b93f55" Number="1.0" Order="0">
+      <Text>Identify Candidate</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="10826" UniqueId="fc690983-381d-1a30-9b01-8e6fb3f43271" Order="1" Number="1.0.1">
+          <Text>Reviewing Resume</Text>
+        </Task>
+        <Task Id="10827" UniqueId="9f9d2f69-39eb-695f-a05d-c9c602c11379" Order="2" Number="1.0.2">
+          <Text>Confirm citizenship</Text>
+        </Task>
+        <Task Id="10828" UniqueId="4ec11aa5-0b51-8fcd-c7d9-2e12fe1cb403" Order="3" Number="1.0.3">
+          <Text>Confirm criminal history</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10823" UniqueId="9bc88c34-25dd-9a4f-b423-8afd9ac02409" Number="2.0" Order="4">
+      <Text>Extend Offer</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="10829" UniqueId="bcc60d02-2eee-e410-28d8-d7c2b93c1a3b" Order="5" Number="2.0.1">
+          <Text>Send offer letter</Text>
+        </Task>
+        <Task Id="10830" UniqueId="482eacb7-1a32-26b3-6ee3-d4bdff048762" Order="6" Number="2.0.2">
+          <Text>Get Signature from candidate</Text>
+        </Task>
+        <Task Id="10831" UniqueId="78802377-d0bf-cf54-6363-e5ea48ae52e1" Order="7" Number="2.0.3">
+          <Text>Notify Manager</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10824" UniqueId="210f77ad-3947-b654-3fce-8ea54dd5fe06" Number="3.0" Order="8">
+      <Text>Candidate Confirmation</Text>
+      <Ownerships>
+        <Role Id="32" Name="Client" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="10832" UniqueId="5689fe22-2c22-027a-2430-3119818b7744" Order="9" Number="3.0.1">
+          <Text>Candidate needs to confirm acceptance</Text>
+        </Task>
+        <Task Id="10833" UniqueId="2776d3c4-c7fa-a949-dc1c-b7e5456cf7ff" Order="10" Number="3.0.2">
+          <Text>Get excited about new job!</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="10869" UniqueId="f4175a05-921f-a74d-7957-4130d7a169a0" Number="0.0" Order="11" DecisionLinkIsYes="true" DecisionLinkType="Activity">
+      <Text>Candidate Accept?</Text>
+      <Ownerships>
+        <Role Id="32" Name="Client" IsVirtual="false" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="10825" UniqueId="73565011-9fdf-38be-10e1-1e395e4fbf99" Number="4.0" Order="12" LinkedDecisionUniqueId="f4175a05-921f-a74d-7957-4130d7a169a0">
+      <Text>Set up User for First Day</Text>
+      <Ownerships>
+        <Role Id="217" Name="IT" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="10834" UniqueId="b9d959dc-6a9b-8e25-e640-32b1f762e289" Order="13" Number="4.0.1">
+          <Text>Provision New Computer</Text>
+        </Task>
+        <Task Id="10835" UniqueId="999ed287-0fe1-558c-29ca-f148229f56c1" Order="14" Number="4.0.2">
+          <Text>Create user account</Text>
+        </Task>
+        <Task Id="10836" UniqueId="897c0073-184d-4368-d31c-127bf577f1bc" Order="15" Number="4.0.3">
+          <Text>Create email account</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3444" PublishedDate="2019-09-25T21:58:11.337Z" PublisherId="1106" Publisher="PEiD LA" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-29T19:57:28.8050730Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-29T19:57:28.8050730Z" />
+  </Metadata>
+</Process>
