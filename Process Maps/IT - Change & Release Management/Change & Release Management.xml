@@ -1,0 +1,405 @@
+<ProcessGroup Id="206" UniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" Name="Change &amp; Release Management" Objective="" Background="" PromappVersion="4.6.1.13">
+  <ProcessGroupProcedures />
+  <ProcessGroupItems>
+    <Process Id="1094" Name="Analyse Change/Application Requirements" ReferenceNo="" Objective="Analysis and preparation of the change requirements" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Change &amp; Release Management" GroupId="206" GroupUniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="c54611a6-792c-4237-adfd-191f80813770" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="206" UniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" Name="Change &amp; Release Management" ProcessGroupItemId="11193" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="60393" UniqueId="48175230-8726-4274-a945-f26703292924" Number="1.0" Order="0">
+          <Text>Assess/Workshop Business Requirements</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="60394" UniqueId="672b02fe-1ed1-402e-b8fb-3dca9fe53a36" Number="2.0" Order="1">
+          <Text>Prepare Business Requirements</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="60445" UniqueId="a65f7815-3a3d-4608-a80a-70c85b8f19b1" Number="3.0" Order="2">
+          <Text>Sign Off Business Requirements</Text>
+          <Ownerships>
+            <Role Id="386" Name="End User" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-10-29T19:34:36.2316487Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1097" Name="Develop Change/Application" ReferenceNo="" Objective="." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Change &amp; Release Management" GroupId="206" GroupUniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="37ae6a4e-2668-41f2-86bb-ef044c5654cd" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="206" UniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" Name="Change &amp; Release Management" ProcessGroupItemId="11451" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="61544" UniqueId="97343a7d-1239-4bb3-bd16-e29e0dbe32de" Number="1.0" Order="0">
+          <Text>Develop the Change/Application</Text>
+          <Ownerships>
+            <Role Id="387" Name="IT Supplier" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="61545" UniqueId="ad8ef2b4-5134-4cfc-8ffc-db025db901c3" Number="2.0" Order="1">
+          <Text>Perform Unit Testing</Text>
+          <Ownerships>
+            <Role Id="387" Name="IT Supplier" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="61548" UniqueId="7429d6c4-cf4f-481e-b8a5-131d8d7421ee" Number="3.0" Order="2">
+          <Text>Release for User Testing</Text>
+          <Ownerships>
+            <Role Id="387" Name="IT Supplier" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-10-29T19:34:36.3206510Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1100" Name="Receive &amp; Process an IT Change Request" ReferenceNo="" Objective="To demonstrate the flow of issues thru I.T Applications staff" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Change &amp; Release Management" GroupId="206" GroupUniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="b930dc57-779c-462f-83ba-2ae8b7962de7" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="206" UniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" Name="Change &amp; Release Management" ProcessGroupItemId="12076" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="54798" UniqueId="35e21905-99ce-440a-b345-692c56880c7d" Number="1.0" Order="0">
+          <Text>Notify IT Application Team of Requirements or Issues</Text>
+          <Ownerships>
+            <Role Id="145" Name="Customer" IsVirtual="false" />
+            <Role Id="335" Name="IT Helpdesk" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="54803" UniqueId="475fd795-b824-4507-b37f-0a92fc6bf18f" Number="2.0" Order="1">
+          <Text>Receive Notification </Text>
+          <Ownerships>
+            <Role Id="365" Name="IT Applications Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="54805" UniqueId="f293ba91-dcc4-48fa-9e72-dd888aaae065" Order="2" Number="2.0.1">
+              <Text>Confirm sufficient information has been provided</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="54809" UniqueId="ffaab237-5199-4e5f-ba4a-4687cbd2e3f4" Number="3.0" Order="3">
+          <Text>Determine Action Required</Text>
+          <Ownerships>
+            <Role Id="365" Name="IT Applications Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="54849" UniqueId="d4b3b37e-6749-4734-9381-d0f9f9bc138a" Number="4.0" Order="4">
+          <Text>Fix or Resolve the Issue if Possible</Text>
+          <Ownerships>
+            <Role Id="365" Name="IT Applications Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="54851" UniqueId="be7f2331-f338-40f7-bcd0-f82a19d52cd1" Order="5" Number="4.0.1">
+              <Text> Identify What Action  is Required</Text>
+            </Task>
+            <Task Id="54853" UniqueId="1afdd551-f3a5-4b5d-b732-c8d7105470a4" Order="6" Number="4.0.2">
+              <Text>Resolve the issue if possible </Text>
+            </Task>
+            <Task Id="54855" UniqueId="7d781645-88c9-4406-bec0-af8c15784935" Order="7" Number="4.0.3">
+              <Text>Sign Off Service Request</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="54863" UniqueId="e56c6303-2a41-465f-95db-7f7191ad570a" Number="5.0" Order="8">
+          <Text>Advise the Customer of Outcome/Progress</Text>
+          <Ownerships>
+            <Role Id="365" Name="IT Applications Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="54896" UniqueId="6db9bba6-5481-4109-839d-a11496e7fee0" Order="9" Number="5.0.1">
+              <Text>If able to be resolved advise the caller/emailer of the outcome by email and then  file all emails and other file notes  to "Jobs Completed" .</Text>
+            </Task>
+            <Task Id="54898" UniqueId="b7924e39-b36f-4110-9fe8-35a1024798ed" Order="10" Number="5.0.2">
+              <Text>If the issue has not been resolved and requires further work create a Service Request and record all details of work required and expected time frames</Text>
+            </Task>
+            <Task Id="54899" UniqueId="2d4bd2af-9151-48eb-864f-ea4435591e87" Order="11" Number="5.0.3">
+              <Text>Advise caller/emailer of Service Request and follow up with updates and sign off Service Request when completed.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="54900" UniqueId="a190eb05-c090-462a-b070-b6a266e99841" Number="6.0" Order="12">
+          <Text>Is Issue for BAU Team (Link Removed: IT Solutions Process)</Text>
+          <Ownerships>
+            <Role Id="365" Name="IT Applications Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="54902" UniqueId="1f6dcebe-74d1-4554-a914-61c1f7683bdd" Number="7.0" Order="13">
+          <Text>Assess issues that may be for IT Applications Support</Text>
+          <Ownerships>
+            <Role Id="365" Name="IT Applications Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="55225" UniqueId="d764d264-6a61-4104-a8c8-1c222919a646" Order="14" Number="7.0.1">
+              <Text>Discuss issue with IT Applications support staff at Weekly meetings</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-10-29T19:34:36.7826279Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1101" Name="Release Change/Application" ReferenceNo="" Objective="Release change/application into Production" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Change &amp; Release Management" GroupId="206" GroupUniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="83508eac-3f58-40c3-9c7d-2a8ce2d9fd65" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="206" UniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" Name="Change &amp; Release Management" ProcessGroupItemId="12030" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="58242" UniqueId="a397204b-f06f-4fb5-8331-721a20fc4288" Number="1.0" Order="0">
+          <Text>Prepare Release Plan</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="58243" UniqueId="3f187a73-fbfe-418f-9c54-f58d457e7bb6" Number="2.0" Order="1">
+          <Text>Prepare Change/Application umentation</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="58244" UniqueId="7d3cf799-6716-46de-8959-0e0f5180fd31" Order="2" Number="2.0.1">
+              <Text>Release notes</Text>
+            </Task>
+            <Task Id="58285" UniqueId="112affa5-e127-4f4e-94a1-df1701e4f0aa" Order="3" Number="2.0.2">
+              <Text>Knowledge base updated</Text>
+            </Task>
+            <Task Id="58308" UniqueId="7befa1f0-40be-452d-ba27-11d8f70aaa71" Order="4" Number="2.0.3">
+              <Text>Release pack ???</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="58364" UniqueId="8268d29c-683f-486f-858f-9d4bf9f2f5a5" Number="3.0" Order="5">
+          <Text>Train Users</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="58365" UniqueId="ebdbe4b5-aae8-43c3-9fb5-5114804ace8e" Number="4.0" Order="6">
+          <Text>Communicate Change Release to End Users</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="58367" UniqueId="5291a165-6b66-47af-a854-5c8073f5710c" Number="5.0" Order="7">
+          <Text>Approve Release of Change/Application into Production</Text>
+          <Ownerships>
+            <Role Id="388" Name="IT Business Solutions Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="58369" UniqueId="cdd3ddb0-8286-4c69-b3b2-f56f19fcf65f" Number="6.0" Order="8">
+          <Text>Update Release Log</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="58420" UniqueId="30553f47-a1d2-437d-9df0-7cbfe2502658" Number="7.0" Order="9">
+          <Text>Released Change into Production</Text>
+          <Ownerships>
+            <Role Id="387" Name="IT Supplier" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="58422" UniqueId="e8378194-0948-474b-b55c-cdf3c56ec317" Number="8.0" Order="10">
+          <Text>Post Implementation Review</Text>
+          <Ownerships>
+            <Role Id="388" Name="IT Business Solutions Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-10-29T19:34:36.8686336Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1103" Name="Test and Accept Change/Application" ReferenceNo="" Objective="Functional and user acceptance testing (UAT) of change/application, including testing any integration with other applications and data migration" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Change &amp; Release Management" GroupId="206" GroupUniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="36c4b810-cdd0-4928-bf86-b3d07d63d148" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="206" UniqueId="6da1f159-59f6-4878-ab0d-78d71f6a3710" Name="Change &amp; Release Management" ProcessGroupItemId="12215" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="59648" UniqueId="c29b4402-193f-47e5-9a47-9556e4db2f3e" Number="1.0" Order="0">
+          <Text>Prepare Test Plan</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59650" UniqueId="aca1f876-241e-4053-80d1-0277b1d7b1d3" Number="2.0" Order="1">
+          <Text>Load Change onto Test Server</Text>
+          <Ownerships>
+            <Role Id="387" Name="IT Supplier" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59805" UniqueId="ba098bd2-a3a1-466f-9c70-ddf7fa7cd8d1" Number="3.0" Order="2">
+          <Text>Perform Functional Testing</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59806" UniqueId="fe3fdca9-75e0-453e-baa4-f2b0430718db" Number="4.0" Order="3">
+          <Text>Perform Data Migration Testing</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59886" UniqueId="a986fcf1-51f1-4241-8839-d528b4e1b5c9" Number="5.0" Order="4">
+          <Text>Perform Reports &amp; Forms Testing</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59959" UniqueId="36f01345-4b1a-4e9e-a09e-4f19e2b215cd" Number="6.0" Order="5">
+          <Text>Perform Integration Testing</Text>
+          <Ownerships>
+            <Role Id="385" Name="IT Business Solutions Team" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59960" UniqueId="2acdf881-e32b-4434-a9c0-067e222fa761" Number="7.0" Order="6">
+          <Text>Perform User Acceptance Testing (UAT)</Text>
+          <Ownerships>
+            <Role Id="386" Name="End User" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="59963" UniqueId="3551656b-6cb7-4ae0-95ef-2530b07ffc08" Number="8.0" Order="7">
+          <Text>Accept Change</Text>
+          <Ownerships>
+            <Role Id="386" Name="End User" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-10-29T19:34:37.4837629Z" />
+      </Metadata>
+    </Process>
+  </ProcessGroupItems>
+  <Metadata>
+    <ProcessGroupXmlGenerationOptions>
+      <RecursionLevel>Full</RecursionLevel>
+      <IncludeOverviewOnly>false</IncludeOverviewOnly>
+      <IncludeUnpublished>true</IncludeUnpublished>
+      <IncludeEmbedded>false</IncludeEmbedded>
+      <StubProcesses>false</StubProcesses>
+    </ProcessGroupXmlGenerationOptions>
+  </Metadata>
+</ProcessGroup>
