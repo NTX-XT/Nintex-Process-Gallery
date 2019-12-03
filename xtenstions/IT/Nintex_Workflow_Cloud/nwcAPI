@@ -1,0 +1,404 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "Nintex Workflow Cloud API"
+  },
+  "host": "us.nintex.io",
+  "basePath": "/workflows/v1",
+  "schemes": [
+    "https"
+  ],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/designs/": {
+      "get": {
+        "description": "List Workflows",
+        "operationId": "listWorkflows",
+        "x-ntx-summary": "List Workflows",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of returned results",
+            "required": false,
+            "type": "integer",
+            "default": 500
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/workflows"
+            }
+          },
+          "400": {
+            "description": "You Get NOTHING!"
+          }
+        }
+      }
+    },
+    "/designs/draft": {
+      "get": {
+        "description": "List Draft Workflows",
+        "operationId": "listDraftWorkflows",
+        "x-ntx-summary": "List Draft Workflows",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of returned results",
+            "required": false,
+            "type": "integer",
+            "default": 500,
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/workflows"
+            }
+          },
+          "400": {
+            "description": "You Get NOTHING!"
+          }
+        }
+      }
+    },
+    "/designs/published": {
+      "get": {
+        "description": "List Published Workflows",
+        "operationId": "listPublishedWorkflows",
+        "x-ntx-summary": "List Published Workflows",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of returned results",
+            "required": false,
+            "type": "integer",
+            "default": 500
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/workflows"
+            }
+          },
+          "400": {
+            "description": "You Get NOTHING!"
+          }
+        }
+      }
+    },
+    "/designs/{workflow_id}/draft": {
+      "delete": {
+        "description": "Delete Draft Workflow",
+        "x-ntx-summary": "Delete Draft Workflows",
+        "parameters": [
+          {
+            "name": "workflow_id",
+            "in": "path",
+            "description": "Workflow for Deletion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    },
+    "/designs/{workflow_id}": {
+      "delete": {
+        "description": "Delete Workflow",
+        "x-ntx-summary": "Delete Workflows",
+        "parameters": [
+          {
+            "name": "workflow_id",
+            "in": "path",
+            "description": "Workflow for Deletion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    },
+    "/designs/{workflow_id}/deactivate": {
+      "post": {
+        "description": "Deactivate Workflow",
+        "operationId": "deactivateWorkflow",
+        "x-ntx-summary": "Deactivate a Worklfow",
+        "parameters": [
+          {
+            "name": "workflow_id",
+            "in": "path",
+            "description": "Workflow ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "deactivated"
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    },
+    "/designs/{workflow_id}/activate": {
+      "post": {
+        "description": "Activate Workflow",
+        "operationId": "activateWorkflow",
+        "x-ntx-summary": "Activate a Workflow",
+        "parameters": [
+          {
+            "name": "workflow_id",
+            "in": "path",
+            "description": "Workflow ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Activated"
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    },
+    "/designs/{workflow_id}/draft/export": {
+      "post": {
+        "description": "Export Draft Workflow",
+        "x-ntx-summary": "Export Draft Worklfow",
+        "parameters": [
+          {
+            "name": "workflow_id",
+            "in": "path",
+            "description": "Workflow ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Activated",
+            "schema": {
+              "$ref": "#/definitions/export"
+            }
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    },
+    "/designs/{workflow_id}/published/export": {
+      "post": {
+        "description": "Export Published Workflow",
+        "x-ntx-summary": "Export Published Worklfow",
+        "parameters": [
+          {
+            "name": "workflow_id",
+            "in": "path",
+            "description": "Workflow ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Activated",
+            "schema": {
+              "$ref": "#/definitions/export"
+            }
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    },
+    "/designs/import": {
+      "post": {
+        "description": "Import Workflow",
+        "x-ntx-summary": "Import Worklfow",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "x-ntx-summary": "Workflow Key",
+                  "type": "string"
+                },
+                "Name": {
+                  "x-ntx-summary": "Workflow Name",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Imported"
+          },
+          "400": {
+            "description": "Nope"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "workflows": {
+      "type": "object",
+      "properties": {
+        "workflows": {
+          "$ref": "#/definitions/workflow"
+        }
+      }
+    },
+    "workflow": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "published": {
+            "$ref": "#/definitions/published"
+          },
+          "draft": {
+            "$ref": "#/definitions/draft"
+          }
+        }
+      }
+    },
+    "draft": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string"
+        },
+        "eventType": {
+          "$ref": "#/definitions/eventType"
+        }
+      }
+    },
+    "published": {
+      "type": "object",
+      "properties": {
+        "isActive": {
+          "type": "boolean"
+        },
+        "created": {
+          "type": "string"
+        },
+        "eventType": {
+          "$ref": "#/definitions/eventType"
+        },
+        "author": {
+          "$ref": "#/definitions/author"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "lastPublished": {
+          "type": "string"
+        },
+        "publishedType": {
+          "type": "string"
+        }
+      }
+    },
+    "eventType": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "export": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "expiryDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

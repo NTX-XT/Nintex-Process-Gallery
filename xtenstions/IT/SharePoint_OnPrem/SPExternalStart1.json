@@ -1,0 +1,110 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Nintex Workflow External Start"
+  },
+  "schemes": [
+    "https"
+  ],
+  "host": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "basePath": "/api",
+  "paths": {
+    "/SPExternalStartDynamic": {
+            "get":{
+        "tags": [
+              "Variables"
+            ],
+        "x-ntx-visibility":"internal",
+        "operationId": "GetVariables",
+        "parameters": [
+          {
+            "name": "workflowId",
+            "in": "query",
+            "description": "Workflow External Start Id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "produces": [
+            "application/json"
+          ],
+        "security": [
+          {
+          "securityKey":[]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Start"
+        ],
+        "summary": "SharePoint External Start",
+        "description": "External Start a SharePoint Workflow",
+        "operationId": "start",
+        "x-ntx-summary": "SharePoint External Start",
+        "parameters": [
+          {
+            "name": "workflowId",
+            "in": "query",
+            "description": "Workflow External Start Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Start Variables",
+            "required": true,
+            "schema":{
+			  "x-ntx-ux-features": [ { "isMultiSelect": true } ],
+              "type": "object",
+                "x-ntx-dynamic-schema": {
+                "operationId": "GetVariables",
+                "parameters": {
+                  "workflowId": {
+                    "parameter": "workflowId"
+                  }
+                }
+              } 
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "security": [
+		  {
+		  "securityKey":[]
+		  }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+				"properties": {
+					"correlationId":{
+					  "type":"string",
+					  "title":"Correlation Id"
+					}
+				}
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "securityKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "SecurityKey"
+    }
+  }
+}

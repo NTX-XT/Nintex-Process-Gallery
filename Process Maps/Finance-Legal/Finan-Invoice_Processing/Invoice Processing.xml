@@ -1,0 +1,93 @@
+<Process Id="441" Name="Invoice Processing" ReferenceNo="" Objective="Procedure for processing invoices from suppliers" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Lamar Devlin" OwnerId="29" Expert="Malcom Tollemache" ExpertId="46" Group="Finance" GroupId="2" GroupUniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="e4ff8004-9090-406b-a48e-a09845dfef86" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="2" UniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" Name="Finance" ProcessGroupItemId="3851" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="9922" UniqueId="dd00069d-29f3-b6b9-9c4b-70d5605d9369" Number="1.0" Order="0">
+      <Text>Enter Invoice into purchase system</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="9923" UniqueId="5ef25f98-ccd0-ee07-fd5f-1962b4c27666" Number="2.0" Order="1">
+      <Text>Match invoice against Purchase Order</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9924" UniqueId="da2bf5c0-7301-7883-3f6a-316310e250c9" Order="2" Number="2.0.1">
+          <Text>Compare invoiced goods with agreed quantities and costs on purchase order, where applicable</Text>
+        </Task>
+        <Task Id="9925" UniqueId="f654f32c-8f7f-d246-90be-67f5571a9247" Order="3" Number="2.0.2">
+          <Text>If the amounts do not match, follow the disputed invoice process process below</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <OrphanProcessLink Id="9926" UniqueId="baf10c18-560e-0ff1-f5f4-a1b02b208853" Number="0.0" Order="4" LinkedProcessId="442" LinkedProcessName="Dispute a Supplier Invoice" LinkedProcessUniqueId="d1ee2679-4b52-4461-b7e1-5dd60c2dff35">
+      <Text>Dispute a Supplier Invoice</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </OrphanProcessLink>
+    <Activity Id="9927" UniqueId="6b1fdaa1-6980-0e28-b673-fc37bb164d00" Number="3.0" Order="5">
+      <Text>Send Invoice for approval</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9928" UniqueId="fee4666e-9d20-c099-a350-e74fa64c2a3c" Order="6" Number="3.0.1">
+          <Text>Send invoice to appropriate approver to sign off.</Text>
+        </Task>
+        <Note Id="9929" UniqueId="20cfadcd-5a0e-d615-1d70-90f5a3eaae80" Order="7" Number="">
+          <Text>What if the invoice is not approved?</Text>
+          <Attachment>Notify the vendor that the invoice is not approved and the reasons it has been rejected.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9930" UniqueId="6135a86c-a06c-ffdf-68ae-7ea8cca5bf74" Number="4.0" Order="8">
+      <Text>Schedule payment</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9931" UniqueId="8d53afd0-d348-6bde-5806-2adde22eb753" Order="9" Number="4.0.1">
+          <Text>Send the invoice to AP to schedule payment</Text>
+        </Task>
+        <Task Id="9932" UniqueId="3bb665c6-50a6-92b8-02fc-0e712a40257c" Order="10" Number="4.0.2">
+          <Text>Supplier is notified of payment pending</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="442" Link="Dispute a Supplier Invoice" Owner="Lamar Devlin" Expert="Malcom Tollemache" ProcessGroup="Finance" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3421" PublishedDate="2019-09-16T23:25:28.323Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-29T19:49:55.9828239Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-29T19:49:55.9828239Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,276 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "OFAC Sanction Screening",
+        "description": "The OFAC Consolidated Screening List API consolidates lookups against eleven export screening lists of the Departments of Commerce, State and the Treasury to aid in conducting electronic screens of potential parties to regulated transactions.",
+        "version": "2.0.0"
+    },
+    "host": "api.trade.gov",
+    "schemes": [
+        "https"
+    ],
+    "basePath": "/v2",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/consolidated_screening_list/search?api_key=qd-EuDycxiicUq5CxAu5w9Nx": {
+            "get": {
+                "summary": "Consolidated Screening List",
+                "description": "The OFAC Consolidated Screening List API consolidates lookups against eleven export screening lists of the Departments of Commerce, State and the Treasury to aid in conducting electronic screens of potential parties to regulated transactions.",
+                "parameters": [
+                    {
+                        "name": "keyword",
+                        "in": "query",
+                        "description": "Keyword Search",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "sources",
+                        "in": "query",
+                        "description": "Source",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "countries",
+                        "in": "query",
+                        "description": "Country - by ISO alpha-2 country codes.",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "address",
+                        "in": "query",
+                        "description": "Address",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Name (or Alt-Name)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "fuzzy_name",
+                        "in": "query",
+                        "description": "Fuzzy/Partial Name",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Type - (e.g, Individual, Entity, Vessel).",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (Format: YYYY-mm-dd)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (Format: YYYY-mm-dd)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "issue_date",
+                        "in": "query",
+                        "description": "Issue Date",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "expiration_date",
+                        "in": "query",
+                        "description": "Expiration Date",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort By: Name, Country, Etc.",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "Total Number of Results to Return",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Number of Inital Results (Default:10)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "tags": [
+                    "Trade",
+                    "Exporting",
+                    "ITA",
+                    "International",
+                    "Screening Lists",
+                    "Compliance",
+                    "Denied Parties"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful List Response",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/List"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "List": {
+            "properties": {
+                "addresses": {
+                    "description": "Array of entity's complete addresses.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Entity's name.",
+                    "type": "string"
+                },
+                "alt_names": {
+                    "description": "Alias names used by the entity.",
+                    "type": "string"
+                },
+                "source_list_url": {
+                    "description": "Location of the original list.",
+                    "type": "string"
+                },
+                "source_information_url": {
+                    "description": "Information from the Source agency about the list.",
+                    "type": "string"
+                },
+                "ids": {
+                    "description": "An array showing specific identification information of the entity.",
+                    "type": "string"
+                },
+                "citizenships": {
+                    "description": "Entity's citizenships.",
+                    "type": "string"
+                },
+                "dates_of_birth": {
+                    "description": "Entity's dates of birth.",
+                    "type": "string"
+                },
+                "nationalities": {
+                    "description": "Entity's nationalities.",
+                    "type": "string"
+                },
+                "places_of_birth": {
+                    "description": "Entity's places of birth.",
+                    "type": "string"
+                },
+                "title": {
+                    "description": "Entity's title.",
+                    "type": "string"
+                },
+                "entity_number": {
+                    "description": "Unique id assigned by the originating list.",
+                    "type": "string"
+                },
+                "start_date": {
+                    "description": "The effective date for the entity to be included on the list as defined by the Federal Register Notice.",
+                    "type": "string"
+                },
+                "end_date": {
+                    "description": "The date on which the entity's inclusion on the list will be lifted, waived, or will have expired.",
+                    "type": "string"
+                },
+                "federal_register_notice": {
+                    "description": "The official source of information about the parties on this list.",
+                    "type": "string"
+                },
+                "license_requirement": {
+                    "description": "The license requirement as determined by the Export Administration Regulations.",
+                    "type": "string"
+                },
+                "license_policy": {
+                    "description": "The policy set forth in the Export Administration Regulations regarding denial.",
+                    "type": "string"
+                },
+                "remarks": {
+                    "description": "Additional remarks or notes regarding the company, entity, or person on the list.",
+                    "type": "string"
+                },
+                "standard_order": {
+                    "description": "Whether or not (Y/N) the standard order applies to the Denied Party as defined by the Bureau of Industry and Security (BIS).",
+                    "type": "string"
+                },
+                "programs": {
+                    "description": "Agency programs related to the entity on the list.",
+                    "type": "string"
+                },
+                "source": {
+                    "description": "The name of the source list where this entity is listed.",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Classification of the entity.",
+                    "type": "string"
+                },
+                "call_sign": {
+                    "description": "Call sign of the vessel.",
+                    "type": "string"
+                },
+                "gross_registered_tonnage": {
+                    "description": "The gross weight in tons registered for the vessel.",
+                    "type": "string"
+                },
+                "gross_tonnage": {
+                    "description": "The gross weight in tons not-registered for the vessel.",
+                    "type": "string"
+                },
+                "vessel_flag": {
+                    "description": "Country flag of the vessel.",
+                    "type": "string"
+                },
+                "vessel_owner": {
+                    "description": "Owner/Operator of the vessel.",
+                    "type": "string"
+                },
+                "vessel_type": {
+                    "description": "Describes the type of vessel (ferry, bulk cargo, tug).",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

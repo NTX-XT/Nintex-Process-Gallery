@@ -1,0 +1,311 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Microsoft Teams - Beta"
+  },
+  "host": "graph.microsoft.com",
+  "basePath": "/beta",
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/me/joinedTeams": {
+      "get": {
+        "tags": [
+          "Team List"
+        ],
+        "summary": "Team",
+        "description": "Team",
+        "operationId": "getteamlists",
+        "x-ntx-visibility": "internal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/list"
+            }
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "functions_auth": [
+              "User.ReadWrite.All"
+            ]
+          }
+        ]
+      }
+    },
+    "/groups/{groupid}/channels": {
+      "get": {
+        "tags": [
+          "Team Channel List"
+        ],
+        "summary": "Channel",
+        "description": "Channel",
+        "operationId": "getchannellists",
+        "x-ntx-visibility": "internal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "groupid",
+            "type": "string",
+            "in": "path",
+            "x-ntx-summary": "Team",
+            "description": "Team",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getteamlists",
+              "value-collection": "value",
+              "value-path": "id",
+              "value-title": "displayName"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/list"
+            }
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "functions_auth": [
+              "Group.ReadWrite.All"
+            ]
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Create Channel"
+        ],
+        "summary": "Create a channel",
+        "description": "Create a channel",
+        "operationId": "createchannel",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "groupid",
+            "type": "string",
+            "in": "path",
+            "x-ntx-summary": "Team",
+            "description": "Team",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getteamlists",
+              "value-collection": "value",
+              "value-path": "id",
+              "value-title": "displayName"
+            }
+          },
+          {
+            "name": "message",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/channel"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "required": [
+                "id"
+              ],
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Store channel ID",
+                  "x-ms-summary": "Store channel ID"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "functions_auth": [
+              "Group.ReadWrite.All"
+            ]
+          }
+        ]
+      }
+    },
+    "/groups/{groupid}/channels/{channelid}/chatThreads": {
+      "post": {
+        "tags": [
+          "Post Message"
+        ],
+        "summary": "Post a message",
+        "description": "Post a message",
+        "operationId": "postmessage",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "groupid",
+            "type": "string",
+            "in": "path",
+            "x-ntx-summary": "Team",
+            "description": "Team",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getteamlists",
+              "value-collection": "value",
+              "value-path": "id",
+              "value-title": "displayName"
+            }
+          },
+          {
+            "name": "channelid",
+            "type": "string",
+            "in": "path",
+            "x-ntx-summary": "Channel",
+            "description": "Channel",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getchannellists",
+              "value-collection": "value",
+              "value-path": "id",
+              "value-title": "displayName"
+            }
+          },
+          {
+            "name": "message",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/message"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "functions_auth": [
+              "Group.ReadWrite.All"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "list": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "displayName": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "message": {
+      "type": "object",
+      "properties": {
+        "rootMessage": {
+          "type": "object",
+          "properties": {
+            "body": {
+              "type": "object",
+              "properties": {
+                "contentType": {
+                  "type": "integer",
+                  "description": "Content Type",
+                  "x-ms-summary": "Content Type",
+                  "x-ntx-visibility": "internal",
+                  "default": 2
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Message",
+                  "x-ms-summary": "Message",
+                  "pattern": "^[^\"]*$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "channel": {
+      "required": [
+        "displayName",
+        "description"
+      ],
+      "type": "object",
+      "properties": {
+        "displayName": {
+          "type": "string",
+          "description": "Name",
+          "x-ms-summary": "Name",
+          "pattern": "^[a-zA-Z0-9\\-_\\s]+$"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description",
+          "x-ms-summary": "Description",
+          "pattern": "^[a-zA-Z0-9\\-_\\s]+$"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "functions_auth": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://www.nintex.com",
+      "scopes": {
+        "Group.ReadWrite.All": "read write group",
+        "User.ReadWrite.All": "read write user"
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "LinkedIn",
+    "description": "LinkedIn"
+  },
+  "host": "api.linkedin.com",
+  "basePath": "/v2",
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/me": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/LinkedInHeader"
+        }
+      ],
+      "get": {
+        "summary": "Get User Details",
+        "operationId": "GetUserDetails",
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/profile"
+            }
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "r_liteprofile"
+            ]
+          }
+        ]
+      }
+    },
+    "/ugcPosts": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/LinkedInHeader"
+        }
+      ],
+      "post": {
+        "summary": "Share Content",
+        "description": "Share Content",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "parameters",
+            "schema": {
+              "$ref": "#/definitions/textBody"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "w_member_social"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "LinkedInHeader": {
+      "name": "X-Restli-Protocol-Version",
+      "type": "string",
+      "in": "header",
+      "default": "2.0.0",
+      "x-ntx-visibility": "internal"
+    },
+    "JsonQueryHeader": {
+      "name": "format",
+      "type": "string",
+      "in": "query",
+      "default": "json",
+      "x-ntx-visibility": "internal"
+    }
+  },
+  "definitions": {
+    "profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-ntx-summary": "Id",
+          "description": "Profile ID or URN"
+        },
+        "firstName": {
+          "type": "object",
+          "x-ntx-summary": "First Name"
+        },
+        "lastName": {
+          "type": "object",
+          "x-ntx-summary": "Last Name"
+        }
+      }
+    },
+    "textBody": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string",
+          "description": "requires urn:li:person:{ID}"
+        },
+        "lifecycleState": {
+          "type": "string",
+          "default": "PUBLISHED",
+          "x-ntx-summary": "Lifecycle State",
+          "enum": [
+            "PUBLISHED",
+            "DRAFT"
+          ]
+        },
+        "specificContent": {
+          "type": "object",
+          "properties": {
+            "com.linkedin.ugc.ShareContent": {
+              "type": "object",
+              "properties": {
+                "shareCommentary": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "x-ntx-summary": "Your Content Text"
+                    }
+                  }
+                },
+                "shareMediaCategory": {
+                  "x-ntx-summary": "Media Category",
+                  "type": "string",
+                  "enum": [
+                    "NONE",
+                    "ARTICLE",
+                    "IMAGE"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "visibility": {
+          "type": "object",
+          "properties": {
+            "com.linkedin.ugc.MemberNetworkVisibility": {
+              "x-ntx-summary": "Network Visibility",
+              "type": "string",
+              "enum": [
+                "PUBLIC",
+                "CONNECTIONS"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://www.linkedin.com/oauth/v2/authorization",
+      "tokenUrl": "https://www.linkedin.com/oauth/v2/accessToken",
+      "scopes": {
+        "w_member_social": "Post and Share on LinkedIn",
+        "r_liteprofile": "Read and Write to all shared users' calendars"
+      }
+    }
+  }
+}

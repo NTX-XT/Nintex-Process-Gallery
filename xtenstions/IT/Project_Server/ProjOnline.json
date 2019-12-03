@@ -1,0 +1,154 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Project Online"
+  },
+  "host": "archoncloud.sharepoint.com",
+  "basePath": "/sites/pwa/_api",
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/ProjectServer/Projects/Add": {
+      "post": {
+        "summary": "Create Project",
+        "description": "Create Project",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "parameters",
+            "schema": {
+              "$ref": "#/definitions/addBody"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "ProjectServer.Manage"
+            ]
+          }
+        ]
+      }
+    },
+    "/ProjectServer/Projects/('{projectID}')": {
+      "get": {
+        "summary": "Get Project",
+        "description": "Get Project",
+        "operationId": "Get Project",
+        "parameters": [
+          {
+            "name": "projectID",
+            "type": "string",
+            "in": "path",
+            "x-ntx-summary": "Project ID",
+            "description": "Project ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "ProjectServer.Manage"
+            ]
+          }
+        ]
+      }
+    },
+    "/ProjectServer/Projects('{projectID}')/checkOut": {
+      "post": {
+        "summary": "Checkout a Project",
+        "description": "Checkout a Project",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "projectID",
+            "type": "string",
+            "in": "path",
+            "x-ntx-summary": "Project ID",
+            "description": "Project ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "ProjectServer.Manage"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "addBody": {
+      "type": "object",
+      "properties": {
+        "parameters": {
+          "$ref": "#/definitions/newProject"
+        }
+      }
+    },
+    "newProject": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "scopes": {
+        "Site.FullControl": "Read and write items and lists in all site collections",
+        "Tenant.Read": "Read from the tenant",
+        "ProjectServer.Manage": "Manage Project Server data"
+      }
+    }
+  }
+}

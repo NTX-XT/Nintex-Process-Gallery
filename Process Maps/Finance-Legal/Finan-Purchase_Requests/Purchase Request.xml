@@ -1,0 +1,115 @@
+<Process Id="438" Name="Purchase Request" ReferenceNo="" Objective="To outline the procedure for requesting a purchase" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Lamar Devlin" OwnerId="29" Expert="Malcom Tollemache" ExpertId="46" Group="Finance" GroupId="2" GroupUniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" State="Active" StateId="1" Version="1.0" PromappVersion="4.6.1.9" UniqueId="d14ef019-b876-4464-a3e3-31d71c67f42f" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="2" UniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" Name="Finance" ProcessGroupItemId="3540" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="139" Trigger="Employee wants to make a purchase" Frequency="Ad hoc" Volume="3 per month" UniqueId="c3c98428-7d1b-4044-8a85-05919b3f7154" />
+  </Triggers>
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="9843" UniqueId="fa65ebf8-f07f-856a-1da2-2f26ce8baf11" Number="1.0" Order="0">
+      <Text>Complete requisition form</Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9844" UniqueId="ddd5c02a-c2bb-c739-767c-df0b3563e5d7" Order="1" Number="1.0.1">
+          <Text>Complete the attached requisition form. All fields must be filled out before submitting.</Text>
+        </Task>
+        <Note Id="9845" UniqueId="3b2a0b58-096d-9b8f-b9ce-5465bc9a8009" Order="2" Number="">
+          <Text>Does the size of the purchase make a difference?</Text>
+          <Attachment>Yes. If the request is less than $500, it can be approved and sent to the supplier immediately.|~||~|If the request is greater than $500 but less than $10,000 it needs managerial approval.|~||~|If the request is greater than $10,000 it must be reviewed by the Director.</Attachment>
+        </Note>
+        <Form Id="9846" UniqueId="20cbffb3-661c-1cc7-6689-99709c42689c" Order="3" DocumentId="340" DocumentUniqueId="423b7aed-b3ba-4fbc-861e-0db8c766c62f" UploadId="381" Number="">
+          <Text>Example Form.docx</Text>
+        </Form>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9847" UniqueId="387d41f1-8bd2-13f8-22c4-44fef44f145c" Number="2.0" Order="4" ParallelGroupingRef="1">
+      <Text>Assess request [&lt;$10,000]</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9848" UniqueId="a0b60934-b125-e3b5-5bab-c10d9553b5fa" Order="5" Number="2.0.1">
+          <Text>Review request form.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9849" UniqueId="cb30ba00-f688-6a1a-6936-05ccdf82273e" Number="2.1" Order="6" ParallelGroupingRef="1">
+      <Text>Assess request [&gt;$10,000]</Text>
+      <Ownerships>
+        <Role Id="219" Name="Director" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9850" UniqueId="dc6b860a-90d9-2913-1f88-f2487f614f18" Order="7" Number="2.1.1">
+          <Text>Review request form.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="9851" UniqueId="3b53dd5c-7b0a-c59b-f3ac-60360750204d" Number="0.0" Order="8" DecisionLinkIsYes="true" DecisionLinkType="Activity">
+      <Text>Does the request need clarification?</Text>
+      <Ownerships>
+        <Role Id="219" Name="Director" IsVirtual="false" />
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="9852" UniqueId="341c652d-a1eb-15bf-8131-1ca0054384e8" Number="3.0" Order="9" LinkedDecisionUniqueId="3b53dd5c-7b0a-c59b-f3ac-60360750204d">
+      <Text>Request clarification from employee</Text>
+      <Ownerships>
+        <Role Id="219" Name="Director" IsVirtual="false" />
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9853" UniqueId="510189cb-c505-d82c-a9ae-df1c3f5c09d4" Order="10" Number="3.0.1">
+          <Text>Email requester with additional details required.</Text>
+        </Task>
+        <Task Id="9854" UniqueId="1929d145-2ea4-eda7-3dc7-4e377b84cb1d" Order="11" Number="3.0.2">
+          <Text>Reconsider submission once full information is on hand</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9855" UniqueId="4f0a2dac-6236-e74c-c559-3bac96cbd633" Number="4.0" Order="12">
+      <Text>Approve or decline purchase</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9856" UniqueId="eadcb556-71f1-67c2-a6c0-2c42fd681df6" Order="13" Number="4.0.1">
+          <Text>Advise employee by email of decision</Text>
+        </Task>
+        <Task Id="9857" UniqueId="28569bb4-eee0-49b1-2aa3-eebbe4a5bacf" Order="14" Number="4.0.2">
+          <Text>If approved, forward Purchase Order to supplier</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3171" PublishedDate="2018-12-03T18:47:55.003Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-18T16:39:09.1075245Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-18T16:39:09.1075245Z" />
+  </Metadata>
+</Process>

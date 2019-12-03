@@ -1,0 +1,69 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Get the Actual Day of the week!",
+    "version": "1.0.0",
+    "title": "Format Date with Day"
+  },
+  "host": "ntxfucntions.azurewebsites.net",
+  "basePath": "/api",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/FormatDate": {
+      "post": {
+        "x-ntx-summary": "Format a Date to Return Day of the Week",
+        "description": "",
+        "operationId": "formateDateWithDay",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/req"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Hooray!",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "req": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string",
+          "enum": [
+            "en-US",
+            "it-IT",
+            "fr-FR",
+            "de-DE"
+          ]
+        }
+      }
+    }
+  }
+}

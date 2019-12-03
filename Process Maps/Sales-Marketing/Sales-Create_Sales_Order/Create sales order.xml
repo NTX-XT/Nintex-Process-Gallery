@@ -1,0 +1,177 @@
+<Process Id="16" Name="Create sales order" ReferenceNo="" Objective="To process a new sales order in Navision" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Anjelica Farber" OwnerId="27" Expert="Julien Kozlov" ExpertId="5" Group="Sales &amp; Marketing" GroupId="20" GroupUniqueId="45431ebc-9289-4196-90a7-a3f684808a7c" State="Active" StateId="1" Version="38.0" PromappVersion="4.6.1.9" UniqueId="d8ab8417-2db5-43de-b950-cee30e2ccab9" IsPolicyModeOn="false" IsVirtualVariation="false" AnnualVolume="35">
+  <ProcessGroupItems>
+    <ProcessGroupShortcut Id="93" UniqueId="9f6a6228-4b89-4b19-925d-19ad1773fd9a" Name="Order to Cash" ProcessGroupItemId="3456" />
+    <ProcessGroup Id="20" UniqueId="45431ebc-9289-4196-90a7-a3f684808a7c" Name="Sales &amp; Marketing" ProcessGroupItemId="3457" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="293" UniqueId="c8709603-5171-44db-9fe0-a8c033acdd45" Number="1.0" Order="0">
+      <Text>Select Sales Order Type </Text>
+      <Ownerships>
+        <Role Id="16" Name="Customer Services Manager" IsVirtual="false" />
+        <Role Id="93" Name="Support" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2m" LeadTimeDisplay="5m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0.86" AverageCostPerHour="25.80" />
+      <ChildProcessProcedures>
+        <Information Id="317" UniqueId="6f5e47ed-83fa-4d2a-bcb2-ff6ef85e3a74" Order="1" DocumentId="20" DocumentUniqueId="5e82a5c1-f73f-4101-992e-b0203d5aa0c1" UploadId="20" Number="">
+          <Text>CS Sales Order Types.doc.docx</Text>
+        </Information>
+        <Task Id="320" UniqueId="b23481ff-4055-400f-a520-fbe61f4a5ad0" Order="2" Number="1.0.1">
+          <Text>Determine delivery timeframe</Text>
+        </Task>
+        <Task Id="321" UniqueId="2fdd444a-611f-4365-86d8-9fc75c0f9420" Order="3" Number="1.0.2">
+          <Text>Determine product category</Text>
+        </Task>
+        <WebLink Id="322" UniqueId="22f8bf1e-2ab0-4bd0-9518-3749cc5772e9" Order="4" Number="">
+          <Ownerships>
+            <Tag Id="17" Name="Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Promapp Product catalogue</Text>
+          <Attachment>http://www.promapp.com/</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="295" UniqueId="38631494-a528-4311-979e-7e082d9e1a4a" Number="2.0" Order="5">
+      <Text>Create the Sales Order in Navision</Text>
+      <Ownerships>
+        <Role Id="16" Name="Customer Services Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="20m" LeadTimeDisplay="5m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="8.68" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="296" UniqueId="1a2f215d-1b28-4ec0-84c0-5db030948430" Order="6" Number="2.0.1">
+          <Text>The Guide below explains how an order is processed in Navision.</Text>
+        </Task>
+        <Guide Id="318" UniqueId="49018254-8fc2-4822-ba24-61f33ca62d22" Order="7" DocumentId="21" DocumentUniqueId="ca9aca9f-a25f-425a-8cef-1c7d1ff2ee44" UploadId="21" Number="">
+          <Text>Entering a Sales Order in Navision.docx</Text>
+        </Guide>
+        <Note Id="298" UniqueId="aeb17473-581d-4784-be38-d8016f906088" Order="8" Number="">
+          <Text> Important - reconfirm export orders with overseas dealers</Text>
+          <Attachment>Print out the order confirmation and fax it to the export dealer for confirmation.  Do  not release the order in Navision until confirmation of order has been received back.</Attachment>
+        </Note>
+        <Note Id="299" UniqueId="e87e2bbc-08d4-47a6-9220-d9aa92f2c4ba" Order="9" Number="">
+          <Text> What do I do if a price has not been set up for a product?</Text>
+          <Attachment>Contact the Purchasing Officer, who is responsible for maintaining the material cards  for each product.</Attachment>
+        </Note>
+        <Note Id="300" UniqueId="2e26a14a-89dd-41ae-92a1-27d007ee3629" Order="10" Number="">
+          <Text> What do I do if the part number provided by the Dealer is invalid in Navision?</Text>
+          <Attachment>This means that either the part number provided is incorrect or that we do not have the  part set up in Navision.  Refer to the Media Catalogue to identify or confirm the correct  part number.  If the part number is correct, a new material card will need to be established  in Navision.  Refer to the Create or Maintain Product Items process.</Attachment>
+        </Note>
+        <Note Id="301" UniqueId="e571f2ba-70b8-4058-8b2a-0b43452df680" Order="11" Number="">
+          <Text> What happens if their is not enough stock to supply the order?</Text>
+          <Attachment>Ask the Dealer if they would like the items to go on backorder and advise the expected  delivery date.  To find out the expected delivery date, select 'Material Reports' from  the 'Warehouse Menu'. Then select VIEW ETA and enter the part number.</Attachment>
+        </Note>
+        <Note Id="754" UniqueId="5f7c25da-a646-4b8f-a14a-43859886c0fa" Order="12" Number="">
+          <Text>What if Sat delivery is required?</Text>
+          <Attachment>Contact Weekend freight Ltdd - they do our weekend work</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="302" UniqueId="fc0d6a5b-84a5-4077-9f7d-29c65f53d7d5" Number="3.0" Order="13">
+      <Text>Obtain credit approval</Text>
+      <Ownerships>
+        <Role Id="16" Name="Customer Services Manager" IsVirtual="false" />
+      </Ownerships>
+      <RiskControls>
+        <RiskControl Id="3" Ref="MC00004" Title="Bad and doubtful debt levels may increase if accounts are created for uncredit-worthy customers. " Objective="Create sales order - Obtain credit approval. Create Sales order - Obtain credit approval. ">
+          <Portfolios>
+            <Portfolio Id="6" Name="Finance" />
+          </Portfolios>
+        </RiskControl>
+        <RiskControl Id="11" Ref="MC00012" Title="We suffer financial loss through bad debt if we do not credit check our new customers" Objective="Create sales order - Obtain credit approval. Create Sales order - Obtain credit approval. ">
+          <Portfolios>
+            <Portfolio Id="6" Name="Finance" />
+          </Portfolios>
+        </RiskControl>
+      </RiskControls>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="208.33" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="303" UniqueId="07346a6f-0a21-41d7-ba7b-426d23379101" Order="14" Number="3.0.1">
+          <Text>During the Sales order entry process, Navision will check the customer’s credit limit.</Text>
+        </Task>
+        <Note Id="329" UniqueId="4b57a645-fab6-4b0f-b78d-fb809c3b5e22" Order="15" Number="">
+          <Text>If the customer has exceeded their credit limit...</Text>
+          <Attachment>...  you will get a message reading “The customers credit limit has been exceeded, do you want to take over nevertheless?”.|~|- Selecting NO here wiill cancel the order. |~|- Selecting YES here will let you proceed with the order.   If you have the appropriate authority to override the credit limit the order will proceed   as usual, if you do not have authority to override the credit limit the order will go into Credit Limit block.</Attachment>
+        </Note>
+        <Task Id="304" UniqueId="bcbf6123-e753-4c31-b05d-016c3514eb92" Order="16" Number="3.0.2">
+          <Text>If the Sales Order goes into credit limit blocked it will need to be evaluated, and if   considered acceptable, released by the Finance Team.</Text>
+        </Task>
+        <Policy Id="703" UniqueId="fd8afaf9-e2be-4bfe-9d8e-8b234cc32828" Order="17" DocumentId="26" DocumentUniqueId="d9f72f8b-c260-4483-a017-ff6018f7802e" UploadId="31" Number="">
+          <Text>Commercial Terms Policy[1].doc</Text>
+        </Policy>
+        <Guide Id="319" UniqueId="ceec1ad0-5813-43bb-9cff-86ab60e13f7b" Order="18" DocumentId="22" DocumentUniqueId="e1738b6a-b7ef-48ba-a84b-7af1af705323" UploadId="22" Number="">
+          <Text>AP Release orders from credit limit block.doc.docx</Text>
+        </Guide>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="5889" UniqueId="a48909d3-4ef7-44e3-9c88-c876bb3c3b57" Number="4.0" Order="19">
+      <Text>Check Credit Link Removed</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2m" LeadTimeDisplay="15m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0.86" AverageCostPerHour="25.80" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="306" UniqueId="86d9b307-aa84-4d70-917f-52b18d923cce" Number="5.0" Order="20">
+      <Text>Perform additional Tasks required for Export Orders</Text>
+      <Ownerships>
+        <Role Id="16" Name="Customer Services Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="13.02" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="307" UniqueId="914c4a38-3a3d-42eb-a16d-b8b5d70969dd" Order="21" Number="5.0.1">
+          <Text>Once Dispatch have weighed and measured the export order they will provide these details   together with signed and checked off invoice to Customer Services.</Text>
+        </Task>
+        <Task Id="308" UniqueId="b41a3c5d-1e46-45a1-a1d5-2de9e6e62d9c" Order="22" Number="5.0.2">
+          <Text>Customer Services then complete a Shipping Letter of Instruction (SLI) and fax to the   Shipping provider. The SLI states when the order will be ready for pick up. It is usually   picked up same day or next.</Text>
+        </Task>
+        <Task Id="309" UniqueId="3b94c6ad-831e-4144-81e0-08a516fdf9bf" Order="23" Number="5.0.3">
+          <Text>The shipping company fax back a booking confirmation with all shipping details included   such as Flight or vessel number and estimated time of arrival.</Text>
+        </Task>
+        <Task Id="310" UniqueId="928d938c-9005-4fde-88d0-e253987a6420" Order="24" Number="5.0.4">
+          <Text>Customer Services then fax a covering letter to the export dealer which includes all shipping   details and a copy of the invoice.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="443" Link="Foreign Export Control" Owner="Christy Bacon" Expert="Christy Bacon" ProcessGroup="Legal" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers>
+    <User Id="5" FirstName="Julien" LastName="Kozlov" Name="Julien Kozlov" />
+  </RiskManagers>
+  <Targets>
+    <Target Id="85" Measure="Complete order admin  / follow up" Target="Within 1 hour of incoming call" UniqueId="747c43e9-290b-49bc-b024-b2c77ac87d60" />
+  </Targets>
+  <Timeframe TotalCycleTimeDisplay="1d 54m" TotalLeadTimeDisplay="1d 25m *" ProcessTotalCost="231.7708" />
+  <RiskControls>
+    <RiskControl Id="3" Ref="MC00004" Title="Bad and doubtful debt levels may increase if accounts are created for uncredit-worthy customers. " Description="Bad and doubtful debt levels may increase if accounts are..." TitleDisplay="Create sales order - Obtain credit approval">
+      <Portfolios>
+        <Portfolio Id="6" Name="Finance" />
+      </Portfolios>
+    </RiskControl>
+    <RiskControl Id="11" Ref="MC00012" Title="We suffer financial loss through bad debt if we do not credit check our new customers" Description="We suffer financial loss through bad debt if we do not credit..." TitleDisplay="Create sales order - Obtain credit approval">
+      <Portfolios>
+        <Portfolio Id="6" Name="Finance" />
+      </Portfolios>
+    </RiskControl>
+  </RiskControls>
+  <ProcessApproval>
+    <Published ProcessRevisionId="3069" PublishedDate="2018-11-19T23:52:32.193Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-18T22:39:41.1081368Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-18T22:39:41.1081368Z" />
+  </Metadata>
+</Process>

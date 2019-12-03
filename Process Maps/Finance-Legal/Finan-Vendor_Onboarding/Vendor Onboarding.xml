@@ -1,0 +1,174 @@
+<Process Id="468" Name="Vendor Onboarding" ReferenceNo="" Objective="Vendor Onboarding" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Process for onboarding new vendors and suppliers for Safalo. " Owner="Richard Roe" OwnerId="1051" Expert="Martin Banks" ExpertId="1055" Group="Finance" GroupId="2" GroupUniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" State="Active" StateId="1" Version="13.0" PromappVersion="4.6.1.9" UniqueId="3ebdb0c8-261a-4c1e-95da-7c9d3c46097b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="2" UniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" Name="Finance" ProcessGroupItemId="3938" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="146" Trigger="Business Need Identified" Frequency="Ad Hoc" Volume="10-50 times a year" UniqueId="42caaa89-ef06-4b60-83dd-1e4a52b51044" />
+  </Triggers>
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="10419" UniqueId="1b197685-247c-49ca-a83a-ea04b43731e1" Number="1.0" Order="0">
+      <Text>Vendor job associated tasks</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="52.08" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="10429" UniqueId="20bcc2d7-5af8-440b-8184-dbbcfe4f599f" Order="1" Number="1.0.1">
+          <Text>Post vendor job on all relevant job boards</Text>
+        </Task>
+        <Task Id="10420" UniqueId="fa5cda89-43ec-45ba-bcb3-b3bf58ff30e4" Order="2" Number="1.0.2">
+          <Ownerships>
+            <Tag Id="16" Name="HR System" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Update HR system</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10421" UniqueId="71a249ee-ce7d-4c7a-b8c0-b03d62862c41" Number="2.0" Order="3">
+      <Text>Vendor identified</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="5m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="4.34" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="10430" UniqueId="ddc17c60-00a7-4d4d-b4c9-b3730285b906" Order="4" Number="2.0.1">
+          <Text>Hiring manager identified potential vendors and the value they bring</Text>
+        </Task>
+        <Task Id="10431" UniqueId="97257824-5085-43c1-a030-fddf7651a267" Order="5" Number="2.0.2">
+          <Text>Inform HR of status update</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10422" UniqueId="9e4f021d-0b45-4220-9856-e7d7d97267cf" Number="3.0" Order="6">
+      <Text>Submit vendor requisition form</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="26.04" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="10432" UniqueId="5515c9cb-3cb2-4f8c-a01a-124213a71d90" Order="7" Number="3.0.1">
+          <Text>Gather price, term, security and system requirements, implementation time, SOW/ordering documents and submit.</Text>
+        </Task>
+        <WebLink Id="10433" UniqueId="01f6fdb2-4247-496c-9182-f439f80ced7f" Order="8" Number="">
+          <Text>Vendor Onboarding Form</Text>
+          <Attachment>https://safalosload.workflowcloud.com/forms/d52d95a8-7ef3-4ac0-9ab3-8f35aade98d2</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="10423" UniqueId="a98765b7-46dc-4403-b253-ad3ae410d46f" Number="0.0" Order="9" LinkedProcessId="457" DecisionLinkIsYes="false" DecisionLinkType="ProcessLink" LinkedProcessName="Supplier/Vendor Approval" LinkedProcessUniqueId="e83f67b0-2dd6-4779-bbac-b04c3e81033f">
+      <Text>Already on approved vendor list?</Text>
+      <Ownerships>
+        <Role Id="223" Name="Business Analyst" IsVirtual="false" />
+        <DecisionOrphanRole Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="10424" UniqueId="7eb4f990-417c-41c7-a4e4-e31e9ddb47c4" Number="4.0" Order="10">
+      <Text>Finance Approval</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="10434" UniqueId="8025c800-13fb-4e53-8059-ac57eccb218b" Order="11" Number="4.0.1">
+          <Text>Confirm budgetary ask</Text>
+        </Task>
+        <Task Id="10435" UniqueId="6161c2da-76d7-4834-b981-9626fb370afb" Order="12" Number="4.0.2">
+          <Text>Approve purchase order</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10425" UniqueId="9428a5e2-0ebd-463d-815e-6bcfae7626ec" Number="5.0" Order="13">
+      <Text>Create supplier compliance form</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="52.08" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="10436" UniqueId="1eb5c9fa-fba8-4e5f-945d-5f38ff19eca3" Order="14" Number="5.0.1">
+          <Text>Create statement of work</Text>
+        </Task>
+        <Task Id="10437" UniqueId="972a4598-c22a-4025-87e7-448a0c09ed59" Order="15" Number="5.0.2">
+          <Text>Identify documents for signature</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10426" UniqueId="372ad016-0b3a-4608-ac56-7f857c71d17d" Number="6.0" Order="16">
+      <Text>Legal Approval</Text>
+      <Ownerships>
+        <Role Id="220" Name="Legal" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="5m" LeadTimeDisplay="3d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="2.17" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="10438" UniqueId="09812eec-5f7c-4756-af56-7e24265685f4" Order="17" Number="6.0.1">
+          <Text>Review statement of work and any contract associated.</Text>
+        </Task>
+        <Task Id="10439" UniqueId="c1e9949b-4ceb-4d07-8293-4bdc53636f03" Order="18" Number="6.0.2">
+          <Text>Mark statement of work as final</Text>
+        </Task>
+        <Task Id="10440" UniqueId="5563ace5-3286-4ee4-8a59-ed5d364934f6" Order="19" Number="6.0.3">
+          <Text>Send back to hiring manager.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10427" UniqueId="ee5dbfe1-e2c5-46eb-b16d-7649ddeb9e7f" Number="7.0" Order="20">
+      <Text>Send compliance form to vendor for signature</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="5m" LeadTimeDisplay="1w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="4.34" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="10441" UniqueId="91f10015-2e58-4e81-9185-5cd7d78cbcb2" Order="21" Number="7.0.1">
+          <Text>Sent documentations out for signature.</Text>
+        </Task>
+        <Task Id="10613" UniqueId="e2c2cf05-fb34-9080-c849-25e04acd15f1" Order="22" Number="7.0.2">
+          <Ownerships>
+            <Tag Id="2" Name="CRM" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>#CRM</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10428" UniqueId="5bf78cbc-f067-43b9-a9da-fca5db268c9d" Number="8.0" Order="23">
+      <Text>Archive contract and supplier compliance form</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="5m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="4.34" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="10442" UniqueId="e4fffe1f-c897-4639-9e0d-501c560d5836" Order="24" Number="8.0.1">
+          <Text>Collect and archive signed documents</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="119" Output="IT Ticket" HowUsed="Used for Creating Vendor Account and Assigning IT assets" ToProcess="Respond to Managed Services IT Request" ToProcessId="375" UniqueId="4ce32164-408d-4998-9636-3d77e5684acf" />
+  </Outputs>
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="457" Link="Supplier/Vendor Approval" Owner="Malcom Tollemache" Expert="Malcom Tollemache" ProcessGroup="Finance" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="48" FirstName="Sheree" LastName="Munro" Name="Sheree Munro" />
+    <User Id="25" FirstName="Madalyn" LastName="Ivanov" Name="Madalyn Ivanov" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="2h 50m *" TotalLeadTimeDisplay="2.6w *" ProcessTotalCost="145.3993" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3499" PublishedDate="2019-10-01T00:20:00.54Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-18T22:09:57.1576916Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-18T22:09:57.1576916Z" />
+  </Metadata>
+</Process>

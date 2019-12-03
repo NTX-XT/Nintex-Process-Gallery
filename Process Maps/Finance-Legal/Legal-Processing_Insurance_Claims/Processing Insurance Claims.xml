@@ -1,0 +1,61 @@
+<Process Id="1358" Name="Processing Insurance Claims" ReferenceNo="" Objective="To receive and process claims against the District Council's insurance policies covering business functions and assets." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Risk and Response" GroupId="246" GroupUniqueId="053927a8-8e74-470c-adf6-2e0397466540" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.1.13" UniqueId="848b3ec7-65c5-47dd-a2ce-b5d605ee6f69" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="246" UniqueId="053927a8-8e74-470c-adf6-2e0397466540" Name="Risk and Response" ProcessGroupItemId="11957" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="62251" UniqueId="3e35fbdd-6ddd-41b7-a59e-edf6893eeb0a" Number="1.0" Order="0">
+      <Text>Obtain and Complete a Claim Form</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="62280" UniqueId="1679bbb1-424e-4f1a-9972-c6a58d316397" Number="2.0" Order="1">
+      <Text>Lodge Claim with Insurance Brokers</Text>
+      <Ownerships>
+        <Role Id="458" Name="Finance Officer - Treasury" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="62321" UniqueId="5e6d1fb0-6b33-475b-b151-0e13c2346324" Number="3.0" Order="2">
+      <Text>Approve Claim</Text>
+      <Ownerships>
+        <Role Id="456" Name="Insurance Broker" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="62323" UniqueId="0c2dd2b1-853c-4c93-8d78-a9cdf2266602" Number="4.0" Order="3">
+      <Text>Manage Claim</Text>
+      <Ownerships>
+        <Role Id="458" Name="Finance Officer - Treasury" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4437" PublishedDate="2017-09-20T00:04:23.983Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-29T19:51:30.4830353Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-29T19:51:30.4830353Z" />
+  </Metadata>
+</Process>

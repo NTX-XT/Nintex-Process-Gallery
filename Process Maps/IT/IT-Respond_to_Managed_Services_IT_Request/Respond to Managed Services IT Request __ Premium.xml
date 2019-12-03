@@ -1,0 +1,163 @@
+<Process Id="402" Name="Respond to Managed Services IT Request" ReferenceNo="" Objective="Resolve IT incidents within Service Level Agreements" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Imran Saab" OwnerId="45" Expert="Timothy Lee" ExpertId="35" Group="Manage Incidents" GroupId="134" GroupUniqueId="e1bb32f2-db3d-40ea-a08a-8622699e2eed" State="Active" StateId="1" Version="8.0" PromappVersion="4.6.1.13" UniqueId="ca6cf07b-637b-4687-89e6-3fa3df7ef7de" IsPolicyModeOn="false" VanillaProcessId="375" VariationId="21" IsVirtualVariation="false" AnnualVolume="3000">
+  <ProcessGroupItems>
+    <ProcessGroup Id="134" UniqueId="e1bb32f2-db3d-40ea-a08a-8622699e2eed" Name="Manage Incidents" ProcessGroupItemId="3638" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="127" Trigger="Request for Information / Resources" Frequency="daily" Volume="20 per day" UniqueId="f01864f3-69ec-4860-a2b7-8322d93feab2" />
+    <Trigger Id="128" Trigger="Failure of IT Systems" Frequency="daily" Volume="30 per day" UniqueId="8a08267c-f9ff-4b26-92ee-fd56a55ea87c" />
+  </Triggers>
+  <Inputs>
+    <Input Id="155" FromProcess="n/a" Resource="Email Request / Phone Call" HowUsed="&#x9;Email to help service desk with issue" UniqueId="f1a7e621-5457-43c1-9ad3-226df0064e57" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="8831" UniqueId="a8ef3156-f29a-44a1-9b3d-efff970396b0" Number="1.0" Order="0" VanillaProcessProcedureUniqueId="2254e9c5-a64c-ad1a-b727-cfa71e518565">
+      <Text>Determine Type of IT Support Requried </Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="4.34" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="8832" UniqueId="b8480f89-a158-449c-adea-669d1900aa4d" Order="1" VanillaProcessProcedureUniqueId="c33e4765-49d0-8d31-9723-43b5bb529c27" Number="1.0.1">
+          <Text>Ensure client is Premium standard</Text>
+        </Task>
+        <Note Id="8833" UniqueId="5e14ef8a-76aa-4820-b025-5f0dd7b46c43" Order="2" VanillaProcessProcedureUniqueId="40aea3c0-a826-002c-cf89-d5a40a02834d" Number="">
+          <Text> What types of support does IT provide?</Text>
+          <Attachment>You get 2 kinds of support – Managed Services or Break Fix (Adhoc).|~||~|Managed Services are then categorised as Premium (all inclusive), Lite, Data Protection (backups), Endpoint protection (laptops, PC’s, servers).</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8834" UniqueId="db3871fa-cc57-41d6-96f8-60665598a2f7" Number="2.0" Order="3" VanillaProcessProcedureUniqueId="1df2af96-af5f-ee47-da56-687c96dcd707">
+      <Text>Request IT Help </Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="15m" LeadTimeDisplay="30m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="6.51" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="8835" UniqueId="9f5af4c5-5b56-46a4-84f2-4f8639be8437" Order="4" VanillaProcessProcedureUniqueId="741d2e79-7698-55d7-0646-43f9f7afc6e5" Number="2.0.1">
+          <Text>Submit IT request via email; ITHelp@support.com</Text>
+        </Task>
+        <Task Id="8836" UniqueId="9bf46e22-f764-4fff-9d4f-d0e1a55fe539" Order="5" VanillaProcessProcedureUniqueId="11d26d9b-c857-3d60-4ad5-52b47bf97ac3" Number="2.0.2">
+          <Text>Briefly describe the nature of issue/request</Text>
+        </Task>
+        <Task Id="8837" UniqueId="be4fb8be-260f-4c89-baf3-d6398baf4b25" Order="6" VanillaProcessProcedureUniqueId="ba763d9b-9242-3a42-a529-98bb0e174a0b" Number="2.0.3">
+          <Text>Include and screen captures relevant to the issue</Text>
+        </Task>
+        <Task Id="8838" UniqueId="ae98a327-9c58-4f75-be28-ccc585cac92b" Order="7" VanillaProcessProcedureUniqueId="1b66e9ed-a21f-3849-c44d-d9003d4b6aca" Number="2.0.4">
+          <Text>Provide an outline of the steps you were taking when the issue occurred</Text>
+        </Task>
+        <Task Id="8839" UniqueId="9b3e3842-248b-4220-866c-7a2afc02107c" Order="8" VanillaProcessProcedureUniqueId="019668dc-782b-ed0e-21b3-f3a091bfb9f7" Number="2.0.5">
+          <Text>Provide any error messages</Text>
+        </Task>
+        <Task Id="8840" UniqueId="64afc778-7ea0-44a0-8de1-1eb26d09c9c3" Order="9" VanillaProcessProcedureUniqueId="4477ff0b-87fb-1048-9bf5-f40de146495b" Number="2.0.6">
+          <Text>How urgently do you need it resolved?</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8841" UniqueId="64cf2ddc-4ac9-44bf-b051-1c320ffe12a4" Number="3.0" Order="10" VanillaProcessProcedureUniqueId="fcb2c40c-8e32-6991-5eb3-edcff2fbe9b4">
+      <Text>Assess Request, within 1 hour</Text>
+      <Ownerships>
+        <Role Id="192" Name="IT Customer Service Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="1h" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="13.02" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="8842" UniqueId="585b504e-17d1-49ed-bb8d-a492af04711b" Order="11" VanillaProcessProcedureUniqueId="706f6009-71d6-074d-075a-d88d7de8c005" Number="3.0.1">
+          <Text>Send requester email notification upon receipt of request|~|- this should be actioned within 1 hour of receiving request</Text>
+        </Task>
+        <Task Id="8843" UniqueId="57a9dcb3-691f-4b59-998f-07b86de7999e" Order="12" VanillaProcessProcedureUniqueId="76e3cd7b-1fe7-71cd-294d-553b6a5dacd5" Number="3.0.2">
+          <Text>Prioritise request as account is Premium</Text>
+        </Task>
+        <Image Id="8844" UniqueId="915d997f-a37a-49d4-b849-dd512397eb12" Order="13" VanillaProcessProcedureUniqueId="f164d128-9b47-6125-55bd-29f0d5465d82" DocumentId="311" DocumentUniqueId="279b8ed7-ad3a-4454-a05b-5aec29703c32" UploadId="351" Number="">
+          <Text>IT request priority matrix.JPG</Text>
+        </Image>
+        <Task Id="8845" UniqueId="bd475850-9a6d-4aa1-9fa7-a978dffdccb9" Order="14" VanillaProcessProcedureUniqueId="ad1bb730-3edf-dd2a-ba60-a3016d067f03" Number="3.0.3">
+          <Text>Assign to group</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8846" UniqueId="b6b4ed33-8d0f-42ce-a55c-8d9f9af06362" Number="4.0" Order="15" VanillaProcessProcedureUniqueId="ce896fa1-e0f7-a9ad-5617-18ccab8709be">
+      <Text>Action Request</Text>
+      <Ownerships>
+        <Role Id="192" Name="IT Customer Service Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="26.04" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="8847" UniqueId="4d8d0d7d-7e9b-4460-a93a-804ce5810665" Order="16" VanillaProcessProcedureUniqueId="19aac5d0-9c4b-354e-4b80-5f7fd219ce08" Number="4.0.1">
+          <Text>Analyse incident</Text>
+        </Task>
+        <Task Id="8848" UniqueId="8fc49a2d-9d58-4aab-afad-8400df4383c7" Order="17" VanillaProcessProcedureUniqueId="cce17dee-8e8c-b6e8-fbe9-0fbd318d0f1c" Number="4.0.2">
+          <Text>Obtain more information, if required</Text>
+        </Task>
+        <Task Id="8849" UniqueId="13c6cd0d-67fb-43fa-8fa3-e1c56075f099" Order="18" VanillaProcessProcedureUniqueId="3028a69c-d8e8-d810-9937-73bf5572a1d3" Number="4.0.3">
+          <Text>Provide resolution within 4 hours</Text>
+        </Task>
+        <Note Id="8850" UniqueId="5ea5ee31-7278-4b1e-8a6d-fbbeda3bba03" Order="19" VanillaProcessProcedureUniqueId="21d11812-df72-dc7a-d6b9-fe387cb29dee" Number="">
+          <Text> What if I am unable to resolve the request?</Text>
+          <Attachment>Advise the requester and try to determine if there are other options available.</Attachment>
+        </Note>
+        <Note Id="8851" UniqueId="cc977616-c204-4c14-b70f-2a57689e8174" Order="20" VanillaProcessProcedureUniqueId="8772e484-35c4-a7f8-2a16-a92226bb1ba4" Number="">
+          <Text> What if I am unable to meet the time-frames expected?</Text>
+          <Attachment>Advise the requester of the Escalation Process</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8852" UniqueId="5b60ec87-8dc9-4903-9fe8-cb61c4d09598" Number="5.0" Order="21" VanillaProcessProcedureUniqueId="6ecc0b85-5b79-9a5d-26df-26a2814499c7">
+      <Text>Close Request</Text>
+      <Ownerships>
+        <Role Id="192" Name="IT Customer Service Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="13.02" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="8853" UniqueId="717fb2ae-cc0a-4b52-8885-be9d3ae3ddb6" Order="22" VanillaProcessProcedureUniqueId="2d402858-5286-0c66-d92d-f2b15a508a3c" Number="5.0.1">
+          <Text>Enter resolution details in Service Desk</Text>
+        </Task>
+        <Task Id="8854" UniqueId="3c766bc9-3780-471a-a71f-8865d0473305" Order="23" VanillaProcessProcedureUniqueId="3336d330-6658-5721-1019-97a1909c7555" Number="5.0.2">
+          <Text>Update Solutions Data Base if the resolution may be helpful to others</Text>
+        </Task>
+        <Task Id="8855" UniqueId="6357c5be-853f-49d8-ad8c-01ce9c0df9c0" Order="24" VanillaProcessProcedureUniqueId="476a4590-062b-ae36-fd8a-e43e560b11bc" Number="5.0.3">
+          <Text>Close request, email generated back to initial requestor</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8856" UniqueId="8f48b17a-2202-4e01-a2ea-5aaa27820491" Number="6.0" Order="25" VanillaProcessProcedureUniqueId="5181f5ce-8a97-def7-5288-c48a42b7a755">
+      <Text>Accept Resolution </Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="4.34" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="8857" UniqueId="456abd66-817d-444d-9a84-140de2f615b4" Order="26" VanillaProcessProcedureUniqueId="b8a9d2c8-10e2-24e5-1488-31b5a87f27f2" Number="6.0.1">
+          <Text>Review resolution email</Text>
+        </Task>
+        <Task Id="8858" UniqueId="573a1c8e-e698-4af7-999e-db2f6c0647a1" Order="27" VanillaProcessProcedureUniqueId="eba76b13-940a-4dfe-64d8-b16a9cd4e04d" Number="6.0.2">
+          <Text>Check resolution addressed needs</Text>
+        </Task>
+        <Note Id="8859" UniqueId="08aade3b-d9a0-4842-86e5-a35d8610fe5a" Order="28" VanillaProcessProcedureUniqueId="cb973002-3325-71d9-6391-fc336d957818" Number="">
+          <Text> What happens if my request is not resolved?</Text>
+          <Attachment>Reply to email received stating why you think the issues is not resolved. This will automatically re-open your request.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="108" Output="Resolution to incidents" HowUsed="Email to person who requested assistance" ToProcess="n/a" UniqueId="c9c332b5-32d3-4bf4-a8d8-851da65e1629" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="2h 35m" TotalLeadTimeDisplay="2d 1.5h *" ProcessTotalCost="67.2743" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3241" PublishedDate="2019-01-11T04:47:24.84Z" PublisherId="1055" Publisher="Martin Banks" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-29T20:18:48.0121085Z" />
+  </Metadata>
+</Process>

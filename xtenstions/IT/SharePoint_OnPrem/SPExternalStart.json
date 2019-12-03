@@ -1,0 +1,83 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Nintex Workflow External Start"
+  },
+  "schemes": [
+    "https"
+  ],
+  "host": "nxttst01fncwus02.azurewebsites.net",
+  "basePath": "/api",
+  "paths": {
+    "/SPExternalStart": {
+      "get": {
+        "tags": [
+          "Start"
+        ],
+        "summary": "SharePoint External Start",
+        "description": "External Start a SharePoint Workflow",
+        "operationId": "start",
+        "x-ntx-summary": "SharePoint External Start",
+        "parameters": [
+          {
+            "name": "workflowId",
+            "in": "query",
+            "description": "Workflow External Start Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "description": "External Start Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/startRequest"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "security": [
+      {
+      "securityKey":[]
+      }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+			  "properties": {
+				"correlationId":{
+					"type":"string",
+					"title":"Correlation Id"
+				}
+			  }
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "securityKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "SecurityKey"
+    }
+  },
+  "definitions": {
+    "startRequest": {
+      "type": "object",
+      "properties": {
+        "variables": {
+          "x-ntx-summary": "Start Variables (Json)",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

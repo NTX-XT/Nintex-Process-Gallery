@@ -1,0 +1,364 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Smartsheet",
+    "version": "1.0",
+    "description": "Smartsheet"
+  },
+  "host": "api.smartsheet.com",
+  "basePath": "/2.0",
+  "schemes": [
+    "https"
+  ],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "paths": {
+    "/sheets": {
+      "get": {
+        "description": "Gets List of all Sheets",
+        "x-ntx-summary": "Get Sheets",
+        "x-ntx-visibility": "internal",
+        "produces": [
+          "application/json"
+        ],
+        "operationId": "getSheets",
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/sheets"
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/sheets/{sheetId}": {
+      "get": {
+        "description": "Gets List of all Rows in Sheet",
+        "x-ntx-summary": "Get Rows",
+        "x-ntx-visibility": "internal",
+        "operationId": "getRows",
+        "parameters": [
+          {
+            "name": "sheetId",
+            "in": "path",
+            "description": "Sheet ID",
+            "type": "integer",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getSheets",
+              "value-collection": "data",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/rows"
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/sheets/{sheetId}/columns": {
+      "get": {
+        "description": "Get all Columns in Sheet",
+        "x-ntx-summary": "Get Columns",
+        "operationId": "getColumns",
+        "parameters": [
+          {
+            "name": "sheetId",
+            "in": "path",
+            "description": "Sheet ID",
+            "type": "integer",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getSheets",
+              "value-collection": "data",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/columns"
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/sheets/{sheetId}/columns/{columnId}": {
+      "get": {
+        "description": "Get One Column in Sheet",
+        "x-ntx-summary": "Get Column",
+        "operationId": "getColumn",
+        "parameters": [
+          {
+            "name": "sheetId",
+            "in": "path",
+            "description": "Sheet ID",
+            "type": "integer",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getSheets",
+              "value-collection": "data",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          },
+          {
+            "name": "columnId",
+            "in": "path",
+            "description": "Column Name",
+            "type": "string",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getColumns",
+              "value-collection": "data",
+              "value-path": "id",
+              "value-title": "title"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/column"
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/sheets/{sheetId}/rows/{rowId}": {
+      "get": {
+        "description": "Gets the information from the row specified.",
+        "operationId": "getRow",
+        "x-ntx-summary": "Get Row",
+        "parameters": [
+          {
+            "name": "sheetId",
+            "in": "path",
+            "description": "Sheet Name",
+            "type": "integer",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getSheets",
+              "value-collection": "data",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          },
+          {
+            "name": "rowId",
+            "in": "path",
+            "description": "Row ID",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "rowFlags",
+            "in": "query",
+            "description": "Optional Parameters (Comma-Separated)",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Call",
+            "schema": {
+              "$ref": "#/definitions/row"
+            }
+          },
+          "400": {
+            "description": "nononononononono"
+          }
+        }
+      }
+    },
+    "/sheets/{sheetId}/rows/{rowId}/attachments": {
+      "post": {
+        "description": "Add Attachment To Row",
+        "operationId": "attachToRow",
+        "x-ntx-summary": "Add Attachment to Row",
+        "parameters": [
+          {
+            "name": "sheetId",
+            "in": "path",
+            "description": "Sheet ID",
+            "type": "integer",
+            "required": true,
+            "x-ntx-dynamic-values": {
+              "operationId": "getSheets",
+              "value-collection": "data",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          },
+          {
+            "name": "rowId",
+            "in": "path",
+            "description": "Row ID",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "file",
+            "type": "file",
+            "required": true,
+            "description": "The file to attach."
+          }
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Call",
+            "schema": {
+              "$ref": "#/definitions/attachResults"
+            }
+          },
+          "400": {
+            "description": "None shall pass"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "sheets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "columns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/column"
+            }
+          }
+        }
+      }
+    },
+    "column": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/row"
+            }
+          }
+        }
+      }
+    },
+    "row": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "rowNumber": {
+          "type": "integer"
+        },
+        "cells": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/cells"
+          }
+        }
+      }
+    },
+    "cells": {
+      "type": "object",
+      "properties": {
+        "columnID": {
+          "type": "integer"
+        },
+        "value": {
+          "type": "string"
+        },
+        "displayValue": {
+          "type": "string"
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "attachResults": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "resultCode": {
+          "type": "integer"
+        },
+        "result": {
+          "$ref": "#/definitions/result"
+        },
+        "version": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

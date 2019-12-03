@@ -1,0 +1,99 @@
+<Process Id="457" Name="Supplier/Vendor Approval" ReferenceNo="" Objective="Approval of new Suppliers/Vendors for Safalo" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Malcom Tollemache" OwnerId="46" Expert="Malcom Tollemache" ExpertId="46" Group="Finance" GroupId="2" GroupUniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" State="Active" StateId="1" Version="5.0" PromappVersion="4.6.1.9" UniqueId="e83f67b0-2dd6-4779-bbac-b04c3e81033f" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="2" UniqueId="111d1080-551e-441e-90ac-8e0f044bb0f9" Name="Finance" ProcessGroupItemId="3752" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="10158" UniqueId="b6a80099-5f02-b026-fa8f-749b9ef12563" Number="1.0" Order="0">
+      <Text>New Vendor Request Received</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="10159" UniqueId="d9ab574f-852b-02fe-b753-1b1dc5ebc535" Number="2.0" Order="1">
+      <Text>Check Known Vendor List</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="10160" UniqueId="8287f03c-170c-f7f0-9750-597d609bf2de" Number="3.0" Order="2" ParallelGroupingRef="1">
+      <Text>Known/Previous Vendor</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="10161" UniqueId="956d62bc-affe-886b-e765-a3ff0c734315" Number="3.1" Order="3" ParallelGroupingRef="1">
+      <Text>New Vendor</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Decision Id="10162" UniqueId="0d6c990c-d4d4-cae2-6a62-c84a19fb0eb6" Number="0.0" Order="4" DecisionLinkIsYes="false" DecisionLinkType="Activity">
+      <Text>Finance Manager Approval</Text>
+      <Ownerships>
+        <Role Id="6" Name="Finance Manager" IsVirtual="false" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="10163" UniqueId="820728a0-8daa-ab3f-d894-4ed1cbd89ef0" Number="4.0" Order="5" LinkedDecisionUniqueId="0d6c990c-d4d4-cae2-6a62-c84a19fb0eb6">
+      <Text>Notify Submitter of Denial</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="10168" UniqueId="07553175-845f-eb9f-1c04-2aaa8b830481" Number="5.0" Order="6">
+      <Text>Add to Approved Vendor List</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Decision Id="10167" UniqueId="cf9aca50-a0f7-ec02-31ff-32241fe2f319" Number="0.0" Order="7" LinkedProcessId="454" DecisionLinkIsYes="true" DecisionLinkType="ProcessLink" LinkedProcessName="Onboarding" LinkedProcessUniqueId="0388a310-54cc-4dfa-a5ea-be71f75d3f93">
+      <Text>Was the request part of an onboarding or requisition request?</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+        <DecisionOrphanRole Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2h 50m" LeadTimeDisplay="2.6w" ProportionOfTimeInTotal="0.00000000000" ProcessProcedureCost="162.76" />
+    </Decision>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="454" Link="Onboarding" Owner="Richard Roe" Expert="Martin Banks" ProcessGroup="Vendor Onboarding" />
+    <LinkedStakeholder ProcessId="469" Link="Onboarding :: test" Owner="Richard Roe" Expert="Martin Banks" ProcessGroup="Vendor Onboarding" />
+    <LinkedStakeholder ProcessId="468" Link="Vendor Onboarding" Owner="Richard Roe" Expert="Martin Banks" ProcessGroup="Finance" />
+    <LinkedStakeholder ProcessId="495" Link="Vendor Onboarding - Processfest Keynote" Owner="Richard Roe" Expert="Martin Banks" ProcessGroup="Finance" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3332" PublishedDate="2019-06-19T03:13:18.21Z" PublisherId="1055" Publisher="Martin Banks" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-10-18T22:45:27.6675953Z" />
+    <MetadataItem Name="CachedOn" Value="2019-10-18T22:45:27.6675953Z" />
+  </Metadata>
+</Process>
