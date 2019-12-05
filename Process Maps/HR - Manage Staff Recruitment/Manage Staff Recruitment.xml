@@ -1,0 +1,2019 @@
+<ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" Objective="To describe the procedures involved in the recruitment of staff, both new and replacement." Background="" PromappVersion="4.6.2.14" Champion="Needs to be reassigned N/A" ChampionId="2">
+  <ProcessGroupProcedures>
+    <ProcessLink Id="1054" UniqueId="3e46d9a8-8e99-4f1a-84c6-67fc196ecd18" Number="0.0" Order="0" LinkedProcessId="32" LinkedProcessName="Obtain approval for and plan recruitment " LinkedProcessUniqueId="ef06aa8a-67a6-409c-9b3a-847132f9cc48">
+      <Text>Obtain approval for and plan recruitment </Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="1055" UniqueId="c997000f-c993-4df5-9b89-3c101f705a6a" Number="0.0" Order="1" LinkedProcessId="36" LinkedProcessName="Review applications and shortlist interviewees" LinkedProcessUniqueId="9b6b9d6f-5b37-4c7b-babd-7dc484b6cffc">
+      <Text>Review applications and shortlist interviewees</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="1056" UniqueId="fb300f24-c2fa-4469-85d0-4f0c2e217d30" Number="0.0" Order="2" LinkedProcessId="33" LinkedProcessName="Carry out interviews" LinkedProcessUniqueId="729863a4-d059-4357-abd1-d4dc48855584">
+      <Text>Carry out interviews</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="1057" UniqueId="90044afe-f4f1-451e-a5b8-eefee4372315" Number="0.0" Order="3" LinkedProcessId="34" LinkedProcessName="Carry out reference checks for potential candidates " LinkedProcessUniqueId="4274aed5-9170-47b5-849a-a93050ab9851">
+      <Text>Carry out reference checks for potential candidates </Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="1058" UniqueId="2681c8b0-60d3-4944-8861-b37a6b735696" Number="0.0" Order="4" LinkedProcessId="35" LinkedProcessName="Make offer of employment" LinkedProcessUniqueId="ded4a080-7e79-45bd-8a2d-1b580c5e8a3d">
+      <Text>Make offer of employment</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="1059" UniqueId="c97893ff-79b0-4b08-ad2b-51f9f4ac374c" Number="0.0" Order="5" LinkedProcessId="37" LinkedProcessName="Set up new starter" LinkedProcessUniqueId="1de0ce42-11ba-42ec-ad91-9cf25a454e86">
+      <Text>Set up new starter</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+  </ProcessGroupProcedures>
+  <ProcessGroupItems>
+    <Process Id="1724" Name="Advertise Position" ReferenceNo="" Objective="To promote an identified vacancy within the business to effectively attract suitable candidates.|~||~|REVISED:  John Doe, Human Resource Manager (5 Mar 2015)|~|APPROVED BY:  Jane Doe, Human Resource Advisor/Executive Support  (17 Feb 2011)" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="33d25546-4761-44a3-b9a3-2285ad14c157" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11183" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="2143" Trigger="Position beomes available" Frequency="Ad hoc" Volume="N/A" UniqueId="f3435068-6e4a-453d-ac00-9fbf441913dd" />
+      </Triggers>
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="87105" UniqueId="b96ea800-26b1-4f83-b6f0-9b71fd657b2b" Number="1.0" Order="0">
+          <Text>Validate Role Requirements </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87106" UniqueId="9eb6d51d-f2c5-4cfd-aeab-fdab6147dd37" Order="1" Number="1.0.1">
+              <Text>Discuss with the Department Manager position requirements of the position</Text>
+            </Task>
+            <Task Id="87107" UniqueId="35914924-3d2a-4533-ac35-6921c42e7ea7" Order="2" Number="1.0.2">
+              <Text>Ascertain the qualifications, skills and experience required for the position</Text>
+            </Task>
+            <Task Id="87108" UniqueId="15c20a18-1768-45ee-871b-9ab51d81d7f7" Order="3" Number="1.0.3">
+              <Text>If there is an existing position description, validate it against the identified requirements and update as necessary</Text>
+            </Task>
+            <Task Id="87109" UniqueId="54b2c493-53b9-4a56-b5e8-70660236d839" Order="4" Number="1.0.4">
+              <Text>Undertake a final quality assurance process of the draft position description prior to advertising</Text>
+            </Task>
+            <Task Id="87110" UniqueId="90ce540f-6a60-4ce4-a2b2-a3408cae6c73" Order="5" Number="1.0.5">
+              <Text>Reconfirm with the Department Manager that the position description and salary is correct</Text>
+            </Task>
+            <Note Id="87111" UniqueId="0dcc266e-f130-4acb-b249-3e5164e866b2" Order="6" Number="">
+              <Text>What if a new staff position is being advertised?</Text>
+              <Attachment>You must ensure that the salary benchmark is set against the budgeted requirements and is approved by the Chief Financial Officer and Chief Executive.</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87112" UniqueId="1d5c448d-0bf1-4992-b0f8-81d03a666a39" Number="2.0" Order="7">
+          <Text>Prepare Advertisement </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87113" UniqueId="771f6702-c2a8-4a61-b2d1-ad228cc814e2" Order="8" Number="2.0.1">
+              <Text>Determine the most appropriate mediums to use</Text>
+            </Task>
+            <Note Id="87114" UniqueId="a0f2e17f-aed0-4ba6-bf17-b0c473e67080" Order="9" Number="">
+              <Text> Which medium should be used?</Text>
+              <Attachment>Choose an advertising medium that is likely to attract the preferred type of candidate for the role in question.|~||~|Advertise on our council website.|~||~|Trade Me, Seek, and local newspapers are used for all advertisements.  For medium to higher level jobs, the Local Government website (SOLGM) website will also be utilised.</Attachment>
+            </Note>
+            <WebLink Id="87115" UniqueId="e235b70c-2029-4915-9353-ed2a52cf6638" Order="10" Number="">
+              <Text>Local Government Login</Text>
+              <Attachment>http://www.localgovernmentcareers.govt.nz/</Attachment>
+            </WebLink>
+            <Task Id="87116" UniqueId="abde0df7-10e0-4d15-915d-96688f38a4a3" Order="11" Number="2.0.2">
+              <Text>In Word, draft and confirm advertisement with Manager</Text>
+            </Task>
+            <Note Id="87117" UniqueId="df48babc-88d3-4efd-a49f-2af9a6f4388a" Order="12" Number="">
+              <Text>Where do I save the advertisement?</Text>
+              <Attachment>Save it under the Human Resources Administration:  Recruitment and Selection using the container Recruitment Administration Advertising 20YY/YY.  This is a secured container.</Attachment>
+            </Note>
+            <Task Id="87118" UniqueId="8f9a8b1a-0dde-4d67-930c-7a2b4a702dc5" Order="13" Number="2.0.3">
+              <Text>Prepare copy for the advertisement</Text>
+            </Task>
+            <Note Id="87119" UniqueId="a7c4297a-bef2-452f-bf51-987abd9bd2ee" Order="14" Number="">
+              <Text>Who are the preferred online recruitment suppliers?</Text>
+              <Attachment>We prefer to use seek.co.nz and/or trademe.co.nz for online recruitment.</Attachment>
+            </Note>
+            <WebLink Id="87120" UniqueId="1cb60a23-2d45-41ce-ac2d-2183f74ddb3f" Order="15" Number="">
+              <Text>Seek</Text>
+              <Attachment>http://www.seek.co.nz</Attachment>
+            </WebLink>
+            <WebLink Id="87121" UniqueId="2516115f-6fea-4a92-9dcc-d75f3a486223" Order="16" Number="">
+              <Text>Job Search</Text>
+              <Attachment>http://www.trademe.co.nz</Attachment>
+            </WebLink>
+            <Note Id="87122" UniqueId="321e4c4e-a9bc-428f-85c1-f91c1172dc60" Order="17" Number="">
+              <Text>Who are the preferred print suppliers?</Text>
+              <Attachment>We always advertise in the free local newspaper (XYZ Newspaper via ABC Advertising [contact details removed])</Attachment>
+            </Note>
+            <WebLink Id="87123" UniqueId="431c0eee-43a0-4a22-ac76-ce68a0ae911c" Order="18" Number="">
+              <Text>ABC Advertising</Text>
+              <Attachment>http://www.fueladvertising.co.nz</Attachment>
+            </WebLink>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87124" UniqueId="02d86b0d-8e66-4181-9d90-cf653110c076" Number="3.0" Order="19">
+          <Text>Submit Advertisement </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87125" UniqueId="2e6f2ab9-432c-4dea-93f0-ea1ff8f49240" Order="20" Number="3.0.1">
+              <Text>Send details of the advertisment to ABC Advertising with instructions for placement of advertisement</Text>
+            </Task>
+            <Task Id="87126" UniqueId="2f575568-dd2b-4dc0-a2db-b63110fee471" Order="21" Number="3.0.2">
+              <Text>Once the advertisement has been mocked up and returned via email, check the proof and either approve or request changes</Text>
+            </Task>
+            <Task Id="87127" UniqueId="77a76e63-afc7-4ce7-894c-71a15adf15cb" Order="22" Number="3.0.3">
+              <Text>On acceptance of advertisement, provide purchase order number to agency</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87128" UniqueId="9896cb33-2f7e-4b4d-b3b2-3c64b8970199" Number="4.0" Order="23">
+          <Text>Submit Details for Posting on Council's Website</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87129" UniqueId="0ff50f14-2d2e-4c4f-b6f6-9e6f7327cb8b" Order="24" Number="4.0.1">
+              <Text>Create an IS Request, attach the advertisement, job description and application form for the advertisement to be placed on the Council website</Text>
+            </Task>
+            <Note Id="87131" UniqueId="0bc6b61b-44a9-43af-915c-7868345ffdc4" Order="25" Number="">
+              <Text>Is the Web Administrator here everyday?</Text>
+              <Attachment>No, generally he is here only Wednesdays and Fridays.</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87134" UniqueId="f8f9cb54-f81e-4471-b383-61813b237262" Number="5.0" Order="26">
+          <Text>Prepare Information Pack for Customer Services</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87137" UniqueId="275fe68e-e6d3-4cc6-9dc7-12e11438550a" Order="27" Number="5.0.1">
+              <Text>Create 3 Packs made up of hard copies of the advertisement, position description and application form</Text>
+            </Task>
+            <Note Id="87140" UniqueId="f5f58a1b-324e-4fbb-b5ba-fda5bf16d443" Order="28" Number="">
+              <Text> What is the information pack used for?</Text>
+              <Attachment>When potential candidates approach the Council, a copy of the electronic documents can be emailed through.</Attachment>
+            </Note>
+            <Task Id="87142" UniqueId="00192e52-fd49-47a8-8b31-a2e65a5d8a63" Order="29" Number="5.0.2">
+              <Text>Give the Information Packs to Customer Services Team Leader for distribution to other centres</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87144" UniqueId="9ae48ed8-df4a-47ff-8efd-9b7d9c71009d" Number="6.0" Order="30">
+          <Text>Track Enquiries </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87147" UniqueId="1cfaa9bb-26d7-4a1e-9e2d-f48d213964b3" Order="31" Number="6.0.1">
+              <Text>Respond to any interest generated with an information pack (electronic, post or fax)</Text>
+            </Task>
+            <Task Id="87149" UniqueId="0be1d393-6ba4-4592-8499-b27dfc3e035d" Order="32" Number="6.0.2">
+              <Text>Advise Manager as applications are received</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87152" UniqueId="16cce302-7b07-49a4-bbb4-c5ad538afbaf" Number="7.0" Order="33">
+          <Text>Collate Applications </Text>
+          <Ownerships>
+            <Role Id="543" Name="Payroll" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87154" UniqueId="b7018257-bc0f-4ca7-87f9-18dffcdc5ef0" Order="34" Number="7.0.1">
+              <Text>Collect responses together in a unique folder for the position</Text>
+            </Task>
+            <Task Id="87157" UniqueId="79569ce2-a989-4746-86dc-e7816133a067" Order="35" Number="7.0.2">
+              <Text>Respond to every application with a confirmation email</Text>
+            </Task>
+            <Note Id="87159" UniqueId="021ee613-f104-459f-a932-988e8fcd14b8" Order="36" Number="">
+              <Text> What if the person has not provided an email address, or the email bounces?</Text>
+              <Attachment>Check email address, otherwise respond in writing if no email address is supplied.</Attachment>
+            </Note>
+            <Task Id="87161" UniqueId="1968b7f8-0088-4a93-b3db-feeb15325175" Order="37" Number="7.0.3">
+              <Text>When close-off date has arrived, give the applications to the Manager for their review</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87164" UniqueId="24cd95ba-7142-408e-bafa-84bddda1c53b" Number="0.0" Order="38">
+          <Text>[PROCESS LINK]: Select Candidate</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="1716" Output="New employee" HowUsed="To fill a vacant position" ToProcess="N/A" UniqueId="3cfcd642-fc0a-4fa9-adbf-c3d83ffdd7a6" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="1728" Link="Select Candidate" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets>
+        <Target Id="721" Measure="Targeted number of applicants required" Target="Ensure at least five applicants are interviewed for each position within three weeks of advert going out." UniqueId="6da5e850-5210-40ea-94de-cfde0e25bc3a" />
+      </Targets>
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:37.6621826Z" />
+      </Metadata>
+    </Process>
+    <Process Id="33" Name="Carry out interviews" ReferenceNo="" Objective="To ensure that all potential candidates follow a standardised interview process and to reduce the risk and staff turnover to  " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="To ensure a fair and honest process to all candidates and subsequent employees to C" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="729863a4-d059-4357-abd1-d4dc48855584" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11301" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="30" Trigger="Shortlist from recruitment process" Frequency="all recruitment processes" Volume="as required" UniqueId="3c7e20f6-febf-4f8e-8b40-58f9daa202a1" />
+      </Triggers>
+      <Inputs>
+        <Input Id="25" FromProcess="recruitment process" Resource="shortlist of candiates" HowUsed="to identify the best person for the vacancy" UniqueId="a4640f59-74d2-40c0-b3b3-9725b5b956bd" />
+      </Inputs>
+      <ProcessProcedures>
+        <Activity Id="934" UniqueId="ac602775-705f-40eb-b4ee-6ddfba3f2407" Number="1.0" Order="0">
+          <Text>[PROCESS LINK]: Review applications and shortlist interviewees</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="935" UniqueId="9b8d206e-52fb-47c1-8d41-5c8082b03bbe" Number="2.0" Order="1">
+          <Text>Arrange interviews</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="936" UniqueId="eb02ae20-0a2f-4570-8a91-1b74b2a358a5" Order="2" Number="2.0.1">
+              <Text>Send an appointment to each panel member's calendar</Text>
+            </Task>
+            <Task Id="937" UniqueId="685edbd2-7ebd-41d0-9eeb-a9ca6627df0e" Order="3" Number="2.0.2">
+              <Text>Call applicants and invite to attend an interview</Text>
+            </Task>
+            <Task Id="938" UniqueId="636c86e5-5604-4795-a5b3-d6b97eb626e8" Order="4" Number="2.0.3">
+              <Text>Book a meeting room</Text>
+            </Task>
+            <Task Id="939" UniqueId="3c5ecca8-c740-4313-9417-2064e15bc601" Order="5" Number="2.0.4">
+              <Text>Confirm the interview by e-mail</Text>
+            </Task>
+            <Task Id="940" UniqueId="0e266f74-1b74-445c-b1f2-e9f3a9bf3923" Order="6" Number="2.0.5">
+              <Text>Inform CDO's of any external candidates and the times due</Text>
+            </Task>
+            <Task Id="941" UniqueId="36d8035c-b9b0-4517-a02d-95b7c91275e7" Order="7" Number="2.0.6">
+              <Text>Confirm with the panel who will be asking what question during the interview</Text>
+            </Task>
+            <Task Id="942" UniqueId="01180a56-3f31-45dc-9576-4fe166e27994" Order="8" Number="2.0.7">
+              <Text>Prepare an interview pack for each panel member containing a timetable, set of interview questions per candidate and a copy of their CV</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="943" UniqueId="6b3f7c3a-4e44-4582-bb0f-3bdaad0e7f21" Number="3.0" Order="9">
+          <Text>Hold interviews</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="944" UniqueId="75028044-a38f-480e-aeb7-cbda8ecb56da" Order="10" Number="3.0.1">
+              <Text>Each person on the panel should take notes as appropriate.  </Text>
+            </Task>
+            <Note Id="945" UniqueId="be86be5a-9dff-480f-90d5-36f25539ea09" Order="11" Number="">
+              <Text>Things to remember when taking notes</Text>
+              <Attachment>Be aware that an applicant can ask to see these notes if they wish</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="946" UniqueId="8522cf2a-d53b-4c9e-8a84-5cfdba5ef7e3" Number="4.0" Order="12">
+          <Text>Score interviews</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="947" UniqueId="5f139d7d-d11f-4fd4-b581-d2cc9974891b" Order="13" Number="4.0.1">
+              <Text>Give each answer a score on each persons interview and add up to reach a total.  The highest score is the successful applicant.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="948" UniqueId="7a21ee47-08df-4c37-8e18-f46a67fb8e2a" Number="5.0" Order="14">
+          <Text>[PROCESS LINK]: Carry out reference checks for potential candidates </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="31" Output="Questions answered on verification of candidate" HowUsed="To chose the successful candidate" ToProcess="Make an offer of employment" UniqueId="e9b583e1-b74f-40f1-83e7-265d2e59017d" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="34" Link="Carry out reference checks for potential candidates " Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+        <LinkedStakeholder ProcessId="36" Link="Review applications and shortlist interviewees" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:37.7394621Z" />
+      </Metadata>
+    </Process>
+    <Process Id="34" Name="Carry out reference checks for potential candidates " ReferenceNo="" Objective="To ensure that all potential candidates follow a standardised recruitment process, that any specific areas of an individual's past needs clarification and to review the individual's 'council fit' using its values and visions before an offer of employment is made." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="To check employment history and work behaviour's of short listed candidates to reduce risk of employing the wrong people" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="4274aed5-9170-47b5-849a-a93050ab9851" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11308" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="31" Trigger="Shortlisted candidates identified through the recruitment process" Frequency="adhoc" Volume="up to 2 per recruitment process" UniqueId="1cfc8494-b355-4881-9e8f-4f2de46762b9" />
+      </Triggers>
+      <Inputs>
+        <Input Id="26" FromProcess="Interview process" Resource="Suitable candidate identified " HowUsed="Interview process completed" UniqueId="77a1d3fe-f7a8-4f29-a35a-d4496e985641" />
+      </Inputs>
+      <ProcessProcedures>
+        <ProcessLink Id="949" UniqueId="cb7f4874-d0ed-457b-8d30-63727f738dfb" Number="0.0" Order="0" LinkedProcessId="33" LinkedProcessName="Carry out interviews" LinkedProcessUniqueId="729863a4-d059-4357-abd1-d4dc48855584">
+          <Text>Carry out interviews</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+        </ProcessLink>
+        <Activity Id="950" UniqueId="1e711bb0-418f-43b3-92d4-6e5fccbe7136" Number="1.0" Order="1">
+          <Text>Request applicants approval to call referees</Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="951" UniqueId="25b026cc-7fda-4f93-9b41-d60f6ba7b8a5" Order="2" Number="1.0.1">
+              <Text>Contact applicant and confirm that they are happy for you to contact referees</Text>
+            </Task>
+            <Note Id="952" UniqueId="0f8feda8-d6e3-46bb-af45-c1a8e77d38ee" Order="3" Number="">
+              <Text>Who do you carry out reference checks on?</Text>
+              <Attachment>We only carry out reference checks on candidates who are successful in the first step of the selection process and who the recruiting manager is seriously considering as the suitable candidate.  </Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="953" UniqueId="a25db0a0-a968-42e4-9572-db5db98cc6ef" Number="2.0" Order="4">
+          <Text>Contact referees</Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="954" UniqueId="5af22894-5075-4f49-81d6-09c898120c14" Order="5" Number="2.0.1">
+              <Text>Contact the applicant's last manager.</Text>
+            </Task>
+            <Task Id="955" UniqueId="d4903322-39bc-4147-98f4-5db972c9ef25" Order="6" Number="2.0.2">
+              <Text>Contact a manager or colleague from a recent position.</Text>
+            </Task>
+            <Task Id="956" UniqueId="a3a40f7d-bd14-4522-b7e8-ada75a7a8e13" Order="7" Number="2.0.3">
+              <Text>Complete the reference check form whilst on the phone with the referee (or e-mail the form if they cannot do the check straight away)</Text>
+            </Task>
+            <Task Id="957" UniqueId="1fd73c53-0b2d-4849-a5d2-5ef0ea6c660a" Order="8" Number="2.0.4">
+              <Text>[FORM]: Telephone Reference Check Form.x</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="958" UniqueId="77770ea5-7b96-44e5-84fd-53f9da72b7d1" Number="3.0" Order="9">
+          <Text>Give the completed form to HR Advisor</Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="959" UniqueId="8eca8c13-4814-4299-9b1c-7564eaae6e9e" Order="10" Number="3.0.1">
+              <Text>Discuss the outcome of the reference checks as appropriate.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="960" UniqueId="60cf8dac-a824-49f0-a715-1a74ac225e51" Number="4.0" Order="11">
+          <Text>Place completed reference check with applicant's interview notes</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="961" UniqueId="de7d1077-b75f-4684-afbb-a22655ad96bc" Number="5.0" Order="12">
+          <Text>Make a decision </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="962" UniqueId="5dc47a0f-3205-4236-81c9-e0a37233f9b5" Order="13" Number="5.0.1">
+              <Text>Consider the scores from the short-listing grid, interview scores and referee feedback and make a decision on who is the best candidate</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="963" UniqueId="f09be897-0aca-41cf-9ed9-2c59daa09fd6" Number="6.0" Order="14">
+          <Text>[PROCESS LINK]: Make offer of employment</Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="32" Output="Increased knowledge of candidates" HowUsed="Used to assist in the decision making process to identify the suitable candidate " ToProcess="Making an offer of employment" UniqueId="87b1ac10-6fe7-4a6a-a3c6-811ba8dc330d" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="33" Link="Carry out interviews" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+        <LinkedStakeholder ProcessId="35" Link="Make offer of employment" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets>
+        <Target Id="22" Measure="Each person who is offered employment at WDC has had a reference check " Target="All" UniqueId="96ee507c-b828-4296-905c-150cf3dc8a77" />
+      </Targets>
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:37.8019740Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1725" Name="Induction Week" ReferenceNo="" Objective="Successful and planned week one introduction of a new staff member" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="c1b8b04a-080e-462c-819f-1b193d053386" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11652" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="87187" UniqueId="f4013f0b-a464-4b0e-8df8-abaaeeaa61c5" Number="1.0" Order="0">
+          <Text>Meet at Door</Text>
+          <Ownerships>
+            <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87188" UniqueId="6fd1a16c-bdc2-48be-8d9b-71b00a3f2e7a" Order="1" Number="1.0.1">
+              <Text>At the pre-allotted time the assigned mentor will meet the new staff member at the reception area</Text>
+            </Task>
+            <Task Id="87189" UniqueId="26e2565f-93d7-4ef9-a8dd-c1b82385f813" Order="2" Number="1.0.2">
+              <Text>Tour of the building introducing to staff in at work that day</Text>
+            </Task>
+            <Task Id="87190" UniqueId="2bc7e737-5d1a-44d6-8834-3bfc49736862" Order="3" Number="1.0.3">
+              <Text>Take to their manager for introductions to team</Text>
+            </Task>
+            <Task Id="87191" UniqueId="4a4fbbc2-52bc-46dd-adcd-e2255c08c0a0" Order="4" Number="1.0.4">
+              <Text>Set up desk top support with IT</Text>
+            </Task>
+            <Task Id="87192" UniqueId="da94dd2f-9578-4bb4-979a-4053e7f24ce4" Order="5" Number="1.0.5">
+              <Text>Meet with IT Projects to set up with building access, both with key tag, alarm system and security protocol</Text>
+            </Task>
+            <Task Id="87193" UniqueId="5f7712dc-e94a-4df6-a6a8-e94756bf7725" Order="6" Number="1.0.6">
+              <Text>Meet with Human Resource Manager</Text>
+            </Task>
+            <Task Id="87194" UniqueId="0cc88706-bc90-44e5-aef2-fc5a81088197" Order="7" Number="1.0.7">
+              <Text>Meet with Payroll Administrator to establish payroll requirements</Text>
+            </Task>
+            <Task Id="87195" UniqueId="18fd1b05-80ad-488f-99f0-6b849879f0b8" Order="8" Number="1.0.8">
+              <Text>Morning tea with team</Text>
+            </Task>
+            <Task Id="87196" UniqueId="efe224e1-b78e-4283-a2ce-9aa4502dfb64" Order="9" Number="1.0.9">
+              <Text>Follow schedule in Calendar</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:37.8332615Z" />
+      </Metadata>
+    </Process>
+    <Process Id="35" Name="Make offer of employment" ReferenceNo="" Objective="To make an offer of employment to the successful candidate of a recruitment process" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Part of the recruitment process to secure a new member of staff to council  " Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="ded4a080-7e79-45bd-8a2d-1b580c5e8a3d" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11846" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="32" Trigger="Suitable candidate identified" Frequency="adhoc" Volume="1 per recruitment process" UniqueId="47a97174-18f6-45eb-8117-269f01356a54" />
+      </Triggers>
+      <Inputs>
+        <Input Id="27" FromProcess="Recruitment Interviewing &amp; Selection " Resource="GM approval of candidate for the position " HowUsed="." UniqueId="6968028a-34e2-41b2-a138-55cea8b59f65" />
+      </Inputs>
+      <ProcessProcedures>
+        <ProcessLink Id="964" UniqueId="73309ac7-c5aa-48b0-adca-5e0ba07ef03d" Number="0.0" Order="0" LinkedProcessId="34" LinkedProcessName="Carry out reference checks for potential candidates " LinkedProcessUniqueId="4274aed5-9170-47b5-849a-a93050ab9851">
+          <Text>Carry out reference checks for potential candidates </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+        </ProcessLink>
+        <Activity Id="965" UniqueId="95daae3c-a595-4259-9e7c-b5fab4e53fea" Number="1.0" Order="1">
+          <Text>Confirm appropriate remuneration package</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="966" UniqueId="ed281603-fc38-47e7-bb92-cadbd736dffc" Order="2" Number="1.0.1">
+              <Text>Confirm performance % to be offered</Text>
+            </Task>
+            <Task Id="967" UniqueId="5ed98c8a-c7be-40ba-9cc5-1662501aac8d" Order="3" Number="1.0.2">
+              <Text>Refer to Rumuneration Policy as required</Text>
+            </Task>
+            <Task Id="968" UniqueId="044f2b4d-fc58-49f1-bd81-e695ed94344b" Order="4" Number="1.0.3">
+              <Text>[POLICY]: Remuneration Policy (under review).</Text>
+            </Task>
+            <Task Id="969" UniqueId="57fc560d-a286-42c8-8a99-3fdbf4a483f6" Order="5" Number="1.0.4">
+              <Ownerships>
+                <Tag Id="2" Name="Authority" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Get GM authority to offer</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="970" UniqueId="e2bfc83c-a156-407b-9707-5a5c6a83d581" Number="2.0" Order="6">
+          <Text>Call successful candidate</Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="971" UniqueId="d22a2bec-2d97-4528-8cda-b47b904a46ff" Order="7" Number="2.0.1">
+              <Text>Make sure they are ok to speak, congratulate them and tell them you would like to offer them the position and the remuneration details</Text>
+            </Task>
+            <Task Id="972" UniqueId="f19cffaa-bc16-4aa6-9308-7b5255ccc543" Order="8" Number="2.0.2">
+              <Text>Ask what date they would be able to commence employment</Text>
+            </Task>
+            <Note Id="973" UniqueId="5e7d9d23-baaf-4e2a-ae85-9f5a06834d41" Order="9" Number="">
+              <Text>What if they do not know what date they can commence employment? </Text>
+              <Attachment>This does not matter at this stage, the offer letter can go out without this date confirmed, however the applicant should be asked to advise us of the date as soon as possible. </Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="974" UniqueId="6657b507-7770-4024-bec3-0df575e30f7f" Number="3.0" Order="10" ParallelGroupingRef="4">
+          <Text>If candidate says yes</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="975" UniqueId="2e1fc2ad-62e1-455e-bbb8-4f129dee3683" Order="11" Number="3.0.1">
+              <Text>Send written offer of employment pack</Text>
+            </Task>
+            <Note Id="976" UniqueId="ebeb65ba-7db2-4687-af4b-6793cb3c895b" Order="12" Number="">
+              <Text>What does an offer of employment pack contain?</Text>
+              <Attachment>A letter of offer|~|A copy of the Collective Agreement|~|An acceptance of the offer slip|~|A bank details form|~|A tax declaration form |~|A Kiwisaver pack including an opt out and deduction form  |~|A personal health register</Attachment>
+            </Note>
+            <Task Id="977" UniqueId="36692cf5-ffb4-449b-876b-7a8c0af710f4" Order="13" Number="3.0.2">
+              <Text>Add a diary note for 30 days to follow up on Collective Agreement</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="978" UniqueId="9c8af755-ea2c-4760-a04a-9860464cc888" Number="3.1" Order="14" ParallelGroupingRef="4">
+          <Text>If candidate says no</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="979" UniqueId="c01d89d4-c861-4ede-b2e7-90c5825a4688" Order="15" Number="3.1.1">
+              <Text>Return to the shortlist of candidates and review suitability of second choice</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="980" UniqueId="41e0f0cf-fe46-4ff8-a39c-af88cf6881e3" Number="4.0" Order="16">
+          <Text>Negotiate salary if required</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="981" UniqueId="13cd93cb-5b3a-4cc4-8077-6fbec3fdbf8b" Order="17" Number="4.0.1">
+              <Text>Review the % offered against the budget allocated </Text>
+            </Task>
+            <Task Id="982" UniqueId="f5351b78-1a3c-42e2-bd72-f5b8c3779619" Order="18" Number="4.0.2">
+              <Ownerships>
+                <Tag Id="2" Name="Authority" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Get authority from GM</Text>
+            </Task>
+            <Task Id="983" UniqueId="37c95e3f-3717-48ad-8d2e-033fb86ce845" Order="19" Number="4.0.3">
+              <Text>Discuss candidates attributes and match to the role.  </Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="984" UniqueId="723b6f34-4d41-43cb-9778-795f8d6a9142" Number="5.0" Order="20">
+          <Text>Call unsuccessful applicants </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="985" UniqueId="f85847f6-dc00-48f9-9e4a-c2e15c961127" Order="21" Number="5.0.1">
+              <Text>Once an offer has been excepted, contact all the other applicants to let them know they have been unsuccessful</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="986" UniqueId="ee5ae436-32d5-4060-bb43-a7ef72a53844" Number="6.0" Order="22">
+          <Text>Update Greg Tims </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="987" UniqueId="dec28e4f-6d36-4f5a-bdbc-e627b5d2029b" Order="23" Number="6.0.1">
+              <Text>Tell Greg Tims who you have appointed and give feedback on the others that you interviewed</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="988" UniqueId="cd03ee01-565a-451e-8e6e-574bdad46b98" Number="7.0" Order="24">
+          <Text>[PROCESS LINK]: Set up new starter</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="33" Output="New starter confirmed, Offer accepted " HowUsed="Used to fill a vacancy " ToProcess="Induction " UniqueId="5f94d3cb-747c-497d-858e-d65182bf00a4" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="34" Link="Carry out reference checks for potential candidates " Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+        <LinkedStakeholder ProcessId="38" Link="Manage Employment Agreement Process" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Human Resources" />
+        <LinkedStakeholder ProcessId="37" Link="Set up new starter" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+      </SystemStakeholders>
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:37.9113819Z" />
+      </Metadata>
+    </Process>
+    <Process Id="32" Name="Obtain approval for and plan recruitment " ReferenceNo="" Objective="To obtain the best person to fit a job, which will contribute towards the effectiveness of C.|~|To protect council adhere to employment law through all recruitment. To ensure that all recruitment process are effective and suitable candidates are offered positions.  To ensure that all communication throughout a recruitment process is a positive experience.  " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="To attract potential employees who have the relevant skills, personal attributes, qualifications and experience to make a positive contribution at C. |~||~|To protect council whilst adhering to employment law through all recruitment. To ensure that all recruitment process are effective and suitable candidates are offered positions.  To ensure that all communication throughout a recruitment process is a positive experience.  |~||~|To ensure a standardised process is followed through council with the aim to successfully recruit good candidates who are a council fit and who will adhere to councils visions and values" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="ef06aa8a-67a6-409c-9b3a-847132f9cc48" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11744" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="29" Trigger="Person resigns, new position developed" Frequency="adhoc" Volume="40 per year" UniqueId="0b947dfd-865f-4077-9797-7a50c9e669cf" />
+      </Triggers>
+      <Inputs>
+        <Input Id="24" FromProcess="Resigion, Business case development" Resource="Approval to recruit" HowUsed="n/a" UniqueId="9685603e-6499-48b6-9cb9-fb3848324521" />
+      </Inputs>
+      <ProcessProcedures>
+        <Activity Id="903" UniqueId="491af9ba-4f85-48ed-b730-3af0e04865c0" Number="1.0" Order="0">
+          <Text>Identify need for recruitment</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="904" UniqueId="1f2114c3-e094-4bfb-828f-c36c1d5702ba" Order="1" Number="1.0.1">
+              <Text>Assess the position and person requirements</Text>
+            </Task>
+            <Note Id="905" UniqueId="065321da-97d7-4677-9ed9-ee237e371d65" Order="2" Number="">
+              <Text>Why do we need to recruit?</Text>
+              <Attachment>Recruitment arises when a new position is established and/or a resigion is received.</Attachment>
+            </Note>
+            <Note Id="906" UniqueId="abd5ec41-c0d5-490f-9d87-687772c51560" Order="3" Number="">
+              <Text>If no requirement for recruitment?</Text>
+              <Attachment>End process</Attachment>
+            </Note>
+            <Note Id="907" UniqueId="c10ff665-5c97-483b-a2df-6330ab6857da" Order="4" Number="">
+              <Text>Is this a new position?</Text>
+              <Attachment>Business case developed by manager and approved by ET|~|Job sizing process</Attachment>
+            </Note>
+            <Task Id="908" UniqueId="c3e5ab1c-7265-4da6-98df-9b3d9a0f3342" Order="5" Number="1.0.2">
+              <Text>Create, update or review position description with the Manager / Team Leader. Check Delegations Manual for appropriate delegations and include this in the position description</Text>
+            </Task>
+            <Task Id="909" UniqueId="5a57c10a-34cf-427e-9ab0-6f473abe1b6b" Order="6" Number="1.0.3">
+              <Text>[FORM]: warrants and delegations template.x</Text>
+            </Task>
+            <Task Id="910" UniqueId="6a0b540b-453b-4419-9375-bdf64a3fc787" Order="7" Number="1.0.4">
+              <Text>[FORM]: Position Description template generic.</Text>
+            </Task>
+            <Task Id="911" UniqueId="f5932f68-9af8-4be6-876c-7dd41fecd016" Order="8" Number="1.0.5">
+              <Text>[FORM]: Position Description Manager Template.</Text>
+            </Task>
+            <Task Id="912" UniqueId="ba5ff5b0-5dc0-42e9-b7e5-bd1862e8253b" Order="9" Number="1.0.6">
+              <Text>Send completed warrant and delegations form to the District Plan Administrator</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="913" UniqueId="c0069810-04e9-4f93-a10b-725c7ca74c36" Number="2.0" Order="10">
+          <Text>Complete business case for new positions </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="914" UniqueId="33d682b9-7116-4d3e-b560-60d6f602336a" Order="11" Number="2.0.1">
+              <Text>Complete business case template </Text>
+            </Task>
+            <Task Id="915" UniqueId="2312c44d-8a1d-4c37-a677-bdb9c05f6fdb" Order="12" Number="2.0.2">
+              <Text>[FORM]: Staff Resource Business Case Template.x</Text>
+            </Task>
+            <Task Id="916" UniqueId="09e858d9-1058-46ad-ae9a-82e6907c1e79" Order="13" Number="2.0.3">
+              <Text>Obtain approval from ET</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="917" UniqueId="653e3725-889f-41be-9f59-67d19e652d8f" Number="3.0" Order="14">
+          <Text>[CONDITIONAL PROCESS LINK]: Manage Request for Job Sizing</Text>
+          <Ownerships>
+            <Role Id="45" Name="Human Resources Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="918" UniqueId="83d23f5c-a545-42e9-b8ef-c9d487b48e8d" Number="4.0" Order="15">
+          <Text>Obtain approval</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="919" UniqueId="d88b2456-1b46-4c8d-8f0a-dee7357e722f" Order="16" Number="4.0.1">
+              <Text>Complete approval to recruit form and obtain approval from GM and CE before recruitment commences</Text>
+            </Task>
+            <Task Id="920" UniqueId="1732709b-3078-40cb-9ab9-7ebb323da85d" Order="17" Number="4.0.2">
+              <Text>[FORM]: Approval to Recruit Form.x</Text>
+            </Task>
+            <Note Id="921" UniqueId="29228172-b793-4680-b1c1-19e1bf730396" Order="18" Number="">
+              <Text>Is approval required?</Text>
+              <Attachment>Yes - approval is required for all positions at Council.</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="922" UniqueId="76f68e60-9faa-4c60-88a1-92bf6f7e3e67" Number="5.0" Order="19">
+          <Text>Plan recruitment</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="923" UniqueId="849ffb47-1079-4ef1-b4f0-9eef3bc3cd73" Order="20" Number="5.0.1">
+              <Text>Complete a recruitment plan to confirm the source of advertising, timeline, interview dates, short-listing attributes and service levels </Text>
+            </Task>
+            <Task Id="924" UniqueId="e917535a-bc36-4572-92e6-84875f0b42c0" Order="21" Number="5.0.2">
+              <Text>[FORM]: Recruitment Plan.x</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="925" UniqueId="07c71814-eae3-4f94-a951-df4d6694991c" Number="6.0" Order="22">
+          <Text>Advertise internally</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="926" UniqueId="0e504707-4932-43c3-b73d-fc8bd96051a6" Order="23" Number="6.0.1">
+              <Text>Create advertisement</Text>
+            </Task>
+            <Task Id="927" UniqueId="fbd22835-2d07-445a-8f58-243b4a1ddd46" Order="24" Number="6.0.2">
+              <Text>Advertise internally by e-mailing 'All staff'</Text>
+            </Task>
+            <Note Id="928" UniqueId="e5029cdf-2373-4278-9263-2536f4af77ad" Order="25" Number="">
+              <Text>Do we advertise all vacancies internally?</Text>
+              <Attachment>Yes, all vacancies will be advertised for at least 3 days</Attachment>
+            </Note>
+            <Task Id="929" UniqueId="6ab23a79-8703-42d4-903f-639a64593983" Order="26" Number="6.0.3">
+              <Text>New Task</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="930" UniqueId="ccfb8178-7f20-49ff-bff2-1241d7e5def6" Number="7.0" Order="27">
+          <Text>Advertise externally</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="931" UniqueId="33474fd1-153e-415e-83fc-237fb0ec8fa4" Order="28" Number="7.0.1">
+              <Text>Advertise externally by e-mailing Find your Place</Text>
+            </Task>
+            <Note Id="932" UniqueId="f0e6a6af-604d-41d0-97b8-67e7cdf6de4e" Order="29" Number="">
+              <Text>Do we advertise all vacancies externally?</Text>
+              <Attachment>No, only those positions authorised for external advertisement will be sent through Find your Place/G Timms.</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="933" UniqueId="32be58a7-d6d9-4ed3-8a93-da2ddff24aa6" Number="8.0" Order="30">
+          <Text>[PROCESS LINK]: Carry out interviews</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="646" Link="Manage Delegations Register" Owner="Needs to be reassigned N/A" Expert="Needs to be reassigned N/A" ProcessGroup="Delegations" />
+        <LinkedStakeholder ProcessId="39" Link="Manage Request for Job Sizing" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Human Resources" />
+        <LinkedStakeholder ProcessId="50" Link="Manage Staff Resigions" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Human Resources" />
+        <LinkedStakeholder ProcessId="647" Link="Request Change to Delegations" Owner="Needs to be reassigned N/A" Expert="Needs to be reassigned N/A" ProcessGroup="Delegations" />
+        <LinkedStakeholder ProcessId="36" Link="Review applications and shortlist interviewees" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:37.9812374Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1726" Name="Pre-Induction" ReferenceNo="" Objective="Setting up the Pre-Induction Process for new staff to [council name].|~||~|APPROVED BY:  John Doe, Human Resource Manager (5 Mar 2015)" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="a90248bb-b48e-410d-a5f9-2465d01d952c" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="11932" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="2144" Trigger="New employee appointed" Frequency="Ad Hoc" Volume="N/A" UniqueId="6b7ef405-c9b2-4efc-86d6-88a1f1a8aabf" />
+      </Triggers>
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="87221" UniqueId="4725319f-7ab6-4980-9240-2ae1bc2d088a" Number="1.0" Order="0">
+          <Text>Meet with Manager</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87222" UniqueId="20e8fb98-1251-4188-8ccc-fb3bbe0a4fa8" Order="1" Number="1.0.1">
+              <Text>Ascertain induction needs for new staff member</Text>
+            </Task>
+            <Note Id="87223" UniqueId="70b3aead-12e9-4979-bb5d-610e63f12aed" Order="2" Number="">
+              <Ownerships>
+                <Tag Id="2" Name="Authority" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>What do we need to determine?</Text>
+              <Attachment>IT software requirements e.g. Authority access requirements.|~|IT hardware requirements.|~|Building access requirements.|~|Do they need a vehicle?|~|Driver training.|~|On the job training.|~|Bylaw training.|~|Council policies.|~|Payroll.|~|Health &amp; Safety.|~|Civil Defence.|~|Do they need a warrant card?</Attachment>
+            </Note>
+            <Task Id="87224" UniqueId="9abf2efa-3cc2-4295-b285-96ed6dc51924" Order="3" Number="1.0.2">
+              <Text>Complete IT pre employment checklist</Text>
+            </Task>
+            <Note Id="87225" UniqueId="6dd50f0d-5e8d-459a-842d-5ba8ea5b7a66" Order="4" Number="">
+              <Ownerships>
+                <Tag Id="3" Name="TRIM" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>What is included on the IT checklist?</Text>
+              <Attachment>Start Date|~|Access requirements|~|Where they are sitting and in which building|~|Hardware required|~|TRIM security access|~|Software requirements</Attachment>
+            </Note>
+            <Task Id="87226" UniqueId="2fba3ffb-8798-445a-b1ae-23f9c50c7f1d" Order="5" Number="1.0.3">
+              <Text>Establish first two week time frame for induction </Text>
+            </Task>
+            <Task Id="87227" UniqueId="8a5a8453-6050-4e8a-afcd-669ee28158d5" Order="6" Number="1.0.4">
+              <Ownerships>
+                <Tag Id="3" Name="TRIM" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Photocopy first page and provide to Records to set up personnel container in TRIM</Text>
+            </Task>
+            <Task Id="87228" UniqueId="2825b656-4dde-486b-86a2-d75cc63f00ed" Order="7" Number="1.0.5">
+              <Text>Ascertain what personal protection equipment or uniform is required</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87229" UniqueId="0c7a1ffe-61b6-4082-a3de-fd8efc607e6d" Number="2.0" Order="8">
+          <Text>Set up Induction Timetable</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87230" UniqueId="2e64e493-40e0-46f3-a87b-5b9a06be11d6" Order="9" Number="2.0.1">
+              <Text>Check with manager first as to expectations for first week</Text>
+            </Task>
+            <Task Id="87231" UniqueId="4d384d6d-362d-4ec4-b56c-9822351a0f59" Order="10" Number="2.0.2">
+              <Text>Contact BA to establish IT training requirements and timetables</Text>
+            </Task>
+            <Task Id="87232" UniqueId="95f02cf0-6cd6-4743-b9b5-e0e9fd8141e3" Order="11" Number="2.0.3">
+              <Text>Schedule time to meet CE and mayor</Text>
+            </Task>
+            <Task Id="87233" UniqueId="df2b0cc1-aa4f-4148-86ac-5dd3f2d8d2b6" Order="12" Number="2.0.4">
+              <Text>Contact identified teams and staff members to schedule times for any meetings or on-the-job training</Text>
+            </Task>
+            <Task Id="87234" UniqueId="93015344-78c8-4c12-b084-1270996137d0" Order="13" Number="2.0.5">
+              <Ownerships>
+                <Tag Id="3" Name="TRIM" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Ensure timetable is saved into the employees container in TRIM</Text>
+            </Task>
+            <Task Id="87235" UniqueId="bbf46ad4-04cc-4894-8a36-f4226c686d5d" Order="14" Number="2.0.6">
+              <Text>Confirm with manager that the timetable meets their expectations and requirements</Text>
+            </Task>
+            <Task Id="87236" UniqueId="8c201e92-7edc-4c4b-826e-236415fbef7f" Order="15" Number="2.0.7">
+              <Ownerships>
+                <Tag Id="4" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>In Outlook, book any meetings and training time in the appropriate staff members calendars</Text>
+            </Task>
+            <Task Id="87237" UniqueId="4a853d9d-e1ff-41dd-8b90-35e5aba95bc6" Order="16" Number="2.0.8">
+              <Text>Confirm staff mentor</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="1717" Output="Successful Induction completed" HowUsed="New employee equipped to undertake role" ToProcess="New employee familiar with Council " UniqueId="5a2d4af2-88c5-42af-baf0-2875344ae85d" />
+      </Outputs>
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+      </SystemStakeholders>
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:38.0363877Z" />
+      </Metadata>
+    </Process>
+    <Process Id="30" Name="Prepare for and Carry Out Staff Induction" ReferenceNo="" Objective="To ensure all new employees complete initial induction with relevant departments and complete all the relevant paperwork to ensure that they are signed on to the payroll." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="To ensure all new employees complete initial induction with relevant departments and complete all the relevant paperwork to ensure that they are signed on to the payroll." Owner="Needs to be reassigned N/A" OwnerId="2" Expert="Needs to be reassigned N/A" ExpertId="2" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="1.0" PromappVersion="4.6.2.14" UniqueId="7d50078c-d78e-4253-ada0-6e85a9edfbf7" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="6443" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="28" Trigger="Offer of employment is accepted" Frequency="Adhoc" Volume="20" UniqueId="37730b95-a362-45e8-ab41-8713d5cbada2" />
+      </Triggers>
+      <Inputs>
+        <Input Id="23" FromProcess="Manage offer of employment" Resource="Receipt of signed acceptance form" HowUsed="Induction process" UniqueId="6fcc3625-7fca-4d2a-ac96-10b3b177e189" />
+      </Inputs>
+      <ProcessProcedures>
+        <Activity Id="858" UniqueId="18917502-0a58-4f4c-8600-0f7a4684342e" Number="1.0" Order="0">
+          <Text>[PROCESS LINK]: Set up new starter</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="859" UniqueId="06bb4a96-c61d-4ca5-adb0-3c229699ae5e" Number="2.0" Order="1">
+          <Text>Offer of employment accepted</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="860" UniqueId="88bdfb8f-c3de-4fcc-aea3-0d4b158ebae9" Number="3.0" Order="2">
+          <Text>Organise Induction Appointments</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="861" UniqueId="4768a8f4-5c2e-4aa5-bda8-109cf4720b40" Order="3" Number="3.0.1">
+              <Text>Ensure compliance with Induction Policy</Text>
+            </Task>
+            <Task Id="862" UniqueId="ee60e160-500e-4eaa-bfc4-2bc3c46250ad" Order="4" Number="3.0.2">
+              <Text>[POLICY]: Induction Policy.</Text>
+            </Task>
+            <Task Id="863" UniqueId="f87976ea-bc7a-4a1e-8dac-a2282a5e3c2c" Order="5" Number="3.0.3">
+              <Text>Email 'new staters' email address to advise key organisational contacts of a new starter</Text>
+            </Task>
+            <Note Id="864" UniqueId="0ab6db62-64b6-4606-b3ff-c2e22ef3d8c6" Order="6" Number="">
+              <Text>New Starters Email</Text>
+              <Attachment>Currently this comprises of one of the BA's (Chris Carter), Records Team Leader, IS Support Co-ordior, Quality Management Co-ordior, PA Service Delivery, Facilities Administrator, Management Accountants, Payroll, EDRMS Administrator, Executive Assistant and Asst Executive Assistant.</Attachment>
+            </Note>
+            <Task Id="865" UniqueId="86973578-113e-46c4-9544-70c5aea17a24" Order="7" Number="3.0.4">
+              <Text>Email a calendar appointment to the Maintenance Administrator to organise Security Induction</Text>
+            </Task>
+            <Task Id="866" UniqueId="f2c7e339-aadc-4e53-a497-007032b5cf11" Order="8" Number="3.0.5">
+              <Text>Complete IS form and hands this to the IS Support Coordior and emails a calendar appointment tot he IS Support Coordior</Text>
+            </Task>
+            <Task Id="867" UniqueId="b37062d6-9f6e-410a-b64d-7f9673ea4506" Order="9" Number="3.0.6">
+              <Text>[FORM]: New User Form IS.pdf</Text>
+            </Task>
+            <Task Id="868" UniqueId="c36b75da-b9b5-4735-ad45-e1d90d602f7b" Order="10" Number="3.0.7">
+              <Text>Complete Time Disciple Access form and emails this to Business Analyst (OPPS Team) and emails the Business Analyst a calendar appointment for training</Text>
+            </Task>
+            <Task Id="869" UniqueId="5d5812a3-dcad-46c8-a71c-8e1f1a98b3ff" Order="11" Number="3.0.8">
+              <Text>[FORM]: Time Disciple - Staff Details.xlsx</Text>
+            </Task>
+            <Task Id="870" UniqueId="f986d55e-55bf-4d67-be6a-81204cdf5613" Order="12" Number="3.0.9">
+              <Text> Notify District Plan Administrator so that physical warrants can be created.</Text>
+            </Task>
+            <Note Id="871" UniqueId="5d805f10-315f-4cc5-8966-f83745c64bc6" Order="13" Number="">
+              <Text>What is a warrant?</Text>
+              <Attachment>Refer to Warrants and Delegations template that has been filled in during approval to recruit process.  This template would have been used to create the recruitment business case and position description.</Attachment>
+            </Note>
+            <Task Id="872" UniqueId="7d9e4c0c-a570-4d61-8557-77d932d14546" Order="14" Number="3.0.10">
+              <Text>Prepare induction timetable for first day</Text>
+            </Task>
+            <Task Id="873" UniqueId="5df53896-6b4c-4e1e-8587-ade3d862df7e" Order="15" Number="3.0.11">
+              <Text>[FORM]: Induction Timetable.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="874" UniqueId="064dd42a-1b4f-460c-9b06-f0182f2e9d09" Number="4.0" Order="16">
+          <Text>Create Induction Pack</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="875" UniqueId="93dfd57b-cb41-4f31-8102-602f1c8f5b6a" Order="17" Number="4.0.1">
+              <Text>Create induction pack for new starter - including Kiwisaver information, Southern Cross information, Social Club information, Our Plan booklet, ABC it Vaules, H&amp;S information, Vitae informaiton, GSB information, Wai-ata, The Link </Text>
+            </Task>
+            <WebLink Id="876" UniqueId="ac8d89bf-32a5-4e34-be5c-d097b13f6d0e" Order="18" Number="">
+              <Text>Social Club Application Form</Text>
+              <Attachment>http:///StaffInfo/Social%20Club/SitePages/Home.aspx</Attachment>
+            </WebLink>
+            <Task Id="877" UniqueId="f3b12558-1c49-4974-ba4c-bdbd45fcadb8" Order="19" Number="4.0.2">
+              <Text>[FORM]: Kiwi Saver Deduction Form.pdf</Text>
+            </Task>
+            <Task Id="878" UniqueId="5a309b2f-e7b8-4ac8-aee8-710bfa9501f8" Order="20" Number="4.0.3">
+              <Text>[FORM]: KS10 Opt out kiwisaver form.pdf</Text>
+            </Task>
+            <Task Id="879" UniqueId="aa27ce6d-8bf3-4d3a-ac9e-52abd349ccda" Order="21" Number="4.0.4">
+              <Text>[FORM]: Your Health &amp; Safety [Email] .pptx</Text>
+            </Task>
+            <Task Id="880" UniqueId="f5cf7617-2f6f-4f64-8ec2-31422f0be40b" Order="22" Number="4.0.5">
+              <Text>[FORM]: vision and values 2012.ppt</Text>
+            </Task>
+            <Task Id="881" UniqueId="7cc6876d-5b32-4a2d-afbd-3626b6cea5a5" Order="23" Number="4.0.6">
+              <Text>[INFORMATION]: OUR PLAN.pdf</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="882" UniqueId="f2c9991c-c481-4bbd-aa9f-3484ebebbc64" Number="5.0" Order="24">
+          <Text>Carry out HR and Health &amp; Safety Induction</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="883" UniqueId="e27a28c8-ae74-44a4-a20e-33a231ee759b" Order="25" Number="5.0.1">
+              <Text>Meet new starter on the first day and welcome them to Council. </Text>
+            </Task>
+            <Task Id="884" UniqueId="08506cf5-2c84-4bae-9467-20fb825491bf" Order="26" Number="5.0.2">
+              <Text>Go through the induction pack </Text>
+            </Task>
+            <Task Id="885" UniqueId="ba45540a-69a3-4dc0-ac9a-58b56ce7e69c" Order="27" Number="5.0.3">
+              <Text>Ensure all relevant paperwork has been completed to add the new starter on to the payroll.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="886" UniqueId="038b8f12-eb5d-4422-8562-a0d2a7d1b0aa" Number="6.0" Order="28">
+          <Text>[PROCESS LINK]: Induct New Staff - Security and Vehicles</Text>
+          <Ownerships>
+            <Role Id="44" Name="Parks &amp; Facilities Contract Management Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="887" UniqueId="43d4f78a-8c57-4ba4-9dcb-c5aa493e7185" Number="7.0" Order="29">
+          <Text>Carry out Team and Role Induction </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="888" UniqueId="5687f826-5f39-4ef8-87a4-6f0918813a65" Order="30" Number="7.0.1">
+              <Text>Introduce the new staff member to the rest of their team, explaining the role of each person and how they will interact with the new staff member</Text>
+            </Task>
+            <Task Id="889" UniqueId="ffa04998-c45d-43ff-9ff5-683f4e7c7206" Order="31" Number="7.0.2">
+              <Text>Meet with the new staff member and go through team specific details</Text>
+            </Task>
+            <Task Id="890" UniqueId="25f32899-07f4-44ee-9c0a-9c90386e19df" Order="32" Number="7.0.3">
+              <Text>Go through all Promapp processes that the new staff member is involved in:|~|- determine which processes (if any) the staff member will be either owner or expert of|~|- update the process ownership accordingly (or request the quality co-ordiors to update)|~|- determine which corporate wide processes the staff member needs an induction on (e.g. tender management, contract management, etc) and notify relevant process expert of need to carry out induction.</Text>
+            </Task>
+            <Task Id="891" UniqueId="00f1bf74-85ff-4dea-99f4-d3a55f8c6bf5" Order="33" Number="7.0.4">
+              <Text>@todo - link in new 'process induction form' when completed</Text>
+            </Task>
+            <Note Id="892" UniqueId="71b119e4-39d0-4811-84cb-aa5f931c646d" Order="34" Number="">
+              <Text>How do I know which processes the staff member is involved in?</Text>
+              <Attachment>The Promaster (quality co-ordiors) can provide a list of processes that each role is involved in.</Attachment>
+            </Note>
+            <Task Id="893" UniqueId="866c490c-f4c7-4303-b806-1b1e367271e7" Order="35" Number="7.0.5">
+              <Text>Induct new staff member on their delegations (including warrants) </Text>
+            </Task>
+            <Note Id="894" UniqueId="5ebfdcad-24cf-4b5f-b5c8-ef8e04b70d22" Order="36" Number="">
+              <Text>Where are these delegations found?</Text>
+              <Attachment>Refer to the delegations manual and position descriptions for those that are attributed to the position.  The new starter should understand the various legislation and policys upon which the delegations have been granted. If new starter requires further training against these delegations these should be noted and carried out.</Attachment>
+            </Note>
+            <Task Id="895" UniqueId="f07224f1-8724-4278-a6e6-2007760f644f" Order="37" Number="7.0.6">
+              <Text>Plan training of legislation i.e. RMA, LGA if required.</Text>
+            </Task>
+            <Note Id="896" UniqueId="ba0b6df6-6b26-4204-9a06-6ab8632d075e" Order="38" Number="">
+              <Text>TODO add link to training process</Text>
+            </Note>
+            <Task Id="897" UniqueId="593b904d-3002-4865-9371-20a19f9d21ed" Order="39" Number="7.0.7">
+              <Text>Determine what processes the new staff member needs to be aware of and which ones they need to receive training on.   (TODO - add process induction checklist when completed - see Joan)</Text>
+            </Task>
+            <Task Id="898" UniqueId="820cb2de-e049-4fea-acb2-325f1583845e" Order="40" Number="7.0.8">
+              <Ownerships>
+                <Tag Id="6" Name="ECM" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Ensure the staff member is booked in to other key inductions, such as time disciple, Promapp and ECM, as required.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="899" UniqueId="ac07fc7d-16b0-40e2-9014-322fdfbac9f4" Number="8.0" Order="41">
+          <Text>Set goals </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="900" UniqueId="c74dce77-fe12-47bd-8a44-d2603b091ef7" Order="42" Number="8.0.1">
+              <Text>Set a short term plan with the new starter so they are aware what they will be doing for the next week/couple of weeks</Text>
+            </Task>
+            <Task Id="901" UniqueId="7896bd0d-2bbd-4041-8224-e0456e6d8247" Order="43" Number="8.0.2">
+              <Text>Discuss aspects of the position description and set their first set of goals, to be reviewed after a month</Text>
+            </Task>
+            <Task Id="902" UniqueId="bea1f343-17fd-4fea-9233-5f1205217506" Order="44" Number="8.0.3">
+              <Text>[FORM]: Goal setting form.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="30" Output="New employee completed initial induction process" HowUsed="Induction process" ToProcess="Manage offer of employment" UniqueId="63e6f558-6b56-4a3c-8a2b-e32f789ab959" />
+      </Outputs>
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+      </SystemStakeholders>
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:38.1300948Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1727" Name="Recruitment Approval Process" ReferenceNo="" Objective="To ensure planning approval for all recruitment of staff is undertaken.|~||~|APPROVED BY:  John Doe, Human Resources Manager (9 Dec 2014)" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="e4283d30-eada-4448-a65a-40dabf764f1c" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="12192" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="2145" Trigger="A position becomes available" Frequency="Ad hoc" Volume="N/A" UniqueId="5a7526a1-2735-4a3f-ba55-cf1695a636ff" />
+      </Triggers>
+      <Inputs />
+      <ProcessProcedures>
+        <Activity Id="87276" UniqueId="330473e9-4989-4bf4-81fd-ad0b43437438" Number="1.0" Order="0">
+          <Text>New Staff Member Required</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87277" UniqueId="259da4b3-549e-49a1-a9f0-5606105742c8" Order="1" Number="1.0.1">
+              <Text>Notified by the Manager for that team or by the CE</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87278" UniqueId="7c4f10ca-2408-4025-9aa2-a44e538718be" Number="2.0" Order="2" ParallelGroupingRef="1">
+          <Text>New Position</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87280" UniqueId="61c6a7c6-4be2-40f0-ad1d-c09334174bde" Order="3" Number="2.0.1">
+              <Text>Print off the Position Approval Form for signing by CFO and CE</Text>
+            </Task>
+            <Task Id="87281" UniqueId="508d7a1c-ee1d-4dbf-8f33-8229320d076e" Order="4" Number="2.0.2">
+              <Text>Check with CFO that funds are available for the new position</Text>
+            </Task>
+            <Task Id="87283" UniqueId="ec1b0f1f-ca0e-4968-8b58-38d45d353ac4" Order="5" Number="2.0.3">
+              <Text>If notified by a Manager, confirm with CE and obtain sign-off for recruitment</Text>
+            </Task>
+            <Note Id="87284" UniqueId="c2380378-9f6c-4cad-90bb-517a383ea1b9" Order="6" Number="">
+              <Text>What if the CE does not sign-off the recruitment?</Text>
+              <Attachment>Meet with the Manager requesting the position to inform them the CE has not signed-off the position.</Attachment>
+            </Note>
+            <Task Id="87285" UniqueId="5b0da083-17f5-4664-bd53-741ba66607cc" Order="7" Number="2.0.4">
+              <Text>Draft a job description for the new position</Text>
+            </Task>
+            <Task Id="87286" UniqueId="0946f9cb-62fd-488d-b63e-87b4df23a326" Order="8" Number="2.0.5">
+              <Text>Ensure the Civil Defence Role is included in the job description</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87288" UniqueId="4fcd6fd8-fe19-4041-a4ed-b6289f876ccd" Number="2.1" Order="9" ParallelGroupingRef="1">
+          <Text>Existing Position</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87289" UniqueId="2f6fb81c-d79b-4588-925a-bbea3b783a5c" Order="10" Number="2.1.1">
+              <Text>Print off the Position Approval Form for signing by CE</Text>
+            </Task>
+            <Task Id="87291" UniqueId="6349ff78-20d1-460c-9839-dc589b595de5" Order="11" Number="2.1.2">
+              <Text>If notified by a Manager, confirm with CR and obtain sign-off for recruitment</Text>
+            </Task>
+            <Task Id="87292" UniqueId="529d9b8e-9aad-47fd-b85a-af12655c867a" Order="12" Number="2.1.3">
+              <Text>Review the existing job description and update as required</Text>
+            </Task>
+            <Task Id="87293" UniqueId="43c71f2e-cb9e-4200-99c4-4825a1fcbac7" Order="13" Number="2.1.4">
+              <Text>Ensure the Civil Defence Role is included in the job description</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87294" UniqueId="997d1cd5-ca71-4589-bc16-a8fb1ce82b12" Number="3.0" Order="14">
+          <Text>Set Pay Scale</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87295" UniqueId="d40adac2-4e69-4c2a-bc1c-001b172e75a7" Order="15" Number="3.0.1">
+              <Text>If an existing role, identify when the position was last benchmarked</Text>
+            </Task>
+            <Task Id="87296" UniqueId="0a4b0deb-3f57-4c69-9076-c6a479614bea" Order="16" Number="3.0.2">
+              <Text>If outside of 9 months, have the position benchmarked</Text>
+            </Task>
+            <Task Id="87297" UniqueId="627c9267-fd50-4516-b1b7-816425d31642" Order="17" Number="3.0.3">
+              <Text>If job description or responsibilities have changed significantly, have benchmarked</Text>
+            </Task>
+            <Task Id="87298" UniqueId="01bdc2c0-2278-4449-b83a-824a49a8e1f4" Order="18" Number="3.0.4">
+              <Text>If it is a new position, have benchmarked on approval of job description</Text>
+            </Task>
+            <Task Id="87299" UniqueId="0c98a1c7-996f-40cb-afb7-e64a05326799" Order="19" Number="3.0.5">
+              <Text>Send the job decription to [name removed] to have benchmarked</Text>
+            </Task>
+            <Note Id="87300" UniqueId="143ba5fc-4d5b-4f04-9a43-d575d79b6228" Order="20" Number="">
+              <Text>How do I do this?</Text>
+              <Attachment>Via email to:  [contact details removed]</Attachment>
+            </Note>
+            <Task Id="87301" UniqueId="29837f33-b12b-4d76-892f-12454adabd0d" Order="21" Number="3.0.6">
+              <Text>Receive email from [name removed] providing the salary range for the position</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87302" UniqueId="7c69c99c-ff96-4258-8c5d-d645830ad54a" Number="4.0" Order="22">
+          <Text>Contact Department Manager</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87303" UniqueId="f9723140-99df-454f-afa5-b0ed267b32a8" Order="23" Number="4.0.1">
+              <Text>Disseminate the job description and salary bracket and discuss with Manager</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="1718" Output="Job description for new position" HowUsed="To ensure job description and pay rate are approved" ToProcess="Recruit new staff member" UniqueId="397b3ded-5206-49c1-9076-f493819f9242" />
+      </Outputs>
+      <LinkedStakeholders />
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:38.3651748Z" />
+      </Metadata>
+    </Process>
+    <Process Id="36" Name="Review applications and shortlist interviewees" ReferenceNo="" Objective="To ensure that all candidates who apply for a position with DC are treated fairly and in confidence " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Short-listing grid kept for all vacancies " Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="9b6b9d6f-5b37-4c7b-babd-7dc484b6cffc" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="12097" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <ProcessLink Id="989" UniqueId="ea9c44a6-bb62-4b3d-90d0-792443ab5f92" Number="0.0" Order="0" LinkedProcessId="32" LinkedProcessName="Obtain approval for and plan recruitment " LinkedProcessUniqueId="ef06aa8a-67a6-409c-9b3a-847132f9cc48">
+          <Text>Obtain approval for and plan recruitment </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+        </ProcessLink>
+        <Activity Id="990" UniqueId="4dceb525-715c-4784-a6b2-fb045400e8a2" Number="1.0" Order="1">
+          <Text>Prepare short-listing grid </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="991" UniqueId="ee7a8898-f772-4e29-9d96-687646d52aef" Order="2" Number="1.0.1">
+              <Text>Get key points from position description that describes what you are looking for in a successful candidate</Text>
+            </Task>
+            <Task Id="992" UniqueId="2e16284f-7cd4-461e-abb4-edd399768f3f" Order="3" Number="1.0.2">
+              <Text>[Form] Shortlisting Grid Example</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="993" UniqueId="23c867b5-e431-479b-bb08-68c4b971d63e" Number="2.0" Order="4">
+          <Text>Refer to the recruitment plan </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="994" UniqueId="bd4bdca5-18c3-49df-a9ae-6cfde675a744" Order="5" Number="2.0.1">
+              <Text>Confirm interview panel</Text>
+            </Task>
+            <Task Id="995" UniqueId="3aa53ef9-bf05-4e19-824a-cf53ae93b698" Order="6" Number="2.0.2">
+              <Text>Confirm dates and times for interviews</Text>
+            </Task>
+            <Task Id="996" UniqueId="1a32889a-325e-4b80-ae3d-5a206685618c" Order="7" Number="2.0.3">
+              <Text>Confirm interview questions</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="997" UniqueId="d328d1a3-0de4-435f-9269-5955aea1f8b4" Number="3.0" Order="8">
+          <Text>Review applications </Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="998" UniqueId="704a85f9-8ae4-420c-abd6-1b95c6b06fde" Order="9" Number="3.0.1">
+              <Text>Go through each CV/Application form and give each individual a score against each item in the short-listing grid</Text>
+            </Task>
+            <Task Id="999" UniqueId="a8be4f18-802c-4a30-96fc-fd0b8bd6042f" Order="10" Number="3.0.2">
+              <Text>Manager will shortlist all applications based upon the criteria in the short listing grid and also the ABC iT values. Applicants wil be scored accordingly and invited for an interview where required.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1000" UniqueId="44b7863a-f97e-48d8-a1ba-47e110d5a2fc" Number="4.0" Order="11">
+          <Text>Contact Short listed candidates</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1001" UniqueId="94f2b252-26d5-4e52-9569-84223f27706b" Order="12" Number="4.0.1">
+              <Text>HR Advisor contacts short listed applicants via telephone and invites the candidate to interview.</Text>
+            </Task>
+            <Task Id="1002" UniqueId="aa626c4d-a90a-4c60-8302-22b11923089b" Order="13" Number="4.0.2">
+              <Text>HR Advisor confirms interview details with the candidate via email</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1003" UniqueId="9ceffb9b-083c-4224-aa30-131bec61326c" Number="5.0" Order="14">
+          <Text>Update Greg Tims </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1004" UniqueId="7efda209-c5b7-40d3-aa49-4a604f9b94b6" Order="15" Number="5.0.1">
+              <Text>Give Greg Tims a list of the unsuccessful candidates so they can let them know - </Text>
+            </Task>
+            <Task Id="1005" UniqueId="0e0c74b3-9c8e-4365-82f9-2c430fffefdc" Order="16" Number="5.0.2">
+              <Text>HR Advisor contacts any applicants who have applied directly to Council to advise them that they are unsuccessful for interview. </Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <ProcessLink Id="1006" UniqueId="7ecb4acd-fb59-4b97-803f-bdea72d5fa96" Number="0.0" Order="17" LinkedProcessId="33" LinkedProcessName="Carry out interviews" LinkedProcessUniqueId="729863a4-d059-4357-abd1-d4dc48855584">
+          <Text>Carry out interviews</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+        </ProcessLink>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="33" Link="Carry out interviews" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+        <LinkedStakeholder ProcessId="32" Link="Obtain approval for and plan recruitment " Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:38.6301045Z" />
+      </Metadata>
+    </Process>
+    <Process Id="1728" Name="Select Candidate" ReferenceNo="" Objective="To interview and select an appropriate appointment from a pool of potential candidates.|~||~|REVISED:  John Doe, Human Resource Manager (5 Mar 2015)|~|APPROVED BY:  John Toe, Human Resource Advisor/Executive Support (17 Feb 2011)" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="4659c543-82c0-478b-bf0e-e2154b26c8e3" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="12193" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <ProcessLink Id="87337" UniqueId="78aa8f90-1eef-4c43-8f10-82666dffa5e5" Number="0.0" Order="0" LinkedProcessId="1724" LinkedProcessName="Advertise Position" LinkedProcessUniqueId="33d25546-4761-44a3-b9a3-2285ad14c157">
+          <Text>Advertise Position</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+        </ProcessLink>
+        <Activity Id="87338" UniqueId="13551525-51c6-4778-ae63-2d1af629debc" Number="1.0" Order="1">
+          <Text>Assess Applications </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87339" UniqueId="40201446-69d6-43a3-b80f-d1826b634f5a" Order="2" Number="1.0.1">
+              <Text>Create a position skills checklist to use for reviewing the applications</Text>
+            </Task>
+            <Note Id="87340" UniqueId="017722fb-49ce-42ad-835c-b2bb51296174" Order="3" Number="">
+              <Text>What should be included in the checklist?</Text>
+              <Attachment>Questions to include:|~||~|1.  Has the application been filled in completely and correctly?|~|2.  Do they have the necessary skills and experience required?|~|3.  Is the quality of the application cover letter appropriate?</Attachment>
+            </Note>
+            <Task Id="87341" UniqueId="e5a29fa0-4d09-4992-9f41-22aad83fc575" Order="4" Number="1.0.2">
+              <Text>Receive applications</Text>
+            </Task>
+            <Task Id="87342" UniqueId="cdbe7a0e-e332-405e-b993-d2a9f26769d6" Order="5" Number="1.0.3">
+              <Text>After closing date of position, review the pool of applications</Text>
+            </Task>
+            <Task Id="87343" UniqueId="3b1e6d28-2991-466e-a89b-8b44f2f88a58" Order="6" Number="1.0.4">
+              <Text>Complete a skills assessment against the position for every applicant</Text>
+            </Task>
+            <Task Id="87344" UniqueId="1241daa2-0ba3-4953-9914-d3eb26db4451" Order="7" Number="1.0.5">
+              <Text>Score each applicant as to their suitability for the position</Text>
+            </Task>
+            <Task Id="87345" UniqueId="414037e8-386b-421e-a9af-e7996f9c2f5c" Order="8" Number="1.0.6">
+              <Text>Identify the candidates suitable for interview</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87346" UniqueId="8fd3fcb6-16d9-4997-b15c-eb90d061def3" Number="2.0" Order="9">
+          <Text>Select the Interview Panel</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87347" UniqueId="75d5ccbb-9e44-4654-a033-92f4c81cd195" Order="10" Number="2.0.1">
+              <Text>With the Department Manager, select and finalist the Interview Panel</Text>
+            </Task>
+            <Note Id="87348" UniqueId="7e350545-bb80-4037-9ddf-7b68ce351005" Order="11" Number="">
+              <Text>Who should be part of the Interview Panel?</Text>
+              <Attachment>The Manager of the department, HR Manager and one other staff member who is without bias.</Attachment>
+            </Note>
+            <Task Id="87349" UniqueId="1e81f4cf-5964-4c0b-8ef5-7c444c580b1d" Order="12" Number="2.0.2">
+              <Text>Pass the list and CVs to the Interview Panel to review and return with comments</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87350" UniqueId="8401ff88-0297-4abf-a3fc-eda68497211f" Number="3.0" Order="13">
+          <Text>Prepare for Interview</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87351" UniqueId="e0f008be-0310-4870-aa43-c55352a3bf68" Order="14" Number="3.0.1">
+              <Text>Shortlist the candidates</Text>
+            </Task>
+            <Task Id="87352" UniqueId="03aa6584-0698-4924-80f2-6d690a282ce7" Order="15" Number="3.0.2">
+              <Text>With the panel members, plan the interview strategy process to be used</Text>
+            </Task>
+            <Task Id="87353" UniqueId="17a15706-338c-4d1e-9f5f-fdc4b8dd7c79" Order="16" Number="3.0.3">
+              <Text>Design the interview assessment form to collate the required information for reviewing on completion of interviews</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87354" UniqueId="85fd4cfe-b21b-4c3e-bac3-dd0ac83aad64" Number="4.0" Order="17">
+          <Text>Arrange Interview </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87355" UniqueId="c8b41e0f-039e-4e9b-a300-1b764fe7c74d" Order="18" Number="4.0.1">
+              <Text>Contact suitable candidates to arrange suitable interview time</Text>
+            </Task>
+            <Note Id="87356" UniqueId="280871e3-a910-4633-a838-ed42f5c12fb8" Order="19" Number="">
+              <Text> How many people can be present at an interview?</Text>
+              <Attachment>The HR Manager, relevant Manager and one without bias are the minimum number of people who can attend an interview, plus the candidate of course.   However, in some cases where the candidate will be expected to perform a specialist function, it may be prudent to include a peer specialist to vett the candidates own expertise.  This decision is at the discretion of the Manager after consultation with their team.</Attachment>
+            </Note>
+            <Note Id="87357" UniqueId="62654691-431f-4836-9a5a-27f1301fa096" Order="20" Number="">
+              <Text> How long should I book for interviews?</Text>
+              <Attachment>One hour at maximum.  Any longer becomes tiresome; any shorter and you may not have enough time to cover off all the necessary questions and material.</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87358" UniqueId="b2f846ae-e61e-4d7c-903c-cc84bbc8b512" Number="5.0" Order="21">
+          <Text>Conduct Interviews </Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87359" UniqueId="af32c41c-70b6-42b1-be53-94eafe4472a7" Order="22" Number="5.0.1">
+              <Text>Prepare the Interview Room</Text>
+            </Task>
+            <Note Id="87360" UniqueId="6caa6849-7836-4274-a9e4-91e06412a8bd" Order="23" Number="">
+              <Text>What should be considered?</Text>
+              <Attachment>Providing water for candidates, ensuring the interview checklists are there, ensuring the correct number of seats are there.|~||~|Is the candidate required to give a presentation?  If so, ensure the computer is set up correctly and ready to go.</Attachment>
+            </Note>
+            <Task Id="87361" UniqueId="f5908b87-a98e-41ce-b2ae-dc2d74ce527a" Order="24" Number="5.0.2">
+              <Text>Prepare an assessment sheet for each candidate and provide to each member of the panel</Text>
+            </Task>
+            <Task Id="87362" UniqueId="d7d76483-7278-42f7-980d-905e9f5414e8" Order="25" Number="5.0.3">
+              <Text>Once the interview is complete, provide the interviewee with police vett forms if required</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87363" UniqueId="460e6373-85e3-4155-9d7b-1d599288be95" Number="6.0" Order="26">
+          <Text>Selection Process</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+            <Role Id="4" Name="Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87364" UniqueId="829f9975-6325-4cda-8d0b-1b3cd66a9938" Order="27" Number="6.0.1">
+              <Text>Discuss the candidates interviewed</Text>
+            </Task>
+            <Task Id="87365" UniqueId="5847158d-781d-4ae8-9f8a-46f375cdbcac" Order="28" Number="6.0.2">
+              <Text>Compare against the checklists</Text>
+            </Task>
+            <Task Id="87366" UniqueId="b6e73764-9d13-410e-86be-b39cf0c2e587" Order="29" Number="6.0.3">
+              <Text>Discuss with Customer Services staff as to candidate behaviour on arrival of interview</Text>
+            </Task>
+            <Task Id="87367" UniqueId="56b083d2-5875-41c1-baba-1c3590cd4ac8" Order="30" Number="6.0.4">
+              <Text>Shortlist down to 3 candidates and rank these 3 in order of preference for position</Text>
+            </Task>
+            <Task Id="87368" UniqueId="2046f894-3632-4cb8-8047-629d749931c1" Order="31" Number="6.0.5">
+              <Text>Advise via telephone the unsuccessful candidates outside of the top 3</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87369" UniqueId="2cd1a229-e699-4ec4-b6c6-57568fe671a6" Number="7.0" Order="32">
+          <Text>Run Background Checks</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87371" UniqueId="65b19fe4-3ba6-4232-a08c-e732b7d71522" Order="33" Number="7.0.1">
+              <Text>Contact candidates referees to discuss character of candidates</Text>
+            </Task>
+            <Task Id="87375" UniqueId="bcbb3021-1ab0-49c8-a9b5-0d9525125098" Order="34" Number="7.0.2">
+              <Text>If required, complete the criminal background check</Text>
+            </Task>
+            <Task Id="87377" UniqueId="24b0a7d1-dd99-41ee-82ed-c20c6c1876de" Order="35" Number="7.0.3">
+              <Text>If required, check academic qualifications with the institution</Text>
+            </Task>
+            <Task Id="87380" UniqueId="4fb5f059-0c4f-4198-b128-15dbcde4c405" Order="36" Number="7.0.4">
+              <Text>Ask HR Manager to prepare an offer letter</Text>
+            </Task>
+            <Task Id="87382" UniqueId="8d9bb41f-efbe-48b5-ba6c-299686739b1e" Order="37" Number="7.0.5">
+              <Text>Phone candidate to offer position</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87386" UniqueId="1161e3a6-f632-4e33-9ec0-d86e42f6c5ac" Number="8.0" Order="38">
+          <Text>Finalise Selection</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+            <Role Id="4" Name="Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87389" UniqueId="b5d59227-c848-4753-b29b-f8e0634a2cc7" Order="39" Number="8.0.1">
+              <Text>Discuss with the Manager and Interview Panel, the results of the background checks on the top 3</Text>
+            </Task>
+            <Task Id="87392" UniqueId="b447ddff-b6e8-4800-b28e-e7856ffde607" Order="40" Number="8.0.2">
+              <Text>Finalise on the ideal candidate</Text>
+            </Task>
+            <Task Id="87394" UniqueId="31bf3b8d-a3fd-4f20-a95d-c2dae9403743" Order="41" Number="8.0.3">
+              <Text>Contact the candidate and offer the position verbally</Text>
+            </Task>
+            <Task Id="87396" UniqueId="0c07a807-1089-4667-b86e-a7214f4ae3f4" Order="42" Number="8.0.4">
+              <Text>Contact the other two candidates and advise them of the results</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87399" UniqueId="6d102986-3c50-48e4-bf9e-7aa154c79b66" Number="9.0" Order="43">
+          <Text>Post Letter and Documentation</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87402" UniqueId="e423f40f-c89d-4c87-891c-4df58ccca015" Order="44" Number="9.0.1">
+              <Text>Post or email (pdf) offer letter and accompanying materials to candidate</Text>
+            </Task>
+            <Note Id="87405" UniqueId="f8d61b41-5a74-4d9c-81cc-f74b1415d210" Order="45" Number="">
+              <Text>What is part of the offer letter?</Text>
+              <Attachment>Ensure you include that they bring their:|~||~|-  KiwiSaver number|~|-  IRD number|~|-  Bank account number|~||~|In the letter, there should be:|~||~|-  A copy of the collective employment contract|~|-  A copy of their individual employment contract|~|-  A copy of the position description|~|-  Two copies of the acceptance letter, which they need to sign and return one copy beforehand</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87407" UniqueId="6c4d0b9d-4475-4f99-98b7-f3661177b0fa" Number="10.0" Order="46">
+          <Text>Complete IT Pre-Employment Form</Text>
+          <Ownerships>
+            <Role Id="6" Name="HR Manager" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="87410" UniqueId="9bba2b6b-80f6-44b1-b230-94a62b15a9ff" Order="47" Number="10.0.1">
+              <Text>Receive the signed documentation from the candidate</Text>
+            </Task>
+            <Task Id="87412" UniqueId="ab47a3a7-b5e8-4e7b-bce2-3c521b666c12" Order="48" Number="10.0.2">
+              <Text>In Word, run the IT Pre-Employment Form and complete all required fields</Text>
+            </Task>
+            <Task Id="87414" UniqueId="297b40be-3579-4bed-9315-182ef8a23925" Order="49" Number="10.0.3">
+              <Text>Give a copy to IT Projects, Department Manager and Records Manager</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="87417" UniqueId="f384b747-1c62-49d5-a3a2-7a107ef43ba3" Number="0.0" Order="50" ParallelGroupingRef="1">
+          <Text>[PROCESS LINK]: Create New Personnel Record and Position</Text>
+          <Ownerships>
+            <Role Id="545" Name="IT Projects" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="87419" UniqueId="d0a7fb84-755d-49d2-8fbb-6918c073e5cc" Number="0.0" Order="51" ParallelGroupingRef="1">
+          <Text>[PROCESS LINK]: Create New Personnel Record for Existing Council Position</Text>
+          <Ownerships>
+            <Role Id="545" Name="IT Projects" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="1724" Link="Advertise Position" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:39.2081556Z" />
+      </Metadata>
+    </Process>
+    <Process Id="37" Name="Set up new starter" ReferenceNo="" Objective="To set up a new starter in council " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="This process is to ensure that all relevant people are made aware of new starters in council.  To ensure that payroll, Health &amp; Safety, IT and security are included in setting up the staff member. " Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Manage Staff Recruitment" GroupId="11" GroupUniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="1de0ce42-11ba-42ec-ad91-9cf25a454e86" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="11" UniqueId="be6817aa-7cf6-46c3-b058-26bc98cc8b9f" Name="Manage Staff Recruitment" ProcessGroupItemId="12244" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="33" Trigger="A person is offerred and accepts a position at WAIDC" Frequency="adhoc" Volume="40 per year" UniqueId="b28f8557-5e8a-4642-a0fe-31a8fe968a40" />
+      </Triggers>
+      <Inputs>
+        <Input Id="28" FromProcess="Making an offer of employment " Resource="GM authority, exceptance in writing from candidate " HowUsed="Induction plan" UniqueId="50cd7430-a036-4823-89a1-9d76f3df4fde" />
+      </Inputs>
+      <ProcessProcedures>
+        <ProcessLink Id="1007" UniqueId="390e1943-1214-475a-812e-96a2e25c141f" Number="0.0" Order="0" LinkedProcessId="35" LinkedProcessName="Make offer of employment" LinkedProcessUniqueId="ded4a080-7e79-45bd-8a2d-1b580c5e8a3d">
+          <Text>Make offer of employment</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+        </ProcessLink>
+        <Activity Id="1008" UniqueId="6bc8816f-d92e-42e7-a6e5-2d571d6d1bd2" Number="1.0" Order="1">
+          <Text>Set up personal folders</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1009" UniqueId="4212cfa3-c35b-41f5-9ce5-855093e7cc56" Order="2" Number="1.0.1">
+              <Text>Set up a folder under 'personal records' on the J Drive </Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1010" UniqueId="f459761d-ba41-427a-9f59-7883aecc5b3f" Number="2.0" Order="3">
+          <Text>Book IT set up </Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1011" UniqueId="3b9c3bca-b221-4d6e-8282-98be510008c2" Order="4" Number="2.0.1">
+              <Text>Complete an IT access form online and send to Jaysal and Phil in IT</Text>
+            </Task>
+            <Task Id="1012" UniqueId="8123b6b0-d505-46a5-ade9-9314c4f7619f" Order="5" Number="2.0.2">
+              <Text>[FORM]: System Access Form</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1013" UniqueId="fb79f48b-f8cb-4f5d-8b3b-8e5f5ab7fe2c" Number="3.0" Order="6">
+          <Text>Inform new starters group</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1014" UniqueId="3433ad90-a2e8-4995-8946-560ae324d86b" Order="7" Number="3.0.1">
+              <Text>Send an email to  to make them aware that we have a new starter starting at council </Text>
+            </Task>
+            <Note Id="1015" UniqueId="dd97c278-96f1-4e5c-a785-8c929b5d9204" Order="8" Number="">
+              <Text>Who is in the new starters group?</Text>
+              <Attachment>The people in this email carry out an administrative task to ensure a successful induction for the new staff member, eg Time Disciple, Promapp training</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1016" UniqueId="2092b3fe-0774-4634-acaf-dd11f8d8d183" Number="4.0" Order="9">
+          <Text>Set up Time Disciple</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1017" UniqueId="ccd58804-eec5-48cc-ad20-15ac3c3a2ee9" Order="10" Number="4.0.1">
+              <Text>Complete the Time Disciple form and send to </Text>
+            </Task>
+            <Task Id="1018" UniqueId="121df92b-e951-4637-99f1-23b5038c29ca" Order="11" Number="4.0.2">
+              <Text>[FORM]: Time Disciple Setup Form - Staff Details.xlsx</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1019" UniqueId="796f0db8-9169-4b88-8fb2-9a394bef32e9" Number="5.0" Order="12">
+          <Text>Plan Induction</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1020" UniqueId="9e0552c4-9152-48d7-ac6a-e5063252e99f" Order="13" Number="5.0.1">
+              <Text>Set up a folder including: Handbook, Welcome to , organisational structure, Corporate Plan, ABCit, Social Club, Health Register, </Text>
+            </Task>
+            <Task Id="1021" UniqueId="ac0021cd-f6d6-42cf-bdab-1b86521b478c" Order="14" Number="5.0.2">
+              <Text>E-mail IT to arrange for the IT Induction on the staff members first day</Text>
+            </Task>
+            <Task Id="1022" UniqueId="d4f74013-23b9-476d-ac6a-1afbfd7f0e4e" Order="15" Number="5.0.3">
+              <Text>E-mail Lisa in Facilities to arrange for a security Induction on the staff members first day</Text>
+            </Task>
+            <Task Id="1023" UniqueId="6382b3e3-14d4-4d39-9922-ef3b65e4ccd8" Order="16" Number="5.0.4">
+              <Text>Prepare a timetable and send a copy to the new starters manager so they can prepare for the first day</Text>
+            </Task>
+            <Task Id="1024" UniqueId="1f85f79c-c5b6-48e7-bb77-e47ee37e143a" Order="17" Number="5.0.5">
+              <Text>Contact the new starter and explain the plan for the first day (e-mail the timetable if required)</Text>
+            </Task>
+            <Task Id="1025" UniqueId="622125fe-04c0-42b4-b6f3-52586874930f" Order="18" Number="5.0.6">
+              <Text>Tell the CDOs that the new starter will be coming in </Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1026" UniqueId="db79c8db-6ae1-4f0b-ab81-72312ab11cd4" Number="6.0" Order="19">
+          <Text>Carry out HR Induction</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1027" UniqueId="88a5d972-3f85-4826-a816-2fe6ed16f957" Order="20" Number="6.0.1">
+              <Text>Meet with the new starter and go through the Induction Folder </Text>
+            </Task>
+            <Task Id="1028" UniqueId="6c5e1fcf-bc61-4c51-ae3c-968dd66a1749" Order="21" Number="6.0.2">
+              <Text>Give the new starter the payroll form and ask them to complete it with their bank details as soon as possible</Text>
+            </Task>
+            <Task Id="1029" UniqueId="6cc41709-6683-491d-b5ad-57b98b69111a" Order="22" Number="6.0.3">
+              <Text>Take the new starter around council and introduce them to each team</Text>
+            </Task>
+            <Task Id="1030" UniqueId="a0c3d3b9-c1e3-4608-badc-5390397dc235" Order="23" Number="6.0.4">
+              <Text>Send the Executive Team an e-mail including a photo and brief description of the new starter</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1031" UniqueId="81ca32f5-e020-4cc8-bddb-5ec4a6a2d851" Number="7.0" Order="24">
+          <Text>Carry out Team Induction</Text>
+          <Ownerships>
+            <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1032" UniqueId="092aa5eb-4932-4973-b581-23eb13762be4" Order="25" Number="7.0.1">
+              <Text>Outline expectations of the role</Text>
+            </Task>
+            <Task Id="1033" UniqueId="ae3610ad-fa88-4f14-8071-cf5a0781a03a" Order="26" Number="7.0.2">
+              <Text>Provide organisational overview</Text>
+            </Task>
+            <Task Id="1034" UniqueId="34200032-a7a4-4064-a0a9-132e8eae5a9c" Order="27" Number="7.0.3">
+              <Text>Explain team objectives</Text>
+            </Task>
+            <Task Id="1035" UniqueId="41d7412f-43d8-4158-b7ba-e98791e2cf3a" Order="28" Number="7.0.4">
+              <Text>Introduce new staff member to team and wider organisation</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1036" UniqueId="481c5406-92ce-444b-9e1d-601c997aeed4" Number="8.0" Order="29">
+          <Text>Update payroll</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1037" UniqueId="397f26f9-cc1a-4d97-91f1-7d418660d4ba" Order="30" Number="8.0.1">
+              <Text>Once "new starters" form is complete, ask the relevant GM and CEO to sign and send down to payroll </Text>
+            </Task>
+            <Task Id="1038" UniqueId="feb066ec-dbed-4ead-8d9b-aced2356a5bb" Order="31" Number="8.0.2">
+              <Text>[FORM]: NEW STARTER OR ADJUSTMENT TO PAYROLL FORM.X</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1039" UniqueId="6e7c3faa-2c96-4903-bba0-20dabc748c6b" Number="9.0" Order="32">
+          <Text>Add diary prompts</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1040" UniqueId="86dd8dd0-bc8e-4b8e-902c-6033035e8219" Order="33" Number="9.0.1">
+              <Ownerships>
+                <Tag Id="4" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Add a diary prompt in Outlook for 30 days</Text>
+            </Task>
+            <Task Id="1041" UniqueId="3ac0ef71-e912-4598-9245-9e0f73eda7c2" Order="34" Number="9.0.2">
+              <Ownerships>
+                <Tag Id="4" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Add a diary prompt in Outlook for 3 months </Text>
+            </Task>
+            <Task Id="1042" UniqueId="274f45dc-1a57-494d-80ac-22e36218c876" Order="35" Number="9.0.3">
+              <Ownerships>
+                <Tag Id="4" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Add a diary prompt in Outlook for 6 months</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1043" UniqueId="956b6f73-cc13-4c5d-902a-7aafdf5fc1f5" Number="10.0" Order="36">
+          <Text>Carry out 30 day checks</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1044" UniqueId="22f5c09f-3bc0-47f8-b488-f0f7d68f38e8" Order="37" Number="10.0.1">
+              <Text>Prepare 30 day letter if the new starter has not confirmed what contract they want to be on</Text>
+            </Task>
+            <Task Id="1045" UniqueId="a76a9f47-e26a-4a4f-89bd-81e53b0329b0" Order="38" Number="10.0.2">
+              <Text>Meet with the new starter to see how they are doing</Text>
+            </Task>
+            <Task Id="1046" UniqueId="a065d25a-891f-4b14-a422-63cb7fc9f859" Order="39" Number="10.0.3">
+              <Text>Check that the new starter has been given goals to work towards by their line manager</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1047" UniqueId="f6ac075b-8b46-4ceb-98f3-2dace5697773" Number="11.0" Order="40">
+          <Text>Carry out 3 month check</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1048" UniqueId="00234b09-39a0-48b9-9fc0-b02aa3b635d5" Order="41" Number="11.0.1">
+              <Text>Meet with the new starter to see how they are doing</Text>
+            </Task>
+            <Task Id="1049" UniqueId="1f0bab2f-3e19-4cee-ab5b-54f993627e56" Order="42" Number="11.0.2">
+              <Text>Check that the new starter has attended the Welcome to , Visions and Values and Health and Safety workshops.</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1050" UniqueId="66513ac4-6ded-48f2-b151-b7895bb89dbd" Number="12.0" Order="43">
+          <Text>Carry out 6 month check</Text>
+          <Ownerships>
+            <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures>
+            <Task Id="1051" UniqueId="d9cb41c1-98e2-435f-b72f-c0a4a81aa331" Order="44" Number="12.0.1">
+              <Text>Meet with the new starter to see how they are doing</Text>
+            </Task>
+            <Task Id="1052" UniqueId="5c09f401-674b-4dc2-8243-876934382dbe" Order="45" Number="12.0.2">
+              <Text>If the new starter was referred to us by a staff member, follow the 'refer applicants to Council' process</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="1053" UniqueId="3f212a25-736b-4964-bca1-f93c731e0f9f" Number="13.0" Order="46">
+          <Text>Refer applicants to Council Link Removed</Text>
+          <Ownerships>
+            <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="34" Output="New staff member is introduced into council " HowUsed="Everyone in council is aware of new staff member and staff member is made to feel welcome" ToProcess="payroll" UniqueId="ba88bf72-72d1-4f02-9ccb-5aa9902d9937" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="382" Link="Induct New Staff - Security and Vehicles" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Property Management" />
+        <LinkedStakeholder ProcessId="35" Link="Make offer of employment" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Manage Staff Recruitment" />
+        <LinkedStakeholder ProcessId="656" Link="Set up new users in Time Disciple" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Organisation Planning" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+      </SystemStakeholders>
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2019-12-05T18:38:39.7550715Z" />
+      </Metadata>
+    </Process>
+  </ProcessGroupItems>
+  <Metadata>
+    <ProcessGroupXmlGenerationOptions>
+      <RecursionLevel>Full</RecursionLevel>
+      <IncludeOverviewOnly>false</IncludeOverviewOnly>
+      <IncludeUnpublished>true</IncludeUnpublished>
+      <IncludeEmbedded>false</IncludeEmbedded>
+      <StubProcesses>false</StubProcesses>
+    </ProcessGroupXmlGenerationOptions>
+  </Metadata>
+</ProcessGroup>

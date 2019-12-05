@@ -1,0 +1,143 @@
+<Process Id="40" Name="Apply for annual leave" ReferenceNo="" Objective="To ensure that all leave is umented, that staff members leave is managed effectively and business as usual is maintained. " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="All time away from work must be accounted for as either leave or sick, the individual must be notified of the outcome of their application and C operates effectively whilst staff take leave." Owner="Needs to be reassigned N/A" OwnerId="2" Expert="Needs to be reassigned N/A" ExpertId="2" Group="Human Resources" GroupId="9" GroupUniqueId="07629ede-040e-4345-ac71-0803b14eae3f" State="Active" StateId="1" Version="1.0" PromappVersion="4.6.2.14" UniqueId="91ccd58e-9d27-4338-bd88-90d92158aa26" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="9" UniqueId="07629ede-040e-4345-ac71-0803b14eae3f" Name="Human Resources" ProcessGroupItemId="6253" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="36" Trigger="A staff member wants to take annual leave" Frequency="ad hoc" Volume="ad hoc" UniqueId="86ab7580-05e4-4d1d-bee0-2090f1fb7e73" />
+  </Triggers>
+  <Inputs>
+    <Input Id="31" FromProcess="N/A" Resource="Leave details completed in Time Disciple " HowUsed="To assess leave entitlement and suitability" UniqueId="27d467df-f52d-4c14-b3fc-85ac90056abb" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="1125" UniqueId="55cc915a-19f9-49a4-89d3-0895c8bb1166" Number="1.0" Order="0">
+      <Text>Identify leave requirements and entitlement</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1126" UniqueId="e668f9f7-03a2-49b7-8194-c407e4bd9799" Order="1" Number="1.0.1">
+          <Text>Check leave balance</Text>
+        </Task>
+        <Note Id="1127" UniqueId="55b7e109-f87a-41cb-a603-3b9e6b3bcb67" Order="2" Number="">
+          <Text>How do I know what my annual leave balance is?</Text>
+          <Attachment>Annual leave balances are shown as "ENT" for entitlements and "ACC" for accrued leave, at the bottom of your pay slip.|~||~|You can also ask payroll and/or your manager.</Attachment>
+        </Note>
+        <Note Id="1128" UniqueId="fd215389-0bd8-4e1d-a975-91fd695d51cd" Order="3" Number="">
+          <Text>What is my annual leave entitlement?</Text>
+          <Attachment>All staff members receive 4 weeks holiday each year under the Holidays Act.  That is 4 x the number of days you work per week, i.e. if you work 3 days every week, you get 4 x 3 = 12 days annual holiday.  |~||~|Annual leave becomes an entitlement on your anniversary date.  Days worked throughout the year builds up the entitlement for the next year and so on.  This is your accrued leave.  i.e. if you are in your first year, you earn accrued leave as you work, so e.g. after 6 months you have accrued 2 weeks annual leave.   In subsequent years, this accrual continues and is added to your entitlement.|~||~|Annual leave - this is a 4 week entitlement that you receive as a staff member You receive your entitled annual leave on your anniversary date.  Accrued leave is any leave that your have building up between your anniversary dates.  For more information, check on the  HR page. </Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1129" UniqueId="d760ee39-c3d9-4010-9d20-40b0da1354cd" Number="2.0" Order="4">
+      <Text>Complete leave details in Time Disciple</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1130" UniqueId="9d198375-2779-4ff9-a5c5-28bcedea9591" Order="5" Number="2.0.1">
+          <Text>Complete the proposed leave details in Time Disciple</Text>
+        </Task>
+        <Note Id="1131" UniqueId="ed92087e-8a3d-4cb8-8808-ae4789d29c57" Order="6" Number="">
+          <Text>What if I don't have access to time disciple?</Text>
+          <Attachment>You will need to complete a hard copy leave application and pass it to your manager</Attachment>
+        </Note>
+        <Task Id="1132" UniqueId="ac78ac85-5e89-4b7e-a263-4719e8fd3b73" Order="7" Number="2.0.2">
+          <Text>Send an email to your Manager/Team Leader advising that you have requested leave </Text>
+        </Task>
+        <Note Id="1133" UniqueId="0d7f9251-6c0c-4aab-8c94-0df484f3b5d3" Order="8" Number="">
+          <Text>When should I complete these details?</Text>
+          <Attachment>All leave applications should be submitted at least 10 working days prior to the proposed leave.  This is to give your manager/team leader the chance to review their work area to ensure that business as usual is maintained. |~||~|Leave taken without prior application or for which you have no entitlement may not necessarily be approved. It is therefore in your best interest to obtain approval before you make your plans. </Attachment>
+        </Note>
+        <Note Id="1134" UniqueId="e76cf06d-af8a-4a8c-9560-9d041d5c0246" Order="9" Number="">
+          <Text>Do I need to advise Payroll too?</Text>
+          <Attachment>No, do not copy your email to Payroll, the email process is between you and your manager. Payroll use the Leave entered in Time Disciple to administer your leave balances.</Attachment>
+        </Note>
+        <Note Id="1135" UniqueId="e614aaac-82d4-4b0a-8e3b-50e0f84d1165" Order="10" Number="">
+          <Text>What if I want to take some annual leave within 10 days?</Text>
+          <Attachment>Discuss this with your manager and give the reasons why you are requesting leave later than the 10 days.   It is important to note that all leave is granted at the managers discretion.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1136" UniqueId="4cb7e891-73b5-43a4-a79a-d6cffceaa9cb" Number="3.0" Order="11">
+      <Text>Consider application</Text>
+      <Ownerships>
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1137" UniqueId="10e609b4-710d-41a4-a761-5572ad216cf6" Order="12" Number="3.0.1">
+          <Text>Check that the staff member has sufficient entitlement</Text>
+        </Task>
+        <Task Id="1138" UniqueId="77dbd9a8-6964-4bf2-8e27-a93f99c895ec" Order="13" Number="3.0.2">
+          <Text>Check if there are other members of the team off at the same time </Text>
+        </Task>
+        <WebLink Id="1139" UniqueId="3f043717-1939-4f41-826e-3b88a9e17d72" Order="14" Number="">
+          <Text>Leave requests by approver</Text>
+          <Attachment>http://ssrs/Reports/Pages/Report.aspx?ItemPath=%2fTimeDisciple%2fStaff_Leave_Report</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1140" UniqueId="ffa79ad3-cb50-48cf-854f-a17966d64dbf" Number="4.0" Order="15">
+      <Text>Notify staff member of decision</Text>
+      <Ownerships>
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1141" UniqueId="7cb32e74-26cd-4a3d-a653-7ae58226d39b" Order="16" Number="4.0.1">
+          <Text>Notify the staff member by email if leave is approved|~|(If the leave is declined, explain the reason to the individual)</Text>
+        </Task>
+        <Note Id="1142" UniqueId="de2aa358-6d88-401d-91d3-ecaa7257ef4e" Order="17" Number="">
+          <Text>What are the reasons why my leave application can be declined?</Text>
+          <Attachment>Your leave application can be declined if: |~|- you do not have sufficient leave entitlement to take the time away,|~|- there are already others in the team that are on leave at the time requested,|~|- it is a recognised busy period for your team</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1143" UniqueId="bc72be19-c2d9-47fb-b315-7a336ee0ea1f" Number="5.0" Order="18">
+      <Text>Record leave (if appropriate)</Text>
+      <Ownerships>
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1144" UniqueId="04bacc5c-cada-42b9-95cd-29f37540e26d" Order="19" Number="5.0.1">
+          <Text>Use the Leave Request by Approver weblink to manage team leave</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1145" UniqueId="5e77eb86-9afa-4b24-ba99-72637aadbf4d" Number="6.0" Order="20">
+      <Text>Process leave </Text>
+      <Ownerships>
+        <Role Id="48" Name="Payroll Administrator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="37" Output="Leave agreed or declined" HowUsed="Staff member can take leave if approved" ToProcess="payroll" UniqueId="4980ea4a-ea07-49df-a735-c2f3d2c7c212" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets>
+    <Target Id="24" Measure="All leave applications are considered and the staff member advised of outcome" Target="Staff member notified if leave is approved as soon as possible after request" UniqueId="44c4a4aa-8489-4192-bfe8-36a4d918bdee" />
+  </Targets>
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="1612" PublishedDate="2014-09-24T02:23:13.85Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T18:31:53.0199410Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T18:31:53.0199410Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,152 @@
+<Process Id="44" Name="Manage flexible working hour requests" ReferenceNo="" Objective="To ensure that all applications for flexible working hours requests are processed correctly and efficiently. " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Flexible working hours allows employees greater flexibiity with working hours and arrangements. Those employees who have caring responsibilities for another person are able to apply to change their current work arrangements. This may include a change to working hours, a change to the days that they work, or a change in the place of work i.e. home instead of at the office." Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Human Resources" GroupId="9" GroupUniqueId="07629ede-040e-4345-ac71-0803b14eae3f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="4acc4582-0ba8-437a-b0ca-04d8278e131a" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="9" UniqueId="07629ede-040e-4345-ac71-0803b14eae3f" Name="Human Resources" ProcessGroupItemId="11698" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="39" Trigger="Staff member has the responsiblity of carer or has significant circumstances impacting of current terms" Frequency="ad hoc" Volume="ad hoc" UniqueId="ff06c3f5-5c21-4d8a-9dae-5e2000b18f9e" />
+  </Triggers>
+  <Inputs>
+    <Input Id="34" FromProcess="N/A" Resource="written request from staff member" HowUsed="consideration given" UniqueId="af91397a-b270-4545-a379-08e87be6b303" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="1176" UniqueId="ea4e7575-6763-427b-a336-13e246076ac4" Number="1.0" Order="0">
+      <Text>Check criteria</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="1177" UniqueId="40e63442-53c0-43c9-ae2e-daaa11ae83ff" Order="1" Number="">
+          <Text>Who can request flexible working hours?</Text>
+          <Attachment>In order to have the 'right to request’ flexible working hours, the employee must:|~|•	Have the responsibility of caring for another individual or|~|•	Have a significant circumstance which is impacting on their current terms of employment;  and|~|•	Have been working for C for at least 6 months prior to making the request to amend their working hours or arrangements.</Attachment>
+        </Note>
+        <Task Id="1178" UniqueId="ca1aa1c5-0940-4bc2-8314-469824ad594c" Order="2" Number="1.0.1">
+          <Text>[POLICY]: Flexible Working Hours Policy.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1179" UniqueId="b08fd5e2-886b-4a5b-9076-b96bf6f94143" Number="2.0" Order="3">
+      <Text>Contact Manager or HR</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1180" UniqueId="8d0fe332-3ca0-42d3-9d6c-8f29e51c3ad6" Order="4" Number="2.0.1">
+          <Text>Make contact with your manager or HR Advisor to discuss the application process. </Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1181" UniqueId="1aa90760-5650-49c5-ad19-7136ff83f563" Number="3.0" Order="5">
+      <Text>Submit a written request to HR</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1182" UniqueId="df9c606b-9832-4228-8443-5aef012ff11f" Order="6" Number="3.0.1">
+          <Text>In writing, state: |~|•	your name, |~|•	date of request |~|•	that a variation to your working arrangements is requested |~|•	how the variation will assist you to take care of the person concerned|~|•	what that variation is|~|•	if it is permanent or for a period of time|~|•	how long you wish the variation to last|~|•	when you would like the changes to take place|~|•	the date that the proposed changes will end. |~|</Text>
+        </Task>
+        <Note Id="1183" UniqueId="d8f5007e-cd89-4961-8681-346364102e11" Order="7" Number="">
+          <Text>Where can I find more information about flexible working?</Text>
+          <Attachment>The Employment Relations Act was amended to allow employees greater flexibility with working hours.  For full information refer to section 6AA of the Employment Relations Act 2000. </Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1184" UniqueId="f7d698ad-d8eb-4456-963a-cd17febd2072" Number="4.0" Order="8">
+      <Text>Acknowledge receipt</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1185" UniqueId="33103088-d4bc-45b6-95d8-c3fd4477aebb" Order="9" Number="4.0.1">
+          <Text>Send an acknowledgement of receipt letter to the staff member</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1186" UniqueId="1d0775ec-ffaf-4ef4-926a-c89f1b62b135" Number="5.0" Order="10">
+      <Text>Request considered</Text>
+      <Ownerships>
+        <Role Id="25" Name="General Manager" IsVirtual="false" />
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="1187" UniqueId="825aec84-1508-47be-9da5-f0d9c6cf8ff3" Order="11" Number="">
+          <Text>Why would a request be declined?</Text>
+          <Attachment> Request Refusal C can refuse a request for a variation to working arrangements, as described in the Employment Relations Act 2000, as follows:|~|•	The employee is not eligible to make the request|~|•	Inability to reorganise work among existing staff|~|•	Inability to recruit additional staff|~|•	A detrimental impact on quality of work|~|•	A detrimental impact on performance|~|•	Insufficient work during the period the employee proposes to work|~|•	Planned structural changes|~|•	The burden of additional costs|~|•	A detrimental effect on the ability to meet customer demands</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1188" UniqueId="1c7d8ffd-2bd6-4316-86bf-7b2c82a6ec69" Number="6.0" Order="12">
+      <Text>Inform staff member of decision</Text>
+      <Ownerships>
+        <Role Id="25" Name="General Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1189" UniqueId="79158b80-067c-455f-b2a5-64bede460bb5" Order="13" Number="6.0.1">
+          <Text>Send the staff member written advice of the decision outcome </Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1190" UniqueId="db18914b-6f46-4765-9022-31b7ada90c7a" Number="7.0" Order="14">
+      <Text>If flexible working is agreed</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1191" UniqueId="cfc6bdda-1f6d-4ea0-8f36-ac64dc232b5b" Order="15" Number="7.0.1">
+          <Text>Send payroll a change of details form </Text>
+        </Task>
+        <Task Id="1192" UniqueId="2cac5841-12aa-43aa-bed5-09784f450bec" Order="16" Number="7.0.2">
+          <Text>Update Management Accountants and Business Analyst so they can adjust Time disciple</Text>
+        </Task>
+        <Task Id="1193" UniqueId="52766463-649b-4d06-b931-4c0c53d34f11" Order="17" Number="7.0.3">
+          <Text>Inform the team of the agreed changed</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1194" UniqueId="3d966deb-6e5c-4b88-9911-ca66408fc70b" Number="8.0" Order="18">
+      <Text>If flexible hours is not agreed</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="1195" UniqueId="92bf0cfd-4d32-463d-9068-225b2e21d9e6" Order="19" Number="">
+          <Text>Can I appeal if my request is declined? </Text>
+          <Attachment>Yes, you can request a review based on the following:|~|•	The employer did not deal with the request within three months|~|•	The employer did not notify the employee of their decision in writing</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="41" Output="Working hours changed" HowUsed="To amend salary details if applicable" ToProcess="Payroll amendment" UniqueId="ec1ea3d5-084b-4e27-b4af-0d547849f0b4" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets>
+    <Target Id="26" Measure="response to request" Target="Consideration and responses given to staff member within 3 months." UniqueId="44c3b78c-1cea-4755-9eaf-3e6da22ae04c" />
+  </Targets>
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3910" PublishedDate="2017-09-20T00:03:22.83Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T18:33:44.6877333Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T18:33:44.6877333Z" />
+  </Metadata>
+</Process>

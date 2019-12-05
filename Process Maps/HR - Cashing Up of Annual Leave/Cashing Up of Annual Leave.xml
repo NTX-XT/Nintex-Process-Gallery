@@ -1,0 +1,116 @@
+<Process Id="48" Name="Cashing Up of Annual Leave" ReferenceNo="" Objective="To pay an employee part of their annual leave entitlement" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Human Resources" GroupId="9" GroupUniqueId="07629ede-040e-4345-ac71-0803b14eae3f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="d0af6f29-3252-479c-bfc0-eb89d5939078" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="9" UniqueId="07629ede-040e-4345-ac71-0803b14eae3f" Name="Human Resources" ProcessGroupItemId="11300" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="44" Trigger="Staff member wants to cash up a weeks holiday " Frequency="once per holiday entitlement year " Volume="1 per staff member per year " UniqueId="ac8c67a2-e580-487d-8b6e-8293c0b9ddfe" />
+  </Triggers>
+  <Inputs>
+    <Input Id="38" FromProcess="n/a" Resource="At least a week's holiday entitlement left" HowUsed="applying for leave" UniqueId="faf46d2b-c684-432e-aa61-14b862d9ffad" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="1256" UniqueId="a192d878-e770-4709-a99d-a9cdcbbc7c3c" Number="1.0" Order="0">
+      <Text>Write a letter to your GM </Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1257" UniqueId="c6bb67f9-b30d-4f12-acb4-988ce017b0b3" Order="1" Number="1.0.1">
+          <Text>[POLICY]: Cashing up Annual Leave policy.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1258" UniqueId="be497251-367e-4753-8869-bb292901b8fe" Number="2.0" Order="2">
+      <Text>Check that employee is entitled to cash up annual leave</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1259" UniqueId="d3d142d5-55f3-4e25-a696-d848d1baf7bb" Order="3" Number="2.0.1">
+          <Text>Check that the employee has not cashed up leave in this leave entitlement year</Text>
+        </Task>
+        <Note Id="1260" UniqueId="193368a5-dfb2-45e6-af66-46dfa6fcbd26" Order="4" Number="">
+          <Text>What is the leave entitlement year? </Text>
+          <Attachment>The entitlement year is the period of 12 months continuous employment beginning on the anniversary date of the employee starting at C.</Attachment>
+        </Note>
+        <Task Id="1261" UniqueId="467f7532-5823-4419-bd0d-23e11a6ae314" Order="5" Number="2.0.2">
+          <Text>Check employee has enough leave entitlement</Text>
+        </Task>
+        <Task Id="1262" UniqueId="24c901a1-dfcb-484a-90fa-150a5478f3e3" Order="6" Number="2.0.3">
+          <Text>If the staff member does not have enough leave or has already cashed up a week, then, send them a letter to explain the reasons why this has been declined.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1263" UniqueId="6e50ef98-9700-49b5-b55c-77de88a3810f" Number="3.0" Order="7">
+      <Text>Prepare confirmation letter </Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1264" UniqueId="daf8dff8-816c-4e46-8f4a-d4fff50d965b" Order="8" Number="3.0.1">
+          <Text>Prepare confirmation letter and pass through to GM for approval</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1265" UniqueId="c31c4ece-7740-449f-89a5-6e680a90d75c" Number="4.0" Order="9">
+      <Text>Approve cashing up of annual leave</Text>
+      <Ownerships>
+        <Role Id="25" Name="General Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1266" UniqueId="06cc2c37-27ee-4c8e-9c3f-f0c2bfb9cb14" Order="10" Number="4.0.1">
+          <Text>Review, sign letter and return to HR</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1267" UniqueId="22070538-607e-4147-a253-f8d279db4401" Number="5.0" Order="11">
+      <Text>Notify payroll </Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1268" UniqueId="5f2baeba-d22e-4165-ba56-c4dbf8bf8af2" Order="12" Number="5.0.1">
+          <Text>Complete a "New starter or adjustment to Payroll Form" </Text>
+        </Task>
+        <Task Id="1269" UniqueId="a127d90f-4277-4896-93b3-3028ec20a325" Order="13" Number="5.0.2">
+          <Text>Attach letters and give to payroll</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1270" UniqueId="3c9683fb-c2d7-4706-b470-0211849c0d8e" Number="6.0" Order="14">
+      <Text>Pay employee</Text>
+      <Ownerships>
+        <Role Id="48" Name="Payroll Administrator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="46" Output="Staff member receives payment" HowUsed="to reduce annual leave entitlement" ToProcess="payroll" UniqueId="038a2385-7a59-4ab2-9ad6-8b8aede607be" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3100" PublishedDate="2017-09-20T00:01:47.263Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T18:32:48.8595403Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T18:32:48.8595403Z" />
+  </Metadata>
+</Process>

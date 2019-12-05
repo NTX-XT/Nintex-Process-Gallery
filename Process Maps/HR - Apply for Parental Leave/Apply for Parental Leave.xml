@@ -1,0 +1,107 @@
+<Process Id="42" Name="Apply for Parental Leave" ReferenceNo="" Objective="To ensure everyone is aware of an expectation to take and return from parental leave" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="When an individual takes parental leave, their position may be held open for them, dependant on the individual's entitlement, therefore is is important that communication is kept open so everyone is aware of the intentions after the baby is born and the payroll paperwork can be managed." Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Human Resources" GroupId="9" GroupUniqueId="07629ede-040e-4345-ac71-0803b14eae3f" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="c75a1974-978a-4c5b-8971-b3aa0f443889" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="9" UniqueId="07629ede-040e-4345-ac71-0803b14eae3f" Name="Human Resources" ProcessGroupItemId="11212" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="37" Trigger="Staff member/or spouse becomes pregnant" Frequency="adhoc" Volume="adhoc" UniqueId="8dfdbe39-185d-4cca-9792-ec6535bcec42" />
+  </Triggers>
+  <Inputs>
+    <Input Id="32" FromProcess="n/a" Resource="medical certificte from GP" HowUsed="letter notifying of parental leave requirement " UniqueId="2448b8ef-2ba9-4927-ba6e-9764668aa983" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="1146" UniqueId="6ecdaf39-778e-4173-b836-2f67c989166c" Number="1.0" Order="0">
+      <Text>Inform manager of intention to take parental leave </Text>
+      <Ownerships>
+        <Role Id="39" Name="Staff Member (replace with All Staff)" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="1147" UniqueId="64bc062f-7f60-4a23-b784-d99b5b5e6dd8" Order="1" Number="">
+          <Text>When should I tell my manager that I intend taking parental leave?</Text>
+          <Attachment>As soon as possible but at least three months before the expected delivery date.</Attachment>
+        </Note>
+        <Task Id="1148" UniqueId="077ef0c2-6629-4a3e-ae72-f04c0c93f1dd" Order="2" Number="1.0.1">
+          <Text>Refer to the Department of Labour website for advice on taking parental leave</Text>
+        </Task>
+        <WebLink Id="1149" UniqueId="872bae58-129a-4967-8b8e-14ac5d70ae6a" Order="3" Number="">
+          <Text>Department of labour advice on taking Parental Leave</Text>
+          <Attachment>http://www.dol.govt.nz/er/holidaysandleave/parentalleave/index.asp</Attachment>
+        </WebLink>
+        <Task Id="1150" UniqueId="9374cdc2-533b-4dd4-8e0e-b147306f0c2d" Order="4" Number="1.0.2">
+          <Text>Prepare a  written application of intention to take parental leave.  This should include the dates for the leave and have the certificate from your tor attached</Text>
+        </Task>
+        <Task Id="1151" UniqueId="61960fc1-c9d2-47af-842d-711a6e1b8970" Order="5" Number="1.0.3">
+          <Text>[GUIDE]: Parental Leave - Sample letter of intention to take parental.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1152" UniqueId="232d085c-ba6e-4ad4-b82a-1e02390fb1d7" Number="2.0" Order="6">
+      <Text>Notify HR </Text>
+      <Ownerships>
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1153" UniqueId="ff07f5aa-8676-4938-818a-186d79090d68" Order="7" Number="2.0.1">
+          <Text>Inform HR of proposed parental leave</Text>
+        </Task>
+        <Task Id="1154" UniqueId="5c44248a-bf87-4353-b411-1c5a08527110" Order="8" Number="2.0.2">
+          <Text>Discuss what needs to be done to cover the staff members absence</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1155" UniqueId="5760a207-5959-4ce3-ae0b-da4c572d6c7c" Number="3.0" Order="9">
+      <Text>Notify staff member of the outcome</Text>
+      <Ownerships>
+        <Role Id="42" Name="HR Business Partner" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="1156" UniqueId="ffeb623d-0def-4916-8797-858c5ea4fec5" Order="10" Number="3.0.1">
+          <Text>Send confirmation and a copy of the Department of Labour's Employee's Guide to Parental Leave.</Text>
+        </Task>
+        <Task Id="1157" UniqueId="e5531e07-921f-4b4b-881c-ce72de5f1673" Order="11" Number="3.0.2">
+          <Text>Add a diary note after the expected delivery date but within 21 days, to send written confirmation about the date on which the employees parental leave will end and the date they are due back from parental leave.</Text>
+        </Task>
+        <Task Id="1158" UniqueId="f58bee54-68cc-45d1-9cd2-fa20d13a3117" Order="12" Number="3.0.3">
+          <Text>Inform IS, Records, Promapp Champion and payroll that the staff member will be on parental leave.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1159" UniqueId="9f25fd0f-8a9b-4cf3-a5bd-2d1dde1a128e" Number="4.0" Order="13">
+      <Text>After the birth, update your manager and HR</Text>
+      <Ownerships>
+        <Role Id="39" Name="Staff Member (replace with All Staff)" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="1160" UniqueId="5205649a-a433-4dd0-97ae-6c2812764bbe" Order="14" Number="">
+          <Text>What is the time frame for notifying of intentions to return or not to return? </Text>
+          <Attachment>this should be no later than 21 days prior to the end of your parental leave</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="38" Output="Parental Leave " HowUsed="leave from work and clear expectations of return  " ToProcess="payroll" UniqueId="628a26ad-8ad8-40e9-882a-b30d265a8560" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="2921" PublishedDate="2017-09-20T00:01:27.73Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T18:29:06.9068106Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T18:29:06.9068106Z" />
+  </Metadata>
+</Process>
