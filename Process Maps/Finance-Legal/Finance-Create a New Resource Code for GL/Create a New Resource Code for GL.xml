@@ -1,0 +1,67 @@
+<Process Id="1716" Name="Create a New Resource Code for GL" ReferenceNo="" Objective="Add a resource code to a Master - Sub Account to create a New General Ledger Code.|~||~|APPROVED BY:  John Doe, Senior Financial Accountant" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Finance" GroupId="201" GroupUniqueId="eb358656-d641-4b38-8794-35ea5c6d57b7" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="19547410-63dd-4830-8b63-be5a3bdf8d3b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="201" UniqueId="eb358656-d641-4b38-8794-35ea5c6d57b7" Name="Finance" ProcessGroupItemId="11476" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="86858" UniqueId="681c94bd-6f37-4aae-a80e-657a26f78180" Number="1.0" Order="0">
+      <Text>Request for New GL Code</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="86859" UniqueId="15cde3a8-7649-4140-96ab-df646e745d13" Order="1" Number="1.0.1">
+          <Text>Email Senior Financial Accountant to request a new GL code</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="86860" UniqueId="90738058-7401-49cd-a3dd-eb76cc6ebc80" Number="2.0" Order="2">
+      <Text>Process GL Code</Text>
+      <Ownerships>
+        <Role Id="540" Name="Senior Financial Accountant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="86861" UniqueId="bd675ec0-5c84-4d6f-b98a-baba3c7a67d2" Order="3" Number="2.0.1">
+          <Text>Receive request to create a new GL Code</Text>
+        </Task>
+        <Task Id="86862" UniqueId="71018f4a-df33-4c9b-917a-7b745ebaef02" Order="4" Number="2.0.2">
+          <Ownerships>
+            <Tag Id="2" Name="Authority" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>In Authority, create the code</Text>
+        </Task>
+        <Task Id="86863" UniqueId="a5a25a6b-ab1e-44f9-b730-b553e49b32bc" Order="5" Number="2.0.3">
+          <Text>[GUIDE]: Create a New GL Resource Code</Text>
+        </Task>
+        <Task Id="86864" UniqueId="ecd175c6-cc42-45e0-8f2a-531e8d8bbaef" Order="6" Number="2.0.4">
+          <Text>Email the staff member to inform them the code has been created and give them the new number</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3452" PublishedDate="2017-09-20T00:02:28.76Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:29:16.0217913Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:29:16.0217913Z" />
+  </Metadata>
+</Process>

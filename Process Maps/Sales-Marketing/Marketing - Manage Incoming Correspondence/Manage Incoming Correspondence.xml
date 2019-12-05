@@ -1,0 +1,264 @@
+<Process Id="685" Name="Manage Incoming Correspondence" ReferenceNo="" Objective="This process covers the management of incoming mail.  Note that it does not include email." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Communications" GroupId="128" GroupUniqueId="04b6b979-55d7-4dff-b7e5-608afb129284" State="Active" StateId="1" Version="3.0" PromappVersion="4.6.2.14" UniqueId="9f9bb452-e373-4a24-be07-93a4b715edf5" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="128" UniqueId="04b6b979-55d7-4dff-b7e5-608afb129284" Name="Communications" ProcessGroupItemId="11707" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="8949" UniqueId="89e2e352-ad5b-4bf9-b578-3ab17bdc094c" Number="1.0" Order="0">
+      <Text>Open, sort and scan incoming letters</Text>
+      <Ownerships>
+        <Role Id="225" Name="Records Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8950" UniqueId="cf5a4ed3-a3fe-4688-98cc-179ca5a7492a" Order="1" Number="1.0.1">
+          <Text>Open the day's mail and sort it into the relevant departments.  Departments are:|~||~|- Engineering|~|- Corporate|~|- Community|~|- Environment and Planning|~|- Democracy Services</Text>
+        </Task>
+        <Task Id="8951" UniqueId="9374296a-391b-4ff4-bd16-eef88dcde092" Order="2" Number="1.0.2">
+          <Text>Scan each department.  Use the Incoming Correspondence button on the scanner for that Department.</Text>
+        </Task>
+        <Note Id="8952" UniqueId="58833808-cb8b-4634-bbb4-784f398bf9a7" Order="3" Number="">
+          <Text>What happens then?</Text>
+          <Attachment>The letters for each department will go into a department-specific folder PsiCapture will look at those folders, OCR the items in them, and deposit them into another department-specific folder. Then step 2.0 can occur.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8953" UniqueId="2b2ba69e-8184-46e3-a687-a0b031363654" Number="2.0" Order="4">
+      <Text>Upload scanned letters to Doc Mgmt System</Text>
+      <Ownerships>
+        <Role Id="225" Name="Records Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8954" UniqueId="a06b2be8-e4ff-4b71-928b-8c02471b056a" Order="5" Number="2.0.1">
+          <Text>For each of the departments that has had mail scanned that day, go to the department's scanned mail</Text>
+        </Task>
+        <Task Id="8955" UniqueId="cc961c63-d1a6-4991-8597-d2cdf8eac89f" Order="6" Number="2.0.2">
+          <Text>Drag and drop each item into Doc Mgmt System.</Text>
+        </Task>
+        <Task Id="8956" UniqueId="169fbcf8-bfe9-4c90-b25a-97f7a8ca4f2e" Order="7" Number="2.0.3">
+          <Text>Select the category "Incoming Correspondence".</Text>
+        </Task>
+        <Task Id="8957" UniqueId="6369401e-5559-4192-b575-8773abe24269" Order="8" Number="2.0.4">
+          <Text>Select the Department</Text>
+        </Task>
+        <Task Id="8958" UniqueId="ba883e63-9182-4f95-856a-82299451f8e8" Order="9" Number="2.0.5">
+          <Text>Check in and Close.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8959" UniqueId="216880ca-2ed4-459f-9619-4fcdec7840e7" Number="3.0" Order="10">
+      <Text>Review and assign letter in SilentOne</Text>
+      <Ownerships>
+        <Role Id="16" Name="Executive Assistant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8960" UniqueId="ec0e677e-6680-4d30-b2d6-bc4a0dcced33" Order="11" Number="3.0.1">
+          <Text>Check daily in your Department's "New" search folder.  </Text>
+        </Task>
+        <Task Id="8961" UniqueId="a491754d-f6da-46ca-9369-69490467ee23" Order="12" Number="3.0.2">
+          <Text>Open each letter to review it.  To do this, click on the name of the file.</Text>
+        </Task>
+        <Note Id="8962" UniqueId="de5b4352-cb83-4715-99e9-480e3dd62f1c" Order="13" Number="">
+          <Text>Check for previous correspondence!</Text>
+          <Attachment>It is usually worth looking for any history on this issue before sending the letter on.</Attachment>
+        </Note>
+        <Task Id="8963" UniqueId="56dff1ac-dbdc-4ea9-893a-3ee78f254a91" Order="14" Number="3.0.3">
+          <Text>In Doc Mgmt System, click on the "P" icon at the far right.  Click on Check Out.</Text>
+        </Task>
+        <Note Id="8965" UniqueId="c9a42006-d111-42e1-825b-b434b2722397" Order="15" Number="">
+          <Text>When should an acknowledgement be sent?</Text>
+          <Attachment>An acknowledgement should be sent immediately if the sender has provided an email address; or, a hard copy acknowledgement letter should be sent if it is likely to take more than five working days for a full response.</Attachment>
+        </Note>
+        <Note Id="8966" UniqueId="65a393f8-5451-49df-8db4-1ed4cabe2591" Order="16" Number="">
+          <Text>What if this letter should be responded to by someone in a different department?</Text>
+          <Attachment>Change the COR_Department and check in.  The letter will now appear in the other department's folder.</Attachment>
+        </Note>
+        <Task Id="8967" UniqueId="939b13da-bc0a-41db-b4ab-67b58b0b9e1e" Order="17" Number="3.0.4">
+          <Text>Rename the ument to [name of sender] [date received], using the date format YYYY-MM-DD.</Text>
+        </Task>
+        <Task Id="8968" UniqueId="be93b8cb-a508-4277-b33d-0d65090adb61" Order="18" Number="3.0.5">
+          <Text>Click on "Check In".</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8969" UniqueId="187fe0c3-9aba-4d10-b62c-d18683a23680" Number="4.0" Order="19">
+      <Text>Send acknowledgement where appropriate</Text>
+      <Ownerships>
+        <Role Id="16" Name="Executive Assistant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8970" UniqueId="b21bf0df-8326-465f-b3d3-9f0dbc9a0e02" Order="20" Number="4.0.1">
+          <Text>Depending on your departmental process, email the letter writer to confirm receipt of their letter.</Text>
+        </Task>
+        <Task Id="8971" UniqueId="5ebbde13-905b-4e1e-afc0-6bd168681b63" Order="21" Number="4.0.2">
+          <Text>Update the COR_Acknowledgement to confirm that it has been sent.    To do this, click on the "P" icon at the far right.  Click on Check Out.  Update the COR-Acknowledgement.  Check In.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8972" UniqueId="c8f08c54-126f-4b04-80da-6aa646332c04" Number="5.0" Order="22">
+      <Text>Create Service Request with link to letter in Doc Mgmt System</Text>
+      <Ownerships>
+        <Role Id="16" Name="Executive Assistant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8973" UniqueId="48ebc4cc-192f-4c90-aa0f-cfcd7df436c8" Order="23" Number="5.0.1">
+          <Ownerships>
+            <Tag Id="1" Name="NCS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>In NCS's Service Request tab, click on Add Request.  Only the red (mandatory) fields need to be filled in.</Text>
+        </Task>
+        <Task Id="8974" UniqueId="3feedc91-eb23-4b1c-831e-a7b1a766e750" Order="24" Number="5.0.2">
+          <Ownerships>
+            <Tag Id="1" Name="NCS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>In the Caller name field, start tying the name of the sender.  NCS will attempt to identify that person in a drop down list.  Click on the right person.</Text>
+        </Task>
+        <Note Id="8975" UniqueId="826bf148-464b-474a-8952-320ec86f5deb" Order="25" Number="">
+          <Text>What if the person isn't there?</Text>
+          <Attachment>If the person isn't in our database, just enter their information manually.</Attachment>
+        </Note>
+        <Task Id="8976" UniqueId="1d76ca43-1d35-4353-9496-01d5539781c8" Order="26" Number="5.0.3">
+          <Text>Paste the URL of the SilentOne ument in the Request Details</Text>
+        </Task>
+        <Note Id="8977" UniqueId="45c1620a-761e-44bd-96fb-70c3b4e2b6c2" Order="27" Number="">
+          <Text>How do I find the URL of the letter?</Text>
+          <Attachment>In the SilentOne web client, click on the email icon at the far right of the letter's title bar.  SilentOne will create an email with a link in it.  Copy and paste the link into the SR's Request Details.</Attachment>
+        </Note>
+        <Task Id="8978" UniqueId="93026f39-0a6d-494f-bb12-fae024055dfd" Order="28" Number="5.0.4">
+          <Text>Choose the District of the Sender.</Text>
+        </Task>
+        <Task Id="8979" UniqueId="2ac741fe-4a18-46d0-94e2-76a3b2fe110d" Order="29" Number="5.0.5">
+          <Text>Add your name in the Received By field, </Text>
+        </Task>
+        <Task Id="8980" UniqueId="d9a13316-731a-4173-a365-385cde7535df" Order="30" Number="5.0.6">
+          <Text>Choose a Department to assign the response to, and the Officer Assigned who will be responsible for responding to the letter</Text>
+        </Task>
+        <Task Id="8981" UniqueId="64114b8f-d09d-40ca-a6c4-f09d4fae9475" Order="31" Number="5.0.7">
+          <Text>Choose the Action Required</Text>
+        </Task>
+        <Task Id="8982" UniqueId="a5814887-528c-4005-bf67-7ebed775d675" Order="32" Number="5.0.8">
+          <Text>If all other defaults are acceptable, click Add New Request.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8983" UniqueId="0a1a60f4-c0a2-4c20-97de-359b77d2821d" Number="6.0" Order="33">
+      <Text>Receive Service Request email and respond to letter</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8984" UniqueId="f235802c-3bfb-490d-a371-9448a96db7a9" Order="34" Number="6.0.1">
+          <Text>The responding staff member will receive an email with the details of the service request.  This will include a link to the letter in SilentOne.  Follow the link and compose a reply.</Text>
+        </Task>
+        <Note Id="8985" UniqueId="cc742858-56d1-4d1b-9b08-28d4510d3699" Order="35" Number="">
+          <Text>What if a phone call is more appropriate?</Text>
+          <Attachment>No problem.  In step 7.0, advise the EA that you have called.  Sign off the Service Request with details of the conversation.</Attachment>
+        </Note>
+        <Note Id="8986" UniqueId="ef1e8bab-378a-461a-ae12-5f1c29fa11a3" Order="36" Number="">
+          <Text>What if the letter should be answered by someone else?</Text>
+          <Attachment>If you are not the correct responder, add an Action to the Service Request and forward it to the appropriate person.  When you do this, be sure to put the EA in the Carbon Copy field so that she is kept in the loop and can update the letter's information in SilentOne.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8987" UniqueId="10af56ef-35eb-405a-870a-9fed31738dad" Number="7.0" Order="37">
+      <Text>Forward response letter to EA and sign off Service Request</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8988" UniqueId="d6a1f065-b5fb-46de-a38d-d6be45574055" Order="38" Number="7.0.1">
+          <Text>Please discuss the preferred way of forwarding the letter with your EA or letter handler.  For most EAs, soft or hard copies are acceptable.</Text>
+        </Task>
+        <Task Id="8989" UniqueId="46f6ddb7-32ca-4e2e-9ffc-0cb001613d34" Order="39" Number="7.0.2">
+          <Text>Sign off the original SR. To do this:|~||~|- open the SR|~|- click on "Sign Off"|~|- click on the clock to enter a date &amp; time completed|~|- summarise the action you have taken|~|- select yourself in the "Request Closed by" dropdown|~|- click on "Close Request".</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="8990" UniqueId="e6ccb296-68da-4066-a904-60e12f8fbce0" Number="8.0" Order="40">
+      <Text>Finalise and add response letter to Doc Mgmt System, link the two letters, update the original letter</Text>
+      <Ownerships>
+        <Role Id="16" Name="Executive Assistant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="8991" UniqueId="1e5e1ecc-043f-49a9-8b7b-12798d3e5d81" Order="41" Number="8.0.1">
+          <Text>Review the letter and finalise.</Text>
+        </Task>
+        <Task Id="8993" UniqueId="57cfa2d7-a1bd-490e-8f93-59a93f7240a2" Order="42" Number="8.0.2">
+          <Text>Select the category "Outgoing Correspondence".</Text>
+        </Task>
+        <Task Id="8994" UniqueId="31db06e4-f31d-47cc-94d9-46a4d3e422f0" Order="43" Number="8.0.3">
+          <Text>Optionally, add a COR_Reference.</Text>
+        </Task>
+        <Task Id="8995" UniqueId="cf6bb59d-d913-4a69-a3ff-b2faeb95d72a" Order="44" Number="8.0.4">
+          <Text>Click on "Check In"</Text>
+        </Task>
+        <Task Id="8996" UniqueId="ac2d6c1f-d277-4d89-bd3e-3929cec92933" Order="45" Number="8.0.5">
+          <Text>Copy or note the ID number of the response letter.  You will use this to link it to the original letter.</Text>
+        </Task>
+        <Task Id="8997" UniqueId="74c50b5f-789e-46a1-b04a-045693885038" Order="46" Number="8.0.6">
+          <Text>Locate the original letter in the "Processing" virtual folder.  Click on the "P" icon at far right to open its Properties.</Text>
+        </Task>
+        <Task Id="8998" UniqueId="fef437df-7181-40fd-88e3-11537b55a47c" Order="47" Number="8.0.7">
+          <Text>Click on "Check Out".</Text>
+        </Task>
+        <Task Id="8999" UniqueId="e99a672e-2c9a-4ec8-aa97-117b7fb6f30d" Order="48" Number="8.0.8">
+          <Text>Under the "Related Items" tab, paste in the ID number of the response letter.  Click on the plus sign.  The two uments are now linked and will say "1 related item" beside their display names in SilentOne.</Text>
+        </Task>
+        <Note Id="9000" UniqueId="4ef43898-f7bf-4e30-a726-32c3abc36aca" Order="49" Number="">
+          <Text>How do I view the responses linked to a letter in the future?</Text>
+          <Attachment>To view related items when they are shown, click on the words "[n] related item(s)" and all related items will be listed.</Attachment>
+        </Note>
+        <Task Id="9001" UniqueId="e92aa855-5553-4dce-9ac0-cc3c5e8f1224" Order="50" Number="8.0.9">
+          <Text>Go to the "General" tab of the original letter's Properties.</Text>
+        </Task>
+        <Task Id="9002" UniqueId="309ff02b-7657-40de-a412-5938f75765b1" Order="51" Number="8.0.10">
+          <Text>Update the COR_Status to "Complete".</Text>
+        </Task>
+        <Task Id="9003" UniqueId="19ebe19b-d480-42a3-b598-59d5316f9353" Order="52" Number="8.0.11">
+          <Text>Optionally, add a COR_Reference.</Text>
+        </Task>
+        <Task Id="9004" UniqueId="c32bf594-a298-454b-9209-bf6e7e9e2bb6" Order="53" Number="8.0.12">
+          <Text>Click on "Check In".</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9005" UniqueId="7ed0b2a8-01b1-4c0c-b100-41d6bcde8a24" Number="9.0" Order="54">
+      <Text>Print and send the letter</Text>
+      <Ownerships>
+        <Role Id="16" Name="Executive Assistant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3927" PublishedDate="2017-09-20T00:03:25.107Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:21:48.6822743Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:21:48.6822743Z" />
+  </Metadata>
+</Process>

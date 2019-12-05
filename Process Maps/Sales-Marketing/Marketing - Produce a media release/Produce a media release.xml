@@ -1,0 +1,175 @@
+<Process Id="14" Name="Produce a media release" ReferenceNo="" Objective="Describe the process to be followed when preparing and sending out a media release. It must comply with the Media Policy." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Media releases are sent out to inform the public, rate-payers and all council stakeholders of any C news that may effect or impact them, and explain how. It is important all media releases promote and profile council in a positive way. " Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Communications/Graphic Design" GroupId="7" GroupUniqueId="0c077685-7f52-475e-b736-6dcecd6927c8" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="2a4f2708-4e4c-4608-b3b6-528c85ae7f55" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="7" UniqueId="0c077685-7f52-475e-b736-6dcecd6927c8" Name="Communications/Graphic Design" ProcessGroupItemId="12009" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="11" Trigger="An event or information the public needs to know about" Frequency="As required" Volume="One per week " UniqueId="b9687585-8d3a-438f-83eb-617bf134b8e2" />
+    <Trigger Id="12" Trigger="A positive  event or project" Frequency="Adhoc" Volume="One per week" UniqueId="124e6c45-51c4-4e1c-96f1-1697ce528335" />
+  </Triggers>
+  <Inputs>
+    <Input Id="11" FromProcess="Any event or decision that needs to be communicated to the public" Resource="Accurate information" HowUsed="To prepare media release" UniqueId="3329e960-f837-4c4b-b6f8-293f3e3d7c3f" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="353" UniqueId="340cae5d-7106-45e7-8f80-899c02244d5c" Number="1.0" Order="0">
+      <Text>Develop key messages and source information</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="354" UniqueId="931f3fce-72ce-4842-a0e1-dc5e0e5ff149" Order="1" Number="1.0.1">
+          <Text>Determine angle of media release</Text>
+        </Task>
+        <Note Id="355" UniqueId="f6e9d08e-64ac-4577-a327-48bad940aad8" Order="2" Number="">
+          <Text>What if I don't know what the key messages are?</Text>
+          <Attachment>Ask appropriate subject matter expert/staff member.</Attachment>
+        </Note>
+        <Note Id="356" UniqueId="8016424b-6dfc-4c05-abce-3d8f742fc6f6" Order="3" Number="">
+          <Text>What if I don't know which staff member to go to?</Text>
+          <Attachment>Look in staff directory|~|Ask Communications Manager|~|Ask PA to CE</Attachment>
+        </Note>
+        <Task Id="357" UniqueId="53bdfe72-6681-44b4-b8ab-bfa4dc14b8ac" Order="4" Number="1.0.2">
+          <Text>Gather information from relevant senior staff members and managers</Text>
+        </Task>
+        <Task Id="358" UniqueId="394b70b9-233a-4c21-8723-c1912bc9b668" Order="5" Number="1.0.3">
+          <Text>Where needed refer to Council website for information, staff intranet and Council publications</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="359" UniqueId="c98002b7-1faa-4169-ae43-6261f54cc09a" Number="2.0" Order="6">
+      <Text>Write media release using media release template</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="360" UniqueId="8d624512-ee2a-4222-a04d-4b1947690533" Order="7" Number="2.0.1">
+          <Text>Cover why, what, when, who and how</Text>
+        </Task>
+        <Note Id="361" UniqueId="fa07bdd7-c842-4d20-aa4b-2a04a46ea056" Order="8" Number="">
+          <Text>What if a similar media release has been written in the past?</Text>
+          <Attachment>Refer back to previous releases in the J drive|~|Refer to media releases on the C website|~|Refer to the Media policy </Attachment>
+        </Note>
+        <Task Id="362" UniqueId="e08c1893-a947-4178-8f9d-f066a38c3bf5" Order="9" Number="2.0.2">
+          <Text>Ensure the heading is bolded and is catchy</Text>
+        </Task>
+        <Note Id="363" UniqueId="6893b42f-0c35-44ec-be8c-51f88e6e6ae8" Order="10" Number="">
+          <Text>What if I can't think of a heading?</Text>
+          <Attachment>Brainstorm with members of the Communication team</Attachment>
+        </Note>
+        <Task Id="364" UniqueId="a0b3c29e-fa16-47a3-ab61-f6aeaa6d9bd5" Order="11" Number="2.0.3">
+          <Ownerships>
+            <Tag Id="4" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Ensure you use the Media Release header in Outlook</Text>
+        </Task>
+        <Note Id="365" UniqueId="5d57198e-2381-483c-9bf9-da102a882e37" Order="12" Number="">
+          <Text>What if I can't find the header?</Text>
+          <Attachment>You can find it in</Attachment>
+        </Note>
+        <Task Id="366" UniqueId="813418a2-e4fd-4c23-8d95-65e044e0e5e5" Order="13" Number="2.0.4">
+          <Text>Ensure your contact details are at the bottom of the media release and that it is dated </Text>
+        </Task>
+        <Task Id="367" UniqueId="9098a62c-cd31-4211-afcc-52a6233e1228" Order="14" Number="2.0.5">
+          <Text>Use Gill Sans MT font</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="368" UniqueId="913b4f54-49c4-4370-aef2-eb19f5289eb1" Number="3.0" Order="15">
+      <Text>Obtain approval</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="369" UniqueId="bddc0463-1602-4c75-89ec-2690e7e6bf90" Order="16" Number="3.0.1">
+          <Text>Send to relevant staff member for approval</Text>
+        </Task>
+        <Note Id="370" UniqueId="9ffaae1e-76a4-40b1-97d9-0b4150d138ce" Order="17" Number="">
+          <Text>What if staff member is not available to review media release?</Text>
+          <Attachment>Send media release to their team manager for approval</Attachment>
+        </Note>
+        <Task Id="371" UniqueId="0eb67cbb-c176-4473-9dfc-84ab8b1ed18a" Order="18" Number="3.0.2">
+          <Text>Incorporate any changes required</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="372" UniqueId="1b2602b9-887a-4cf0-a918-1f3c878a438f" Number="4.0" Order="19">
+      <Text>Obtain sign off from general manager and Chief Executive</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="373" UniqueId="6a488c99-5fe1-4089-a4ee-6baddd127ea2" Order="20" Number="">
+          <Text>What if general manager is not available to sign off?</Text>
+          <Attachment>If there is an acting general manager seek their sign off|~|Decide if release can be delayed|~|Ask Communications Manager if the CEO can sign off on the general manager's behalf </Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="374" UniqueId="5effb48b-cd3d-4c11-95f6-8102ca104929" Number="5.0" Order="21">
+      <Text>Distribute media release</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="375" UniqueId="2b6b26ba-07f3-42cc-8aae-1141e4c15930" Order="22" Number="5.0.1">
+          <Text>Send media release by email to relevant media contact list using blind copy</Text>
+        </Task>
+        <Note Id="376" UniqueId="0ea94db4-6358-4c4f-b802-b66d039f8576" Order="23" Number="">
+          <Text>How do I know which media contact list to use?</Text>
+          <Attachment>Media - ALL (all media contacts including Internal and External stakeholders)|~|Media - Central (, Huntly)|~|Media - East (Gordonton)|~|Media - Maori (-Tanui, local iwi)|~|Media - ional (For large scale events/items of significant interest)|~|Media - North (, Pokeno, Port )|~|Media - |~|Media - Tamahere|~|Media -  district (All  district media)</Attachment>
+        </Note>
+        <Task Id="377" UniqueId="2d719d0d-da23-4c5b-a053-0cef273b32d8" Order="24" Number="5.0.2">
+          <Text>Send media release out to Internal and External mailing lists</Text>
+        </Task>
+        <Task Id="378" UniqueId="152415b3-27cb-43e4-9c2f-3be55db6cf88" Order="25" Number="5.0.3">
+          <Text>Upload media release to Council website</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="379" UniqueId="dbff58e7-6980-4c7f-b65a-94e574f74abf" Number="6.0" Order="26">
+      <Text>Monitor media</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="380" UniqueId="8557e9ce-b466-4805-b724-fc9e835cd7c4" Order="27" Number="6.0.1">
+          <Text>Ensure the original media release and any articles that appear in newspapers/online as a result are included in Media Roundup.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="11" Output="Public and/or stakeholders provided with accurate and timely information" HowUsed="Information purposes" ToProcess="General public and  staff" UniqueId="c1ebf874-5a3a-4e08-aa4c-5da3a9ddeec9" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders>
+    <Role Id="14" Name="Chief Executive" />
+    <Role Id="17" Name="Customer Delivery Manager" />
+    <Role Id="18" Name="Councillors" />
+  </Stakeholders>
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <Targets>
+    <Target Id="10" Measure="Information is provided timely and accurately" Target="Public and staff informed of key council updates and news" UniqueId="a6cf784c-a310-4eef-a24d-2732eb51686d" />
+  </Targets>
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4543" PublishedDate="2017-09-20T00:04:38.397Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:23:52.7942103Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:23:52.7952096Z" />
+  </Metadata>
+</Process>

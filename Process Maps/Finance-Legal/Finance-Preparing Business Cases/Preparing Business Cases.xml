@@ -1,0 +1,177 @@
+<Process Id="1058" Name="Preparing Business Cases" ReferenceNo="" Objective="To set out the process to be followed to prepare a business case to get a captial project considered by Council for inclusion in years 1, 2 or 3 of a Long Term Plan (LTP).|~||~|This includes multi-year projects beginning in years 1, 2 or 3.|~||~|Business cases should be prepared for capital projects expected to cost $500,000 or more.|~||~|Note that projects for inclusion in years 4 to 10 of the LTP will be taken from the approved AMP." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Finance" GroupId="201" GroupUniqueId="eb358656-d641-4b38-8794-35ea5c6d57b7" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="a6e5efce-6fc5-44bc-84de-30c12850b137" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="201" UniqueId="eb358656-d641-4b38-8794-35ea5c6d57b7" Name="Finance" ProcessGroupItemId="11888" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="55580" UniqueId="5a1bb9a1-6bf3-4b8a-b664-32a43f6fa33b" Number="1.0" Order="0">
+      <Text>Collect existing information</Text>
+      <Ownerships>
+        <Role Id="366" Name="Operational Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="55581" UniqueId="5111d270-eb45-4300-9fce-93af47b1a8f9" Order="1" Number="1.0.1">
+          <Text>Information from Asset Management Plan</Text>
+        </Task>
+        <Task Id="55583" UniqueId="d269fd8e-e860-4db3-a7d4-3fbab1e2973c" Order="2" Number="1.0.2">
+          <Text>Project Objectives</Text>
+        </Task>
+        <Task Id="56009" UniqueId="772b5c04-7a48-4a2c-8df1-91a4fd87a702" Order="3" Number="1.0.3">
+          <Text>Project Scope</Text>
+        </Task>
+        <Task Id="56010" UniqueId="615d2225-ff2e-4e15-8165-e199880fbfd5" Order="4" Number="1.0.4">
+          <Text>Project Drivers (Growth, Levels of Service, Legislative requirements)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56011" UniqueId="2108977f-b154-4a5f-96c2-07272c1d7a5f" Number="2.0" Order="5">
+      <Text>Identify and Investigate Options</Text>
+      <Ownerships>
+        <Role Id="366" Name="Operational Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56014" UniqueId="4412c488-6edd-4941-9d6d-03d176d6c254" Order="6" Number="2.0.1">
+          <Text>Search for options</Text>
+        </Task>
+        <Task Id="56016" UniqueId="ee8fb580-b29c-4ecb-b128-12ca54d9c624" Order="7" Number="2.0.2">
+          <Text>Evaluate options technically</Text>
+        </Task>
+        <Task Id="56018" UniqueId="cc74c52a-92a5-49b8-8b48-7d70d5052c4d" Order="8" Number="2.0.3">
+          <Text>Identify the risks with each option</Text>
+        </Task>
+        <Task Id="56075" UniqueId="0beee154-ccfe-4952-9cec-24d178446765" Order="9" Number="2.0.4">
+          <Text>Determine life cycle cost of each option including the cost of risk mitigation</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56240" UniqueId="f21f524d-3da4-4305-9b6a-ec0425ac955f" Number="3.0" Order="10">
+      <Text>Consultation</Text>
+      <Ownerships>
+        <Role Id="366" Name="Operational Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56286" UniqueId="29e896a2-3350-46f7-9ebe-3787d08a5b5f" Order="11" Number="3.0.1">
+          <Text>If it is determined that consultation is required, consult affected and interested parties on options</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56324" UniqueId="8b99ae20-95d9-40d0-a47a-b58c59f962d5" Number="4.0" Order="12">
+      <Text>Evaluate Options</Text>
+      <Ownerships>
+        <Role Id="366" Name="Operational Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56343" UniqueId="9622c12b-fb04-49fb-bb8d-86b2c485d7fc" Order="13" Number="4.0.1">
+          <Text>Comparatively evaluate options taking into account technical isses, life cycle costs and the outcomes of consultation.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56350" UniqueId="bd198388-894d-4a3b-ad90-8fcedeedfbfa" Number="5.0" Order="14">
+      <Text>Select Best Option</Text>
+      <Ownerships>
+        <Role Id="366" Name="Operational Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56352" UniqueId="3b289b7c-b264-44bd-9fc1-c12a0e83710b" Order="15" Number="5.0.1">
+          <Text>Select best option based on appropriate criteria - generally least life cycle cost</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56401" UniqueId="1738d2da-a1fd-486f-bfda-790c07e62f73" Number="6.0" Order="16">
+      <Text>Prepare Preliminary Design</Text>
+      <Ownerships>
+        <Role Id="367" Name="Capital Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56404" UniqueId="6ae274a7-01c4-4347-b73d-833e8fa8e306" Order="17" Number="6.0.1">
+          <Text>Undertake preliminary design and develop preliminary budget estimate</Text>
+        </Task>
+        <Note Id="56406" UniqueId="f0d73895-0d45-47b3-817c-22c9adb1235c" Order="18" Number="">
+          <Text>Site Investigations</Text>
+          <Attachment>To reduce uncertainity it is better to undertake some preliminary site investigations at the preliminary design stage of the project.</Attachment>
+        </Note>
+        <Note Id="56407" UniqueId="66605604-27dd-48af-8676-2412544919d8" Order="19" Number="">
+          <Text>Preliminary Design Scope</Text>
+          <Attachment>Ensure that the preliminary design recognises all the risk mitigation costs. |~|Include the cost of professional services (civil, structural, process, electrical, mechanical, control).|~|Include the cost of Council staff time.|~|Estimate uncertainty in budget estimate (Usually between -10 to +25%) and allow project contingency.</Attachment>
+        </Note>
+        <Task Id="56413" UniqueId="8dcbeea3-db7b-4e38-9baa-3dad28a427d5" Order="20" Number="6.0.2">
+          <Text>Prepare project programme with cash flows</Text>
+        </Task>
+        <Note Id="56416" UniqueId="aef836e3-b59b-4bc9-82e7-8871d5d72599" Order="21" Number="">
+          <Text>Include time for Desigions and Consents</Text>
+          <Attachment>Ensure that the programme has realistic estimates for the time taken to obtain appropriate consents.  (Enlist the help of the IPG Planner)</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56419" UniqueId="7c544bbe-e13b-4fca-b091-f7fa48920d86" Number="7.0" Order="22">
+      <Text>Identify Funding Mechanisms</Text>
+      <Ownerships>
+        <Role Id="367" Name="Capital Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56426" UniqueId="231092a3-8489-4b53-af4c-108ad9583919" Order="23" Number="7.0.1">
+          <Text>Funding will depend on project drivers of growth, backlog, increased level of service or renewal.  A project could be a combiion of all drivers.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56429" UniqueId="4eeade14-722c-4702-a993-dc1c615308c3" Number="8.0" Order="24">
+      <Text>Identify Procurement Plan</Text>
+      <Ownerships>
+        <Role Id="367" Name="Capital Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56457" UniqueId="b70f4a0f-e453-4d8f-9072-ecd78b5857e9" Order="25" Number="8.0.1">
+          <Text>Consider the benefits and risks of different procurement options for professional services and capital assets</Text>
+        </Task>
+        <Note Id="56627" UniqueId="b51a0848-b30d-47ad-8ea9-b265018786f2" Order="26" Number="">
+          <Text>Procurement Options</Text>
+          <Attachment>Possible options (not exclusive)|~|Professional services for investigations and design and then conventional tendered supply.  A variation on this option would be for Council to purchase major capital plant and free issue to construction contractor.|~|Design Build (DB)|~|Design Build Operate (DBO)|~|Build own operate transfer (BOOT)</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="56630" UniqueId="805008d9-266d-4eda-b2b6-6ea1a3eb70f1" Number="9.0" Order="27">
+      <Text>Prepare Business Case Report</Text>
+      <Ownerships>
+        <Role Id="367" Name="Capital Funding" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="56632" UniqueId="fb0d70ce-21d0-4551-a879-6abe7fa569c9" Order="28" Number="9.0.1">
+          <Text>Assemble business case report from the summary of each of the tasks completed previously.</Text>
+        </Task>
+        <Task Id="56714" UniqueId="0b2b2729-0677-4f8f-b30c-34646c97c08f" Order="29" Number="9.0.2">
+          <Text>Submit report to SLG requesting inclusion in draft LTP of both the project capex and future opex budgets</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4301" PublishedDate="2017-09-20T00:04:08.88Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:33:19.7343654Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:33:19.7343654Z" />
+  </Metadata>
+</Process>

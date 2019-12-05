@@ -1,0 +1,75 @@
+<Process Id="522" Name="Create cross charge journal" ReferenceNo="" Objective="This process covers how the cross charge is captured on timesheets in Time Disciple, the checks and approvals required and the creation of the fortnightly journal." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="For water's staff the staff salaries are charged to cost centres 131 and 132.  Recovery of these cost centres are made according to the amount of time staff spend on projects/operations recorded in Time Disciple.|~|For Roading, planning and design time is charged to water and facilities projects as recorded in Time Disciple.|~|" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Financial Accountants" GroupId="109" GroupUniqueId="7439b3b5-d146-4cbd-af96-0b234805241e" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="8bde49a9-d47c-4cd0-9c2c-f49bf6ddcc5c" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="109" UniqueId="7439b3b5-d146-4cbd-af96-0b234805241e" Name="Financial Accountants" ProcessGroupItemId="11396" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="284" Trigger="At the end of a payperiod" Frequency="Fortnightly" Volume="2 Journals" UniqueId="9e31f477-8f37-4de1-8df5-61f4bd710c01" />
+  </Triggers>
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="7115" UniqueId="654d87ba-2784-4ace-8767-86a7535b6260" Number="1.0" Order="0">
+      <Text>Select Application in Time Disciple</Text>
+      <Ownerships>
+        <Role Id="39" Name="Staff Member (replace with All Staff)" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="7116" UniqueId="07bfae2d-dccc-4c04-b1cb-f2f56103111c" Order="1" Number="1.0.1">
+          <Text>For each timeslot in Time Disciple ensure a valid application is chosed from the drop down box</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="7117" UniqueId="2676aaa6-f4a1-4ea2-b649-b3d1c3f6e531" Number="2.0" Order="2">
+      <Text>Check for cross charge exceptions</Text>
+      <Ownerships>
+        <Role Id="38" Name="Manager- Team Leader" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="7118" UniqueId="076b39a3-7f3b-4d47-b2ed-640fdb45b8c8" Order="3" Number="2.0.1">
+          <Text>Before approving weekly time sheets check for any cross charge exceptions for team</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="7120" UniqueId="c80c333f-7304-404b-b3b6-f852837711cd" Number="3.0" Order="4">
+      <Text>Create journal</Text>
+      <Ownerships>
+        <Role Id="164" Name="Assistant Accountant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="7121" UniqueId="e01ef8cd-da2d-420d-a290-80bc24881586" Order="5" Number="3.0.1">
+          <Text>Run the Cross Charge Report for Team 1</Text>
+        </Task>
+        <Task Id="7123" UniqueId="4dbd61c5-2db7-4f3a-bbf5-45d1139dac06" Order="6" Number="3.0.2">
+          <Text>Check the report</Text>
+        </Task>
+        <Task Id="7124" UniqueId="3b89cf9a-c169-45f6-b487-ec69ccc0f344" Order="7" Number="3.0.3">
+          <Text>Copy and paste into a general journal on Finance One.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="272" Output="A Journal in Finance One" HowUsed="Financial Transaction" ToProcess=" " UniqueId="890c1442-3bc9-4269-b861-eb8141c5b340" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3293" PublishedDate="2017-09-20T00:02:09.417Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:35:22.8089851Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:35:22.8089851Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,247 @@
+<Process Id="9" Name="Organise an event" ReferenceNo="" Objective="To describe the process and steps to be followed when organising an event for Council. " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Council is required to organise a range of events in both an official public capacity (e.g. for community groups, openings and fund raising events) and for internal staff events, such as Christmas and charity events.  " Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Communications/Graphic Design" GroupId="7" GroupUniqueId="0c077685-7f52-475e-b736-6dcecd6927c8" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="77459020-b926-47b6-839a-8dbc4da8dcf5" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="7" UniqueId="0c077685-7f52-475e-b736-6dcecd6927c8" Name="Communications/Graphic Design" ProcessGroupItemId="11823" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="6" Trigger="A request to organise an event for an offical opening of a facility, a public event or an internal staff event. " Frequency="Adhoc" Volume="Six per year " UniqueId="b13fc990-0c14-472a-9539-80c8d87fae08" />
+  </Triggers>
+  <Inputs>
+    <Input Id="6" FromProcess="N/A" Resource="Request recieved to organise an event" HowUsed="To create an event plan" UniqueId="612ebe87-936e-4037-8834-1da7a0529acb" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="213" UniqueId="a65e7146-b80f-4919-9371-0bc4982a141f" Number="1.0" Order="0">
+      <Text>Meet with internal customer</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="214" UniqueId="4527f1bb-7bfd-4b54-8bbc-b263de63dfb5" Order="1" Number="1.0.1">
+          <Text>Meet with customer (event requester) to discuss details</Text>
+        </Task>
+        <Task Id="215" UniqueId="4deee021-f9bd-440b-b80b-a9819d91a724" Order="2" Number="1.0.2">
+          <Text>Review request and seek further information if required</Text>
+        </Task>
+        <Task Id="216" UniqueId="db2585b0-c986-4b25-bd87-95a56fd57b2b" Order="3" Number="1.0.3">
+          <Text>Establish date, time, place (venue), number of people expected to attend, suggested guest list. </Text>
+        </Task>
+        <Task Id="217" UniqueId="82431169-a0e2-4b0c-a50c-2a044bd9db8b" Order="4" Number="1.0.4">
+          <Text>Establish if iwi involvement is required</Text>
+        </Task>
+        <Note Id="218" UniqueId="b04f57f6-2fec-4d3d-a37d-9fc1c18b24d8" Order="5" Number="">
+          <Text>How do I check if iwi involvement is required?</Text>
+          <Attachment>Ask iwi &amp; community partnership manager|~|Ask internal customer|~|Ask manager of Stakeholder Relations|~|Discuss with communication manager</Attachment>
+        </Note>
+        <Task Id="219" UniqueId="bfbde99a-22ee-476f-88f8-0c71ed684add" Order="6" Number="1.0.5">
+          <Text>Establish if a speech is required|~|- if so, refer to 'Prepare a Speech for CEO or Mayor' process </Text>
+        </Task>
+        <Task Id="220" UniqueId="ac4dcfea-e5eb-4c41-92aa-3b37213a60f0" Order="7" Number="1.0.6">
+          <Text>Establish other event requirements, including:|~|- invitations |~|- car parking facilities |~|- refreshment/catering  |~|- key contacts |~|- budget and charge codes </Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="221" UniqueId="0beff68c-e1b9-4732-bc77-e8baf260f544" Number="2.0" Order="8">
+      <Text>[CONDITIONAL PROCESS LINK]: Prepare a speech for CEO or Mayor</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="222" UniqueId="e547a577-c91f-4168-bf33-ceb3cf4279ed" Number="3.0" Order="9">
+      <Text>Complete and distribute event checklist</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="223" UniqueId="f0589b27-0c18-4d33-a12a-5857c617e40d" Order="10" Number="3.0.1">
+          <Text>Fill out checklist</Text>
+        </Task>
+        <Task Id="224" UniqueId="7cb21561-0a10-4725-a328-3c9c9d2f4921" Order="11" Number="3.0.2">
+          <Text>[GUIDE]: EVENT CHECKLIST.</Text>
+        </Task>
+        <Task Id="225" UniqueId="66a4867c-8217-476c-8fb3-6002ceae8970" Order="12" Number="3.0.3">
+          <Text>Send checklist to customer (event requester) and relevant team PA</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="226" UniqueId="e93c23f2-d763-409c-b00d-7beb59843528" Number="4.0" Order="13">
+      <Text>Develop action plan</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="227" UniqueId="ce27f870-b4a3-429b-9b7d-9c10addcb818" Order="14" Number="4.0.1">
+          <Text>Identify roles/responsibilities</Text>
+        </Task>
+        <Task Id="228" UniqueId="ba6f8b8b-9264-4ec2-999b-63bc4cdfb810" Order="15" Number="4.0.2">
+          <Text>Plan promotion of event</Text>
+        </Task>
+        <Task Id="229" UniqueId="0231170f-30f4-4d27-b540-bcda09c880a3" Order="16" Number="4.0.3">
+          <Text>Organise the following (as appropriate):|~|- Posters|~|- Fliers|~|- Letter box drop|~|- Internal communication (, team blog, team talks, CE's Monday message)|~|- Media (refer to Produce a Media Release process)</Text>
+        </Task>
+        <Task Id="230" UniqueId="6d19e53e-d577-48f1-90f2-991ab8fbb18a" Order="17" Number="4.0.4">
+          <Text>Ensure all actions/requirements on event check list are completed</Text>
+        </Task>
+        <Task Id="231" UniqueId="67595d7f-21b9-444f-93cd-9387f47c55ae" Order="18" Number="4.0.5">
+          <Text>Ensure all actions on action plan are actioned</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="232" UniqueId="d23a316b-7052-42ff-9b00-f0ebc55bd9ae" Number="5.0" Order="19">
+      <Text>[CONDITIONAL PROCESS LINK]: Produce a media release</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="233" UniqueId="bcd89f36-5d0a-4629-b6f6-156f1c27d05d" Number="6.0" Order="20">
+      <Text>Design an invitation</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="234" UniqueId="ef61c55f-4083-4a6a-9f75-0f77c95afef8" Order="21" Number="6.0.1">
+          <Text>Write content - include the following details:|~|- Date|~|- Time|~|- Venue (location)|~|- RSVP details</Text>
+        </Task>
+        <Task Id="235" UniqueId="b16649c3-30ed-410b-af2f-5a86073dd4b6" Order="22" Number="6.0.2">
+          <Text>Get sign off for content from customer (event requester) and their general manager.</Text>
+        </Task>
+        <Task Id="236" UniqueId="75d111d1-a5ab-48ea-932c-4bd7d32bacd2" Order="23" Number="6.0.3">
+          <Text>Send invitation to graphic designer for designing</Text>
+        </Task>
+        <Task Id="237" UniqueId="2337aa62-186c-4345-8903-eb8f246513db" Order="24" Number="6.0.4">
+          <Text>Get sign off for design from customer and communications manager</Text>
+        </Task>
+        <Task Id="238" UniqueId="b29a3b81-10a2-43e2-aaea-9648ab4ff2f9" Order="25" Number="6.0.5">
+          <Text>Produce invitation (internally or extermally as appropriate)</Text>
+        </Task>
+        <Note Id="239" UniqueId="449d6f84-fb79-4198-be52-f086e945076a" Order="26" Number="">
+          <Text>When is the invitation produced internally or externally?</Text>
+          <Attachment>- Internal events are produced internally|~|- Small scale external events are produced internally (up to 100)- |~|- Large external events are printed externally</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="240" UniqueId="0f80bc12-b75c-4fa0-b231-011e7a79c1c2" Number="7.0" Order="27">
+      <Text>Manage invitations and refreshments</Text>
+      <Ownerships>
+        <Role Id="12" Name="PA (relevant)" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="241" UniqueId="9c8e57da-6f74-49cd-80c0-79936c3acb4b" Order="28" Number="7.0.1">
+          <Text>Send invitations to agreed invitation list</Text>
+        </Task>
+        <Task Id="242" UniqueId="ba7fe664-188a-49f0-a961-484a7819dece" Order="29" Number="7.0.2">
+          <Text>Manage RSVPs</Text>
+        </Task>
+        <Task Id="243" UniqueId="d7b8fa87-21db-423c-9532-9e37ff5eb687" Order="30" Number="7.0.3">
+          <Text>Organise refreshment/catering requirements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="244" UniqueId="e8881793-a69c-49af-8112-475558f48b21" Number="8.0" Order="31">
+      <Text>Book/arrange equipment/resources</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="245" UniqueId="bb47b679-1fab-4287-a8c9-83c076b4906c" Order="32" Number="8.0.1">
+          <Text>Refer to event checklist for list of equipment/resources required</Text>
+        </Task>
+        <Task Id="246" UniqueId="26ab09c5-3542-432c-a108-11110911e038" Order="33" Number="8.0.2">
+          <Text>Book relevant equipment and source resources</Text>
+        </Task>
+        <Note Id="247" UniqueId="3d9b7158-774f-41ef-a191-7207f127b0ad" Order="34" Number="">
+          <Text>What resources might be required?</Text>
+          <Attachment>Lectern|~|Microphone|~|PA system|~|Glasses (possibly disposable)|~|Cutlery (possibly disposable)|~|Plates (possibly disposable|~|Table cloths|~|Ribbon/scissors|~|Promotional equipment, ie flags and banners|~|Extension leads/power cords</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="248" UniqueId="be553890-91a2-48a6-b674-32b23686e8d5" Number="9.0" Order="35">
+      <Text>Prepare draft media release (external events only)</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="249" UniqueId="075a87e1-5a66-4899-a988-d17d8b91f35b" Order="36" Number="9.0.1">
+          <Text>Draft media release for distributing after the event|~|(Refer to Produce a media release process above)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="250" UniqueId="ee5ee6bf-ecc5-4d52-835a-07439ae2ba47" Number="10.0" Order="37">
+      <Text>Attend event (if appropriate)</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="251" UniqueId="6256abce-ddd2-4525-8510-92767314db8c" Order="38" Number="10.0.1">
+          <Text>Check that equipment works prior to event (e.g. PA system, microphone)</Text>
+        </Task>
+        <Task Id="252" UniqueId="98fa9e82-0092-4912-9719-6438b30522b0" Order="39" Number="10.0.2">
+          <Text>Advise speakers and Council staff attending of agenda </Text>
+        </Task>
+        <Task Id="253" UniqueId="9eb3b86e-ae2b-450e-9981-7a91c1c7ef30" Order="40" Number="10.0.3">
+          <Text>Take photos</Text>
+        </Task>
+        <Task Id="254" UniqueId="d845f8f0-9e9f-4ba1-8953-49fcbda70c96" Order="41" Number="10.0.4">
+          <Text>Mediate between staff and media</Text>
+        </Task>
+        <Task Id="255" UniqueId="94da93c0-435f-4d59-ad0a-6f644521ce5e" Order="42" Number="10.0.5">
+          <Text>Ensure Prepare a speech for CEO or Mayor process is followed (if appropriate)|~|</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="256" UniqueId="e4770de0-2353-40d4-b561-7e869d68707e" Number="11.0" Order="43">
+      <Text>Complete event process</Text>
+      <Ownerships>
+        <Role Id="10" Name="Communications Advisor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="257" UniqueId="0052e916-8979-4bb2-82ef-ce5bac39a2ce" Order="44" Number="11.0.1">
+          <Text>Finalise and send out media release (following external event)|~|(Refer Produce media release process)</Text>
+        </Task>
+        <Task Id="258" UniqueId="ab9cb1b5-98b0-4e80-9d4c-e502684b16e3" Order="45" Number="11.0.2">
+          <Text>Hold debrief meeting|~|- Invite internal customer and key team members to debrief|~|- Provide and share feedback|~|- Capture feedback and opportunities for improvement</Text>
+        </Task>
+        <Task Id="259" UniqueId="9eb93237-cc09-47fc-ad8e-9849f70fa9e0" Order="46" Number="11.0.3">
+          <Text>Distribute collated feedback to internal customer and key team members</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="6" Output="An event is planned and organised" HowUsed="To satisfy staff, the community and council as relevant" ToProcess="Staff and/or community and council" UniqueId="5e845561-0bac-4de3-bc9b-97dc96701028" />
+  </Outputs>
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="11" Link="Prepare a communications project brief" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="Communications/Graphic Design" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <Targets>
+    <Target Id="6" Measure="Satisfied staff, council and/or community as relevant" Target="A successful event" UniqueId="df9e599d-65a4-4d82-89a8-4a5970b6bb9c" />
+  </Targets>
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4167" PublishedDate="2017-09-20T00:03:53.233Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:25:48.6978863Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:25:48.6978863Z" />
+  </Metadata>
+</Process>

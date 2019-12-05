@@ -1,0 +1,169 @@
+<Process Id="1047" Name="Creating an Electronic Purchasing Order" ReferenceNo="" Objective="Details the procedure and steps for creating an electronic purchase order for the supply of goods or services." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Finance" GroupId="201" GroupUniqueId="eb358656-d641-4b38-8794-35ea5c6d57b7" State="Active" StateId="1" Version="2.0" PromappVersion="4.6.2.14" UniqueId="dbed1c9c-4407-44b4-9c52-182be192dc76" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="201" UniqueId="eb358656-d641-4b38-8794-35ea5c6d57b7" Name="Finance" ProcessGroupItemId="11438" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="62894" UniqueId="290485bd-58cd-408e-9e00-2ec3d20c4b33" Number="1.0" Order="0">
+      <Text>Open EPO system in NCS</Text>
+      <Ownerships>
+        <Tag Id="1" Name="NCS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="62925" UniqueId="764ba7c3-679c-40f5-a350-1bcc7678d216" Order="1" Number="1.0.1">
+          <Text>Go to Iintranet, select Menu - Orders - Add Order</Text>
+        </Task>
+        <WebLink Id="62939" UniqueId="a4844ef2-f219-4b8e-a17b-5c9688d66df7" Order="2" Number="">
+          <Text>Add Order Screen</Text>
+          <Attachment>http://dc.dc.govt.nz/cgi-bin/orders/online/stwebord?addstyle=auto</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="63158" UniqueId="629c200f-4653-42d6-b4fb-04fa361911be" Number="2.0" Order="3">
+      <Text>Enter supplier/creditor details</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="63192" UniqueId="a6e4d8fb-a843-434c-925b-1e78f8497c04" Order="4" Number="2.0.1">
+          <Text>Add supplier details. Use search function if unsure of number</Text>
+        </Task>
+        <Task Id="63225" UniqueId="da39eff9-c021-4ae3-b026-c9cb0435e2a0" Order="5" Number="2.0.2">
+          <Text>Identify approved financial sigory in Queue for Approval. (Ensure sigory has sufficient level of financial delegation)</Text>
+        </Task>
+        <Task Id="63239" UniqueId="99d6787e-1760-4f06-a559-d200841c4439" Order="6" Number="2.0.3">
+          <Text>Identify Council resolution number if applicable</Text>
+        </Task>
+        <Task Id="63301" UniqueId="bd70d648-a0db-4c16-b9a1-09fb3a2c12e1" Order="7" Number="2.0.4">
+          <Text>Click 'Save and add lines'</Text>
+        </Task>
+        <Note Id="63306" UniqueId="42da81de-139d-437a-827d-f1df5c5dcdde" Order="8" Number="">
+          <Text>EPO User Manual Reference</Text>
+          <Attachment>Refer from page 5 of the EPO User Manual available on the Wiki</Attachment>
+        </Note>
+        <Task Id="63336" UniqueId="6ea48aad-0a36-448b-8f15-e3a9e7911ef0" Order="9" Number="2.0.5">
+          <Text>[GUIDE]: User Manual - Electronic Purchase Order - EPO</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="63456" UniqueId="5b6580fa-df83-4a93-8bb1-c4f6357d1453" Number="3.0" Order="10">
+      <Text>Enter order details</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="63494" UniqueId="b3951d07-6423-499c-9376-29665870e160" Order="11" Number="3.0.1">
+          <Text>Add the detail of the services or goods to be purchased.</Text>
+        </Task>
+        <Task Id="63719" UniqueId="586941e3-c44e-4180-be05-d1b72cb52f04" Order="12" Number="3.0.2">
+          <Text>Add the general ledger number to which the goods or services are to be paid from. If unknown the GL number can be searched using the search button</Text>
+        </Task>
+        <Task Id="63840" UniqueId="7f27bbab-51c6-43b6-822f-1101aedb5b8c" Order="13" Number="3.0.3">
+          <Text>Confirm category code. The system defaults to category code 61 Creditors Purchases. Use the drop down box to select other categories.</Text>
+        </Task>
+        <Task Id="63907" UniqueId="69783872-6c6f-4505-9501-cb884dee96a5" Order="14" Number="3.0.4">
+          <Text>Add the value of the goods or services, expected delivery date and quantities in the areas identified.</Text>
+        </Task>
+        <Task Id="63918" UniqueId="1744cfd8-4c50-4d01-80a3-d4efb4eb0e33" Order="15" Number="3.0.5">
+          <Text>For orders that may involve monthly repeats use the add lines function to create each months order details</Text>
+        </Task>
+        <Note Id="63942" UniqueId="bc99cf45-69be-4f49-96cb-b46a2a97df26" Order="16" Number="">
+          <Text>EPO User Manual Reference</Text>
+          <Attachment>Refer to pages 6-9 of the EPO User Manual available on the Wiki.</Attachment>
+        </Note>
+        <Task Id="63958" UniqueId="0d886355-5f6b-484a-bbc8-0f4366a54ac4" Order="17" Number="3.0.6">
+          <Text>[GUIDE]: EPO User Manual</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="64043" UniqueId="2c6a3efe-3b4f-4e27-85cd-d615d4eaee58" Number="4.0" Order="18">
+      <Text>Order saved</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="64098" UniqueId="f85fa661-b79d-4dd4-8415-c6f3dafb2e20" Order="19" Number="4.0.1">
+          <Text>Click the Save and exit button.</Text>
+        </Task>
+        <Task Id="64113" UniqueId="af47e679-7123-4676-8470-d5e132ccb4cb" Order="20" Number="4.0.2">
+          <Text>Unless you have selected yourself as the aproved financial sigory in queued for approval, then select request auhtorisation for the order. This will send a reference by email to approved financial sigory identified for them to authorise the order.</Text>
+        </Task>
+        <Task Id="64165" UniqueId="80eef710-1a74-4856-9b76-c627a4185c23" Order="21" Number="4.0.3">
+          <Ownerships>
+            <Tag Id="2" Name="Authority" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>If you have the the appropriate authority, you can authorise the order using the 'Authorise'  link at the top of the electroncic purchase order being creted.</Text>
+        </Task>
+        <Note Id="64189" UniqueId="830786c3-4d25-4b91-9c99-680b56c9cfd2" Order="22" Number="">
+          <Text>EPO User Manual Reference</Text>
+          <Attachment>Refer to pages 9-10 of the EPO User Manual</Attachment>
+        </Note>
+        <Task Id="64208" UniqueId="96c54992-bc1a-450b-bfe4-a905bd5e9f71" Order="23" Number="4.0.4">
+          <Text>[GUIDE]: EPO User Manual</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="64235" UniqueId="2661f495-0415-4e3e-8b8e-81e913a0befd" Number="5.0" Order="24">
+      <Text>Order authorised</Text>
+      <Ownerships>
+        <Role Id="323" Name="Approved Financial Sigory" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="64261" UniqueId="0237dd06-452f-4a4f-b9c5-0019bbdb47c5" Order="25" Number="5.0.1">
+          <Text>Open EPO using the emailed link if required.</Text>
+        </Task>
+        <Task Id="64312" UniqueId="e8b5d492-933d-4328-b3bc-d6582f6964ce" Order="26" Number="5.0.2">
+          <Text>Authorise EPO using the 'Authorise' link locatied underneath the EPO title. A copy of confirmation will be sent back to the EPO initiator.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="64333" UniqueId="7ab60777-5937-41b8-a0e7-758b8c71d316" Number="6.0" Order="27">
+      <Text>Order given to supplier</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="64356" UniqueId="53cec99b-9790-4272-ba1c-d0652ac95f23" Order="28" Number="6.0.1">
+          <Text>A PDF copy of the order can be printed off and given to the supplier/creditor using the 'print' link on the EPO.</Text>
+        </Task>
+        <Task Id="64438" UniqueId="3fa777cf-918f-444d-85c1-dcd3639282f7" Order="29" Number="6.0.2">
+          <Text>At the minimum, the EPO number should be phoned through to the creditor/supplier</Text>
+        </Task>
+        <Note Id="64459" UniqueId="10d883a2-9ca4-45f7-8012-5a5f78aa8fa0" Order="30" Number="">
+          <Text>EPO number must be quoted in all cases</Text>
+          <Attachment>All suppliers/creditors must be provided with a valid EPO number before the services or products are supplied. This number must be provided with all invoices supplied. Failure to adhere to this requirement may result in them not being paid. No EPO number = no payment.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3374" PublishedDate="2017-09-20T00:02:20.18Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2019-12-05T20:32:25.3790069Z" />
+    <MetadataItem Name="CachedOn" Value="2019-12-05T20:32:25.3790069Z" />
+  </Metadata>
+</Process>
