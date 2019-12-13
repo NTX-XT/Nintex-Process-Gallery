@@ -1,0 +1,117 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "Trello Card API"
+  },
+  "host": "api.trello.com",
+  "basePath": "/1",
+  "schemes": [
+    "https"
+  ],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "key",
+      "in": "query"
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "paths": {
+    "/cards": {
+      "post": {
+        "description": "Create a new Card",
+        "operationId": "postCreateCard",
+        "x-ntx-summary": "Create Trello Card",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "description": "Token Provided by Developer",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "The name for the card",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "The description of the card",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pos",
+            "in": "query",
+            "type": "string",
+            "description": "The position of the card. Top or Bottom",
+            "required": false
+          },
+          {
+            "name": "due",
+            "in": "query",
+            "type": "string",
+            "description": "A due date for the card mm/dd/yyyy",
+            "required": false
+          },
+          {
+            "name": "dueComplete",
+            "type": "boolean",
+            "required": false,
+            "description": "Yes or No, Due Complete",
+            "in": "query"
+          },
+          {
+            "name": "idList",
+            "type": "string",
+            "in": "query",
+            "required": true,
+            "description": "The ID of the list the card should be created in"
+          },
+          {
+            "name": "idMembers",
+            "type": "string",
+            "in": "query",
+            "description": "Comma-seperated list of member IDs to add to the card",
+            "required": false
+          },
+          {
+            "name": "idLabels",
+            "type": "string",
+            "in": "query",
+            "description": "Comma-seperated list of label IDs to add to the card",
+            "required": false
+          },
+          {
+            "name": "urlSource",
+            "in": "query",
+            "description": "A URL srarting with http:// or https://",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Card Created!"
+          },
+          "400": {
+            "description": "Boo. Not Cool."
+          }
+        }
+      }
+    }
+  }
+}
