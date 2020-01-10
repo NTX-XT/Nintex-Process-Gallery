@@ -1,0 +1,209 @@
+<Process Id="33" Name="Patient Onboarding " ReferenceNo="" Objective="example" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Process maps" GroupId="7" GroupUniqueId="3f0b1acc-06f2-4972-99d7-eb276415a234" State="Active" StateId="1" Version="2.0" PromappVersion="4.7.0.6" UniqueId="b54e2a73-16bc-4006-8c98-c072668e4345" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="7" UniqueId="3f0b1acc-06f2-4972-99d7-eb276415a234" Name="Process maps" ProcessGroupItemId="326" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="639" UniqueId="a890f548-2af0-0735-b0c2-397403e471af" Number="1.0" Order="0">
+      <Text>Check in at medical center</Text>
+      <Ownerships>
+        <Role Id="61" Name="Nurse" IsVirtual="false" />
+        <Role Id="60" Name="Patient" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="655" UniqueId="c9ebbce0-855f-2d4e-49b5-80f0a584d5d4" Order="1" Number="1.0.1">
+          <Text>Arrive at center</Text>
+        </Task>
+        <Task Id="656" UniqueId="5d95fb8f-f88f-fcd3-6f8b-219d7b5a978d" Order="2" Number="1.0.2">
+          <Text>Speak with on call nurse</Text>
+        </Task>
+        <Task Id="657" UniqueId="e37a668d-8ed9-9143-eba6-78dca63b61dd" Order="3" Number="1.0.3">
+          <Text>Fill out digital patient onboarding form on provided ipad</Text>
+        </Task>
+        <Task Id="659" UniqueId="819b6c24-e448-5c22-8ee0-47d0c649af44" Order="4" Number="1.0.4">
+          <Text>Sign form using ipad</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="642" UniqueId="6fc3ac7c-73de-d28c-5c6d-9f62cabb03cb" Number="2.0" Order="5" ParallelGroupingRef="1">
+      <Text>Add new patient to a que</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="660" UniqueId="3b5cb277-9a02-a68d-e077-53810bbe2557" Order="6" Number="2.0.1">
+          <Text>Depending on severity of pain and arrival time allocate the new patient in the que</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="643" UniqueId="15d5659f-8fc8-d87b-3824-04eae21a6255" Number="2.1" Order="7" ParallelGroupingRef="1">
+      <Text>Notify Dr of updated que</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="661" UniqueId="7fc1502c-3de8-85d3-6a36-ae1a9d3b6bad" Order="8" Number="2.1.1">
+          <Text>Notify Dr by email of que update</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="644" UniqueId="643fd733-9098-a6c1-8920-118d190d5bbd" Number="2.2" Order="9" ParallelGroupingRef="1">
+      <Text>Notify billing department</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="662" UniqueId="8207a5c7-9e92-64f5-bb7b-006de8cd4767" Order="10" Number="2.2.1">
+          <Text>notify billing with patient details</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="645" UniqueId="b1e06e04-befe-7a19-df8b-e4edaec9f973" Number="3.0" Order="11">
+      <Text>Notify patient when it is their turn</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="663" UniqueId="b229d64d-fa20-aa5e-9830-acc00b762c05" Order="12" Number="3.0.1">
+          <Text>Using the contact details from the form text the user when its their turn</Text>
+        </Task>
+        <Task Id="664" UniqueId="9389149a-af64-41a1-2a0f-3dc6094e3682" Order="13" Number="3.0.2">
+          <Text>Include room details and doctor name</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="646" UniqueId="82bd919d-d428-f1f7-4568-58a34c5586d3" Number="4.0" Order="14">
+      <Text>Visit Doctor</Text>
+      <Ownerships>
+        <Role Id="60" Name="Patient" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="647" UniqueId="6d259bca-2876-f30b-a135-f0db91ffe226" Number="5.0" Order="15">
+      <Text>Welcome patient and review details on form</Text>
+      <Ownerships>
+        <Role Id="62" Name="Doctor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="665" UniqueId="b36c9f20-a286-fbb6-2676-37fd413468e9" Order="16" Number="5.0.1">
+          <Text>upon arrival welcome the patient and pull up their user details and recently entered form</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="648" UniqueId="1c8f0531-1935-a846-2147-e1bca7264768" Number="6.0" Order="17">
+      <Text>Provide care and further recommendations/treatments/medicines</Text>
+      <Ownerships>
+        <Role Id="62" Name="Doctor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="666" UniqueId="2c025c61-03f4-4fef-4be9-e896477b7451" Order="18" Number="6.0.1">
+          <Text>Diagnose patient and provide treatment</Text>
+        </Task>
+        <Task Id="667" UniqueId="3383422a-3c56-4869-9b05-b3d2ef5761aa" Order="19" Number="6.0.2">
+          <Text>Update patient details with further actions and medicines required</Text>
+        </Task>
+        <Task Id="649" UniqueId="7656da3f-172a-a2b3-7417-d496a2b4c18e" Order="20" Number="6.0.3">
+          <Ownerships>
+            <Tag Id="29" Name="NintexSign" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Sign off on actions #NintexSign</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="650" UniqueId="81be533b-7ffe-8936-7f7f-37ff7376e32d" Number="7.0" Order="21" ParallelGroupingRef="2">
+      <Text>Email actions to further care provider, if requried</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="651" UniqueId="e4db5044-bef5-15e4-fb92-ca6169713bbb" Number="7.1" Order="22" ParallelGroupingRef="2">
+      <Text>Update billing on cost of treatment</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="652" UniqueId="8fe532b7-a2a5-f331-a8e3-7451509d6714" Number="7.2" Order="23" ParallelGroupingRef="2">
+      <Text>Email prescription to pharmacy, if required</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="668" UniqueId="541e5586-da1f-4da9-30f3-6a36ce7f1bac" Order="24" Number="7.2.1">
+          <Text>take values from medicines</Text>
+        </Task>
+        <Task Id="669" UniqueId="9d8e5417-b55a-5f74-aeae-767b0ceef32a" Order="25" Number="7.2.2">
+          <Text>take signature</Text>
+        </Task>
+        <Task Id="670" UniqueId="81ab0133-ac27-f6db-196f-1149ce7435ed" Order="26" Number="7.2.3">
+          <Text>email to pharmacy listed on form</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="653" UniqueId="737bf475-5b41-92b4-918b-127c64872fc0" Number="8.0" Order="27">
+      <Text>Pay outstanding amount</Text>
+      <Ownerships>
+        <Role Id="63" Name="Billing" IsVirtual="false" />
+        <Role Id="60" Name="Patient" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="671" UniqueId="2e39d062-f44f-3902-f28b-aba24307f20c" Order="28" Number="8.0.1">
+          <Text>Pay amount owed</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="654" UniqueId="99ad3f23-62e0-01f2-0149-a69842f95a5b" Number="9.0" Order="29">
+      <Text>Email summary to patient</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="121" PublishedDate="2020-01-09T10:13:03.9404895Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-01-09T10:13:04.1775939Z" />
+    <MetadataItem Name="CachedOn" Value="2020-01-09T10:13:04.1775939Z" />
+  </Metadata>
+</Process>

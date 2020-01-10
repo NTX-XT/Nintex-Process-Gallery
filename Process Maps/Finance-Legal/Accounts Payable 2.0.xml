@@ -1,0 +1,281 @@
+<Process Id="26" Name="Accounts Payable 2.0" ReferenceNo="" Objective="pay only the company's bills and invoices that are legitimate and accurate" IsTouchModeEnabled="False" IsTextModeOn="False" PolicyModeOn="false" UseDynamicMapperImage="True" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Process maps" GroupId="7" State="Active" StateId="1" Version="3.1" PromappVersion="4.7.0.6" UniqueId="7a4b94a8-519a-4320-b013-27a7d33fe038" GroupUniqueId="3f0b1acc-06f2-4972-99d7-eb276415a234" IsPolicyModeOn="False" VariationId="" VanillaProcessId="" IsVirtualVariation="False" AnnualVolume="" ProcessRevisionEditId="640">
+  <ProcessGroupItems>
+    <ProcessGroup Id="7" UniqueId="3f0b1acc-06f2-4972-99d7-eb276415a234" Name="Process maps" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="505" UniqueId="c5f3f961-b4eb-8223-0a04-88f8d009e28b" Number="1.0" Order="0">
+      <Text>Send list of required goods or services to accounts payable</Text>
+      <Ownerships>
+        <Role Id="3" Name="ALL STAFF" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="506" UniqueId="38d9d91f-4b3c-fa55-6d8b-1d39a5c33e2d" Number="2.0" Order="1">
+      <Text>Create purchase order form #Form</Text>
+      <Ownerships>
+        <Role Id="46" Name="Procurement " IsVirtual="false" />
+        <Tag Id="32" IsDisassociated="False" Name="Form" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="516" UniqueId="f3a94c86-b3ee-99d3-d3bc-2d40c824640e" Order="0" Number="2.0.1">
+          <Text>Enter in Vendor(Company name)</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="517" UniqueId="087fad70-17c7-e097-f306-1321faca1df8" Order="1" Number="2.0.2">
+          <Text>Enter contact details - First name, last name, phone number</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="518" UniqueId="e5d2ed5c-a6ab-a407-234e-22ff84905be8" Order="2" Number="2.0.3">
+          <Text>Enter receiving department contact info - First name, last name</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="519" UniqueId="1103bfcd-a96e-4c75-8b88-9b9dba8a6c44" Order="3" Number="2.0.4">
+          <Text>Enter in purchase order number</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="520" UniqueId="1ac00b99-e48d-9c98-7005-bdae8925209e" Order="4" Number="2.0.5">
+          <Text>Enter in send date</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="521" UniqueId="e6e260aa-705c-567c-00ec-efbd9cd16b1e" Order="5" Number="2.0.6">
+          <Text>Enter in date of delivery</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="522" UniqueId="e20ca296-9585-be40-3719-a7a485530324" Order="6" Number="2.0.7">
+          <Text>Enter list of goods or services being purchased</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="523" UniqueId="c5aabe1b-7e99-8ae7-f616-0fb62f6ccf28" Order="7" Number="2.0.8">
+          <Text>Enter in quantity</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="524" UniqueId="d4c1ba7c-08b1-8249-202f-494e3da1bd37" Order="8" Number="2.0.9">
+          <Text>Enter in unit proce</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="525" UniqueId="b53634a9-c0b3-8607-64ef-47f543d27e96" Order="9" Number="2.0.10">
+          <Text>Enter date of payment</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="526" UniqueId="eb05eed9-a62f-9379-0b89-48c39c113dda" Order="10" Number="2.0.11">
+          <Text>Enter shipping or delivery info</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="527" UniqueId="3fd76c96-ea93-4c9e-87ab-75a25550359b" Order="11" Number="2.0.12">
+          <Text>Enter in additional notes</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="528" UniqueId="f2856d3f-cce4-0b0d-443b-9d9037ff7e23" Order="12" Number="2.0.13">
+          <Ownerships>
+            <Tag Id="31" IsDisassociated="False" Name="Workflow" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+          </Ownerships>
+          <Text>File internally as excel for record keeping #Workflow</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="507" UniqueId="836599c9-de67-7293-9635-7eef45e04ea7" Number="3.0" Order="2" ParallelGroupingRef="1">
+      <Text>Send the purchase order form to the vendor accounting department</Text>
+      <Ownerships>
+        <Role Id="46" Name="Procurement " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="529" UniqueId="422dde20-8c9c-9157-5572-90743ddf0ba1" Order="0" Number="3.0.1">
+          <Text>attach a form and email to vendor</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="508" UniqueId="3e7d7468-1427-be86-afbb-3438d8643a60" Number="3.1" Order="3" ParallelGroupingRef="1">
+      <Text>Send to the receiving department</Text>
+      <Ownerships>
+        <Role Id="46" Name="Procurement " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="530" UniqueId="ef656519-e995-2b1c-191b-351333f3f08a" Order="0" Number="3.1.1">
+          <Text>Send to receiving department so they know what they should be expecting for reference</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="509" UniqueId="0ef52987-88ad-4032-4083-20d4fd49e74e" Number="4.0" Order="4">
+      <Text>Check warehouse spreadsheet for available space at receiving depot</Text>
+      <Ownerships>
+        <Role Id="47" Name="Goods receiving " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="824" UniqueId="4910803b-98a3-9964-d5ad-8341c41f856a" Order="0" Number="4.0.1">
+          <Ownerships>
+            <Tag Id="30" IsDisassociated="False" Name="SharePoint" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="False" />
+            <Tag Id="31" IsDisassociated="False" Name="Workflow" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+          </Ownerships>
+          <Text>#Workflow pick from sharepoint list for available space</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="510" UniqueId="809959f2-1403-eb6d-75b3-f83edbcb2d8f" Number="5.0" Order="5">
+      <Text>Receive purchase order &amp; send goods</Text>
+      <Ownerships>
+        <Role Id="45" Name="Vendor " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="511" UniqueId="90b3301e-9f57-d5e0-793c-1a167788beef" Number="6.0" Order="6">
+      <Text>Receive goods &amp; vendor invoice</Text>
+      <Ownerships>
+        <Role Id="47" Name="Goods receiving " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="825" UniqueId="215782dd-5737-2d12-d963-d07512dad28a" Order="0" Number="6.0.1">
+          <Ownerships>
+            <Tag Id="31" IsDisassociated="False" Name="Workflow" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+          </Ownerships>
+          <Text>#Workflow</Text>
+        </Task>
+        <Task Id="826" UniqueId="47aa2cbd-6e2d-c622-2a32-afe445e08736" Order="1" Number="6.0.2">
+          <Ownerships>
+            <Tag Id="31" IsDisassociated="False" Name="Workflow" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+          </Ownerships>
+          <Text>#Workflow convert invoice to an excel sheet</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="512" UniqueId="6caf41ad-59cb-bc32-a56c-824c53aa1056" Number="7.0" Order="7">
+      <Text>Create receiving report</Text>
+      <Ownerships>
+        <Role Id="47" Name="Goods receiving " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="531" UniqueId="902ec8b5-270e-25c1-64f7-1b35b3d079fa" Order="0" Number="7.0.1">
+          <Text>Record  the following information about the order</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="532" UniqueId="e8b49b64-ca71-3bd1-1cdc-e2712515afb1" Order="1" Number="7.0.2">
+          <Text>Date and time of delivery</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="533" UniqueId="6cb0c5ce-3a54-3d2f-0c31-ec24ee75f95b" Order="2" Number="7.0.3">
+          <Text>Name of the shipping company</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="534" UniqueId="fe7ebb23-e3f9-9590-8f19-5d3cfe0bed14" Order="3" Number="7.0.4">
+          <Text>Name of each item received</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="535" UniqueId="0b65f8bf-f36e-528e-0401-1188e0eca79a" Order="4" Number="7.0.5">
+          <Text>Quantity of each item delivered</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="536" UniqueId="f5ed97a8-2c8a-ec19-b4fd-dcee61b5b9af" Order="5" Number="7.0.6">
+          <Text>The purchase order number</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="537" UniqueId="b817b131-f3b2-9cd2-eec2-b1cd7b141fe5" Order="6" Number="7.0.7">
+          <Text>Condition of the goods on arrival</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="538" UniqueId="87fb5f5c-fcbd-814b-6f18-5946aa3a7291" Order="7" Number="7.0.8">
+          <Text>File invoice</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="827" UniqueId="67fe5dd4-140e-95a1-4e7f-940802990da4" Order="8" Number="7.0.9">
+          <Ownerships>
+            <Tag Id="31" IsDisassociated="False" Name="Workflow" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+          </Ownerships>
+          <Text>#Workflow output data to an excel sheet</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="513" UniqueId="c69ab16d-4982-24f8-9069-1bf2204ea541" Number="8.0" Order="8">
+      <Text>Validate documents(3 way match)</Text>
+      <Ownerships>
+        <Role Id="43" Name="Accounts Payable" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="539" UniqueId="2f019f08-1314-2cad-d9a0-5b8abb7320d9" Order="0" Number="8.0.1">
+          <Text>Gather the receiving report, purchase order and vendors invoice</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="540" UniqueId="ce6017b6-920c-2004-0e03-116af1e7c483" Order="1" Number="8.0.2">
+          <Ownerships>
+            <Tag Id="33" IsDisassociated="False" Name="RPA" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="False" />
+          </Ownerships>
+          <Text>Validate all metrics on all documents to ensure no errors #RPA</Text>
+        </Task>
+        <Task Id="541" UniqueId="1294c6eb-1370-2d02-bcb5-f3bc098e263d" Order="2" Number="8.0.3">
+          <Text>Review discrepancies and action</Text>
+          <Ownerships />
+        </Task>
+        <Note Id="542" UniqueId="c2a62c1a-9dd2-a99a-1e01-0e7914a7f532" Order="3" Number="">
+          <Text>What kind of discrepencies would be present?</Text>
+          <Attachment>over payment, underpayment, double payment</Attachment>
+          <Ownerships />
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="514" UniqueId="9142ec02-22a2-b861-1fbc-f9d8b06f964e" Number="9.0" Order="9">
+      <Text>Report errors, if present</Text>
+      <Ownerships>
+        <Role Id="43" Name="Accounts Payable" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="543" UniqueId="246feaeb-3e6c-2e53-8196-9e48ad106aad" Order="0" Number="9.0.1">
+          <Text>Record a description of the error and email to the relevant team/vendor for correction</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="515" UniqueId="8ea65816-8165-85df-a706-4aa08001ef97" Number="10.0" Order="10">
+      <Text>Make payment</Text>
+      <Ownerships>
+        <Role Id="43" Name="Accounts Payable" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ChildProcessProcedures>
+        <Task Id="544" UniqueId="a26b44fd-98ee-c67c-226c-0286b3913ca8" Order="0" Number="10.0.1">
+          <Text>Enter the invoice into the accounts payable account</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="545" UniqueId="81a8ee92-8364-f5da-3222-9bdad9553733" Order="1" Number="10.0.2">
+          <Text>Check the dates of the payment on the invoice</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="546" UniqueId="1bbc11ac-2603-ec4f-0227-01f3cb4c904c" Order="2" Number="10.0.3">
+          <Text>Schedule the payment</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="547" UniqueId="a2e2134f-22ca-a4f7-884d-00c8486561d3" Order="3" Number="10.0.4">
+          <Text>Digitally sign documents</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="548" UniqueId="3313b1dd-78bb-2471-aafb-62ea677cd905" Order="4" Number="10.0.5">
+          <Text>Create completed invoice document</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="549" UniqueId="93140677-80d7-dfbe-3fa0-e4f0c0e677d3" Order="5" Number="10.0.6">
+          <Text>Store in invoice paid files</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Targets />
+  <RiskControls />
+  <SearchKeywords />
+  <Approvals />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" TimeframeHoursPerDay="" TimeframeDaysPerWeek="" ProcessTotalCost="0" />
+</Process>

@@ -1,0 +1,203 @@
+<Process Id="23" Name="Apply for research grant" ReferenceNo="" Objective="example" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="Process maps" GroupId="7" GroupUniqueId="3f0b1acc-06f2-4972-99d7-eb276415a234" State="Active" StateId="1" Version="2.0" PromappVersion="4.7.0.6" UniqueId="e8e23560-c752-40fb-92a5-7181a2b6dbba" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="7" UniqueId="3f0b1acc-06f2-4972-99d7-eb276415a234" Name="Process maps" ProcessGroupItemId="196" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="612" UniqueId="209e5762-6081-f9de-ed69-0af041dfa52a" Number="1.0" Order="0">
+      <Text>Check list of available funding from university website</Text>
+      <Ownerships>
+        <Role Id="49" Name="Applicant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="627" UniqueId="06156dcc-3eaf-7e07-8ca1-55d58afdcd4f" Order="1" Number="1.0.1">
+          <Text>Ensure there is funding available for your area</Text>
+        </Task>
+        <WebLink Id="628" UniqueId="fad0ccb1-193b-3f9b-0271-93cf3bb5fe05" Order="2" Number="">
+          <Text>University website</Text>
+          <Attachment>https://www.ox.ac.uk/research/support-researchers/research-funding?wssl=1</Attachment>
+        </WebLink>
+        <Task Id="629" UniqueId="0285ec1f-3cdd-795f-526f-2ae4f66f75f2" Order="3" Number="1.0.2">
+          <Text>Check funders guidance notes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="613" UniqueId="1c4d2c95-1ee6-52e3-a05e-5834101c88d3" Number="2.0" Order="4">
+      <Text>Prepare grant application</Text>
+      <Ownerships>
+        <Role Id="49" Name="Applicant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="630" UniqueId="42b7c8e3-8240-0f5b-3314-8de6cadaead1" Order="5" Number="2.0.1">
+          <Text>Develop research plan and establish resources</Text>
+        </Task>
+        <Task Id="614" UniqueId="f5a05d62-4343-5c99-a4b0-f90bff39ffa4" Order="6" Number="2.0.2">
+          <Ownerships>
+            <Tag Id="31" Name="Workflow" IsDisassociated="false" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Complete research plan template #Workflow</Text>
+        </Task>
+        <Note Id="866" UniqueId="5ddcaf8d-2130-04e6-53bb-ca82b6a6f449" Order="7" Number="">
+          <Text>What fields are in this form/template?</Text>
+          <Attachment>• Introduction|~|• Aims/ research questions|~|• Methods|~|• Analysis|~|• Resources|~|• CVs</Attachment>
+        </Note>
+        <Task Id="631" UniqueId="cc478aa2-3d6e-7398-8a2a-f411144563fb" Order="8" Number="2.0.3">
+          <Text>Generate research grant request document from workflow</Text>
+        </Task>
+        <Task Id="867" UniqueId="72eb4617-904f-6d0d-af80-dc6c26a0e57a" Order="9" Number="2.0.4">
+          <Text>recieve email with pdf and grant code</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="615" UniqueId="1e83c0be-8537-9ad6-30b3-0bc136ce0b78" Number="3.0" Order="10">
+      <Text>Create budget</Text>
+      <Ownerships>
+        <Role Id="49" Name="Applicant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="616" UniqueId="6b231676-2ddc-3a5a-f11f-42a0284fb8f8" Order="11" Number="3.0.1">
+          <Ownerships>
+            <Tag Id="31" Name="Workflow" IsDisassociated="false" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Using the cost estimator cost your project and gain authorization for the price #Workflow</Text>
+        </Task>
+        <Task Id="868" UniqueId="3e4e859e-95e9-c191-f0f7-94798abd334a" Order="12" Number="3.0.2">
+          <Text>generate budget and recieve email of pdf</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="617" UniqueId="5dbd3e09-d508-c613-f345-b0237b826dc5" Number="4.0" Order="13">
+      <Text>Complete &amp; Submit application for departmental approval</Text>
+      <Ownerships>
+        <Role Id="49" Name="Applicant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="632" UniqueId="99e7d958-e1a8-edba-0c2e-ebfa079f1524" Order="14" Number="4.0.1">
+          <Text>Complete form details</Text>
+        </Task>
+        <Note Id="869" UniqueId="622db624-6ff8-74ea-f5c8-4841391315f0" Order="15" Number="">
+          <Text>What fields are in the form</Text>
+          <Attachment>name,|~|surname,|~|email,|~|phone,|~|date of birth,|~|grant code,|~|school (dropdown)|~|teachers(dropdown)|~|attach grant application pdf|~|attach budget</Attachment>
+        </Note>
+        <Task Id="633" UniqueId="2878b22e-ad17-2104-63d5-96c8a68954fe" Order="16" Number="4.0.2">
+          <Text>Enter in name and contact details</Text>
+        </Task>
+        <Task Id="634" UniqueId="5f756ace-9fd3-0269-1a3d-62f9c4b4736d" Order="17" Number="4.0.3">
+          <Text>Attach grant application</Text>
+        </Task>
+        <Task Id="635" UniqueId="a82d025d-1cf6-3c27-b5e7-dfd1de8a9422" Order="18" Number="4.0.4">
+          <Text>Attach proposed budget</Text>
+        </Task>
+        <Task Id="636" UniqueId="0ee0d124-9e3a-a03c-df31-12b51c4413e9" Order="19" Number="4.0.5">
+          <Text>Digital sign document</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="618" UniqueId="aed9f776-335b-b5db-7aa3-a4fc751462d0" Number="5.0" Order="20">
+      <Text>Acknowledge application</Text>
+      <Ownerships>
+        <Role Id="52" Name="Grants committee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="637" UniqueId="eae05f05-6da3-7e88-48b9-480e77b3046c" Order="21" Number="5.0.1">
+          <Text>Receive application and confirm receipt</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="619" UniqueId="41e756a5-d051-3e18-0c5c-c7d3b377025f" Number="6.0" Order="22">
+      <Text>Send to department head for review</Text>
+      <Ownerships>
+        <Role Id="52" Name="Grants committee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="638" UniqueId="36294092-5edf-73f6-7222-cdedb0b5fa48" Order="23" Number="6.0.1">
+          <Text>select department for automating routing</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="620" UniqueId="bc8705d6-0855-478c-bb5f-9882b302db0f" Number="7.0" Order="24">
+      <Text>Approve at the department level</Text>
+      <Ownerships>
+        <Role Id="54" Name="Department Heads" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="621" UniqueId="33a541af-338e-08df-8482-b1b08efa6441" Number="8.0" Order="25">
+      <Text>Submit application to funding body</Text>
+      <Ownerships>
+        <Role Id="54" Name="Department Heads" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="622" UniqueId="c0df8399-33ce-5a55-286b-973e38786884" Number="9.0" Order="26">
+      <Text>Approve funding</Text>
+      <Ownerships>
+        <Role Id="53" Name="Funding department " IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="623" UniqueId="16964375-a8ed-960b-c8ab-c735f9a4ccad" Number="10.0" Order="27">
+      <Text>Review applications</Text>
+      <Ownerships>
+        <Role Id="52" Name="Grants committee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="624" UniqueId="8df471f1-b3fc-121f-b37b-984d14c5e888" Number="11.0" Order="28">
+      <Text>Approve applications</Text>
+      <Ownerships>
+        <Role Id="52" Name="Grants committee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="625" UniqueId="d51aa766-2eca-5ce6-1748-9175285427c4" Number="12.0" Order="29">
+      <Text>Grant funds to successful candidates</Text>
+      <Ownerships>
+        <Role Id="52" Name="Grants committee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="626" UniqueId="804c70f8-1a31-61cd-c164-6785de1a34e9" Number="13.0" Order="30">
+      <Text>Receive funding</Text>
+      <Ownerships>
+        <Role Id="49" Name="Applicant" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="102" PublishedDate="2019-09-24T11:18:44.793Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-01-09T10:11:49.6778598Z" />
+    <MetadataItem Name="CachedOn" Value="2020-01-09T10:11:49.6778598Z" />
+  </Metadata>
+</Process>
