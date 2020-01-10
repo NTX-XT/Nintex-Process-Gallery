@@ -1,0 +1,172 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Azure AD Groups",
+      "description": "Graph Get Groups"
+    },
+    "host": "graph.microsoft.com",
+    "basePath": "/v1.0/groups",
+    "schemes": [
+      "https",
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/{groupID}/members": {
+        "get": {
+          "parameters": [
+            {
+              "name": "groupID",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "description": "Get Group Members",
+          "summary": "Get Group Members",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Get Group Members",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Ok",
+              "schema": {
+                "type": "object"
+              }
+            }
+          },
+          "security": [
+            {
+              "auth": [
+                "User.ReadBasic.All",
+                "User.Read.All",
+                "Group.Read.All",
+                "Directory.Read.All"
+              ]
+            }
+          ]
+        }
+      },
+      "/{groupID}/members/{userID}/{ref}": {
+        "delete": {
+          "summary": "Remove Member From Group",
+          "description": "Remove Member from Group",
+          "parameters": [
+            {
+              "name": "groupID",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userID",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "ref",
+              "in": "path",
+              "type": "string",
+              "default": "$ref",
+              "required": true,
+              "x-ntx-visibility": "internal"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          },
+          "security": [
+            {
+              "auth": [
+                "GroupMember.ReadWrite.All",
+                "Group.ReadWrite.All",
+                "Directory.ReadWrite.All",
+                "Directory.AccessAsUser.All"
+              ]
+            }
+          ]
+        }
+      },
+      "/{groupID}/members/{ref}": {
+        "post": {
+          "summary": "Add Member to Group",
+          "description": "Add Member to Group",
+          "parameters": [
+            {
+              "name": "groupID",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "ref",
+              "in": "path",
+              "type": "string",
+              "default": "$ref",
+              "required": true,
+              "x-ntx-visibility": "internal"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "properties": {
+                  "@odata.id": {
+                    "type": "string",
+                    "x-ntx-summary": "User Id",
+                    "description": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          },
+          "security": [
+            {
+              "auth": [
+                "GroupMember.ReadWrite.All",
+                "Group.ReadWrite.All",
+                "Directory.ReadWrite.All",
+                "Directory.AccessAsUser.All"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "securityDefinitions": {
+      "auth": {
+        "type": "oauth2",
+        "flow": "accessCode",
+        "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+        "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+        "scopes": {
+          "User.ReadBasic.All": "Read Basic User Information",
+          "User.Read.All": "Read User Properties",
+          "Group.Read.All": "Read Group Properties",
+          "Directory.Read.All": "Read Directory Properties",
+          "GroupMember.ReadWrite.All": "Read Write Group Members",
+          "Group.ReadWrite.All": "Read Write Groups",
+          "Directory.ReadWrite.All": "Read Write Directory",
+          "Directory.AccessAsUser.All": "Access Directory as User"
+        }
+      }
+    }
+  }

@@ -1,0 +1,313 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Slack Threading",
+      "description": "Slack"
+    },
+    "host": "slack.com",
+    "basePath": "/api",
+    "schemes": [
+      "https"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/conversations.list": {
+        "get": {
+          "summary": "Get Channels",
+          "operationId": "getChannels",
+          "x-ntx-visibility": "internal",
+          "parameters": [
+            {
+              "in": "query",
+              "name": "exclude_archived",
+              "type": "boolean",
+              "default": true,
+              "x-ntx-visibility": "internal"
+            },
+            {
+              "in": "query",
+              "name": "limit",
+              "type": "integer",
+              "default": 500,
+              "x-ntx-visibility": "internal"
+            },
+            {
+              "in": "query",
+              "name": "types",
+              "type": "string",
+              "x-ntx-summary": "Types",
+              "enum": [
+                "public_channel",
+                "private_channel",
+                "mpim",
+                "im"
+              ],
+              "default": "public_channel"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Ok",
+              "schema": {
+                "$ref": "#/definitions/channelsResponse"
+              }
+            }
+          },
+          "security": [
+            {
+              "oauth2": [
+                "channels:read"
+              ]
+            },
+            {
+              "oauth2": [
+                "groups:read"
+              ]
+            }
+          ],
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ]
+        }
+      },
+      "/chat.postMessage": {
+        "post": {
+          "summary": "Post Message",
+          "description": "Post Message",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "parameters",
+              "schema": {
+                "$ref": "#/definitions/messagePost"
+              },
+              "required": true
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Created",
+              "schema": {
+                "$ref": "#/definitions/messageResponse"
+              }
+            },
+            "default": {
+              "description": "Operation Failed"
+            }
+          },
+          "security": [
+            {
+              "oauth2": [
+                "chat:write:user"
+              ]
+            },
+            {
+              "oauth2": [
+                "users:read.email"
+              ]
+            },
+            {
+              "oauth2": [
+                "chat:write:bot"
+              ]
+            }
+          ],
+          "consumes": [
+            "application/json"
+          ]
+        }
+      },
+      "/users.lookupByEmail": {
+        "get": {
+          "summary": "Lookup User By Email",
+          "description": "Lookup User",
+          "parameters": [
+            {
+              "in": "query",
+              "name": "email",
+              "type": "string",
+              "required": true
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Created",
+              "schema": {
+                "$ref": "#/definitions/userResponse"
+              }
+            },
+            "default": {
+              "description": "Operation Failed"
+            }
+          },
+          "security": [
+            {
+              "oauth2": [
+                "chat:write:user"
+              ]
+            },
+            {
+              "oauth2": [
+                "users:read.email"
+              ]
+            },
+            {
+              "oauth2": [
+                "users:read"
+              ]
+            }
+          ],
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ]
+        }
+      }
+    },
+    "definitions": {
+      "channelsResponse": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "string",
+            "x-ntx-summary": "OK",
+            "x-ntx-visibility": "internal"
+          },
+          "channels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/channelsObj"
+            }
+          }
+        }
+      },
+      "channelsObj": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-ntx-summary": "Channel ID"
+          },
+          "name": {
+            "type": "string",
+            "x-ntx-summary": "Channel Name"
+          }
+        }
+      },
+      "userResponse": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "x-ntx-summary": "Publish Status",
+            "type": "string",
+            "default": "READY",
+            "x-ntx-visibility": "internal"
+          },
+          "user": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "x-ntx-summary": "User ID"
+              },
+              "team_id": {
+                "type": "string",
+                "x-ntx-summary": "Team ID"
+              },
+              "name": {
+                "type": "string",
+                "x-ntx-summary": "Name"
+              }
+            }
+          }
+        }
+      },
+      "messagePost": {
+        "type": "object",
+        "properties": {
+          "channel": {
+            "x-ntx-summary": "Channel Name",
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "getChannels",
+              "value-collection": "channels",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          },
+          "text": {
+            "x-ntx-summary": "Text",
+            "type": "string"
+          },
+          "thread_ts": {
+            "x-ntx-summary": "Thread",
+            "type": "string"
+          },
+          "as_user": {
+            "x-ntx-summary": "Post as User",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "messageResponse": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "x-ntx-summary": "Publish Status",
+            "type": "string",
+            "x-ntx-visibility": "internal"
+          },
+          "channel": {
+            "x-ntx-summary": "Channel",
+            "type": "string",
+            "x-ntx-visibility": "internal"
+          },
+          "ts": {
+            "x-ntx-summary": "Thread",
+            "type": "string"
+          },
+          "message": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "x-ntx-summary": "Text",
+                "x-ntx-visibility": "internal"
+              },
+              "username": {
+                "type": "string",
+                "x-ntx-visibility": "internal",
+                "x-ntx-summary": "Username"
+              },
+              "bot_id": {
+                "x-ntx-visibility": "internal",
+                "type": "string",
+                "x-ntx-summary": "Bot ID"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securityDefinitions": {
+      "oauth2": {
+        "type": "oauth2",
+        "flow": "accessCode",
+        "authorizationUrl": "https://slack.com/oauth/authorize",
+        "tokenUrl": "https://slack.com/api/oauth.access",
+        "scopes": {
+          "channels:read": "Read all channels",
+          "groups:read": "View private channel names, member lists, topics, purposes, and latest message",
+          "im:read": "View the names of the people in DMs",
+          "mpim:read": "View the names of the people in group messages",
+          "chat:write:user": "This scope lets an app Send messages as you",
+          "chat:write:bot": "This scope lets an app Send messages as a bot",
+          "users:read.email": "View your workspace member email addresses",
+          "users:read": "Access your workspace’s profile information"
+        }
+      }
+    }
+  }

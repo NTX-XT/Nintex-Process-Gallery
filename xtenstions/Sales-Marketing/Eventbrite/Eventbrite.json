@@ -1,0 +1,220 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Eventbrite",
+      "description": "Eventbrite"
+    },
+    "host": "www.eventbriteapi.com",
+    "basePath": "/v3",
+    "schemes": [
+      "https"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "security": [
+      {
+        "oauth2": []
+      }
+    ],
+    "paths": {
+      "/organizations/{organization_id}/events/": {
+        "post": {
+          "summary": "Create an Event",
+          "parameters": [
+            {
+              "name": "organization_id",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "event": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "object",
+                        "properties": {
+                          "html": {
+                            "type": "string",
+                            "x-ntx-summary": "Event Name (HTML)"
+                          }
+                        }
+                      },
+                      "summary": {
+                        "type": "string",
+                        "x-ntx-summary": "Event Summary"
+                      },
+                      "start": {
+                        "$ref": "#/definitions/start"
+                      },
+                      "end": {
+                        "$ref": "#/definitions/end"
+                      },
+                      "currency": {
+                        "type": "string",
+                        "x-ntx-summary": "Event Currency",
+                        "default": "USD"
+                      },
+                      "capacity": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Ok",
+              "schema": {
+                "$ref": "#/definitions/eventResponse"
+              }
+            }
+          },
+          "security": [
+            {
+              "oauth2": []
+            }
+          ]
+        }
+      },
+      "/events/{event_id}/": {
+        "post": {
+          "summary": "Update an Event",
+          "parameters": [
+            {
+              "name": "event_id",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "event": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "object",
+                        "properties": {
+                          "html": {
+                            "type": "string",
+                            "x-ntx-summary": "Event Name (HTML)"
+                          }
+                        }
+                      },
+                      "summary": {
+                        "type": "string",
+                        "x-ntx-summary": "Event Summary"
+                      },
+                      "start": {
+                        "$ref": "#/definitions/start"
+                      },
+                      "end": {
+                        "$ref": "#/definitions/end"
+                      },
+                      "currency": {
+                        "type": "string",
+                        "x-ntx-summary": "Event Currency",
+                        "default": "USD"
+                      },
+                      "capacity": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Ok",
+              "schema": {
+                "$ref": "#/definitions/eventResponse"
+              }
+            }
+          },
+          "security": [
+            {
+              "oauth2": []
+            }
+          ]
+        }
+      }
+    },
+    "definitions": {
+      "start": {
+        "type": "object",
+        "properties": {
+          "timezone": {
+            "type": "string",
+            "default": "America/Los_Angeles",
+            "x-ntx-summary": "Start Time Timezone"
+          },
+          "utc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "YYYY-MM-DDThh:mm:ssZ",
+            "x-ntx-summary": "Start Time"
+          }
+        }
+      },
+      "end": {
+        "type": "object",
+        "properties": {
+          "timezone": {
+            "type": "string",
+            "default": "America/Los_Angeles",
+            "x-ntx-summary": "End Time Timezone"
+          },
+          "utc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "YYYY-MM-DDThh:mm:ssZ",
+            "x-ntx-summary": "End Time"
+          }
+        }
+      },
+      "eventResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-ntx-summary": "Id",
+            "description": "Profile ID or URN"
+          },
+          "url": {
+            "type": "string",
+            "x-ntx-summary": "Event URL"
+          },
+          "vanity_url": {
+            "type": "string",
+            "x-ntx-summary": "Vanity URL"
+          }
+        }
+      }
+    },
+    "securityDefinitions": {
+      "oauth2": {
+        "type": "oauth2",
+        "flow": "accessCode",
+        "authorizationUrl": "https://www.eventbrite.com/oauth/authorize",
+        "tokenUrl": "https://www.eventbrite.com/oauth/token"
+      }
+    }
+  }

@@ -1,0 +1,198 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Vision API V2.0",
+      "version": "1.0",
+      "description": "Microsoft Vision API"
+    },
+    "host": "westcentralus.api.cognitive.microsoft.com",
+    "basePath": "/vision/v2.0",
+    "schemes": [
+      "https"
+    ],
+    "securityDefinitions": {
+      "apiKeyHeader": {
+        "type": "apiKey",
+        "name": "Ocp-Apim-Subscription-Key",
+        "in": "header"
+      }
+    },
+    "security": [
+      {
+        "apiKeyHeader": []
+      }
+    ],
+    "paths": {
+      "/detect": {
+        "post": {
+          "description": "Detect Objects",
+          "operationId": "Detect Objects",
+          "parameters": [
+            {
+              "name": "file",
+              "in": "formData",
+              "type": "file",
+              "required": true,
+              "description": "The file to attach."
+            }
+          ],
+          "consumes": [
+            "multipart/form-data"
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful call returns an array of image details.",
+              "schema": {
+                "type": "object"
+              }
+            },
+            "400": {
+              "description": "\r\nError code and message returned in JSON:\r\n<table class=\"element table\">\r\n<thead>\r\n<tr><th>Error Code</th><th>Error Message Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>BadArgument</td><td>JSON parsing error. Bad or unrecognizable request JSON body.</td></tr>\r\n<tr><td>BadArgument</td><td>Invalid visualFeatures. Supported values are: Categories, Tags, Description, Faces, ImageType, Color, or Adult in a comma-separated format.\r\n<tr><td>InvalidURL</td><td>Invalid image format or URL. Supported formats include JPEG, PNG, GIF(the first frame) and BMP.</td></tr>\r\n<tr><td>InvalidURL</td><td>Failed to download image from the specified URL. Remote server error returned.</td></tr>\r\n<tr><td>InvalidImage</td><td>Decoding error, image format unsupported.</td></tr>\r\n<tr><td>InvalidImageSize</td><td>Image size is too small or too big. The valid image file size should be larger than or equal to 1KB but no larger than 4MB.</td></tr>\r\n</tbody>\r\n</table>\r\n  ",
+              "examples": {
+                "application/json": {
+                  "error": {
+                    "code": "BadArgument",
+                    "message": "Request body is invalid."
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/ocr": {
+        "post": {
+          "description": "OCR",
+          "operationId": "OCR",
+          "parameters": [
+            {
+              "name": "language",
+              "in": "query",
+              "description": "The BCP-47 language code of the text to be detected in the image. UNK will autodetect",
+              "type": "string",
+              "enum": [
+                "unk",
+                "zh-Hans",
+                "zh-Hant",
+                "cs",
+                "da",
+                "nl",
+                "en",
+                "fi",
+                "fr",
+                "de",
+                "el",
+                "hu",
+                "it",
+                "ja",
+                "ko",
+                "nb",
+                "pl",
+                "pt",
+                "ru",
+                "es",
+                "sv",
+                "tr",
+                "ar",
+                "ro",
+                "sr-Cyrl",
+                "sr-Latn",
+                "sk"
+              ],
+              "default": "unk"
+            },
+            {
+              "name": "detectOrientation",
+              "in": "query",
+              "description": "Detect text orientation in image",
+              "type": "boolean",
+              "default": true
+            },
+            {
+              "name": "file",
+              "in": "formData",
+              "type": "file",
+              "required": true,
+              "description": "The file to attach."
+            }
+          ],
+          "consumes": [
+            "multipart/form-data"
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful call returns an array of image details.",
+              "schema": {
+                "type": "object"
+              }
+            },
+            "400": {
+              "description": "\r\nError code and message returned in JSON:\r\n<table class=\"element table\">\r\n<thead>\r\n<tr><th>Error Code</th><th>Error Message Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>BadArgument</td><td>JSON parsing error. Bad or unrecognizable request JSON body.</td></tr>\r\n<tr><td>BadArgument</td><td>Invalid visualFeatures. Supported values are: Categories, Tags, Description, Faces, ImageType, Color, or Adult in a comma-separated format.\r\n<tr><td>InvalidURL</td><td>Invalid image format or URL. Supported formats include JPEG, PNG, GIF(the first frame) and BMP.</td></tr>\r\n<tr><td>InvalidURL</td><td>Failed to download image from the specified URL. Remote server error returned.</td></tr>\r\n<tr><td>InvalidImage</td><td>Decoding error, image format unsupported.</td></tr>\r\n<tr><td>InvalidImageSize</td><td>Image size is too small or too big. The valid image file size should be larger than or equal to 1KB but no larger than 4MB.</td></tr>\r\n</tbody>\r\n</table>\r\n  ",
+              "examples": {
+                "application/json": {
+                  "error": {
+                    "code": "BadArgument",
+                    "message": "Request body is invalid."
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/analyze": {
+        "post": {
+          "description": "Analyze Image",
+          "operationId": "Analyze Image",
+          "parameters": [
+            {
+              "name": "visualFeatures",
+              "in": "query",
+              "description": "Visual Features (Comma-Separated)",
+              "type": "string",
+              "default": "Categories,Faces,Adult"
+            },
+            {
+              "name": "details",
+              "in": "query",
+              "description": "Details (Comma-Separated)",
+              "type": "string",
+              "default": "Celebrities"
+            },
+            {
+              "name": "file",
+              "in": "formData",
+              "type": "file",
+              "required": true,
+              "description": "The file to attach."
+            }
+          ],
+          "consumes": [
+            "multipart/form-data"
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful call returns an array of image details.",
+              "schema": {
+                "type": "object"
+              }
+            },
+            "400": {
+              "description": "\r\nError code and message returned in JSON:\r\n<table class=\"element table\">\r\n<thead>\r\n<tr><th>Error Code</th><th>Error Message Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>BadArgument</td><td>JSON parsing error. Bad or unrecognizable request JSON body.</td></tr>\r\n<tr><td>BadArgument</td><td>Invalid visualFeatures. Supported values are: Categories, Tags, Description, Faces, ImageType, Color, or Adult in a comma-separated format.\r\n<tr><td>InvalidURL</td><td>Invalid image format or URL. Supported formats include JPEG, PNG, GIF(the first frame) and BMP.</td></tr>\r\n<tr><td>InvalidURL</td><td>Failed to download image from the specified URL. Remote server error returned.</td></tr>\r\n<tr><td>InvalidImage</td><td>Decoding error, image format unsupported.</td></tr>\r\n<tr><td>InvalidImageSize</td><td>Image size is too small or too big. The valid image file size should be larger than or equal to 1KB but no larger than 4MB.</td></tr>\r\n</tbody>\r\n</table>\r\n  ",
+              "examples": {
+                "application/json": {
+                  "error": {
+                    "code": "BadArgument",
+                    "message": "Request body is invalid."
+                  }
+                }
+              }
+            }
+          },
+          "produces": [
+            "application/json"
+          ]
+        }
+      }
+    }
+  }
