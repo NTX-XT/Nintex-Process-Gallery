@@ -1,0 +1,1011 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.1.0",
+    "title": "billomat",
+    "description": "Online Accounting Software - Accounting, anywhere and anytime"
+  },
+  "host": "[mytenant].billomat.net",
+  "basePath": "/api",
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/templates": {
+      "get": {
+        "summary": "Get all templates",
+        "operationId": "getTemplates",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Templates"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "x-ntx-visibility": "internal"
+      }
+    },
+    "/units": {
+      "get": {
+        "summary": "Get all units",
+        "operationId": "getUnits",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Units"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "x-ntx-visibility": "internal"
+      }
+    },
+    "/invoices": {
+      "post": {
+        "summary": "Create a new invoice",
+        "operationId": "createInvoice",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "newInvoice",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NewInvoice"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Invoice"
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Query invoices",
+        "operationId": "queryInvoice",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "invoice_number",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      }
+    },
+    "/invoice-items": {
+      "post": {
+        "summary": "Create a new invoice-item",
+        "operationId": "createInvoiceItem",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "newInvoiceItem",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NewInvoiceItem"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InvoiceItem"
+            }
+          }
+        }
+      }
+    },
+    "/invoices/{Id}": {
+      "get": {
+        "summary": "Get an invoice",
+        "operationId": "getInvoice",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Invoice"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Complete an invoice",
+        "operationId": "completeInvoice",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "CompleteInvoice",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CompleteInvoice"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Invoice"
+            }
+          }
+        }
+      }
+    },
+    "/invoices/{id}/pdf": {
+      "get": {
+        "summary": "Get the PDF document of an invoice",
+        "operationId": "getInvoicePdf",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InvoicePdf"
+            }
+          }
+        }
+      }
+    },
+    "/invoice-payments": {
+      "post": {
+        "summary": "Create a new invoice-payment",
+        "operationId": "createInvoicePayment",
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "newInvoicePayment",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NewInvoicePayment"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InvoicePayment"
+            }
+          }
+        }
+      }
+    },
+    "/clients": {
+      "get": {
+        "summary": "Query for a client",
+        "operationId": "queryClient",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "client_number",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Clients"
+            }
+          }
+        }
+      }
+    },
+    "/clients/{id}": {
+      "get": {
+        "summary": "Get a client",
+        "operationId": "getClient",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "security": [
+          {
+            "apikey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "type": "string",
+            "default": "application/json",
+            "x-ntx-visibility": "internal"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Client"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "apikey": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "query"
+    }
+  },
+  "definitions": {
+    "InvoicePdf": {
+      "type": "object",
+      "properties": {
+        "pdf": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "created": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "invoice_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "filename": {
+              "type": "string"
+            },
+            "mimetype": {
+              "type": "string"
+            },
+            "filesize": {
+              "type": "string"
+            },
+            "base64file": {
+              "type": "string",
+              "format": "byte"
+            }
+          }
+        }
+      }
+    },
+    "Clients": {
+      "type": "object",
+      "properties": {
+        "clients": {
+          "$ref": "#/definitions/Client"
+        }
+      }
+    },
+    "Client": {
+      "type": "object",
+      "properties": {
+        "client": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "format": "int64"
+            },
+            "client_number": {
+              "type": "string"
+            },
+            "number": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "NewInvoice": {
+      "type": "object",
+      "required": [
+        "invoice"
+      ],
+      "properties": {
+        "invoice": {
+          "type": "object",
+          "required": [
+            "client_id"
+          ],
+          "properties": {
+            "client_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "contact_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "supply_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "supply_date_type": {
+              "type": "string",
+              "enum": [
+                "SUPPLY_DATE",
+                "DELIVERY_DATE",
+                "SUPPLY_TEXT",
+                "DELIVERY_TEXT"
+              ]
+            },
+            "label": {
+              "type": "string"
+            },
+            "intro": {
+              "type": "string"
+            },
+            "template_id": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      }
+    },
+    "NewInvoiceItem": {
+      "type": "object",
+      "required": [
+        "invoice-item"
+      ],
+      "properties": {
+        "invoice-item": {
+          "type": "object",
+          "required": [
+            "invoice_id"
+          ],
+          "properties": {
+            "invoice_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "Festpreis",
+                "Lizenz",
+                "PT",
+                "Pauschal",
+                "Std.",
+                "Stk.",
+                "km"
+              ]
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "unit_price": {
+              "type": "number"
+            },
+            "tax_name": {
+              "type": "string",
+              "format": "int64"
+            },
+            "tax_rate": {
+              "type": "number"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "InvoiceItem": {
+      "type": "object",
+      "properties": {
+        "invoice-item": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "invoice_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "position": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "Festpreis",
+                "Lizenz",
+                "PT",
+                "Pauschal",
+                "Std.",
+                "Stk.",
+                "km"
+              ]
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "unit_price": {
+              "type": "number"
+            },
+            "tax_name": {
+              "type": "string",
+              "format": "int64"
+            },
+            "tax_rate": {
+              "type": "number"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "total_net": {
+              "type": "number"
+            },
+            "total_gross": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "CompleteInvoice": {
+      "type": "object",
+      "required": [
+        "complete"
+      ],
+      "properties": {
+        "complete": {
+          "type": "object"
+        }
+      }
+    },
+    "Invoices": {
+      "type": "object",
+      "properties": {
+        "invoices": {
+          "$ref": "#/definitions/Invoice"
+        }
+      }
+    },
+    "Invoice": {
+      "type": "object",
+      "properties": {
+        "invoice": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "created": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updated": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "client_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "contact_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "invoice_number": {
+              "type": "string"
+            },
+            "number": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "supply_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "supply_date_type": {
+              "type": "string"
+            },
+            "due_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "due_days": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "discount_amount": {
+              "type": "number",
+              "format": "float"
+            },
+            "label": {
+              "type": "string"
+            },
+            "total_gross": {
+              "type": "number",
+              "format": "float"
+            },
+            "total_net": {
+              "type": "number",
+              "format": "float"
+            },
+            "currency_code": {
+              "type": "string"
+            },
+            "quote": {
+              "type": "string"
+            },
+            "net_gross": {
+              "type": "string"
+            },
+            "reduction": {
+              "type": "string"
+            },
+            "total_gross_unreduced": {
+              "type": "number",
+              "format": "float"
+            },
+            "total_net_unreduced": {
+              "type": "number",
+              "format": "float"
+            },
+            "paid_amount": {
+              "type": "number",
+              "format": "float"
+            },
+            "open_amount": {
+              "type": "number",
+              "format": "float"
+            },
+            "payment_types": {
+              "type": "string"
+            },
+            "taxes": {
+              "type": "object",
+              "properties": {
+                "tax": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "rate": {
+                      "type": "string"
+                    },
+                    "amount": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "amount_plain": {
+                      "type": "string"
+                    },
+                    "amount_rounded": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "amount_net": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "amount_net_plain": {
+                      "type": "string"
+                    },
+                    "amount_net_rounded": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "amount_gross": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "amount_gross_plain": {
+                      "type": "string"
+                    },
+                    "amount_gross_rounded": {
+                      "type": "number",
+                      "format": "float"
+                    }
+                  }
+                }
+              }
+            },
+            "invoice_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "offer_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "confirmation_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "recurring_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "template_id": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      }
+    },
+    "NewInvoicePayment": {
+      "type": "object",
+      "properties": {
+        "invoice-payment": {
+          "type": "object",
+          "required": [
+            "invoice_id",
+            "date",
+            "amount",
+            "comment",
+            "type"
+          ],
+          "properties": {
+            "invoice_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "amount": {
+              "type": "number",
+              "format": "float"
+            },
+            "comment": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "CREDIT_NOTE",
+                "BANK_CARD",
+                "BANK_TRANSFER",
+                "DEBIT",
+                "CASH",
+                "CHECK",
+                "PAYPAL",
+                "CREDIT_CARD",
+                "COUPON",
+                "MISC"
+              ],
+              "default": "BANK_TRANSFER"
+            },
+            "mark_invoice_as_paid": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "InvoicePayment": {
+      "type": "object",
+      "properties": {
+        "invoice-payment": {
+          "type": "object",
+          "required": [
+            "invoice_id",
+            "date",
+            "amount",
+            "comment",
+            "type"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "created": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "invoice_id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "amount": {
+              "type": "number",
+              "format": "float"
+            },
+            "comment": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "CREDIT_NOTE",
+                "BANK_CARD",
+                "BANK_TRANSFER",
+                "DEBIT",
+                "CASH",
+                "CHECK",
+                "PAYPAL",
+                "CREDIT_CARD",
+                "COUPON",
+                "MISC"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Templates": {
+      "type": "object",
+      "properties": {
+        "templates": {
+          "type": "object",
+          "properties": {
+            "template": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "created": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "template_type": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "is_default": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Units": {
+      "type": "object",
+      "properties": {
+        "units": {
+          "type": "object",
+          "properties": {
+            "unit": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "created": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
