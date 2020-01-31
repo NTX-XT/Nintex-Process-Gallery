@@ -1,0 +1,387 @@
+<Process Id="602" Name="ISO 9001 Gap analysis checklist" ReferenceNo="" Objective="This Gap Analysis ISO 9001 Checklist can help you prepare for ISO 9001:2015 certification. Use this to evaluate if the Context of the organization, Planning, Operation, Quality control, and Product improvement complies with the ISO standard. It will also help determine the needs of consumers and your opportunities for improvements within the QMS. " IsTouchModeEnabled="false" IsTextModeOn="true" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Safalo Checklists" GroupId="258" GroupUniqueId="883cfe89-888b-4fb4-a16b-fd88be242a77" State="Active" StateId="1" Version="6.0" PromappVersion="4.7.0.6" UniqueId="e79a8d75-8b04-450d-bb93-7186ad02c2e3" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="258" UniqueId="883cfe89-888b-4fb4-a16b-fd88be242a77" Name="Safalo Checklists" ProcessGroupItemId="4290" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="11733" UniqueId="2d2a1a2d-a39f-5d33-ab17-d639c78bc8cc" Number="1.0" Order="0" ParallelGroupingRef="1">
+      <Text>Have all external and internal issues that are relevant to your organization’s purpose and the achievement of customer satisfaction and the organization’s strategic direction been determined?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11734" UniqueId="3f4c12fd-0c9f-17e3-ca89-5b873cdde1ca" Number="1.1" Order="1" ParallelGroupingRef="1">
+      <Text>Have the needs and expectations of interested parties that are relevant to the QMS been determined?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11735" UniqueId="17cc1756-730d-d106-5c65-2a158576aabb" Number="1.2" Order="2" ParallelGroupingRef="1">
+      <Text>Was the scope of your QMS determined whilst taking into account all the external and internal issues, the needs of interested parties and the scope your products and services?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11736" UniqueId="985ad336-b9f4-4502-82a3-7dd5d6cfc44f" Number="1.3" Order="3" ParallelGroupingRef="1">
+      <Text>Is your QMS established, and does it include a description of the processes required and their sequence and interaction?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11737" UniqueId="8a1e461a-ba84-3aaa-296b-4010f1d887ef" Number="1.4" Order="4" ParallelGroupingRef="1">
+      <Text>Have the criteria for managing these processes and their interaction been established?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11738" UniqueId="11992a11-b361-0952-e5ea-09881fdeff42" Number="1.5" Order="5" ParallelGroupingRef="1">
+      <Text>Have all responsibilities, methods, measurements and related performance indicators, needed to ensure the effective operation and control, been established?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11740" UniqueId="dc559782-fad3-5caf-4e87-f52c155fad87" Number="2.0" Order="6" ParallelGroupingRef="2">
+      <Text>Has top management taken accountability for the effectiveness of the QMS?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11741" UniqueId="d204e2eb-b962-a952-4441-213c8a344a18" Number="2.1" Order="7" ParallelGroupingRef="2">
+      <Text>Have the policy and objectives for the QMS, which are compatible with the strategic direction of the organization, been established and communicated?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11742" UniqueId="924843c2-094a-e981-033e-df1da49f076d" Number="2.2" Order="8" ParallelGroupingRef="2">
+      <Text>Have the objectives been established at relevant departmental and individual levels with the business?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11745" UniqueId="e0eab54c-dfa9-e5e4-48df-a4942ea7091d" Number="2.3" Order="9" ParallelGroupingRef="2">
+      <Text>Have the requirements for the QMS been integrated into the business processes and have management promoted awareness of the process approach?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11746" UniqueId="2e36e660-028d-ef96-8ae3-01efcd3cf38f" Number="2.4" Order="10" ParallelGroupingRef="2">
+      <Text>Have customer requirements and applicable statutory and regulatory requirements been determined, met and communicated throughout the organization?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11747" UniqueId="9d23790d-bf86-37e1-4380-8547a3b88eb1" Number="2.5" Order="11" ParallelGroupingRef="2">
+      <Text>Have the risks and opportunities that are relevant to the QMS been established?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11748" UniqueId="f1056133-e793-e03c-0936-ae1f548d5eca" Number="2.6" Order="12" ParallelGroupingRef="2">
+      <Text>Has the organization established and communicated the responsibilities and authorities for the effective operation of the QMS?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11749" UniqueId="d34f4706-33e9-d8f1-37b3-1e71a50875d5" Number="3.0" Order="13" ParallelGroupingRef="3">
+      <Text>Have the risks and opportunities that need to be addressed to give assurance that the QMS can achieve its intended result(s) been established?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11750" UniqueId="8b59bdad-313e-abcd-359b-4311c9708cb1" Number="3.1" Order="14" ParallelGroupingRef="3">
+      <Text>Has the organization planned actions to address these risks and opportunities and integrated them into the system processes?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11751" UniqueId="0dddd811-0092-44b1-e727-06d54a958696" Number="3.2" Order="15" ParallelGroupingRef="3">
+      <Text>Is there a defined process for the determining the need for changes to the QMS and managing their implementation?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11752" UniqueId="339b90f0-7e52-297b-7713-933fe81312b1" Number="4.0" Order="16" ParallelGroupingRef="4">
+      <Text>Has the organization determined and provided the resources needed for the establishment, implementation, maintenance and continual improvement of the QMS (including people, environmental and infrastructure requirements)?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11753" UniqueId="88148126-2496-2dcb-903a-112f8692fcf5" Number="4.1" Order="17" ParallelGroupingRef="4">
+      <Text>Is monitoring or measuring is used for evidence of conformity of products and services to specified requirements?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11754" UniqueId="d5af56ce-935e-5105-f131-dd718f9635e5" Number="4.2" Order="18" ParallelGroupingRef="4">
+      <Text>Has the organization determined the knowledge necessary for the operation of its processes and the achievement of conformity of products and services and implemented a lessons learned process?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11755" UniqueId="9e217dab-f463-376c-8089-32619271a8bc" Number="4.3" Order="19" ParallelGroupingRef="4">
+      <Text>Has the organization ensured that those persons who can affect the performance of the QMS are competent on the basis of appropriate education, training, or experience or taken action to ensure that those persons can acquire the necessary competence?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11756" UniqueId="c09fe6e9-c248-66b7-48c1-6f484ec3ea36" Number="4.4" Order="20" ParallelGroupingRef="4">
+      <Text>Has the documented information required by the standard and necessary for the effective implementation and operation of the QMS been established?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11757" UniqueId="447de882-412d-c361-a90f-43c99c344ffa" Number="5.0" Order="21" ParallelGroupingRef="5">
+      <Text>Is there a defined process for the provision of products and services that meet the requirements defined by the customer?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11758" UniqueId="8eb955f3-bfba-0323-eed1-56ba8aed2176" Number="5.1" Order="22" ParallelGroupingRef="5">
+      <Text>Are any outsourced processes managed and controlled?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11759" UniqueId="5218dc87-bc6e-321a-c397-11b293f8c872" Number="5.2" Order="23" ParallelGroupingRef="5">
+      <Text>Is there a defined process for reviewing and communicating with customers in relation to information relating to products and services, enquiries, contracts or order handling?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11760" UniqueId="e341d336-982a-e417-c694-651dada05ff7" Number="5.3" Order="24" ParallelGroupingRef="5">
+      <Text>Is this review conducted prior to the organisation’s commitment to supply products and services?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11761" UniqueId="d369ae3d-5dc8-12a5-cbc7-c27687ca619d" Number="5.4" Order="25" ParallelGroupingRef="5">
+      <Text>Do you design and develop products or services?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11762" UniqueId="4764954c-3c3e-0009-3f3a-cf05500e1bf2" Number="5.5" Order="26" ParallelGroupingRef="5">
+      <Text>Do you ensure that externally provided processes, products, and services conform to specified requirements?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11763" UniqueId="f6d559b7-6ec8-27df-da9b-464b92583351" Number="5.6" Order="27" ParallelGroupingRef="5">
+      <Text>Do you have criteria for the evaluation, selection, monitoring of performance and re-evaluation of external providers?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11764" UniqueId="754e79b4-9e43-6c6e-6b93-c17300130fd5" Number="5.7" Order="28" ParallelGroupingRef="5">
+      <Text>Is the provision of products and services carried out in controlled conditions?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="11780" UniqueId="bcebb2b5-4b0e-8357-77a7-7bbb00549dc4" Order="29" Number="">
+          <Text>Which include:</Text>
+          <Attachment>- The availability of documented information that defines the characteristics of the products and services?|~|- The availability of documented information that defines the activities to be performed and the results to be achieved?|~|- Monitoring and measurement activities at appropriate stages to verify that criteria for control of processes and process outputs, and acceptance criteria for products and services, have been met?|~|- The people carrying out the tasks are competent?</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11765" UniqueId="416c7b0e-cd57-9429-bf6e-b25c82f7a259" Number="5.8" Order="30" ParallelGroupingRef="5">
+      <Text>Do you have effective methods of ensuring traceability during the operation process?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11766" UniqueId="edfb3b46-659c-9f57-791d-d6a8e0c1f3da" Number="5.9" Order="31" ParallelGroupingRef="5">
+      <Text>Is property belonging to customers or external providers used in the provision of the product or service?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11767" UniqueId="07e7bd93-b842-fddc-fb61-4353dc08b434" Number="5.1" Order="32" ParallelGroupingRef="5">
+      <Text>Is there a requirement for post-delivery activities associated with the products and services such as warranty, maintenance services, recycling or final disposal?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11768" UniqueId="2afaeba5-bb77-7d8f-3f67-962dd98867bc" Number="5.1" Order="33" ParallelGroupingRef="5">
+      <Text>Are any nonconforming process outputs managed so as to prevent their unintended use?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11769" UniqueId="fd2f0a71-c0a5-cb31-73f0-afb22d7edfb7" Number="6.0" Order="34" ParallelGroupingRef="6">
+      <Text>Has the organisation determined what needs to be monitored and measured and the methods for monitoring, measurement, analysis and evaluation, to ensure valid results?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11770" UniqueId="7b0fd7b5-57d6-400c-6eea-e71bc89f2264" Number="6.1" Order="35" ParallelGroupingRef="6">
+      <Text>Has it established when the results from monitoring and measurement shall be analyzed and evaluated?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11771" UniqueId="1c0e47fa-c59e-a2d2-7cf5-c9ab36c8c8cc" Number="6.2" Order="36" ParallelGroupingRef="6">
+      <Text>Have methods of monitoring customer perceptions of the provision of products and services been established?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11772" UniqueId="b1a2ea9f-6e58-a4b3-52ba-c09c9ea49560" Number="6.3" Order="37" ParallelGroupingRef="6">
+      <Text>Has it determined the need or opportunities for improvements within the QMS and how these will be fed into management reviews?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11773" UniqueId="60e783c0-f685-b1a0-1fb4-a2f22d924f48" Number="6.4" Order="38" ParallelGroupingRef="6">
+      <Text>Has the organisation established a process for an internal audit of the QMS?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11774" UniqueId="a4fbff3c-d2db-2d7b-7a0f-57b26e624d7c" Number="6.5" Order="39" ParallelGroupingRef="6">
+      <Text>Has an approach to perform management reviews been established and implemented?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11775" UniqueId="13fa11c0-cc92-69fc-7acd-05ee7e148ff9" Number="7.0" Order="40" ParallelGroupingRef="7">
+      <Text>Has the organisation determined and selected opportunities for improvement and implemented the necessary actions to meet customer requirements and enhance customer satisfaction?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11776" UniqueId="a2d5d49e-df3b-46c1-70b4-9e0098ee09e1" Number="7.1" Order="41" ParallelGroupingRef="7">
+      <Text>Does the organisation operate appropriate processes for managing nonconformities and the related corrective actions?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11777" UniqueId="23e51f35-b52b-2948-cc29-97cdf188a4b8" Number="7.2" Order="42" ParallelGroupingRef="7">
+      <Text>Has the organisation decided on how it will address the requirement to continually improve the suitability, adequacy, and effectiveness of the QMS?</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11778" UniqueId="c1e316cd-2b84-2a07-e461-3fefdc98b14a" Number="8.0" Order="43" ParallelGroupingRef="8">
+      <Text>Recommendations</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11779" UniqueId="92e44d96-0b41-1bc7-0abf-3ecafb8fd7f4" Number="8.1" Order="44" ParallelGroupingRef="8">
+      <Text>Get Inspector's Full Name and Signature</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3752" PublishedDate="2020-01-31T01:34:09.0108815Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-01-31T01:34:09.4796423Z" />
+    <MetadataItem Name="CachedOn" Value="2020-01-31T01:34:09.4796423Z" />
+  </Metadata>
+</Process>
