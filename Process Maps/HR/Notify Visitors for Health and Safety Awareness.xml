@@ -1,0 +1,128 @@
+<Process Id="3015" Name="Notify Visitors for Health and Safety Awareness" ReferenceNo="" Objective="How we notify visitors to our office/facilities related to health and safety concerns." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="With the prevalence of COVID-19, a defined notification process will help minimize community spread and provide a framework for future notifications related to health and safety concerns." Owner="Jonathan Butler" OwnerId="190" Expert="Jonathan Butler" ExpertId="190" Group="Process Accelerator Gallery" GroupId="557" GroupUniqueId="00729171-b425-4a73-ba10-cb9db353aebb" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.0.24" UniqueId="e235bb0b-9224-41a0-b3a9-9c04d5c20b88" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="557" UniqueId="00729171-b425-4a73-ba10-cb9db353aebb" Name="Process Accelerator Gallery" ProcessGroupItemId="44651" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="819" Trigger="Visitor signs in at front desk." Frequency="Ah hoc." Volume="10 per day." UniqueId="3fd1a9b6-5f61-466c-a3b6-859513ce4545" />
+  </Triggers>
+  <Inputs>
+    <Input Id="516" FromProcess="N/A" Resource="Name" HowUsed="Used to identify the individual and personalize communications to them." UniqueId="12dfc165-a273-4cec-ae5d-0dba0b11c2d1" />
+    <Input Id="517" FromProcess="N/A" Resource="Email" HowUsed="Used to communicate with the visitor." UniqueId="06ecf7ea-6487-49f2-8fb0-d4fdd3e57b2c" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="272325" UniqueId="36d5d820-ea0c-b47a-0f0c-b273c952eb38" Number="1.0" Order="0">
+      <Text>Fill out visitor sign-in form</Text>
+      <Ownerships>
+        <Tag Id="202" Name="Automated" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="9" Name="Customer" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Form Id="272333" UniqueId="b31cf219-ee82-0d69-1175-d53ec9dbbb35" Order="1" DocumentId="3548" DocumentUniqueId="61b0ed3d-e923-4685-b8aa-28994daa33e0" UploadId="5732" NetworkFileName="https://ntx-successops.workflowcloud.com/forms/6d7bb765-50b3-4214-b657-b10f68cfe8ce" WorkflowId="109" Number="">
+          <Text>Contact Sign-in with Health and Safety Awareness (Start form)</Text>
+        </Form>
+        <Task Id="272334" UniqueId="bc28d442-8437-69ef-72bc-9b51b26f6b2f" Order="2" Number="1.0.1">
+          <Text>Scan QR code at front desk</Text>
+        </Task>
+        <Image Id="272335" UniqueId="01f3ad82-6d5b-544b-70b0-8fe240f4943a" Order="3" DocumentId="3547" DocumentUniqueId="be655196-d8d7-4238-bd20-7d7602217859" UploadId="5730" Number="">
+          <Text>Nintex Welcome Code.png</Text>
+        </Image>
+        <Task Id="272336" UniqueId="81ddf2bd-10e4-42fb-eabc-c1d0f4ccd873" Order="4" Number="1.0.2">
+          <Text>Complete welcome form</Text>
+        </Task>
+        <Task Id="272337" UniqueId="b03302f0-c872-256e-a1c3-e942ae3545fd" Order="5" Number="1.0.3">
+          <Text>Provide consent to share contact information (If desired)</Text>
+        </Task>
+        <Task Id="272338" UniqueId="b3a6f1e6-d106-0e58-24fa-b53b028f3263" Order="6" WorkflowId="109" Number="1.0.4">
+          <Text>Send Welcome to Nintex email</Text>
+        </Task>
+        <Guide Id="272339" UniqueId="6218ee3a-aff9-4a47-5bd2-16ec0e188a24" Order="7" DocumentId="3549" DocumentUniqueId="5e432515-289f-4079-83f3-be59138dd265" UploadId="5733" Number="">
+          <Text>Welcome to Nintex Email Template.docx</Text>
+        </Guide>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="272327" UniqueId="54323b00-90f7-d26f-6e21-9f07fc71fe3a" Number="2.0" Order="8">
+      <Text>Add Visitor Details to SharePoint</Text>
+      <Ownerships>
+        <Tag Id="202" Name="Automated" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Tag Id="149" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Tag Id="167" Name="SharePoint" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="272328" UniqueId="8e380d9b-f481-1856-3ad9-6b30c2635759" Order="9" WorkflowId="109" Number="2.0.1">
+          <Ownerships>
+            <Tag Id="167" Name="SharePoint" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Log visitor details to Visitor Welcome list in SharePoint</Text>
+        </Task>
+        <WebLink Id="272340" UniqueId="36433a17-4981-8257-a96c-e6d3e2681c39" Order="10" Number="">
+          <Text>Visitor Welcome List</Text>
+          <Attachment>https://nintex.sharepoint.com/sites/SuccessOperations/Lists/CovidTracking/</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="272331" UniqueId="710e9e62-bedf-a8e6-c399-1cf086af0d30" Number="0.0" Order="11" DecisionLinkIsYes="true" DecisionLinkType="Activity">
+      <Text>Potential Contamination Determined and Share Details Set to Yes?</Text>
+      <Ownerships>
+        <Role Id="239" Name="Nintex HR Team" IsVirtual="true" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="272332" UniqueId="02d8a9b1-761a-f0c3-207a-c70503292885" Number="3.0" Order="12" LinkedDecisionUniqueId="710e9e62-bedf-a8e6-c399-1cf086af0d30">
+      <Text>Update Visitor List with Potential Contaminations</Text>
+      <Ownerships>
+        <Tag Id="202" Name="Automated" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Tag Id="149" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="239" Name="Nintex HR Team" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="272345" UniqueId="3208acc0-e996-902a-d084-b5b5aff5ad19" Order="13" Number="">
+          <Text>How is a potential contamination identified?</Text>
+          <Attachment>Given the sensitive nature of health information, this will only be identified if local health authorities share information with Nintex that a visitor to our office/facilities has contracted COVID-19 and consented to share that information, if a visitor personally consents to share that information with Nintex for use in our awareness process, or if an employee consents to share that information with Nintex for use in our awareness process.</Attachment>
+        </Note>
+        <Task Id="272342" UniqueId="d276f713-3bcb-9d0b-155a-b6421443950b" Order="14" Number="3.0.1">
+          <Text>Update 'Exposed' field on Visitor Welcome list to Yes.</Text>
+        </Task>
+        <Task Id="272343" UniqueId="13f4e257-1b55-5945-a5d1-098039d1fb80" Order="15" WorkflowId="110" Number="3.0.2">
+          <Text>Review all 'Exposed' visitor records and determine if already alerted.</Text>
+        </Task>
+        <Task Id="272344" UniqueId="e863bd16-7689-cac8-0467-7fddfa5b6ce4" Order="16" WorkflowId="110" Number="3.0.3">
+          <Text>If not alerted, send alert email</Text>
+        </Task>
+        <Note Id="272346" UniqueId="a58559c7-1fc1-6b74-f2ca-7cd8aa00efdb" Order="17" Number="">
+          <Text>Will any personal details be shared in the alert email?</Text>
+          <Attachment>No. No personal contact information will be shared in the alert email. Only that another individual that was in the office on the same day has been diagnosed with COVID-19 and the appropriate next steps as outlined by the CDC.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+    <User Id="195" FirstName="Phillip" LastName="Ray" Name="Phillip Ray" />
+    <User Id="222" FirstName="Adele" LastName="Kaa" Name="Adele Kaa" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="20055" PublishedDate="2020-03-04T15:26:46.933Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-03-05T21:49:49.4208006Z" />
+    <MetadataItem Name="CachedOn" Value="2020-03-05T21:49:49.4208006Z" />
+  </Metadata>
+</Process>
