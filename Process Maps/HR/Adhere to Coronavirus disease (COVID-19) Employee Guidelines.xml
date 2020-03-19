@@ -1,0 +1,193 @@
+<Process Id="87" Name="Adhere to Coronavirus disease (COVID-19) Employee Guidelines" ReferenceNo="" Objective="To ensure employees feel safe and informed to perform role while impacted by Coronavirus (COVID-19)." IsTouchModeEnabled="false" IsTextModeOn="true" UseDynamicMapperImage="true" Background="" Owner="Promapp Promaster" OwnerId="1" Expert="Promapp Promaster" ExpertId="1" Group="New Group" GroupId="59" GroupUniqueId="631b6283-0fd9-451f-8336-c3285b33b109" State="Active" StateId="1" Version="6.0" PromappVersion="4.8.0.24" UniqueId="208e01dd-959c-409b-8d45-531220c6f4de" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="59" UniqueId="631b6283-0fd9-451f-8336-c3285b33b109" Name="New Group" ProcessGroupItemId="537" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="2920" UniqueId="686066bf-b009-edf3-d613-57856785fe39" Number="1.0" Order="0">
+      <Text>Read overview from Nintex Promapp (PLEASE REMOVE)</Text>
+      <Ownerships>
+        <Tag Id="23" Name="Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="2955" UniqueId="00ea2df8-d680-2a6c-70fc-801ac8817cbf" Order="1" Number="1.0.1">
+          <Text>Please Note: Nintex templates are provided for information purposes only, |~|and Nintex does not warrant the accuracy, correctness, reliability, and completeness or that any template provided is suitable for a particular purpose. All use of the Nintex Service is governed by the Nintex Customer Use Policy, available at https://www.nintex.com/legal.”</Text>
+        </Task>
+        <Task Id="2925" UniqueId="d2b55842-0b3a-623c-acc0-1e91d0361e46" Order="2" Number="1.0.2">
+          <Text>Remove and update the sections of this process that are not accurate or relevant for your organisation. All links below will need to be updated. This is a template.</Text>
+        </Task>
+        <Task Id="2926" UniqueId="83eed96e-f228-675e-8595-48df139bcb6c" Order="3" Number="1.0.3">
+          <Text>Create variants of this process that can guide your country or region specific instructions.</Text>
+        </Task>
+        <Task Id="2927" UniqueId="3294cb53-375e-6bf7-f648-1b623eb4afb1" Order="4" Number="1.0.4">
+          <Text>Share via minimode. If you share a link of the major version of the instructions (i.e. 1.0, 2.0), the link will continue to update with any published changes going forward as policies change. Employees will continue to have the most up-to-date information.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="2951" UniqueId="e5d4065c-d79c-937c-b992-e37a64202a81" Number="2.0" Order="5">
+      <Text>Read company guidelines for employees</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="2952" UniqueId="00124219-f91b-827d-0ab4-4b694b6210df" Order="6" Number="2.0.1">
+          <Ownerships>
+            <Tag Id="23" Name="Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Use this section to provide any quick guidelines and updates for employees if Nintex Promapp is the system of truth or link to updates from your organisation that employees access.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="2923" UniqueId="d85a8fa5-e53d-9df0-fcfd-c14762fb8034" Number="3.0" Order="7">
+      <Text>Read government / medical instructions</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="2940" UniqueId="6cc621a3-6131-7544-52a8-6339d15b8849" Order="8" Number="3.0.1">
+          <Text>Use the links below for government instructions related to COVID-19</Text>
+        </Task>
+        <WebLink Id="2941" UniqueId="3f771e3b-2eaa-ab13-8e8d-7ec0b9ca0da5" Order="9" Number="">
+          <Text>Government instructions</Text>
+          <Attachment>Government instructions</Attachment>
+        </WebLink>
+        <Task Id="2942" UniqueId="7b79ad14-a867-0f0a-4266-57f8f02f0716" Order="10" Number="3.0.2">
+          <Text>Use the links below for government travel instructions related to COVID-19 use the links below:</Text>
+        </Task>
+        <WebLink Id="2943" UniqueId="98924f14-9184-cc64-b946-4ccc5e940340" Order="11" Number="">
+          <Text>Government travel instructions</Text>
+          <Attachment>Government travel instructions</Attachment>
+        </WebLink>
+        <Task Id="2944" UniqueId="10f68073-e13b-89be-7450-426d32fdf773" Order="12" Number="3.0.3">
+          <Text>Use the links below for medical instructions related to COVID-19 use the links below:</Text>
+        </Task>
+        <WebLink Id="2945" UniqueId="38b10449-b035-121c-3a34-e9fb54ea2e66" Order="13" Number="">
+          <Text>Medical instructions</Text>
+          <Attachment>@TODO: Enter some text here</Attachment>
+        </WebLink>
+        <Task Id="2946" UniqueId="048b89ac-d1bf-1082-a264-dc5359b346cc" Order="14" Number="3.0.4">
+          <Text>Use the links below for further information related to COVID-19 use the links below:</Text>
+        </Task>
+        <WebLink Id="2947" UniqueId="a4ded624-48c0-1897-fce6-f9454f7ee803" Order="15" Number="">
+          <Text>Further information</Text>
+          <Attachment>@TODO: Enter some text here</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="2921" UniqueId="35242562-e3ed-f1dc-2df3-f1ec22aabc59" Number="4.0" Order="16">
+      <Text>Read work from home instructions</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="2928" UniqueId="244fbbcd-4fba-ca94-8f6f-468ed1fdb4e5" Order="17" Number="4.0.1">
+          <Text>Perform work from your home according to the linked HR Policy below. Do not come into the office at this time.</Text>
+        </Task>
+        <WebLink Id="2929" UniqueId="3777f0de-27b4-dec6-446c-58ce4adf31e1" Order="18" Number="">
+          <Text>Work From Home Policy</Text>
+          <Attachment>@TODO: Enter some text here</Attachment>
+        </WebLink>
+        <Note Id="2930" UniqueId="398f4408-6b8a-70ed-c5be-a2ce170ce8f7" Order="19" Number="">
+          <Text>Who do I contact if I have trouble with IT issues?</Text>
+          <Attachment>You may contact IT@organisation for assistance with application issues.</Attachment>
+        </Note>
+        <Note Id="2931" UniqueId="bc90825e-3580-ee23-39dc-d441bdcf1c18" Order="20" Number="">
+          <Text>What if I do not have everything at home required to complete my work?</Text>
+          <Attachment>Please contact your Manager or HR to discuss further, hr@organisation) or you can make your request for supplies in the form below.</Attachment>
+        </Note>
+        <WebLink Id="2932" UniqueId="4ceded7b-8322-851c-3ccd-21592260f89c" Order="21" Number="">
+          <Text>Nintex Form for Supplies</Text>
+          <Attachment>Nintex Form for Supplies</Attachment>
+        </WebLink>
+        <Task Id="2933" UniqueId="e7b4c800-3672-0104-8729-f24c3564443c" Order="22" Number="4.0.2">
+          <Text>Apply for leave use the HR Leave system, if needed.</Text>
+        </Task>
+        <WebLink Id="2934" UniqueId="bcdad684-2b29-7158-ca5e-9e4be1afda40" Order="23" Number="">
+          <Text>HR Leave</Text>
+          <Attachment>HR Leave</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="2922" UniqueId="b7cc0de9-f0cd-a404-ac0f-6943709a1d13" Number="5.0" Order="24">
+      <Text>Read travel instructions</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="2935" UniqueId="5f5dc588-f78e-2744-5d75-6848e30435c5" Order="25" Number="5.0.1">
+          <Text>Restrict business travel to local only.</Text>
+        </Task>
+        <Task Id="2936" UniqueId="3eb11cfc-6d9e-7667-69a0-e1aa76b43b18" Order="26" Number="5.0.2">
+          <Text>Cancel any international travel scheduled within the next 90 days.</Text>
+        </Task>
+        <Note Id="2937" UniqueId="39d08876-52ba-e206-cd93-d124d996e05f" Order="27" Number="">
+          <Text>How do I expense travel that I have had to cancel?</Text>
+          <Attachment>Please discuss with your Manager and enter relevant expenses in the system linked below.</Attachment>
+        </Note>
+        <WebLink Id="2938" UniqueId="4ca2f0c5-a4cc-9f9f-7d95-bf1a77bae855" Order="28" Number="">
+          <Text>Travel and Expense System</Text>
+          <Attachment>Travel and Expense System</Attachment>
+        </WebLink>
+        <Task Id="2939" UniqueId="19986887-95b7-39e2-b8eb-2f60e58023ed" Order="29" Number="5.0.3">
+          <Text>Do not come to work, if returning from international travel. Please work from home and self quarantine for the recommended 14 days.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="2924" UniqueId="a349c560-f301-81ea-d509-8c2efdf1617f" Number="6.0" Order="30">
+      <Text>Read exposure to or positive test results for COVID-19 instructions</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="2948" UniqueId="09636be4-4aa7-6c1f-e12d-5dfd53d9a009" Order="31" Number="6.0.1">
+          <Text>Notify your Manager and HR when you or an immediate family member (in household) learn you have been exposed, using the form below.</Text>
+        </Task>
+        <WebLink Id="2953" UniqueId="8dac64ee-60fe-3034-f906-7012270c42c9" Order="32" Number="">
+          <Text>Nintex Form for Coronavirus disesase (COVID-19) exposure</Text>
+          <Attachment>@TODO: Enter some text here</Attachment>
+        </WebLink>
+        <Task Id="2949" UniqueId="2f49951a-da60-9aca-776f-7f7787c5ab82" Order="33" Number="6.0.2">
+          <Text>Self-quarantine for up to 14 days and take any further medical action based on the recommended government advice.</Text>
+        </Task>
+        <Task Id="2950" UniqueId="026a62d8-9c9c-03c1-600b-ff8cdd79dc11" Order="34" Number="6.0.3">
+          <Text>Inform your Manager and HR and await further instructions if confirmed to test positive for Coronavirus disease (COVID-19), using the form below:</Text>
+        </Task>
+        <WebLink Id="2954" UniqueId="01e824c8-b5ec-654d-2ada-1f0bbfa28da5" Order="35" Number="">
+          <Text>Nintex Form for Coronavirus disease (COVID-19) exposure</Text>
+          <Attachment>Nintex Form for Coronavirus disease (COVID-19) exposure</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="330" PublishedDate="2020-03-19T01:07:05.6211265Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-03-19T01:07:05.7918369Z" />
+    <MetadataItem Name="CachedOn" Value="2020-03-19T01:07:05.7918369Z" />
+  </Metadata>
+</Process>
