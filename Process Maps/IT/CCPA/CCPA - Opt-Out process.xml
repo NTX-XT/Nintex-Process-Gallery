@@ -1,6 +1,6 @@
-<Process Id="3109" Name="CCPA - Opt-Out process" ReferenceNo="" Objective="Map put the CCPA process requirements" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Sasan Ehdaie" OwnerId="544" Expert="Sasan Ehdaie" ExpertId="544" Group="Process Templates" GroupId="566" GroupUniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.1.9" UniqueId="a92aaa98-c555-4635-b963-d3b5f35ee872" IsPolicyModeOn="false" IsVirtualVariation="false">
+<Process Id="3109" Name="CCPA - Opt-Out Process" ReferenceNo="" Objective="Map out the CCPA opt-out process requirements." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Jonathan Butler" OwnerId="190" Expert="Jonathan Butler" ExpertId="190" Group="Process Templates" GroupId="566" GroupUniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.1.9" UniqueId="a92aaa98-c555-4635-b963-d3b5f35ee872" IsPolicyModeOn="false" IsVirtualVariation="false">
   <ProcessGroupItems>
-    <ProcessGroup Id="566" UniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" Name="Process Templates" ProcessGroupItemId="45613" />
+    <ProcessGroup Id="566" UniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" Name="Process Templates" ProcessGroupItemId="45615" />
   </ProcessGroupItems>
   <Triggers />
   <Inputs />
@@ -10,7 +10,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Note Id="275856" UniqueId="a6059ce7-e07c-4877-9573-ba4977d40665" Order="1" Number="">
           <Text>Content and options for presentation (only specific info or All global)</Text>
@@ -47,7 +47,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275862" UniqueId="f8181703-b102-4dbb-aadc-97e6f954c5e5" Order="9" Number="2.0.1">
           <Text>Check if fraudulent</Text>
@@ -108,7 +108,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275871" UniqueId="3e138f25-6dfc-4471-ba3f-e708c6358993" Order="22" Number="3.0.1">
           <Text>Retain record of request for 24 months</Text>
@@ -142,14 +142,14 @@
   <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
   <RiskControls />
   <ProcessApproval>
-    <Published ProcessRevisionId="20498" PublishedDate="2020-04-15T20:45:09.5548844Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Published ProcessRevisionId="20502" PublishedDate="2020-04-15T20:49:33.2026838Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
     <Approved />
   </ProcessApproval>
   <Metadata>
     <ProcessXmlGenerationOptions>
       <StubProcesses>false</StubProcesses>
     </ProcessXmlGenerationOptions>
-    <MetadataItem Name="GenerationDate" Value="2020-04-15T20:45:09.9079326Z" />
-    <MetadataItem Name="CachedOn" Value="2020-04-15T20:45:09.9079326Z" />
+    <MetadataItem Name="GenerationDate" Value="2020-04-15T20:49:33.3276921Z" />
+    <MetadataItem Name="CachedOn" Value="2020-04-15T20:49:33.3276921Z" />
   </Metadata>
 </Process>

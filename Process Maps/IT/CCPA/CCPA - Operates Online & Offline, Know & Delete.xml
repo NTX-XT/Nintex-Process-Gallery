@@ -1,6 +1,6 @@
-<Process Id="3108" Name="CCPA - Operates online &amp; offline, Know &amp; Delete" ReferenceNo="" Objective="Map put the CCPA process requirements for companies that operate both online and offline (i.e. store front or retail stores).  Example: Best Buy, Target, etc.)" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Sasan Ehdaie" OwnerId="544" Expert="Sasan Ehdaie" ExpertId="544" Group="Process Templates" GroupId="566" GroupUniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.1.9" UniqueId="04695890-48f4-4ff0-8511-9ec3db36be42" IsPolicyModeOn="false" IsVirtualVariation="false">
+<Process Id="3108" Name="CCPA - Operates Online &amp; Offline, Know &amp; Delete" ReferenceNo="" Objective="CCPA process requirements for companies that operate both online and offline (i.e. store front or retail stores). Example: Best Buy, Target, etc.)" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Jonathan Butler" OwnerId="190" Expert="Jonathan Butler" ExpertId="190" Group="Process Templates" GroupId="566" GroupUniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.1.9" UniqueId="04695890-48f4-4ff0-8511-9ec3db36be42" IsPolicyModeOn="false" IsVirtualVariation="false">
   <ProcessGroupItems>
-    <ProcessGroup Id="566" UniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" Name="Process Templates" ProcessGroupItemId="45610" />
+    <ProcessGroup Id="566" UniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" Name="Process Templates" ProcessGroupItemId="45614" />
   </ProcessGroupItems>
   <Triggers />
   <Inputs />
@@ -10,7 +10,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275797" UniqueId="229d903f-2640-4f69-af9c-4e81b48c55c1" Order="1" Number="1.0.1">
           <Text>Online Form</Text>
@@ -74,14 +74,14 @@
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
         <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0" />
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
     </Decision>
     <Activity Id="275792" UniqueId="0febe1de-8720-47a1-9eac-2fcf5c363a12" Number="2.0" Order="14">
       <Text>Confirm request received (Know or Delete case)</Text>
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275806" UniqueId="dc93978f-652b-47da-8fb4-48b6795b0ee1" Order="15" Number="2.0.1">
           <Text>Confirm receipt of request and how business will proceed, within 10 business days</Text>
@@ -112,7 +112,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275812" UniqueId="d83f285f-7281-4d6d-a37e-0aca64f9d714" Order="22" Number="3.0.1">
           <Text>Verify the identity of the person making the request</Text>
@@ -151,7 +151,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275820" UniqueId="c30d58b7-b159-4682-92d9-eade6d0cba3f" Order="31" Number="4.0.1">
           <Text>Respond to "Know" request within 45 days, if able to verify requester</Text>
@@ -208,7 +208,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275833" UniqueId="c54da4a2-ccdf-4efe-ab9f-94f7b0858983" Order="45" Number="5.0.1">
           <Text>Respond with notice and explanation, if unable to verify consumer/requester, via paper or email or call</Text>
@@ -258,7 +258,7 @@
       <Ownerships>
         <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
         <Task Id="275845" UniqueId="725afac5-32f4-4535-a685-c8ef9c8dba06" Order="58" Number="6.0.1">
           <Text>Retain record of request for 24 months</Text>
@@ -294,14 +294,14 @@
   <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
   <RiskControls />
   <ProcessApproval>
-    <Published ProcessRevisionId="20497" PublishedDate="2020-04-15T20:34:06.1064262Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Published ProcessRevisionId="20500" PublishedDate="2020-04-15T20:48:33.5783851Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
     <Approved />
   </ProcessApproval>
   <Metadata>
     <ProcessXmlGenerationOptions>
       <StubProcesses>false</StubProcesses>
     </ProcessXmlGenerationOptions>
-    <MetadataItem Name="GenerationDate" Value="2020-04-15T20:34:07.3407538Z" />
-    <MetadataItem Name="CachedOn" Value="2020-04-15T20:34:07.3407538Z" />
+    <MetadataItem Name="GenerationDate" Value="2020-04-15T20:48:33.7500520Z" />
+    <MetadataItem Name="CachedOn" Value="2020-04-15T20:48:33.7500520Z" />
   </Metadata>
 </Process>
