@@ -1,0 +1,306 @@
+<Process Id="3107" Name="CCPA - Operates Exclusively Online, Know &amp; Delete" ReferenceNo="" Objective="CCPA process requirements for companies that operate exclusively online with no store front or retail stores.  Example: Facebook, What's App, NewEgg electronics, etc." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Jonathan Butler" OwnerId="190" Expert="Jonathan Butler" ExpertId="190" Group="Process Templates" GroupId="566" GroupUniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.1.9" UniqueId="14d2d681-8321-48d5-abea-f87c665a9e17" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="566" UniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" Name="Process Templates" ProcessGroupItemId="45606" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="275725" UniqueId="cd970eb5-8809-4482-be90-76de1cc10bc6" Number="1.0" Order="0">
+      <Text>Receive Privacy Information Request</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="275735" UniqueId="bbea17f1-dacf-407b-8cc1-b19b50a9b197" Order="1" Number="">
+          <Text>What methods can customers submit requests for personal information?</Text>
+          <Attachment>Exclusively operating online - A business that operates exclusively online and has a direct relationship with a consumer from whom it collects personal information shall only be required to provide a web form and email address for submitting requests to know.</Attachment>
+        </Note>
+        <Task Id="275736" UniqueId="a96bda8c-a6c4-4862-a572-9402e119239f" Order="2" Number="1.0.1">
+          <Text>Online Form</Text>
+        </Task>
+        <WebLink Id="275737" UniqueId="81679b21-2a8a-c265-6711-1e7d9cb3ce7b" Order="3" Number="">
+          <Text>Example Web Form</Text>
+          <Attachment>https://www.google.com</Attachment>
+        </WebLink>
+        <Note Id="275726" UniqueId="e7abf25d-b7b4-438f-8d5f-91dd63cba25d" Order="4" Number="">
+          <Ownerships>
+            <Tag Id="93" Name="2Talk" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Form example</Text>
+          <Attachment>Are you a "consumer," as defined by Cal. Civ. Code Sec. 1798.140(g)?|~|Yes|~|No|~||~|What type of request is this?|~|An Access Request &lt;this path was selected&gt;|~|A Deletion Request|~||~|What type of information are you interested in?|~|General Categories of Personal Information Collected|~|Specific Pieces of Personal Information Collected|~||~|Under the CCPA, you have the right to access the Personal Information we’ve collected about you during the past 12 months. You also have the right to request deletion of your Personal Information.|~||~|For iPhone users, you can learn how to access, manage, and delete your Personal Information by checking out our iPhone FAQs. For Android, you can learn how to access, manage, and delete your Personal Information through our Android FAQs.|~||~|To request manual access or deletion of your Personal Information, please fill out and submit the below form. All fields are required in order to process your request.|~||~|For requests for specific pieces of Personal Information, or for deletion of your Personal Information, please also attach a copy of your phone bill or similar proof of ownership of the WhatsApp number. Please redact all extraneous information from your documents, including mailing address and payment information.|~||~|Fields:|~|Your Full Name|~|Enter your email|~|Your WhatsApp Phone Number|~|Your phone model|~|The software version of your phone's operating system|~|SUBMIT</Attachment>
+        </Note>
+        <Task Id="275738" UniqueId="0c931de5-3749-40f7-bc30-f0bfb8001df6" Order="5" Number="1.0.2">
+          <Text>Email</Text>
+        </Task>
+        <WebLink Id="275739" UniqueId="e827497a-3457-4896-80bc-934da89f90b0" Order="6" Number="">
+          <Text>CCPA regulation details</Text>
+          <Attachment>https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-text-of-mod-clean-020720.pdf?</Attachment>
+        </WebLink>
+        <Note Id="275727" UniqueId="4dfe9efe-db28-47ae-9fbe-2eed908034e1" Order="7" Number="">
+          <Ownerships>
+            <Tag Id="225" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What if a customer asks for details via an "unsupported" manner?</Text>
+          <Attachment>If a consumer submits a request in a manner that is not one of the designated methods of|~|submission, or is deficient in some manner unrelated to the verification process, the business|~|shall either:|~|(1) Treat the request as if it had been submitted in accordance with the business’s|~|designated manner, or|~|(2) Provide the consumer with information on how to submit the request or remedy any|~|deficiencies with the request, if applicable.</Attachment>
+        </Note>
+        <Note Id="275728" UniqueId="6f011b00-2d69-47e1-8b76-b995f7986ce8" Order="8" Number="">
+          <Ownerships>
+            <Tag Id="225" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What if a customer would like to delete their information?</Text>
+          <Attachment>Add a warning, "are you sure", cancel or yes option, on their request on benefits they would lose by this action:|~|Deleting personal info|~|If you select this option:|~|- Your account and purchase history will be deleted|~|- Your loyalty point earnings will be deleted|~|- You may not be able to place orders or initiate returns online|~|- Your registries will be deleted, including your completion coupons|~|- Your gift card balance will be deleted|~|- etc</Attachment>
+        </Note>
+        <Note Id="275740" UniqueId="b1ddefec-1faf-4cc6-a093-f1badc7d0249" Order="9" Number="">
+          <Text>What if requests are made by an "Authorized Agent"?</Text>
+          <Attachment>“Authorized agent” means a natural person or a business entity registered with the Secretary|~|of State to conduct business in California that a consumer has authorized to act on their|~|behalf subject to the requirements set forth in section 999.326. |~||~|A consumer may use an authorized agent to submit a request to opt-out on the consumer’s|~|behalf if the consumer provides the authorized agent written permission signed by the|~|consumer. A business may deny a request from an authorized agent that does not submit|~|proof that they have been authorized by the consumer to act on the consumer’s behalf.|~|User-enabled global privacy controls, such as a browser plugin or privacy setting, device|~|setting, or other mechanism, that communicate or signal the consumer’s choice to opt-out of|~|the sale of their personal information shall be considered a request directly from the|~|consumer, not through an authorized agent.|~||~|Authorized Agent|~|(a) When a consumer uses an authorized agent to submit a request to know or a request to|~|delete, a business may require that the consumer do the following:|~|(1) Provide the authorized agent written and signed permission to do so.|~|(2) Verify their own identity directly with the business.|~|(3) Directly confirm with the business that they provided the authorized agent permission|~|to submit the request.|~|(b) Subsection (a) does not apply when a consumer has provided the authorized agent with|~|power of attorney pursuant to Probate Code sections 4000 to 4465.|~|(c) A business may deny a request from an authorized agent that does not submit proof that they|~|have been authorized by the consumer to act on their behalf.|~|(d) An authorized agent shall implement and maintain reasonable security procedures and|~|practices to protect the consumer’s information.|~|(e) An authorized agent shall not use a consumer’s personal information, or any information|~|collected from or about the consumer, for any purpose other than to fulfill the consumer’s|~|requests, for verification, or for fraud prevention.</Attachment>
+        </Note>
+        <Note Id="275741" UniqueId="08bde83b-aaba-41fa-b202-92b50c97f35e" Order="10" Number="">
+          <Text>Email request formats</Text>
+          <Attachment>Given user elects to click on request by email, launch an email instance and include the following in the email subject line and body:|~||~|Subject line: Request for privacy information|~||~|First Name:|~|Last Name:|~|email address:|~|Phone Number:|~|Address:|~|City:|~|State:|~|Zip code:|~|Request type (know, delete, opt-out):</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="275729" UniqueId="c5549ca4-d11f-40ab-afa5-29308c474168" Number="0.0" Order="11" LinkedProcessId="3011" DecisionLinkIsYes="true" DecisionLinkType="ProcessLink" LinkedProcessName="CCPA - Opt-Out process" LinkedProcessUniqueId="b860193d-d5fe-44d9-bb51-23b66d246e9f">
+      <Text>Received Opt-Out Request?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+    </Decision>
+    <Activity Id="275730" UniqueId="9474a782-7435-4566-9120-2b20f3575466" Number="2.0" Order="12">
+      <Text>Confirm Request Received (Know or Delete case)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="275742" UniqueId="be084641-3f4a-4018-865f-3983a71b8f7e" Order="13" Number="2.0.1">
+          <Text>Confirm receipt of request and how business will proceed, within 10 business days</Text>
+        </Task>
+        <Note Id="275743" UniqueId="31f05f06-4c1c-4693-b9f6-0eb1ee07b79e" Order="14" Number="">
+          <Text>Regulation notes</Text>
+          <Attachment>Upon receiving a request to know or a request to delete, a business shall confirm receipt of|~|the request within 10 business days and provide information about how the business will|~|process the request. The information provided shall describe in general the business’s|~|verification process and when the consumer should expect a response, except in instances|~|where the business has already granted or denied the request. The confirmation may be|~|given in the same manner in which the request was received. For example, if the request is|~|made over the phone, the confirmation may be given on the phone during the phone call.</Attachment>
+        </Note>
+        <Note Id="275744" UniqueId="18255ddf-7ee6-4866-a9a0-c3e69fb54a4d" Order="15" Number="">
+          <Text>Can you use a two-step process confirmation?</Text>
+          <Attachment>A business may use a two-step process for online requests to delete where the consumer|~|must first, submit the request to delete and then second, separately confirm that they want|~|their personal information deleted.</Attachment>
+        </Note>
+        <Task Id="275745" UniqueId="a0e33cfc-01ec-4405-b6c3-1e49271acfb4" Order="16" Number="2.0.2">
+          <Text>Given category request, then send an email with categories listed</Text>
+        </Task>
+        <Note Id="275746" UniqueId="110251de-f5bf-400d-b026-141dfa9a6ae7" Order="17" Number="">
+          <Text>Combine steps tips</Text>
+          <Attachment>Receipt confirmation and category request can be in one email, or a response to a request can also be a form of request confirmation as long as it's within 10 business days</Attachment>
+        </Note>
+        <Note Id="275747" UniqueId="8f9918f1-2149-4d1e-8c59-10ff1df79aee" Order="18" Number="">
+          <Text>Combine steps tips</Text>
+          <Attachment>Receipt confirmation and access to personal information request can be in one email, or a response to a request can also be a form of request confirmation as long as it's within 10 business days and access is via a link to login to an existing online account that meets authentication validation.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="275731" UniqueId="d0e0e032-3ccd-4286-b388-b8450126d550" Number="3.0" Order="19">
+      <Text>Verify identity of requester (to know)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="275748" UniqueId="94a19db6-2397-4532-8540-d321e8196436" Order="20" Number="3.0.1">
+          <Text>Verify the identity of the person making the request</Text>
+        </Task>
+        <Note Id="275749" UniqueId="64e28270-7bbb-4496-9a6f-7bb7c3d7f4fa" Order="21" Number="">
+          <Text>Regulation</Text>
+          <Attachment>For requests that seek the disclosure of specific pieces of information about the|~|consumer, if a business cannot verify the identity of the person making the request|~|pursuant to the regulations set forth in Article 4, the business shall not disclose any|~|specific pieces of personal information to the requestor and shall inform the requestor|~|that it cannot verify their identity. If the request is denied in whole or in part, the|~|business shall also evaluate the consumer’s request as if it is seeking the disclosure of|~|categories of personal information about the consumer pursuant to subsection (c)(2).</Attachment>
+        </Note>
+        <Note Id="275750" UniqueId="6d87102b-cc16-41b3-a830-4a442887ef7d" Order="22" Number="">
+          <Text>Authentication and Identification methods</Text>
+          <Attachment>Whenever feasible, match the identifying information provided by the consumer to the|~|personal information of the consumer already maintained by the business, or use a|~|third-party identity verification service that complies with this section.|~||~|Avoid collecting the types of personal information identified in Civil Code section|~|1798.81.5, subdivision (d), unless necessary for the purpose of verifying the consumer. |~||~|Need to know what 1798.81.5 is?|~||~|A business shall generally avoid requesting additional information from the consumer for|~|purposes of verification. If, however, the business cannot verify the identity of the|~|consumer from the information already maintained by the business, the business may|~|request additional information from the consumer, which shall only be used for the purposes|~|of verifying the identity of the consumer seeking to exercise their rights under the CCPA,|~|and for security or fraud-prevention purposes. The business shall delete any new personal|~|information collected for the purposes of verification as soon as practical after processing|~|the consumer’s request, except as required to comply with section 999.317.|~||~|(d) A business shall not require the consumer to pay a fee for the verification of their request to|~|know or request to delete. For example, a business may not require a consumer to provide a notarized affidavit to verify their identity unless the business compensates the consumer for|~|the cost of notarization. A business shall implement reasonable security measures to detect fraudulent identity verification activity and prevent the unauthorized access to or deletion of a consumer’s personal information.|~||~|(f) If a business maintains consumer information that is identified, a business is not obligated|~|to provide or delete this information in response to a consumer request or to re-identify|~|individual data to verify a consumer request.</Attachment>
+        </Note>
+        <Note Id="275751" UniqueId="1259ba90-72ec-4252-b951-afdcbf42a193" Order="23" Number="">
+          <Text>999.324. Verification for Password-Protected Accounts</Text>
+          <Attachment>(a) If a business maintains a password-protected account with the consumer, the business may|~|verify the consumer’s identity through the business’s existing authentication practices for|~|the consumer’s account, provided that the business follows the requirements in section|~|999.323. The business shall also require a consumer to re-authenticate themselves before|~|disclosing or deleting the consumer’s data.|~|(b) If a business suspects fraudulent or malicious activity on or from the password-protected|~|account, the business shall not comply with a consumer’s request to know or request to|~|delete until further verification procedures determine that the consumer request is authentic|~|and the consumer making the request is the person about whom the business has collected|~|information. The business may use the procedures set forth in section 999.325 to further|~|verify the identity of the consumer.</Attachment>
+        </Note>
+        <Note Id="275752" UniqueId="0204547e-ad40-4f2d-bd22-b62e5913515e" Order="24" Number="">
+          <Text>"Know", Verification for Non-account holder</Text>
+          <Attachment>A business’s compliance with a request to know categories of personal information requires|~|that the business verify the identity of the consumer making the request to a reasonable|~|degree of certainty. A reasonable degree of certainty may include matching at least two data|~|points provided by the consumer with data points maintained by the business, which the|~|business has determined to be reliable for the purpose of verifying the consumer.|~|(c) A business’s compliance with a request to know specific pieces of personal information|~|requires that the business verify the identity of the consumer making the request to a|~|reasonably high degree of certainty, which is a higher bar for verification. A reasonably|~|high degree of certainty may include matching at least three pieces of personal information provided by the consumer with personal information maintained by the business that it has|~|determined to be reliable for the purpose of verifying the consumer together with a signed|~|declaration under penalty of perjury that the requestor is the consumer whose personal|~|information is the subject of the request. If a business uses this method for verification, the|~|business shall maintain all signed declarations as part of its record-keeping obligations.|~||~|A business shall deny a request to know specific pieces of personal information if it cannot|~|verify the identity of the requestor pursuant to these regulations.|~||~|Examples of authenticated verification:|~|Phone Application - Copy of Phone bill with consumer name and phone number, with redact of all extraneous information from your documents, including mailing address and payment information.|~|Last item purchased (order #, Item name, etc.)|~|Last 4 digits of credit card used</Attachment>
+        </Note>
+        <Note Id="275753" UniqueId="055af857-a623-4060-980a-addda33ae536" Order="25" Number="">
+          <Text>"Delete", Verification for Non-account holder</Text>
+          <Attachment>A business’s compliance with a request to delete may require that the business verify the|~|identity of the consumer to a reasonable degree or a reasonably high degree of certainty|~|depending on the sensitivity of the personal information and the risk of harm to the|~|consumer posed by unauthorized deletion. For example, the deletion of family photographs|~|and documents may require a reasonably high degree of certainty, while the deletion of|~|browsing history may require only a reasonable degree of certainty. A business shall act in|~|good faith when determining the appropriate standard to apply when verifying the consumer|~|in accordance with these regulations.</Attachment>
+        </Note>
+        <Task Id="275754" UniqueId="a719eb08-d70d-4bd5-8877-b881fd18236f" Order="26" Number="3.0.2">
+          <Text>If unable to verify the identity of the user, then send an email with explanation of inability to process the request</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="275732" UniqueId="e1448cad-65c3-436c-9646-b1027b4409c0" Number="4.0" Order="27">
+      <Text>Respond to "Know" Request (up to 90 days)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="275755" UniqueId="bd17d270-5f1c-4cea-afcb-fc6fb3db97f8" Order="28" Number="4.0.1">
+          <Text>Respond to "Know" request within 45 days, if able to verify requester</Text>
+        </Task>
+        <Note Id="275756" UniqueId="e3ec462b-bac9-4109-84f8-62f14d41cb22" Order="29" Number="">
+          <Text>Response content (for Know)</Text>
+          <Attachment>In responding to a verified request to know categories of personal information, the|~|business shall provide:|~|a. The categories of personal information the business has collected about the|~|consumer in the preceding 12 months;|~|b. The categories of sources from which the personal information was collected;|~|c. The business or commercial purpose for which it collected or sold the personal|~|information;|~|d. The categories of third parties with which the business shares personal|~|information;|~|e. The categories of personal information that the business sold in the preceding 12|~|months, and for each category identified, the categories of third parties to which it|~|sold that particular category of personal information;|~|f. The categories of personal information that the business disclosed for a business|~|purpose in the preceding 12 months, and for each category identified, the|~|categories of third parties to whom it disclosed that particular category of personal|~|information.|~|(11) A business shall identify the categories of personal information, categories of sources|~|of personal information, and categories of third parties to whom a business sold or|~|disclosed personal information, in a manner that provides consumers a meaningful|~|understanding of the categories listed.</Attachment>
+        </Note>
+        <Task Id="275757" UniqueId="d48c7ae5-9e19-4e07-8aef-1c979b4f973f" Order="30" Number="4.0.2">
+          <Text>Respond with notice and explanation, if unable to verify consumer/requester, via paper or email or call</Text>
+        </Task>
+        <Note Id="275758" UniqueId="9cba9604-4650-4f0c-bebf-19c1dbc4a6cf" Order="31" Number="">
+          <Text>Respond timeline, up to 90 days</Text>
+          <Attachment>Businesses shall respond to requests to know and requests to delete within 45 calendar days.|~|The 45-day period will begin on the day that the business receives the request, regardless of|~|time required to verify the request. If the business cannot verify the consumer within the 45-|~|day time period, the business may deny the request. If necessary, businesses may take up to|~|an additional 45 calendar days to respond to the consumer’s request, for a maximum total of|~|90 calendar days from the day the request is received, provided that the business provides|~|the consumer with notice and an explanation of the reason that the business will take more|~|than 45 days to respond to the request.</Attachment>
+        </Note>
+        <Note Id="275759" UniqueId="8150f319-7530-4cd3-9097-b34659bfb2ea" Order="32" Number="">
+          <Text>Disclosure rules and limitations</Text>
+          <Attachment>For requests that seek the disclosure of specific pieces of information about the|~|consumer, if a business cannot verify the identity of the person making the request|~|pursuant to the regulations set forth in Article 4, the business shall not disclose any|~|specific pieces of personal information to the requestor and shall inform the requestor|~|that it cannot verify their identity. If the request is denied in whole or in part, the|~|business shall also evaluate the consumer’s request as if it is seeking the disclosure of|~|categories of personal information about the consumer pursuant to subsection (c)(2).|~|(2) For requests that seek the disclosure of categories of personal information about the|~|consumer, if a business cannot verify the identity of the person making the request|~|pursuant to the regulations set forth in Article 4, the business may deny the request to|~|disclose the categories and other information requested and shall inform the requestor|~|that it cannot verify their identity. If the request is denied in whole or in part, the |~|business shall provide or direct the consumer to its general business practices|~|regarding the collection, maintenance, and sale of personal information set forth in its|~|privacy policy.</Attachment>
+        </Note>
+        <Note Id="275760" UniqueId="ebb66597-9c3e-4e18-becc-b850e26ce971" Order="33" Number="">
+          <Text>Conditional disclosures</Text>
+          <Attachment>In responding to a request to know, a business is not required to search for personal|~|information if all the following conditions are met:|~|a. The business does not maintain the personal information in a searchable or|~|reasonably accessible format;|~|b. The business maintains the personal information solely for legal or compliance|~|purposes;|~|c. The business does not sell the personal information and does not use it for any|~|commercial purpose; and|~|d. The business describes to the consumer the categories of records that may contain|~|personal information that it did not search because it meets the conditions stated|~|above.|~|(4) A business shall not disclose in response to a request to know a consumer’s Social|~|Security number, driver’s license number or other government-issued identification|~|number, financial account number, any health insurance or medical identification|~|number, an account password, security questions and answers, or unique biometric|~|data generated from measurements or technical analysis of human characteristics.|~|(5) If a business denies a consumer’s verified request to know specific pieces of personal|~|information, in whole or in part, because of a conflict with federal or state law, or an|~|exception to the CCPA, the business shall inform the requestor and explain the basis|~|for the denial, unless prohibited from doing so by law. If the request is denied only in|~|part, the business shall disclose the other information sought by the consumer.|~|(6) A business shall use reasonable security measures when transmitting personal|~|information to the consumer.|~|(7) If a business maintains a password-protected account with the consumer, it may|~|comply with a request to know by using a secure self-service portal for consumers to|~|access, view, and receive a portable copy of their personal information if the portal|~|fully discloses the personal information that the consumer is entitled to under the|~|CCPA and these regulations, uses reasonable data security controls, and complies with|~|the verification requirements set forth in Article 4.</Attachment>
+        </Note>
+        <Note Id="275761" UniqueId="00a82ff7-e123-401a-bd6d-bd0ff636909d" Order="34" Number="">
+          <Text>Example category request email</Text>
+          <Attachment>From: &lt;Company.com&gt;|~|Sent: Monday, March 2, 2020 4:55 PM|~|To: sasankaren@hotmail.com|~|Subject: California Consumer Privacy Act (CCPA) Inquiries|~||~|Hi,|~||~|Thanks for your question about what categories of personal information &lt;Company&gt; collects.|~||~|To provide the products or features offered by &lt;Company&gt; (“Products”), we must process information about you, including Personal Information. When we say “Personal Information,” we mean information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with you.  Personal Information does not include information that is aggregated or information that cannot be reasonably linked to you.|~||~|The best way to learn about the kinds of information we collect and how we use it is to review our Data Policy &lt;link to policy&gt;|~||~|Here is a summary of the CCPA-related categories of Personal Information we may have collected about you over the past 12 months, depending on how you use our Products.|~||~|&lt;list out&gt;|~|- Identifiers;|~|- Data with special protections, if you choose to provide it;|~|- Commercial information, if you choose to provide it;|~|- Photos and face imagery that can be used to create face-recognition templates if you or others choose to provide it and you have the setting (Link) turned on.|~|- Internet or other electronic network activity information;|~|- Location-related information, including precise device location if you choose to allow us to collect it;|~|- Audio or visual information, including photos and videos, if you choose to provide it;|~|- Professional or employment information, if you choose to provide it;|~|- Education information, if you choose to provide it;|~|- Financial information, if you choose to provide it; and|~|- Information derived from other Personal Information about you, which could include your preferences, interests, and other information used to personalize your experience.|~||~|If you have another question or concern, please visit our Privacy Basics &lt;Link&gt;|~||~|If you have more questions about our California Privacy Notice &lt;Link&gt;|~||~|Thanks|~||~|&lt;Company Name&gt;</Attachment>
+        </Note>
+        <Note Id="275762" UniqueId="3bd6381a-5396-4b95-914e-c0e5d3baf3ac" Order="35" Number="">
+          <Text>Example specific information request</Text>
+          <Attachment>From: &lt;Company.com&gt;|~|Sent: Monday, March 2, 2020 5:25 PM|~|To: sasankaren@hotmail.com|~|Subject: California Consumer Privacy Act (CCPA) Inquiries|~||~|Hi,|~||~|Thanks for contacting us about how to access or download your personal information.|~||~|You can access your &lt;Company&gt; information using our self-service tools. To get specific types of your  information visit the Access Your Information tool &lt;link to user profile page, that requires log-in to their account with compan&gt;.|~||~|You can also download a copy of your  information using the Download Your Information tool:|~||~|&lt;link&gt;|~||~|Your downloaded file may contain sensitive information. You should keep it secure and take precautions when storing, sending or uploading it to any other services.|~||~|If you have another question or concern, please visit Privacy Basics &lt;link&gt;|~||~|Thanks|~|&lt;Company Name&gt;</Attachment>
+        </Note>
+        <Task Id="275763" UniqueId="933bdfd5-5e78-4f05-acf6-217daa534b5f" Order="36" Number="4.0.3">
+          <Text>Send email for denial, if conflict with federal/state or CCPA exception</Text>
+        </Task>
+        <Note Id="275764" UniqueId="7bc7ff10-559e-408c-b76f-bef57d1eea62" Order="37" Number="">
+          <Text>Request denied due to conflict with federal/state law or exceptions to CCPA</Text>
+          <Attachment>If a business denies a consumer’s verified request to know specific pieces of personal|~|information, in whole or in part, because of a conflict with federal or state law, or an|~|exception to the CCPA, the business shall inform the requestor and explain the basis|~|for the denial, unless prohibited from doing so by law. If the request is denied only in|~|part, the business shall disclose the other information sought by the consumer.</Attachment>
+        </Note>
+        <Note Id="275765" UniqueId="5e736748-53f8-4b9f-821f-4d43dba446db" Order="38" Number="">
+          <Text>Responding to category request and category listing requirement in email</Text>
+          <Attachment>In responding to a verified request to know categories of personal information, the|~|business shall provide:|~|a. The categories of personal information the business has collected about the|~|consumer in the preceding 12 months;|~|b. The categories of sources from which the personal information was collected;|~|c. The business or commercial purpose for which it collected or sold the personal|~|information;|~|d. The categories of third parties with which the business shares personal|~|information;|~|e. The categories of personal information that the business sold in the preceding 12|~|months, and for each category identified, the categories of third parties to which it|~|sold that particular category of personal information;|~|f. The categories of personal information that the business disclosed for a business|~|purpose in the preceding 12 months, and for each category identified, the|~|categories of third parties to whom it disclosed that particular category of personal|~|information.|~|(11) A business shall identify the categories of personal information, categories of sources|~|of personal information, and categories of third parties to whom a business sold or|~|disclosed personal information, in a manner that provides consumers a meaningful|~|understanding of the categories listed.</Attachment>
+        </Note>
+        <Note Id="275766" UniqueId="4ddc74af-26e8-45ef-86ae-a9a480d47247" Order="39" Number="">
+          <Text>Responding to access is not required if:</Text>
+          <Attachment>In responding to a request to know, a business is not required to search for personal|~|information if all the following conditions are met:|~|a. The business does not maintain the personal information in a searchable or|~|reasonably accessible format;|~|b. The business maintains the personal information solely for legal or compliance|~|purposes;|~|c. The business does not sell the personal information and does not use it for any|~|commercial purpose; and|~|d. The business describes to the consumer the categories of records that may contain|~|personal information that it did not search because it meets the conditions stated|~|above.</Attachment>
+        </Note>
+        <Task Id="275767" UniqueId="4c067a5d-7333-403a-8322-84db7e7d34c4" Order="40" Number="4.0.4">
+          <Text>Respond to a Know request with specific personal information via Secure Email or Password protected XML</Text>
+        </Task>
+        <Note Id="275768" UniqueId="36db5c7e-d2b3-44e7-b1db-2237ccc21e71" Order="41" Number="">
+          <Text>Do not send the following personal information:</Text>
+          <Attachment>A business shall not disclose in response to a request to know a consumer’s Social|~|Security number, driver’s license number or other government-issued identification|~|number, financial account number, any health insurance or medical identification|~|number, an account password, security questions and answers, or unique biometric|~|data generated from measurements or technical analysis of human characteristics.</Attachment>
+        </Note>
+        <Task Id="275769" UniqueId="08a5d09e-97f5-411b-8fe6-60e3b85b17d1" Order="42" Number="4.0.5">
+          <Text>Given no personal data found on consumer, then send an email to consumer and inform that company has no personal data</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="275733" UniqueId="4391417d-0ef3-4a7b-ab88-f792c33c4bb4" Number="5.0" Order="43">
+      <Text>Respond to "Delete" Request (up to 90 days)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="275770" UniqueId="d4302903-e9ca-421b-980e-153ac1b879a5" Order="44" Number="5.0.1">
+          <Text>Respond with notice and explanation, if unable to verify consumer/requester, via paper or email or call</Text>
+        </Task>
+        <Note Id="275771" UniqueId="c413653a-89a4-4aea-9836-9c8d642126cf" Order="45" Number="">
+          <Text>Response details and content</Text>
+          <Attachment>For requests to delete, if a business cannot verify the identity of the requestor pursuant|~|to the regulations set forth in Article 4, the business may deny the request to delete.|~|The business shall inform the requestor that their identity cannot be verified. If the|~|business sells personal information and the consumer has not already made a request|~|to opt out, the business shall ask the consumer if they would like to opt out of the sale|~|of their personal information and shall include either the contents of, or a link to, the|~|notice of right to opt-out in accordance with section 999.306.</Attachment>
+        </Note>
+        <Task Id="275772" UniqueId="cfd0c4a9-e6dc-491f-bc5b-838008289d0e" Order="46" Number="5.0.2">
+          <Text>Gather all consumer account status to decide if eligible for Deletion (RPA or webservice action)</Text>
+        </Task>
+        <Task Id="275773" UniqueId="d583d3ea-ff01-42ba-98e3-1be1c2c6d7ad" Order="47" Number="5.0.3">
+          <Text>Determine if qualified for deletion or not based on data gathered (Decision action, either rule based or needs a person to approve by seeing the data first, for next step)</Text>
+        </Task>
+        <Task Id="275774" UniqueId="fc1373fd-0464-4056-b96f-557e686ccd42" Order="48" Number="5.0.4">
+          <Text>Respond to "Delete" request within 45 days, if able to verify requester</Text>
+        </Task>
+        <Note Id="275775" UniqueId="a87e0aba-a114-41bf-b642-56078cfac16b" Order="49" Number="">
+          <Text>Inform rules and content</Text>
+          <Attachment>In responding to a request to delete, a business shall inform the consumer whether or|~|not it has complied with the consumer’s request.|~|In cases where a business denies a consumer’s request to delete the business shall do|~|all of the following:|~|a. Inform the consumer that it will not comply with the consumer’s request and|~|describe the basis for the denial, including any conflict with federal or state law,|~|or exception to the CCPA, unless prohibited from doing so by law;|~|b. Delete the consumer’s personal information that is not subject to the exception;|~|and|~|c. Not use the consumer’s personal information retained for any other purpose than|~|provided for by that exception. |~|In responding to a request to delete, a business may present the consumer with the|~|choice to delete select portions of their personal information only if a global option to|~|delete all personal information is also offered and more prominently presented than the|~|other choices. |~||~|If the business complies with the consumer’s request, the business shall inform the|~|consumer that it will maintain a record of the request as allowed by Civil Code section|~|1798.105, subdivision (d). A business may retain a record of the request for the|~|purpose of ensuring that the consumer’s personal information remains deleted from the|~|business’s records.</Attachment>
+        </Note>
+        <Task Id="275776" UniqueId="43b963b4-9e3f-4de4-98bd-7b7c9abceafa" Order="50" Number="5.0.5">
+          <Text>Delete consumer information, if meeting all criteria and no denial</Text>
+        </Task>
+        <Note Id="275777" UniqueId="e45fb4d3-02f4-44b0-a860-75ba8c5b8900" Order="51" Number="">
+          <Text>What actions are needed?</Text>
+          <Attachment>A business shall comply with a consumer’s request to delete their personal information|~|by:|~|a. Permanently and completely erasing the personal information on its existing|~|systems with the exception of archived or back-up systems;|~|b. Deidentifying the personal information; or|~|c. Aggregating the consumer information.</Attachment>
+        </Note>
+        <Task Id="275778" UniqueId="47eb8337-d73d-48f8-9c1a-c5fe1623bb17" Order="52" Number="5.0.6">
+          <Text>If Delete request is denied, notify the user via email (use case; in Collection or Delinquent state, etc.)</Text>
+        </Task>
+        <Note Id="275779" UniqueId="832b5fc3-31eb-476a-8a00-d1a3ec689639" Order="53" Number="">
+          <Text>Delete denial process</Text>
+          <Attachment>In cases where a business denies a consumer’s request to delete the business shall do|~|all of the following:|~|a. Inform the consumer that it will not comply with the consumer’s request and|~|describe the basis for the denial, including any conflict with federal or state law,|~|or exception to the CCPA, unless prohibited from doing so by law;|~|b. Delete the consumer’s personal information that is not subject to the exception;|~|and|~|c. Not use the consumer’s personal information retained for any other purpose than|~|provided for by that exception.</Attachment>
+        </Note>
+        <Task Id="275780" UniqueId="0b5e19a9-1771-4f0d-9910-f5fb711ff07f" Order="54" Number="5.0.7">
+          <Text>Retain record of request for 24 months</Text>
+        </Task>
+        <Note Id="275781" UniqueId="4e0026d3-8505-4a61-bff3-10afa5e40c20" Order="55" Number="">
+          <Text>Retaining record of request</Text>
+          <Attachment>If the business complies with the consumer’s request, the business shall inform the|~|consumer that it will maintain a record of the request as allowed by Civil Code section|~|1798.105, subdivision (d). A business may retain a record of the request for the|~|purpose of ensuring that the consumer’s personal information remains deleted from the|~|business’s records.|~||~|The records may be maintained in a ticket or log format provided that the ticket or log|~|includes the date of request, nature of request, manner in which the request was made, the|~|date of the business’s response, the nature of the response, and the basis for the denial of the|~|request if the request is denied in whole or in part. |~||~|A business shall maintain records of consumer requests made pursuant to the CCPA and|~|how the business responded to said requests for at least 24 months. The business shall|~|implement and maintain reasonable security procedures and practices in maintaining these|~|records.</Attachment>
+        </Note>
+        <Task Id="275782" UniqueId="1527e3fa-a694-4630-a573-d9a7c4c8ecd9" Order="56" Number="5.0.8">
+          <Text>Given no personal data found on consumer, then send an email to consumer and inform that company has no personal data</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="275734" UniqueId="c6a162eb-e67a-4ff8-8687-17f23b654ce5" Number="6.0" Order="57">
+      <Text>Log Actions Taken Per Request</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="275783" UniqueId="86cdef58-8061-4d65-96c6-e2144de3e3ee" Order="58" Number="6.0.1">
+          <Text>Retain record of request for 24 months</Text>
+        </Task>
+        <Note Id="275784" UniqueId="c77e6b59-fcb0-456f-965d-7df36368e49b" Order="59" Number="">
+          <Text>Retaining record of request</Text>
+          <Attachment>If the business complies with the consumer’s request, the business shall inform the|~|consumer that it will maintain a record of the request as allowed by Civil Code section|~|1798.105, subdivision (d). A business may retain a record of the request for the|~|purpose of ensuring that the consumer’s personal information remains deleted from the|~|business’s records.|~||~|The records may be maintained in a ticket or log format provided that the ticket or log|~|includes the date of request, nature of request, manner in which the request was made, the|~|date of the business’s response, the nature of the response, and the basis for the denial of the|~|request if the request is denied in whole or in part. |~||~|A business shall maintain records of consumer requests made pursuant to the CCPA and|~|how the business responded to said requests for at least 24 months. The business shall|~|implement and maintain reasonable security procedures and practices in maintaining these|~|records.</Attachment>
+        </Note>
+        <Note Id="275785" UniqueId="1479f92e-6bc9-4332-b34b-5d3632340c01" Order="60" Number="">
+          <Text>Log Format</Text>
+          <Attachment>date of request|~|nature of request (know/delete/optout)|~|manner in which the request was made (eform/tollfree/mail, etc.)|~|the date of the business’s response (need to determine which response date)|~|the nature of the response (approved/declined, etc.)|~|the basis for the denial of the|~|request if the request is denied in whole or in part (need to create a category list. i.e. in collection state, etc.)</Attachment>
+        </Note>
+        <Note Id="275786" UniqueId="818139b6-41c3-4220-a38d-27601e08f813" Order="61" Number="">
+          <Text>Requirement for businesses that has more than 10+ million customers</Text>
+          <Attachment>A business that knows or reasonably should know that it, alone or in combination, buys,|~|receives for the business’s commercial purposes, sells, or shares for commercial purposes,|~|the personal information of 10,000,000 or more consumers in a calendar year, shall:|~|(1) Compile the following metrics for the previous calendar year:|~|a. The number of requests to know that the business received, complied with in|~|whole or in part, and denied;|~|b. The number of requests to delete that the business received, complied with in|~|whole or in part, and denied;|~|c. The number of requests to opt-out that the business received, complied with in|~|whole or in part, and denied; and|~|d. The median or mean number of days within which the business substantively|~|responded to requests to know, requests to delete, and requests to opt-out.|~|(2) Disclose, by July 1 of every calendar year, the information compiled in subsection|~|(g)(1) within their privacy policy or posted on their website and accessible from a link|~|included in their privacy policy.|~|(3) In its disclosure pursuant to subsection (g)(1), a business may choose to identify the|~|number of requests that it denied in whole or in part because the request was not|~|verifiable, was not made by a consumer, called for information exempt from|~|disclosure, or was denied on other grounds.|~|(4) A business may choose to compile and disclose the information required by subsection|~|(g)(1) for requests received from all individuals, rather than requests received from|~|consumers. The business shall state whether it has done so in its disclosure and shall, upon request, compile and provide to the Attorney General the information required by subsection (g)(1) for requests received from consumers.|~|(5) Establish, document, and comply with a training policy to ensure that all individuals|~|responsible for handling consumer requests made under the CCPA or the business’s|~|compliance with the CCPA are informed of all the requirements in these regulations|~|and the CCPA.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="3011" Link="CCPA - Opt-Out process" Owner="Sasan Ehdaie" Expert="Sasan Ehdaie" ProcessGroup="Product Management" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="194" FirstName="Justin" LastName="Donato" Name="Justin Donato" />
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="20496" PublishedDate="2020-04-15T20:13:42.9095104Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-04-15T20:13:43.9111265Z" />
+    <MetadataItem Name="CachedOn" Value="2020-04-15T20:13:43.9111265Z" />
+  </Metadata>
+</Process>
