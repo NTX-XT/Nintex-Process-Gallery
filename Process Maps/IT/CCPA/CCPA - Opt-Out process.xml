@@ -1,0 +1,155 @@
+<Process Id="3109" Name="CCPA - Opt-Out process" ReferenceNo="" Objective="Map put the CCPA process requirements" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Sasan Ehdaie" OwnerId="544" Expert="Sasan Ehdaie" ExpertId="544" Group="Process Templates" GroupId="566" GroupUniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.1.9" UniqueId="a92aaa98-c555-4635-b963-d3b5f35ee872" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="566" UniqueId="d2c3b550-b7e5-48d7-8c6e-5917af5d4136" Name="Process Templates" ProcessGroupItemId="45613" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="275849" UniqueId="ec365e8d-07f3-43c7-be02-e9c01a0207fa" Number="1.0" Order="0">
+      <Text>Receive privacy request</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Note Id="275856" UniqueId="a6059ce7-e07c-4877-9573-ba4977d40665" Order="1" Number="">
+          <Text>Content and options for presentation (only specific info or All global)</Text>
+          <Attachment>In responding to a request to opt-out, a business may present the consumer with the choice|~|to opt-out of sale for certain uses of personal information as long as a global option to optout of the sale of all personal information is more prominently presented than the other|~|choices.</Attachment>
+        </Note>
+        <Task Id="275857" UniqueId="3ec0fe64-ee83-4713-9d6c-0c0dab5310fb" Order="2" Number="1.0.1">
+          <Text>Online form</Text>
+        </Task>
+        <Task Id="275850" UniqueId="76ec0a90-4b42-416f-b926-70b2c20b322e" Order="3" Number="1.0.2">
+          <Ownerships>
+            <Tag Id="225" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Confirm Opt-out with customer, Global or specific information</Text>
+        </Task>
+        <Task Id="275858" UniqueId="2f3186c2-8393-4b01-a7c5-1815c3614ad7" Order="4" Number="1.0.3">
+          <Text>Email</Text>
+        </Task>
+        <WebLink Id="275859" UniqueId="f99f3d38-4d20-444b-a3a6-23ed44ea7f45" Order="5" Number="">
+          <Text>CCPA regulation details</Text>
+          <Attachment>https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-text-of-mod-clean-020720.pdf?</Attachment>
+        </WebLink>
+        <Note Id="275860" UniqueId="99e28c7b-8192-4fbf-9e8d-b2819bb98a83" Order="6" Number="">
+          <Text>Opt-out compliance</Text>
+          <Attachment>A business shall provide two or more designated methods for submitting requests to opt-out,|~|including an interactive form accessible via a clear and conspicuous link titled “Do Not Sell|~|My Personal Information,” or “Do Not Sell My Info,” on the business’s website or mobile|~|application. Other acceptable methods for submitting these requests include, but are not|~|limited to, a toll-free phone number, a designated email address, a form submitted in person,|~|a form submitted through the mail, and user-enabled global privacy controls, such as a|~|browser plugin or privacy setting, device setting, or other mechanism, that communicate or|~|signal the consumer’s choice to opt-out of the sale of their personal information.|~||~|A consumer may use an authorized agent to submit a request to opt-out on the consumer’s|~|behalf if the consumer provides the authorized agent written permission signed by the|~|consumer. A business may deny a request from an authorized agent that does not submit|~|proof that they have been authorized by the consumer to act on the consumer’s behalf.|~|User-enabled global privacy controls, such as a browser plugin or privacy setting, device|~|setting, or other mechanism, that communicate or signal the consumer’s choice to opt-out of|~|the sale of their personal information shall be considered a request directly from the|~|consumer, not through an authorized agent.</Attachment>
+        </Note>
+        <Note Id="275861" UniqueId="de013fab-7bd8-4fd4-9ab7-eb48af9853bb" Order="7" Number="">
+          <Text>What scenarios does the opt-out process apply to?</Text>
+          <Attachment>Applies to all scenarios; online only, online/retail, retail only.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="275851" UniqueId="0b5ed6d3-8ce1-409e-9521-805291805b9d" Number="2.0" Order="8">
+      <Text>Respond to "Opt-Out"</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="275862" UniqueId="f8181703-b102-4dbb-aadc-97e6f954c5e5" Order="9" Number="2.0.1">
+          <Text>Check if fraudulent</Text>
+        </Task>
+        <Task Id="275863" UniqueId="ee33c3f4-b21c-4ff7-ab17-127b6be01daa" Order="10" Number="2.0.2">
+          <Text>Decline via email, if fraudulent</Text>
+        </Task>
+        <Note Id="275852" UniqueId="ea0b4da3-eccf-45bd-9ab9-8f28e54d1c26" Order="11" Number="">
+          <Ownerships>
+            <Tag Id="164" Name="DocumentGeneration" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Decline if fraudulent notes, docgen</Text>
+          <Attachment>If a business, however, has a good-faith, reasonable, and documented belief that a request to opt-out is fraudulent, the business may deny the request. The business shall inform the requestor that it will not|~|comply with the request and shall provide an explanation why it believes the request is|~|fraudulent.</Attachment>
+        </Note>
+        <Task Id="275853" UniqueId="4e4ef430-96b7-42ad-b601-f968d3b5288d" Order="12" Number="2.0.3">
+          <Ownerships>
+            <Tag Id="225" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Opt-out customer</Text>
+        </Task>
+        <Note Id="275864" UniqueId="bdfaa161-11d4-4ff2-805e-008894478dc8" Order="13" Number="">
+          <Text>Comply within 15 days</Text>
+          <Attachment>A business shall comply with a request to opt-out as soon as feasibly possible, but no later|~|than 15 business days from the date the business receives the request. If a business sells a|~|consumer’s personal information to any third parties after the consumer submits their|~|request but before the business complies with that request, it shall notify those third parties|~|that the consumer has exercised their right to opt-out and shall direct those third parties not|~|to sell that consumer’s information.</Attachment>
+        </Note>
+        <Task Id="275854" UniqueId="4e5bc400-7b72-4998-96cf-ea74c3d94b6c" Order="14" Number="2.0.4">
+          <Ownerships>
+            <Tag Id="164" Name="DocumentGeneration" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="225" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Inform customer of opt-out action (nice to have and not required), docgen</Text>
+        </Task>
+        <Task Id="275865" UniqueId="3614a118-b279-4457-bd42-7b41526e2e72" Order="15" Number="2.0.5">
+          <Text>Notify 3rd party sellers</Text>
+        </Task>
+        <Note Id="275866" UniqueId="f87cca98-4941-4f74-9db4-f79fe34e542a" Order="16" Number="">
+          <Text>regulation notes</Text>
+          <Attachment>If a business sells a consumer’s personal information to any third parties after the consumer submits their|~|request but before the business complies with that request, it shall notify those third parties that the consumer has exercised their right to opt-out and shall direct those third parties notto sell that consumer’s information.</Attachment>
+        </Note>
+        <Note Id="275867" UniqueId="c0d6c5a9-67da-496c-9f2d-bd235188ebc3" Order="17" Number="">
+          <Text>Agents of consumers</Text>
+          <Attachment>A consumer may use an authorized agent to submit a request to opt-out on the consumer’s|~|behalf if the consumer provides the authorized agent written permission signed by the|~|consumer. |~||~|A business may deny a request from an authorized agent that does not submit|~|proof that they have been authorized by the consumer to act on the consumer’s behalf.|~||~|User-enabled global privacy controls, such as a browser plugin or privacy setting, device|~|setting, or other mechanism, that communicate or signal the consumer’s choice to opt-out of|~|the sale of their personal information shall be considered a request directly from the|~|consumer, not through an authorized agent.</Attachment>
+        </Note>
+        <Note Id="275868" UniqueId="9ff92aa8-d8d0-40f8-b6b4-47d4086258f2" Order="18" Number="">
+          <Text>Another confirmation option as alert is ok</Text>
+          <Attachment>Any privacy control developed in accordance with these regulations shall clearly|~|communicate or signal that a consumer intends to the opt-out of the sale of personal|~|information. The privacy control shall require that the consumer affirmatively select|~|their choice to opt-out and shall not be designed with any pre-selected settings.|~|(2) If a global privacy control conflicts with a consumer’s existing business-specific|~|privacy setting or their participation in a business’s financial incentive program, the|~|business shall respect the global privacy control but may notify the consumer of the|~|conflict and give the consumer the choice to confirm the business-specific privacy|~|setting or participation in the financial incentive program.</Attachment>
+        </Note>
+        <Note Id="275869" UniqueId="f84ba7b5-87f4-4fab-8855-fe88a2329b86" Order="19" Number="">
+          <Text>No need to verify and authenticate the requester</Text>
+          <Attachment>A request to opt-out need not be a verifiable consumer request. If a business, however, has a|~|good-faith, reasonable, and documented belief that a request to opt-out is fraudulent, the|~|business may deny the request. The business shall inform the requestor that it will not|~|comply with the request and shall provide an explanation why it believes the request is|~|fraudulent.</Attachment>
+        </Note>
+        <Task Id="275870" UniqueId="70510377-80e6-43d5-b06c-fdaa1185258d" Order="20" Number="2.0.6">
+          <Text>Given no personal data found on consumer, then send an email to consumer and inform that company has no personal data</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="275855" UniqueId="ef4565f7-bc52-4612-9954-7174ffe639a1" Number="3.0" Order="21">
+      <Text>Log actions taken, per request</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="191" TimeframeType="Normal" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="275871" UniqueId="3e138f25-6dfc-4471-ba3f-e708c6358993" Order="22" Number="3.0.1">
+          <Text>Retain record of request for 24 months</Text>
+        </Task>
+        <Note Id="275872" UniqueId="6fe3d902-6d0c-4253-85bd-567319db60a7" Order="23" Number="">
+          <Text>Retaining record of request</Text>
+          <Attachment>If the business complies with the consumer’s request, the business shall inform the|~|consumer that it will maintain a record of the request as allowed by Civil Code section|~|1798.105, subdivision (d). A business may retain a record of the request for the|~|purpose of ensuring that the consumer’s personal information remains deleted from the|~|business’s records.|~||~|The records may be maintained in a ticket or log format provided that the ticket or log|~|includes the date of request, nature of request, manner in which the request was made, the|~|date of the business’s response, the nature of the response, and the basis for the denial of the|~|request if the request is denied in whole or in part. |~||~|A business shall maintain records of consumer requests made pursuant to the CCPA and|~|how the business responded to said requests for at least 24 months. The business shall|~|implement and maintain reasonable security procedures and practices in maintaining these|~|records.</Attachment>
+        </Note>
+        <Note Id="275873" UniqueId="c85a2c15-8433-4347-8374-26f6e1f8a3d1" Order="24" Number="">
+          <Text>Log Format</Text>
+          <Attachment>date of request|~|nature of request (know/delete/optout)|~|manner in which the request was made (eform/tollfree/mail, etc.)|~|the date of the business’s response (need to determine which response date)|~|the nature of the response (approved/declined, etc.)|~|the basis for the denial of the|~|request if the request is denied in whole or in part (need to create a category list. i.e. in collection state, etc.)</Attachment>
+        </Note>
+        <Note Id="275874" UniqueId="d3b1aa0d-6039-4fe6-8c89-d915eb38c226" Order="25" Number="">
+          <Text>Requirement for businesses that has more than 10+ million customers</Text>
+          <Attachment>A business that knows or reasonably should know that it, alone or in combination, buys,|~|receives for the business’s commercial purposes, sells, or shares for commercial purposes,|~|the personal information of 10,000,000 or more consumers in a calendar year, shall:|~|(1) Compile the following metrics for the previous calendar year:|~|a. The number of requests to know that the business received, complied with in|~|whole or in part, and denied;|~|b. The number of requests to delete that the business received, complied with in|~|whole or in part, and denied;|~|c. The number of requests to opt-out that the business received, complied with in|~|whole or in part, and denied; and|~|d. The median or mean number of days within which the business substantively|~|responded to requests to know, requests to delete, and requests to opt-out.|~|(2) Disclose, by July 1 of every calendar year, the information compiled in subsection|~|(g)(1) within their privacy policy or posted on their website and accessible from a link|~|included in their privacy policy.|~|(3) In its disclosure pursuant to subsection (g)(1), a business may choose to identify the|~|number of requests that it denied in whole or in part because the request was not|~|verifiable, was not made by a consumer, called for information exempt from|~|disclosure, or was denied on other grounds.|~|(4) A business may choose to compile and disclose the information required by subsection|~|(g)(1) for requests received from all individuals, rather than requests received from|~|consumers. The business shall state whether it has done so in its disclosure and shall, upon request, compile and provide to the Attorney General the information required by subsection (g)(1) for requests received from consumers.|~|(5) Establish, document, and comply with a training policy to ensure that all individuals|~|responsible for handling consumer requests made under the CCPA or the business’s|~|compliance with the CCPA are informed of all the requirements in these regulations|~|and the CCPA.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+    <User Id="222" FirstName="Adele" LastName="Kaa" Name="Adele Kaa" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="20498" PublishedDate="2020-04-15T20:45:09.5548844Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-04-15T20:45:09.9079326Z" />
+    <MetadataItem Name="CachedOn" Value="2020-04-15T20:45:09.9079326Z" />
+  </Metadata>
+</Process>
