@@ -1,0 +1,269 @@
+<Process Id="934" Name="Process SBA PPP Loan Request" ReferenceNo="" Objective="Submit completed Borrower and Lender applications and other required Borrower data for the PPP (Paycheck Protection Program) to SBA (US Small Business Administration) through E-Tran for review and approval." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Sasan Ehdaie" OwnerId="1237" Expert="Vadim Tabakman" ExpertId="1055" Group="COVID-19" GroupId="310" GroupUniqueId="633dde4f-c63a-49d9-bd9c-f7ea265b59b7" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.1.22" UniqueId="b888ce92-41bc-4e7c-9fa0-574669635bce" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="310" UniqueId="633dde4f-c63a-49d9-bd9c-f7ea265b59b7" Name="COVID-19" ProcessGroupItemId="9244" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="264" Trigger="Borrower desires to request PPP Loan" Frequency="Ad hoc" Volume="50 per day" UniqueId="15b0ccaf-52a7-4945-841c-def12cbdd847" />
+  </Triggers>
+  <Inputs>
+    <Input Id="282" FromProcess="N/A" Resource="PPP Borrower Applicaton Form" HowUsed="The Lender uses this information to conduct request approval and to inform data upload into E-Tran." UniqueId="62fe4538-83da-440e-bb5c-eae1da94f482" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="33498" UniqueId="023b24f2-1db4-d174-c33c-de53876696c4" Number="1.0" Order="0">
+      <Text>Submit Borrower Application Form</Text>
+      <Ownerships>
+        <Role Id="421" Name="Borrower" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33522" UniqueId="0666ea76-04ba-ee13-6413-dd30c33aee77" Order="1" Number="1.0.1">
+          <Text>Review and complete SBA PPP Borrower Application Form</Text>
+        </Task>
+        <Form Id="33523" UniqueId="be86dfc2-f4e0-0714-3e1a-11ee93918b00" Order="2" DocumentId="500" DocumentUniqueId="baf3e677-d7ae-4903-9e18-46ca5d9f52c7" UploadId="533" NetworkFileName="https://success.workflowcloud.com/forms/7a0f09e1-fe70-4c68-9540-ccaa73dfc7b7" Number="">
+          <Text>PPP Borrower Application Form</Text>
+        </Form>
+        <Task Id="33524" UniqueId="652009ad-1527-9fe6-31eb-386ed9befe75" Order="3" Number="1.0.2">
+          <Text>Forward completed application form to Lender</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="33499" UniqueId="60189da6-221c-60db-e3cc-cb2f2e598ffa" Number="2.0" Order="4">
+      <Text>Generate Borrower Request Package</Text>
+      <Ownerships>
+        <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33525" UniqueId="dd654e34-1003-1857-e7d8-f039cab3218b" Order="5" Number="2.0.1">
+          <Ownerships>
+            <Tag Id="81" Name="E-Tran" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Collect data from completed SBA PPP Borrower Application Form, including data required for E-Tran submission</Text>
+        </Task>
+        <Note Id="33538" UniqueId="9d820aa8-3978-331d-ea67-54ebfd08bf9f" Order="6" Number="">
+          <Text>Will the SBA require additional data not included in the SBA PPP Borrower Application Form?</Text>
+          <Attachment>Yes, potentially. This data may include things such as Borrower's date of birth and the age of the business. Include any additional requirements in the e-form.</Attachment>
+        </Note>
+        <Task Id="33501" UniqueId="7a72ddab-53e0-d6ba-05d8-0e97b3fb6900" Order="7" Number="2.0.2">
+          <Ownerships>
+            <Tag Id="84" Name="Nintex_DocGen" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Create Borrower Request Package using Nintex_DocGen</Text>
+        </Task>
+        <Task Id="33526" UniqueId="79d946ba-2701-ea73-033e-0154b17786f5" Order="8" Number="2.0.3">
+          <Text>Send to Borrower for signature</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="33502" UniqueId="370af474-609d-d37f-b7d6-936873f75d9c" Number="3.0" Order="9">
+      <Text>Review and sign Borrower Request Package</Text>
+      <Ownerships>
+        <Role Id="421" Name="Borrower" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33527" UniqueId="7e4a3e2c-5fbe-34aa-065f-f72ca9248c00" Order="10" Number="3.0.1">
+          <Text>Review Borrower Request Package created by Lender</Text>
+        </Task>
+        <Task Id="33503" UniqueId="39ad6957-f397-aa74-a1fe-ecb703a184c7" Order="11" Number="3.0.2">
+          <Ownerships>
+            <Tag Id="63" Name="NintexSign" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Sign document using NintexSign</Text>
+        </Task>
+        <Task Id="33504" UniqueId="7ca879e1-0a6a-64df-0b20-053dd5f5833a" Order="12" Number="3.0.3">
+          <Ownerships>
+            <Tag Id="6" Name="CMS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex-Automation will store signed Borrower Request Package in CMS for later use</Text>
+        </Task>
+        <Note Id="33505" UniqueId="67fa3aa1-7ed0-4752-42d8-1c44c69c3aad" Order="13" Number="">
+          <Ownerships>
+            <Tag Id="81" Name="E-Tran" IsDisassociated="true" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>How will this package be used later?</Text>
+          <Attachment>If the Borrower application is approved by the Credit Review Department and the Loan Officer, then this document will be used to submit Borrower information to SBA via E-Tran.</Attachment>
+        </Note>
+        <Task Id="33506" UniqueId="e125fe52-b6e3-4beb-1117-3496d96600d1" Order="14" Number="3.0.4">
+          <Ownerships>
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex-Automation will send PPP Borrower Application Form to Credit Review Department for review</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="33507" UniqueId="70bd3226-4406-0bc0-9323-e0776b531189" Number="4.0" Order="15">
+      <Text>Review application and create loan package</Text>
+      <Ownerships>
+        <Role Id="420" Name="Credit Review Department" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33508" UniqueId="ffc57764-871a-927d-eb73-310362fd04d2" Order="16" Number="4.0.1">
+          <Ownerships>
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Receive PPP Borrower Application Form via Nintex-Automation</Text>
+        </Task>
+        <Task Id="33528" UniqueId="43572bd5-7f85-932a-71e6-b6d21991e253" Order="17" Number="4.0.2">
+          <Text>Review application</Text>
+        </Task>
+        <Task Id="33529" UniqueId="cdf215cc-e623-b953-efb9-106aa5ee35f6" Order="18" Number="4.0.3">
+          <Text>Collect additional data to create loan package</Text>
+        </Task>
+        <Note Id="33530" UniqueId="6c820bb5-7681-34af-2d41-e2aba55b79d4" Order="19" Number="">
+          <Text>Additional data collected</Text>
+          <Attachment>Tax information and any other information required by the UCC (Uniform Commercial Code).</Attachment>
+        </Note>
+        <Task Id="33509" UniqueId="eb45ea20-7a75-0a90-a4dd-40676a38d1cd" Order="20" Number="4.0.4">
+          <Ownerships>
+            <Tag Id="82" Name="LOS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Create loan package via LOS (Loan Origination System)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="33510" UniqueId="547cc81b-4c71-c33d-ce69-3c53eef68a0d" Number="5.0" Order="21">
+      <Text>Store loan package and update systems</Text>
+      <Ownerships>
+        <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33511" UniqueId="3cb027b5-792b-3f5d-0ce1-b53e06528dd6" Order="22" Number="5.0.1">
+          <Ownerships>
+            <Tag Id="6" Name="CMS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex-Automation will store a copy of loan package in CMS</Text>
+        </Task>
+        <Task Id="33513" UniqueId="763dc75f-6f62-3928-3124-2a3e5b14d442" Order="23" Number="5.0.2">
+          <Ownerships>
+            <Tag Id="83" Name="CBS" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="85" Name="Nintex_RPA" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex_RPA will transfer loan information into CBS (Core Banking System), given no existing middleware</Text>
+        </Task>
+        <Task Id="33514" UniqueId="0fcf532c-f21a-2315-91af-4a3b4b430303" Order="24" Number="5.0.3">
+          <Ownerships>
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex-Automation will send review task to Loan Officer</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="33515" UniqueId="4e26a4c7-4c75-e6bc-a7d5-2b9488f0a292" Number="6.0" Order="25">
+      <Text>Review and approve loan package</Text>
+      <Ownerships>
+        <Role Id="419" Name="Loan Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33516" UniqueId="be976940-8be2-dfe6-e82c-320d5c68a06b" Order="26" Number="6.0.1">
+          <Ownerships>
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Receive review task from Nintex-Automation</Text>
+        </Task>
+        <Task Id="33531" UniqueId="8a118ea3-9c67-d390-e755-c6c2181fb6e7" Order="27" Number="6.0.2">
+          <Text>Verify that Borrower meets loan requirements</Text>
+        </Task>
+        <Note Id="33532" UniqueId="1c55ba31-43ba-52cd-c4b6-210ba1833b2d" Order="28" Number="">
+          <Ownerships>
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What if Borrower does not meet loan requirements?</Text>
+          <Attachment>Decline the application and inform the Borrower via email thorugh Nintex-Automation.</Attachment>
+        </Note>
+        <Task Id="33517" UniqueId="bcfee499-f35c-aa22-f44b-4a64339686b8" Order="29" Number="6.0.3">
+          <Ownerships>
+            <Tag Id="84" Name="Nintex_DocGen" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Approve loan and Nintex_DocGen will add loan information to an Excel file</Text>
+        </Task>
+        <Task Id="33536" UniqueId="88a6fc9c-e2e0-13e5-45c1-2d56bd6d365f" Order="30" Number="6.0.4">
+          <Ownerships>
+            <Tag Id="84" Name="Nintex_DocGen" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex_DocGen will create a PPP Lender Application</Text>
+        </Task>
+        <Task Id="33533" UniqueId="fec25a7a-9c85-91da-c4da-bb2d6bd04316" Order="31" Number="6.0.5">
+          <Text>Complete and sign PPP Lender Application Form with NinetexSign</Text>
+        </Task>
+        <Form Id="33534" UniqueId="cc31347a-a049-bd67-3fcc-83f473c9571b" Order="32" DocumentId="501" DocumentUniqueId="10f22f07-d205-4109-8ff5-7241f80d9982" UploadId="532" NetworkFileName="https://www.sba.gov/sites/default/files/2020-04/PPP%20Lender%20Application%20Form_0.pdf" Number="">
+          <Text>PPP Lender Application Form</Text>
+        </Form>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="33518" UniqueId="ae85607c-dd48-e53a-4556-5be794585ad0" Number="7.0" Order="33">
+      <Text>Submit application in E-Tran</Text>
+      <Ownerships>
+        <Tag Id="81" Name="E-Tran" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="33519" UniqueId="a820fdd1-bf40-ca0a-e1ca-2b1892c7cf78" Order="34" Number="7.0.1">
+          <Ownerships>
+            <Tag Id="81" Name="E-Tran" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="85" Name="Nintex_RPA" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Upload all Borrower data from Excel sheet into E-Tran using Nintex_RPA</Text>
+        </Task>
+        <Task Id="33520" UniqueId="8e6bb34d-0128-d541-f6e7-e04b239aedb6" Order="35" Number="7.0.2">
+          <Ownerships>
+            <Tag Id="81" Name="E-Tran" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>OR export Excel sheet into XML file and upload into E-Tran</Text>
+        </Task>
+        <Task Id="33521" UniqueId="8ccd8969-eb1c-3435-bd53-91654197311b" Order="36" Number="7.0.3">
+          <Ownerships>
+            <Tag Id="81" Name="E-Tran" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Attach Borrower and Lender applications to E-Tran</Text>
+        </Task>
+        <Task Id="33535" UniqueId="30284dcd-163e-52c3-24c6-cfa01b9be2c1" Order="37" Number="7.0.4">
+          <Text>Submit to SBA for review and approval</Text>
+        </Task>
+        <Task Id="33537" UniqueId="68bf05f4-2ec3-d800-dae4-167ad95ca50b" Order="38" Number="7.0.5">
+          <Ownerships>
+            <Tag Id="48" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Nintex-Automation to inform borrower that application was submitted to SBA</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="259" Output="Submitted PPP Loan Application to SBA through E-Tran" HowUsed="SBA will review and make a decision on the loan request." ToProcess="N/A" UniqueId="087b04e9-d741-412e-9fc4-2e53326e7ca7" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="5" FirstName="Richard" LastName="Holmes" Name="Richard Holmes" />
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+    <User Id="1075" FirstName="Beata" LastName="Karolyiova" Name="Beata Karolyiova" />
+    <User Id="6" FirstName="Ivan" LastName="Seselj" Name="Ivan Seselj" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4725" PublishedDate="2020-04-20T13:39:34.66Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-04-21T18:18:41.1624077Z" />
+    <MetadataItem Name="CachedOn" Value="2020-04-21T18:18:41.1624077Z" />
+  </Metadata>
+</Process>
