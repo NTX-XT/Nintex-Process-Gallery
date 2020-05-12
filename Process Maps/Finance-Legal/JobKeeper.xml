@@ -1,0 +1,121 @@
+<Process Id="454" Name="Enrol in JobKeeper payment (Australia)" ReferenceNo="" Objective="for companies to assess their eligibility for Jobkeeper payments " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Connor Sonnen" OwnerId="1051" Expert="Vanessa Love" ExpertId="1053" Group="My Processes" GroupId="218" GroupUniqueId="f708469e-dd93-4bcd-96c7-433eeb10ea26" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.1.22" UniqueId="64e993e8-8af0-42bf-8cf5-e8f4a16fb748" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="218" UniqueId="f708469e-dd93-4bcd-96c7-433eeb10ea26" Name="My Processes" ProcessGroupItemId="3666" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="9768" UniqueId="ac9faa9e-8b20-6ee1-1340-b0ef6c18affb" Number="1.0" Order="0">
+      <Text>Assess employer eligibility</Text>
+      <Ownerships>
+        <Role Id="230" Name="Company" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9771" UniqueId="fc4447a0-0c25-1918-a2e7-b90acae9a26e" Order="1" Number="1.0.1">
+          <Text>Conduct assessment to determine if your business is eligible for the JobKeeper payment</Text>
+        </Task>
+        <Note Id="9782" UniqueId="c9b69d4b-f68b-65f6-c3a3-800487b5495b" Order="2" Number="">
+          <Text>What is the eligibility criteria?</Text>
+          <Attachment>- On 1 March 2020, you carried on a business in Australia or were a not-for-profit organisation that pursued your objectives principally in Australia.|~|- You employed at least one eligible employee on 1 March 2020.|~|- Your eligible employees are currently employed by your business for the fortnights you claim for (including those who are stood down or re-hired).|~|- Your business has faced a:|~|30% fall in turnover (for an aggregated turnover of $1 billion or less), or|~|50% fall in turnover (for an aggregated turnover of more than $1 billion), or|~|15% fall in turnover (for ACNC-registered charities other than universities and schools)|~|- Your business is not in one of the ineligible categories</Attachment>
+        </Note>
+        <Task Id="9783" UniqueId="ffb286da-36bb-04eb-9d8d-68b3fe5341ba" Order="3" Number="1.0.2">
+          <Text>Ensure your business is not in one of the ineligible categories</Text>
+        </Task>
+        <Note Id="9772" UniqueId="b9a7efc4-c7cd-4d68-961c-e9d83cb3c902" Order="4" Number="">
+          <Text>What are the ineligible categories?</Text>
+          <Attachment>An employer is not eligible for the JobKeeper payment if:|~|- the Major Bank Levy was imposed on the entity or a member of its consolidated group for any quarter before 1 March 2020|~|- the entity is an Australian government agency (within the meaning of the Income Tax Assessment Act 1997)|~|- the entity is a local governing body|~|- the entity is wholly owned by an Australian government agency or local governing body|~|- the entity is a sovereign entity|~|- the entity is a company in liquidation|~|- the entity is an individual who has entered bankruptcy.</Attachment>
+        </Note>
+        <Task Id="9784" UniqueId="cd6da1ba-89a0-6a4d-3dac-30de36296fcd" Order="5" Number="1.0.3">
+          <Text>Determine if your business has faced a fall in turn over</Text>
+        </Task>
+        <Note Id="9773" UniqueId="0e8b44b3-7796-b343-bc39-242ac99b5a63" Order="6" Number="">
+          <Text>How do I determine a fall in turnover?</Text>
+          <Attachment>To work out your fall in turnover, you can compare either:|~|- GST turnover for March 2020 with GST turnover for March 2019|~|- projected GST turnover for April 2020 with GST turnover for April 2019|~|- projected GST turnover for the quarter starting April 2020 with GST turnover for the quarter starting April 2019.|~|How you choose to project your fall in turnover is not dependent on whether you report a quarterly or monthly BAS, though you can do that if it is easier. The turnover calculation is based on GST turnover. This applies even if an entity is not registered for GST. There are some modifications, including disregarding GST grouping (where two or more associated business entities operate as a single GST group).|~||~|You can satisfy the fall in turnover test in two ways.|~||~|If you work out that you qualify for JobKeeper payments for the first fortnight because your turnover has declined by the relevant amount, you remain eligible and do not need to keep testing turnover in following months. However, you will have ongoing monthly reporting requirements.|~||~|The Commissioner of Taxation also has the discretion to set out alternative tests that can establish your eligibility when turnover periods are not appropriately comparable (for example, if your business has been in operation less than a year). We will provide more information soon about alternative tests.</Attachment>
+        </Note>
+        <WebLink Id="9774" UniqueId="0f8b0253-1a1f-86ff-abd5-392c0caed939" Order="7" Number="">
+          <Text>Applying the turnover test</Text>
+          <Attachment>https://www.ato.gov.au/General/JobKeeper-Payment/In-detail/Applying-the-turnover-test/?page=2</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9769" UniqueId="5e010cf1-e162-4d2c-c903-caded78bf2dd" Number="2.0" Order="8">
+      <Text>Assess employee eligibility for the payment</Text>
+      <Ownerships>
+        <Role Id="230" Name="Company" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9775" UniqueId="b412156f-2629-4b74-d396-0c315e55c3d7" Order="9" Number="2.0.1">
+          <Text>Check to see if your employees meet the criteria for the payment</Text>
+        </Task>
+        <Note Id="9776" UniqueId="837468ff-3a68-87b8-5f59-35651c220805" Order="10" Number="">
+          <Text>What is the eligibility that needs to be met?</Text>
+          <Attachment>Your employee is eligible under the JobKeeper Payment scheme if they:|~||~|- are employed by you (including those stood down or re-hired)|~|- were either|~|  - permanent full-time or part-time employee at 1 March 2020|~|  - long-term casual employee (employed on a regular and systematic basis for at least 12 months) as at 1 March 2020 and not a permanent employee of any other employer|~|- were at least 16 years of age on 1 March 2020|~|- were an Australian resident as at 1 March 2020 within the meaning of the Social Security Act 1991, which requires that they reside in Australia, and are one of an Australian citizen, the holder of a permanent visa, or a Protected Special Category Visa Holder. More information about these requirements can be found from the Services Australia website under residence descriptions. Your employee can also be an Australian tax resident who is a Special Category (Subclass 444) Visa Holder. Employees who are not permanent residents of Australia must notify you of their visa status to allow you to determine if they are eligible.|~|- were not in receipt of any of these payments during the JobKeeper fortnight|~|  - government parental leave or Dad and partner pay|~|  - a payment in accordance with Australian worker compensation law for an individual’s total incapacity for work|~|- agree to be nominated by you, learn more about nominating employees</Attachment>
+        </Note>
+        <Task Id="9785" UniqueId="b1788ba7-71f7-3247-8911-c745b2fac8bd" Order="11" Number="2.0.2">
+          <Text>Ensure your employees is not in one of the ineligible categories</Text>
+        </Task>
+        <Note Id="9777" UniqueId="ce967754-c5a2-35b2-c00f-5edef72d2a18" Order="12" Number="">
+          <Text>Who can I not claim eligibility for?</Text>
+          <Attachment>You cannot claim for any employees who:|~|- were first employed by you after 1 March 2020|~|- left your employment before 1 March 2020|~|- have been, or have agreed to be, nominated by another employer</Attachment>
+        </Note>
+        <Task Id="9786" UniqueId="8b2cbd02-c7b3-869a-d4cb-a2dc329db26b" Order="13" Number="2.0.3">
+          <Text>Confirm that your employee is only seeking payment from your company</Text>
+        </Task>
+        <Note Id="9778" UniqueId="34e18f7a-88fa-b4d6-d863-7353ca923b75" Order="14" Number="">
+          <Text>What do I do if an employee has multiple employers?</Text>
+          <Attachment>They can usually choose which employer they want to nominate through. However, if your employees are long-term casuals and have other permanent employment, they must choose the permanent employer and cannot nominate you. They cannot receive the JobKeeper payment from more than one employer.</Attachment>
+        </Note>
+        <Task Id="9779" UniqueId="91a985a9-08ec-47b2-6016-fadbe5a9697b" Order="15" Number="2.0.4">
+          <Text>Obtain eligible employee signatures</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="9770" UniqueId="a6eecf7f-1c44-72ae-f941-18e6d1fbeb38" Number="3.0" Order="16">
+      <Text>Enrol for JobKeeper payment</Text>
+      <Ownerships>
+        <Role Id="230" Name="Company" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="9780" UniqueId="62909eeb-5353-7dcb-2b24-31eb4dbe381a" Order="17" Number="3.0.1">
+          <Text>Once you have assessed both employer and employee eligibility, you can apply for the JobKeeper scheme on the ATO website</Text>
+        </Task>
+        <WebLink Id="9781" UniqueId="520598f8-fe27-552a-c55b-f102bca32944" Order="18" Number="">
+          <Text>ATO Website - apply for JobKeeper scheme</Text>
+          <Attachment>https://www.ato.gov.au/general/jobkeeper-payment/employers/enrol-for-the-jobkeeper-payment/?=redirected_URL</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="117" Output="Completed enrollment" HowUsed="Online enrollment once eligibility has been confirmed" ToProcess="N/A" UniqueId="6c5275ae-018b-444a-85aa-b388ec3212d5" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <ApprovalStakeholders />
+  <PublishingStakeholders />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3302" PublishedDate="2020-04-23T06:14:49.06Z" PublisherId="1051" Publisher="Connor Sonnen" isPublishNowUsed="false" />
+    <Approved>
+      <Approval ApproverId="1053" Approver="Vanessa Love" ApprovalDate="2020-04-23T06:09:51.617Z" IsApprovalBypassed="false" ProcessApprovalUserType="Process Expert" />
+      <Approval ApproverId="1051" Approver="Connor Sonnen" ApprovalDate="2020-04-23T06:14:43.437Z" IsApprovalBypassed="false" ProcessApprovalUserType="Process Owner" />
+      <Approval ApproverId="1051" Approver="Connor Sonnen" ApprovalDate="2020-04-23T06:14:49.263Z" IsApprovalBypassed="false" ProcessApprovalUserType="Promaster" />
+    </Approved>
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-03T23:11:13.7738037Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-03T23:11:13.7738037Z" />
+  </Metadata>
+</Process>
