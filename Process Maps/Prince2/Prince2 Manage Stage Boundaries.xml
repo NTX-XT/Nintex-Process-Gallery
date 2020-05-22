@@ -1,0 +1,84 @@
+<Process Id="665" Name="Manage Stage Boundaries" ReferenceNo="" Objective="This process updates the Project Board on the current status and establishes plans for the next stage." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="Prince2 Processes" GroupId="266" GroupUniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.2.18" UniqueId="84ca9622-2357-4113-96f1-123a532decca" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="266" UniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" Name="Prince2 Processes" ProcessGroupItemId="4699" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs>
+    <Input Id="172" FromProcess="N/A" Resource="Project Stage Plan" HowUsed="This is part of the PID" UniqueId="39179db0-06be-46ec-ba8c-db13660d9ccc" />
+    <Input Id="173" FromProcess="Control a stage" FromProcessId="664" Resource="Stage Reports" HowUsed="Reports produced through the Control a stage process" UniqueId="ee6b8903-bb16-49e4-8cd5-100114062393" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="12187" UniqueId="0d6ce2b6-09fd-3c69-0a01-24a11fc94616" Number="1.0" Order="0">
+      <Text>Update the Project Plan</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12191" UniqueId="ca31d89d-d4d6-3a26-4c89-7f314f197e7a" Order="1" Number="1.0.1">
+          <Text>Update what has so far been achieved and forecast the next stages.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12188" UniqueId="151a9502-ae43-7cb9-e158-403569595ea0" Number="2.0" Order="2">
+      <Text>Plan the Next Stage</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12192" UniqueId="a3b7f4a6-f2b4-1b8e-8de8-8168ac1aabe8" Order="3" Number="2.0.1">
+          <Text>Use Product-Based Planning to create a new stage plan with input from key stakeholders.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12189" UniqueId="e9ab4a0a-64b7-809c-082b-2051ad0abf54" Number="3.0" Order="4">
+      <Text>Update the Business Case</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12193" UniqueId="f76f918a-1961-7b78-a875-90dad3435246" Order="5" Number="3.0.1">
+          <Text>Update the Business Case with the costs incurred by the last stage and revised forecasts for the next stage(s)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12190" UniqueId="c6bdd7e8-8097-6177-ed7a-6cd6f3241d59" Number="4.0" Order="6">
+      <Text>Produce Stage end Reports</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12194" UniqueId="9f31025b-37a0-38b6-8c83-87a9b912deba" Order="7" Number="4.0.1">
+          <Text>Produce the Stage end and/or Exception Plan reports.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="145" Output="Stage Plan" HowUsed="The plans for the next stage of the Project" ToProcess="Control a stage" ToProcessId="664" UniqueId="c4ea8d5a-bf19-4ec4-9e9a-9e61ca7c39dc" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3911" PublishedDate="2020-05-15T10:17:08.343" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-22T07:43:50.4957130Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-22T07:43:50.4957130Z" />
+  </Metadata>
+</Process>

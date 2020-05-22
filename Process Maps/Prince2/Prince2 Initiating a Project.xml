@@ -1,0 +1,143 @@
+<Process Id="663" Name="Initiating a Project" ReferenceNo="" Objective="This process builds a foundation for the project so that all stakeholders are clear on what the project will achieve." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="Prince2 Processes" GroupId="266" GroupUniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.2.18" UniqueId="a30c408c-f914-4e22-8488-7d6f3c2a20a4" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="266" UniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" Name="Prince2 Processes" ProcessGroupItemId="4697" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs>
+    <Input Id="169" FromProcess="Start up a project" FromProcessId="662" Resource="Initiation Stage Plan" HowUsed="This outline of activities comes from the Start Up Project" UniqueId="e18b6128-6551-4873-a34b-33b38230345d" />
+    <Input Id="170" FromProcess="N/A" Resource="Project Brief" HowUsed="A brief overview of the project built from the Project Mandate" UniqueId="505699e7-ef5b-4c0a-bcda-54054d4dd6ee" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="12153" UniqueId="995e252d-90a6-afaa-923b-f0abadbd89c2" Number="1.0" Order="0" ParallelGroupingRef="1">
+      <Text>Prepare the Risk Management Approach</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12171" UniqueId="189ac344-7154-d3e1-10e4-1d49c6bffe52" Order="1" Number="1.0.1">
+          <Text>This answers the question of how to manage risk in the project.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12154" UniqueId="21f0bca7-9742-c6ed-fda3-a164e6935f3d" Number="1.1" Order="2" ParallelGroupingRef="1">
+      <Text>Prepare the Change Control Approach</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12170" UniqueId="2805df01-9d99-bc8e-f58f-9a678dc19ec4" Order="3" Number="1.1.1">
+          <Text>This answers the question of how to manage production.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12155" UniqueId="cac53160-d1e6-4ea1-3963-84db76535483" Number="1.2" Order="4" ParallelGroupingRef="1">
+      <Text>Prepare the Quality Management Approach</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12169" UniqueId="04a613f9-21c6-8053-2b53-0e2252709baa" Order="5" Number="1.2.1">
+          <Text>This answers the question of how to ensure quality standards are met.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12156" UniqueId="1098da9b-f0b1-25e2-d167-f5a3957ede7c" Number="1.3" Order="6" ParallelGroupingRef="1">
+      <Text>Prepare the Communication Management Approach</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12168" UniqueId="6b58c674-c8c5-5590-681f-7ce638feb4e4" Order="7" Number="1.3.1">
+          <Text>This answers the question of how to ensure communication with stakeholders is maintained.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12157" UniqueId="77ecbbb0-015f-f7db-b9c3-f67cebd54abe" Number="2.0" Order="8">
+      <Text>Set Up Project Controls</Text>
+      <Ownerships>
+        <Role Id="287" Name="Prince2 Project Executive" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12166" UniqueId="a6c9fa1e-d633-0e2a-284a-dff145c638f9" Order="9" Number="2.0.1">
+          <Text>Outline how the Project Board will maintain oversight for the project.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12158" UniqueId="1abebdcd-07cf-9bc4-b0f4-ea7faea24c6a" Number="3.0" Order="10" ParallelGroupingRef="2">
+      <Text>Create Project Plan</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+        <Role Id="285" Name="Prince2 Senior User" IsVirtual="false" />
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12165" UniqueId="062aff2a-443b-f2f8-d2a3-ea951d6baa80" Order="11" Number="3.0.1">
+          <Text>Plan the Product Description</Text>
+        </Task>
+        <Task Id="12167" UniqueId="e1d43944-47e4-830d-da7e-879d965369d8" Order="12" Number="3.0.2">
+          <Text>Identify the Project risks</Text>
+        </Task>
+        <Task Id="12164" UniqueId="cf88ef15-a28f-70c9-5b4e-5d4c8370a271" Order="13" Number="3.0.3">
+          <Text>Define the Project timescales</Text>
+        </Task>
+        <Task Id="12163" UniqueId="e17bd0e1-1d28-2f8d-1426-dab7e0a8fd6e" Order="14" Number="3.0.4">
+          <Text>Quantify the project Project costs</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12159" UniqueId="32ab4488-7f64-889e-d6cc-2d22d3044ee4" Number="3.1" Order="15" ParallelGroupingRef="2">
+      <Text>Refine the Project Business Case</Text>
+      <Ownerships>
+        <Role Id="287" Name="Prince2 Project Executive" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12162" UniqueId="8b4102ba-c3ca-72d8-16ad-76dbd91cf49b" Order="16" Number="3.1.1">
+          <Text>Complete the documentation which outlines how the project is desirable, achievable and viable for the organization.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12160" UniqueId="3fed857c-a6cd-3163-adec-de72c0ac2a7b" Number="4.0" Order="17">
+      <Text>Assemble the Project Initiation Documentation (PID)</Text>
+      <Ownerships>
+        <Role Id="283" Name="Prince2 Project Board" IsVirtual="false" />
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12161" UniqueId="0620783d-8fe9-8e70-091b-b0783c680267" Order="18" Number="4.0.1">
+          <Text>Assemble the information from the existing Project documentation to define and scope and direction.|~|This ensures the project is well understood, creates a baseline for assessing progress, and provides a single reference point for key information.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="143" Output="Project Initiation Documentation" HowUsed="Collected information that gives the direction and scope of the Project." ToProcess="N/A" UniqueId="7e7d075b-a198-4f84-9137-5068a3f197f0" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3907" PublishedDate="2020-05-15T10:15:54.94" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-22T07:43:48.9527735Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-22T07:43:48.9527735Z" />
+  </Metadata>
+</Process>

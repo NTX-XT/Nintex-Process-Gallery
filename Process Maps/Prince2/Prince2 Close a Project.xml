@@ -1,0 +1,83 @@
+<Process Id="667" Name="Close a Project" ReferenceNo="" Objective="This process guides the Project Manager in wrapping up the project either at its end or at a premature close, and preparing the information the Project Board needs to authorize closing the Project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="Prince2 Processes" GroupId="266" GroupUniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.2.18" UniqueId="ac3fd5f0-21bd-4349-829c-3d3c56c9db8c" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="266" UniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" Name="Prince2 Processes" ProcessGroupItemId="4696" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="12205" UniqueId="c95c7c01-2711-7a19-9346-f53b66c1b2b7" Number="1.0" Order="0">
+      <Text>Confirm Products are Completed and Accepted</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12209" UniqueId="25618854-df24-9e26-86c0-78ee9c891428" Order="1" Number="1.0.1">
+          <Text>Verify that the products have been produced as intended and accepted by users</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12206" UniqueId="413b456c-e9fe-1eb4-2f26-d46db9e3561c" Number="2.0" Order="2">
+      <Text>Hand over Products</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12210" UniqueId="bb09d69a-114f-7612-671c-97c526855996" Order="3" Number="2.0.1">
+          <Text>Transfer ownership of the product to the customer, with adequate support beyond the Project's lifespan, as described in the Change Control Approach documentation</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12207" UniqueId="59241f9b-f897-8132-fa56-8830a98b4747" Number="3.0" Order="4">
+      <Text>Evaluate the Project against its Objectives</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12211" UniqueId="ec6b30c1-9a44-ffb2-38a5-9f3e33dc3996" Order="5" Number="3.0.1">
+          <Text>Compare the outcomes against the objectives described in the PID.</Text>
+        </Task>
+        <Task Id="12212" UniqueId="69f6ef81-1d99-60cc-a34a-69e6b6316c55" Order="6" Number="3.0.2">
+          <Text>Write the End Project Report from this review</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12208" UniqueId="7577feb7-44bb-ed09-23dd-c71bd8c1e805" Number="4.0" Order="7">
+      <Text>Recommend Closing the Project</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12213" UniqueId="eec14655-61b0-8037-04bb-ef6ffdc75fdf" Order="8" Number="4.0.1">
+          <Text>Notify the Project Board of the outcomes and recommend closing the Project.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="147" Output="Project Closure recommendation" HowUsed="This report outlines the outcomes of the project against the expectations and recommends closing the Project" ToProcess="N/A" UniqueId="da1ab7c2-ba78-464e-b07f-d17eae8a5e16" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3905" PublishedDate="2020-05-15T10:14:37.587" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-22T07:43:53.2944393Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-22T07:43:53.2944393Z" />
+  </Metadata>
+</Process>

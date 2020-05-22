@@ -1,0 +1,122 @@
+<Process Id="662" Name="Start Up a Project" ReferenceNo="" Objective="This process is designed to ensure that the prerequisites for initiating the project are in place and that it represents a worthwhile and viable project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="Prince2 Processes" GroupId="266" GroupUniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.2.18" UniqueId="e4dce24e-106a-4b9e-a76e-2a9c7e1d0621" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="266" UniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" Name="Prince2 Processes" ProcessGroupItemId="4700" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs>
+    <Input Id="168" FromProcess="N/A" Resource="Project Mandate" HowUsed="Project idea is put forward by C-level Exec or Executive Program Group" UniqueId="1b63bfe2-2598-4aef-b54b-b4cbdf412562" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="12138" UniqueId="2d78f912-90c7-c400-ac07-c0822a9b0446" Number="1.0" Order="0">
+      <Text>Appoint Project Executive and Project Manager</Text>
+      <Ownerships>
+        <Role Id="283" Name="Prince2 Project Board" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12149" UniqueId="5568fe9d-7787-1ba8-746e-2e37f3c24849" Order="1" Number="1.0.1">
+          <Text>Appoint the Project Executive to design and appoint the Management Team and Project Manager. The Project Executive is responsible for outlining the Business Case and monitoring the project by asking, "Is this project still value-for-money for this organization?"</Text>
+        </Task>
+        <Task Id="12151" UniqueId="0dfc7af6-986b-088d-49ce-56367ca2b51b" Order="2" Number="1.0.2">
+          <Text>Appoint the Project Manager who will define the approach the project takes.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12139" UniqueId="100167e1-f9b4-4d35-0cdb-4200f8dfbabf" Number="2.0" Order="3">
+      <Text>Capture Previous Lessons</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12150" UniqueId="66875549-e112-ccee-290a-3f7875139397" Order="4" Number="2.0.1">
+          <Text>Obtain advice from other projects about best practice and project viability in the form of lessons learned from previous projects, from internal specialists or outside experts.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12140" UniqueId="fa4a72c6-9435-4f85-401e-afe5ec845b69" Number="3.0" Order="5">
+      <Text>Design and Appoint the Management Team</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12152" UniqueId="b41fc648-c008-4559-31c9-0c5c20a7ce39" Order="6" Number="3.0.1">
+          <Text>Define the roles and responsibilities required and appoint key staff to them</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12141" UniqueId="1bd85a48-7cd0-55d0-e642-41638637990c" Number="4.0" Order="7" ParallelGroupingRef="1">
+      <Text>Prepare Business Case Outline</Text>
+      <Ownerships>
+        <Role Id="287" Name="Prince2 Project Executive" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12148" UniqueId="6e656c92-32bd-5596-7e1d-a32c1a4eec18" Order="8" Number="4.0.1">
+          <Text>Frame the business reasons which motivate the project into an outline document</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12142" UniqueId="7138a508-839b-3453-12bd-5f52747c84a5" Number="4.1" Order="9" ParallelGroupingRef="1">
+      <Text>Prepare Project Product Description</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+        <Role Id="285" Name="Prince2 Senior User" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12147" UniqueId="9702aedc-2368-6882-0a47-63789a48c275" Order="10" Number="4.1.1">
+          <Text>The PPD defines what the project will deliver. It is derived from senior users and subject matter experts. It covers the project scope, customer quality expectations, and acceptance criteria.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12143" UniqueId="3bf4605f-b7e8-84d3-ce40-31d84757d15c" Number="5.0" Order="11">
+      <Text>Select Project Approach</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12146" UniqueId="50e0a469-a6d3-2b29-d2ad-8f8bc17243d4" Order="12" Number="5.0.1">
+          <Text>Evaluate various ways for delivering the project. Consider options such as:|~|Create a new product, update and existing product, or out-source a solution?|~|Use internal or external people for the project?|~|What sources of information can clarify the project approach?</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12144" UniqueId="5d25a5f5-abe9-97b3-97a0-fcd1afa32915" Number="6.0" Order="13">
+      <Text>Create the Initiation Stage Plan</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12145" UniqueId="5914ff31-68a1-6074-1ca9-692724ad2eb2" Order="14" Number="6.0.1">
+          <Text>Create a day-to-day plan for the first stage of the project.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="142" Output="Initiation Plan" HowUsed="This outlines the activities for the first stage of the process" ToProcess="Initiating a Project" ToProcessId="663" UniqueId="615520d2-02a9-4ed1-bd78-ba7170db8d7f" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3913" PublishedDate="2020-05-15T10:17:43.023" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-22T07:43:47.1850852Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-22T07:43:47.1850852Z" />
+  </Metadata>
+</Process>

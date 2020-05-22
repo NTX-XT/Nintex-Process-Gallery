@@ -1,0 +1,95 @@
+<Process Id="666" Name="Manage Product Delivery" ReferenceNo="" Objective="This process establishes the requirements to ensure that planned products are created and delivered " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="Prince2 Processes" GroupId="266" GroupUniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.2.18" UniqueId="ea2f3ffc-ffe0-4877-8f6b-d6287951fff5" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="266" UniqueId="4f72a428-8426-4b02-909b-51efb5fc264a" Name="Prince2 Processes" ProcessGroupItemId="4698" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs>
+    <Input Id="174" FromProcess="Control a stage" FromProcessId="664" Resource="Project Work Package" HowUsed="This contains information such as the product description, quality criteria, allowed tolerances and reporting requirements" UniqueId="58fb1678-1a7b-4fd5-a554-60181b4db736" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="12195" UniqueId="7945dbba-4b58-3fb2-600c-72d89f42377c" Number="1.0" Order="0">
+      <Text>Accept the Work Package</Text>
+      <Ownerships>
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12200" UniqueId="f7c9055e-808d-54b4-b5f6-ed133c6e5585" Order="1" Number="1.0.1">
+          <Text>Confirm the the product is duly authorized and conforms to the Work Package requirements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12196" UniqueId="40ba0078-370a-35f2-d5dd-9b404edd64e1" Number="2.0" Order="2">
+      <Text>Create the Team Plan</Text>
+      <Ownerships>
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12201" UniqueId="a8330088-f931-25f1-6eee-0ca4a8ac3298" Order="3" Number="2.0.1">
+          <Text>Develop a plan to produce the products outlined in the Work Package</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12197" UniqueId="3c534f5e-4f5a-6c05-b13b-b0f36050c092" Number="3.0" Order="4">
+      <Text>Develop Products</Text>
+      <Ownerships>
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12202" UniqueId="e86b15f9-604c-21f7-57f2-5a0632dc2f10" Order="5" Number="3.0.1">
+          <Text>Execute the development process</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12198" UniqueId="7a93539f-0c37-e56d-0430-8c2f4a5e61b4" Number="4.0" Order="6">
+      <Text>Check Product Quality</Text>
+      <Ownerships>
+        <Role Id="284" Name="Prince2 Project Manager" IsVirtual="false" />
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12203" UniqueId="69d5c06a-eafc-9f1a-de22-2b102b1ea4c9" Order="7" Number="4.0.1">
+          <Text>Review the products against the quality criteria</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12199" UniqueId="699e8768-96e1-6921-d8d9-f9546d8229f2" Number="5.0" Order="8">
+      <Text>Deliver the Work Package</Text>
+      <Ownerships>
+        <Role Id="286" Name="Prince2 Team Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12204" UniqueId="5b6bcd49-cf16-949b-fd7a-e46d5f37147d" Order="9" Number="5.0.1">
+          <Text>Obtain approval for the completed product and deliver the Work Package including updating the Quality register and Configuration Item Records</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs>
+    <Output Id="146" Output="Completed Work Package" HowUsed="This includes the developed and tested product, and all relevant reports" ToProcess="Control a stage" ToProcessId="664" UniqueId="1a8f53df-878e-42c9-91c4-e63c4636154f" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3909" PublishedDate="2020-05-15T10:16:28.68" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-22T07:43:51.4035653Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-22T07:43:51.4035653Z" />
+  </Metadata>
+</Process>
