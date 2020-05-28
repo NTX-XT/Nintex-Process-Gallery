@@ -1,0 +1,118 @@
+<Process Id="3159" Name="Return to Office" ReferenceNo="" Objective="Process for returning to the office while maintaining safe working conditions for all employees." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="To ensure the safety of our employees while COIVD-19 still presents a potential threat, we are limiting the number of employees that can be in the office at any given time, and requesting that all employees follow provided safety guidelines." Owner="Jonathan Butler" OwnerId="190" Expert="Jonathan Butler" ExpertId="190" Group="Return to Office (Phases)" GroupId="571" GroupUniqueId="4b62474e-49a2-40a9-a51f-9fd9303398c4" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.1.22" UniqueId="7511421e-f930-437f-a3d9-b0309223b723" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="571" UniqueId="4b62474e-49a2-40a9-a51f-9fd9303398c4" Name="Return to Office (Phases)" ProcessGroupItemId="46452" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="277785" UniqueId="2a3dea94-5325-ee73-bd4e-69133aefc2e3" Number="1.0" Order="0">
+      <Text>Complete Return to Office Scheduling Form</Text>
+      <Ownerships>
+        <Role Id="165" Name="[training] Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277790" UniqueId="819e89aa-7973-8723-2d45-df3a1c204728" Order="1" Number="1.0.1">
+          <Text>Request time of return to office</Text>
+        </Task>
+        <Task Id="277791" UniqueId="e69521c6-7049-a242-928f-a76bd2f18414" Order="2" Number="1.0.2">
+          <Text>Request work area</Text>
+        </Task>
+        <Note Id="277792" UniqueId="e95b60b2-64e4-0c0c-f0f3-d3b2dbc89db4" Order="3" Number="">
+          <Text>Why do we need to request a work area?</Text>
+          <Attachment>While only X% of employees are allowed back in the office at a given time, you may or may not be able to work at your standard workstation. If your standard work area is already at capacity you will be given the option to still return to the office but work elsewhere in the facility.</Attachment>
+        </Note>
+        <Task Id="277793" UniqueId="ad3628cd-d1c7-b788-f348-9ac54eb0c996" Order="4" Number="1.0.3">
+          <Text>Sign health waiver</Text>
+        </Task>
+        <Note Id="277794" UniqueId="d75cac96-38ba-cdc8-b3fb-e470479e7d81" Order="5" Number="">
+          <Text>Why do I need to sign a health waiver?</Text>
+          <Attachment>This ensures that you acknowledge that requirements of returning to the office and your part in helping maintain the safety and health of yourself and your co-workers. This also ensures that you are aware of the potential risks of returning to the office and that you are doing so willingly.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277786" UniqueId="828256c3-9ebf-c095-42aa-f523730816ca" Number="2.0" Order="6">
+      <Text>Receive Office Work Approval and Dates</Text>
+      <Ownerships>
+        <Tag Id="233" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277787" UniqueId="a8054ff5-05e8-da99-d658-34d0425fdccb" Order="7" Number="2.0.1">
+          <Ownerships>
+            <Tag Id="202" Name="Automated" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Automated system reviews requested dates</Text>
+        </Task>
+        <Task Id="277795" UniqueId="1f98a92c-f589-41ac-7bd2-ff6dc66dfa4d" Order="8" Number="2.0.2">
+          <Text>Updates employee calendar with dates to be worked in the office</Text>
+        </Task>
+        <Task Id="277796" UniqueId="9e9b3d1e-3f7f-ef48-ed1d-2ef5b194e7a8" Order="9" Number="2.0.3">
+          <Text>Notify employee of days to work in office</Text>
+        </Task>
+        <Task Id="277797" UniqueId="c14b13cc-4ec4-8e25-f5d5-0ce3b727404f" Order="10" Number="2.0.4">
+          <Text>Notify employee manager of days employee will be in office</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277788" UniqueId="f4c8d989-2499-1a85-a6b5-8b47c7443b15" Number="3.0" Order="11">
+      <Text>Return to Office</Text>
+      <Ownerships>
+        <Role Id="165" Name="[training] Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277798" UniqueId="953cefb5-8254-cf00-994b-3eb4e3415a71" Order="12" Number="3.0.1">
+          <Text>Check-in on Monday of week in office</Text>
+        </Task>
+        <Task Id="277799" UniqueId="a1c92df0-6205-e118-425a-a9f28d3ea74d" Order="13" Number="3.0.2">
+          <Text>Get desk assignment in selected work zone</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277789" UniqueId="d3e1bd23-4fcc-0124-5ee2-df6e3107c41b" Number="4.0" Order="14">
+      <Text>Clear Workstation At EOW</Text>
+      <Ownerships>
+        <Role Id="165" Name="[training] Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277800" UniqueId="55a1e28c-e45b-ccea-44e9-3588d696a95d" Order="15" Number="4.0.1">
+          <Text>Receive "End of Week" notification on Friday</Text>
+        </Task>
+        <Task Id="277801" UniqueId="24f09959-aadb-d20d-381f-1bb0b3dffa22" Order="16" Number="4.0.2">
+          <Text>Clear off workstation before leaving for the day</Text>
+        </Task>
+        <Note Id="277802" UniqueId="fcfb4fa0-d30a-e0e2-4c05-d757d9b94c0d" Order="17" Number="">
+          <Text>Why does the workstation need to be cleared off at the end of the week?</Text>
+          <Attachment>If you are scheduled to continue working in the office for the following week you may not be using the same workstation as you were during the current week. This will depend on how many employees will be in a given work zone in a given week.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="190" FirstName="Jonathan" LastName="Butler" Name="Jonathan Butler" />
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="20756" PublishedDate="2020-05-28T17:34:13.1266742Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-28T17:34:13.3634471Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-28T17:34:13.3634471Z" />
+  </Metadata>
+</Process>

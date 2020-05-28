@@ -1,0 +1,157 @@
+<Process Id="3158" Name="COVID-19 Return to Work Policies" ReferenceNo="" Objective="Define the new corporate policies around COVID-19 and returning to work." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Jonathan Butler" OwnerId="190" Expert="Jonathan Butler" ExpertId="190" Group="Return to Work (Drafts)" GroupId="570" GroupUniqueId="a8babffe-3664-4e32-92c6-b5571169bdb1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.1.22" UniqueId="9b70792b-cfd6-4d57-baa0-0872dcf424b8" IsPolicyModeOn="true" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="570" UniqueId="a8babffe-3664-4e32-92c6-b5571169bdb1" Name="Return to Work (Drafts)" ProcessGroupItemId="46457" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="277803" UniqueId="f8035754-f42f-5547-cb36-87df7af56947" Number="1.0" Order="0">
+      <Text>When will employees be able to return to the office?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277812" UniqueId="f86fb204-1b68-2ade-d717-86d5fff8e4dd" Order="1" Number="1.0.1">
+          <Text>Company Name&gt; will be implementing a phased approach for employees returning to the corporate offices. Given that timelines and guidance for lifting the shutdown is different for each region, please review the office variation of this policy document to see the guidelines for your particular office.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277804" UniqueId="ad3cf2c7-5bc5-74d6-33d6-cc56cc7be223" Number="2.0" Order="2">
+      <Text>Will employees still be able to use gathering spaces?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277813" UniqueId="8c33341e-44f8-ee75-8588-14db388e5b0b" Order="3" Number="2.0.1">
+          <Text>Break rooms that previously provided snacks or drinks will still be open for employees to “grab and go”, however employees should work to maintain at least six feet of distance (two meters) when in these spaces.</Text>
+        </Task>
+        <Note Id="277814" UniqueId="3ef2b442-0c9d-9816-58ea-4898f931a23c" Order="4" Number="">
+          <Text>Example</Text>
+          <Attachment>If you are waiting to get coffee or water from one of the machines and there is already several employees waiting, consider coming back in five minutes.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277805" UniqueId="8c550607-4134-3835-1618-286144d71761" Number="3.0" Order="5">
+      <Text>What do I need to do if I want to start working in the office once it is open?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277815" UniqueId="476da4e4-f138-eaa0-5381-2c78b21eef99" Order="6" Number="3.0.1">
+          <Text>&lt;Company Name&gt; will be implementing ‘Office Shifts’ to help ensure that no more than X% of employees are in the office at any one time, and that employees are able to maintain the recommended six feet (two meters) between employees as they work.</Text>
+        </Task>
+        <Note Id="277816" UniqueId="0a63e40a-4fdc-73d5-f399-3df07529be65" Order="7" LinkedProcessId="3159" LinkedProcessName="Return to Office" Number="">
+          <Text>Review the 'Return to Office' process</Text>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277806" UniqueId="081a1933-c529-5982-d9d2-06818c19d182" Number="4.0" Order="8">
+      <Text>What should I do if I think that I am sick or have come into contact with someone that was sick?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277817" UniqueId="3a59cb8f-43fe-7895-a0e4-5b06ccd6aa8d" Order="9" Number="4.0.1">
+          <Text>If you feel sick STAY HOME. If you feel unwell of have the following symptoms, please leave work and contact your health care provider.</Text>
+        </Task>
+        <Note Id="277818" UniqueId="83d7a4a8-1070-b878-94dc-e58fca8c8639" Order="10" Number="">
+          <Text>What are the symptoms of COVID?</Text>
+          <Attachment>Fever, Cough, Shortness of Breath</Attachment>
+        </Note>
+        <Task Id="277819" UniqueId="633767cf-c17d-3a77-b91d-89cb33159ab5" Order="11" Number="4.0.2">
+          <Text>Please also follow-up with your supervisor so they are aware that you will not be in the office.</Text>
+        </Task>
+        <Task Id="277820" UniqueId="4ed18c90-5f9a-389e-a4f0-e3ea4746a133" Order="12" Number="4.0.3">
+          <Text>If you believe that you have come in contact with someone that was sick with the symptoms outlined above, and are able to work from home please, do so for at least 10 days.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277807" UniqueId="3c28a56a-b4f8-d57a-5bde-9dc2b6664349" Number="5.0" Order="13">
+      <Text>Can I still work remotely to take care of my dependents while schools are closed?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277821" UniqueId="f40881bb-374d-77b5-639b-367678e19a5c" Order="14" Number="5.0.1">
+          <Text>Yes. If you are able to complete your work while operating remotely, please coordinate with your supervisor to continue working from home while childcare services are closed.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277808" UniqueId="e058a97f-05dc-8a78-0876-4e0a16257369" Number="6.0" Order="15">
+      <Text>Can we use meeting rooms once we are back in the office?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277822" UniqueId="7b368ef1-df17-90d3-f121-e7e8a9c9d43e" Order="16" Number="6.0.1">
+          <Text>Yes and no. Meetings should continue being held virtually, even if this means doing so from your desk in the office. If there are private discussions that need to take place, and both employees are in the office on the same day you can still reserve a meeting room for each employee (all chairs but one have been removed from meeting room) and then setting up a virtual meeting from there.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277809" UniqueId="8546554b-2864-9cb7-bbf0-2dd8a0a249b6" Number="7.0" Order="17">
+      <Text>What PPE will be provided for employees that are in the office?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277823" UniqueId="43d5d0bb-9166-2905-481e-90eb76e6f154" Order="18" Number="7.0.1">
+          <Text>When you arrive basic masks will be available for employees that are working in the office. Gloves and hand sanitizer is available for all employees, and we will be working with the office staff to ensure that these resources are kept in stock as best as possible.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277810" UniqueId="ea136d82-bd4b-90eb-f755-40219b256796" Number="8.0" Order="19">
+      <Text>What happens if someone in the office/building is diagnosed with COVID-19?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277824" UniqueId="017b75e2-d6b8-25f6-c678-2ae15d6622af" Order="20" Number="8.0.1">
+          <Text>If a positive case of COVID-19 has been identified within the office/building, &lt;Name&gt; will send an email to all employees from that office and let them know. This email will contain details on next steps, and if the decision is made for employees to return home we will send out an “office vacate” timeline so that personnel is not crowding shared spaces such as the stairs and elevators as employees are leaving.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="277811" UniqueId="545a9f50-49d5-d0e9-5911-babd95c979c5" Number="9.0" Order="21">
+      <Text>Where should I look for the most updated information on COVID-19?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="277825" UniqueId="8af87a78-fa06-fc9f-3b0b-492008b57d2f" Order="22" Number="9.0.1">
+          <Text>The CDC and WHO guidelines on COVID-19 are updating regularly, and the HR team will be working to keep these guidelines updated to align to the recommendations of those organizations. You can continue to check back on this policy to see the latest updates.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="3159" Link="Return to Office" Owner="Jonathan Butler" Expert="Jonathan Butler" ProcessGroup="Return to Office (Phases)" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="20755" PublishedDate="2020-05-28T19:30:23.1858388Z" PublisherId="190" Publisher="Jonathan Butler" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-05-28T19:30:23.3568652Z" />
+    <MetadataItem Name="CachedOn" Value="2020-05-28T19:30:23.3568652Z" />
+  </Metadata>
+</Process>
