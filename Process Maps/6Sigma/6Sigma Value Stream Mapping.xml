@@ -1,0 +1,91 @@
+<Process Id="682" Name="6Sigma Value Stream Mapping" ReferenceNo="" Objective="A Value Stream Map analyzes the steps required for producing a product or service, providing a visual reference for eliminating waste in the process." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="6Sigma Processes" GroupId="271" GroupUniqueId="7caa1099-7594-47d0-b451-087360d81283" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.2.18" UniqueId="5f741fee-5342-4bed-9e0a-1b44ae5a3ffc" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="271" UniqueId="7caa1099-7594-47d0-b451-087360d81283" Name="6Sigma Processes" ProcessGroupItemId="4759" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="12334" UniqueId="bc6bb12b-0f53-8ebb-3ffe-f99dcadf91d7" Number="1.0" Order="0">
+      <Text>Define the Product Family</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Note Id="12339" UniqueId="2ffc46c8-37b6-823b-714a-a6aada46c602" Order="1" Number="">
+          <Text>What is a Product Family?</Text>
+          <Attachment>A product family is any group of products that pass through similar processing steps or over common equipment. You can use a product and equipment matrix to indicate common features.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12335" UniqueId="0a04bf4b-691b-3848-1407-040fc71a0300" Number="2.0" Order="2">
+      <Text>Understand the Current Process</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12340" UniqueId="fc90f1d6-3407-4e1d-fb71-fe96756a2192" Order="3" Number="2.0.1">
+          <Text>Draw up the current-state or as-is process map</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12336" UniqueId="587a861f-5a12-2f21-cf9f-9c4e9497f0ad" Number="3.0" Order="4">
+      <Text>Analyse the Existing Process</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12341" UniqueId="65ee0030-b9d4-d99a-8a89-f79bb82e1c2f" Order="5" Number="3.0.1">
+          <Text>Consider where waste can be eliminated, where steps can be reduced or where streamlining can reduce costs</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12337" UniqueId="58866621-fb86-39f6-321b-a7a6029583f8" Number="4.0" Order="6">
+      <Text>Create the Future-State Process</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12342" UniqueId="b4d63ff5-a5f2-5638-fa70-2dd3a707db72" Order="7" Number="4.0.1">
+          <Text>Define what the lean version of the existing process would look like and create a map that reflects it</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12338" UniqueId="aedfb281-c9a4-da79-9f4c-939d9ff907b4" Number="5.0" Order="8">
+      <Text>Plan for Implementation</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12343" UniqueId="ae429bab-874a-3969-0dab-1a78da92d009" Order="9" Number="5.0.1">
+          <Text>Develop an implementation plan that will bring the current process up to the future state design</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3936" PublishedDate="2020-05-22T10:01:36.673" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-01T07:40:37.8428078Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-01T07:40:37.8428078Z" />
+  </Metadata>
+</Process>

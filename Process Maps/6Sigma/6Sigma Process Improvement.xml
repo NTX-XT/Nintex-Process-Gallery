@@ -1,0 +1,126 @@
+<Process Id="681" Name="6Sigma Process Improvement" ReferenceNo="" Objective="The 6Sigma approach to process improvement focuses on capturing the as-is state and identifying pain points to refine." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Madalyn Ivanov" OwnerId="25" Expert="Madalyn Ivanov" ExpertId="25" Group="6Sigma Processes" GroupId="271" GroupUniqueId="7caa1099-7594-47d0-b451-087360d81283" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.2.18" UniqueId="7bd4b7a2-5a50-42d9-81f3-7e84e5b6da81" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="271" UniqueId="7caa1099-7594-47d0-b451-087360d81283" Name="6Sigma Processes" ProcessGroupItemId="4755" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="12316" UniqueId="40b3252e-6bea-629b-7464-3f9d7eaac979" Number="1.0" Order="0">
+      <Text>Define the Project Goal</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12333" UniqueId="f1bcaa18-b6fc-0573-7436-656c51abee4c" Order="1" Number="1.0.1">
+          <Text>Determine the purpose of the project, in line with the organization's strategic goals.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12317" UniqueId="3da9c4be-96df-1eb0-6cf0-84e1ffd77db3" Number="2.0" Order="2">
+      <Text>Determine the Process Scope</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12331" UniqueId="8d80a42d-0246-6468-65ff-b995307710ef" Order="3" Number="2.0.1">
+          <Text>Define the start and end points of the process, and key inputs or outputs</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12318" UniqueId="a9e45c80-0f37-03be-922b-a8db705e6985" Number="3.0" Order="4">
+      <Text>Capture the Existing Process</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12330" UniqueId="e283ea17-34dc-5ae5-57a9-70e3a4581f5e" Order="5" Number="3.0.1">
+          <Text>Map out the as-is process</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12319" UniqueId="75216ba6-3a0c-4cb3-391c-e84b25083943" Number="4.0" Order="6">
+      <Text>Review the Process Map with the Experts</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12332" UniqueId="c4f458d0-cd5a-f411-5b2c-4b3e71cc38cb" Order="7" Number="4.0.1">
+          <Text>Review the process content with those who are most familiar with the process</Text>
+        </Task>
+        <Task Id="12328" UniqueId="6d2c30af-a88f-bb0f-9404-1f0b3bc65f45" Order="8" Number="4.0.2">
+          <Text>Walk through the process step-by-step to ensure it's understood and properly captured</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12320" UniqueId="99e1c1a9-5e11-e7b1-f7de-baef68b2fb1a" Number="5.0" Order="9">
+      <Text>Analyze the Process for Pain Points</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12329" UniqueId="8aceef33-f7cd-7acf-d5c7-6fce79190cbd" Order="10" Number="5.0.1">
+          <Text>Analyse the process for breakdowns, waste, bottlenecks and inefficiencies</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12321" UniqueId="bacd2d1b-955a-9a49-0768-239b4caa4b38" Number="6.0" Order="11">
+      <Text>Design Process Improvements</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12327" UniqueId="f23f5f40-d5a7-dee0-444c-dd42a154ef59" Order="12" Number="6.0.1">
+          <Text>Address the issues identified in the existing process</Text>
+        </Task>
+        <Task Id="12326" UniqueId="e9a0ce1c-c7c9-6867-b980-6e7183965ada" Order="13" Number="6.0.2">
+          <Text>Set out an alternative to-be process</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12322" UniqueId="91880ecc-5466-ffb2-e474-1322402ba928" Number="7.0" Order="14">
+      <Text>Implement the New Process</Text>
+      <Ownerships>
+        <Role Id="299" Name="6Sigma Process Expert" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="12325" UniqueId="0893c272-6912-de00-042f-fc49614cf3ee" Order="15" Number="7.0.1">
+          <Text>Plan the implementation of the identified improvements</Text>
+        </Task>
+        <Task Id="12324" UniqueId="cca449b2-5213-b5af-b3c7-a1f1756c4aab" Order="16" Number="7.0.2">
+          <Text>Monitor the new process as changes are made to verify the anticipated gains</Text>
+        </Task>
+        <Task Id="12323" UniqueId="c776a04f-60bd-0aec-25dd-148401b22641" Order="17" Number="7.0.3">
+          <Text>Verify the new process meets the project objectives</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3935" PublishedDate="2020-05-22T09:33:19.133" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-01T07:40:36.1084441Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-01T07:40:36.1084441Z" />
+  </Metadata>
+</Process>
