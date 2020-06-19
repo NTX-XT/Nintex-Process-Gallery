@@ -1,0 +1,82 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "Adobe Sign",
+		"version": "1.0.0",
+		"title": "Adobe Sign"
+	},
+	"host": "api.na2.echosign.com",
+	"basePath": "/api/rest/v6",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/agreements/{agreementId}/combinedDocument": {
+			"get": {
+				"summary": "Get Combined Signed Document",
+				"description": "Get Combined Signed Document",
+				"operationId": "getCombinedDocument",
+				"security": [{
+						"oauth2": []
+					}
+				],
+				"produces": ["application/pdf"],
+				"parameters": [{
+						"name": "agreementId",
+						"in": "path",
+						"required": true,
+                        "type": "string",
+                        "description": "Agreement ID"
+					}, {
+						"name": "versionId",
+						"in": "query",
+						"required": false,
+						"type": "string",
+                        "description": "Version ID"
+					}, {
+						"name": "participantId",
+						"in": "query",
+						"required": false,
+						"type": "string",
+						"description": "Participant ID"
+					}, {
+						"name": "attachSupportingDocuments",
+						"in": "query",
+						"required": false,
+						"type": "string",
+                        "description": "Attach Supporting Documents",
+                        "default": false
+					}, {
+						"name": "attachAuditReport",
+						"in": "query",
+						"required": false,
+						"type": "string",
+                        "description": "Attach Audit Report",
+						"default": "true"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+						  "type": "file"
+						}
+					}
+				}
+			}
+		}
+	},
+    "securityDefinitions": {
+        "oauth2": {
+            "type": "oauth2",
+            "flow": "accessCode",
+            "authorizationUrl": "https://secure.na1.echosign.com/public/oauth",
+            "tokenUrl": "https://api.na2.echosign.com/oauth/token",
+            "x-ntx-refresh-url": "https://secure.na1.echosign.com/oauth/refresh",
+			"scopes": {
+				"agreement_read:account": "Controls any access to document files, images, or metadata"
+			}
+        }
+    },
+	"definitions": {}
+}
