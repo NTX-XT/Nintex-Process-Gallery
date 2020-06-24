@@ -1,0 +1,93 @@
+<Process Id="713" Name="ITIL Infosec Management" ReferenceNo="" Objective="Protect an organization's information ensuring the confidentiality, integrity, intended purpose and availability of information,safeguarded from unauthorized access and misuse throughout the information lifecycle." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.9" UniqueId="9b4c9482-ac39-4974-9488-1cb0be0ed35e" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4870" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13338" UniqueId="bb6b6051-b145-f144-f4b9-9b0e3c134151" Number="1.0" Order="0">
+      <Text>Identify the organization's Infosec requirements</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13342" UniqueId="536a7790-a291-3334-715e-0dd65f93ba82" Order="1" Number="1.0.1">
+          <Text>Consider the various security elements:|~|Physical / Access / Infrastructure / Incident management</Text>
+        </Task>
+        <Task Id="13343" UniqueId="c4abf804-012e-ed9b-01cd-9c0709e66c52" Order="2" Number="1.0.2">
+          <Text>Align with any existing SLA security requirements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13339" UniqueId="17cf029e-02f0-3d98-7436-c28e0cac9cf8" Number="2.0" Order="3">
+      <Text>Implement controls for identified risks</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13344" UniqueId="f42522bd-c955-38b3-3e90-2364735e9eb5" Order="4" Number="2.0.1">
+          <Text>Consider various Access control and ID verification protocols:|~|- Physical access|~|- Incident response|~|- Staff training</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13340" UniqueId="7afb1eaa-1ad3-22ed-3727-3f307769a079" Number="3.0" Order="5">
+      <Text>Monitor controls for effectiveness</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13345" UniqueId="a7a881e6-ad0c-de39-0106-d02b173a5998" Order="6" Number="3.0.1">
+          <Text>Conduct internal audits of practices</Text>
+        </Task>
+        <Task Id="13346" UniqueId="dfadcb2d-a1a4-4585-9a53-3abeabce4d61" Order="7" Number="3.0.2">
+          <Text>Implement testing, such as Pen tests</Text>
+        </Task>
+        <Task Id="13347" UniqueId="b84904d7-361d-0689-2bd9-44e608985ae4" Order="8" Number="3.0.3">
+          <Text>Review any changes to infrastructure or configuration such as firewalls</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13341" UniqueId="ed46f55d-38a6-c8db-7057-f672e51fa9f6" Number="4.0" Order="9">
+      <Text>Update controls and systems as improvements are identified</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13348" UniqueId="0faa743e-dbf4-868c-4b8d-fab73feb2a51" Order="10" Number="4.0.1">
+          <Text>Review audit reports for vulnerabilities</Text>
+        </Task>
+        <Task Id="13349" UniqueId="17ec5821-6e4c-830a-79e6-967a6b91a95d" Order="11" Number="4.0.2">
+          <Text>Keep software and hardware up to date</Text>
+        </Task>
+        <Task Id="13350" UniqueId="79d05680-c4c3-2caf-0cf9-371e9c11717f" Order="12" Number="4.0.3">
+          <Text>Refresh training and onboarding procedures</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3976" PublishedDate="2020-06-22T11:16:30.9777451Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-22T11:16:31.1495734Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-22T11:16:31.1495734Z" />
+  </Metadata>
+</Process>

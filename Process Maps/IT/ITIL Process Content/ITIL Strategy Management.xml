@@ -1,0 +1,108 @@
+<Process Id="712" Name="ITIL Strategy Management" ReferenceNo="" Objective="Strategy Management defines the contexts of the organization and strategies essential to achieve its objectives and goals, by creating value for the customer.|~|" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.9" UniqueId="e9b0d2a1-55f4-45cd-85e8-f0708d5851af" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4867" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13325" UniqueId="f236edb3-46c3-72a8-f323-8d2b6f5b49bd" Number="1.0" Order="0">
+      <Text>Define the organizational context</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13331" UniqueId="529635ba-aca6-6cab-0cea-857791d7cf84" Order="1" Number="1.0.1">
+          <Text>Understand the environment the organization operates within</Text>
+        </Task>
+        <Task Id="13332" UniqueId="2a1fe042-18f3-74e2-b8c1-be253c75d264" Order="2" Number="1.0.2">
+          <Text>Clarify the objectives and goals for the organization</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13326" UniqueId="57717aba-00c8-cae5-9bce-59ba12e39f4d" Number="2.0" Order="3">
+      <Text>Determine the value to be created for the customer</Text>
+      <Ownerships>
+        <Tag Id="74" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13333" UniqueId="c4ea593d-d1a3-d36a-2a34-f1b94e0ee98e" Order="4" Number="2.0.1">
+          <Text>Identify products and services that align with the organization's goals and meet the market needs.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13327" UniqueId="0ec91f84-1a33-459f-eaf1-12ef95bfd992" Number="3.0" Order="5">
+      <Text>Develop the strategy in line with your goals</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13334" UniqueId="36ce4640-8df1-5d38-3c8e-7c2670102bcf" Order="6" Number="3.0.1">
+          <Text>Create a strategy that reflects the organization's priorities and will provide a foundation for more detailed plans</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13328" UniqueId="0e6bd5e9-3657-0b8f-f70d-0634fc6db8c1" Number="4.0" Order="7">
+      <Text>Establish criteria for prioritizing resources</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13335" UniqueId="1803098a-d5b1-006b-19b0-ca0dfa641496" Order="8" Number="4.0.1">
+          <Text>Define how resources will be allocated and capabilities invested for the required outcomes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13329" UniqueId="70447aff-c878-dabf-a296-8f242984fe2b" Number="5.0" Order="9">
+      <Text>Implement mechanisms to manage resources</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13336" UniqueId="aab6e30f-0a48-ba8e-6991-efd50a50cf47" Order="10" Number="5.0.1">
+          <Text>Develop structures and appoint governance to facilitate the strategies</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13330" UniqueId="8b5f6b4f-87b3-367e-3393-53adfeba8f42" Number="6.0" Order="11">
+      <Text>Translate strategy into plans</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13337" UniqueId="80c428ef-7b13-1c37-6256-ba787747eb0a" Order="12" Number="6.0.1">
+          <Text>Consider both the tactical and operational activities required to support the strategy</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1051" FirstName="Richard" LastName="Roe" Name="Richard Roe" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3975" PublishedDate="2020-06-22T11:03:57.8600787Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-22T11:03:58.0788879Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-22T11:03:58.0788879Z" />
+  </Metadata>
+</Process>

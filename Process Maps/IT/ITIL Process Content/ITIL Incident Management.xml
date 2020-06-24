@@ -1,0 +1,119 @@
+<Process Id="715" Name="ITIL Incident Management" ReferenceNo="" Objective="Incidents are interruptions to the IT services or degradation of service performance that impact negatively on the business. Incident management ensures services are restored and the business suffers minimal impact." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.9" UniqueId="f0921bfa-79d3-4745-93ad-2a449eeb510b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4876" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13361" UniqueId="65729fd4-468f-d96c-ea43-42ba0755fa3c" Number="1.0" Order="0">
+      <Text>Identify an incident</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13378" UniqueId="901e8828-2eb3-af70-6c7b-bfc1bdd9bfa3" Order="1" Number="1.0.1">
+          <Text>Determine the scope and likely effect</Text>
+        </Task>
+        <Task Id="13376" UniqueId="17c3ac08-e698-0329-457f-5f69b14002b1" Order="2" Number="1.0.2">
+          <Text>Define the affected systems and/or users</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13362" UniqueId="9917a4b9-57f3-f962-829f-7f2e9b05a72b" Number="2.0" Order="3">
+      <Text>Investigate and diagnose incident</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13375" UniqueId="9bce50c0-d06b-39ff-69b0-b5fe6f0e5663" Order="4" Number="2.0.1">
+          <Text>Clarify the causes of the incident</Text>
+        </Task>
+        <Task Id="13374" UniqueId="49aa7934-f351-92da-e25d-4d2b22ace096" Order="5" Number="2.0.2">
+          <Text>Identify the potential remedies</Text>
+        </Task>
+        <Task Id="13373" UniqueId="719a0779-b49b-dfae-9a36-d704c5e35e79" Order="6" Number="2.0.3">
+          <Text>Check SLA terms for incident resolution</Text>
+        </Task>
+        <Task Id="13377" UniqueId="1d330231-7227-db4a-ff98-b61910c51959" Order="7" Number="2.0.4">
+          <Ownerships>
+            <Tag Id="74" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Ensure secure operations are maintained at customer level</Text>
+        </Task>
+        <Task Id="13371" UniqueId="00d90724-3323-e424-cbec-4249aa2edb01" Order="8" Number="2.0.5">
+          <Text>Triage the required tasks</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13363" UniqueId="68c9d24a-aa2c-bca2-de95-da99c71a259b" Number="3.0" Order="9">
+      <Text>Assign resources for rectifying the incident</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13372" UniqueId="627fe043-878c-777a-a8b1-fb54ca8e15bd" Order="10" Number="3.0.1">
+          <Text>Escalate the tasks as required to effect a fix</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13364" UniqueId="7dab4cd4-3400-9a2e-bfef-0277d4022fae" Number="4.0" Order="11">
+      <Text>Resolve the incident</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13370" UniqueId="e5f10e80-3a05-c9b7-773a-7b0b351d5f6c" Order="12" Number="4.0.1">
+          <Text>Implement the identified fix(es)</Text>
+        </Task>
+        <Task Id="13369" UniqueId="45e5ef46-7e3a-3fff-c9ae-26493df1e756" Order="13" Number="4.0.2">
+          <Text>Test the patch and deploy to the live environment</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13365" UniqueId="8f366551-c42c-e397-0fb9-d27cbd9b895d" Number="5.0" Order="14">
+      <Text>Report on the incident outcome</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13368" UniqueId="ec9d5405-fc29-9780-6a3e-ad3112cc12c3" Order="15" Number="5.0.1">
+          <Text>Provide customers with feedback within the SLA terms</Text>
+        </Task>
+        <Task Id="13367" UniqueId="17b2affd-2b5d-1d84-d2e7-7f2f8bca9211" Order="16" Number="5.0.2">
+          <Text>Report on the issue cause and resolution</Text>
+        </Task>
+        <Task Id="13366" UniqueId="2f876303-b86f-7e5b-da19-41c1b7227af3" Order="17" Number="5.0.3">
+          <Text>identify any further vulnerabilities suggested by or related to the incident</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1051" FirstName="Richard" LastName="Roe" Name="Richard Roe" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3978" PublishedDate="2020-06-22T11:42:03.8856475Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-22T11:42:04.0575260Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-22T11:42:04.0575260Z" />
+  </Metadata>
+</Process>

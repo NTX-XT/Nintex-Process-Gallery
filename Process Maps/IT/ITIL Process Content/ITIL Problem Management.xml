@@ -1,0 +1,108 @@
+<Process Id="721" Name="ITIL Problem Management" ReferenceNo="" Objective="'Problems' are the underlying causes or potential causes of one or more incidents. Problem management focuses on identifying and analyzing those causes, to reduce the potential impact of incidents through solutions and workarounds." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.10" UniqueId="ab7c08f8-fe45-40aa-abc6-137bf1690ebd" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4890" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13424" UniqueId="e9a17ac8-6a53-b23f-a671-018c1b9faf4f" Number="1.0" Order="0" ParallelGroupingRef="1">
+      <Text>Perform incident trend analysis</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13439" UniqueId="f4b5d13f-8c43-c552-7050-11d038d00a0e" Order="1" Number="1.0.1">
+          <Text>Detect duplicate or recurring incidents and issues</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13425" UniqueId="b9a66e5a-221b-e800-cc62-a86b2b504582" Number="1.1" Order="2" ParallelGroupingRef="1">
+      <Text>Identify risks from potential scenarios</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13438" UniqueId="14360ea7-a4c0-51cd-0330-9003628f3f09" Order="3" Number="1.1.1">
+          <Text>Review Third Party information, eg Suppliers, Partners, Contractors</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13426" UniqueId="11b7d9bf-b827-e297-ba8b-5550401767a0" Number="2.0" Order="4">
+      <Text>Diagnose underlying problems</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13437" UniqueId="b98181a6-f20b-4406-6498-6e8f33911ea7" Order="5" Number="2.0.1">
+          <Text>Analyze the scope and risk</Text>
+        </Task>
+        <Task Id="13436" UniqueId="4fc8e43c-e4c7-a883-4ca7-545a6fe92f38" Order="6" Number="2.0.2">
+          <Text>Recognize relationships between incidents and potential impacts</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13427" UniqueId="c119dc50-130a-50d4-a502-88a37bb8dde6" Number="3.0" Order="7">
+      <Text>Identify solutions</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13434" UniqueId="b48dc272-d3cb-0c61-109f-89735d086802" Order="8" Number="3.0.1">
+          <Text>Formulate workarounds (short-term fixes)</Text>
+        </Task>
+        <Task Id="13435" UniqueId="c51769d5-9d3b-c9f9-99f8-0f027abe042e" Order="9" Number="3.0.2">
+          <Text>Identify permanent solutions</Text>
+        </Task>
+        <Task Id="13433" UniqueId="a749886e-d8d3-4633-0fc5-173547f4dec4" Order="10" Number="3.0.3">
+          <Text>Assign teams</Text>
+        </Task>
+        <Task Id="13432" UniqueId="bff3f611-dfcf-c9b6-07e2-ddaefaa519a9" Order="11" Number="3.0.4">
+          <Text>Scope out the work required</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13428" UniqueId="4e25ea9d-07de-09fe-cbd1-64e7c5fa14fa" Number="4.0" Order="12">
+      <Text>Assess regularly occurring errors</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13431" UniqueId="19a27f8c-74e8-0140-17e1-0d91eb0c521e" Order="13" Number="4.0.1">
+          <Text>Analyze for overall impact</Text>
+        </Task>
+        <Task Id="13430" UniqueId="da0febee-e48e-fde6-7ce9-2c52f0546b45" Order="14" Number="4.0.2">
+          <Text>Review development practices to minimize recurrance</Text>
+        </Task>
+        <Task Id="13429" UniqueId="719ed7cd-1a31-781c-eacd-78c5294e3c85" Order="15" Number="4.0.3">
+          <Text>Identify long and short-term fixes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3988" PublishedDate="2020-06-24T09:27:20.34191Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-24T09:27:20.5589881Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-24T09:27:20.5589881Z" />
+  </Metadata>
+</Process>

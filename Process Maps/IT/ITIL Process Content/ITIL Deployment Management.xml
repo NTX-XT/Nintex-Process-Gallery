@@ -1,0 +1,146 @@
+<Process Id="723" Name="ITIL Deployment Management" ReferenceNo="" Objective="Deployment Management is about moving new or changed processes, software, hardware, documentation or any other service components to a 'live' or customer-facing environment. This practice ensures the deployment does not introduce instability or breakdowns in the production environment. " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.10" UniqueId="e371ce59-931a-4898-a720-b94029a99903" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4896" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13452" UniqueId="162a9cff-9a51-fae6-ed53-b6d197be3177" Number="1.0" Order="0">
+      <Text>Plan release content</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13467" UniqueId="a83f59f6-8f52-e084-30ee-e57217887ae4" Order="1" Number="1.0.1">
+          <Text>Define the level of the release:|~|- Major feature or functionality|~|- Minor feature or enhancement|~|- Emergency fix or bug patch</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13453" UniqueId="1dcb149f-87ab-68a7-3189-4e477b4438b0" Number="2.0" Order="2">
+      <Text>Decide the release approach</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13470" UniqueId="faddbe88-8196-9ea6-b1e4-b8b53d275869" Order="3" Number="2.0.1">
+          <Text>'Big bang' release versus Phased approach</Text>
+        </Task>
+        <Task Id="13469" UniqueId="a4f98821-debf-a131-1c90-19c62195a672" Order="4" Number="2.0.2">
+          <Text>Consider whether to use push or pull mechanics and manual or automatic release</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13454" UniqueId="08eaf0ed-b8a1-848f-ba4c-cf2aa9bfc6fc" Number="3.0" Order="5">
+      <Text>Identify who will be affected</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13468" UniqueId="e7d70403-6608-1dbb-2346-bf7a76a95012" Order="6" Number="3.0.1">
+          <Text>Assess risks involved and how they will be mitigated</Text>
+        </Task>
+        <Task Id="13471" UniqueId="e1a7308e-96f6-5442-9221-92af536c84c3" Order="7" Number="3.0.2">
+          <Text>Identify the level of communications needed. Assign these to be written</Text>
+        </Task>
+        <Task Id="13466" UniqueId="87397291-3433-182a-01c1-eced450cb13f" Order="8" Number="3.0.3">
+          <Text>Begin the approval process for any management approvals required</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13455" UniqueId="9fd4cca1-e868-bce9-61f4-cbbcb1e6bd9f" Number="4.0" Order="9">
+      <Text>Test the release in a secure environment</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13465" UniqueId="7524b7b3-0dc2-c950-6e33-37e1a8af7bd2" Order="10" Number="4.0.1">
+          <Text>Complete QA testing away from the production environment</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13456" UniqueId="ec392c71-a83f-c0b4-278d-d71b8de3c6f8" Number="5.0" Order="11">
+      <Text>Create the deployment package</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13464" UniqueId="57a183f2-a9a0-3a51-17ca-01171fec43e3" Order="12" Number="5.0.1">
+          <Text>Build the release according to standard requirements and the release approach chosen</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13457" UniqueId="b357ba63-7f78-ad46-f7a2-efe01325a81e" Number="6.0" Order="13">
+      <Text>Deploy</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Decision Id="13458" UniqueId="b9ff320a-936d-1576-a6de-ff7410b8f027" Number="0.0" Order="14" DecisionLinkIsYes="false" DecisionLinkType="Activity">
+      <Text>Is the release functioning as expected for all stakeholders?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0" />
+    </Decision>
+    <Activity Id="13459" UniqueId="0666cf4a-8c3e-a2a2-ec28-1540d92be73c" Number="7.0" Order="15" LinkedDecisionUniqueId="b9ff320a-936d-1576-a6de-ff7410b8f027">
+      <Text>Revert build and investigate</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13460" UniqueId="c5ed6bec-2597-cb3f-2d96-38b03e2049c3" Number="8.0" Order="16">
+      <Text>Review the deployment</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13463" UniqueId="0aeff2f2-8832-1729-c3da-0b0eb8804721" Order="17" Number="8.0.1">
+          <Text>Document any lessons learned</Text>
+        </Task>
+        <Task Id="13462" UniqueId="61a2aae1-e603-165f-4b89-27a613c7e3b5" Order="18" Number="8.0.2">
+          <Text>Complete deployment reporting</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13461" UniqueId="2f15d571-db7f-d88b-bd47-76a6378fa760" Number="9.0" Order="19">
+      <Text>Hand support over to Operations</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3990" PublishedDate="2020-06-24T10:04:09.1850956Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-24T10:04:09.4008350Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-24T10:04:09.4008350Z" />
+  </Metadata>
+</Process>

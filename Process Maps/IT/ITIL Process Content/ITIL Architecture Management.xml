@@ -1,0 +1,89 @@
+<Process Id="714" Name="ITIL Architecture Management" ReferenceNo="" Objective="Architecture management refers to all the domains: business architecture, service architecture, information architecture, technology architecture, and environment architecture. It provides a view of these different elements as a whole and how they interface or interrelate to enable the organization to achieve its objectives." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.9" UniqueId="e9a51777-5cf1-4a9a-94e3-fc6579d9730b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4873" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13351" UniqueId="5c6900a2-fe71-75f3-41d1-3be50576415c" Number="1.0" Order="0">
+      <Text>Develop a reference architecture</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13356" UniqueId="4b52f68a-e8b3-fb12-ee76-8ebd8b9da01a" Order="1" Number="1.0.1">
+          <Text>Define the AS-IS structures for:|~|Services|~|Business|~|Information|~|Environment</Text>
+        </Task>
+        <Task Id="13357" UniqueId="554aa7bd-2064-1d42-d9de-513689dab104" Order="2" Number="1.0.2">
+          <Text>Conceive of a TO-BE or target architecture for each of these and how they interrelate</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13352" UniqueId="0072a518-6cbc-de3c-cc3a-dedada7ac052" Number="2.0" Order="3" ParallelGroupingRef="1">
+      <Text>Review the organizational architecture for opportunities to improve</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13358" UniqueId="8ce779fc-e1b0-5d2c-d7d4-4b1a377f747f" Order="4" Number="2.0.1">
+          <Text>Seek opportunities to build on the existing architecture(s) in linek with the strategic goals and plans</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13353" UniqueId="c2f9f3ee-0595-93bd-ac32-7f726981e788" Number="2.1" Order="5" ParallelGroupingRef="1">
+      <Text>Identify changes and developments in products and services</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13359" UniqueId="1dc1f294-c9f9-0f6f-2ff1-79f484e23ded" Order="6" Number="2.1.1">
+          <Text>Consider how changes in products and services can or will impact the existing architecture</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13354" UniqueId="f246c741-eb08-e0bd-9920-efe8aeaa803f" Number="3.0" Order="7">
+      <Text>Design new structures to support emerging developments</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13360" UniqueId="e9bad85d-50c4-2ad6-718a-2c354ec67091" Order="8" Number="3.0.1">
+          <Text>Create new architectural structures in line with the organization's strategic goals</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13355" UniqueId="764a768a-df34-0f1b-aa37-4cb89cb81f5a" Number="4.0" Order="9">
+      <Text>Transition architecture from existing to target structure</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3977" PublishedDate="2020-06-22T11:29:01.9946662Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-22T11:29:02.1665198Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-22T11:29:02.1665198Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,110 @@
+<Process Id="722" Name="ITIL Service Request Management" ReferenceNo="" Objective="Service Request Management supports an agreed quality of service by handling user requests through proven and agreed-upon steps, ensuring the fulfillment is smooth and efficient. " IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.10" UniqueId="1df8ebb5-be16-4a1c-889f-3fc2bde13ef8" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4893" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13440" UniqueId="d80f0b11-96cd-53fa-e4cf-fa3eb9573957" Number="1.0" Order="0">
+      <Text>Receive request for service</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13441" UniqueId="09cdd0ba-c0cc-eae0-3363-8e807ec6a389" Number="2.0" Order="1">
+      <Text>Assess the request against policy</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13447" UniqueId="3fafb8b8-276b-0016-99c6-f44e35a360ff" Order="2" Number="2.0.1">
+          <Text>Does the request qualify within the existing service policies?</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="13442" UniqueId="1d535e64-4c43-dd58-ed13-bc98dc4bb3c8" Number="0.0" Order="3" DecisionLinkIsYes="false" DecisionLinkType="Activity">
+      <Text>Is the request pre-approved?</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+        <DecisionOrphanRole Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0" />
+    </Decision>
+    <Activity Id="13443" UniqueId="3375f357-29e3-eb06-56a3-17e2b956363a" Number="3.0" Order="4" LinkedDecisionUniqueId="1d535e64-4c43-dd58-ed13-bc98dc4bb3c8">
+      <Text>Reject the request pending management approval</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13444" UniqueId="f40b55a8-2088-c4a9-9f4a-51ab2f5d3b5c" Number="4.0" Order="5">
+      <Text>Open a service ticket</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13448" UniqueId="c3cc9793-2e67-b048-208a-e8a9df91f1b7" Order="6" Number="4.0.1">
+          <Text>Assign to the relevant department, such as software, hardware, etc.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13445" UniqueId="79858280-8368-97df-60fc-8ba901bf0ae1" Number="5.0" Order="7">
+      <Text>Action the requested service</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13449" UniqueId="a82c3ae4-44fb-f61f-b5d5-3dd8665169b5" Order="8" Number="5.0.1">
+          <Text>Ensure the actioned request fits within the agreed SLA</Text>
+        </Task>
+        <Task Id="13450" UniqueId="0508a219-faec-4355-7db0-89006bd2d2aa" Order="9" Number="5.0.2">
+          <Text>Escalate any service activities as required</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13446" UniqueId="3fa2cc36-e420-18ab-8c94-a2d9aab24273" Number="6.0" Order="10">
+      <Text>Close the service ticket</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13451" UniqueId="008577ec-700c-0d5f-a534-f59d3879f677" Order="11" Number="6.0.1">
+          <Ownerships>
+            <Tag Id="74" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Contact the customer to verify the service was fulfilled satisfactorily</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1051" FirstName="Richard" LastName="Roe" Name="Richard Roe" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3989" PublishedDate="2020-06-24T09:45:06.282889Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-24T09:45:06.4860351Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-24T09:45:06.4860351Z" />
+  </Metadata>
+</Process>

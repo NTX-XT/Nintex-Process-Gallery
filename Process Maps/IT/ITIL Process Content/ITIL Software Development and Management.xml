@@ -1,0 +1,139 @@
+<Process Id="724" Name="ITIL Software Development and Management" ReferenceNo="" Objective="Software development and management focuses on ensuring that software is created that is fit for purpose and use, adding value for customers. This is a cycle of management supporting stakeholder needs by providing required functionalities that are reliable, maintainable and compliant." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="ITIL Processes" GroupId="273" GroupUniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.10" UniqueId="5054dcef-278f-4903-bed2-2a5e6270ca5a" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="273" UniqueId="3006a85b-e775-44d9-a896-6d90f9f56de1" Name="ITIL Processes" ProcessGroupItemId="4899" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13472" UniqueId="65d6720a-9836-d096-c08b-81110e16ea46" Number="1.0" Order="0">
+      <Text>Create concept for new feature or product</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13492" UniqueId="08657003-c4e4-b981-a72a-17b468d89bbb" Order="1" Number="1.0.1">
+          <Text>Define the requirements which will constrain the product development</Text>
+        </Task>
+        <Task Id="13490" UniqueId="34081cb3-1317-05c1-99fd-eda14d620a97" Order="2" Number="1.0.2">
+          <Ownerships>
+            <Tag Id="74" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Identify the market or customer persona this product or feature is aimed at</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13473" UniqueId="f2448344-592d-70fc-413b-3b7a9ea105f8" Number="2.0" Order="3">
+      <Text>Design the feature or product</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13489" UniqueId="b3278fe1-fcab-ffae-393e-8594c722d859" Order="4" Number="2.0.1">
+          <Text>Determine the scope of the product</Text>
+        </Task>
+        <Task Id="13488" UniqueId="27dd4132-de62-9209-94d7-c7d63e9448f2" Order="5" Number="2.0.2">
+          <Text>Plan how to integrate it into existing products or services</Text>
+        </Task>
+        <Task Id="13487" UniqueId="a2c70965-7242-c017-3c39-05de8946c221" Order="6" Number="2.0.3">
+          <Text>Prepare outlines for marketing and sales to begin introducing it to the market</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13474" UniqueId="3e200c38-4df0-9327-9420-a1eb56dfde33" Number="3.0" Order="7">
+      <Text>Develop the software</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13491" UniqueId="cab4e4b9-2533-e077-d6fe-18223d45cfdb" Order="8" Number="3.0.1">
+          <Text>Assign teams to the development tasks</Text>
+        </Task>
+        <Task Id="13485" UniqueId="c6eac65d-333a-6d4d-2f55-91c2eedd7ac6" Order="9" Number="3.0.2">
+          <Text>Schedule the work to meet milestone and release dates</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13475" UniqueId="72973e2b-2aa3-4704-b4fc-c50ecc993b3b" Number="4.0" Order="10">
+      <Text>Test the feature or product</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13486" UniqueId="5e29f2e8-62d9-e921-1428-41d9ddb7d4a7" Order="11" Number="4.0.1">
+          <Text>Deploy to a test environment for QA</Text>
+        </Task>
+        <Task Id="13484" UniqueId="5308b384-f068-a938-1820-106d0e8eff35" Order="12" Number="4.0.2">
+          <Text>Test the feature or product against the agreed design requirements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13476" UniqueId="f0fecefb-a364-82f6-86b9-0b4b430a838f" Number="5.0" Order="13">
+      <Text>Deploy</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13477" UniqueId="9aaceedc-71ea-9740-a7c6-02f259a62c89" Number="6.0" Order="14">
+      <Text>Manage the software</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13483" UniqueId="79a032b8-efba-b196-dba7-000a0009f913" Order="15" Number="6.0.1">
+          <Text>Provide support for customers</Text>
+        </Task>
+        <Task Id="13482" UniqueId="318a6237-9e68-c4e8-844c-8f4ff77932a9" Order="16" Number="6.0.2">
+          <Text>Gather feedback on the market impact</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13478" UniqueId="363af906-3a7d-5631-0f4f-b38eea30da50" Number="7.0" Order="17">
+      <Text>Review the software</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13481" UniqueId="640b269a-a2dc-fa6b-59d8-c0e9ad8b12c0" Order="18" Number="7.0.1">
+          <Text>Confirm the product or feature is still fit for purpose</Text>
+        </Task>
+        <Task Id="13480" UniqueId="a31def0d-fc5b-8c27-4209-234bd7db5f8c" Order="19" Number="7.0.2">
+          <Text>Identify further enhancements which can begin the development cycle again</Text>
+        </Task>
+        <Task Id="13479" UniqueId="2b765c4b-7ec2-37b2-2b83-6f511214c8b3" Order="20" Number="7.0.3">
+          <Text>If the product is no longer meeting requirements, begin a retirement process to decommission the obsolete software</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1051" FirstName="Richard" LastName="Roe" Name="Richard Roe" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="3991" PublishedDate="2020-06-24T10:18:52.2904943Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-06-24T10:18:52.4299894Z" />
+    <MetadataItem Name="CachedOn" Value="2020-06-24T10:18:52.4299894Z" />
+  </Metadata>
+</Process>
