@@ -1,0 +1,126 @@
+<Process Id="451" Name="Urlaubsantrag" ReferenceNo="" Objective="Beantragung von Jahresurlaub oder Langzeiturlaub" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Marcus Kueppers" OwnerId="1051" Expert="James Bond" ExpertId="1052" Group="Abwesenheit" GroupId="237" GroupUniqueId="fc2368da-d2c6-45c9-878a-0fefa2a75b3f" State="Active" StateId="1" Version="4.0" PromappVersion="4.8.3.16" UniqueId="57399530-94b4-491c-bef0-9164a9b67c3e" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="237" UniqueId="fc2368da-d2c6-45c9-878a-0fefa2a75b3f" Name="Abwesenheit" ProcessGroupItemId="4858" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="10041" UniqueId="d3722b97-b5fc-c4cd-2d2a-98655e9a0417" Number="1.0" Order="0">
+      <Text>Urlaubsantrag ausfüllen</Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="4.34" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="10048" UniqueId="e34b2551-8870-d4aa-0a9c-07840c68cbb5" Order="1" Number="1.0.1">
+          <Text>Überprüfen Sie Ihre Urlaubstage</Text>
+        </Task>
+        <Task Id="10049" UniqueId="d514a5f1-0b55-cd87-0372-113fd9373527" Order="2" Number="1.0.2">
+          <Text>Füllen Sie den Urlaubsantrag einen Monat vor Ihrem Urlaubsbeginn aus.</Text>
+        </Task>
+        <Form Id="10050" UniqueId="6dbb31a4-fb0f-ed0c-5d93-23a83c1e2833" Order="3" DocumentId="308" DocumentUniqueId="2e3f5088-bb48-4610-9649-ff549061ea1b" UploadId="348" Number="">
+          <Text>Leave-application-form.doc</Text>
+        </Form>
+        <Task Id="10051" UniqueId="f195f5f4-5059-f52d-29ff-61f5177ef93e" Order="4" Number="1.0.3">
+          <Text>Weiterleiten zum Vorgesetzten</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10042" UniqueId="793586e6-5905-2779-1f3f-a2ed638824eb" Number="2.0" Order="5">
+      <Text>Urlaubsantrag genehmigen</Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="15m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="16.28" AverageCostPerHour="65.12" />
+      <ChildProcessProcedures>
+        <Task Id="10052" UniqueId="c511c66b-b780-585f-abad-dfdd5b761b38" Order="6" Number="2.0.1">
+          <Text>Urlaubsantrag prüfen</Text>
+        </Task>
+        <Task Id="10053" UniqueId="9a80b06f-7205-6fd0-4b32-68a02883b8c3" Order="7" Number="2.0.2">
+          <Text>Vertrettung für den Zeitraum organisieren</Text>
+        </Task>
+        <Task Id="10054" UniqueId="edec0678-eba8-34b3-e028-c45328aa96bc" Order="8" Number="2.0.3">
+          <Text>Urlaubsantrag mit Datum und Unterschrift versehen</Text>
+        </Task>
+        <Task Id="10055" UniqueId="ab3d92e0-a178-7a6b-7fd0-119699bb29a5" Order="9" Number="2.0.4">
+          <Text>Unterschriebenes Formular an den Mitarbeiter zurücksenden</Text>
+        </Task>
+        <Note Id="10056" UniqueId="e087ce51-15da-5398-9013-ae5dacd9c866" Order="10" Number="">
+          <Text>Was passiert, wenn der Urlaub abgelehnt wird?</Text>
+          <Attachment>Erläutern Sie dem Mitarbeiter, warum der Urlaub abgelehnt wurde. Besprechen Sie einen geeigneten Termin für den Urlaub.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10043" UniqueId="3af65ae0-b50b-fd23-92f2-08bdc0ce2244" Number="3.0" Order="11">
+      <Text>Urlaub im Urlaubskalender eintragen</Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0.43" AverageCostPerHour="25.80" />
+      <ChildProcessProcedures>
+        <Task Id="10044" UniqueId="97c3d33d-1d52-5306-a740-9ebf85a12543" Order="12" Number="3.0.1">
+          <Ownerships>
+            <Tag Id="51" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Urlaubskalender in Outlook öffnen und Urlaub eintragen</Text>
+        </Task>
+        <Note Id="10045" UniqueId="0f312a29-2158-2c38-91d9-cd823fc7619d" Order="13" Number="">
+          <Ownerships>
+            <Tag Id="51" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Wo befindet sich der Urlaubskalender?</Text>
+          <Attachment>Der Kalender muss zu anderen Kalendern in Ihrem Outlook hinzugefügt werden.</Attachment>
+        </Note>
+        <Task Id="10057" UniqueId="22fac61c-bf21-9377-603b-d244445a7054" Order="14" Number="3.0.2">
+          <Text>Formular an die Personalabrechnung weiterleiten</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="10046" UniqueId="4166e1da-37af-6144-b5cf-194c4807db67" Number="4.0" Order="15">
+      <Text>Antragsformular für Urlaubsanträge bearbeiten</Text>
+      <Ownerships>
+        <Role Id="9" Name="Payroll Officer" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="5m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="2.17" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="10047" UniqueId="ed5df0a0-07f4-2eab-9c27-a8075b1f41bc" Order="16" Number="4.0.1">
+          <Ownerships>
+            <Tag Id="1" Name="SAP" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="50" Name="SAP_HR" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Melden Sie sich in SAP HR an.</Text>
+        </Task>
+        <Task Id="10058" UniqueId="885fd4df-ef81-ce80-ee77-819f32da0e35" Order="17" Number="4.0.2">
+          <Text>Suchen Sie den Mitarbeiter im System und erfassen Sie Urlaubsdaten.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders>
+    <User Id="1053" FirstName="Doug" LastName="Heffernan" Name="Doug Heffernan" />
+  </Stakeholders>
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="5" FirstName="Julien" LastName="Kozlov" Name="Julien Kozlov" />
+    <User Id="1051" FirstName="Marcus" LastName="Kueppers" Name="Marcus Kueppers" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="31m" TotalLeadTimeDisplay="-" ProcessTotalCost="23.2205" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4139" PublishedDate="2020-07-09T06:54:42.56" PublisherId="1051" Publisher="Marcus Kueppers" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-15T06:48:18.2369314Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-15T06:48:18.2369314Z" />
+  </Metadata>
+</Process>

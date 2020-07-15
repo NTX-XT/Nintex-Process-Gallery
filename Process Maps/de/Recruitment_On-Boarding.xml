@@ -1,0 +1,657 @@
+<ProcessGroup Id="229" UniqueId="d4d2c939-425d-44c2-94f6-599892276833" Name="Recruitment/On-Boarding" Objective="" Background="" PromappVersion="4.8.3.16">
+  <ProcessGroupProcedures>
+    <ProcessLink Id="10767" UniqueId="ed9a13d8-1248-44d5-9c6d-b93146f50da1" Number="0.0" Order="0" LinkedProcessId="526" LinkedProcessName="Stellenbedarfsmeldung" LinkedProcessUniqueId="0cf91203-f80e-4f78-b679-c39b3425f042">
+      <Text>Stellenbedarfsmeldung</Text>
+      <Ownerships>
+        <Role Id="231" Name="Personalcontrolling" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="10768" UniqueId="03a3ab40-47c6-494c-c268-8d03f83f9a9e" Number="0.0" Order="1" LinkedProcessId="527" LinkedProcessName="Sichtung der Bewerbungen" LinkedProcessUniqueId="4a3bb1ba-cc21-43b9-990a-503a6c6f27e8">
+      <Text>Sichtung der Bewerbungen</Text>
+      <Ownerships>
+        <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+        <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="10769" UniqueId="053b040d-7734-e9fe-7661-c23f7869d50f" Number="0.0" Order="2" LinkedProcessId="529" LinkedProcessName="Onboarding eines neuen Mitarbeiters" LinkedProcessUniqueId="36a57ee7-0106-42bd-9dcb-e3ee1f7bcacd">
+      <Text>Onboarding eines neuen Mitarbeiters</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="10770" UniqueId="d6de2b95-c21d-c7ca-ae94-7bdbed670760" Number="0.0" Order="3" LinkedProcessId="531" LinkedProcessName="Onboarding - Schritte am ersten Arbeitstag" LinkedProcessUniqueId="e32e56eb-1b11-4d81-bf31-f3f7af6fc216">
+      <Text>Onboarding - Schritte am ersten Arbeitstag</Text>
+      <Ownerships>
+        <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+    <ProcessLink Id="10771" UniqueId="3fb993f7-5409-c481-5196-b8383d3e4426" Number="0.0" Order="4" LinkedProcessId="528" LinkedProcessName="Absage" LinkedProcessUniqueId="428869d7-6754-4392-b44a-62b74f4b7944">
+      <Text>Absage</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessLink>
+  </ProcessGroupProcedures>
+  <ProcessGroupItems>
+    <Process Id="528" Name="Absage" ReferenceNo="" Objective="tbd" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Marcus Kueppers" OwnerId="1051" Expert="James Bond" ExpertId="1052" Group="Recruitment/On-Boarding" GroupId="229" GroupUniqueId="d4d2c939-425d-44c2-94f6-599892276833" State="In Progress" StateId="3" Version="0.1" PromappVersion="4.8.3.16" UniqueId="428869d7-6754-4392-b44a-62b74f4b7944" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="229" UniqueId="d4d2c939-425d-44c2-94f6-599892276833" Name="Recruitment/On-Boarding" ProcessGroupItemId="4481" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures />
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="527" Link="Sichtung der Bewerbungen" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <RiskManagers />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2020-07-15T06:47:58.2681977Z" />
+      </Metadata>
+    </Process>
+    <Process Id="531" Name="Onboarding - Schritte am ersten Arbeitstag" ReferenceNo="" Objective="TBD" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="James Bond" OwnerId="1052" Expert="Miss Moneypenny" ExpertId="1077" Group="Recruitment/On-Boarding" GroupId="229" GroupUniqueId="d4d2c939-425d-44c2-94f6-599892276833" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.3.16" UniqueId="e32e56eb-1b11-4d81-bf31-f3f7af6fc216" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="229" UniqueId="d4d2c939-425d-44c2-94f6-599892276833" Name="Recruitment/On-Boarding" ProcessGroupItemId="4800" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <ProcessLink Id="10776" UniqueId="7cf6ad3e-b68b-5f24-ba35-fc01aeed7bbe" Number="0.0" Order="0" LinkedProcessId="529" LinkedProcessName="Onboarding eines neuen Mitarbeiters" LinkedProcessUniqueId="36a57ee7-0106-42bd-9dcb-e3ee1f7bcacd">
+          <Text>Onboarding eines neuen Mitarbeiters</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="129w 30m" LeadTimeDisplay="418.6w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="2812.50" />
+        </ProcessLink>
+        <Activity Id="10749" UniqueId="2f7f5c13-991b-ff80-f0a9-647af865daf9" Number="1.0" Order="1">
+          <Text>Mitarbeiter in Empfang nehmen</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10750" UniqueId="47f3a7fd-66a1-07b5-1e6e-57ae0b66ef6a" Number="2.0" Order="2">
+          <Text>Übergabe und Signierung der wichtigsten Dokumente</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10751" UniqueId="688d06a0-9e77-114f-198f-f70b77f74acf" Number="3.0" Order="3">
+          <Text>Sicherheitsunterweisung</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10752" UniqueId="769eee71-f7b9-0834-9081-a5dc89a1d391" Number="4.0" Order="4">
+          <Text>Einweisung an seinem Arbeitsplatz</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10753" UniqueId="848f77d4-49bf-d691-ed2c-ba704915ecca" Number="5.0" Order="5">
+          <Text>IT Unterweisung</Text>
+          <Ownerships>
+            <Role Id="227" Name="IT" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+          <ChildProcessProcedures />
+        </Activity>
+      </ProcessProcedures>
+      <SearchKeywords>
+        <SearchKeyword>1. Arbeitstag</SearchKeyword>
+        <SearchKeyword>Onboarding</SearchKeyword>
+      </SearchKeywords>
+      <Outputs>
+        <Output Id="147" Output="Einstellung eines neuen Mitarbeiters" HowUsed="Erster Arbeitstag des neuen Mitarbeiters" ToProcess="Onboarding eines neuen Mitarbeiters" ToProcessId="529" UniqueId="b046f0a8-39b7-40b8-bdad-6bf3781ccf97" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="529" Link="Onboarding eines neuen Mitarbeiters" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders />
+      <RiskManagers />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="129w 30m *" TotalLeadTimeDisplay="418.6w *" ProcessTotalCost="2812.5000" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2020-07-15T06:47:58.3288653Z" />
+      </Metadata>
+    </Process>
+    <Process Id="529" Name="Onboarding eines neuen Mitarbeiters" ReferenceNo="" Objective="tbd" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="James Bond" OwnerId="1052" Expert="Miss Moneypenny" ExpertId="1077" Group="Recruitment/On-Boarding" GroupId="229" GroupUniqueId="d4d2c939-425d-44c2-94f6-599892276833" State="Active" StateId="1" Version="6.0" PromappVersion="4.8.3.16" UniqueId="36a57ee7-0106-42bd-9dcb-e3ee1f7bcacd" IsPolicyModeOn="false" IsVirtualVariation="false" AutomationRequestedByUserId="1051">
+      <ProcessGroupItems>
+        <ProcessGroup Id="229" UniqueId="d4d2c939-425d-44c2-94f6-599892276833" Name="Recruitment/On-Boarding" ProcessGroupItemId="4799" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <ProcessLink Id="10775" UniqueId="9464f862-b6dc-2383-b300-e6f0147919c1" Number="0.0" Order="0" LinkedProcessId="527" LinkedProcessName="Sichtung der Bewerbungen" LinkedProcessUniqueId="4a3bb1ba-cc21-43b9-990a-503a6c6f27e8">
+          <Text>Sichtung der Bewerbungen</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="368w 1d 7h 20m" LeadTimeDisplay="1206.2w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="11894.53" />
+        </ProcessLink>
+        <Activity Id="10754" UniqueId="87d94829-2307-0548-f86e-8e2e7f2ab406" Number="1.0" Order="1" ParallelGroupingRef="1">
+          <Text>Aufgaben Personalwesen</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1w" LeadTimeDisplay="2w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="937.50" AverageCostPerHour="23.44" />
+          <ChildProcessProcedures>
+            <Task Id="11024" UniqueId="7d38c8de-c61a-6a56-abb3-783de55508e3" Order="2" Number="1.0.1">
+              <Text>Mit dem u. g. Workflow starten sie die Verteilung der Aufgaben für die jeweilige Abteilung.</Text>
+            </Task>
+            <Task Id="10760" UniqueId="3d6db609-d41a-c37c-efae-0819bd126b4e" Order="3" Number="1.0.2">
+              <Text>Informieren Sie den zuständingen Manager, wann der neue Mitarbeiter seinen ersten Arbeitstag hat.</Text>
+            </Task>
+            <Task Id="10755" UniqueId="83787b1e-8ab7-9b0e-f092-ee38b9ac3ea6" Order="4" Number="1.0.3">
+              <Ownerships>
+                <Tag Id="18" Name="Salesforce" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Erfassen Sie den neuen Mitarbeiter in salesforce</Text>
+            </Task>
+            <Task Id="10761" UniqueId="8066db66-22dc-0879-c1c8-09b2f5e0c0b5" Order="5" Number="1.0.4">
+              <Text>Erstellen eine Welcome Briefes</Text>
+            </Task>
+            <Task Id="10762" UniqueId="02c9d918-99ad-17c8-3a3d-bba2517247cb" Order="6" Number="1.0.5">
+              <Text>Zusammenstellung der Unterlagen für die Sicherheitsunterweisung</Text>
+            </Task>
+            <Task Id="11018" UniqueId="fe1b643d-41aa-94fd-fc3b-8c372da1bb49" Order="7" Number="1.0.6">
+              <Text>IT darüber informieren, welche Hardware für einen neuen Mitarbeiter zur Vefügung gestellt werden soll.</Text>
+            </Task>
+            <Guide Id="11019" UniqueId="cd2c9a21-39bf-dc8d-0cea-730b7fedc907" Order="8" DocumentId="408" DocumentUniqueId="29c62add-3e50-409e-9512-9c92761f5ccd" UploadId="448" NetworkFileName="https://nintex.sharepoint.com/sites/globex/sitepages/products.aspx" Number="">
+              <Text>Titel des Dokuments aus dem SharePoint</Text>
+            </Guide>
+            <Task Id="11020" UniqueId="dfaf35b8-0316-e4cc-baeb-f90204022798" Order="9" Number="1.0.7">
+              <Text>Neuen Mitarbeiter informieren, wann und wo er sich an seinem 1. Arbeitstag melden soll</Text>
+            </Task>
+            <Guide Id="11021" UniqueId="feb238a2-b6f5-c095-0ea9-f7a3efc4af1d" Order="10" DocumentId="409" DocumentUniqueId="f9761288-737e-449e-8734-011f092b0b89" UploadId="427" Number="">
+              <Text>Anschreiben erster Arbeitstag.docx</Text>
+            </Guide>
+            <WebLink Id="11022" UniqueId="29cd17ae-d721-19d1-6d01-36b3e6b488fb" Order="11" Number="">
+              <Text>Erstellung Anschreiben für den ersten Arbeitstag</Text>
+              <Attachment>https://ntx-emeatedemo.workflowcloud.com/forms/50414f8e-b7df-4e6a-b691-48dfd2d53a3c</Attachment>
+            </WebLink>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10756" UniqueId="6c4cc66e-a20b-d964-dfe4-3f9108322b87" Number="1.1" Order="12" ParallelGroupingRef="1">
+          <Text>Aufgaben IT</Text>
+          <Ownerships>
+            <Role Id="227" Name="IT" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1w" LeadTimeDisplay="2w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="1041.67" AverageCostPerHour="26.04" />
+          <ChildProcessProcedures>
+            <Task Id="10757" UniqueId="038b087e-1eb1-9e47-23ec-8917a2890199" Order="13" Number="1.1.1">
+              <Text>Anlegen einer E-Mail Adresse im MS Exchange</Text>
+            </Task>
+            <Task Id="10763" UniqueId="dfe535a3-dcae-5d18-ab0b-2e736f564ea5" Order="14" Number="1.1.2">
+              <Text>Bestellung eine neuen Laptops oder PC. Steht in Abhängigkeit zur Rolle/Funktion des neuen Mitarbeiters. Siehe hierzu Anweisung von HR Abteilung.</Text>
+            </Task>
+            <Task Id="10764" UniqueId="633088b3-584b-8fe2-2ae8-e21a7da1bfe8" Order="15" Number="1.1.3">
+              <Text>Erstellung eines O365 Zugangs</Text>
+            </Task>
+            <Task Id="11023" UniqueId="407ac2de-4004-11ab-02e4-0c59c9a09b56" Order="16" Number="1.1.4">
+              <Text>Mitarbeiterausweis bedrucken und Zugangsberechtigungen auf Chip hinterlegen</Text>
+            </Task>
+            <Task Id="10765" UniqueId="91064989-eca0-314e-0be2-4cd197d85d24" Order="17" Number="1.1.5">
+              <Ownerships>
+                <Tag Id="119" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Erstellung eines Zugangs zur Nintex Workflow Cloud</Text>
+            </Task>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10758" UniqueId="3c9ea65d-7506-f0d1-1eec-b1d1a2df7bc1" Number="1.2" Order="18" ParallelGroupingRef="1">
+          <Text>Erstellung des Mitarbeiters NDA</Text>
+          <Ownerships>
+            <Role Id="217" Name="Legal" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1w" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="1041.67" AverageCostPerHour="26.04" />
+          <ChildProcessProcedures>
+            <Form Id="10766" UniqueId="39b2b5a9-a0a8-412e-083c-4211f01a6e62" Order="19" DocumentId="340" DocumentUniqueId="423b7aed-b3ba-4fbc-861e-0db8c766c62f" UploadId="381" Number="">
+              <Text>Example Form.docx</Text>
+            </Form>
+          </ChildProcessProcedures>
+        </Activity>
+        <ProcessLink Id="10759" UniqueId="ed2c0d5e-a211-5f55-cc22-a471ab12c64b" Number="0.0" Order="20" LinkedProcessId="531" LinkedProcessName="Onboarding - Schritte am ersten Arbeitstag" LinkedProcessUniqueId="e32e56eb-1b11-4d81-bf31-f3f7af6fc216">
+          <Text>Onboarding - Schritte am ersten Arbeitstag</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="129w 30m" LeadTimeDisplay="418.6w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="2812.50" />
+        </ProcessLink>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="531" Link="Onboarding - Schritte am ersten Arbeitstag" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+        <LinkedStakeholder ProcessId="527" Link="Sichtung der Bewerbungen" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="6" FirstName="Dennis" LastName="Monette" Name="Dennis Monette" />
+        <User Id="1051" FirstName="Marcus" LastName="Kueppers" Name="Marcus Kueppers" />
+      </SystemStakeholders>
+      <RiskManagers />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="498w 1d 7h 50m" TotalLeadTimeDisplay="1626.8w" ProcessTotalCost="17727.8646" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2020-07-15T06:47:58.4382405Z" />
+      </Metadata>
+    </Process>
+    <Process Id="527" Name="Sichtung der Bewerbungen" ReferenceNo="" Objective="Prozessbeschreibung für die Sichtung und Bewertung der eingehenden Bewerbungen." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="James Bond" OwnerId="1052" Expert="Miss Moneypenny" ExpertId="1077" Group="Recruitment/On-Boarding" GroupId="229" GroupUniqueId="d4d2c939-425d-44c2-94f6-599892276833" State="Active" StateId="1" Version="5.0" PromappVersion="4.8.3.16" UniqueId="4a3bb1ba-cc21-43b9-990a-503a6c6f27e8" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="229" UniqueId="d4d2c939-425d-44c2-94f6-599892276833" Name="Recruitment/On-Boarding" ProcessGroupItemId="4798" />
+      </ProcessGroupItems>
+      <Triggers />
+      <Inputs />
+      <ProcessProcedures>
+        <ProcessLink Id="10773" UniqueId="38186d91-0feb-a272-b99b-826ebccaef2b" Number="0.0" Order="0" LinkedProcessId="526" LinkedProcessName="Stellenbedarfsmeldung" LinkedProcessUniqueId="0cf91203-f80e-4f78-b679-c39b3425f042">
+          <Text>Stellenbedarfsmeldung</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="238w 2d 3h" LeadTimeDisplay="779.8w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="123095.92" />
+        </ProcessLink>
+        <Activity Id="10736" UniqueId="a1a8f6e3-929b-36ab-ec1e-b5401624c34e" Number="1.0" Order="1">
+          <Text>Sichtung der Bewerbungen</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="3w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="229.17" AverageCostPerHour="28.65" />
+          <ChildProcessProcedures>
+            <Task Id="11026" UniqueId="a7ce6b89-ff7f-5713-bd11-6c995c866b94" Order="2" Number="1.0.1">
+              <Ownerships>
+                <Tag Id="51" Name="Outlook" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Bewerbungen können zum einen per Post eingegangen sein oder zum anderen per E-Mail. Wenn Bewerbungen per E-Mail eingangen sind, prüfen Sie hierzu das Postfach "Bewerbungen" in MS Outlook.</Text>
+            </Task>
+            <Task Id="11029" UniqueId="a9542723-5f5b-1b29-f697-a364b7617c37" Order="3" Number="1.0.2">
+              <Text>Sichten Sie die eingehenden Bewerbungen anhand dieser Kriterien</Text>
+            </Task>
+            <Guide Id="11030" UniqueId="a11a6e82-8709-aa92-1184-f2bee22a04f8" Order="4" DocumentId="405" DocumentUniqueId="e22301fd-10ae-423b-84d3-0c1e561dd15d" UploadId="447" NetworkFileName="https://www.thebalancecareers.com/documents-you-may-need-to-submit-with-a-job-application-2062110" Number="">
+              <Text>Beispiel zur Prüfung von Bewerbungen</Text>
+            </Guide>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10737" UniqueId="4e847575-5121-e815-389e-fcf2e309d910" Number="2.0" Order="5">
+          <Text>Vorauswahl für geeigenete Kanditaten treffen</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+            <Role Id="229" Name="Betriebsrat" IsVirtual="false" />
+            <Role Id="232" Name="Geschäftsführung" IsVirtual="false" />
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="1w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="338.54" AverageCostPerHour="42.32" />
+          <ChildProcessProcedures>
+            <Note Id="10747" UniqueId="580fb84f-01d4-4fb6-b83c-dcfb81434722" Order="6" LinkedProcessId="528" LinkedProcessName="Absage" Number="">
+              <Text>Wie gehen wir vor, wenn wir Kandidaten absagen müssen?</Text>
+              <Attachment>Bitte folgen Sie hierzu dem Prozess "Absage"</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10738" UniqueId="6ecb8400-ce3e-57b5-20c3-fe9accbac4f1" Number="3.0" Order="7">
+          <Text>Einladung zum Einstellungstest</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="4h" LeadTimeDisplay="4d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="114.58" AverageCostPerHour="28.64" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10739" UniqueId="07a501f4-b428-82f5-791b-f27e55098f95" Number="4.0" Order="8">
+          <Text>Auswertung des Einstellungstest</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="239.58" AverageCostPerHour="29.95" />
+          <ChildProcessProcedures>
+            <Note Id="10748" UniqueId="9e8a89d4-2cf9-b18f-464c-d9f45c5369ae" Order="9" LinkedProcessId="528" LinkedProcessName="Absage" Number="">
+              <Text>Wie gehen wir vor, wenn wir einem Kandidaten absagen müssen?</Text>
+              <Attachment>Bitte folgen Sie hierzu dem Prozess "Absage"</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10740" UniqueId="d9f1eada-c62e-dc28-8d39-b651a3ad7bcd" Number="5.0" Order="10">
+          <Text>Einladung zum Vorstellungsgespräch</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="2w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="14.32" AverageCostPerHour="28.64" />
+          <ChildProcessProcedures>
+            <Form Id="11031" UniqueId="ca999ce9-e846-c4b2-0e8c-dd2644d09a1b" Order="11" DocumentId="407" DocumentUniqueId="8000ce4b-9a91-4f92-b9af-c1f5d057575f" UploadId="425" Number="">
+              <Text>Anschreiben Vorstellungsgespräch.docx</Text>
+            </Form>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10741" UniqueId="418f2ab1-58e7-6854-5b28-244085f0c649" Number="6.0" Order="12">
+          <Text>Durchführung des Vorstellungsgesprächs</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2h" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="57.29" AverageCostPerHour="28.64" />
+          <ChildProcessProcedures>
+            <Task Id="11027" UniqueId="43fd1e0a-884f-279e-173c-b5df1a986515" Order="13" Number="6.0.1">
+              <Ownerships>
+                <Tag Id="119" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Die Notizen aus dem Vorstellungsgespräch, werden im entsprechendem Formular in NWC festgehalten.</Text>
+            </Task>
+            <WebLink Id="11366" UniqueId="44153e63-40e0-a9d9-def7-0cd7b384f57d" Order="14" Number="">
+              <Text>Notizen zum Vorstellungsgespräch</Text>
+              <Attachment>https://ntx-emeatedemo.workflowcloud.com/forms/a3f73f8d-3bf5-4db9-91cc-cda118f5d28f</Attachment>
+            </WebLink>
+            <Guide Id="11033" UniqueId="039df360-be5b-c247-3d74-0f9ce3a2e825" Order="15" DocumentId="406" DocumentUniqueId="7d20f6cd-a8c3-457f-a9ba-51c7c19b24e5" UploadId="424" Number="">
+              <Text>Vorbereitung Bewerbugnsgespräch.docx</Text>
+            </Guide>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10742" UniqueId="3ac691f5-7b7a-aa30-8954-ef6f647f2d4c" Number="7.0" Order="16">
+          <Text>Auswertung der Vorstellungsgespräche</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="4h" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="119.79" AverageCostPerHour="29.95" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Decision Id="10743" UniqueId="ef6981be-3077-6642-54d8-76aa8833b328" Number="0.0" Order="17" LinkedProcessId="528" DecisionLinkIsYes="true" DecisionLinkType="ProcessLink" LinkedProcessName="Absage" LinkedProcessUniqueId="428869d7-6754-4392-b44a-62b74f4b7944">
+          <Text>Absage</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+            <DecisionOrphanRole Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0.00000000000" />
+        </Decision>
+        <Activity Id="10744" UniqueId="d2d50af3-90c7-724d-3041-bec25f5919d2" Number="8.0" Order="18">
+          <Text>Zusage</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="14.32" AverageCostPerHour="28.64" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10745" UniqueId="4d5b9f31-d8dc-7d9c-8a2c-d1a03644cb4a" Number="9.0" Order="19">
+          <Text>Vertragsangebot unterbreiten</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="11.72" AverageCostPerHour="23.44" />
+          <ChildProcessProcedures>
+            <Task Id="11028" UniqueId="792e27ac-5fd8-7bb0-af55-f5c6ac4a14c4" Order="20" Number="9.0.1">
+              <Ownerships>
+                <Tag Id="119" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Nutzen Sie hierzu unser NWC Form.</Text>
+            </Task>
+            <WebLink Id="11034" UniqueId="42ae5e76-17d4-8a9d-d5be-cd08dcd35612" Order="21" Number="">
+              <Text>Vertragsangebot</Text>
+              <Attachment>https://ntx-emeatedemo.workflowcloud.com/forms/ab901276-21f0-4464-8b22-a825a7eea37b</Attachment>
+            </WebLink>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10746" UniqueId="b81c3665-4d8b-a00e-edd0-e90a41bf6db6" Number="10.0" Order="22">
+          <Text>Einstellung</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="20m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="9.55" AverageCostPerHour="28.65" />
+          <ChildProcessProcedures />
+        </Activity>
+        <ProcessLink Id="10774" UniqueId="01cc2242-6a06-115a-982d-3640211fe192" Number="0.0" Order="23" LinkedProcessId="529" LinkedProcessName="Onboarding eines neuen Mitarbeiters" LinkedProcessUniqueId="36a57ee7-0106-42bd-9dcb-e3ee1f7bcacd">
+          <Text>Onboarding eines neuen Mitarbeiters</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="129w 30m" LeadTimeDisplay="418.6w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="15644.53" />
+        </ProcessLink>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs />
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="528" Link="Absage" Owner="Marcus Kueppers" Expert="James Bond" ProcessGroup="Recruitment/On-Boarding" />
+        <LinkedStakeholder ProcessId="529" Link="Onboarding eines neuen Mitarbeiters" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+        <LinkedStakeholder ProcessId="526" Link="Stellenbedarfsmeldung" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="1051" FirstName="Marcus" LastName="Kueppers" Name="Marcus Kueppers" />
+      </SystemStakeholders>
+      <RiskManagers />
+      <Targets />
+      <Timeframe TotalCycleTimeDisplay="368w 1d 7h 20m" TotalLeadTimeDisplay="1206.2w *" ProcessTotalCost="139889.3229" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2020-07-15T06:47:58.5944703Z" />
+      </Metadata>
+    </Process>
+    <Process Id="526" Name="Stellenbedarfsmeldung" ReferenceNo="" Objective="Hier wird beschrieben, welche Schritte für einen Antrag einer Stellenausschreibung eingehalten werden muss." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="James Bond" OwnerId="1052" Expert="Miss Moneypenny" ExpertId="1077" Group="Recruitment/On-Boarding" GroupId="229" GroupUniqueId="d4d2c939-425d-44c2-94f6-599892276833" State="Active" StateId="1" Version="9.0" PromappVersion="4.8.3.16" UniqueId="0cf91203-f80e-4f78-b679-c39b3425f042" IsPolicyModeOn="false" IsVirtualVariation="false">
+      <ProcessGroupItems>
+        <ProcessGroup Id="229" UniqueId="d4d2c939-425d-44c2-94f6-599892276833" Name="Recruitment/On-Boarding" ProcessGroupItemId="4801" />
+      </ProcessGroupItems>
+      <Triggers>
+        <Trigger Id="162" Trigger="Prüfung Stellenbedarfsmeldung" Frequency="ad hoc" Volume="ad hoc" UniqueId="5db63148-a710-4533-86d0-3e916479ad11" />
+      </Triggers>
+      <Inputs>
+        <Input Id="192" FromProcess="N/A" Resource="Stellenbedarfsmeldung" HowUsed="Prüfung und Freigabe der Stellenbedarfsmeldung" UniqueId="fe343c12-6a41-4209-9788-4d6fa6de0018" />
+      </Inputs>
+      <ProcessProcedures>
+        <Activity Id="10716" UniqueId="70430d9f-293e-6733-8d10-30bf39d13e49" Number="1.0" Order="0">
+          <Text>Antrag für Stellenbedarf stellen</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="15.63" AverageCostPerHour="31.26" />
+          <ChildProcessProcedures>
+            <Task Id="10724" UniqueId="121c1c09-17c7-ea91-374a-2a507299eaea" Order="1" Number="1.0.1">
+              <Ownerships>
+                <Tag Id="119" Name="NWC" IsDisassociated="true" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Nehmen Sie die Personalauswahl anhand des Anforderungsprofils vor. Das Anforderungsprofil hat sich unbedingt an den auf der Stelle zu erledigenden Aufgaben gem. Tätigkeitsdarstellung (Formular Tätigkeitsdarstellung in NWC) zu orientieren.</Text>
+            </Task>
+            <WebLink Id="11149" UniqueId="250f8594-89aa-a200-b403-6ab9773ce232" Order="2" Number="">
+              <Text>Formular der Stellenbedarfsmeldung</Text>
+              <Attachment>https://ntx-emeatedemo.workflowcloud.com/forms/5691e789-bd47-4f27-82ad-28661f89a6a4</Attachment>
+            </WebLink>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10717" UniqueId="4aa89acb-769e-7f2b-d4fe-c1f9b325dc80" Number="2.0" Order="3">
+          <Text>Prüfung ob Stelle intern oder extern besetzt werden kann</Text>
+          <Ownerships>
+            <Role Id="231" Name="Personalcontrolling" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="187.50" AverageCostPerHour="23.44" />
+          <ChildProcessProcedures>
+            <Task Id="10726" UniqueId="1abf4f96-9625-9d71-9134-4b0fe15a98a4" Order="4" Number="2.0.1">
+              <Text>Prüfen Sie anhand der vorliegenden Personalstatistiken, ob die Stelle intern besetzt werden kann.</Text>
+            </Task>
+            <Note Id="10727" UniqueId="c9e5b9e2-4994-0941-5a96-7a7af4cefd80" Order="5" Number="">
+              <Text>Was ist, wenn eine Stelle nicht intern besetzt werden kann?</Text>
+              <Attachment>Stellen Sie einen Antrag an die GF/GL zur Genehmigung</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10718" UniqueId="ed426c4e-d3a5-0fbd-45f8-38f6d92e2640" Number="3.0" Order="6">
+          <Text>Genehmigung Stellenausschreibung einholen</Text>
+          <Ownerships>
+            <Role Id="231" Name="Personalcontrolling" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2d" LeadTimeDisplay="1w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="375.00" AverageCostPerHour="23.44" />
+          <ChildProcessProcedures>
+            <Task Id="10728" UniqueId="0115ac3d-4754-7a64-cf07-e6321e371df0" Order="7" Number="3.0.1">
+              <Ownerships>
+                <Tag Id="119" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Stellen Sie einen Genehmigungsantrag an die Geschäftsleitung für die auszuschreibende Stellen. Hierzu nutzen Sie dieses Formular. @todo Formular in NWC bauen und verlinken</Text>
+            </Task>
+            <Note Id="10729" UniqueId="5ab725f6-bd87-f6b5-0ae1-f66b831479ee" Order="8" Number="">
+              <Text>Wie gehen wir vor, wenn die Stellenausschreibung abgelehnt wird</Text>
+              <Attachment>Bitte informieren, Sie den Antragssteller per Mail über die Ablehnung.</Attachment>
+            </Note>
+            <Note Id="10730" UniqueId="0c39545f-813c-41d1-fad4-36d166a5d2f4" Order="9" Number="">
+              <Text>Wie gehen wir vor, wenn die Stellenausschreibung genehmigt wurde?</Text>
+              <Attachment>Veröffentlichen Sie die Stelle auf unserem Mitarbeiterportal für 90 Tage. Sollten sich innerhalb der angegbenen Tage kein geeigneter Kandidat auf die Stelle bewerben, so kann sie extern ausgeschrieben werden.</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10719" UniqueId="0aa54923-fc03-ef90-f34e-45be452c62d5" Number="4.0" Order="10">
+          <Text>Genehmigung/Ablehnung</Text>
+          <Ownerships>
+            <Role Id="229" Name="Betriebsrat" IsVirtual="false" />
+            <Role Id="232" Name="Geschäftsführung" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="54.69" AverageCostPerHour="54.69" />
+          <ChildProcessProcedures />
+        </Activity>
+        <Activity Id="10720" UniqueId="413ecb12-924e-1efa-2129-d6d04029a399" Number="5.0" Order="11">
+          <Text>Erstellen der Ausschreibung anhand der Stellenbedarfsmeldung</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="229.17" AverageCostPerHour="28.65" />
+          <ChildProcessProcedures>
+            <Task Id="10731" UniqueId="85db83d6-d566-4e0c-3e17-154a68fd7d50" Order="12" Number="5.0.1">
+              <Text>Erstellen Sie die Ausschreibung anhand unserer Vorgegebenen Vorlage für intern Stellenausschreibungen</Text>
+            </Task>
+            <Task Id="10732" UniqueId="93235e8e-aadd-f0f1-247d-e7db62718d9c" Order="13" Number="5.0.2">
+              <Text>Nach Fertigstellung der Ausschreibung übersenden Sie diese dem Antragsteller mit der Bitte diese zur prüfen und genehmigen.</Text>
+            </Task>
+            <Information Id="11150" UniqueId="222418a6-ef3f-56b0-312b-d31bee9a45c1" Order="14" DocumentId="404" DocumentUniqueId="8dd84d9b-36a5-4700-89ee-e6b6618906f0" UploadId="445" Number="">
+              <Text>job-description-template-sample.jpg</Text>
+            </Information>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10721" UniqueId="c6104c8c-f600-2882-8b6d-8002931c1815" Number="6.0" Order="15">
+          <Text>Finale Prüfung der Ausschreibung</Text>
+          <Ownerships>
+            <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1d" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="250.00" AverageCostPerHour="31.25" />
+          <ChildProcessProcedures>
+            <Task Id="10733" UniqueId="984c1806-12eb-e199-6129-369f0d650068" Order="16" Number="6.0.1">
+              <Text>Prüfen sie alle Punkte der Stellenausschreibung.</Text>
+            </Task>
+            <Note Id="10734" UniqueId="bd9c559c-0fc1-5eb9-f4f2-32fe1ff99b98" Order="17" Number="">
+              <Text>Wie gehe ich vor, wenn in der Ausschreibung etwas fehlt bzw. nicht korrekt ist?</Text>
+              <Attachment>Bitte wenden Sie sich an die Personalabteilung und stimmen Sie alle Punkte ab.</Attachment>
+            </Note>
+            <Note Id="10735" UniqueId="987a1237-89ba-3fc2-6fd2-1522c4d2b9f4" Order="18" Number="">
+              <Text>Wie gehe ich vor, wenn die Ausschreibung OK ist?</Text>
+              <Attachment>Wenn alle benötigten Punkte für die Ausschreibung enthalten sind, so können Sie sie an die Personalabteilung zur Ausschreibung senden</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10722" UniqueId="820402f3-9a1c-c0e4-3a2f-f725eb031819" Number="7.0" Order="19" ParallelGroupingRef="1">
+          <Text>Stelle im Mitarbeiterportal veröffentlichen</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="4h" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="93.75" AverageCostPerHour="23.44" />
+          <ChildProcessProcedures>
+            <Task Id="11148" UniqueId="c6b48f6d-8293-85b2-157f-fde02d3dce9c" Order="20" Number="7.0.1">
+              <Ownerships>
+                <Tag Id="63" Name="SharePoint" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+              </Ownerships>
+              <Text>Bitte veröffenltichen Sie die interne Ausschreibung auf unserer SharePoint Seite.</Text>
+            </Task>
+            <WebLink Id="11151" UniqueId="ea8aef37-f04b-869e-2338-25b0ce7c8690" Order="21" Number="">
+              <Text>Stellenausschreibungen (intern)</Text>
+              <Attachment>https://nintex.sharepoint.com/sites/globex/SitePages/Human%20Resources.aspx</Attachment>
+            </WebLink>
+          </ChildProcessProcedures>
+        </Activity>
+        <Activity Id="10723" UniqueId="5c6628df-5a72-6045-5a9c-cc9e1161a5c2" Number="7.1" Order="22" ParallelGroupingRef="1">
+          <Text>Stelle extern ausschreiben</Text>
+          <Ownerships>
+            <Role Id="156" Name="HR" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="23.44" AverageCostPerHour="23.44" />
+          <ChildProcessProcedures>
+            <Task Id="11152" UniqueId="a6190c6f-57bd-f3ed-1c07-66574f4e6270" Order="23" Number="7.1.1">
+              <Text>Schalten Sie die Ausschreibung extern, sofern wir innerhalb von 90 Tagen die Stelle nicht extern besetzen konnten.</Text>
+            </Task>
+            <Note Id="11153" UniqueId="85c703c6-3c70-cf49-71bb-35bcaf78d67f" Order="24" Number="">
+              <Text>Auf welchen Portal können Ausschreibungen geschaltet werden?</Text>
+              <Attachment>- xing|~|- linkedin|~|- stepstone|~|- monster</Attachment>
+            </Note>
+          </ChildProcessProcedures>
+        </Activity>
+        <ProcessLink Id="10772" UniqueId="20408e27-61fd-6ace-6a64-2351685b0eaf" Number="0.0" Order="25" LinkedProcessId="527" LinkedProcessName="Sichtung der Bewerbungen" LinkedProcessUniqueId="4a3bb1ba-cc21-43b9-990a-503a6c6f27e8">
+          <Text>Sichtung der Bewerbungen</Text>
+          <Ownerships>
+            <Role Id="172" Name="HR Recruitment Officer" IsVirtual="false" />
+          </Ownerships>
+          <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="368w 1d 7h 20m" LeadTimeDisplay="1206.2w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="143243.49" />
+        </ProcessLink>
+      </ProcessProcedures>
+      <SearchKeywords />
+      <Outputs>
+        <Output Id="138" Output="Genehmigung der Stellenbedarfsmeldung" HowUsed="Ausschreibung der Stelle, nach erfolgreicher Genehmigung" ToProcess="N/A" UniqueId="00436497-a149-41c9-a6f9-399262242ccd" />
+      </Outputs>
+      <LinkedStakeholders>
+        <LinkedStakeholder ProcessId="557" Link="Offboarding eine Mitarbeiters" Owner="Marcus Kueppers" Expert="Marcus Kueppers" ProcessGroup="Austritte" />
+        <LinkedStakeholder ProcessId="527" Link="Sichtung der Bewerbungen" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+      </LinkedStakeholders>
+      <Stakeholders />
+      <Approvals />
+      <SystemStakeholders>
+        <User Id="1051" FirstName="Marcus" LastName="Kueppers" Name="Marcus Kueppers" />
+      </SystemStakeholders>
+      <RiskManagers />
+      <Targets>
+        <Target Id="111" Measure="Stellenbedarfsmeldungen müssen in der vereinbarten Frist genehmigt werden" Target="Stellenbedarfsmeldungen müssen innerhalb von 72 Stunden freigegeben werden" UniqueId="15c2d867-b712-4587-a8a5-9feceae44d4b" />
+      </Targets>
+      <Timeframe TotalCycleTimeDisplay="369w 2d 4h 50m" TotalLeadTimeDisplay="1208.2w *" ProcessTotalCost="144472.6563" />
+      <RiskControls />
+      <Metadata>
+        <ProcessXmlGenerationOptions>
+          <StubProcesses>false</StubProcesses>
+        </ProcessXmlGenerationOptions>
+        <MetadataItem Name="GenerationDate" Value="2020-07-15T06:47:58.7194768Z" />
+      </Metadata>
+    </Process>
+  </ProcessGroupItems>
+  <Metadata>
+    <ProcessGroupXmlGenerationOptions>
+      <RecursionLevel>Full</RecursionLevel>
+      <IncludeOverviewOnly>false</IncludeOverviewOnly>
+      <IncludeUnpublished>true</IncludeUnpublished>
+      <IncludeEmbedded>false</IncludeEmbedded>
+      <StubProcesses>false</StubProcesses>
+    </ProcessGroupXmlGenerationOptions>
+  </Metadata>
+</ProcessGroup>

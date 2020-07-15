@@ -1,0 +1,160 @@
+<Process Id="554" Name="Rechnungseingangsprüfung " ReferenceNo="" Objective="Beschreibung eines Rechnungsprüfungsprozesses in Deutschland" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Unsere Firma erhält ca. 100 Eingangsrechnungen pro Tag" Owner="James Bond" OwnerId="1052" Expert="Miss Moneypenny" ExpertId="1077" Group="Accounts Payable" GroupId="238" GroupUniqueId="d29423d0-720c-4ea0-85fc-49f25adc41f9" State="Active" StateId="1" Version="32.0" PromappVersion="4.8.3.16" UniqueId="d6296ccd-d1aa-4fc5-871c-6190c0b534ec" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="238" UniqueId="d29423d0-720c-4ea0-85fc-49f25adc41f9" Name="Accounts Payable" ProcessGroupItemId="4860" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="164" Trigger="Prüfung der Rechnung" Frequency="ad hoc" Volume="5 mal am Tag" UniqueId="3c6532cb-747b-43fd-bb6b-f47a63b08bd9" />
+  </Triggers>
+  <Inputs>
+    <Input Id="195" FromProcess="N/A" Resource="Eingangsrechnungen" HowUsed="Freigabe und Zahlung der Eingangsrechnung" UniqueId="767700e4-ee4d-4801-b76a-0e5f3cdbac07" />
+  </Inputs>
+  <ProcessProcedures>
+    <Activity Id="11042" UniqueId="e06db919-7c15-4a8b-8702-0944f8289dfa" Number="1.0" Order="0">
+      <Text>Sachlicheprüfung durchführen</Text>
+      <Ownerships>
+        <Role Id="220" Name="Posteingang" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="6.5104166666666666666666666665" AverageCostPerHour="13.02" />
+      <ChildProcessProcedures>
+        <Task Id="11049" UniqueId="0db41851-6c20-4e40-8286-951bc288ae52" Order="1" Number="1.0.1">
+          <Text>Rechnung auf sachliche Richtigkeit gemäß § 14 Abs. 4 UStG prüfen.</Text>
+        </Task>
+        <WebLink Id="11050" UniqueId="a3aaab64-33bd-4c5f-835c-283e2d71341e" Order="2" Number="">
+          <Text>Beschreibung zu § 14 Abs. 4 UStG</Text>
+          <Attachment>https://www.sage.com/de-de/blog/lexikon/rechnungspruefung/</Attachment>
+        </WebLink>
+        <Information Id="11051" UniqueId="cb83ed9a-d334-45a5-bdaa-adddb461f2b2" Order="3" DocumentId="357" DocumentUniqueId="1cc95844-fa1f-472a-b14e-d0ad1d275f9e" UploadId="392" Number="">
+          <Text>UStG_Checkliste.pdf</Text>
+        </Information>
+        <Task Id="11052" UniqueId="0c795b52-aef6-4632-b0a7-d3b5b2198560" Order="4" Number="1.0.2">
+          <Text>Kontierungsstempel auf Rechnung aufbringen und ggf. KST zu ordnen, wenn erkentlich ist welche KST es betrifft.</Text>
+        </Task>
+        <Task Id="11053" UniqueId="f99e6ca5-d4b8-4dba-94fc-a8ec62792e1a" Order="5" Number="1.0.3">
+          <Text>Ist die Rechnung ok, dann an die FIBU zur weiteren Bearbeitung weiterleiten.</Text>
+        </Task>
+        <Note Id="11054" UniqueId="e2ba6f3e-91b6-46f6-9e36-1ca16e346349" Order="6" LinkedProcessId="547" LinkedProcessName="Zurück zur Lieferant" Number="">
+          <Text>Was passiert, wenn die Rechnung sachlich nicht korrekt ist?</Text>
+          <Attachment>Bitte hier den Lieferranten kontaktieren und um Korrektur der Rechnung oder sogar eine neue Rechnung anfordern. Auf die neue Rechnung warten und den Prozess erneut starten.  Auftragsart_Customizing</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11043" UniqueId="07949679-56f5-4f66-ad16-e9811cfa09f1" Number="2.0" Order="7">
+      <Text>Prüfen ob es sich um eine Rechnung mit oder ohne Bestellbezug handelt</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="15.625" AverageCostPerHour="31.25" />
+      <ChildProcessProcedures>
+        <Task Id="11055" UniqueId="e6997920-c9a6-404e-bdc1-f277e998eaee" Order="8" Number="2.0.1">
+          <Text>Prüfen ob es sich um eine Rechnung mit oder ohne Bestellbezug handelt.</Text>
+        </Task>
+        <Note Id="11056" UniqueId="a034f957-9fd1-467a-bb50-79de4186dbd0" Order="9" Number="">
+          <Text>Wie ist das Vorgehen, wenn eine Rechnung mit Bestellbezug (RMB) vorliegt?</Text>
+          <Attachment>Da eine Bestellung zu grunde liegt, kann die Rechnung sofort ohne Freigabe, an die Buchhaltung zur Zahlung weitergleitet werden. Der Freigabeprozess wurde bereits durch die Bestellung ausgelöst.</Attachment>
+        </Note>
+        <Note Id="11057" UniqueId="0e17fba9-80eb-4230-8570-84f056b0c479" Order="10" Number="">
+          <Text>Wie ist das Vorgehen, wenn eine Rechnung ohne Bestellbezug (ROB) vorliegt?</Text>
+          <Attachment>Der Prozess wird wie folgt weiter durchgeführt</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Decision Id="11434" UniqueId="8cb233f1-fcc2-995b-1c09-05d0bebd2ae1" Number="0.0" Order="11" LinkedProcessId="456" DecisionLinkIsYes="true" DecisionLinkType="ProcessLink" LinkedProcessName="Zahlung in SAP anweisen" LinkedProcessUniqueId="6a37d4d2-090e-456f-9438-20ae79882aca">
+      <Text>Vorgehen bei RMB</Text>
+      <Ownerships>
+        <DecisionOrphanRole Id="104" Name="Finance" IsVirtual="true" />
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="0" />
+    </Decision>
+    <Activity Id="11045" UniqueId="a84fe9eb-6121-4178-bc70-c5c05b97c6c6" Number="3.0" Order="12">
+      <Text>Kostenstellenzuordnung</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="1d" ProportionOfTimeInTotal="1" ProcessProcedureCost="4.3402777777777864583333333334" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="11058" UniqueId="20c4daae-a5ce-4808-9901-2cb4105905c7" Order="13" Number="3.0.1">
+          <Text>Rechnung prüfen, KST hinterlegen und zur Zahlungsfreigabe weiterleiten.</Text>
+        </Task>
+        <Note Id="11059" UniqueId="f4c210d5-ec4e-452f-b5dd-cc74608c7955" Order="14" Number="">
+          <Text>Wie muss ich vorgehen, wenn die Rechnung nicht korrekt ist?</Text>
+          <Attachment>Kontaktieren, Sie den Lieferranten und klären die Misstände. Wenn eine neue Rechnung vom Lieferranten erstellt werden muss, wird der Prozess wieder erneut vom Anfangspunkt durchlaufen.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11046" UniqueId="d4f53bfd-fdd1-4146-8cb8-0b071bc21c7d" Number="4.0" Order="15">
+      <Text>Zahlungsfreigabe, wenn Rechnung &gt; 1.000 Euro ist</Text>
+      <Ownerships>
+        <Role Id="5" Name="CEO" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="4.3402777777777864583333333334" AverageCostPerHour="26.04" />
+      <ChildProcessProcedures>
+        <Task Id="11060" UniqueId="f16b18af-c6d4-47b2-bb42-4b27aef15167" Order="16" Number="4.0.1">
+          <Text>Bitte die Rechnung freigeben und an die Buchhaltung zur Zahlung weiterleiten.</Text>
+        </Task>
+        <Note Id="11061" UniqueId="8347ba5e-aad8-4530-8011-d93eb140c5c8" Order="17" Number="">
+          <Text>Welche Schritte muss ich einhalten, wenn es Rückfragen zur Rechnung gibt?</Text>
+          <Attachment>Wenn etwas mit der Rechnung unklar ist oder Sie Rückfragen haben, können Sie die Rechnung mit einem Vermerk an den jeweiligen Kollegen zurück schicken und Ihre Fragen etc. beschreiben. Wenn alles geklärt ist und die Rechnung freigegeben werden kann, diese umgehend an die Buchhaltung zur Zahlung weiterleiten.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11047" UniqueId="ecb92241-fce2-4cce-abc8-b0943ae1350c" Number="5.0" Order="18">
+      <Text>Zahlung anweisen</Text>
+      <Ownerships>
+        <Role Id="104" Name="Finance" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="31.25" AverageCostPerHour="31.25" />
+      <ChildProcessProcedures>
+        <Task Id="11048" UniqueId="7061c7a9-9e97-4000-91dc-2c3da19dc1bc" Order="19" Number="5.0.1">
+          <Ownerships>
+            <Tag Id="52" Name="SAP_FI" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Für die Zahlungen nutzen Sie bitte die Zahlungsmaske in #SAP_FI. Rechnungen werden immer am 20. eines Monats bezahlt.</Text>
+        </Task>
+        <Task Id="11062" UniqueId="b0682aca-c030-40e3-860c-a5da39ddd970" Order="20" Number="5.0.2">
+          <Text>Bezahlte Rechnungen mit einem Vermerk "Bezahlt am (Datum des jeweiligen Tages)" versehen.</Text>
+        </Task>
+        <Task Id="11063" UniqueId="cfd65eae-a000-49ae-922b-460b161be9b4" Order="21" Number="5.0.3">
+          <Text>Rechnung zur Archivierung an die Archivabteilung weiterleiten, Prozess beenden @todo</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords>
+    <SearchKeyword>Rechnungseingangsprüfung</SearchKeyword>
+    <SearchKeyword>Invoice</SearchKeyword>
+    <SearchKeyword>RMB</SearchKeyword>
+    <SearchKeyword>ROB</SearchKeyword>
+  </SearchKeywords>
+  <Outputs>
+    <Output Id="140" Output="Zahlung der Eingangsrechnung" HowUsed="Zahlung der Rechnung nach erfolgreicher Freigabe dieser" ToProcess="N/A" UniqueId="9bdd8d8d-5108-42e7-8584-5a1037cb4e70" />
+  </Outputs>
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="456" Link="Zahlung in SAP anweisen" Owner="Hillary Ling" Expert="Lamar Devlin" ProcessGroup="Sub" />
+    <LinkedStakeholder ProcessId="547" Link="Zurück zur Lieferant" Owner="Marcus Kueppers" Expert="James Bond" ProcessGroup="Sub" />
+  </LinkedStakeholders>
+  <Stakeholders>
+    <Role Id="215" Name="Closer via Location" />
+  </Stakeholders>
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1051" FirstName="Marcus" LastName="Kueppers" Name="Marcus Kueppers" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets>
+    <Target Id="113" Measure="Rechnungen müssen nach der vereinbarten Frist freigegeben werden" Target="Rechnungen müssen innerhalb von 48 Std. freigegeben werden" UniqueId="96c3ee85-926b-453c-b234-bc2164e4b314" />
+  </Targets>
+  <Timeframe TotalCycleTimeDisplay="2h 20m" TotalLeadTimeDisplay="1d *" ProcessTotalCost="62.065972222222239583333333332" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4130" PublishedDate="2020-07-15T06:47:06.1951663Z" PublisherId="1051" Publisher="Marcus Kueppers" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-15T06:47:06.5701602Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-15T06:47:06.5857844Z" />
+  </Metadata>
+</Process>

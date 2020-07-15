@@ -1,0 +1,159 @@
+<Process Id="557" Name="Offboarding eine Mitarbeiters" ReferenceNo="" Objective="In diesem Prozess wird beschrieben, wie das Unternehmen beim Offboarding eines MA verfährt" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Marcus Kueppers" OwnerId="1051" Expert="Marcus Kueppers" ExpertId="1051" Group="Austritte" GroupId="228" GroupUniqueId="1a06e387-324b-4ffd-a02f-53e0f09b674e" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.3.16" UniqueId="82665a6a-e449-43fe-a9f2-d9ff9aaf2418" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="228" UniqueId="1a06e387-324b-4ffd-a02f-53e0f09b674e" Name="Austritte" ProcessGroupItemId="4855" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="11155" UniqueId="609d5c5a-4da1-78ba-fc63-a9dc703c3493" Number="1.0" Order="0">
+      <Text>Offboarding Interview führen</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="11163" UniqueId="5e383d52-8e95-c0b5-f1a6-8bb7e14a5c82" Order="1" Number="1.0.1">
+          <Text>Das Austrittsgespräch ist der Kernpunkt jedes Offboarding-Prozesses. Hier fragt HR nach den Motiven für die Kündigung oder teilt die eigenen Motive mit und es werden die weiteren Schritte besprochen.</Text>
+        </Task>
+        <Task Id="11164" UniqueId="cf351b17-9eac-92ce-598f-127f2d4c02b5" Order="2" Number="1.0.2">
+          <Text>Vereinbarung des letzten Arbeitstags. Dieser Punkt steht immer in Abhängigkeit zur vertraglich vereinbarten Kündigungsfrist.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11156" UniqueId="43e0f091-c0bf-2799-cdeb-e80ac49fea9f" Number="2.0" Order="3">
+      <Text>Offboarding ausführen</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="11165" UniqueId="e97a39aa-1ffd-ec9c-671f-8dc82f1c572f" Order="4" Number="2.0.1">
+          <Text>Kündigungsbestätigung erstellen</Text>
+        </Task>
+        <Task Id="11166" UniqueId="c5fa4257-c30d-19a4-2681-577db02c0325" Order="5" Number="2.0.2">
+          <Text>Abteilungsleiter und Unternehmen über den Austritt informieren</Text>
+        </Task>
+        <Note Id="11167" UniqueId="894c1216-011e-4ca8-4476-8b36af00e0e1" Order="6" LinkedProcessId="526" LinkedProcessName="Stellenbedarfsmeldung" Number="">
+          <Text>Wie ist die Nachfolge bei Kündigung des MA geregelt.</Text>
+          <Attachment>Hierzu stimmt sich die HR Abteilung mit dem Bereichleiter ab und prüft ob diese Stelle neu ausgeschrieben wird oder nicht. Sollte die Stelle neu ausgeschrieben werden, so ist dem folgenden Prozess zu folgen.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11157" UniqueId="452bbdea-033d-9a65-109f-420c8e5980a6" Number="3.0" Order="7">
+      <Text>Offboarding Schritte vor Austritt</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="11168" UniqueId="72161539-922b-ba4e-1660-4983c0d24643" Order="8" Number="3.0.1">
+          <Text>Prüfen ob eine Rückzahlungsvereinbarung besteht</Text>
+        </Task>
+        <Note Id="11169" UniqueId="ee593aed-e33d-67ba-144a-b65cbd9fcbb9" Order="9" LinkedProcessId="558" LinkedProcessName="Rückzahlung bei Austritt eines Mitarbeiters" Number="">
+          <Text>Wie ist das Vorgehen, wenn eine Rückzahlungsvereinbarung besteht.</Text>
+          <Attachment>Hier eine Info an FI geben und dem folgenden Prozess folgen</Attachment>
+        </Note>
+        <Task Id="11170" UniqueId="72b34cf9-9699-edf2-876c-e24bfd44b733" Order="10" Number="3.0.2">
+          <Text>Meldung an PK und AHV etc.</Text>
+        </Task>
+        <Task Id="11171" UniqueId="bd326b0d-a654-9f80-2598-24e9b8837f0d" Order="11" Number="3.0.3">
+          <Text>Meldung an Lohnabrechnung</Text>
+        </Task>
+        <Task Id="11172" UniqueId="805d83ce-bf5f-b224-6523-2b1c95e00cb0" Order="12" Number="3.0.4">
+          <Text>Erstellung eines Arbeitszeugnis. #stopp Dieses wird erst ausgestellt, wenn der Vorgesetzte alle Angaben Arbeitsezeugnisformular ausgefüllt hat.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11158" UniqueId="1f10841c-f4a5-047b-ad06-ceda2d2814b7" Number="4.0" Order="13" ParallelGroupingRef="1">
+      <Text>Aufgaben für den Vorgesetzen</Text>
+      <Ownerships>
+        <Role Id="230" Name="Bereichsleiter" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="11159" UniqueId="28755818-4849-615a-21c5-a30e9a372f8d" Order="14" Number="4.0.1">
+          <Ownerships>
+            <Tag Id="119" Name="NWC" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Formular für die Erstellung eines Arbeitszeugnisses ausfüllen @TODO NWC Formular dafür erstellen und hier einbinden</Text>
+        </Task>
+        <Task Id="11173" UniqueId="3e1745f5-0bd2-e563-921c-6c17dc49f309" Order="15" Number="4.0.2">
+          <Text>Übergabegespräch am letzten Arbeitstag führen</Text>
+        </Task>
+        <Task Id="11174" UniqueId="fc59f051-e9a9-eada-99d2-9d71a1e6b1f7" Order="16" Number="4.0.3">
+          <Text>Abbau von Urlaubstagen, GLAZ und Überstunden planen</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11160" UniqueId="9ee1b450-89de-0cd4-1d6d-e76f1dd4c438" Number="4.1" Order="17" ParallelGroupingRef="1">
+      <Text>Aufgaben für die IT-Abteilung</Text>
+      <Ownerships>
+        <Role Id="239" Name="Abteilungsleiter IT" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="11161" UniqueId="9304669d-a461-a23e-b213-f1c56411b236" Number="4.2" Order="18" ParallelGroupingRef="1">
+      <Text>Aufgaben Org.-Manager</Text>
+      <Ownerships>
+        <Role Id="20" Name="Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="11175" UniqueId="bc45030e-522c-267a-312a-971d61392699" Order="19" Number="4.2.1">
+          <Text>Rückgabe der Firmenschlüssel dokumentieren und Rückgabe per Unterschrift bestätigen lassen</Text>
+        </Task>
+        <Task Id="11176" UniqueId="a79a5660-40ef-f05c-db7d-0f92a83ed422" Order="20" Number="4.2.2">
+          <Text>Rückgabe des Firmengeräte (Gilt nur, wenn dies ein Vertragslicherbestandteil ist) z. B. Handy, Laptop, IPad</Text>
+        </Task>
+        <Task Id="11177" UniqueId="da958533-a802-d55c-4b9f-dea5e2a53a80" Order="21" Number="4.2.3">
+          <Text>Übergabe des Firmenwages (Gilt nur, wenn dies ein Vertragslicherbestandteil ist)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="11162" UniqueId="81bdfdc9-3eee-33cc-6efa-926b18a55393" Number="5.0" Order="22">
+      <Text>Offboarding letzter Arbeitstag</Text>
+      <Ownerships>
+        <Role Id="156" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="11178" UniqueId="d3aee041-9550-d3ae-85f9-d7e10a996d10" Order="23" Number="5.0.1">
+          <Text>Übergabe Abschiedskarte, -geschenk oder Apero</Text>
+        </Task>
+        <Task Id="11179" UniqueId="e23784ea-0e6e-cef8-5ebb-839879f75476" Order="24" Number="5.0.2">
+          <Text>Personalinformation im Intranet veröffentlichen</Text>
+        </Task>
+        <Task Id="11180" UniqueId="e2c219e1-39a2-81a9-56e2-07a6c9fb0502" Order="25" Number="5.0.3">
+          <Text>Personaldossier erstellen, archivieren und Übergabe der alten Bewerbungsunterlagen an den MA</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="558" Link="Rückzahlung bei Austritt eines Mitarbeiters" Owner="Marcus Kueppers" Expert="Marcus Kueppers" ProcessGroup="Finanzbuchhaltung" />
+    <LinkedStakeholder ProcessId="526" Link="Stellenbedarfsmeldung" Owner="James Bond" Expert="Miss Moneypenny" ProcessGroup="Recruitment/On-Boarding" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1051" FirstName="Marcus" LastName="Kueppers" Name="Marcus Kueppers" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4135" PublishedDate="2020-07-03T08:39:19.283" PublisherId="1051" Publisher="Marcus Kueppers" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-14T17:22:43.0959899Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-14T17:22:43.0959899Z" />
+  </Metadata>
+</Process>
