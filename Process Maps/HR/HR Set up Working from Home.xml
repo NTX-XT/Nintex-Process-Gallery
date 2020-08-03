@@ -1,0 +1,106 @@
+<Process Id="775" Name="HR Set up Working from Home" ReferenceNo="" Objective="Establish staff in a work-from-home environment" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Human Resources" GroupId="4" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.19" UniqueId="00a8383b-2b16-4407-860e-9be925a766d5" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" ProcessGroupItemId="5051" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13871" UniqueId="de350e94-adce-6f98-37b9-535f93e97147" Number="1.0" Order="0">
+      <Text>Establish eligibility for working from home</Text>
+      <Ownerships>
+        <Role Id="311" Name="HR Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13881" UniqueId="f31409c1-738d-d16f-a794-08bc01263f3f" Order="1" Number="1.0.1">
+          <Text>Check Employee's role and requirements. Determine which tasks, if any, are location-linked.</Text>
+        </Task>
+        <Task Id="13886" UniqueId="32c06599-8e69-da63-3b3e-3de103d699c2" Order="2" Number="1.0.2">
+          <Text>Review Employee's attendance and performance. Check their last HR review</Text>
+        </Task>
+        <Task Id="13885" UniqueId="8bd5c191-1616-ab1f-6ca9-b03ec3bdf626" Order="3" Number="1.0.3">
+          <Text>Compare the employee's request and circumstances with the company Work From Home policy</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13872" UniqueId="d9eec047-9d0f-3d30-fe8e-0d2bb05b3cae" Number="2.0" Order="4">
+      <Text>Determine their tech requirements</Text>
+      <Ownerships>
+        <Role Id="311" Name="HR Manager" IsVirtual="false" />
+        <Role Id="217" Name="Information Technology" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13884" UniqueId="246add5d-ce13-43ff-0679-b6a99c54dccb" Order="5" Number="2.0.1">
+          <Text>Check the equipment issued to the member of staff</Text>
+        </Task>
+        <Task Id="13883" UniqueId="2aefef7f-ceff-2813-f57e-3d4de207075e" Order="6" Number="2.0.2">
+          <Text>Check the availability of any equipment they require</Text>
+        </Task>
+        <Task Id="13882" UniqueId="5a7e6a35-022f-b7e1-16c5-9a60ff2ab88d" Order="7" Number="2.0.3">
+          <Text>Review the availability of necessary networks</Text>
+        </Task>
+        <Task Id="13887" UniqueId="1251d182-f6b7-d719-30d9-fc300a198037" Order="8" Number="2.0.4">
+          <Text>Confirm they have the necessary access credentials for remote access to relevant systems</Text>
+        </Task>
+        <Task Id="13880" UniqueId="c6b9aa81-c6e7-49ed-d685-6bb7ff77916f" Order="9" Number="2.0.5">
+          <Text>Conduct a security review in conjunction with the Infosec officer</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13873" UniqueId="51c40440-0490-d482-c6c1-45e3af5a8dbd" Number="3.0" Order="10">
+      <Text>Communicate expectations for remote work</Text>
+      <Ownerships>
+        <Role Id="311" Name="HR Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13879" UniqueId="a4d4433a-3b30-4748-6cc7-07891b317dda" Order="11" Number="3.0.1">
+          <Text>Provide clear guidelines in writing for the Employee to ensure mutual understanding</Text>
+        </Task>
+        <Task Id="13878" UniqueId="932ddc41-270f-7ea9-ace3-f93f2808f0f5" Order="12" Number="3.0.2">
+          <Text>Include the expectations around:|~|Times and days to be worked|~|Reporting and activity metrics to be kept|~|Time management or tracking tools (if any) to be used</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13874" UniqueId="1d1f1e4b-34a1-aa7f-6db1-a058f5565dd7" Number="4.0" Order="13">
+      <Text>Monitor the experience</Text>
+      <Ownerships>
+        <Role Id="311" Name="HR Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13877" UniqueId="679d5b85-f8bb-b710-c354-53b00c9a2847" Order="14" Number="4.0.1">
+          <Text>Check in regularly with the remote worker</Text>
+        </Task>
+        <Task Id="13876" UniqueId="a83ccd58-5ca7-7a47-1537-f6ac039fc893" Order="15" Number="4.0.2">
+          <Text>Conduct regular informal reviews covering:|~|Good working habits (breaks, time management, accountability)|~|Working conditions and environment|~|Mental health and connectedness with team</Text>
+        </Task>
+        <Task Id="13875" UniqueId="cb6bbf1d-586a-0378-16ca-f573b2c0cedf" Order="16" Number="4.0.3">
+          <Text>Adjust the working-from-home plan as required based on ongoing observtions</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4091" PublishedDate="2020-07-29T10:20:05.6724497Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-29T10:20:05.8766554Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-29T10:20:05.8766554Z" />
+  </Metadata>
+</Process>

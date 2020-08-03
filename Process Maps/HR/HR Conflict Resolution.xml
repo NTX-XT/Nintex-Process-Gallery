@@ -1,0 +1,104 @@
+<Process Id="776" Name="HR Conflict Resolution" ReferenceNo="" Objective="Conduct healthy and helpful conflict resolution within an organization" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Human Resources" GroupId="4" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.19" UniqueId="15df62c8-0fd2-4fd6-8bc4-99e76feab022" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" ProcessGroupItemId="5054" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13888" UniqueId="d4818aff-901d-820d-ca98-a7335fd80fc0" Number="1.0" Order="0">
+      <Text>Gather details of the conflict</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13893" UniqueId="833ac80c-8b3b-4c30-a93a-9bd374f9137d" Order="1" Number="1.0.1">
+          <Text>Discuss the issue with each of the parties involved separately</Text>
+        </Task>
+        <Task Id="13894" UniqueId="bf55ad29-cc97-4786-fae0-6e30e0fef1c2" Order="2" Number="1.0.2">
+          <Text>Determine if there has been an HR breach that requires formal action</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13889" UniqueId="67e4e3f7-30bf-d88d-fbf1-d74286f4f9e5" Number="2.0" Order="3">
+      <Text>Schedule a meeting</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13895" UniqueId="5c676b31-96a6-bee6-2a8d-a1c4f1395e0f" Order="4" Number="2.0.1">
+          <Text>Invite the involved parties to a meeting to discuss the issue. Encourage them to seek support if required as per the HR manual</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13890" UniqueId="133d42b3-1330-3307-ccb1-206e7c2d1773" Number="3.0" Order="5">
+      <Text>Mediate the meeting</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13896" UniqueId="dd86ca89-1bf8-9298-b887-a7eaa487b0b5" Order="6" Number="3.0.1">
+          <Text>Listen to both parties. Reflect their grievances to ensure understanding.</Text>
+        </Task>
+        <Task Id="13897" UniqueId="851e449b-fed3-1821-025b-78945e398a5d" Order="7" Number="3.0.2">
+          <Text>Identify the underlying issues</Text>
+        </Task>
+        <Task Id="13898" UniqueId="dfd55592-7ac3-f813-0345-40407c006038" Order="8" Number="3.0.3">
+          <Text>Brainstorm solutions to the problem(s)</Text>
+        </Task>
+        <Task Id="13899" UniqueId="cd797b72-e03f-1f88-54de-f59fae9d9bc1" Order="9" Number="3.0.4">
+          <Text>Summarize any viable options for resolution. Identify fair compromises where required.</Text>
+        </Task>
+        <Task Id="13900" UniqueId="3a759850-d9b9-2a5f-4520-43c45239d5b8" Order="10" Number="3.0.5">
+          <Text>Agree on the next steps to be taken</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13891" UniqueId="f493fad8-a3df-35a0-47f6-ba5aaabd818a" Number="4.0" Order="11">
+      <Text>Plan and schedule a follow-up review</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13901" UniqueId="dc807772-5c34-7467-97d0-c1be72d1cfa1" Order="12" Number="4.0.1">
+          <Text>Record the outcomes, decisions and any notes on the meeting</Text>
+        </Task>
+        <Task Id="13902" UniqueId="37e7a30d-24e0-bdf2-07f1-839153854490" Order="13" Number="4.0.2">
+          <Text>Schedule a follow-up meeting if required to review the steps decided</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13892" UniqueId="6487aa4c-6de0-1f59-26f0-4f9ee3d9a707" Number="5.0" Order="14">
+      <Text>Follow-up the action points with all parties</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4092" PublishedDate="2020-07-29T10:34:12.7499232Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-29T10:34:12.9379688Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-29T10:34:12.9379688Z" />
+  </Metadata>
+</Process>

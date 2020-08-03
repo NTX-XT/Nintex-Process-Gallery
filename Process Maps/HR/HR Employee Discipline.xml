@@ -1,0 +1,139 @@
+<Process Id="777" Name="HR Employee Discipline" ReferenceNo="" Objective="Conduct a disciplinary action with an employee" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Human Resources" GroupId="4" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.3.19" UniqueId="b9b37c7f-1290-4fca-bf8d-b5b55141317b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" ProcessGroupItemId="5059" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13903" UniqueId="249b8d6e-a38f-b120-85ed-bdee748b2890" Number="1.0" Order="0">
+      <Text>Identify the issue in conduct or performance</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="13918" UniqueId="9dadd109-8df9-beb1-0e04-cb42a39d176c" Order="1" Number="1.0.1">
+          <Text>Gather records of the issue, + any documentation or policies that relate</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13904" UniqueId="9ec89ee8-54b5-a9dd-bcf7-f0622373fcd6" Number="2.0" Order="2">
+      <Text>Decide the level of action required</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="13920" UniqueId="beaeacf0-dde2-af6d-e3cb-b5beb1e9fa3a" Order="3" Number="2.0.1">
+          <Text>Determine the severity of the issue being raised</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13905" UniqueId="a5c6470c-a707-5180-2c0f-1679f83b955f" Number="3.0" Order="4">
+      <Text>Schedule a disciplinary meeting</Text>
+      <Ownerships>
+        <Role Id="90" Name="Employee" IsVirtual="false" />
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13906" UniqueId="dcbadc9b-99a4-e7e1-5ce6-21bd560a2b2e" Number="4.0" Order="5">
+      <Text>Explain the issue</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="13919" UniqueId="9f5ca82e-0501-c017-a460-f7c36fb6e6cb" Order="6" Number="4.0.1">
+          <Text>Outline the deficit in behavior or performance</Text>
+        </Task>
+        <Task Id="13921" UniqueId="34eb8071-84e6-6e61-135a-9a6012a0b831" Order="7" Number="4.0.2">
+          <Text>Review the expectations of employees in the relevant role</Text>
+        </Task>
+        <Task Id="13917" UniqueId="57831a9f-362f-f8be-c5d5-7988f929362b" Order="8" Number="4.0.3">
+          <Text>Outline the defined consequences for failure to adhere to the requirements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13907" UniqueId="d48c2215-adcd-95cb-ac3e-af0d282bc1eb" Number="5.0" Order="9" ParallelGroupingRef="1">
+      <Text>Issue a verbal warning</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13908" UniqueId="db415cef-f61a-580d-0d13-9cebcd22f9c5" Number="5.1" Order="10" ParallelGroupingRef="1">
+      <Text>Issue a written warning</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13909" UniqueId="27ba172f-7c5c-24f9-c205-6138a1d82944" Number="6.0" Order="11">
+      <Text>Establish a timeline for improvement</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="13916" UniqueId="c3104aaf-c16d-18a3-bcf5-af9a5fe65491" Order="12" Number="6.0.1">
+          <Text>Consider any training or retraining required</Text>
+        </Task>
+        <Task Id="13915" UniqueId="23692bcc-de43-8e0f-89fb-7f994d055170" Order="13" Number="6.0.2">
+          <Text>Schedule any reviews to check progress</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13910" UniqueId="6bd430fd-51a6-6cb8-eeed-393dc4abaf05" Number="7.0" Order="14">
+      <Text>Schedule a review meeting</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="13914" UniqueId="d78aed11-bbe9-e9b6-aba8-a909d89f4735" Order="15" Number="7.0.1">
+          <Text>Set a timeline to follow up the meeting outcomes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13911" UniqueId="d0db73d9-4ec9-3895-d06b-f853ae2f7a82" Number="8.0" Order="16">
+      <Text>Document the meeting</Text>
+      <Ownerships>
+        <Role Id="275" Name="HR" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="13913" UniqueId="d7e6feeb-b60c-484c-618e-f3c668795851" Order="17" Number="8.0.1">
+          <Text>Complete any notes on the discussion, action taken and outcomes</Text>
+        </Task>
+        <Task Id="13912" UniqueId="5167fdd9-1896-b5af-baa8-4411783a07f6" Order="18" Number="8.0.2">
+          <Text>Add the notes to the employee file</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4097" PublishedDate="2020-07-29T10:48:49.8037165Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-29T10:48:49.9131007Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-29T10:48:49.9131007Z" />
+  </Metadata>
+</Process>

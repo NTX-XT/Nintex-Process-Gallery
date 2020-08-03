@@ -1,0 +1,130 @@
+<Process Id="774" Name="HR Health and Safety Site Hazard Management" ReferenceNo="" Objective="Outline the steps and requirements for hazard management in the workplace" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Human Resources" GroupId="4" GroupUniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.3.19" UniqueId="51cdefb8-605b-487b-9b58-2181ea88e300" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="4" UniqueId="5c296363-7805-481f-8fa8-e6d3d916dc69" Name="Human Resources" ProcessGroupItemId="5048" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13851" UniqueId="d30dbc3d-678d-fe08-1494-c2a31f3872f6" Number="1.0" Order="0">
+      <Text>Assign Health and Safety Coordinators by physical location</Text>
+      <Ownerships>
+        <Role Id="196" Name="Health and Safety Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13852" UniqueId="86468e24-2c99-769a-26a7-bafa21377fb5" Number="2.0" Order="1">
+      <Text>Identify hazards in the workplace</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+        <Role Id="196" Name="Health and Safety Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13869" UniqueId="d3d60af0-7dd5-061b-2653-33a31aa2e989" Order="2" Number="2.0.1">
+          <Text>Visually inspect the workplace and record the hazards as they are identified</Text>
+        </Task>
+        <Task Id="13868" UniqueId="535d8998-cee9-4f81-4aef-056f5a381995" Order="3" Number="2.0.2">
+          <Text>Keep in mind all types of hazards that could be present:|~|Physical hazards - trips, sharp objects, risks of falls or physical impact|~|Ergonomic hazards - hazards from working positions and practices|~|Biological hazards - blood, mold, fungi, animals etc|~|Chemical hazards - risks of exposure to chemical agents or their effects|~|Psycho-social hazards - stress, harassment, workplace violence and bullying</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13853" UniqueId="cd018e74-381d-4d3b-f945-fa31080d9849" Number="3.0" Order="4">
+      <Text>Assess the risk significance</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+        <Role Id="196" Name="Health and Safety Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13867" UniqueId="598da03c-5d4d-c31b-310f-d47163326844" Order="5" Number="3.0.1">
+          <Text>Hazards are elements that may cause harm. Risks are the potential outcomes of hazards being present. A worn rug is a hazard, and the risk is that someone may catch their foot, trip and fall.</Text>
+        </Task>
+        <Task Id="13866" UniqueId="f93ae13f-3b3b-7070-6a09-b2ab0129534d" Order="6" Number="3.0.2">
+          <Text>Risk significance is a factor of the likelihood of harm occurring and the severity of that potential harm.|~|Measure likelihood as Unlikely, Likely, or Probable|~|Measure severity as Minor, Serious, or Major</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13854" UniqueId="12865ab3-7033-a8d7-59a3-c8cacc416466" Number="4.0" Order="7">
+      <Text>Apply controls to mitigate the risks</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+        <Role Id="196" Name="Health and Safety Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13870" UniqueId="59f8c8d4-cdf0-06e8-6966-3894cfcd24b8" Order="8" Number="4.0.1">
+          <Text>Risk controls must be as effective as is reasonably practical. While some solutions are able to be applied, they may not be reasonable, or practical, or effective.</Text>
+        </Task>
+        <Task Id="13864" UniqueId="91541f0a-41c8-d13a-6f92-44e1a3d3c4f4" Order="9" Number="4.0.2">
+          <Text>Eliminate risks where possible</Text>
+        </Task>
+        <Task Id="13863" UniqueId="22f869e5-e51c-e3c3-26ef-07137ee1090a" Order="10" Number="4.0.3">
+          <Text>If risks cannot be eliminated, isolate workers from the hazard</Text>
+        </Task>
+        <Task Id="13865" UniqueId="1186d41d-7033-576b-8bf0-a312edaf3ec7" Order="11" Number="4.0.4">
+          <Text>If the hazard cannot be isolated, minimise the potential risks as much as possible</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13855" UniqueId="8656c6b8-0339-be3a-2d47-60bd112e096e" Number="5.0" Order="12">
+      <Text>Review the hazard control scheme established</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+        <Role Id="196" Name="Health and Safety Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13862" UniqueId="97b520a0-0be0-6c1c-ad9f-979b34ee8803" Order="13" Number="5.0.1">
+          <Text>Confirm the controls decided have been implemented in a timely manner</Text>
+        </Task>
+        <Task Id="13861" UniqueId="0587b762-c4d0-fff0-f839-52dbed64d947" Order="14" Number="5.0.2">
+          <Text>Review the effectiveness of the chosen control measures</Text>
+        </Task>
+        <Task Id="13860" UniqueId="68472069-fa3c-5dd2-f060-e1bcb8494e2d" Order="15" Number="5.0.3">
+          <Text>Schedule a planned monitoring cycle for the hazards and controls</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13856" UniqueId="106a66dd-08fe-1a3c-eaf9-03e24b2c5d77" Number="6.0" Order="16">
+      <Text>Monitor the hazards and controls regularly</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+        <Role Id="196" Name="Health and Safety Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13859" UniqueId="abeed402-0615-6726-f562-145e8f763fe7" Order="17" Number="6.0.1">
+          <Text>Regularly review the hazards and controls.</Text>
+        </Task>
+        <Task Id="13858" UniqueId="440ddf33-cced-1e4e-59b3-e09d049c5388" Order="18" Number="6.0.2">
+          <Text>Are the controls still effective?|~|Do new hazards exist that have not been assessed and controlled?</Text>
+        </Task>
+        <Task Id="13857" UniqueId="f13dfb78-0d78-b4f1-7b9c-d106fd1b5001" Order="19" Number="6.0.3">
+          <Text>Record the review details in the Health and Safety register for audit records.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4090" PublishedDate="2020-07-29T10:00:06.5210863Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-07-29T10:00:06.7598989Z" />
+    <MetadataItem Name="CachedOn" Value="2020-07-29T10:00:06.7598989Z" />
+  </Metadata>
+</Process>
