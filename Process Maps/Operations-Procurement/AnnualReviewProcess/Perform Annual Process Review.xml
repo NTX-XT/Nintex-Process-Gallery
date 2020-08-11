@@ -1,0 +1,246 @@
+<Process Id="574" Name="Perform Annual Process Review" ReferenceNo="" Objective="Review and update process to ensure process is accurate, process is performing as designed (active time/ wait time), improvements have been incorporated, and process documents are up-to-date and relevant." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="Clear and disciplined process management is key to sustaining improvements and changing our culture. All processes should be maintained continuously by the Owner and Expert, under the supervision of a Group Champion. However, each process is required to undergo a formal review by Owner and Expert once every twelve months. This process will guide the Owner and Expert through performing an annual process review." Owner="Needs to be reassigned N/A" OwnerId="2" Expert="Needs to be reassigned N/A" ExpertId="2" Group="Matt's Test Group" GroupId="222" GroupUniqueId="7c649adf-a775-47ff-a8e6-8e8f41bfb932" State="Active" StateId="1" Version="8.0" PromappVersion="4.8.3.20" UniqueId="8a3a5e41-b1fc-4fb0-b97a-c3774acbbd70" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="222" UniqueId="7c649adf-a775-47ff-a8e6-8e8f41bfb932" Name="Matt's Test Group" ProcessGroupItemId="12824" />
+  </ProcessGroupItems>
+  <Triggers>
+    <Trigger Id="169" Trigger="&quot;Next Review Date&quot; in process summary bar is expired." Frequency="Yearly" Volume="One review per process per year." UniqueId="7d7117a2-e472-48b5-9fbb-5b65a6b1db2e" />
+  </Triggers>
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="12164" UniqueId="0d25b08e-a3d8-4263-ac0a-55c9eba97bc7" Number="1.0" Order="0">
+      <Text>Check Process Formatting</Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="20m" LeadTimeDisplay="20m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="17.361111111111093750000000000" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12165" UniqueId="0c1b8e3c-cf43-434a-939c-b6f6ecef53d9" Order="1" Number="1.0.1">
+          <Text>Follow Process Creation Checklist guide to verify process formatting. </Text>
+        </Task>
+        <WebLink Id="17736" UniqueId="f0828763-9ced-075c-c9da-5bf4f171f911" Order="2" Number="">
+          <Text>Process Creation Checklist</Text>
+          <Attachment>https://go.promapp.com/promapp/Documents/Minimode/Permalink?crypto=EPoe5B9Odhm0r1wbIRNvyS</Attachment>
+        </WebLink>
+        <Task Id="12167" UniqueId="4c91f8aa-ed50-4de7-8948-7449e817f600" Order="3" Number="1.0.2">
+          <Ownerships>
+            <Tag Id="17" Name="Nintex-Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Review Create or Edit a Process training from Promapp if you need a refresher before modifying your process.</Text>
+        </Task>
+        <WebLink Id="12168" UniqueId="4a396c84-c70c-4774-b6e9-0859132914b0" Order="4" Number="">
+          <Text>Create or Edit a Process Training</Text>
+          <Attachment>https://www.youtube.com/watch?v=-RRZLnXg_Vc</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12169" UniqueId="add65615-ddc8-4d0e-9e39-0350f0f1230a" Number="2.0" Order="5">
+      <Text>Assess Process Content</Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2h" LeadTimeDisplay="3d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="104.16666666666666666666666667" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12170" UniqueId="564c78d5-f604-48c6-9b1f-e9747e49a9a1" Order="6" Number="2.0.1">
+          <Text>Review process activity flow for accuracy.</Text>
+        </Task>
+        <Task Id="12171" UniqueId="e533f5b2-46c3-4a07-b9a9-3f3ed2e29a63" Order="7" Number="2.0.2">
+          <Text>Review task level detail for accuracy</Text>
+        </Task>
+        <Task Id="12172" UniqueId="83b86aac-3f4d-4f13-aec2-bceb48bcd515" Order="8" Number="2.0.3">
+          <Text>Review process boundaries and detail for accuracy.</Text>
+        </Task>
+        <Note Id="12173" UniqueId="97f59f3d-aa08-4f52-b270-f52ab1ad463b" Order="9" Number="">
+          <Text>What questions should we ask when checking process boundaries and detail?</Text>
+          <Attachment>- Is the process objective accurate?|~|- Does the process background effectively set the context for this process?|~|- Are the process triggers and inputs accurate? Are the correct "from processes" linked in the inputs?|~|- Are the process outputs accurate? Are the correct "to processes" linked in the outputs?|~|- Do the 'Notes' properly acknowledge and answer the common questions or variants that exist in the process?|~|- Do the swimlanes accurately reflect the roles that leads the completion of each activity?|~||~|</Attachment>
+        </Note>
+        <Task Id="12174" UniqueId="4675ccca-fcf1-4978-906b-0f59278f7ca9" Order="10" Number="2.0.4">
+          <Text>Solicit and obtain feedback from 3 separate employees who regularly perform process.</Text>
+        </Task>
+        <Task Id="12175" UniqueId="4d1a7729-bc3e-4c4d-868d-a59607ad1ab6" Order="11" Number="2.0.5">
+          <Text>Review feedback from employees and modify process as needed.</Text>
+        </Task>
+        <Note Id="12176" UniqueId="df2294fa-ac81-429f-af34-d3b2902d30a4" Order="12" Number="">
+          <Text>Do I need to incorporate all feedback from employee review?</Text>
+          <Attachment>Not necessarily. All comments submitted during the employee review should be analyzed by the Owner and Expert using the 80/20 rule. We want to communicate what happens the majority of the time when performing this process. |~||~|If employee review comments accurately reflect the common process flow (the 80% of the 80/20 rule), then the process should be updated to reflect that flow. |~||~|If employee review comments address process relevant variants (the 20% of the 80/20 rule), these should be addressed in the process using the 'Note' feature.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12177" UniqueId="7f657724-4905-4f34-9e04-e77beab94ce0" Number="3.0" Order="13">
+      <Text>Update Process Timeframes </Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2h" LeadTimeDisplay="2d" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="104.16666666666666666666666667" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12178" UniqueId="ca817c63-c9ee-49b6-bb70-7b2afb4e9959" Order="14" Number="3.0.1">
+          <Text>Collect timeframe data by interviewing at least 3 relevant process workers.</Text>
+        </Task>
+        <Note Id="12179" UniqueId="bbbc179d-e3bb-4be1-bd76-506f32e78f0a" Order="15" Number="">
+          <Text>How accurate does the performance data need to be?</Text>
+          <Attachment>We want to obtain directionally correct data. This means the data needs to be accurate enough to result in solid conclusions and relevant decisions regarding performance of the process. We do not need to conduct operational research and measure with high degrees of precision. Follow the same 80/20 rule we use for process flow.</Attachment>
+        </Note>
+        <Task Id="12180" UniqueId="51869692-1488-47b8-b5c5-e73cc6902edf" Order="16" Number="3.0.2">
+          <Text>Verify collected timeframe data by timing yourself while completing the process.</Text>
+        </Task>
+        <Note Id="12181" UniqueId="75f0f8dc-cd24-4ff8-bdba-1744800bca5e" Order="17" Number="">
+          <Text>How do I gather performance data if there is not a business need for me to perform this process right now?</Text>
+          <Attachment>For processes that are performed at a low volume (monthly, quarterly, yearly, etc.), you may need to measure the active time by timing a "dry-run" of the process. You will not be able to gather accurate wait time data through a "dry-run."</Attachment>
+        </Note>
+        <Task Id="12182" UniqueId="7449501b-47e1-4786-9fef-935ae941eacc" Order="18" Number="3.0.3">
+          <Text>Make any needed changes to the process timeframe data.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12184" UniqueId="173f380c-bb04-4bc0-b68a-e29acfcc9e95" Number="4.0" Order="19">
+      <Text>Incorporate Improvement Ideas</Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1h" LeadTimeDisplay="1h" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="52.083333333333333333333333333" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12185" UniqueId="3a6f2009-08f0-4284-b3fe-255d73a1697a" Order="20" Number="4.0.1">
+          <Text>Review 'Feedback' tab and ensure all open feedback items have been addressed AND labeled "mark as answered." </Text>
+        </Task>
+        <Note Id="12187" UniqueId="766be1aa-d661-400f-9c10-fe8db21803aa" Order="21" Number="">
+          <Text>What if we are not sure how to handle an improvement suggestion?</Text>
+          <Attachment>Contact your Group Champion and discuss the improvement idea with them. If further consultation is needed, or you do not have a Group Champion, contact a Promaster.</Attachment>
+        </Note>
+        <Task Id="12188" UniqueId="c2d87223-e2de-46a5-961d-bb5dbd81e40c" Order="22" Number="4.0.2">
+          <Text>Incorporate all relevant improvement suggestions into process.</Text>
+        </Task>
+        <Note Id="12189" UniqueId="c816d0f6-47d2-4ea1-a889-df80c4814b6d" Order="23" Number="">
+          <Ownerships>
+            <Tag Id="1" Name="SAP" IsDisassociated="true" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What type of improvement suggestions are typically NOT incorporated into the process?</Text>
+          <Attachment>Although we value all feedback from users, some ideas are too large in scope to be considered at the process level. Almost always, these large scope improvement ideas relate to technology. For example, a user may suggest that we "eliminate our ERP and switch to another software" that they may have used at a previous company. |~||~|These type of feedback suggestions should be acknowledged and responded to, but are typically not the level of improvements managed at the process level. Please contact your Group Champion or a Promaster if you have any questions.</Attachment>
+        </Note>
+        <Task Id="12190" UniqueId="da521af5-0d0a-4e5f-9a9b-6b4f852e73c0" Order="24" Number="4.0.3">
+          <Text>Verify you have replied to all users who have left feedback.</Text>
+        </Task>
+        <Task Id="12191" UniqueId="62e3cdd5-9288-40b0-8585-c81511560be2" Order="25" Number="4.0.4">
+          <Text>Review process with Owner/ Expert and incorporate improvement ideas from that "self review."</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12192" UniqueId="8bc59be6-a11c-4358-af68-f6c02a9a5656" Number="5.0" Order="26">
+      <Text>Audit Process Documents</Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="4h" LeadTimeDisplay="4h" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="208.33333333333333333333333333" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12193" UniqueId="6b3c0564-62d4-4cc6-8452-4b60d7f01b02" Order="27" Number="5.0.1">
+          <Text>Review all documents attached or linked in the process for correctness.</Text>
+        </Task>
+        <Task Id="12194" UniqueId="c7484551-fd5f-42f5-aa3b-48f9d92c8f3f" Order="28" Number="5.0.2">
+          <Text>Make any needed changes to document.</Text>
+        </Task>
+        <Note Id="12195" UniqueId="eec3676d-fe4e-42a2-8d02-a4f9fdfe2e69" Order="29" Number="">
+          <Ownerships>
+            <Tag Id="17" Name="Nintex-Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What if I am not the owner of the document?</Text>
+          <Attachment>Identify the owner of the document located in the "Documents" drop down menu at the top of the Promapp webpage. Send your updated document to original Document Owner for review. Once approved by the original Document Owner, ask that they update the document by selecting "replace with new version."</Attachment>
+        </Note>
+        <Task Id="12196" UniqueId="d8fed148-1246-4416-ae9f-4422ca4dd09d" Order="30" Number="5.0.3">
+          <Text>Replace old document by attaching or linking new document in its place.</Text>
+        </Task>
+        <Task Id="21029" UniqueId="6fa1790b-0eef-b41d-c047-5fd66c4dc3aa" Order="31" Number="5.0.4">
+          <Ownerships>
+            <Tag Id="17" Name="Nintex-Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Reference Promapp help guide, if needed.</Text>
+        </Task>
+        <WebLink Id="21030" UniqueId="87a6396e-101b-8f06-8d03-5a160762bd76" Order="32" Number="">
+          <Ownerships>
+            <Tag Id="17" Name="Nintex-Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Upload and Link Documents in Promapp</Text>
+          <Attachment>https://help.nintex.com/en-US/promapp/Documents/Docs.htm</Attachment>
+        </WebLink>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12198" UniqueId="98290ee5-4731-48cb-b246-7e4ddba6f3cd" Number="6.0" Order="33">
+      <Text>Add / Edit Search Keywords</Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="8.680555555555572916666666667" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12199" UniqueId="06bf7b57-89d4-4862-8f7d-58a6c973d00e" Order="34" Number="6.0.1">
+          <Text>Click the "Edit" tab -&gt; Summary and check for any search keywords</Text>
+        </Task>
+        <Task Id="12203" UniqueId="3e155f21-dee7-4412-9a3f-8a689b3ab665" Order="35" Number="6.0.2">
+          <Text>Type all common search terms in the search keyword field pressing "Enter" to lock in each term.</Text>
+        </Task>
+        <Note Id="12205" UniqueId="f106d6fe-82af-4599-ae87-8c4b8d6daa22" Order="36" Number="">
+          <Text>What is the benefit of utilizing Search Keywords?</Text>
+          <Attachment>Using the search keywords feature allows us to include common search terms for a process that are not used in the name of the process. For example: in the "Pay Vendor Invoice" process, adding a search keyword tag labeled "supplier" or "payment" would query the correct process if an end-user searched for those terms instead of "Pay Vendor Invoice." This feature allows us to cast a wider net when querying search results.</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="12206" UniqueId="390894d1-517d-46d7-9b40-92a860f13389" Number="7.0" Order="37">
+      <Text>Mark "Reviewed It" and Publish New Version, if needed</Text>
+      <Ownerships>
+        <Role Id="229" Name="Process Owners/Experts" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="30m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="26.041666666666666666666666666" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="12207" UniqueId="10bcefbd-dcc9-4bb9-9f4a-ee0510fcfd71" Order="38" Number="7.0.1">
+          <Ownerships>
+            <Tag Id="17" Name="Nintex-Promapp" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Navigate to the "My Reviews" link from your "My Dashboard" dropdown in Promapp. </Text>
+        </Task>
+        <Task Id="12208" UniqueId="cd00224f-5fa1-41be-a027-6ad0d5d08713" Order="39" Number="7.0.2">
+          <Text>Mark the process requiring review as "Reviewed It"</Text>
+        </Task>
+        <Task Id="12209" UniqueId="2aefd0ba-3c66-43df-9804-0451790194e5" Order="40" Number="7.0.3">
+          <Text>Publish new version by clicking the "publish" button at the top right of the "Edit" tab.</Text>
+        </Task>
+        <Note Id="12210" UniqueId="43023f62-6225-4a16-9454-56a359163bfa" Order="41" Number="">
+          <Text>When do I NOT need to publish a new version?</Text>
+          <Attachment>You do NOT need to publish a new version of your process if you have not made any changes to the process when performing the review. |~||~|A good way to check this - if your process version number does not end in ".0" then you have unpublished changes. For example, a process with a version number 1.3 will need to be published to version 2.0 so the changes become visible to end-users.</Attachment>
+        </Note>
+        <Task Id="12211" UniqueId="d3e9f74b-7056-4232-bb3d-4ba52903a786" Order="42" Number="7.0.4">
+          <Text>Notify your Group Champion and a Promaster that your process has been republished</Text>
+        </Task>
+        <Task Id="12212" UniqueId="cdfdd9c6-d4f5-4e19-94e6-68f49449561b" Order="43" Number="7.0.5">
+          <Text>Communicate process update to your peers.</Text>
+        </Task>
+        <Note Id="12213" UniqueId="707cafb8-dcea-4cf3-bd03-0da084786efc" Order="44" Number="">
+          <Text>How should I notify my peers of the process update?</Text>
+          <Attachment>There are several "micro-level" communication strategies for socializing your process update.|~|- Post a minimode link of your process to Teams or Slack|~|- Give an update at your office standup meeting|~|- Email a minimode link of your process to your coworkers|~|- Give an update during your next staff meeting</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords>
+    <SearchKeyword>audit</SearchKeyword>
+  </SearchKeywords>
+  <Outputs>
+    <Output Id="139" Output="Updated process that is ready for employees to use." HowUsed="N/A" ToProcess="N/A" UniqueId="aba2bef3-3280-44e1-9348-ddc4d4565a63" />
+  </Outputs>
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="1d 2h" TotalLeadTimeDisplay="1w 5h 50m *" ProcessTotalCost="520.83333333333333333333333334" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="10773" PublishedDate="2020-08-10T20:45:53.4369876Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-10T20:45:53.6088379Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-10T20:45:53.6088379Z" />
+  </Metadata>
+</Process>
