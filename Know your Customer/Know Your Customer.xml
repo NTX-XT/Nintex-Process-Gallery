@@ -1,0 +1,214 @@
+<Process Id="89" Name="Know Your Customer" ReferenceNo="" Objective="Know Your Customer (KYC) procedures are a critical function to assess customer risk and a legal requirement to comply with Anti-Money Laundering (AML) laws. Effective KYC involves knowing a customers identity, their financial activities and the risk they pose." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="The know your customer requires that professionals make an effort to verify the identity, suitability, and risks involved with maintaining a business relationship" Owner="Kieran Coughlan" OwnerId="10" Expert="Promapp Promaster" ExpertId="1" Group="KYC" GroupId="25" GroupUniqueId="2793541b-3dd4-4922-af3b-3f58a1171d40" State="Active" StateId="1" Version="13.0" PromappVersion="4.8.4.15" UniqueId="ecd5978a-7184-49f1-abc4-08b52019a427" IsPolicyModeOn="false" IsVirtualVariation="false" AnnualVolume="200">
+  <ProcessGroupItems>
+    <ProcessGroup Id="25" UniqueId="2793541b-3dd4-4922-af3b-3f58a1171d40" Name="KYC" ProcessGroupItemId="594" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="1466" UniqueId="7c90b3c5-aa14-4cfd-b903-514a3de1ccd3" Number="1.0" Order="0">
+      <Text>Collect Information From Customers</Text>
+      <Ownerships>
+        <Role Id="96" Name="Financial Institution" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2.5d" LeadTimeDisplay="1d 7h" ProportionOfTimeInTotal="1" ProcessProcedureCost="1041.6666666666666666666666667" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="1483" UniqueId="b5187663-7341-4d26-acb1-e4db48db4fca" Order="1" Number="1.0.1">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Provide the following form to you potential customer and ask them to fill out the details</Text>
+        </Task>
+        <WebLink Id="1692" UniqueId="a6197487-8798-5ce2-d7e3-e3c5dbfd6e3f" Order="2" Number="">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Customer Form</Text>
+          <Attachment>https://anazelenkov-workcloud.workflowcloud.com/forms/8557b6ad-ffdf-45cf-8d19-44c31c263fa4</Attachment>
+        </WebLink>
+        <Note Id="1487" UniqueId="63aac975-3cc6-4410-ac7a-4fe636650ed5" Order="3" Number="">
+          <Text>What information should be collected from an individual?</Text>
+          <Attachment>Name|~|Address|~|DoB |~|Identification number|~|Identity documents(passport, driving license, National ID, Credit Card)</Attachment>
+        </Note>
+        <Task Id="1488" UniqueId="d0548ad5-1251-8768-f308-91aa865dc486" Order="4" Number="1.0.2">
+          <Text>Receive notification about completed form</Text>
+        </Task>
+        <Task Id="1489" UniqueId="c9055d72-c211-4d93-8228-60809020c80f" Order="5" Number="1.0.3">
+          <Ownerships>
+            <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="30" Name="SharePoint" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>#Nintex-Automation Store data safely on SharePoint list in compliance with GDPR policy</Text>
+        </Task>
+        <Information Id="1703" UniqueId="dd8e808d-303b-62a1-801a-9c14a1630dc3" Order="6" DocumentId="58" DocumentUniqueId="6885e669-80e7-43d6-babf-de0e7d734003" UploadId="38" Number="">
+          <Text>Information Security Policy v1.0.pdf</Text>
+        </Information>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1467" UniqueId="25356078-e979-5016-4878-be9e74d124eb" Number="2.0" Order="7">
+      <Text>Generate Contract for Customer</Text>
+      <Ownerships>
+        <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="96" Name="Financial Institution" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="2.5d" LeadTimeDisplay="1d 2h" ProportionOfTimeInTotal="1" ProcessProcedureCost="1041.6666666666666666666666667" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="1485" UniqueId="8343f34d-00fa-9aee-d8dd-24aad7c6a676" Order="8" Number="2.0.1">
+          <Ownerships>
+            <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>#Nintex-Automation based on the basic info provided generate a contract for the customer to sign agreeing to partake in identity confirmation</Text>
+        </Task>
+        <Task Id="1702" UniqueId="7f640579-f90e-dc68-a5f8-764e043b20ea" Order="9" Number="2.0.2">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Recieve signed contract from customer</Text>
+        </Task>
+        <Task Id="1484" UniqueId="c88722f3-b0b9-b71a-8110-575346d5c6b1" Order="10" Number="2.0.3">
+          <Ownerships>
+            <Tag Id="30" Name="SharePoint" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Store signed contact in SharePoint list</Text>
+        </Task>
+        <Note Id="1701" UniqueId="7e09df5e-c0c6-53e5-420f-be000a8003ec" Order="11" Number="">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What if the contract is cancelled or it expires?</Text>
+          <Attachment>Customer will be automatically emailed asking them to restart the process</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1468" UniqueId="fb11979d-1460-4927-a1b3-580f30515ef7" Number="3.0" Order="12">
+      <Text>Verify Customer Details</Text>
+      <Ownerships>
+        <Tag Id="48" Name="Customer" IsDisassociated="true" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Tag Id="52" Name="KYC-BOT" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="10m" LeadTimeDisplay="40m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0" AverageCostPerHour="0" />
+      <ChildProcessProcedures>
+        <Task Id="1490" UniqueId="f1c58d32-e041-4333-a7cc-453f65969940" Order="13" Number="3.0.1">
+          <Text>Extract data from customers identity documentation using OCR</Text>
+        </Task>
+        <Task Id="1481" UniqueId="e008a6c8-d421-4547-a8d9-3ac0846d90b4" Order="14" Number="3.0.2">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Verify the identity of the account holder by comparing information collected from Potential Customer and information on supporting documentation</Text>
+        </Task>
+        <Task Id="1480" UniqueId="38df1a73-08ca-48f3-b48e-95326785d8b5" Order="15" Number="3.0.3">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Compare the information provided by the customer with consumer public database</Text>
+        </Task>
+        <Note Id="1479" UniqueId="d6154322-0341-4038-b9cb-3213c1123c87" Order="16" Number="">
+          <Text>What if this information does not match?</Text>
+          <Attachment>The user is not verified and you must reach out to confirm correct details</Attachment>
+        </Note>
+        <Task Id="1482" UniqueId="c9814526-2574-7530-fde9-4480e2646469" Order="17" Number="3.0.4">
+          <Ownerships>
+            <Tag Id="30" Name="SharePoint" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Store report details in SharePoint list</Text>
+        </Task>
+        <Task Id="1478" UniqueId="99bcefbd-0413-def1-5404-9f51d7386a7d" Order="18" Number="3.0.5">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>Email report to Finance Manager to request customer ranking</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1469" UniqueId="98871f05-6d41-4ecc-83ff-15ed07eea92f" Number="4.0" Order="19">
+      <Text>Categorise customer</Text>
+      <Ownerships>
+        <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="90" Name="Finance Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="20m" LeadTimeDisplay="50m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="20.83333333333331250" AverageCostPerHour="62.50" />
+      <ChildProcessProcedures>
+        <Task Id="1477" UniqueId="66f1d6a3-7769-f0a6-1d6d-5a00814371fd" Order="20" Number="4.0.1">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="6" Name="OFI" IsDisassociated="false" TagFamilyId="5" TagFamilyName="Lean" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>View report attached to email and reply with the correct category for the customer #OFI</Text>
+        </Task>
+        <Note Id="1476" UniqueId="5c883b8c-2511-11df-9035-09ae849e29ae" Order="21" Number="">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What options are available?</Text>
+          <Attachment>Reject customer,|~|Onboard customer with regular due diligence|~|Onboard customer with advanced due diligence</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="1470" UniqueId="df3c0a98-78cb-9741-86b8-4eebea88dc1b" Number="5.0" Order="22">
+      <Text>Send customer on boarding form based on due diligence</Text>
+      <Ownerships>
+        <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+        <Role Id="96" Name="Financial Institution" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="14m" LeadTimeDisplay="20m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="12.152777777777760416666666667" AverageCostPerHour="52.08" />
+      <ChildProcessProcedures>
+        <Task Id="1475" UniqueId="708d0a40-168f-1bcd-d430-d66dbb2b075d" Order="23" Number="5.0.1">
+          <Ownerships>
+            <Tag Id="23" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>#Nintex-Automation send the correct form to the customer based on finance managers decision</Text>
+        </Task>
+        <Note Id="1474" UniqueId="3d9edd4c-0061-8495-ee04-523d54aaf0d8" Order="24" Number="">
+          <Text>What fields are associated with basic due diligence?</Text>
+          <Attachment>Fields already filled out from first form:|~|Name|~|Address|~|DoB |~|Identification number|~|Identity documents(passport, driving license, National ID, Credit Card)|~||~|New fields;|~|Gender |~|Marital status|~|Citizenship|~|Residential status|~|Dependents |~|Occupation|~|Proof of address</Attachment>
+        </Note>
+        <Note Id="1473" UniqueId="f19bc0d4-7fc6-819a-4c43-a3efe9ff97e5" Order="25" Number="">
+          <Text>What fields are associated with advanced due diligence?</Text>
+          <Attachment>Fields already filled out from first form:|~|Name|~|Address|~|DoB |~|Identification number|~|Identity documents(passport, driving license, National ID, Credit Card)|~||~|New fields:|~|Gender |~|Marital status|~|Citizenship|~|Residential status|~|Dependents |~|Occupation|~|Proof of address|~||~|Extra fields:|~|Sources of wealth and proof|~|Criminal history|~|Foreign resident status</Attachment>
+        </Note>
+        <Note Id="1472" UniqueId="7d66b715-5e84-d404-0d5b-549d0947478a" Order="26" Number="">
+          <Ownerships>
+            <Tag Id="48" Name="Customer" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
+          </Ownerships>
+          <Text>What if we rejected the customer</Text>
+          <Attachment>Email customer explaining we won't be doing business with them</Attachment>
+        </Note>
+      </ChildProcessProcedures>
+    </Activity>
+    <ProcessLink Id="1700" UniqueId="79647c00-6fcc-e053-bcc7-0ac7b825b2c9" Number="0.0" Order="27" LinkedProcessId="87" LinkedProcessName="On Board New Customer" LinkedProcessUniqueId="182557e1-255d-4387-9645-a88d51ad8488">
+      <Text>On Board New Customer</Text>
+      <Ownerships>
+        <Role Id="96" Name="Financial Institution" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+    </ProcessLink>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders>
+    <LinkedStakeholder ProcessId="87" Link="On Board New Customer" Owner="Promapp Promaster" Expert="Promapp Promaster" ProcessGroup="KYC" />
+  </LinkedStakeholders>
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders>
+    <User Id="1" FirstName="Promapp" LastName="Promaster" Name="Promapp Promaster" />
+  </SystemStakeholders>
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="1w 44m *" TotalLeadTimeDisplay="3d 2h 50m *" ProcessTotalCost="2116.3194444444444062500000001" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="566" PublishedDate="2020-08-20T20:39:37.1060485Z" PublisherId="1" Publisher="Promapp Promaster" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-20T20:39:37.2570648Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-20T20:39:37.2570648Z" />
+  </Metadata>
+</Process>
