@@ -1,0 +1,96 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is an xTension for Zoom's conference app",
+    "version": "2.0",
+    "title": "Zoom"
+  },
+  "host": "api.zoom.us",
+  "basePath": "/v2",
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/users/@me/meetings": {
+      "post": {
+        "summary": "Schedule a Zoom Meeting",
+        "description": "This will schedule a Zoom meeting on behalf of a user",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "parameters",
+            "schema": {
+              "$ref": "#/definitions/postmeeting"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Meeting Created",
+            "schema": {
+              "$ref": "#/definitions/postmeetingresponse"
+            }
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "meeting:write:admin"
+            ]
+          },
+          {
+            "oauth2": [
+              "meeting:write"
+            ]
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "postmeeting": {
+      "type": "object",
+      "properties": {
+        "topic": {
+          "type": "string"
+        },
+        "type": {
+          "type": "integer"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "integer"
+        }
+      }
+    },
+    "postmeetingresponse": {
+      "type": "object",
+      "properties": {
+        "join_url": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://zoom.us/oauth/authorize",
+      "tokenUrl": "https://zoom.us/oauth/token",
+      "scopes": {
+        "meeting:write:admin": "Admin rights to create a meeting",
+        "meeting:write": "User rights to create a meeting"
+      }
+    }
+  }
+}
