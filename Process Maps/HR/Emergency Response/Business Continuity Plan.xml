@@ -1,0 +1,191 @@
+<Process Id="785" Name="Business Continuity Plan" ReferenceNo="" Objective="Establish a plan to ensure business continuity in the face of an emergency" IsTouchModeEnabled="False" IsTextModeOn="False" PolicyModeOn="false" UseDynamicMapperImage="True" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" State="Draft" StateId="3" Version="0.4" PromappVersion="4.8.4.42" UniqueId="8f8dae1c-82a8-4554-b67f-8be35b3750f8" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" IsPolicyModeOn="False" VariationId="" VanillaProcessId="" IsVirtualVariation="False" AnnualVolume="" ProcessRevisionEditId="8541">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="-1" Number="1.0" Order="0" UniqueId="50a8deb2-c076-362c-6167-f772ec741877">
+      <Text>Decide the scope of your BCP</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-2" Number="1.0.1" Order="0" UniqueId="3a407585-322a-9de4-cfdc-ef251f5720b4">
+          <Text>Since disasters are generally location-specific, it is best to limit your BCP to one facility or business site. The volume of information required for multiple sites will rapidly become unwieldy.</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-3" Number="2.0" Order="1" UniqueId="7045d47e-f2d2-c0ea-0db6-209a43ab6329">
+      <Text>Define 'Business Continuity' in your context</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-4" Number="2.0.1" Order="0" UniqueId="873a7e79-f569-3c09-0772-0971dd3887fc">
+          <Text>How does your business define business continuity? |~|What is the title of the person responsible for overseeing and implementing your Business Continuity Program? |~|To whom in the senior management chain does this person answer? |~|How does your business approach business continuity? |~|What level of resources, maintenance, and budget is your company willing to commit to business continuity planning and preparedness? |~|How will your company execute its Business Continuity Program and communicate expectations throughout the organization to suppliers, subcontractors, and vendors? |~|What are the Business Continuity Program responsibilities and requirements for each functional area within the organization?</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-5" Number="3.0" Order="2" UniqueId="f24a2972-3f76-fe73-4716-b6cc092419e6">
+      <Text>Identify the risks the company faces</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-6" Number="3.0.1" Order="0" UniqueId="83c3446b-d296-2f6d-68d4-dc93af5c1ad2">
+          <Text>Assess the potential risks according to probability, impact and control</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-7" Number="3.0.2" Order="1" UniqueId="1041c024-966f-5a37-42aa-37aa245b2df6">
+          <Text>Identify what events or foreseeable risks your BCP covers</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-8" Number="4.0" Order="3" UniqueId="32025eb3-4532-e165-c224-1f92af280252">
+      <Text>Complete a business impact analysis</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-9" Number="4.0.1" Order="0" UniqueId="64525e8d-8096-9793-687b-1bc8d1a5706b">
+          <Text>Determine mission/business processes and recovery criticality.</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-10" Number="4.0.2" Order="1" UniqueId="da535490-5c91-cfe3-4d6b-52b7c455c8f0">
+          <Text>Identify resource requirements.</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-11" Number="4.0.3" Order="2" UniqueId="c9cd7d01-6aa8-1488-9781-8c36b3815c4f">
+          <Text>Identify recovery priorities for system or business resources.</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-12" Number="5.0" Order="4" UniqueId="d4241768-a89b-a0e1-904c-cec5cc170c28">
+      <Text>Establish an Emergency Operations Center</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-13" Number="5.0.1" Order="0" UniqueId="8b9d80ea-1e95-ab97-d9f0-8534cf8f44ad">
+          <Text>Many organizations have three designated EOC locations: |~|(1) a large conference room in the business office facility, |~|(2) a hotel that is relatively convenient for all team members, |~|(3) an Alternate Site facility.</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-14" Number="6.0" Order="5" UniqueId="1be23afa-67d6-d209-6b49-f46184c00a03">
+      <Text>Identify and contract emergency Alternate Site(s) and Offsite Storage locations</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-15" Number="7.0" Order="6" UniqueId="e5907706-08ed-d4c5-b183-31ba8c4b7a29">
+      <Text>Establish task, call and inventory lists for all relevant teams</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-16" Number="7.0.1" Order="0" UniqueId="f8098072-0e39-7a2d-290a-d6433550adfd">
+          <Text>Teams may include:|~|Executive Management, Damage Assessment/Salvage, Logistics and Transport, PR/Communications/Marketing, Facilities/Security, IT, Finance/Accounting, HR,</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-17" Number="7.0.2" Order="1" UniqueId="a58f9dcf-2fc1-b144-a681-8d4da028c1af">
+          <Text>Call lists are contact details for the members of the team to ensure they can be reached</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-18" Number="7.0.3" Order="2" UniqueId="c4ce3df9-922a-33ad-b620-44e5bb24e3c2">
+          <Text>Task lists are the required activities for that team|~|Inventories are lists of relevant resources those tasks apply to, such as: Customers, Equipment, Software, Hardware, Supplies, Telecommunications, Vendors, and Vital Records</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-19" Number="7.0.4" Order="3" UniqueId="665fc400-5996-d4e4-927a-324fcb33df56">
+          <Text>Not every team will have every inventory. For instance, Marketing will have the Customer list, but Executive Management may not.</Text>
+          <Ownerships>
+            <Tag Id="74" IsDisassociated="False" Name="Customer" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="False" />
+          </Ownerships>
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-20" Number="8.0" Order="7" UniqueId="af09fd6d-cd02-d2a6-942d-5cf401fdf1cd">
+      <Text>Identify the key pre-disaster responsibilities for each team</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-21" Number="8.0.1" Order="0" UniqueId="c79f68d8-f87d-b6a5-1b5c-e47347cfd9df">
+          <Text>This includes planning exercises and requirements</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-22" Number="9.0" Order="8" UniqueId="a7d75cbc-5483-a804-9dd4-0bd8772a2189">
+      <Text>Plan awareness and training for staff</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-23" Number="9.0.1" Order="0" UniqueId="82622c68-1264-df7d-8ff0-dd95586fc7c7">
+          <Text>Plan awareness and training for staff and teams to familiarise them with the BCP and their responsibilities</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-24" Number="10.0" Order="9" UniqueId="b20ee24f-b45d-9ec8-7034-4cc75d28a89f">
+      <Text>Plan BCP testing exercises</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures>
+        <Task Id="-25" Number="10.0.1" Order="0" UniqueId="09a9ae4f-15fe-42d8-88bb-d0051c2547b0">
+          <Text>Plan the various kinds of exercises, according to the needs of the organization:|~|Tabletop Exercise - key personnel discussing simulated scenarios in an informal setting. |~|Functional Exercise - simulates the reality of operations in a functional area by presenting complex and realistic problems. |~|Full Scale Exercise - real operations in multiple functional areas present complex and realistic problems that require critical thinking, rapid problem solving, and effective responses by trained personnel. |~|Drill - coordinated, supervised activity usually used to test a single specific operation or function</Text>
+          <Ownerships />
+        </Task>
+        <Task Id="-26" Number="10.0.2" Order="1" UniqueId="2b27e2fa-6ac8-0066-c6b9-77649c60ba3c">
+          <Text>Complete after-action reports to summarise the exercise outcomes</Text>
+          <Ownerships />
+        </Task>
+      </ChildProcessProcedures>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-27" Number="11.0" Order="10" UniqueId="ea217ee3-de13-c402-9ca2-67df537154df">
+      <Text>Submit the complete BCP to senior management for approval and signoff</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+    <Activity Id="-28" Number="12.0" Order="11" UniqueId="4cbba369-e1cf-2677-c532-9e4331839e46">
+      <Text>Conduct regular reviews of BCP to ensure it is still fit for purpose</Text>
+      <Ownerships>
+        <Role Id="906" Name="Business Continuity Group" IsVirtual="false" />
+      </Ownerships>
+      <ChildProcessProcedures />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="Normal" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
+    </Activity>
+  </ProcessProcedures>
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Targets />
+  <RiskControls />
+  <SearchKeywords />
+  <Approvals />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" TimeframeHoursPerDay="" TimeframeDaysPerWeek="" ProcessTotalCost="0" />
+</Process>

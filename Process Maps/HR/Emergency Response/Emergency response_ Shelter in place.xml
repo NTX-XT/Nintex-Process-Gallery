@@ -1,0 +1,110 @@
+<Process Id="782" Name="Emergency response: Shelter in place" ReferenceNo="" Objective="Procedures for dealing with an environmental, radioactive, or airborne hazard" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="29b6116a-0925-43c6-ba70-19df5678bcbc" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5083" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13999" UniqueId="c6da9ece-131a-2831-5ff8-0a6d5a03f6d1" Number="1.0" Order="0">
+      <Text>Identify a secure internal shelter</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14005" UniqueId="345e0dd6-1bfd-1b2e-5b74-15ad8b184270" Order="1" Number="1.0.1">
+          <Text>The internal shelter should be away from the external walls, as close to the core of the building as possible|~|Use a second floor or higher shelter space where possible|~|Conference rooms, utility or copy rooms or storage areas without fixed ventilation units are ideal. Ensure there is adequate seating room for all staff and likely building occupants.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14000" UniqueId="bf39e8ab-e186-7095-9416-b80f805a8fee" Number="2.0" Order="2">
+      <Text>Prepare emergency supplies</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14006" UniqueId="f8399743-331e-e5b8-db27-1c89092b0f83" Order="3" Number="2.0.1">
+          <Text>The shelter space should have easy access to a supply of bottled water, non-perishable foods, first-aid supplies, flashlights, and batteries as well as communication tools if possible.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14001" UniqueId="b4264c74-0f9a-3df7-941e-a7dd015ff617" Number="3.0" Order="4">
+      <Text>Prepare sealing materials</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14007" UniqueId="3dae8442-c2d7-9c75-094f-fca02eaa38df" Order="5" Number="3.0.1">
+          <Text>Prepare sealing materials for the shelter space. These could be plastic sheeting or garbage bags, and duct tape. If possible, pre-cut sheets and label them for the openings they cover.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14002" UniqueId="6a2c9fe6-ec31-b37c-540d-dd775b4547cb" Number="4.0" Order="6">
+      <Text>Establish a warning system</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14008" UniqueId="e9d7635a-4571-bc07-08a0-e539615a7c29" Order="7" Number="4.0.1">
+          <Text>Install a fire alarm or klaxon that can be heard by all employees within the facilities and surrounding grounds</Text>
+        </Task>
+        <Task Id="14009" UniqueId="815c531a-75e7-4c93-3ff1-1f7d57ab5496" Order="8" Number="4.0.2">
+          <Text>Warn outside workers to move indoors immediately.|~|Direct customers or contractors to remain on the premises and shelter with the staff</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14003" UniqueId="5d643c0c-99d3-ac5d-1867-76dbc0d46686" Number="5.0" Order="9">
+      <Text>Train staff how to respond to the alarm</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14010" UniqueId="9b25d224-e524-6e7a-78b3-de0871d7ecd0" Order="10" Number="5.0.1">
+          <Text>In the case of an alarm, remind staff to stay away from external windows and entrances and move to the shelter zone.</Text>
+        </Task>
+        <Task Id="14011" UniqueId="0ce6ae64-f549-9311-feda-a028772f5099" Order="11" Number="5.0.2">
+          <Text>Close all external doors, internal doors between the exterior and the shelter, and shut down any air circulation systems</Text>
+        </Task>
+        <Task Id="14012" UniqueId="5f2325f8-7f76-0253-2389-7221f6e487ef" Order="12" Number="5.0.3">
+          <Text>Seal the room(s) with the stored materials. Contact emergency services and provide a list of those present and your location and condition.</Text>
+        </Task>
+        <Task Id="14013" UniqueId="30aa1301-abcc-6be1-0090-7c3cd220b34d" Order="13" Number="5.0.4">
+          <Text>Remain in shelter until public officials announce it safe to evacuate the site</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14004" UniqueId="8696e3c0-f21b-bb51-6904-ef8e9f08bcfa" Number="6.0" Order="14">
+      <Text>Conduct regular drills or exercises</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4110" PublishedDate="2020-08-26T12:31:42.2524286Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T12:31:42.5336541Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T12:31:42.5336541Z" />
+  </Metadata>
+</Process>

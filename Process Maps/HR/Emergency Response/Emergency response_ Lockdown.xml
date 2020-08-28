@@ -1,0 +1,78 @@
+<Process Id="783" Name="Emergency response: Lockdown" ReferenceNo="" Objective="Procedures for establishing a lockdown in the event of workplace violence" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="1cc1d2c2-d4f3-4110-a002-ba3307f4134c" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5086" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14014" UniqueId="2c1de34b-a103-e0ff-06f1-5cf28b0f2d23" Number="1.0" Order="0">
+      <Text>Train staff to identify signs of an active shooter</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14018" UniqueId="2776a5e2-e322-138b-3f45-541af2138f53" Order="1" Number="1.0.1">
+          <Text>Educate staff on how to recognize an active shooter situation. Should one occur, they should broadcast an alarm and contact emergency services immediately.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14015" UniqueId="5e0454f8-1642-d646-9575-5c4a727c9e12" Number="2.0" Order="2">
+      <Text>Seek shelter</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14019" UniqueId="20edf98c-716a-5e7e-196e-5ba1d96dea1f" Order="3" Number="2.0.1">
+          <Text>Staff should seek shelter in a secure room and lock or barricade the door if it can be done quickly.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14016" UniqueId="742a21e9-a0c5-01ec-7eaf-90710ff51864" Number="3.0" Order="4">
+      <Text>Take cover where possible</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14020" UniqueId="399a57da-cff9-27e8-7e98-d11af30e0ace" Order="5" Number="3.0.1">
+          <Text>Staff are to seek cover such as under a desk or in a corner, away from door and windows, and remain quiet.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14017" UniqueId="dfb606eb-12d1-7637-6943-5c57bf804405" Number="4.0" Order="6">
+      <Text>Remain in place</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14021" UniqueId="25cc1b65-9702-7123-8ac4-89c1bcf88608" Order="7" Number="4.0.1">
+          <Text>Employees should remain in place until police or security are able to escort them to safety.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4111" PublishedDate="2020-08-26T12:40:55.9948983Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T12:40:56.2605532Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T12:40:56.2605532Z" />
+  </Metadata>
+</Process>
