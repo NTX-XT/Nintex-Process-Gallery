@@ -1,0 +1,127 @@
+<Process Id="779" Name="Emergency Response Plan" ReferenceNo="" Objective="Create and maintain an Emergency Response Plan for the organization" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="332f41ad-cc9f-4914-a6ad-3dabb4274bef" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5074" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13946" UniqueId="d3eafc1d-084f-974d-1223-fcebe5bb2d13" Number="1.0" Order="0">
+      <Text>Review performance objectives</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="13947" UniqueId="f395de4f-77bf-5cc0-0ea6-8e39de414dbf" Number="2.0" Order="1">
+      <Text>Review hazard or threat scenarios</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13954" UniqueId="6801ab41-38b5-6f9d-443e-1c4659269e1b" Order="2" Number="2.0.1">
+          <Text>These are the scenarios identified in the Emergency Risk Assessment</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13948" UniqueId="3f99e423-6006-ca3b-f1b3-ae82bfded97e" Number="3.0" Order="3">
+      <Text>Assess the available resources for incident response</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13956" UniqueId="f311a7d7-b2d3-d963-7356-8b4769e4954d" Order="4" Number="3.0.1">
+          <Text>This includes people, systems and equipment available within your business and from external sources</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13949" UniqueId="3638baa0-6d9a-1c74-9be0-754b5ef52657" Number="4.0" Order="5">
+      <Text>Liaise with emergency services to determine response capacity</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13958" UniqueId="60d6508f-b50a-5381-8c2b-1377228b325d" Order="6" Number="4.0.1">
+          <Text>Identify the expected response time and capabilities for the various public emergency services. Verify their familiarity with your facilities and operations, and the related hazards.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13950" UniqueId="7020cd00-9874-3bdb-da6a-1283fbe98313" Number="5.0" Order="7">
+      <Text>Identify pertinent regulations</Text>
+      <Ownerships>
+        <Role Id="220" Name="Legal" IsVirtual="false" />
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13960" UniqueId="a5ef5151-5fc0-8542-cf56-fb7fee2b1831" Order="8" Number="5.0.1">
+          <Text>Determine what, if any local or federal regulations apply to your emergency plan and address those requirements.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13951" UniqueId="b8a3ade9-9ab9-8c71-4327-c1d7d7dd35fa" Number="6.0" Order="9">
+      <Text>Develop protective action plans</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13961" UniqueId="ab204721-af4f-a77d-ce52-aa3da40038ef" Order="10" Number="6.0.1">
+          <Text>Develop plans for preserving life, including evacuations, shelter, shelter-in-place, and lockdowns.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13952" UniqueId="b882793c-8db2-f7c6-b150-6fc88c61d67d" Number="7.0" Order="11">
+      <Text>Establish training for key staff roles</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13959" UniqueId="b117c8c2-c6f6-666f-cc50-57a30d7d2181" Order="12" Number="7.0.1">
+          <Text>Ensure staff are trained in emergency procedures.</Text>
+        </Task>
+        <Task Id="13957" UniqueId="512dcb3d-0557-51cc-3fa8-cf8f82ccb870" Order="13" Number="7.0.2">
+          <Text>Conduct regular training of emergency specific roles such as wardens, floor managers, etc. Ensure there are adequate staff assigned to each role to cover absences.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13953" UniqueId="7b675cf9-4d91-0771-8ffe-8857f5c2ba19" Number="8.0" Order="14">
+      <Text>Conduct drills and exercises</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13955" UniqueId="30a96cc1-7c8f-8ea8-4caa-1b85acd6ae6a" Order="15" Number="8.0.1">
+          <Text>Run regular training events for the various scenarios identified in the risk assessment,</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4107" PublishedDate="2020-08-26T11:45:15.4040253Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T11:45:15.7633722Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T11:45:15.7633722Z" />
+  </Metadata>
+</Process>

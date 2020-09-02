@@ -1,0 +1,108 @@
+<Process Id="781" Name="Emergency response: Shelter" ReferenceNo="" Objective="This process explains the procedures for sheltering staff during an extreme weather event" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="47cc5e04-5988-4bbe-9708-970f27dfe1a3" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5080" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13985" UniqueId="d51d0583-50c2-1589-5fab-c4e0bbcf313a" Number="1.0" Order="0">
+      <Text>identify appropriate internal shelter zone</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13991" UniqueId="fb57d421-6ed6-69bc-ba27-ee0c6df959ef" Order="1" Number="1.0.1">
+          <Text>This should be the strongest internal part of the building. It could be a basement or reinforced internal room(s)</Text>
+        </Task>
+        <Task Id="13992" UniqueId="f8692037-a630-7bb6-23b5-808e9419063d" Order="2" Number="1.0.2">
+          <Text>Confirm that the space is large enough to safely hold all staff likely to be present at any one time.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13986" UniqueId="90a0c8f2-716f-6869-7b38-8acf3c657a25" Number="2.0" Order="3">
+      <Text>Establish monitoring or early warning systems</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13993" UniqueId="899ddf17-f979-993f-ef40-5854d179276e" Order="4" Number="2.0.1">
+          <Text>Consider an emergency alert system radio or similar. Contact local authorities regarding warning systems and alerts.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13987" UniqueId="148d4eff-b178-e94b-8067-959c154fd8d9" Number="3.0" Order="5">
+      <Text>Establish a warning system for the facility</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13994" UniqueId="b5c58cba-e72b-cd92-27dd-f205d954e482" Order="6" Number="3.0.1">
+          <Text>Warn staff on location to move away from windows and to secure indoor locations</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13988" UniqueId="1d7cbfe9-c658-4aef-dd67-b1b33fd72476" Number="4.0" Order="7">
+      <Text>Stock the shelter with medical and emergency equipment</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13995" UniqueId="9fa9d0ae-a22d-4988-75d9-5d440e527f07" Order="8" Number="4.0.1">
+          <Text>This should be held in a secure location with easy access in an emergency</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13989" UniqueId="8c6c3581-f0ca-fb18-e2f2-82ecd2bd9167" Number="5.0" Order="9">
+      <Text>Keep a log of who is on site</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13996" UniqueId="4218e835-aad9-4726-0eda-986254fed785" Order="10" Number="5.0.1">
+          <Text>Keep a staff log, updated daily with absences or staff changes.</Text>
+        </Task>
+        <Task Id="13997" UniqueId="0e8d3d9d-19e0-5c9a-c0b3-22966aa671d3" Order="11" Number="5.0.2">
+          <Text>Keep a check-in book or visitor system to monitor any non-company personnel that may be on site.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13990" UniqueId="e8d8bcda-c36a-47e6-eaad-42bf9272159e" Number="6.0" Order="12">
+      <Text>Conduct regular drills</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13998" UniqueId="8e59ee2d-2435-c7c9-084c-40940b6b4c6e" Order="13" Number="6.0.1">
+          <Text>Conduct regular drills to ensure all staff know where to go for shelter</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4109" PublishedDate="2020-08-26T12:09:28.7641529Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T12:09:29.1239101Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T12:09:29.1239101Z" />
+  </Metadata>
+</Process>

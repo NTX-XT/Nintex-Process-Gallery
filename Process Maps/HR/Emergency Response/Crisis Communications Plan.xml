@@ -1,0 +1,111 @@
+<Process Id="784" Name="Crisis Communications Plan" ReferenceNo="" Objective="Plan for vital comms during an emergency" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="0cbe8a9e-d4e0-4d0d-8577-0ec7c60f5d7d" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5089" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14022" UniqueId="af7c72ec-c152-6fbb-ae7f-2d4604ef69b6" Number="1.0" Order="0">
+      <Text>Identify the audience(s) for communications</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14028" UniqueId="2d0948fb-4969-1825-534a-5892616e13e2" Order="1" Number="1.0.1">
+          <Text>Identify the audience(s) that need to be communicated with in the case of an emergency|~|This could include:|~|Customers|~|Employees and their families|~|Local Community—especially neighbors of the facility|~|Management, directors and investors|~|Emergency services and Government agencies|~|Suppliers</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14023" UniqueId="fe329318-e5f5-b60c-89f6-18a55c6c77e7" Number="2.0" Order="2">
+      <Text>Compile emergency contact details</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14029" UniqueId="c66f6d40-c508-f549-de85-259d5bc88a09" Order="3" Number="2.0.1">
+          <Text>Collect and compile emergency contact details for all parties.</Text>
+        </Task>
+        <Task Id="14030" UniqueId="9f6c157d-b6ed-98a9-94e6-aa65d92368f0" Order="4" Number="2.0.2">
+          <Text>Ensure the list is secured and only available to authorized parties</Text>
+        </Task>
+        <Task Id="14031" UniqueId="f657e39b-41c3-496e-d210-a7717de1cdec" Order="5" Number="2.0.3">
+          <Text>Keep secure hard copies off-site in accessible locations in case of emergency, and digital copies secured in cloud servers.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14024" UniqueId="d9b50d62-cc41-ab86-f42b-632f8a1e1594" Number="3.0" Order="6">
+      <Text>Identify the best channels for communicating with each audience</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14032" UniqueId="98ce6a05-0e45-bffc-9954-b9ac0ed798a6" Order="7" Number="3.0.1">
+          <Text>Secure the contact details and credentials required for the various channels.|~|Safely store log-ins and relevant software or hardware (such as a fax or router) within any emergency location (shelter, secondary facility, etc)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14025" UniqueId="71ecbade-24c2-b397-84dd-cb64b24d83c3" Number="4.0" Order="8">
+      <Text>Create scripted ‘message templates’</Text>
+      <Ownerships>
+        <Role Id="29" Name="Marketing Team" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14033" UniqueId="23048d69-03fd-7a6c-7090-c187241845e0" Order="9" Number="4.0.1">
+          <Text>Create scripted ‘message templates’ based on your business risk analysis. Target these messages towards the most likely asked questions for each audience.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14026" UniqueId="99d3c2a3-74cb-a26c-0aa1-49b6e02c5f14" Number="5.0" Order="10">
+      <Text>Establish a Contact and Information Center</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14034" UniqueId="d7f59c7c-65f2-9a1d-42ed-e9188b3042ce" Order="11" Number="5.0.1">
+          <Text>Establish a Contact and Information Center or Centers to manage the flow of information during the crisis, and to be the first point of contact for enquiries</Text>
+        </Task>
+        <Task Id="14035" UniqueId="c89d0d0d-da87-c397-894d-912bd7dd556e" Order="12" Number="5.0.2">
+          <Text>Appoint and train staff to field requests and provide information. Provide them with ‘scripts’ or FAQ documents to answer questions consistently and accurately.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14027" UniqueId="362c668c-4f72-6094-6eb2-a5d0b55cba6a" Number="6.0" Order="13">
+      <Text>Appoint authorized spokespersons</Text>
+      <Ownerships>
+        <Role Id="278" Name="Senior Leadership Group" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14036" UniqueId="8d7af95c-8e47-a11a-6841-a99806f5d1f9" Order="14" Number="6.0.1">
+          <Text>Identify those who are authorized to create and disseminate messages on behalf of the company with each audience, and under what circumstances.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4112" PublishedDate="2020-08-26T12:56:51.4582198Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T12:56:51.6301015Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T12:56:51.6301015Z" />
+  </Metadata>
+</Process>

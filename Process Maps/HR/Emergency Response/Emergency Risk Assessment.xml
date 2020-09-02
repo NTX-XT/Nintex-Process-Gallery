@@ -1,0 +1,99 @@
+<Process Id="778" Name="Emergency Risk Assessment" ReferenceNo="" Objective="To define the risks faced by the company in case of an emergency" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="424c5e73-4089-4bf2-839a-90d1b303ec34" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5071" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13933" UniqueId="4b52596c-5af4-2c70-d908-b22b40f2eaf2" Number="1.0" Order="0">
+      <Text>Identify potential hazards to the business</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13938" UniqueId="2355a618-a5c6-676c-4aff-ac39dc6a7b79" Order="1" Number="1.0.1">
+          <Text>Hazards include:|~|Natural disasters - weather, seismic, volcanic, biological, etc|~|Human-caused disasters - spills, toxins, terrorism, fire, erc|~|Technological events - catastrophic failures, cyber attacks, etc</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13934" UniqueId="2e4b59d1-af08-50f6-87e3-29f690f8ee26" Number="2.0" Order="2">
+      <Text>Identify the assets at risk</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13939" UniqueId="ba90a2e0-c61b-fc59-34b9-15379734ef5b" Order="3" Number="2.0.1">
+          <Text>What will be impacted by the various hazards?</Text>
+        </Task>
+        <Task Id="13940" UniqueId="d81c40eb-a721-ef49-4c82-d05044b71703" Order="4" Number="2.0.2">
+          <Text>There may be multiple hazards that could affect any one asset, and any hazard will impact multiple assets.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13935" UniqueId="f6b52643-1372-ecd4-31e3-c0424a9b8e62" Number="3.0" Order="5">
+      <Text>Define the level of risk</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13941" UniqueId="4e5c4a21-17c8-a842-76c8-896056fd013c" Order="6" Number="3.0.1">
+          <Text>Determine the probability of harm occurring, and the likely severity of that harm to decide the significance of each risk.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13936" UniqueId="7fe84a0e-2072-fd7c-d0d5-abc481987d8c" Number="4.0" Order="7">
+      <Text>Identify risk controls</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13942" UniqueId="eb585e35-4e2a-0b1c-1858-dca6238eb51f" Order="8" Number="4.0.1">
+          <Text>What steps are already in place to reduce potential harm</Text>
+        </Task>
+        <Task Id="13943" UniqueId="b59c907a-e5c5-e4c7-567b-f74eb5e3e64c" Order="9" Number="4.0.2">
+          <Text>What further steps can easily be taken to eliminate, isolate or minimize harm</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13937" UniqueId="6e718d0f-1290-61e5-0c35-b6770ec674a7" Number="5.0" Order="10">
+      <Text>Calculate the existing levels of risk</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13944" UniqueId="302b04d2-d185-d4e7-c442-dde35036fbac" Order="11" Number="5.0.1">
+          <Text>Determine the overall vulnerabilities:|~|(Value of the asset) x (level of risk) - (existing mitigations)</Text>
+        </Task>
+        <Task Id="13945" UniqueId="f46526d8-4ba1-fee5-cdd2-60e1534ef65a" Order="12" Number="5.0.2">
+          <Text>Rank the risks from greatest to least to prioritize attention and risk-reduction efforts</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4106" PublishedDate="2020-08-26T11:28:47.1811005Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T11:28:47.7183417Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T11:28:47.7183417Z" />
+  </Metadata>
+</Process>

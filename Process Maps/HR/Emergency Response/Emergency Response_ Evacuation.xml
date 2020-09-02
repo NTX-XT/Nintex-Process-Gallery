@@ -1,0 +1,147 @@
+<Process Id="780" Name="Emergency response: Evacuation " ReferenceNo="" Objective="This is the process for establishing evacuation procedures in the case of an emergency" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Timothy Lee" OwnerId="35" Expert="Hillary Ling" ExpertId="47" Group="Emergency Response" GroupId="282" GroupUniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.4.42" UniqueId="f136cf42-f5b3-40de-b6a5-3da27248f5c5" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="282" UniqueId="5481106a-58d6-4833-aee5-ae0fef38dc52" Name="Emergency Response" ProcessGroupItemId="5077" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="13962" UniqueId="03435ff3-43d1-9026-3004-3753bacc9d51" Number="1.0" Order="0">
+      <Text>Establish a warning system</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13984" UniqueId="d10f163a-0b72-79ce-55fe-0ebfb26e5a02" Order="1" Number="1.0.1">
+          <Text>Ensure the fire alarm or klaxon that can be heard by all employees working around or within the facility.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13963" UniqueId="370f141d-d188-17e0-dfab-5d7920d1df67" Number="2.0" Order="2">
+      <Text>Ensure adequate exits are identified</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13983" UniqueId="9b5337ec-f81c-b731-6245-fb3bd1957fb3" Order="3" Number="2.0.1">
+          <Text>Review the available exits for every floor or area.|~|Verify adequate lighting and signage at each exit.|~|Refer to the applicable building code for the requirements for exits in your facility.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13964" UniqueId="a8d71dd9-85ca-c6f3-9704-45134d25a08f" Number="3.0" Order="4">
+      <Text>Create and place evacuation maps</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13982" UniqueId="1b9a035b-c9cb-7d71-040b-d05b198a0b38" Order="5" Number="3.0.1">
+          <Text>Place evacuation maps at strategic points, indicating the safest route out of the buildings.</Text>
+        </Task>
+        <Task Id="13981" UniqueId="98b6477b-1610-caa1-d2d5-f4aedb5d7f91" Order="6" Number="3.0.2">
+          <Text>The maps should include locations of exits, assembly points, and equipment (such as fire extinguishers, first aid kits, spill kits) that may be needed.</Text>
+        </Task>
+        <Task Id="13980" UniqueId="89372991-fdab-418c-d39b-39e0c899dad1" Order="7" Number="3.0.3">
+          <Text>Escape routes should be:|~|Clearly marked and well lit.|~|Wide enough to accommodate the number of evacuating personnel.|~|Unobstructed and clear of debris at all times.|~|Unlikely to expose evacuating personnel to additional hazards.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13965" UniqueId="6fafa900-147a-e09a-0a1c-b88d87c3066c" Number="4.0" Order="8">
+      <Text>Identify evacuation assembly point</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13979" UniqueId="8244f55a-fd2d-c5b4-2403-f19d04cab5a5" Order="9" Number="4.0.1">
+          <Text>Locate and mark safe assembly point clear of buildings</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13966" UniqueId="b40f1f3a-d08a-8c19-9d37-75d0ae371b0e" Number="5.0" Order="10">
+      <Text>Assign evacuation team leader and wardens</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13977" UniqueId="96d306f5-9043-c15f-e231-c87429f0b0ba" Order="11" Number="5.0.1">
+          <Text>Assign at least one warden per floor, plus reserve/backup staff in the case of absences</Text>
+        </Task>
+        <Task Id="13978" UniqueId="15109149-ae06-7b01-be3e-5fb143ad72d4" Order="12" Number="5.0.2">
+          <Text>Provide hi-vis clothing/identifiers in easily accessible locations</Text>
+        </Task>
+        <Task Id="13976" UniqueId="da6cf001-3296-2770-ef50-2f465f13d7aa" Order="13" Number="5.0.3">
+          <Text>Identify employees that may require special assistance - assign buddies/aides as reqd</Text>
+        </Task>
+        <Task Id="13975" UniqueId="9dde2a4b-05cb-1150-c67c-4c2c07e01fcd" Order="14" Number="5.0.4">
+          <Text>Clarify responsibilities. Wardens are usually responsible for checking offices, bathrooms, and other spaces before being the last person to exit an area. They may also ensure fire doors are closed as they evacuate.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13967" UniqueId="8adac87b-8c22-6141-1047-c8d2185a87c0" Number="6.0" Order="15">
+      <Text>Maintain a log of all persons on site</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13974" UniqueId="7c1f7291-d867-d2f5-0f5c-4f2440642564" Order="16" Number="6.0.1">
+          <Text>Keep a staff log, updated daily with absentees or staff changes.</Text>
+        </Task>
+        <Task Id="13973" UniqueId="a09ee460-363e-2a96-9463-503acdd3d2d2" Order="17" Number="6.0.2">
+          <Text>Keep a visitor check-in book or system to collect details of any persons from outside agencies who may be on site.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13968" UniqueId="4d538b72-3efe-5c53-d7e4-49798c6bcfd1" Number="7.0" Order="18">
+      <Text>Identify any key staff required to shut down plant or processes</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13972" UniqueId="21dc9032-e5fb-20d9-0858-ef4e2c887b3d" Order="19" Number="7.0.1">
+          <Text>Some equipment, processes or materials may pose further hazards if left unattended. Assign appropriate staff to ensure these are managed properly in the case of an evacuation.</Text>
+        </Task>
+        <Task Id="13971" UniqueId="6a6bca67-a995-4d3c-d6e4-4f4d441002da" Order="20" Number="7.0.2">
+          <Text>Establish evacuation procedures for them and protocols to decide when to abandon their post.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="13969" UniqueId="c2545db1-4f23-db14-822c-cbcfeb905a28" Number="8.0" Order="21">
+      <Text>Conduct regular drills</Text>
+      <Ownerships>
+        <Role Id="71" Name="Health  Safety Coordinator" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="13970" UniqueId="90d4e253-82f9-d160-55ca-6f94725b44eb" Order="22" Number="8.0.1">
+          <Text>Check local regulations for how frequent drills should be. These should be conducted at least annually to ensure staff are familiar with the procedures.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4108" PublishedDate="2020-08-26T11:58:35.5730253Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-08-26T11:58:35.8542531Z" />
+    <MetadataItem Name="CachedOn" Value="2020-08-26T11:58:35.8542531Z" />
+  </Metadata>
+</Process>
