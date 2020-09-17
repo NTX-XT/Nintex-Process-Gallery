@@ -284,6 +284,8 @@
           {
             "in": "body",
             "name": "body",
+            "x-ntx-summary": "Metadata Updates",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/LibraryContentManagement.FileProperties.Update"
             }
@@ -297,6 +299,91 @@
             "description": "Success",
             "schema": {
               "$ref": "#/definitions/LibraryContentManagement.FileProperties.Update.Response"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a library item",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Delete a library item",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/files/{libraryContentId}/copy": {
+      "post": {
+        "summary": "Copy a library file",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Copy a library file",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.CopyFile"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.FileProperties.Response"
             }
           }
         }
@@ -443,6 +530,7 @@
           {
             "description": "body",
             "in": "body",
+            "x-ntx-label": "File Properties",
             "name": "publishRequest",
             "schema": {
               "$ref": "#/definitions/LibraryContentManagement.Publish.body"
@@ -517,179 +605,7 @@
         }
       }
     },
-    "/generatedLivedocs/{generatedLivedocId}": {
-      "get": {
-        "summary": "Get status of LiveDoc generation",
-        "tags": [
-          "LiveDoc"
-        ],
-        "description": "This is where you get the status for a generation process, it will give you the overall status for all underlying steps, but will also provide\r\n a breakdown for the readiness of the underlying assets. For example if you just want the PPTX, you may be able to download that before the PDF is done rendering.",
-        "operationId": "GetGenerationResultAsync",
-        "parameters": [
-          {
-            "description": "The id of the Generated Live Doc",
-            "in": "path",
-            "name": "generatedLivedocId",
-            "required": true,
-            "type": "string",
-            "x-ntx-summary": "GeneratedLiveDocId"
-          }
-        ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LiveDocs.GeneratedID.Response"
-            }
-          }
-        }
-      }
-    },
-    "/generatedLivedocs/{generatedLivedocId}/outputs/{outputId}/content": {
-      "get": {
-        "summary": "Download LiveDoc output",
-        "tags": [
-          "LiveDoc"
-        ],
-        "description": "This is where you can download a particular generated output such as a PPTX, DOCX, PDF, or XLSX. This endpoint also supports the\r\n  special keywords of \"pptx\", \"docx\", \"pdf\" as special aliases of the generatedOutputId such that you do not need to first get the generatedOutputId\r\n            in order to use this endpoint.",
-        "operationId": "GetGeneratedLiveDocContent",
-        "parameters": [
-          {
-            "description": "The id of the generated Live Doc",
-            "in": "path",
-            "name": "generatedLivedocId",
-            "required": true,
-            "type": "string",
-            "x-ntx-summary": "generatedLiveDocId"
-          },
-          {
-            "description": "The id of the specfic output file you wish to download.",
-            "in": "path",
-            "name": "outputId",
-            "required": true,
-            "type": "string",
-            "x-ntx-summary": "outputId"
-          },
-          {
-            "default": false,
-            "description": "This needs to be set to false in order to get the download url in response body.",
-            "in": "query",
-            "name": "redirect",
-            "required": true,
-            "type": "boolean",
-            "x-ntx-summary": "redirect"
-          }
-        ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LiveDocs.Download.Response"
-            }
-          }
-        }
-      }
-    },
-    "/predictiveContent/{predictiveContentId}/{contextId}": {
-      "get": {
-        "summary": "Get predictive content",
-        "tags": [
-          "Predictive Content"
-        ],
-        "description": "Gets the list of predictive content for a given predictive content setting for the currently authenticated user. In the case of predictive content which is dynamically grouped or inherits its hierarchy from the parent DocCenter folder, the hierarchy is provided in the hierarchy object with levels represented sequentially in the array. It is up to the UI to render the hierarchy.",
-        "operationId": "GetPredictiveContentResultSet",
-        "parameters": [
-          {
-            "description": "Predictive Content Setting Id or Title",
-            "in": "path",
-            "name": "predictiveContentId",
-            "required": true,
-            "type": "string",
-            "x-ntx-summary": "Predictive Content Id or Title"
-          },
-          {
-            "description": "ContextId of content from SalesForce, Sugar, Dynamics, Etc.",
-            "in": "path",
-            "name": "contextId",
-            "required": true,
-            "type": "string",
-            "x-ntx-summary": "Context Id"
-          }
-        ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "items": {
-                "$ref": "#/definitions/PredictiveContent.GetContent.Response"
-              },
-              "type": "array"
-            }
-          }
-        }
-      }
-    },
     "/teamsites/{teamsiteId}/livedocVersions/{libraryContentVersionId}": {
-      "get": {
-        "summary": "Get list of inputs for LiveDoc",
-        "tags": [
-          "LiveDoc"
-        ],
-        "description": "Gets the list of adHoc inputs required to generate a LiveDoc.",
-        "operationId": "GetLiveDocInputParams",
-        "parameters": [
-          {
-            "description": "Teamsite Id",
-            "in": "path",
-            "name": "teamsiteId",
-            "required": true,
-            "type": "string",
-            "x-ntx-dynamic-values": {
-              "operationId": "GetTeamSite",
-              "value-path": "id",
-              "value-title": "name"
-            },
-            "x-ntx-summary": "Teamsite Id"
-          },
-          {
-            "description": "The library content version id",
-            "in": "path",
-            "name": "libraryContentVersionId",
-            "required": true,
-            "type": "string",
-            "x-ntx-summary": "Library Content Version Id"
-          }
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LiveDocs.InputParameters.Response"
-            }
-          }
-        }
-      },
       "post": {
         "summary": "Generate a LiveDoc",
         "tags": [
@@ -857,6 +773,178 @@
             "description": "Success",
             "schema": {
               "$ref": "#/definitions/LiveDocs.GeneratedDoc.response"
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Get list of inputs for LiveDoc",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "Gets the list of adHoc inputs required to generate a LiveDoc.",
+        "operationId": "GetLiveDocInputParams",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "The library content version id",
+            "in": "path",
+            "name": "libraryContentVersionId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Version Id"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.InputParameters.Response"
+            }
+          }
+        }
+      }
+    },
+    "/generatedLivedocs/{generatedLivedocId}": {
+      "get": {
+        "summary": "Get status of LiveDoc generation",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "This is where you get the status for a generation process, it will give you the overall status for all underlying steps, but will also provide\r\n a breakdown for the readiness of the underlying assets. For example if you just want the PPTX, you may be able to download that before the PDF is done rendering.",
+        "operationId": "GetGenerationResultAsync",
+        "parameters": [
+          {
+            "description": "The id of the Generated Live Doc",
+            "in": "path",
+            "name": "generatedLivedocId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "GeneratedLiveDocId"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.GeneratedID.Response"
+            }
+          }
+        }
+      }
+    },
+    "/generatedLivedocs/{generatedLivedocId}/outputs/{outputId}/content": {
+      "get": {
+        "summary": "Download LiveDoc output",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "This is where you can download a particular generated output such as a PPTX, DOCX, PDF, or XLSX. This endpoint also supports the\r\n  special keywords of \"pptx\", \"docx\", \"pdf\" as special aliases of the generatedOutputId such that you do not need to first get the generatedOutputId\r\n            in order to use this endpoint.",
+        "operationId": "GetGeneratedLiveDocContent",
+        "parameters": [
+          {
+            "description": "The id of the generated Live Doc",
+            "in": "path",
+            "name": "generatedLivedocId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "generatedLiveDocId"
+          },
+          {
+            "description": "The id of the specfic output file you wish to download.",
+            "in": "path",
+            "name": "outputId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "outputId"
+          },
+          {
+            "default": false,
+            "description": "This needs to be set to false in order to get the download url in response body.",
+            "in": "query",
+            "name": "redirect",
+            "required": true,
+            "type": "boolean",
+            "x-ntx-summary": "redirect"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.Download.Response"
+            }
+          }
+        }
+      }
+    },
+    "/predictiveContent/{predictiveContentId}/{contextId}": {
+      "get": {
+        "summary": "Get predictive content",
+        "tags": [
+          "Predictive Content"
+        ],
+        "description": "Gets the list of predictive content for a given predictive content setting for the currently authenticated user. In the case of predictive content which is dynamically grouped or inherits its hierarchy from the parent DocCenter folder, the hierarchy is provided in the hierarchy object with levels represented sequentially in the array. It is up to the UI to render the hierarchy.",
+        "operationId": "GetPredictiveContentResultSet",
+        "parameters": [
+          {
+            "description": "Predictive Content Setting Id or Title",
+            "in": "path",
+            "name": "predictiveContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Predictive Content Id or Title"
+          },
+          {
+            "description": "ContextId of content from SalesForce, Sugar, Dynamics, Etc.",
+            "in": "path",
+            "name": "contextId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Context Id"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/PredictiveContent.GetContent.Response"
+              },
+              "type": "array"
             }
           }
         }
@@ -1188,20 +1276,64 @@
         }
       }
     },
+    "LibraryContentManagement.CustomProperties": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-ntx-dynamic-values": {
+            "operationId": "GetContentProperties",
+            "value-path": "id",
+            "value-title": "name",
+            "parameters": {
+              "teamsiteId": {
+                "parameter": "teamsiteId"
+              }
+            }
+          },
+          "x-ntx-summary": "Content Property"
+        },
+        "values": {
+          "type": "array",
+          "x-ntx-summary": "Values",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "type": "object",
+      "additionalProperties": false
+    },
     "LibraryContentManagement.FileProperties.Update": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
+        "ownerId": {
+          "description": "The Owner of this Item",
+          "title": "Owner Id",
+          "type": "string"
+        },
         "properties": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/LibraryContentManagement.CustomProperties"
           },
-          "title": "File Properties"
+          "x-ntx-summary": "File Properties"
         },
         "description": {
           "description": "Description",
           "type": "string",
           "title": "Description"
+        },
+        "parentFolderId": {
+          "description": "Id of the Folder where this file will be stored. An updated Folder Id will move the file to that new folder",
+          "type": "string",
+          "title": "Parent Folder Id"
+        },
+        "experts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.ContentExperts"
+          }
         }
       }
     },
@@ -1311,38 +1443,28 @@
     "LibraryContentManagement.ContentExperts": {
       "type": "object",
       "properties": {
-        "id": {
-          "description": "Content Expert Id",
-          "title": "Content Expert Id",
-          "type": "string"
-        },
         "type": {
           "description": "User or group",
           "title": "Expert Type",
           "type": "string"
+        },
+        "id": {
+          "description": "Content Expert Id",
+          "title": "Content Expert Id",
+          "type": "string"
         }
       }
     },
-    "LibraryContentManagement.CustomProperties": {
+    "LibraryContentManagement.CopyFile": {
+      "type": "object",
+      "additionalProperties": false,
       "properties": {
-        "id": {
-          "description": "Property Id",
-          "title": "Property Id",
+        "parentFolderId": {
+          "description": "Id of the folder to copy to",
+          "title": "Parent Folder Id",
           "type": "string"
-        },
-        "name": {
-          "description": "Property Name",
-          "title": "Property Name",
-          "type": "string"
-        },
-        "values": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
         }
-      },
-      "type": "object"
+      }
     },
     "LibraryContentManagement.AddFile.Response": {
       "properties": {
@@ -1627,6 +1749,7 @@
     },
     "LibraryContentManagement.Publish.body": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "comment": {
           "description": "A note about the publish action",
@@ -1751,6 +1874,7 @@
     },
     "LibraryWorkflow.SubmitDocument.Response": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "comments": {
           "description": "A comment for the submission",
@@ -2212,6 +2336,8 @@
       "type": "object"
     },
     "Workspace.Addfolder.Contextual.body": {
+      "type": "object",
+      "additionalProperties": false,
       "properties": {
         "contextId": {
           "description": "The ID of the record in the external system.",
@@ -2238,8 +2364,7 @@
           "title": "System Type",
           "type": "string"
         }
-      },
-      "type": "object"
+      }
     },
     "Workspace.GetFolderContents.response": {
       "properties": {
@@ -2359,6 +2484,8 @@
       "type": "object"
     },
     "Workspace.Addfolder.body": {
+      "type": "object",
+      "additionalProperties": false,
       "properties": {
         "format": {
           "title": "Workspace Folder Format",
@@ -2375,8 +2502,7 @@
           "title": "Workspace Parent Folder Id",
           "type": "string"
         }
-      },
-      "type": "object"
+      }
     },
     "Workspace.Addfolder.Response": {
       "properties": {
