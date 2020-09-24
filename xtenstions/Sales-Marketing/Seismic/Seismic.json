@@ -1,0 +1,2748 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Seismic",
+    "termsOfService": "https://seismic.com/terms-of-use/",
+    "title": "Seismic",
+    "version": "v2"
+  },
+  "host": "api.seismic.com",
+  "basePath": "/integration/v2",
+  "schemes": [
+    "https"
+  ],
+  "x-ntx-render-version": 2,
+  "securityDefinitions": {
+    "oauth2_auth": {
+      "authorizationUrl": "https://auth.seismic.com/tenants/{{tenantName}}/connect/authorize",
+      "flow": "accessCode",
+      "scopes": {
+        "openid id download library offline_access": "openid id download library offline_access"
+      },
+      "tokenUrl": "https://auth.seismic.com/tenants/{{tenantName}}/connect/token#a",
+      "type": "oauth2",
+      "x-ntx-connection-properties": {
+        "type": "object",
+        "properties": {
+          "tenantName": {
+            "type": "string",
+            "title": "Tenant Name",
+            "description": "Example: seismictenant"
+          }
+        },
+        "required": [
+          "tenantName"
+        ]
+      }
+    }
+  },
+  "security": [
+    {
+      "oauth2_auth": [
+        "openid id download library offline_access"
+      ]
+    }
+  ],
+  "paths": {
+    "/teamsites": {
+      "get": {
+        "summary": "Get teamsites",
+        "tags": [
+          "Teamsites"
+        ],
+        "description": "Provides the full list of teamsites in a tenant, regardless of user access.",
+        "operationId": "GetTeamSite",
+        "produces": [
+          "application/json"
+        ],
+        "x-ntx-visibility": "internal",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Teamsites.GetTeamsites.Response"
+            }
+          }
+        }
+      }
+    },
+    "/contentProperties": {
+      "get": {
+        "summary": "Get Content Properties",
+        "tags": [
+          "Content Properties"
+        ],
+        "description": "Provides the list of content properties defined within the system",
+        "operationId": "GetContentProperties",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "query",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "includeValues",
+            "in": "query",
+            "name": "Include Values",
+            "required": false,
+            "default": false,
+            "type": "boolean"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ContentProperties.Response"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contentProperties/{contentPropertyId}/values": {
+      "get": {
+        "summary": "Get content property values",
+        "tags": [
+          "Content Properties"
+        ],
+        "description": "Provides the list of content property values for a given content property.",
+        "operationId": "GetContentPropertyValues",
+        "parameters": [
+          {
+            "description": "Content Property ID",
+            "in": "path",
+            "name": "contentPropertyId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetContentProperties",
+              "value-path": "id",
+              "value-name": "name"
+            },
+            "x-ntx-summary": "Content Category"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ContentProperties.Response.DomainOfValues"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/files": {
+      "post": {
+        "summary": "Add a File to a Library",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Add a new file. The metadata includes required properties such as the name, format, and parentFolderId. Use the special keyword \"root\" to add files to the root folder of a teamsite.Select yes for resolve name collisions to append an index such as (1)(2)(3) etc. until a name is found which does not conflict with an existing document in the folder.",
+        "operationId": "CreateLibraryFile",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "name": "metadata",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": "Json Object with 'name', 'parentFolderId' and 'format' like 'ppt' or 'doc'. Example: {\"name\" : \"Big Presentation\", \"parentFolderId\" : \"root\", \"format\": \"ppt\"}",
+            "x-ntx-summary": "Metadata"
+          },
+          {
+            "description": "file for upload",
+            "in": "formData",
+            "name": "content",
+            "required": true,
+            "type": "file",
+            "x-ntx-summary": "Content"
+          }
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.AddFile.Response"
+            }
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/files/{libraryContentId}": {
+      "get": {
+        "summary": "Get library file information/properties",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Get library content metadata",
+        "operationId": "GetLibraryProperties",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.FileProperties.Response"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update library file information/properties",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Update library content metadata",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "x-ntx-summary": "Metadata Updates",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.FileProperties.Update"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.FileProperties.Update.Response"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a library item",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Delete a library item",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/files/{libraryContentId}/copy": {
+      "post": {
+        "summary": "Copy a library file",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Copy a library file",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.CopyFile"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.FileProperties.Response"
+            }
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/folders/{libraryContentId}/items": {
+      "get": {
+        "summary": "Get List of Items in a library folder",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Get the list of items in a folder",
+        "operationId": "GetFolderList",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          },
+          {
+            "description": "The id of the item",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          },
+          {
+            "name": "limit",
+            "type": "integer",
+            "required": false,
+            "x-ntx-summary": "Results Returned Limit",
+            "default": 1000,
+            "in": "query"
+          },
+          {
+            "name": "includeExpiration",
+            "in": "query",
+            "type": "boolean",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "includeProperties",
+            "in": "query",
+            "type": "boolean",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.GetFolderItems.Response"
+            }
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/items/{libraryContentId}": {
+      "get": {
+        "summary": "Get library item details",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "Get details for any item type in Library",
+        "operationId": "GetItemInformation",
+        "parameters": [
+          {
+            "description": "The teamsite id the item belongs to",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "The id of the item",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Id"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.GetItemInfo.Response"
+            }
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/publish": {
+      "post": {
+        "summary": "Publish one or more documents in Library",
+        "tags": [
+          "Library Content Management"
+        ],
+        "description": "This endpoint can be used to immediately promote and publish content, or schedule publish of content for a future date for any number of unpublished documents.",
+        "operationId": "PublishLibraryItems",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "body",
+            "in": "body",
+            "x-ntx-label": "File Properties",
+            "name": "publishRequest",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.Publish.body"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LibraryContentManagement.Publish.response"
+            }
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/items/{libraryContentId}/submit": {
+      "put": {
+        "summary": "Submit a document into workflow",
+        "tags": [
+          "Library Workflow"
+        ],
+        "description": "Submit a document into workflow",
+        "operationId": "SubmitLibraryItemToWorkflow",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "Library Content Id",
+            "in": "path",
+            "name": "libraryContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "The id of library content"
+          },
+          {
+            "description": "",
+            "in": "body",
+            "name": "comment",
+            "schema": {
+              "$ref": "#/definitions/LibraryWorkflow.SubmitDocument.Response"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/teamsites/{teamsiteId}/livedocVersions/{libraryContentVersionId}": {
+      "post": {
+        "summary": "Generate a LiveDoc",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "Generate a live doc. Each desired output must be specified in output array. This will error if no outputs are specified. Generated outputs are only available for 24 hours from time of generation.",
+        "operationId": "GenerateAsync",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "The library content version id",
+            "in": "path",
+            "name": "libraryContentVersionId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Version Id"
+          },
+          {
+            "description": "",
+            "in": "body",
+            "name": "genInputReq",
+            "required": false,
+            "schema": {
+              "properties": {
+                "adHocInputs": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/LiveDocs.AdhocInputs.body"
+                  }
+                },
+                "outputs": {
+                  "items": {
+                    "properties": {
+                      "docxOptions": {
+                        "properties": {
+                          "imageDpi": {
+                            "default": 200,
+                            "enum": [
+                              0,
+                              96,
+                              120,
+                              144,
+                              200,
+                              300,
+                              400
+                            ],
+                            "type": "integer"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "format": {
+                        "enum": [
+                          "PPTX",
+                          "DOCX",
+                          "PDF",
+                          "XLSX"
+                        ],
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "pdfOptions": {
+                        "properties": {
+                          "compatibility": {
+                            "default": "Acrobat 9.0",
+                            "enum": [
+                              "Acrobat 5.0",
+                              "Acrobat 7.0",
+                              "Acrobat 9.0"
+                            ],
+                            "type": "string"
+                          },
+                          "layout": {
+                            "default": "Full Page Slides",
+                            "enum": [
+                              "Full Page Slides",
+                              "Note Pages"
+                            ],
+                            "type": "string"
+                          },
+                          "openPassword": {
+                            "type": "string"
+                          },
+                          "ownerOptions": {
+                            "type": "string"
+                          },
+                          "ownerPassword": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "pptxOptions": {
+                        "properties": {
+                          "clearNotes": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "imageDpi": {
+                            "default": 200,
+                            "enum": [
+                              0,
+                              96,
+                              120,
+                              144,
+                              200,
+                              300,
+                              400
+                            ],
+                            "type": "integer"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "xlsxOptions": {
+                        "properties": {
+                          "datasource": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "datasource"
+                        ],
+                        "type": "object"
+                      }
+                    },
+                    "required": [
+                      "format"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "outputs"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.GeneratedDoc.response"
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Get list of inputs for LiveDoc",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "Gets the list of adHoc inputs required to generate a LiveDoc.",
+        "operationId": "GetLiveDocInputParams",
+        "parameters": [
+          {
+            "description": "Teamsite Id",
+            "in": "path",
+            "name": "teamsiteId",
+            "required": true,
+            "type": "string",
+            "x-ntx-dynamic-values": {
+              "operationId": "GetTeamSite",
+              "value-path": "id",
+              "value-title": "name"
+            },
+            "x-ntx-summary": "Teamsite Id"
+          },
+          {
+            "description": "The library content version id",
+            "in": "path",
+            "name": "libraryContentVersionId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Library Content Version Id"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.InputParameters.Response"
+            }
+          }
+        }
+      }
+    },
+    "/generatedLivedocs/{generatedLivedocId}": {
+      "get": {
+        "summary": "Get status of LiveDoc generation",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "This is where you get the status for a generation process, it will give you the overall status for all underlying steps, but will also provide\r\n a breakdown for the readiness of the underlying assets. For example if you just want the PPTX, you may be able to download that before the PDF is done rendering.",
+        "operationId": "GetGenerationResultAsync",
+        "parameters": [
+          {
+            "description": "The id of the Generated Live Doc",
+            "in": "path",
+            "name": "generatedLivedocId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "GeneratedLiveDocId"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.GeneratedID.Response"
+            }
+          }
+        }
+      }
+    },
+    "/generatedLivedocs/{generatedLivedocId}/outputs/{outputId}/content": {
+      "get": {
+        "summary": "Download LiveDoc output",
+        "tags": [
+          "LiveDoc"
+        ],
+        "description": "This is where you can download a particular generated output such as a PPTX, DOCX, PDF, or XLSX. This endpoint also supports the\r\n  special keywords of \"pptx\", \"docx\", \"pdf\" as special aliases of the generatedOutputId such that you do not need to first get the generatedOutputId\r\n            in order to use this endpoint.",
+        "operationId": "GetGeneratedLiveDocContent",
+        "parameters": [
+          {
+            "description": "The id of the generated Live Doc",
+            "in": "path",
+            "name": "generatedLivedocId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "generatedLiveDocId"
+          },
+          {
+            "description": "The id of the specfic output file you wish to download.",
+            "in": "path",
+            "name": "outputId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "outputId"
+          },
+          {
+            "default": false,
+            "description": "This needs to be set to false in order to get the download url in response body.",
+            "in": "query",
+            "name": "redirect",
+            "required": true,
+            "type": "boolean",
+            "x-ntx-summary": "redirect"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LiveDocs.Download.Response"
+            }
+          }
+        }
+      }
+    },
+    "/predictiveContent/{predictiveContentId}/{contextId}": {
+      "get": {
+        "summary": "Get predictive content",
+        "tags": [
+          "Predictive Content"
+        ],
+        "description": "Gets the list of predictive content for a given predictive content setting for the currently authenticated user. In the case of predictive content which is dynamically grouped or inherits its hierarchy from the parent DocCenter folder, the hierarchy is provided in the hierarchy object with levels represented sequentially in the array. It is up to the UI to render the hierarchy.",
+        "operationId": "GetPredictiveContentResultSet",
+        "parameters": [
+          {
+            "description": "Predictive Content Setting Id or Title",
+            "in": "path",
+            "name": "predictiveContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Predictive Content Id or Title"
+          },
+          {
+            "description": "ContextId of content from SalesForce, Sugar, Dynamics, Etc.",
+            "in": "path",
+            "name": "contextId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Context Id"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/PredictiveContent.GetContent.Response"
+              },
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "summary": "Get list of users",
+        "tags": [
+          "Users"
+        ],
+        "description": "Get list of users",
+        "operationId": "GetUserList",
+        "parameters": [
+          {
+            "description": "Filter results by username, email, first name, or last name",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "type": "string",
+            "x-ntx-summary": "Filter Parameter"
+          },
+          {
+            "description": "Number of results returned",
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "default": 1000,
+            "type": "string",
+            "x-ntx-summary": "Number of results returned"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Users.Response"
+            }
+          }
+        }
+      }
+    },
+    "/users/{userId}": {
+      "get": {
+        "summary": "Get user details",
+        "tags": [
+          "Users"
+        ],
+        "description": "Get the user details for the specified id",
+        "operationId": "GetUserDetails",
+        "parameters": [
+          {
+            "description": "The id of the user",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "User Id"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Users.GetDetails.Response"
+            }
+          }
+        }
+      }
+    },
+    "/workspace/files": {
+      "post": {
+        "summary": "Add a file to a Workspace",
+        "tags": [
+          "Workspace Content Management"
+        ],
+        "description": "Adds a new file using a multi-part POST containing the file's metadata and the file contents. Using a `multipart/form-data` body, send body    parts named 'metadata' and 'content'. The metadata should be a JSON object. The content part should contain the bytes of the file.",
+        "operationId": "CreateFile",
+        "parameters": [
+          {
+            "description": "Json Object with 'name', 'parentFolderId' and 'format' like 'ppt' or 'doc'. Example: {\"name\" : \"Big Presentation\", \"parentFolderId\" : \"root\", \"format\": \"ppt\"}",
+            "in": "formData",
+            "name": "metadata",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Form Data"
+          },
+          {
+            "description": "File content bytes. Use a Content-Disposition that includes a 'filename' parameter to indicate this is file data. The specific filename value is ignored in favor of metadata.name.",
+            "in": "formData",
+            "name": "content",
+            "required": true,
+            "type": "file",
+            "x-ntx-summary": "File Contents"
+          }
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Workspace.Addfile.Response"
+            }
+          }
+        }
+      }
+    },
+    "/workspace/folders": {
+      "post": {
+        "summary": "Add a Workspace folder",
+        "tags": [
+          "Workspace Content Management"
+        ],
+        "description": "Adds a new workspace folder inside a given folder. Use the special keywork \"root\" as the parentFolderId to create a new folder in the user's root.",
+        "operationId": "CreateWorkspaceFolder",
+        "parameters": [
+          {
+            "description": "Details for the new folder",
+            "in": "body",
+            "name": "folder",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Workspace.Addfolder.body"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Workspace.Addfolder.Response"
+            }
+          }
+        }
+      }
+    },
+    "/workspace/folders/createContextualFolder": {
+      "post": {
+        "summary": "Add or get a contextual folder in Workspace",
+        "tags": [
+          "Workspace Content Management"
+        ],
+        "description": "Creates a contextual folder or gets the workspaceContentId for a contextual folder if it already exists. These contextual folders are identified by the combination of systemType, contextType, contextTypePlural, and contextId. \n>Any folders created with this API cannot be deleted including the folder for the systemType, contextTypePlural, and contextId, so take extreme caution when using this endpoint.  Any typo in any of these fields will yield invalid non-removable folders.  Each of the values is case sensitive.",
+        "operationId": "CreateWorkspaceContextualFolder",
+        "parameters": [
+          {
+            "description": "",
+            "in": "body",
+            "name": "folder",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Workspace.Addfolder.Contextual.body"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Workspace.Addfolder.Response"
+            }
+          }
+        }
+      }
+    },
+    "/workspace/folders/{workspaceFolderId}/items": {
+      "get": {
+        "summary": "Get items in a folder in Workspace",
+        "tags": [
+          "Workspace Content Management"
+        ],
+        "description": "Gets a list of items (file, folder, url, etc) in a parent folder.",
+        "operationId": "GetWorkspaceFolderItems",
+        "parameters": [
+          {
+            "description": "Id of the folder. Use \"root\" for the root folder.",
+            "in": "path",
+            "name": "workspaceFolderId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Workspace Folder Id"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Workspace.GetFolderContents.response"
+            }
+          }
+        }
+      }
+    },
+    "/workspace/items/{workspaceContentId}": {
+      "get": {
+        "summary": "Get item details in Workspace",
+        "tags": [
+          "Workspace Content Management"
+        ],
+        "description": "Get details for any item type in Workspace",
+        "operationId": "GetItem",
+        "parameters": [
+          {
+            "description": "The id of the workspace content",
+            "in": "path",
+            "name": "workspaceContentId",
+            "required": true,
+            "type": "string",
+            "x-ntx-summary": "Workspace Content Id"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Workspace.GetItemDetails.response"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ContentProperties.Response": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "Content Property ID",
+          "description": "ID of Content Property"
+        },
+        "name": {
+          "type": "string",
+          "title": "Content Property",
+          "description": "The content property"
+        },
+        "type": {
+          "type": "string",
+          "title": "Content Property type",
+          "description": "The content Property type"
+        },
+        "hasDomainOfValues": {
+          "type": "boolean",
+          "title": "Has Domain of Values",
+          "description": "Indicates if there are a domain of values under this content property"
+        },
+        "domainOfValues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentProperties.Response.DomainOfValues"
+          },
+          "title": "Collection of Content Property Values"
+        },
+        "teamsites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentProperties.Response.TeamSites"
+          }
+        }
+      }
+    },
+    "ContentProperties.Response.DomainOfValues": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "Content Value ID",
+          "description": "The Content Property ID"
+        },
+        "value": {
+          "type": "string",
+          "title": "Content Value",
+          "description": "The content property value"
+        }
+      }
+    },
+    "ContentProperties.Response.TeamSites": {
+      "type": "object",
+      "properties": {
+        "teamsiteId": {
+          "description": "The id of the teamsite.",
+          "title": "Teamsite Id",
+          "type": "string"
+        },
+        "teamsiteName": {
+          "description": "The name of the teamsite.",
+          "title": "Teamsite Name",
+          "type": "string"
+        },
+        "isRequired": {
+          "description": "Required for teamsite",
+          "title": "Is Required",
+          "type": "boolean"
+        }
+      }
+    },
+    "LibraryContentManagement.CustomProperties": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-ntx-dynamic-values": {
+            "operationId": "GetContentProperties",
+            "value-path": "id",
+            "value-title": "name",
+            "parameters": {
+              "teamsiteId": {
+                "parameter": "teamsiteId"
+              }
+            }
+          },
+          "x-ntx-summary": "Content Property"
+        },
+        "values": {
+          "type": "array",
+          "x-ntx-summary": "Values",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "type": "object",
+      "additionalProperties": false
+    },
+    "LibraryContentManagement.FileProperties.Update": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ownerId": {
+          "description": "The Owner of this Item",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "properties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.CustomProperties"
+          },
+          "x-ntx-summary": "File Properties"
+        },
+        "description": {
+          "description": "Description",
+          "type": "string",
+          "title": "Description"
+        },
+        "parentFolderId": {
+          "description": "Id of the Folder where this file will be stored. An updated Folder Id will move the file to that new folder",
+          "type": "string",
+          "title": "Parent Folder Id"
+        },
+        "experts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.ContentExperts"
+          }
+        }
+      }
+    },
+    "LibraryContentManagement.FileProperties.Update.Response": {
+      "type": "object",
+      "properties": {
+        "assignedToProfiles": {
+          "type": "array",
+          "title": "Assigned to Profiles",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.AssignedToProfiles.Response"
+          }
+        },
+        "status": {
+          "description": "Status",
+          "type": "string",
+          "title": "Status"
+        },
+        "ownerId": {
+          "description": "Owner Id",
+          "type": "string",
+          "title": "Owner Id"
+        },
+        "experts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.ContentExperts"
+          },
+          "title": "Content Experts"
+        },
+        "properties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.CustomProperties"
+          },
+          "title": "File Properties"
+        },
+        "description": {
+          "description": "Description",
+          "type": "string",
+          "title": "Description"
+        }
+      }
+    },
+    "LibraryContentManagement.FileProperties.Response": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "description": "File Size",
+          "type": "integer",
+          "title": "File Size"
+        },
+        "assignedToProfiles": {
+          "type": "array",
+          "title": "Assigned to Profiles",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.AssignedToProfiles.Response"
+          }
+        },
+        "version": {
+          "description": "version",
+          "type": "string",
+          "title": "Version"
+        },
+        "versionId": {
+          "description": "Version ID",
+          "type": "string",
+          "title": "Version ID"
+        },
+        "format": {
+          "description": "Format",
+          "type": "string",
+          "title": "Format"
+        },
+        "status": {
+          "description": "Status",
+          "type": "string",
+          "title": "Status"
+        },
+        "ownerId": {
+          "description": "Owner Id",
+          "type": "string",
+          "title": "Owner Id"
+        }
+      }
+    },
+    "LibraryContentManagement.AssignedToProfiles.Response": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The content profile id that the library content is assigned to.",
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "name": {
+          "description": "The assigned to profile's name.",
+          "title": "Profile Name",
+          "type": "string"
+        },
+        "type": {
+          "description": "The profile type (user/group)",
+          "title": "Profile Type",
+          "type": "string"
+        }
+      }
+    },
+    "LibraryContentManagement.ContentExperts": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "User or group",
+          "title": "Expert Type",
+          "type": "string"
+        },
+        "id": {
+          "description": "Content Expert Id",
+          "title": "Content Expert Id",
+          "type": "string"
+        }
+      }
+    },
+    "LibraryContentManagement.CopyFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "parentFolderId": {
+          "description": "Id of the folder to copy to",
+          "title": "Parent Folder Id",
+          "type": "string"
+        }
+      }
+    },
+    "LibraryContentManagement.AddFile.Response": {
+      "properties": {
+        "assignedToProfiles": {
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.AssignedToProfiles.Response"
+          },
+          "type": "array"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "title": "Library Content Created At",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Users.CreatedUser"
+        },
+        "description": {
+          "description": "The description for the item.",
+          "title": "Library Content Description",
+          "type": "string"
+        },
+        "experts": {
+          "description": "A list of experts for this item. A user expert would be in the form `{\"type\":\"user\", \"id\":\"the users id\"}`. A group expert would be in the form `{\"type\":\"group\", \"id\":\"the group id\"}`.",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.ContentExperts"
+          },
+          "type": "array"
+        },
+        "expiresAt": {
+          "description": "The date the item expires which can only be set to the future. This date does not accept the time component, so should be specified as a UTC YYYY-MM-DD.",
+          "format": "date-time",
+          "title": "Library Content Expires At",
+          "type": "string"
+        },
+        "externalConnectionId": {
+          "description": "The external system linked to this document, if applicable",
+          "title": "Library Content External Connection Id",
+          "type": "string"
+        },
+        "externalId": {
+          "description": "The id of the document in the external system, if applicable",
+          "title": "Library Content External Id",
+          "type": "string"
+        },
+        "format": {
+          "description": "The file format of the library content",
+          "title": "Library Content Format",
+          "type": "string"
+        },
+        "id": {
+          "description": "The id of the library content",
+          "title": "Library Content id",
+          "type": "string"
+        },
+        "modifiedAt": {
+          "format": "date-time",
+          "title": "Library Content Modified At",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "$ref": "#/definitions/Users.Modified"
+        },
+        "name": {
+          "description": "The name of the item.",
+          "title": "Library Content Name",
+          "type": "string"
+        },
+        "ownerId": {
+          "description": "The userId of the owner of the item.",
+          "title": "Library Content Owner Id",
+          "type": "string"
+        },
+        "parentFolderId": {
+          "description": "The GUID of the item's parent folder. Changing this value will move the item from one folder to another. Use \"root\" to place items in the root folder of the teamsite.",
+          "title": "Library Content Parent Folder Id",
+          "type": "string"
+        },
+        "properties": {
+          "description": "An array of properties and their values where each property is identified by its id such as `{\"id\": \"the property id\",\"values\": [\"Value A\", \"Value B\"]}`. The property name can be included, but will be ignored.",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.CustomProperties"
+          },
+          "type": "array"
+        },
+        "repository": {
+          "readOnly": true,
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "size": {
+          "format": "int64",
+          "title": "Library Content File Size",
+          "type": "integer"
+        },
+        "type": {
+          "description": "The type of content (file, folder, url, livedoc, etc)",
+          "enum": [
+            "unknown",
+            "file",
+            "folder",
+            "url",
+            "youtube",
+            "vimeo",
+            "datasource",
+            "livedoc",
+            "article",
+            "livecomponent"
+          ],
+          "title": "Content Type",
+          "type": "string"
+        },
+        "version": {
+          "title": "Library Content Version",
+          "type": "string"
+        },
+        "versionId": {
+          "description": "The id of the current version of the library content",
+          "title": "Library Content Version id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.GetItemInfo.Response": {
+      "properties": {
+        "assignedToProfiles": {
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.AssignedToProfiles.Response"
+          },
+          "type": "array"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "title": "Library Content Created At",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Users.CreatedUser"
+        },
+        "description": {
+          "description": "The description for the item.",
+          "title": "Library Content Description",
+          "type": "string"
+        },
+        "experts": {
+          "description": "A list of experts for this item. A user expert would be in the form `{\"type\":\"user\", \"id\":\"the users id\"}`. A group expert would be in the form `{\"type\":\"group\", \"id\":\"the group id\"}`.",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.ContentExperts"
+          },
+          "type": "array"
+        },
+        "expiresAt": {
+          "description": "The date the item expires which can only be set to the future. This date does not accept the time component, so should be specified as a UTC YYYY-MM-DD.",
+          "format": "date-time",
+          "title": "Library Content Expires At",
+          "type": "string"
+        },
+        "externalConnectionId": {
+          "title": "Library Content External Connection Id",
+          "type": "string"
+        },
+        "externalId": {
+          "title": "Library Content External Id",
+          "type": "string"
+        },
+        "format": {
+          "title": "Library Content Format",
+          "type": "string"
+        },
+        "id": {
+          "title": "Library Content Id",
+          "type": "string"
+        },
+        "modifiedAt": {
+          "format": "date-time",
+          "title": "Library Content Modified At",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "$ref": "#/definitions/Users.Modified"
+        },
+        "name": {
+          "description": "The name of the item.",
+          "title": "Library Content Name",
+          "type": "string"
+        },
+        "ownerId": {
+          "description": "The userId of the owner of the item.",
+          "title": "Library Content Owner Id",
+          "type": "string"
+        },
+        "parentFolderId": {
+          "description": "The GUID of the item's parent folder. Changing this value will move the item from one folder to another. Use \"root\" to place items in the root folder of the teamsite.",
+          "title": "Library Content Parent Folder Id",
+          "type": "string"
+        },
+        "properties": {
+          "description": "An array of properties and their values where each property is identified by its id such as `{\"id\": \"the property id\",\"values\": [\"Value A\", \"Value B\"]}`. The property name can be included, but will be ignored.",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.CustomProperties"
+          },
+          "type": "array"
+        },
+        "repository": {
+          "readOnly": true,
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "size": {
+          "format": "int64",
+          "title": "Library Content File Size",
+          "type": "integer"
+        },
+        "type": {
+          "enum": [
+            "unknown",
+            "file",
+            "folder",
+            "url",
+            "youtube",
+            "vimeo",
+            "datasource",
+            "livedoc",
+            "article",
+            "livecomponent"
+          ],
+          "type": "string"
+        },
+        "url": {
+          "$ref": "#/definitions/LibraryContentManagement.UrlInfo"
+        },
+        "version": {
+          "title": "Library Content Version",
+          "type": "string"
+        },
+        "versionId": {
+          "title": "Library Content Version Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.UrlInfo": {
+      "properties": {
+        "openInNewWindow": {
+          "title": "Url Open in New Window",
+          "type": "boolean",
+          "x-ntx-visibility": "internal"
+        },
+        "url": {
+          "title": "Library Content External Url",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.ErrorPublish.Response": {
+      "properties": {
+        "id": {
+          "description": "The id of the content that errored",
+          "title": "Error Id",
+          "type": "string"
+        },
+        "message": {
+          "description": "The error message",
+          "title": "Error Message",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.PublishContentItem": {
+      "properties": {
+        "id": {
+          "description": "The id of the content to publish.",
+          "title": "Publish Content Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.Publish.body": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "comment": {
+          "description": "A note about the publish action",
+          "title": "Comment",
+          "type": "string"
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.PublishContentItem"
+          }
+        },
+        "publishAt": {
+          "description": "The date and time to publish the content. This is required if publishing 10 or more documents.",
+          "title": "Publish At",
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "LibraryContentManagement.Publish.response": {
+      "properties": {
+        "errors": {
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.ErrorPublish.Response"
+          },
+          "type": "array"
+        },
+        "totalErrors": {
+          "description": "The number of errors",
+          "format": "int32",
+          "title": "Total Errors",
+          "type": "integer"
+        },
+        "totalRequests": {
+          "description": "The total requests recieved",
+          "format": "int32",
+          "title": "Total Requests",
+          "type": "integer"
+        },
+        "totalSucceeded": {
+          "description": "The number successful",
+          "format": "int32",
+          "title": "Total Succeeded",
+          "type": "integer"
+        },
+        "totalWarnings": {
+          "description": "The total number of warnings",
+          "format": "int32",
+          "title": "Total Warnings",
+          "type": "integer"
+        },
+        "warnings": {
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.WarningResponseStatus"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.WarningResponseStatus": {
+      "properties": {
+        "id": {
+          "description": "The id of the content with a warning",
+          "title": "Warning Id",
+          "type": "string"
+        },
+        "message": {
+          "description": "The warning message",
+          "title": "Warning Message",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryContentManagement.GetFolderItems.Response": {
+      "type": "object",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "x-ntx-summary": "Items",
+          "items": {
+            "$ref": "#/definitions/LibraryContentManagement.GetFolderItems.ItemDetails.Response"
+          }
+        },
+        "totalCount": {
+          "type": "integer",
+          "x-ntx-summary": "Count of Items"
+        }
+      }
+    },
+    "LibraryContentManagement.GetFolderItems.ItemDetails.Response": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-ntx-summary": "Item ID"
+        },
+        "name": {
+          "type": "string",
+          "x-ntx-summary": "Item Name"
+        },
+        "type": {
+          "type": "string",
+          "x-ntx-summary": "Item Type"
+        }
+      }
+    },
+    "LibraryWorkflow.LibraryContent": {
+      "properties": {
+        "id": {
+          "title": "Library Content Id",
+          "type": "string"
+        },
+        "versionId": {
+          "title": "Library Content Version id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LibraryWorkflow.SubmitDocument.Response": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "comments": {
+          "description": "A comment for the submission",
+          "title": "Comment",
+          "type": "string"
+        }
+      }
+    },
+    "LiveDocs.AdhocInputs.body": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ad Hoc Input Name",
+          "title": "The key of the ad hoc input field",
+          "type": "string"
+        },
+        "value": {
+          "description": "The value of the ad hoc input field",
+          "title": "Ad Hoc Input Value",
+          "type": "string"
+        }
+      }
+    },
+    "LiveDocs.Download.Response": {
+      "properties": {
+        "downloadUrl": {
+          "title": "Download Url",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LiveDocs.AdhocResponseItems": {
+      "properties": {
+        "columns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LiveDocs.AdhocResponseItems.Columns"
+          }
+        },
+        "name": {
+          "description": "The name of the ad hoc input field",
+          "title": "Adhoc Input Name",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of the adhoc input field (date, string, integer, table, etc)",
+          "title": "Adhoc Input Type",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LiveDocs.AdhocResponseItems.Columns": {
+      "properties": {
+        "name": {
+          "description": "The name of the ad hoc input field",
+          "title": "Adhoc Input Name",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of the adhoc input field (date, string, integer, etc)",
+          "title": "Adhoc Input Type",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LiveDocs.GeneratedOutput.response": {
+      "properties": {
+        "format": {
+          "description": "The file format of the output document (pdf, pptx, docx, etc)",
+          "title": "LiveDoc Output Format",
+          "type": "string"
+        },
+        "id": {
+          "description": "The id of the LiveDoc output.",
+          "title": "LiveDoc Output Id",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the output file.",
+          "title": "LiveDoc Output Name",
+          "type": "string"
+        },
+        "status": {
+          "description": "The completion status of the LiveDoc (Queued, Generating, Completed, Failed)",
+          "enum": [
+            "Queued",
+            "Generating",
+            "Completed",
+            "Failed"
+          ],
+          "title": "LiveDoc Generation Status",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LiveDocs.GeneratedID.Response": {
+      "properties": {
+        "id": {
+          "description": "The id of the generated LiveDoc",
+          "title": "Generated LiveDoc Id",
+          "type": "string"
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LiveDocs.GeneratedOutput.response"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "LiveDocs.GeneratedDoc.response": {
+      "properties": {
+        "generatedLivedocId": {
+          "description": "The id of the generated LiveDoc",
+          "title": "Generated LiveDoc Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LiveDocs.InputParameters.Response": {
+      "type": "object",
+      "properties": {
+        "adhocInputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LiveDocs.AdhocResponseItems"
+          }
+        }
+      }
+    },
+    "PredictiveContent.GetContent.ContentCustomProperties.response": {
+      "properties": {
+        "id": {
+          "description": "",
+          "title": "Content Property Id",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "title": "Content Property Name",
+          "type": "string"
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "description": "",
+            "title": "Content Property Values",
+            "type": "string"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "PredictiveContent.PredictiveContentHierarchy": {
+      "properties": {
+        "label": {
+          "description": "",
+          "title": "Predictive Content Hierarchy Label",
+          "type": "string"
+        },
+        "type": {
+          "description": "\"group\" or \"folder\"",
+          "title": "Predictive Content Hierarchy Type",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "PredictiveContent.GetContent.Response": {
+      "type": "object",
+      "properties": {
+        "applicationUrls": {
+          "items": {
+            "$ref": "#/definitions/Workspace.ApplicationUrl"
+          },
+          "type": "array"
+        },
+        "contentProfileId": {
+          "title": "DocCenter Content Profile id",
+          "type": "string"
+        },
+        "deliveryOptions": {
+          "items": {
+            "$ref": "#/definitions/Workspace.DeliveryOption"
+          },
+          "type": "array"
+        },
+        "format": {
+          "description": "The format of the document (pptx, docx, etc)",
+          "title": "Library Content File Format",
+          "type": "string"
+        },
+        "hierarchy": {
+          "items": {
+            "$ref": "#/definitions/PredictiveContent.PredictiveContentHierarchy"
+          },
+          "type": "array"
+        },
+        "id": {
+          "description": "The DocCenter id of the predictive content.",
+          "title": "DocCenter Id",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "libraryContent": {
+          "$ref": "#/definitions/LibraryWorkflow.LibraryContent"
+        },
+        "name": {
+          "description": "The name of the predictive content.",
+          "title": "Library Content Name",
+          "type": "string"
+        },
+        "properties": {
+          "items": {
+            "$ref": "#/definitions/PredictiveContent.GetContent.ContentCustomProperties.response"
+          },
+          "type": "array"
+        },
+        "repository": {
+          "description": "The repository (always DocCenter).",
+          "title": "DocCenter Repository",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "score": {
+          "$ref": "#/definitions/PredictiveContent.PredictiveContentScore"
+        },
+        "type": {
+          "description": "The content type",
+          "title": "Library Content Type",
+          "type": "string"
+        },
+        "url": {
+          "$ref": "#/definitions/LibraryContentManagement.UrlInfo"
+        }
+      }
+    },
+    "PredictiveContent.PredictiveContentScore": {
+      "properties": {
+        "points": {
+          "format": "double",
+          "title": "Predictive Content Score Points",
+          "type": "number"
+        },
+        "rank": {
+          "format": "double",
+          "title": "Predictive Content Score Rank",
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "Teamsites.GetTeamsites.Response": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "The id of the teamsite.",
+            "title": "Teamsite Id",
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of the teamsite.",
+            "title": "Teamsite Name",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Users.Response": {
+      "type": "object",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "x-ntx-summary": "Entries",
+          "items": {
+            "$ref": "#/definitions/Users.Response.Details"
+          }
+        }
+      }
+    },
+    "Users.Response.Details": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The id of the user.",
+          "title": "User Id",
+          "type": "string"
+        },
+        "username": {
+          "description": "The username of the user",
+          "title": "Username ",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email of the user",
+          "title": "User Email",
+          "type": "string"
+        },
+        "firstName": {
+          "description": "The first name of the user",
+          "title": "User First Name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The last name of the user",
+          "title": "User Last Name",
+          "type": "string"
+        },
+        "fullName": {
+          "description": "The full name of the user",
+          "title": "User Full Name",
+          "type": "string"
+        },
+        "createdAt": {
+          "description": "The timestamp that the user was created.",
+          "format": "date-time",
+          "title": "User Created At",
+          "type": "string"
+        },
+        "licenseType": {
+          "description": "The license type of the user (business, premium, partner)",
+          "enum": [
+            "business",
+            "premium",
+            "partner"
+          ],
+          "title": "User Licence Type",
+          "type": "string"
+        },
+        "title": {
+          "description": "The title of the user",
+          "title": "User Title",
+          "type": "string"
+        }
+      }
+    },
+    "Users.GetDetails.Response": {
+      "properties": {
+        "address": {
+          "description": "The address of the user.",
+          "title": "User Address",
+          "type": "string"
+        },
+        "biography": {
+          "description": "The biography of the user",
+          "title": "User Bio",
+          "type": "string"
+        },
+        "createdAt": {
+          "description": "The timestamp that the user was created.",
+          "format": "date-time",
+          "title": "User Created At",
+          "type": "string"
+        },
+        "defaultContentProfileId": {
+          "description": "The content profile id of the user",
+          "title": "User Default Content Profile Id",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email of the user",
+          "title": "User Email",
+          "type": "string"
+        },
+        "firstName": {
+          "description": "The first name of the user",
+          "title": "User First Name",
+          "type": "string"
+        },
+        "fullName": {
+          "description": "The full name of the user",
+          "title": "User Full Name",
+          "type": "string"
+        },
+        "id": {
+          "description": "The id of the user.",
+          "title": "User Id",
+          "type": "string"
+        },
+        "isDeleted": {
+          "description": "Is this user deleted?",
+          "title": "Is User Deleted",
+          "type": "boolean"
+        },
+        "lastName": {
+          "description": "The last name of the user",
+          "title": "User Last Name",
+          "type": "string"
+        },
+        "licenseType": {
+          "description": "The license type of the user (business, premium, partner)",
+          "enum": [
+            "business",
+            "premium",
+            "partner"
+          ],
+          "title": "User Licence Type",
+          "type": "string"
+        },
+        "organization": {
+          "description": "The organization of the user",
+          "title": "User Organization",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "description": "The phone number of the user",
+          "title": "User Phone Number",
+          "type": "string"
+        },
+        "ssoId": {
+          "description": "The external SSO id of the user",
+          "title": "User SSO Id",
+          "type": "string"
+        },
+        "thumbnailId": {
+          "description": "The id of the user's thumbnail.",
+          "title": "User Thumbnail Id",
+          "type": "string"
+        },
+        "title": {
+          "description": "The title of the user",
+          "title": "User Title",
+          "type": "string"
+        },
+        "username": {
+          "description": "The username of the user",
+          "title": "Username ",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Users.CreatedUser": {
+      "properties": {
+        "id": {
+          "description": "Creator User Id",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Users.Modified": {
+      "properties": {
+        "id": {
+          "description": "Modifier User Id",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.Addfolder.Contextual.body": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contextId": {
+          "description": "The ID of the record in the external system.",
+          "title": "Context Id",
+          "type": "string"
+        },
+        "contextType": {
+          "description": "This is the singular form of the context such as \"Opportunity\" or \"Account\"",
+          "title": "Context Type",
+          "type": "string"
+        },
+        "contextTypePlural": {
+          "description": "This is the plural form of the context such as \"Opportunities\" or \"Accounts\"",
+          "title": "Context Type Plural",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the folder you would like to create.  Often the name of the record in the external system.  This name can be updated at any time as the folder is identified by the systemType+contextType+contextId.",
+          "title": "Context Name",
+          "type": "string"
+        },
+        "systemType": {
+          "description": "This is typically one of the following: Salesforce, MicrosoftDynamicCRM, Sugar, Oracle.   But there are no restrictions and any string can be used to specify a new system type for custom applications.",
+          "title": "System Type",
+          "type": "string"
+        }
+      }
+    },
+    "Workspace.GetFolderContents.response": {
+      "properties": {
+        "itemCount": {
+          "description": "The count of items in the folder",
+          "format": "int64",
+          "title": "Item Count",
+          "type": "integer"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/definitions/Workspace.GetItemDetails.response"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "itemCount",
+        "items"
+      ],
+      "type": "object"
+    },
+    "Workspace.Addfile.Response": {
+      "properties": {
+        "applicationUrls": {
+          "items": {
+            "$ref": "#/definitions/Workspace.ApplicationUrl"
+          },
+          "type": "array"
+        },
+        "createdAt": {
+          "description": "The timestamp that the content was created",
+          "format": "date-time",
+          "title": "Workspace Content Created At",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Workspace.CreatedUser"
+        },
+        "deliveryOptions": {
+          "items": {
+            "$ref": "#/definitions/Workspace.DeliveryOption"
+          },
+          "type": "array"
+        },
+        "format": {
+          "description": "The file format of the workspace content (docx, pdf, pptx, etc)",
+          "title": "Workspace Content Format",
+          "type": "string"
+        },
+        "iconUrl": {
+          "description": "Url of the icon of the workspace content",
+          "title": "Workspace Content Icon Url",
+          "type": "string"
+        },
+        "id": {
+          "title": "Workspace Content Id",
+          "type": "string"
+        },
+        "isContextualContent": {
+          "description": "Is this contextual content",
+          "title": "Workspace Content Is Contextual Content",
+          "type": "boolean"
+        },
+        "modifiedAt": {
+          "description": "The timestamp that the content was modified",
+          "format": "date-time",
+          "title": "Workspace Content Modified At",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "$ref": "#/definitions/Workspace.ModifiedUser"
+        },
+        "name": {
+          "description": "Name of the workspace content",
+          "title": "Workspace Content Name",
+          "type": "string"
+        },
+        "parentFolderId": {
+          "description": "The parent folder of the workspace content",
+          "title": "Workspace Content Parent Folder Id",
+          "type": "string"
+        },
+        "repository": {
+          "readOnly": true,
+          "title": "Workspace Content Repository",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "resourceUrl": {
+          "description": "The url of the content",
+          "title": "Workspace Content Resource Url",
+          "type": "string"
+        },
+        "size": {
+          "description": "The size of the file",
+          "format": "int64",
+          "title": "Workspace File Size",
+          "type": "integer"
+        },
+        "type": {
+          "description": "The content type (folder, url, file)",
+          "enum": [
+            "folder",
+            "url",
+            "file"
+          ],
+          "title": "Workspace Content Type",
+          "type": "string"
+        },
+        "versionId": {
+          "description": "The current version id",
+          "title": "Workspace Content Version Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.Addfolder.body": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format": {
+          "title": "Workspace Folder Format",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "name": {
+          "description": "The name of the workspace folder",
+          "title": "Workspace Folder Name",
+          "type": "string"
+        },
+        "parentFolderId": {
+          "description": "The id of the parent folder.",
+          "title": "Workspace Parent Folder Id",
+          "type": "string"
+        }
+      }
+    },
+    "Workspace.Addfolder.Response": {
+      "properties": {
+        "applicationUrls": {
+          "items": {
+            "$ref": "#/definitions/Workspace.ApplicationUrl"
+          },
+          "type": "array"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "title": "Workspace Folder Created At",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Workspace.CreatedUser"
+        },
+        "deliveryOptions": {
+          "items": {
+            "$ref": "#/definitions/Workspace.DeliveryOption"
+          },
+          "type": "array"
+        },
+        "format": {
+          "title": "Workspace Folder Format",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "iconUrl": {
+          "description": "The icon url of the workspace folder",
+          "title": "Workspace Folder Icon Url",
+          "type": "string"
+        },
+        "id": {
+          "title": "Workspace Folder Id",
+          "type": "string"
+        },
+        "isContextualContent": {
+          "title": "Is Contextual Content",
+          "type": "boolean"
+        },
+        "modifiedAt": {
+          "format": "date-time",
+          "title": "Workspace Folder Modified At",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "$ref": "#/definitions/Workspace.ModifiedUser"
+        },
+        "name": {
+          "title": "Workspace Folder Name",
+          "type": "string"
+        },
+        "parentFolderId": {
+          "title": "Workspace Folder Parent Id",
+          "type": "string"
+        },
+        "repository": {
+          "readOnly": true,
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "resourceUrl": {
+          "type": "string"
+        },
+        "size": {
+          "format": "int64",
+          "type": "integer",
+          "x-ntx-visibility": "internal"
+        },
+        "type": {
+          "enum": [
+            "folder",
+            "url",
+            "file"
+          ],
+          "title": "Workspace Folder Type",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "versionId": {
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.GetItemDetails.response": {
+      "properties": {
+        "applicationUrls": {
+          "description": "The url of the workspace content",
+          "items": {
+            "$ref": "#/definitions/Workspace.ApplicationUrl"
+          },
+          "title": "Workspace Content Application Urls",
+          "type": "array"
+        },
+        "createdAt": {
+          "description": "The time the content was created.",
+          "format": "date-time",
+          "title": "Workspace Content Created At",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Workspace.CreatedUser"
+        },
+        "deliveryOptions": {
+          "items": {
+            "$ref": "#/definitions/Workspace.DeliveryOption"
+          },
+          "type": "array"
+        },
+        "format": {
+          "description": "The file format of the item (docx, pptx, etc).",
+          "title": "Workspace Content Format",
+          "type": "string"
+        },
+        "iconUrl": {
+          "description": "The url of the workspace content's icon.",
+          "title": "Workspace Content Icon Url",
+          "type": "string"
+        },
+        "id": {
+          "description": "The id of the content in the requested folder",
+          "title": "Workspace Content Id",
+          "type": "string"
+        },
+        "isContextualContent": {
+          "description": "Is this contextual content.",
+          "title": "Workspace Content Is Contextual Content",
+          "type": "boolean"
+        },
+        "modifiedAt": {
+          "description": "The time the content was modified.",
+          "format": "date-time",
+          "title": "Workspace Content Modified At",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "$ref": "#/definitions/Workspace.ModifiedUser"
+        },
+        "name": {
+          "description": "The name of the item.",
+          "title": "Workspace Content Name",
+          "type": "string"
+        },
+        "parentFolderId": {
+          "description": "The parent folder of the workspace content.",
+          "title": "Workspace Content Parent Folder Id",
+          "type": "string"
+        },
+        "repository": {
+          "description": "The repository the item is in (Library, Workspace, DocCenter, ContentManager)",
+          "readOnly": true,
+          "title": "Workspace Item Repository",
+          "type": "string",
+          "x-ntx-visibility": "internal"
+        },
+        "resourceUrl": {
+          "description": "The Url to access the workspace content via API.",
+          "title": "Workspace Content API URL",
+          "type": "string"
+        },
+        "size": {
+          "description": "The file's size.",
+          "format": "int64",
+          "title": "Workspace Content Size",
+          "type": "integer"
+        },
+        "type": {
+          "description": "The content type (folder, url, file)",
+          "enum": [
+            "folder",
+            "url",
+            "file"
+          ],
+          "title": "Workspace Content Type",
+          "type": "string"
+        },
+        "url": {
+          "$ref": "#/definitions/WorkSpace.WsUrl.response"
+        },
+        "versionId": {
+          "description": "The current version id of the workspace content",
+          "title": "Workspace Content Version Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "WorkSpace.WsUrl.response": {
+      "properties": {
+        "url": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.ApplicationUrl": {
+      "properties": {
+        "name": {
+          "title": "Application Url Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Application Url",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.CreatedUser": {
+      "properties": {
+        "id": {
+          "description": "The id of the user who created the item",
+          "title": "Creator User Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.DeliveryOption": {
+      "properties": {
+        "id": {
+          "description": "Delivery Option Id",
+          "title": "Delivery Option Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Workspace.ModifiedUser": {
+      "properties": {
+        "id": {
+          "description": "The id of the user who modified the item",
+          "title": "Modifier User Id",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}
