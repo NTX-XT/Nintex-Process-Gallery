@@ -1,0 +1,162 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Exchange Online",
+    "description": "Graph Send Email"
+  },
+  "host": "graph.microsoft.com",
+  "basePath": "/v1.0",
+  "schemes": [
+    "https"
+  ],
+  "x-ntx-render-version" : 2,
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/me/sendmail": {
+      "post": {
+        "summary": "Send an Email",
+        "description": "Send An Email Exchange Online",
+        "operationId": "SendEmail",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Message",
+            "schema": {
+              "$ref": "#/definitions/message"        
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "auth": [
+              "Mail.Send"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "message": {
+      "type": "object",
+      "x-ntx-summary": "",
+      "properties": {
+        "message": {
+          "type": "object",
+          "required": [
+            "subject",
+            "body",
+            "toRecipients"
+          ],
+          "properties": {
+            "subject": {
+              "type": "string",
+              "x-ntx-summary": "Email Subject"
+            },
+            "body": {
+              "type": "object",
+              "additionalProperties": false,
+              "x-ntx-summary": "",
+              "properties": {
+                "contentType": {
+                  "type": "string",
+                  "enum": ["Text"],
+                  "x-ntx-visibility": "internal"
+                },
+                "content": {
+                  "type": "string",
+                  "x-ntx-summary": "Email Message"
+                }
+              }
+            },
+            "toRecipients": {
+              "type": "array",
+              "x-ntx-summary": "To Recipients",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "x-ntx-summary": "Email Address",
+                "properties": {
+                  "emailAddress": {
+                    "type": "object",
+                    "x-ntx-summary": "",
+                    "additionalProperties": false,
+                    "properties": {
+                      "address": {
+                        "x-ntx-summary": "",
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "ccRecipients": {
+              "type": "array",
+              "x-ntx-summary": "CC Recipients",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "x-ntx-summary": "Email Address",
+                "properties": {
+                  "emailAddress": {
+                    "type": "object",
+                    "x-ntx-summary": "",
+                    "additionalProperties": false,
+                    "properties": {
+                      "address": {
+                        "x-ntx-summary": "",
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "attachments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "@odata.type": {
+                    "enum": ["#microsoft.graph.fileAttachment"]
+                  },
+              "name": {
+                "type": "string"
+                },
+              "contentBytes": {
+                  "type": "string",
+                  "format": "byte"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.microsoftonline.com/nintexo365support01.onmicrosoft.com/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/nintexo365support01.onmicrosoft.com/oauth2/v2.0/token",
+      "scopes": {
+        "Mail.Send": "Send Mail as User"
+      }
+    }
+  }
+}
