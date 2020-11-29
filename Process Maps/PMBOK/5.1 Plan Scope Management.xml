@@ -1,0 +1,102 @@
+<Process Id="813" Name="5.1 Plan Scope Management" ReferenceNo="" Objective="This process creates a scope management plan to document how the project and product scope will be defined, validated, and controlled." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.4" UniqueId="789e894d-c343-459c-ac51-c16ca924cd4a" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5157" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14170" UniqueId="6bad9e06-e52f-9292-cdf1-ae77f22f3b2d" Number="1.0" Order="0">
+      <Text>Review Project Charter and Management Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14185" UniqueId="c1c893c4-fb69-55d3-f4da-b40384a19fc4" Order="1" Number="1.0.1">
+          <Text>Review the Charter to establish the project purpose, description, assumptions, constraints and requirements.</Text>
+        </Task>
+        <Task Id="14184" UniqueId="ca01875d-89d0-99b6-aee8-4fe66d12ed8c" Order="2" Number="1.0.2">
+          <Text>Review the Management Plan components such as the Quality Management plan, Project Life Cycle, and Development Approach</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14171" UniqueId="5fca903d-d50a-5f8d-e3b8-1f452c51c427" Number="2.0" Order="3">
+      <Text>Consider the available assets</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14183" UniqueId="4268c485-9f86-37f6-931f-5d9c5153a59e" Order="4" Number="2.0.1">
+          <Text>Look at the Enterprise environmental factors</Text>
+        </Task>
+        <Task Id="14182" UniqueId="d72226ad-f210-75da-dc73-700713ea302f" Order="5" Number="2.0.2">
+          <Text>Review the existing organizational process assets</Text>
+        </Task>
+        <Task Id="14181" UniqueId="a49bcf5e-d32f-b65b-a2eb-fbc31a837867" Order="6" Number="2.0.3">
+          <Text>Gather the relevant expertise and knowledge, and existing data on the project</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14172" UniqueId="435bceaf-7634-1968-02dd-07d0d8ee29e0" Number="3.0" Order="7">
+      <Text>Define the Requirements Management Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14179" UniqueId="ad7c912f-48da-379c-0937-b9862ffd1b57" Order="8" Number="3.0.1">
+          <Text>Describe how the project and product requirements will be documented, analyzed, and managed.</Text>
+        </Task>
+        <Task Id="14180" UniqueId="7f136cb9-88b3-806d-9ad5-a7c5e1c591e3" Order="9" Number="3.0.2">
+          <Text>Set out how requirements activities will be planned, tracked and reported, including:|~|Configuration management|~|Prioritizing requirements|~|Agreed upon metrics (and rationale)|~|Traceability</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14173" UniqueId="4d35de02-0934-c702-f9fa-61621f1db2fb" Number="4.0" Order="10">
+      <Text>Write Scope Management Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14178" UniqueId="f7d54325-a720-e336-81fc-f10175af77af" Order="11" Number="4.0.1">
+          <Text>Create the plan to capture how the scope will be defined, monitored, and controlled.</Text>
+        </Task>
+        <Task Id="14177" UniqueId="b1e761e8-4216-8eab-bf21-55d4dab92b8b" Order="12" Number="4.0.2">
+          <Text>Complete a project scope statement</Text>
+        </Task>
+        <Task Id="14176" UniqueId="6885dc77-7289-bac7-a8c6-dabbf0df9dc7" Order="13" Number="4.0.3">
+          <Text>Create the Work Breakdown Structure from the detail of the scope statement</Text>
+        </Task>
+        <Task Id="14175" UniqueId="9f602091-87ae-b7b9-54f5-844fed296f3c" Order="14" Number="4.0.4">
+          <Text>Establish how the scope baseline is decided, approved and maintained</Text>
+        </Task>
+        <Task Id="14174" UniqueId="9d9ed601-2cc3-934d-29f7-2c026d4f0fba" Order="15" Number="4.0.5">
+          <Text>Determine how the completed project deliverables will be formally accepted</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4175" PublishedDate="2020-11-11T09:15:33.56" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:01:30.4970917Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:01:30.4970917Z" />
+  </Metadata>
+</Process>

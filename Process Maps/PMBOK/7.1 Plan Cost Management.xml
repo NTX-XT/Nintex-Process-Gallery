@@ -1,0 +1,90 @@
+<Process Id="825" Name="7.1 Plan Cost Management" ReferenceNo="" Objective="This process defines how the project costs can be estimated, budgeted, managed, monitored, and controlled. It provides direction on how the project|~|costs can be managed throughout the project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.4" UniqueId="36e42b11-32f6-4320-83f6-245cd2650e7c" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5189" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14298" UniqueId="5afb8098-8670-d7f6-f4d9-22b5585740b1" Number="1.0" Order="0">
+      <Text>Define the preapproved financial resources</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14301" UniqueId="983afb98-42f1-ef27-98ad-34bc0fc6b6b5" Order="1" Number="1.0.1">
+          <Text>Gather the approved financial resources and the project approval guidelines from the Project Charter</Text>
+        </Task>
+        <Task Id="14302" UniqueId="88d358cc-3871-b19e-b2a6-2747a024a212" Order="2" Number="1.0.2">
+          <Text>Consider the Schedule Management Plan and the Risk Management Plan to understand the potential impact on costs</Text>
+        </Task>
+        <Task Id="14303" UniqueId="76d38960-4da9-a1db-0231-2001f85b522c" Order="3" Number="1.0.3">
+          <Text>Consider the existing cost management systems and possible regional or global variations in cost management processes</Text>
+        </Task>
+        <Task Id="14304" UniqueId="eb9011a7-e4ff-de25-080c-8ff56a8a3f8e" Order="4" Number="1.0.4">
+          <Text>Consult resource cost rate or published seller price lists for help with estimations</Text>
+        </Task>
+        <Task Id="14305" UniqueId="8c29a90b-e0ba-6386-2c9b-44d87d2255b4" Order="5" Number="1.0.5">
+          <Text>Review existing financial processes for costings on established processes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14299" UniqueId="17634426-9930-44b3-739b-5f52ebac1ac7" Number="2.0" Order="6">
+      <Text>Define the parameters for cost management</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14306" UniqueId="3e1fc042-efeb-1d29-3de5-61d03fd98d83" Order="7" Number="2.0.1">
+          <Text>Build on the framework of the Work Breakdown Structure (5.4) to consistently estimate budgets and cost controls.</Text>
+        </Task>
+        <Task Id="14307" UniqueId="31c779f7-15e0-4147-e9fa-704f43d024c3" Order="8" Number="2.0.2">
+          <Text>Establish the key parameters:|~||~|Units of measure - the standard units of each resource (e.g. cubic feet for quantities, staff days for time, or currency format)|~|Precision - this is the degree of rounding acceptable for the scope and scale of the project|~|Accuracy - this is the % variance range used to determine realistic estimates, with allowance for contingencies</Text>
+        </Task>
+        <Task Id="14308" UniqueId="4f2c0a87-a07d-8dfb-5556-509d6bd78527" Order="9" Number="2.0.3">
+          <Text>Determine control threshholds (% deviation from baseline that justifies corrective action)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14300" UniqueId="1ebf4524-e7c9-5eed-c6e9-378f03880480" Number="3.0" Order="10">
+      <Text>Describe performance measures and reporting</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14309" UniqueId="d360e583-9059-038b-11d9-364358180fa9" Order="11" Number="3.0.1">
+          <Text>Set the Earned Value Management (EVM) rules for performance measurement.|~|Establish the techniques to employ (e.g. fixed-formula, weighted milestones, etc) |~|Specify the tracking methodologies and computations for calculating the projected Estimate at Completion (EAC) forecasts. Use these to validate any bottom-up EAC</Text>
+        </Task>
+        <Task Id="14310" UniqueId="2e35e76d-43a6-c76c-bea0-8151696fb550" Order="12" Number="3.0.2">
+          <Text>Decide the format and frequency for cost reporting</Text>
+        </Task>
+        <Task Id="14311" UniqueId="757ccdda-a97c-df42-f241-744c2f5627cb" Order="13" Number="3.0.3">
+          <Text>Determine the procedures for accounting for currency fluctuations and cost recording</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4197" PublishedDate="2020-11-18T09:19:32.267" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:13:47.7701669Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:13:47.7701669Z" />
+  </Metadata>
+</Process>

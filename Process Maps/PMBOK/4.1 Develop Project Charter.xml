@@ -1,0 +1,120 @@
+<Process Id="811" Name="4.1 Develop Project Charter" ReferenceNo="" Objective="This process creates a document to formally authorize a project and provide authority to apply key resources within the organization to that work. It ensures a connection between the project goals and the strategic objectives of the business as a whole.|~|" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Initiating" GroupId="289" GroupUniqueId="18a6f284-5d5a-4034-9055-cd36147ff0bd" State="Active" StateId="1" Version="3.0" PromappVersion="4.8.6.4" UniqueId="31d7c03d-c27e-41a0-b3a4-211c38c9973d" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="289" UniqueId="18a6f284-5d5a-4034-9055-cd36147ff0bd" Name="Initiating" ProcessGroupItemId="5185" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14136" UniqueId="f619be54-16f6-2ee6-8a53-6ab31cf2c569" Number="1.0" Order="0">
+      <Text>Collect central project documents</Text>
+      <Ownerships>
+        <Role Id="909" Name="Project Initiator" IsVirtual="false" />
+        <Role Id="908" Name="Project Sponsor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14151" UniqueId="c1abd4f0-feaa-c606-32d0-e994b50d9589" Order="1" Number="1.0.1">
+          <Text>Create Business Case|~|This document determines whether the expected outcomes of the project justify the investment from a business standpoint.</Text>
+        </Task>
+        <Task Id="14150" UniqueId="5c91fd0b-8832-5d08-3ac8-c31ae661a7c7" Order="2" Number="1.0.2">
+          <Text>Complete necessary Agreements|~|Complete and sign off MOUs, SLAs, and Contracts as required to clarify the terms and intentions of the project.</Text>
+        </Task>
+        <Task Id="14149" UniqueId="cea19385-7381-df1b-5467-f05b739b351e" Order="3" Number="1.0.3">
+          <Text>Compile Policies, Processes and Reporting|~|Identify the organizational process assets that can influence the shape and development of the Project Charter</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14137" UniqueId="231521e9-395f-1374-a971-b7fd69623cad" Number="2.0" Order="4">
+      <Text>Recognize the Enterprise Environment</Text>
+      <Ownerships>
+        <Role Id="909" Name="Project Initiator" IsVirtual="false" />
+        <Role Id="908" Name="Project Sponsor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14148" UniqueId="57cd34aa-9b01-f998-8fe0-145ca97f33bb" Order="5" Number="2.0.1">
+          <Text>Assess the environmental factors that will have an effect on the project:|~|Government / Industry standards |~|Market conditions|~|The culture of the business|~|Legislation and relevant regulations|~|The organization's governance and structure|~|Stakeholder expectations|~|The organization's risk appetite</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14138" UniqueId="02050775-a6c6-a5e3-4bc6-99809b3f9f60" Number="3.0" Order="6">
+      <Text>Identify key skills and resources</Text>
+      <Ownerships>
+        <Role Id="909" Name="Project Initiator" IsVirtual="false" />
+        <Role Id="908" Name="Project Sponsor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14146" UniqueId="0b887603-8542-7488-41ec-73308fde4f21" Order="7" Number="3.0.1">
+          <Text>Gather expertise that will support the development of the charter and the greater project.|~|Especially consider training in or knowledge of:|~|Strategy|~|Benefit management|~|Estimation, budget or duration management|~|Risk analysis|~|Technical knowledge related to the project industry or focus</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14139" UniqueId="f83a68c8-b8fe-e68a-bd41-ffe5d444ca69" Number="4.0" Order="8">
+      <Text>Gather data</Text>
+      <Ownerships>
+        <Role Id="909" Name="Project Initiator" IsVirtual="false" />
+        <Role Id="908" Name="Project Sponsor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14147" UniqueId="8913d7f3-4f2c-c30c-c4bf-20026149c236" Order="9" Number="4.0.1">
+          <Text>Brainstorm ideas</Text>
+        </Task>
+        <Task Id="14145" UniqueId="13fee557-666e-4be4-e646-2a3d598d974e" Order="10" Number="4.0.2">
+          <Text>Convene focus groups</Text>
+        </Task>
+        <Task Id="14144" UniqueId="ad424e0c-8b9c-5a38-60cd-085bbbce3cf1" Order="11" Number="4.0.3">
+          <Text>Conduct interviews</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14140" UniqueId="e65e740e-5ecd-7a21-53d2-f4356813f409" Number="5.0" Order="12">
+      <Text>Schedule meetings</Text>
+      <Ownerships>
+        <Role Id="909" Name="Project Initiator" IsVirtual="false" />
+        <Role Id="908" Name="Project Sponsor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14143" UniqueId="f1c3dae7-9bb3-da28-705c-5b527012e140" Order="13" Number="5.0.1">
+          <Text>Arrange meetings with key stakeholders to determine objectives, success criteria, key|~|deliverables, requirements, milestones, etc.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14141" UniqueId="02bd410a-889e-a41b-e2cc-a4e559d9d8a6" Number="6.0" Order="14">
+      <Text>Produce the Project Charter</Text>
+      <Ownerships>
+        <Role Id="909" Name="Project Initiator" IsVirtual="false" />
+        <Role Id="908" Name="Project Sponsor" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14142" UniqueId="2b109dc5-122e-ae98-75e3-5f634f043330" Order="15" Number="6.0.1">
+          <Text>Create the Project Charter documentation|~|Include:|~|The project's purpose|~|Measurable objectives and success criteria|~|High-level requirements;|~|Project description, including boundaries, and deliverables|~|A summary of the project risks|~|Project milestone schedule|~|Preapproved financial resources|~|Key stakeholders|~|Approval criteria and signoffs|~|Exit criteria|~|The project manager assigned to take responsibility|~|Project sponsor(s) or other authorizing agents</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4195" PublishedDate="2020-11-18T08:28:09.75" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T09:43:22.5340523Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T09:43:22.5340523Z" />
+  </Metadata>
+</Process>

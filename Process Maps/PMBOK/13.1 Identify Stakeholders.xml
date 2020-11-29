@@ -1,0 +1,114 @@
+<Process Id="812" Name="13.1 Identify Stakeholders" ReferenceNo="" Objective="Identify project stakeholders and analyze and|~|document their interests, involvement, interdependencies, influence, and potential impact on project success." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="Initiating" GroupId="289" GroupUniqueId="18a6f284-5d5a-4034-9055-cd36147ff0bd" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.6.4" UniqueId="9de5b0f9-c040-417c-899f-a0eba526c859" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="289" UniqueId="18a6f284-5d5a-4034-9055-cd36147ff0bd" Name="Initiating" ProcessGroupItemId="5186" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14152" UniqueId="da460905-22d2-1550-c4b0-788dc58f0f35" Number="1.0" Order="0">
+      <Text>Collate project documentation</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14163" UniqueId="41c9e3f6-1c00-f2e3-7dcf-ab87a55de833" Order="1" Number="1.0.1">
+          <Text>Collect the core documentation that outlines the purpose and direction of the project, to help identify those that will be influential and engaged in each phase</Text>
+        </Task>
+        <Task Id="14168" UniqueId="2741f3e6-926c-0311-dcaa-1d8bdfc37769" Order="2" Number="1.0.2">
+          <Text>Review the Project Charter</Text>
+        </Task>
+        <Task Id="14167" UniqueId="281b829b-f096-df5a-be80-d2f0d3257fce" Order="3" Number="1.0.3">
+          <Text>Review business documents|~|- Business case|~|- Benefit management plan</Text>
+        </Task>
+        <Task Id="14166" UniqueId="f0b6d138-f3a6-3b1e-ba84-0cafc958864a" Order="4" Number="1.0.4">
+          <Text>Review project management plans|~|- Communication plan|~|- Stakeholder engagement plan</Text>
+        </Task>
+        <Task Id="14165" UniqueId="adbb9c83-5b42-c080-4712-3fb45e0e635d" Order="5" Number="1.0.5">
+          <Text>Review project changelog and requirements</Text>
+        </Task>
+        <Task Id="14164" UniqueId="27d35d95-0eb9-11a0-599f-e01051d160f9" Order="6" Number="1.0.6">
+          <Text>Review relevant agreements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14153" UniqueId="dc70699d-74fd-8e76-4b16-4ddafd22cfff" Number="2.0" Order="7">
+      <Text>Consider the organizational environment</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14169" UniqueId="6198a07e-2b60-17c4-bb7c-f860aeee4694" Order="8" Number="2.0.1">
+          <Text>Examine the enterprise environment for factors that will influence stakeholders.|~|Consider:|~|Culture|~|Governance framework|~|Legislation, regulations, standards and codes of compliance|~|Regional practices|~|Geographical distribution</Text>
+        </Task>
+        <Task Id="14162" UniqueId="04cc6f9c-082e-a60a-88d6-9f337cfbb89d" Order="9" Number="2.0.2">
+          <Text>Review the existing process structures and assets, such as:|~|Previous project stakeholder registers|~|Logs of lessons learned with stakeholder involvement information</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14154" UniqueId="f3bc1b06-7e19-1f8f-4089-c0dfb2b2191c" Number="3.0" Order="10">
+      <Text>Establish Stakeholder criteria</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14161" UniqueId="d188a6af-07a4-08d4-1134-5a4dabadc83a" Order="11" Number="3.0.1">
+          <Text>Define expert judgement</Text>
+        </Task>
+        <Task Id="14160" UniqueId="d1ea0245-3f2d-74b1-6ee3-217f7b4a2ec2" Order="12" Number="3.0.2">
+          <Text>Gather data on potential stakeholders</Text>
+        </Task>
+        <Task Id="14159" UniqueId="fb9bcaca-29ff-4e2b-6932-152e002f5334" Order="13" Number="3.0.3">
+          <Text>Analyze stakeholder data|~|Review the gathered information with reference to:|~|Possible interest|~|Rights and responsibilities|~|Ownership|~|Specialized knowledge of project related subjects|~|Previous contributions of resources or support</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14155" UniqueId="21205508-1c4c-36c9-560f-c6c4cce8140e" Number="4.0" Order="14">
+      <Text>Formulate the Stakeholder information</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14158" UniqueId="ba9a676b-a35e-da71-792b-1238759a4cb5" Order="15" Number="4.0.1">
+          <Text>Present the stakeholder data in an information representation model to review the findings.|~|Options include:|~|Power/interest grid, power/influence grid, or impact/influence grid|~|Stakeholder cube|~|Salience model|~|Directions of Influence|~|Prioritization</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14156" UniqueId="38450b5e-210d-4f04-9e9c-060ee89343bd" Number="5.0" Order="16">
+      <Text>Produce Stakeholder register</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14157" UniqueId="bd1084d7-e9dd-70e0-39b0-afd56c92261d" Order="17" Number="5.0.1">
+          <Text>Produce the Stakeholder register including:|~|Key identification information such as name, role, location and contact details|~|Assessment results including expectations, experience, potential influence and phases where impact is likely to be greatest|~|Classification details such as internal or external origin, direction of influence, salience, etc.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4196" PublishedDate="2020-11-18T08:28:18.283" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T09:57:59.1506265Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T09:57:59.1506265Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,90 @@
+<Process Id="827" Name="7.3 Determine Budget" ReferenceNo="" Objective="This process collects the estimated costs from the various activities and work packages to establish a baseline cost. It creates a measurable reference point for monitoring and controlling costs." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.4" UniqueId="b0237ea7-d088-4d7b-8fde-938f4d8ce6fd" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5201" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14322" UniqueId="2b1cee2a-4775-b831-95da-5f2614fa4dea" Number="1.0" Order="0">
+      <Text>Collect budget content from documentation</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14326" UniqueId="a49e86c0-27a0-6bc2-f82f-d37143a4379a" Order="1" Number="1.0.1">
+          <Text>Review the cost structures in the Cost Management Plan. |~|Collate the foreseen costs in the Resource Management Plan.|~|Consider the WBS details for cost management</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14323" UniqueId="17e033fe-90b2-e58a-0545-5a0e34a674f8" Number="2.0" Order="2">
+      <Text>Analyze the project and cost data</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14327" UniqueId="201af505-0c2f-e1a6-40c8-97925fcf013a" Order="3" Number="2.0.1">
+          <Text>Utilize the Basis of Estimates (from 6.4 Estimate Activity Duration) to inform cost estimates.</Text>
+        </Task>
+        <Task Id="14328" UniqueId="0fb981c1-a0f9-7971-717d-71b21d77fb0b" Order="4" Number="2.0.2">
+          <Text>Aggregate cost estimates from 7.2 Estimate Costs</Text>
+        </Task>
+        <Task Id="14329" UniqueId="22df3c12-323d-9b81-b35a-727686706f18" Order="5" Number="2.0.3">
+          <Text>Calculate the costs across the activities, milestones and schedules described in the Project Schedule</Text>
+        </Task>
+        <Task Id="14330" UniqueId="bd38b38c-0c6e-8d56-8e96-7d4f0b3dce0c" Order="6" Number="2.0.4">
+          <Text>Review the Funding Limits established for the project</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14324" UniqueId="e95ebd8b-35e9-9804-34b6-0e0055206a9e" Number="3.0" Order="7">
+      <Text>Determine the Cost Baseline</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14331" UniqueId="9f9779d0-2f59-3a4c-d5c8-fa8c95818a6b" Order="8" Number="3.0.1">
+          <Text>Aggregate the cost estimates for project activities into work package costs.|~|Summarize those into control accounts, and the summation of those make up the Cost Baseline</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14325" UniqueId="e6ed4cc9-ad18-bd96-f36c-fa01cfded531" Number="4.0" Order="9">
+      <Text>Compose the Project Budget</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14332" UniqueId="bd72347b-71c8-d52e-140d-fd121ae3ce9c" Order="10" Number="4.0.1">
+          <Text>Tie the Cost Baseline to the scheduled activities, to create a time-phased view of the baseline.</Text>
+        </Task>
+        <Task Id="14333" UniqueId="772956ba-5732-3ba2-e31c-578782ffb3b4" Order="11" Number="4.0.2">
+          <Text>Add management reserves as applicable to the cost baseline to create the project budget</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4199" PublishedDate="2020-11-20T09:57:14.6" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:19:47.1969671Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:19:47.1969671Z" />
+  </Metadata>
+</Process>

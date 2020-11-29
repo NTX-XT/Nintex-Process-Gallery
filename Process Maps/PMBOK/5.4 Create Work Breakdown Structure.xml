@@ -1,0 +1,108 @@
+<Process Id="824" Name="5.4 Create Work Breakdown Structure" ReferenceNo="" Objective="Creating a Work Breakdown Structure (WBS) is the process of subdividing project deliverables and work into smaller, more manageable component parts. This provides a clearer framework of what has to be delivered." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.4" UniqueId="6b9460b8-448e-4537-867e-050c2dce3ff6" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5184" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14282" UniqueId="841ef018-5595-88cd-747d-1590b6aa47e0" Number="1.0" Order="0">
+      <Text>Collate the component elements from existing documents</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14297" UniqueId="92642f3e-30d5-05fc-4dae-2b2b90089b33" Order="1" Number="1.0.1">
+          <Text>Gather the key information about the product or service from existing project documentation. In particular:|~||~|Project Requirements|~|Project Deliverables</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14283" UniqueId="c653bca0-b7b9-3743-3b22-c8497179cc5d" Number="2.0" Order="2">
+      <Text>Identify and analyze the deliverables and related work</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14295" UniqueId="a43dc1f0-4fdd-464c-ce4b-343e2ce9bf08" Order="3" Number="2.0.1">
+          <Text>Divide and subdivide the existing scope and deliverables into smaller units and identify the degree of work required for each</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14284" UniqueId="b0e5270b-f909-85c3-8e92-cc398906c9a3" Number="3.0" Order="4">
+      <Text>Structure the WBS</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14294" UniqueId="989e7837-f4a2-0af6-752a-fb6f9f8f3dd7" Order="5" Number="3.0.1">
+          <Text>Create a hierarchy that builds on the deliverables and provides increasing layers of detail for the tasks required.</Text>
+        </Task>
+        <Task Id="14293" UniqueId="6da31d39-b6d4-8947-1413-c4ace000b3f4" Order="6" Number="3.0.2">
+          <Text>This may be through a top-down approach, using organization-specific outlines, or an existing WBS Template. Subcomponents can be grouped through a bottom-up approach.</Text>
+        </Task>
+        <Task Id="14296" UniqueId="5eb57aef-d17f-e4c6-d3f1-db1eb4b3fcf4" Order="7" Number="3.0.3">
+          <Text>Decide the form the structure will take. The second layer of the structure could be organized by deliverables, phases, or business groups.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14285" UniqueId="9b0f0941-9f88-2b48-2756-08432177165e" Number="4.0" Order="8">
+      <Text>Break the WBS down into lower level detail</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14292" UniqueId="220edeb4-79b5-e3d6-73a5-b5f547061dc8" Order="9" Number="4.0.1">
+          <Text>Break down ('decompose') the detail of the WBS into increasingly detailed components</Text>
+        </Task>
+        <Task Id="14291" UniqueId="ff458055-928b-feb1-dc3e-403acb267618" Order="10" Number="4.0.2">
+          <Text>Develop and assign identification for the components as they are identified</Text>
+        </Task>
+        <Task Id="14290" UniqueId="3527c571-bd7c-57a9-7fa5-851344b81125" Order="11" Number="4.0.3">
+          <Text>Verify the degree of detail is appropriate for the deliverables.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14286" UniqueId="cba89e27-5580-cdef-bfba-8f8e00463cfc" Number="5.0" Order="12">
+      <Text>Establish the scope baseline</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14289" UniqueId="06a653a1-6ad4-a7e8-319a-f0571642d4e4" Order="13" Number="5.0.1">
+          <Text>Create the approved Scope Statement and WBS structure.</Text>
+        </Task>
+        <Task Id="14288" UniqueId="49408d06-b1c6-bf79-e4b6-1ff7eee74353" Order="14" Number="5.0.2">
+          <Text>Create the WBS Work Packages|~|These represent the lowest level of the WBS structure and are each given a unique identifying code.</Text>
+        </Task>
+        <Task Id="14287" UniqueId="3f45083c-2581-0fc3-d4ea-04187cbfd753" Order="15" Number="5.0.3">
+          <Text>Create the framework for the WBS Dictionary|~|The WBS dictionary supports the WBS by providing detailed deliverable, activity, and scheduling information about each component. It comes together through inputs from other processes at later stages.|~|It can include details such as:|~|- Code of account identifier,|~|- Description of work,|~|- Assumptions and constraints,|~|- Responsible organization,|~|- Schedule milestones,|~|- Associated schedule activities,|~|- Resources required,|~|- Cost estimates,|~|- Quality requirements,|~|- Acceptance criteria,|~|- Technical references,|~|- Agreement information.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4190" PublishedDate="2020-11-16T09:28:12.42" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:10:23.6251698Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:10:23.6251698Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,69 @@
+<Process Id="815" Name="5.3 Define Scope" ReferenceNo="" Objective="This process develops a description of the project and resulting product or service. It describes the boundaries and acceptance criteria for this product, service, or result." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.4" UniqueId="de17f460-38d8-4d40-ba90-dcf6d1c57c9f" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5173" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14232" UniqueId="160df233-fd61-8136-7d2d-aaddf277d870" Number="1.0" Order="0">
+      <Text>Collate scope assumptions</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14235" UniqueId="c1ef86a6-d34d-7a4b-cdc5-74321c2b563a" Order="1" Number="1.0.1">
+          <Text>Gather the existing scope definitions from the Initiation stage of the project.|~|- Project Charter|~|- Project Management Plan|~|- Scope Management Plan</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14233" UniqueId="f26416a1-35ed-424c-6dcb-b95447556cb5" Number="2.0" Order="2">
+      <Text>Conduct Product analysis</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14236" UniqueId="47a1d48f-aab3-1f92-f4e6-62443521cf24" Order="3" Number="2.0.1">
+          <Text>Review the existing project information and context.|~|- Risk and Requirements documentation|~|- Organizational Environmental factors|~|- Existing process assets</Text>
+        </Task>
+        <Task Id="14237" UniqueId="235305d9-240d-29d2-d122-30485dbd3b2e" Order="4" Number="2.0.2">
+          <Text>Describe the use, characteristics, and any other relevant aspects of the product to be delivered.|~|Approaches to doing this include:|~|- Product breakdown,|~|- Requirements analysis,|~|- Systems analysis,|~|- Systems engineering,|~|- Value analysis, and|~|- Value engineering.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14234" UniqueId="63d0f56c-0383-98eb-6bfb-4b3c2183c907" Number="3.0" Order="5">
+      <Text>Write the Project Scope Statement</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14238" UniqueId="e62b565b-86af-b2b8-b35c-617c3a94ad7c" Order="6" Number="3.0.1">
+          <Text>Write the Project Scope Statement. This contains more detail than the Project Charter and covers these areas:|~||~|Product scope description. |~|- This describes the characteristics of the product, service, or project outcome as outlines in the charter and requirements documents|~||~|Deliverables|~|- Any defined and verifiable product, service, capability or outcome required to complete a process, phase or project. This includes reports and documents that form part of the process execution.|~||~|Acceptance criteria|~|The conditions that are required to be met in order for deliverables to be accepted.|~||~|Project exclusions|~|Clarifies those things that are excluded from the project. Doing so helps manage stakeholders’ expectations and can reduce scope creep.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4179" PublishedDate="2020-11-16T08:11:09.407" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:07:27.4352615Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:07:27.4352615Z" />
+  </Metadata>
+</Process>

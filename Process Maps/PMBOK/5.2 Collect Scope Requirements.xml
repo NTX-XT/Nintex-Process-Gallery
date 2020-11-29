@@ -1,0 +1,99 @@
+<Process Id="814" Name="5.2 Collect Scope Requirements" ReferenceNo="" Objective="This process determines, documents, and manages the stakeholder needs and requirements in order to meet the project objectives." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.6.4" UniqueId="ef56d1ef-5306-40df-a264-86ac64342b2d" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5161" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14186" UniqueId="915d2e1f-73c3-201e-a297-57046c4876f2" Number="1.0" Order="0">
+      <Text>Gather the key project documentation</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14191" UniqueId="ec1c7d7b-06f1-9522-52e6-7bc35f1e115d" Order="1" Number="1.0.1">
+          <Text>Collect project documentation to resource the scope requirements:|~|Project Charter|~|Project Management Plan (Including Scope Management Plan, Requirements Management Plan, Stakeholder Engagement Plan)|~|Project Assumptions Log, Lessons Learned, and Stakeholder Register|~|Agreements, existing process asset documentation and information on the organization culture and context</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14187" UniqueId="3048e789-86b1-494e-ba9e-6eda48018ffa" Number="2.0" Order="2">
+      <Text>Review existing project information</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14192" UniqueId="ed08d423-ef07-6e70-e706-00b3ac2fbed8" Order="3" Number="2.0.1">
+          <Text>Gather existing expertise and data and analyze content</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14188" UniqueId="bb85052e-49f8-f9e8-f1c6-d41beffd4fda" Number="3.0" Order="4">
+      <Text>Decide the decision making approach</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14193" UniqueId="42cf02ac-69f3-0084-9d44-c000ba711114" Order="5" Number="3.0.1">
+          <Text>Consider the approach to deciding the scope requirements. Options include:|~|Voting - Unanimity / Majority / Plurality|~|Autocratic|~|Multicriteria Decision Analysis</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14189" UniqueId="08a7044a-6673-b954-cb46-159c0f25ad37" Number="4.0" Order="6">
+      <Text>Present the collected data</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14194" UniqueId="5f5cedc2-ff3b-8b17-e046-ff327a11cea0" Order="7" Number="4.0.1">
+          <Text>Create a Context Diagram to show the business system (process, IT system, equipment) and the related 'actors' (staff or other systems) that interact with it.</Text>
+        </Task>
+        <Task Id="14195" UniqueId="d6880c73-4dcc-45d3-ab10-fb8494d0fc94" Order="8" Number="4.0.2">
+          <Text>Create prototypes or storyboards based on the projected scope to model the outcomes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14190" UniqueId="3e8c63b8-cc57-fd50-f4db-0cfa392ac278" Number="5.0" Order="9">
+      <Text>Write the Requirements documentation</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14196" UniqueId="cc4c8bcb-27f2-1f79-a51d-e6be3d499179" Order="10" Number="5.0.1">
+          <Text>Requirements documentation defines how the requirements meet the project expectations.|~|Requirements should be unambiguous, traceable, complete, consistent and signed off by key stakeholders</Text>
+        </Task>
+        <Task Id="14197" UniqueId="ac2b9fc0-64f9-f382-5489-c6382c67329f" Order="11" Number="5.0.2">
+          <Text>The requirements documentation can include:|~|Project requirements|~|Stakeholder requirements|~|Business requirements|~|Functional requirements|~|Non-functional requirements|~|Solution requirements|~|Transition requirements|~|Quality requirements</Text>
+        </Task>
+        <Task Id="14198" UniqueId="cf79579d-f436-33af-4381-e8632b5c41b1" Order="12" Number="5.0.3">
+          <Text>Create a Requirement Traceability Matrix to link product requirements from their origin to the deliverables|~|that satisfy them.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4178" PublishedDate="2020-11-11T10:10:07.723" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:04:11.9109886Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:04:11.9109886Z" />
+  </Metadata>
+</Process>

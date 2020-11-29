@@ -1,0 +1,78 @@
+<Process Id="826" Name="7.2 Estimate Costs" ReferenceNo="" Objective="This process develops approximations of the cost of resources needed to complete the project work. This process determines the monetary resources required for the project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.4" UniqueId="e0ae61ed-2373-469e-a68a-8503fd7e4256" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5192" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14312" UniqueId="595f926e-c02c-1589-9732-9a70598baf09" Number="1.0" Order="0">
+      <Text>Define the parameters for estimating</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14315" UniqueId="8f9e059e-7f07-6e96-b79f-a23f99833bfe" Order="1" Number="1.0.1">
+          <Text>Review the estimation methods described by the Cost Management Plan</Text>
+        </Task>
+        <Task Id="14316" UniqueId="ef6d3e8f-087e-dbd5-875a-bba71b193871" Order="2" Number="1.0.2">
+          <Text>Summarize the activities and resources required for the project management team to achieve the quality objectives as described in the Quality Management Plan</Text>
+        </Task>
+        <Task Id="14317" UniqueId="44242e49-1a24-cf60-051a-ca3b8132a8ab" Order="3" Number="1.0.3">
+          <Text>Review the Project Scope Statement for the funding constraints by period, and any other financial constraints or assumptions. Use the Work Breakdown Structure (WBS) to clarify the relationships between deliverables and their components.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14313" UniqueId="10ba6621-75f8-cde8-2856-023d329ff113" Number="2.0" Order="4">
+      <Text>Decide the estimation methodology</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14318" UniqueId="0e5e50dc-01dd-80a9-b468-49bd4326eb10" Order="5" Number="2.0.1">
+          <Text>Determine the approach to Cost Estimation:|~||~|Analogous Estimating|~|- Use values or attributes from a similar previous project to provide a basis for estimations|~||~|Parametric Estimating|~|- Statistically relate relevant historical data to measurable variables to calculate estimations|~||~|Bottom-Up Estimating|~|- Estimate components of work for individual work packages, which 'roll up' to higher levels for wider estimations|~||~|Three-Point Estimating|~|- Consider the uncertainty and risk within the estimations and use three estimates to define a likely cost range and distibution. Define cM (Most Likely), cO (Optimistic), and cP (Pessimistic) then apply a formula to calculate cE = Expected Cost.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14314" UniqueId="a310a1f8-a5cd-1291-990a-9cf84d4f6435" Number="3.0" Order="6">
+      <Text>Create cost estimates</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
+      <ChildProcessProcedures>
+        <Task Id="14319" UniqueId="344712c7-2294-e7be-5ceb-b872e4913c2b" Order="7" Number="3.0.1">
+          <Text>Assign estimated costs according to preferred methodology</Text>
+        </Task>
+        <Task Id="14320" UniqueId="732afb62-d12a-6360-461a-f7c7bea838c7" Order="8" Number="3.0.2">
+          <Text>Analyze the estimation data through:|~|- Alternatives analysis|~|- Reserve analysis|~|- Quantity analysis|~|- Cost of Quality</Text>
+        </Task>
+        <Task Id="14321" UniqueId="27452d78-cfab-433e-d17b-cc983e7189d2" Order="9" Number="3.0.3">
+          <Text>Create supporting documentation for the estimates that includes:|~|- Estimate basis|~|- Assumptions|~|- Known constraints|~|- Identified risks applied|~|- Ranges or accepted variances|~|- Confidence levels of the final estimates</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0.0000" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4198" PublishedDate="2020-11-18T09:57:43.513" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-11-27T10:17:07.5636948Z" />
+    <MetadataItem Name="CachedOn" Value="2020-11-27T10:17:07.5636948Z" />
+  </Metadata>
+</Process>
