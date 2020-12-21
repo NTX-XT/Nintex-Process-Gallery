@@ -1,0 +1,69 @@
+<Process Id="838" Name="4.4 Manage Project Knowledge" ReferenceNo="" Objective="Use existing and acquired knowledge to achieve the project's objectives, and contribute to the organization's learning." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="5c92e2c0-309a-4184-985f-8cb0295c2624" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5258" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14498" UniqueId="ee6fb5cb-a22a-a403-a4c9-74a47780534e" Number="1.0" Order="0">
+      <Text>Create opportunities for knowledge sharing</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14501" UniqueId="2ba5c99d-3abf-140d-246f-edfa61b183cc" Order="1" Number="1.0.1">
+          <Text>Utilize networking opportunities to promote knowledge sharing, such as:|~|- Online and in-person social networking|~|- Establish communities of practice|~|- Implement work shadowing|~|- Create discussion forums and focus groups|~|- Arrange knowledge sharing sessions (seminars, conferences, knowledge fairs)|~|- Coordinate workshops, problems solving sessions and learning reviews|~|- Provide interactive training opportunities</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14499" UniqueId="791eef3d-4338-1bbc-e67e-17ffbde2ee79" Number="2.0" Order="2">
+      <Text>Coordinate information management</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14502" UniqueId="d3879b27-75dc-1d17-9150-fec3e668df1c" Order="3" Number="2.0.1">
+          <Text>Codify explicit knowledge where available. The Project Management Information System can be a good platform for this.</Text>
+        </Task>
+        <Task Id="14503" UniqueId="f2cecf36-cd53-0ba4-0b8b-9c072a877456" Order="4" Number="2.0.2">
+          <Text>Facilitate library services, knowledge platforms or forums where simple, unambiguous information can be stored, shared, and easily accessed</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14500" UniqueId="b3f17b77-f95d-a342-e02e-6c31b0fe6b12" Number="3.0" Order="5">
+      <Text>Populate the Lessons Learned Register</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14504" UniqueId="d0967cd2-7f2f-094c-6d08-5dbd637a00e0" Order="6" Number="3.0.1">
+          <Text>Include the category and description of the relevant situation, the impact, recommendations, and proposed actions associated with the situation, and any challenges, problems, realized risks and opportunities arising from it, or other content as appropriate</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4238" PublishedDate="2020-12-19T04:45:24.4200658Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T04:45:24.8419414Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T04:45:24.8419414Z" />
+  </Metadata>
+</Process>

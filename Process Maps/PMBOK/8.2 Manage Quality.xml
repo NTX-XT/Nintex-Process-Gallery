@@ -1,0 +1,91 @@
+<Process Id="844" Name="8.2 Manage Quality" ReferenceNo="" Objective="This process turns the quality management plan into executable quality activities that incorporate the organization’s quality policies into the project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="2219825c-bdd6-4959-a995-18dcb1123951" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5276" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14566" UniqueId="72c89009-6832-0963-9ad9-a96c1fea6e39" Number="1.0" Order="0">
+      <Text>Define quality checklists</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14570" UniqueId="72995aaf-6656-4f78-4ef0-7a0f1ab951df" Order="1" Number="1.0.1">
+          <Text>Create or acquire checklists to verify the required steps are completed</Text>
+        </Task>
+        <Task Id="14571" UniqueId="9cbd5cbc-8d28-e335-3861-2ab640171ed0" Order="2" Number="1.0.2">
+          <Text>Checklists should incorporate the acceptance criteria included in|~|the scope baseline</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14567" UniqueId="9ebe8f6d-eb65-93a9-96a1-5cb372cf1ed1" Number="2.0" Order="3">
+      <Text>Analyze quality data</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+        <Role Id="127" Name="Quality Team" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14572" UniqueId="1a47e264-1ce7-4bba-df4d-5999e0e1edcc" Order="4" Number="2.0.1">
+          <Text>Review quality data as it is collected from the project</Text>
+        </Task>
+        <Task Id="14573" UniqueId="012e5571-16d8-a4cf-9333-09db33139eb7" Order="5" Number="2.0.2">
+          <Text>Data analysis could be undertaken by:|~|- Alternatives analysis|~|- Document analysis|~|- Process analysis|~|- Root Cause analysis</Text>
+        </Task>
+        <Task Id="14574" UniqueId="85e4b75f-6c9f-3968-97ea-30e0ff9337f8" Order="6" Number="2.0.3">
+          <Text>Consider the best way to represent the data for analysis. Some of the options are:|~|- Affinity diagrams|~|- Cause-and-effect diagrams|~|- Flowcharts|~|- Histograms|~|- Matrix diagrams|~|- Scatter diagrams</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14568" UniqueId="32755e34-4724-1255-a0bf-e1eff2928dce" Number="3.0" Order="7">
+      <Text>Conduct quality audit</Text>
+      <Ownerships>
+        <Role Id="268" Name="Audit Manager" IsVirtual="true" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14575" UniqueId="7e82eb52-0697-1a3a-8658-f9bc545adee6" Order="8" Number="3.0.1">
+          <Text>Identify the good and best practices being implemented, and any nonconformity, gaps, or shortcomings</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14569" UniqueId="f0f150dc-d798-45be-87e2-128d12f693cb" Number="4.0" Order="9">
+      <Text>Produce quality reports</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14576" UniqueId="a15b118a-bacc-9cda-d523-49d963165ccd" Order="10" Number="4.0.1">
+          <Text>Include any quality management issues as identified by the team or audit, recommendations for processes and product improvement, change requests and the summary of findings from the Control Quality process.</Text>
+        </Task>
+        <Task Id="14577" UniqueId="695cc326-f67c-dd0b-b5bc-f73613ee673b" Order="11" Number="4.0.2">
+          <Text>Include test and evaluation documents, such as checklists, where applicable</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4244" PublishedDate="2020-12-19T21:47:38.7425476Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T21:47:39.2738179Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T21:47:39.2738179Z" />
+  </Metadata>
+</Process>

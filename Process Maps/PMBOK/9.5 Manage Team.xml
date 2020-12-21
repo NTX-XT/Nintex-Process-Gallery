@@ -1,0 +1,78 @@
+<Process Id="836" Name="9.5 Manage Team" ReferenceNo="" Objective="This process is for tracking team performance, providing feedback, resolving issues, and managing team changes to optimize project performance" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="6e555891-292e-4f48-a9a8-e77d8fe4ae45" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5252" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14482" UniqueId="d87a6b2c-7dfe-c58d-d825-df3b5b323e71" Number="1.0" Order="0">
+      <Text>Review Project Management Plan and Team Charter</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14486" UniqueId="ba70a9f4-7830-c4ac-0577-4092c18cd467" Order="1" Number="1.0.1">
+          <Text>Review the documentation for how project team resources should be managed and eventually released</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14483" UniqueId="7c6a0650-8932-cdc5-3fe2-61c89d342b25" Number="2.0" Order="2">
+      <Text>Utilise a Project Management Information System</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14487" UniqueId="5d41a3ce-8cfa-0478-1b8b-94b589837999" Order="3" Number="2.0.1">
+          <Text>Use the PMIS to manage resources and schedules, and coordinate team members across locations or activities</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14484" UniqueId="ab6884e5-d90f-4080-c4ee-3a75736082c5" Number="3.0" Order="4" ParallelGroupingRef="1">
+      <Text>Monitor performance reporting</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14488" UniqueId="c253d158-53b7-78b4-c7a0-d3d887b634fa" Order="5" Number="3.0.1">
+          <Text>Review and assess the Work Performance reports and Team Performance assessments as they become available</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14485" UniqueId="c806f8a9-3e58-abee-b64f-d6160f33b754" Number="3.1" Order="6" ParallelGroupingRef="1">
+      <Text>Manage conflict and decision making</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14489" UniqueId="6e4d8388-9cff-2561-1189-701e6295ca7e" Order="7" Number="3.1.1">
+          <Text>Employ interpersonal skills to manage relationships within the team and issues as they arise</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4236" PublishedDate="2020-12-19T03:32:12.1487873Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T03:32:12.4300517Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T03:32:12.4300517Z" />
+  </Metadata>
+</Process>

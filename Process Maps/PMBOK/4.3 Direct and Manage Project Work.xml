@@ -1,0 +1,72 @@
+<Process Id="837" Name="4.3 Direct and Manage Project Work" ReferenceNo="" Objective="Lead the performance of the work defined in the project management plan, implementing approved changes to achieve the project’s objectives." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="f30e3bca-19a9-438a-bcbd-65f264bb3e2f" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5255" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14490" UniqueId="3b730a3a-04ba-88aa-4e70-4dba10bba627" Number="1.0" Order="0">
+      <Text>Identify planned project activities</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14493" UniqueId="9976754f-3128-0278-d3cc-c9f4cf7ea50d" Order="1" Number="1.0.1">
+          <Text>Draw the project activities from the Project Management plan. Reference the Milestone list and project schedule for sequence and priority.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14491" UniqueId="eb225714-3a02-d0c9-d10e-8c7dd01e9a3f" Number="2.0" Order="2">
+      <Text>Collect, analyze and communicate work performance data</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14494" UniqueId="b1395281-b777-e244-417d-742dfa6b2d3e" Order="3" Number="2.0.1">
+          <Text>Work performance data analysis provides information about the completion status of deliverables|~|and other relevant details about project performance</Text>
+        </Task>
+        <Task Id="14495" UniqueId="c3d4130b-c846-6447-922f-29a8e185d167" Order="4" Number="2.0.2">
+          <Text>Use a Project Management Information System for key metrics and management tasks such as:|~|- Scheduling|~|- Work authorization|~|- Configuration management|~|- Information collection/distribution|~|- KPI reporting</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14492" UniqueId="af6fc4d7-6c96-7ecb-e527-bd4ed6fb7002" Number="3.0" Order="5">
+      <Text>Review and oversee deliverables</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14496" UniqueId="692ada2c-9f76-70ac-f920-4b3a581e4b0f" Order="6" Number="3.0.1">
+          <Text>Monitor and review Issue Logs as they are populated</Text>
+        </Task>
+        <Task Id="14497" UniqueId="a57d8ea2-8e34-7426-c1b8-47391116259a" Order="7" Number="3.0.2">
+          <Text>Monitor and assess Change Requests|~|Review these against the Perform Integrated Change Control process and action accordingly</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4237" PublishedDate="2020-12-19T03:50:44.1348304Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T03:50:44.4160898Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T03:50:44.4160898Z" />
+  </Metadata>
+</Process>

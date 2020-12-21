@@ -1,0 +1,84 @@
+<Process Id="842" Name="6.4 Estimate Activity Durations" ReferenceNo="" Objective="This process estimates the number of work periods needed to complete individual activities with the estimated resources." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="33eed5b0-7201-4b27-a96a-67303999c060" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5270" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14537" UniqueId="aac90915-0b46-559e-d810-5ffe364dc80d" Number="1.0" Order="0">
+      <Text>Decide the estimation and analysis methodology to use</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14541" UniqueId="4287cce8-4049-27a5-0294-6981fc70c603" Order="1" Number="1.0.1">
+          <Text>Determine the data analysis and estimation approach that will be used for the activity durations.</Text>
+        </Task>
+        <Task Id="14542" UniqueId="6154c275-b741-dd78-c712-13c0be16bab3" Order="2" Number="1.0.2">
+          <Text>Estimation methodologies include:|~|- Analogous estimation|~|- Parametric estimation|~|- Three-point estimation|~|- Bottom up estimation</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14538" UniqueId="9d6f7e72-f7ac-bb0c-e5f9-16f739c33f55" Number="2.0" Order="3">
+      <Text>Define the decision making process</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14543" UniqueId="0ceb1c2d-f6e7-a898-17cb-aa34863e574a" Order="4" Number="2.0.1">
+          <Text>Decide whether the teams will provide their own estimates through a points-bid system or fist-of-five consensus</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14539" UniqueId="8e3bf511-1511-5ae8-8837-b83d5b872e4a" Number="3.0" Order="5">
+      <Text>Identify and document the basis for estimates</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14544" UniqueId="67a2a5a8-6d29-155b-7bfc-2165a2a4310b" Order="6" Number="3.0.1">
+          <Text>Supporting documentation should provide a clear picture of how the estimates were derived. It can include:|~|- The basis of the estimate (how it was developed)|~|- Any assumptions used in the estimate|~|- Any known constraints|~|- Any possible estimation ranges (e.g. ±10%) |~|- The confidence level of the final estimate|~|- Any risks impacting or influencing the estimate</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14540" UniqueId="7ceb4621-ee8f-fd29-3df8-871a1e823982" Number="4.0" Order="7">
+      <Text>Produce duration estimates</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14545" UniqueId="af95bfa2-5f11-6025-b530-d8f59cfcb80b" Order="8" Number="4.0.1">
+          <Text>Document quantitative assessments of the likely time required to complete an activity, a phase, or the project</Text>
+        </Task>
+        <Task Id="14546" UniqueId="cc6b217d-e465-0417-a34d-bd8ae922cd77" Order="9" Number="4.0.2">
+          <Text>Do not include lags or leads in the estimate</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4242" PublishedDate="2020-12-19T09:47:30.861179Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T09:47:31.3143079Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T09:47:31.3143079Z" />
+  </Metadata>
+</Process>

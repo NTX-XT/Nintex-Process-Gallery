@@ -1,0 +1,93 @@
+<Process Id="833" Name="9.2 Estimate Activity Resources" ReferenceNo="" Objective="This process identifies the key resources required to complete the project, estimating the type, quantity, and characteristics of the materials, equipment and supplies necessary. It can be performed periodically through the lifespan of the project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="4762e480-977c-426a-b163-88977b0ad351" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5243" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14444" UniqueId="dd0ba880-c42d-59ff-ae89-d13ac84d503c" Number="1.0" Order="0">
+      <Text>Identify resource needs from the activity list and attributes</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14448" UniqueId="5524e109-7989-6795-e7f0-d32e137650e4" Order="1" Number="1.0.1">
+          <Text>Use the Activity List to identify activities with resource requirements</Text>
+        </Task>
+        <Task Id="14449" UniqueId="8f0fa752-2056-e718-bb2b-c388aefbf0c1" Order="2" Number="1.0.2">
+          <Text>Use the Activity Attributes to define the resource requirements, imposed dates, activity location, assumptions, and constraints</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14445" UniqueId="c80ff276-9dc6-c1f7-18bd-db4c690dcefd" Number="2.0" Order="3">
+      <Text>Review the resource management plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14450" UniqueId="7b24caab-4674-45fd-2a93-009c56b253d9" Order="4" Number="2.0.1">
+          <Text>Use the Resource Management Plan to understand the methods used to quantify the|~|resources needed for each activity.</Text>
+        </Task>
+        <Task Id="14451" UniqueId="473e6c89-ce27-8bbc-fc02-52c9f97c1574" Order="5" Number="2.0.2">
+          <Text>Consider any resource calendars that specify when, and for how long, identified team and physical resources will be available during the project</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14446" UniqueId="19ca2c2a-5a92-5f3c-8ae7-947ee5fb4fea" Number="3.0" Order="6">
+      <Text>Determine the estimation approach to be used</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14452" UniqueId="1ea2f55e-354e-7aec-dd98-bbe3e0c48a0c" Order="7" Number="3.0.1">
+          <Text>Activity resources can be estimated in various ways. Consider the approach to be used for the project, such as:|~|- Bottom up estimating|~|- Analogous estimating|~|- Parametric estimating|~|- Data analysis (such as alternatives analysis)</Text>
+        </Task>
+        <Task Id="14453" UniqueId="57dd75ed-5ed7-407f-404b-712f1dd17888" Order="8" Number="3.0.2">
+          <Text>Project Management Information Systems can provide estimation and resource management tools or information, depending on their level of sophistication</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14447" UniqueId="abfff9ec-24cd-3e92-5b2f-41fed3d73479" Number="4.0" Order="9">
+      <Text>Produce activity resource estimates</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14454" UniqueId="47760c39-bb9b-321a-964a-b8d73348d9ee" Order="10" Number="4.0.1">
+          <Text>Define the resource requirements used, and the types and quantities of resources required for each work package or activity</Text>
+        </Task>
+        <Task Id="14455" UniqueId="ebc6c186-c299-0d94-2421-1697c2f22e5a" Order="11" Number="4.0.2">
+          <Text>Provide a clear outline of how the resource estimates are derived. Include supporting information such as:|~|- The method used to develop the estimate|~|- The source of information used to develop the estimate (such as information from previous similar projects)|~|- Any assumptions made|~|- Any known constraints|~|- The range of the estimates|~|- The confidence level of the estimate|~|- Any risks influencing the estimate</Text>
+        </Task>
+        <Task Id="14456" UniqueId="e76e605c-e1c8-6543-f7e3-3c9134b6139e" Order="12" Number="4.0.3">
+          <Text>Develop a resource breakdown structure.|~|This is a hierarchical representation of resources by category and type used to acquire and monitor resources.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4233" PublishedDate="2020-12-19T02:18:38.0474423Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T02:18:38.3756113Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T02:18:38.3756113Z" />
+  </Metadata>
+</Process>

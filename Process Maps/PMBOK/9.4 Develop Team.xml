@@ -1,0 +1,105 @@
+<Process Id="835" Name="9.4 Develop Team" ReferenceNo="" Objective="Teamwork is critical for any project's success, and developing effective project teams is one of the primary responsibilities of the project manager. This process follows Bruce Tuckman's 'Ladder' approach from his 1965 paper 'Developmental Sequence in Small Groups'" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="94fa2811-a39a-47d6-8d86-eaa7945b14f7" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5249" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14467" UniqueId="b494d339-2298-e7ca-fad6-9948f64c41af" Number="1.0" Order="0">
+      <Text>Forming</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14472" UniqueId="79d95abb-058d-54a2-2564-369d8cc86f45" Order="1" Number="1.0.1">
+          <Text>Gather the independent team members to meet and learn about the project, their respective roles and responsibilities.</Text>
+        </Task>
+        <Task Id="14473" UniqueId="7c585f18-a46e-6524-e8a8-f489ce2a3303" Order="2" Number="1.0.2">
+          <Text>Consider whether the team needs to be collocated (either temporarily for elements of the project or across the entire timeframe) or can work as a virtual team</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14468" UniqueId="55de1032-26f9-2f62-fa05-4dcf221a0216" Number="2.0" Order="3">
+      <Text>Storming</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14474" UniqueId="32cb0ca2-ae9b-5bff-6c20-b77469446857" Order="4" Number="2.0.1">
+          <Text>Begin to address the project work, including technical decisions and the project management approach.</Text>
+        </Task>
+        <Task Id="14475" UniqueId="54d877f5-a8dd-3f12-edfd-53dbf602efa6" Order="5" Number="2.0.2">
+          <Text>This should be shaped in reference to the Team Charter (9.1)</Text>
+        </Task>
+        <Task Id="14476" UniqueId="e5a83e4a-672a-7bbc-a81d-5598e670e6b5" Order="6" Number="2.0.3">
+          <Text>Introduce collaborative tools as required:|~|- shared portals such as websites or online repositories|~|- chat or communication platforms|~|- audio or video conferencing tools as required</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14469" UniqueId="94e7f406-5f32-4ba4-6f92-7f2f54eda395" Number="3.0" Order="7">
+      <Text>Norming</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14477" UniqueId="ad1080ca-c522-ccd4-b7d0-84b8c3e11346" Order="8" Number="3.0.1">
+          <Text>Team members develop trust and begin working together, adjusting their habits and behaviors to support the team</Text>
+        </Task>
+        <Task Id="14478" UniqueId="64af5b60-14a5-4883-f4f9-186e56cb4810" Order="9" Number="3.0.2">
+          <Text>This can be facilitated by:|~|- Team building activities|~|- Good conflict management practices|~|- Effective negotiation, influencing, and motivating</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14470" UniqueId="18063f25-289f-d302-d43d-b9c72a4a88e9" Number="4.0" Order="10">
+      <Text>Performing</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14479" UniqueId="b343bcf1-3ce0-4c1f-4e62-fcd8db8c0716" Order="11" Number="4.0.1">
+          <Text>Teams at this stage are functioning as a well-organized unit, working through any issues independently and effectively.</Text>
+        </Task>
+        <Task Id="14480" UniqueId="37d5a06f-5067-5db8-0193-0d0917688e01" Order="12" Number="4.0.2">
+          <Text>This can be facilitated by recognizing and rewarding the desired behaviors</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14471" UniqueId="242c8e09-09db-d623-c49b-47c3a0beb68e" Number="5.0" Order="13">
+      <Text>Adjourning</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14481" UniqueId="e94edd66-470c-9ff3-24d9-3f8297194617" Order="14" Number="5.0.1">
+          <Text>This occurs when the team completes the work and moves on from the project, typically when deliverables are completed or as part of the Close Project or Phase process</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4235" PublishedDate="2020-12-19T03:20:49.3451053Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T03:20:49.6731716Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T03:20:49.6731716Z" />
+  </Metadata>
+</Process>

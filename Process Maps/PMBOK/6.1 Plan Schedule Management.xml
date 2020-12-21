@@ -1,0 +1,66 @@
+<Process Id="839" Name="6.1 Plan Schedule Management" ReferenceNo="" Objective="Establish the policies, procedures, and documentation for planning, developing, managing, executing, and controlling the project schedule." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="a9dd76eb-a088-4bc0-b0d3-86edc3426dbf" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5261" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14505" UniqueId="397cc32d-ce38-5777-1ac1-86aac0209858" Number="1.0" Order="0">
+      <Text>Determine the schedule methodology to use</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14507" UniqueId="63d77536-2fa9-f5b2-7ee6-c7ecb379f7cb" Order="1" Number="1.0.1">
+          <Text>Review and decide on a scheduling method to employ, or a blend of methods that suits the project needs.|~|Decide on the level of detail required for the schedule, and how often it should be reviewed and updated. This should be a balance between the level of detail required for ongoing management and the time burden of keeping it up to date.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14506" UniqueId="f47f9996-0d66-dea8-691d-6b4545b4207c" Number="2.0" Order="2">
+      <Text>Develop the Schedule Management Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14508" UniqueId="0ec13626-effe-3b1c-f1f0-6e9b06c063c5" Order="3" Number="2.0.1">
+          <Text>Establish the scheduling methodology and model within the schedule management tool of choice</Text>
+        </Task>
+        <Task Id="14509" UniqueId="11e860f8-88f0-cfba-5330-a36d9c509dde" Order="4" Number="2.0.2">
+          <Text>Decide release and iteration timeframes for time-boxed management</Text>
+        </Task>
+        <Task Id="14510" UniqueId="2c03fb03-6202-9619-693c-4339e35f0742" Order="5" Number="2.0.3">
+          <Text>Define the units of measure and levels of accuracy required in the schedule</Text>
+        </Task>
+        <Task Id="14511" UniqueId="7962f63b-b47e-c936-d06f-7b4e508460e5" Order="6" Number="2.0.4">
+          <Text>Set rules of performance measurement, such as Earned value management (EVM) rules or other physical measurements</Text>
+        </Task>
+        <Task Id="14512" UniqueId="622db792-60d4-6ec2-e7f9-292c8b53d9af" Order="7" Number="2.0.5">
+          <Text>Determine reporting frameworks, and how to update the status and progress of the project in the schedule model during execution.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4239" PublishedDate="2020-12-19T08:59:40.494442Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T08:59:40.9631824Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T08:59:40.9631824Z" />
+  </Metadata>
+</Process>

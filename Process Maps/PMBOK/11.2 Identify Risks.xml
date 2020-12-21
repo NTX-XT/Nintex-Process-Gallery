@@ -1,0 +1,104 @@
+<Process Id="848" Name="11.2 Identify Risks" ReferenceNo="" Objective="Identify individual project risks as well as sources of overall project risk, and documenting their characteristics." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="bdb2b7ba-9353-48d9-b813-7180b24bfe3d" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5288" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14610" UniqueId="087139b3-0112-e9bb-2519-bd60b4fb9b5a" Number="1.0" Order="0">
+      <Text>Define potential risks</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14620" UniqueId="97b5f67b-37d3-2d06-5004-ca30d2a0b6f1" Order="1" Number="1.0.1">
+          <Text>Use the Risk Management Plan to define the potential risks to the project</Text>
+        </Task>
+        <Task Id="14622" UniqueId="ae0853b5-532e-cbaa-4c92-5d31d404c9b2" Order="2" Number="1.0.2">
+          <Text>Use the identified risk categories as a prompt list to identify specific risks</Text>
+        </Task>
+        <Task Id="14621" UniqueId="046728e3-b6c7-073c-5e1b-69c4dfdf9045" Order="3" Number="1.0.3">
+          <Text>Analyze the available operational and project data for hidden risks. Some of the methodologies that could be helpful include:|~|- Root cause analysis|~|- Assumption and constraint analysis|~|- SWOT analysis|~|- Document analysis</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14611" UniqueId="ec52b7eb-7667-17e7-bd71-fd522f479faf" Number="2.0" Order="4">
+      <Text>Populate the Risk Register</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14623" UniqueId="583f5dd2-7638-a395-301e-e3fc3173d947" Order="5" Number="2.0.1">
+          <Text>Record the specific risks as identified for the project</Text>
+        </Task>
+        <Task Id="14619" UniqueId="c6349f6c-e217-1ce2-b3b2-d9f94f37b3e9" Order="6" Number="2.0.2">
+          <Text>Assign each risk a unique identifier|~|Describe risks in as much detail as required to ensure unambiguous understanding|~|A structured risk statement may be used to distinguish risks from their cause(s) and their effect(s)</Text>
+        </Task>
+        <Task Id="14618" UniqueId="82c41c29-5f3d-54f2-7251-a91c7f392858" Order="7" Number="2.0.3">
+          <Text>Assign each risk to a category, and record the likelihood and severity of the possible outcome</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14612" UniqueId="e857da67-913c-6fab-eb66-256b2b70a0d3" Number="3.0" Order="8">
+      <Text>Assign risk owners</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14617" UniqueId="019f6b75-19b1-60cf-79cd-b1473ad4551c" Order="9" Number="3.0.1">
+          <Text>Assign appropriate staff as owners of the risks identified</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14613" UniqueId="4c86d89f-6272-ffba-3b2f-d8a2c54f65fd" Number="4.0" Order="10">
+      <Text>Record potential risk responses</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14616" UniqueId="ae002672-2a0a-219d-1515-15bbf98fe17a" Order="11" Number="4.0.1">
+          <Text>Capture the possible controls and mitigations for the risks identified. These could be changes in processes, policies or structures, or other controls as identified</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14614" UniqueId="c1148249-bd7e-b828-b524-a5ffa68ca069" Number="5.0" Order="12">
+      <Text>Produce the Risk Report</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14615" UniqueId="ef61b495-a37e-6d91-0c88-08769953f6c8" Order="13" Number="5.0.1">
+          <Text>Produce a risk report outlining the sources of overall project risk, indicating which are the most important drivers of overall project risk exposure, and summarizing identified individual project risks, such as number of identified threats and opportunities, distribution of risks across risk categories, metrics and trends, etc.</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4248" PublishedDate="2020-12-19T23:30:31.5176069Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T23:30:31.8104321Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T23:30:31.8104321Z" />
+  </Metadata>
+</Process>

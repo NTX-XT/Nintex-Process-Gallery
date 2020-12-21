@@ -1,0 +1,90 @@
+<Process Id="834" Name="9.3 Acquire Resources" ReferenceNo="" Objective="This process outlines obtaining the internal and external resources necessary to complete project work" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="36f322f8-7b17-4649-9da4-e0007497bbee" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5246" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14457" UniqueId="16c2c2a0-2ca6-1e92-b7c9-8b04c35afbe3" Number="1.0" Order="0">
+      <Text>Pre-assign resources</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14462" UniqueId="33c952a7-e170-40f6-43fc-c0737579e724" Order="1" Number="1.0.1">
+          <Text>Determine if any resources are at risk due to  a competitive proposal or if the project is dependent upon the expertise or availability of particular persons or resources</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14458" UniqueId="4b2882a2-e63e-678c-f257-de0fc79e3316" Number="2.0" Order="2">
+      <Text>Verify adequate resourcing</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14463" UniqueId="9955de8f-2d87-3a9e-89f1-9b857c2a7dcb" Order="3" Number="2.0.1">
+          <Text>Verify that the required resources are:|~|- Available|~|- Able to fulfil the project needs|~|- Within the allocated budget|~|- Located within workable range</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14459" UniqueId="35ef64aa-8151-ee8d-31ef-bae97ac751e4" Number="3.0" Order="4">
+      <Text>Assemble virtual teams</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14464" UniqueId="b665b2b1-8747-8448-d58b-8a9f7e292bfa" Order="5" Number="3.0.1">
+          <Text>Virtual teams allow for a wider selection of staff to participate with less physical constraints on time, location, and collaboration. Where required, assemble teams virtually and use technological solutions to connect them</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14460" UniqueId="241b86b4-a889-2809-1932-80f4a98fcfc5" Number="4.0" Order="6" ParallelGroupingRef="1">
+      <Text>Assign physical resources</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14465" UniqueId="bfc7e1b5-0a32-7b0e-4ff6-2c37bac096ee" Order="7" Number="4.0.1">
+          <Text>Record the material, equipment, supplies, locations, and other physical resources that will be used during the project</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14461" UniqueId="881a0e7e-067f-8605-ca3a-570d5bb74729" Number="4.1" Order="8" ParallelGroupingRef="1">
+      <Text>Assign team resources</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14466" UniqueId="ad6043ee-8a05-0cd4-9501-caaaa83d62f3" Order="9" Number="4.1.1">
+          <Text>Record the team members and their roles and responsibilities in a team directory, project organization chart or schedule</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4234" PublishedDate="2020-12-19T02:50:24.4938718Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T02:50:24.7917784Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T02:50:24.7917784Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,93 @@
+<Process Id="853" Name="12.2 Conduct Procurements" ReferenceNo="" Objective="This process obtains a seller responses, selects a seller, and awards a contract based on the supplier or resource criteria set" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="7fdaa8eb-dc54-4ddb-88c9-07765112b457" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5304" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14657" UniqueId="61801829-2df3-c15e-3a59-3d5d44b5a642" Number="1.0" Order="0">
+      <Text>Gather requirements and relevant documentation</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14662" UniqueId="32e1ef21-bfdf-a5ec-4780-48f6794e0a97" Order="1" Number="1.0.1">
+          <Text>The requirements documentation includes:|~|- Technical requirements the seller is required to satisfy|~|- Requirements with contractual and legal implications</Text>
+        </Task>
+        <Task Id="14663" UniqueId="1bf5aa47-575e-7b28-c513-6be002ba620b" Order="2" Number="1.0.2">
+          <Text>Identify requirements based on existing prject information, including the Scope, Procurement, and Requirements management plans</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14658" UniqueId="033acbfa-d73a-4d2a-1364-6498e014c037" Number="2.0" Order="3">
+      <Text>Prepare the procurement documentation package</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14664" UniqueId="f224782d-e3d0-6cb1-5f52-19050bd68c31" Order="4" Number="2.0.1">
+          <Text>Procurement documentation includes:|~|- Bid documents such as RFI, RFP, RFQ, or other documents sent to sellers so they can develop a bid response|~|- Statement of work with a clearly stated set of goals, requirements, and outcomes|~|- Independent cost estimates to provide a reasonableness check against the proposals submitted|~|- Source selection criteria which describe how bidder proposals will be evaluated, including evaluation criteria and weights</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14659" UniqueId="9a704081-e866-66d1-d26a-5eaaddfcadc9" Number="3.0" Order="5">
+      <Text>Collect seller proposals</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14665" UniqueId="c568890e-ba48-66ae-7a0b-6f28c3d32aa5" Order="6" Number="3.0.1">
+          <Text>These can be gathered through various means, such as:|~|- Direct contact|~|- Advertising|~|- Bidder conferences</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14660" UniqueId="38d4d30f-38d1-8662-6c67-156866b3efdb" Number="4.0" Order="7">
+      <Text>Evaluate proposals</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14666" UniqueId="b92e298d-ff6e-97da-0b01-752c21d8df05" Order="8" Number="4.0.1">
+          <Text>Evaluate any bids received to ensure they are complete and respond in full to the bid documents, procurement statement of work, source selection criteria, and any other documents that went out in the bid package</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14661" UniqueId="ba348b54-a625-dd87-8519-2efbb5db96aa" Number="5.0" Order="9">
+      <Text>Select approved sellers</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14667" UniqueId="c5060327-7fa4-5053-7021-3dbe9493ceee" Order="10" Number="5.0.1">
+          <Text>Confirm successful bids and send contracts to secure the bid for procurement.|~|Seller contracts will typically cover:|~|- Procurement statement of work or major deliverables|~|- Schedule, milestones, or date by which a schedule is required|~|- Performance reporting|~|- Pricing and payment terms|~|- Inspection, quality, and acceptance criteria|~|- Warranty and future product support|~|- Incentives and penalties|~|- Insurance and performance bonds|~|- Subordinate subcontractor approvals|~|- General terms and conditions|~|- Change request handling|~|- Termination clause and alternative dispute resolution mechanisms</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4253" PublishedDate="2020-12-20T04:18:24.187755Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-20T04:18:24.4846610Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-20T04:18:24.4846610Z" />
+  </Metadata>
+</Process>

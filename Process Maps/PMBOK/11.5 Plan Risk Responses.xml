@@ -1,0 +1,75 @@
+<Process Id="851" Name="11.5 Plan Risk Responses" ReferenceNo="" Objective="This process guides the development of options, selecting strategies, and agreeing on actions to address|~|overall project risk exposure, as well as to treat individual project risks." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="152dd4c2-866f-4ac1-808f-74cf514c7e7d" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5297" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14641" UniqueId="3bf77abb-e0da-3f9c-bee0-1f7010038867" Number="1.0" Order="0">
+      <Text>Identify risks to be addressed</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14644" UniqueId="38e7fe7a-9bcd-4182-1f04-6413df7b710f" Order="1" Number="1.0.1">
+          <Text>Use the Risk Register to identify priority risks for which risk responses are required</Text>
+        </Task>
+        <Task Id="14645" UniqueId="16a4cb7f-d8a0-6e30-cbb8-0330257ebf51" Order="2" Number="1.0.2">
+          <Text>Consider preliminary risk responses identified in the Project Risk Management process</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14642" UniqueId="e6cd1e99-f38c-0f4a-66c6-5472cbdc355b" Number="2.0" Order="3">
+      <Text>Decide risk response strategies</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14646" UniqueId="f4b1cab8-6795-f835-556b-1348d3852314" Order="4" Number="2.0.1">
+          <Text>Consider the approach to be taken to:|~|- Threats|~|- Opportunities|~|- Contingencies|~|- Overall project risks</Text>
+        </Task>
+        <Task Id="14647" UniqueId="37df805c-69eb-f45a-f71b-3f494a4d801f" Order="5" Number="2.0.2">
+          <Text>Decide the risk response approach:|~||~|- Avoid |~|- Exploit|~|- Transfer / Share|~|- Mitigate / Enhance|~|- Accept</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14643" UniqueId="ee7557fa-0cfe-c67a-dd5a-d2625b022dc7" Number="3.0" Order="6">
+      <Text>Update Risk Register</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14648" UniqueId="b5b0d16d-3ffe-4715-945e-f7cddd658e03" Order="7" Number="3.0.1">
+          <Text>Update the Risk Register with:|~|- Response strategies|~|- Specific actions to implement strategies|~|- Trigger conditions, symptoms and warning signs|~|- Contingency plans|~|- Residual risks|~|- Secondary risks that arise as a direct outcome of implementing a risk response</Text>
+        </Task>
+        <Task Id="14649" UniqueId="1d75fa67-cbab-980b-a72b-991c3c182650" Order="8" Number="3.0.2">
+          <Text>Update other project plans and baselines as required</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4251" PublishedDate="2020-12-20T01:38:26.656395Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-20T01:38:26.9220352Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-20T01:38:26.9220352Z" />
+  </Metadata>
+</Process>

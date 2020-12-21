@@ -1,0 +1,81 @@
+<Process Id="846" Name="10.2 Manage Communications" ReferenceNo="" Objective="This process goes beyond the distribution of relevant information and seeks to ensure that the information being communicated to project stakeholders has been appropriately generated and formatted, and received by the intended audience." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="0beda883-989d-4fa6-886c-41901fb7106e" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5282" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14588" UniqueId="62e83787-2848-b0e4-3447-36d589c3e11f" Number="1.0" Order="0">
+      <Text>Apply the Communications Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14592" UniqueId="12dd5c69-5083-da0a-f542-0fb46e8cc511" Order="1" Number="1.0.1">
+          <Text>Utilize the Project Management Information System to manage the communications where adequate facilities exist</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14589" UniqueId="117a92ab-0339-5820-97fe-a0ff65dda7ab" Number="2.0" Order="2">
+      <Text>Identify effective communication practices</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14593" UniqueId="2eb74f0e-242f-9e91-9732-043ba862ccb2" Order="3" Number="2.0.1">
+          <Text>Identify and promote good communication practices, such as:|~|- Sender-receiver models|~|- Choice of media|~|- Writing style|~|- Meeting management|~|- Presentations|~|- Facilitation|~|- Active listening</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14590" UniqueId="9727a027-7965-abe9-e9e2-73b81e378e3e" Number="3.0" Order="4">
+      <Text>Ensure adequate feedback loops exist</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14594" UniqueId="cd883201-1b23-1bb3-30ef-2f07d0dbc597" Order="5" Number="3.0.1">
+          <Text>Ensure the technologies and methods used provide room for stakeholder feedback on the communications processes</Text>
+        </Task>
+        <Task Id="14595" UniqueId="2f284b79-2a51-4c81-4f92-4ccbd0342c29" Order="6" Number="3.0.2">
+          <Text>Monitor and evaluate feedback as it occurs</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14591" UniqueId="dc0bcf22-ee92-ca88-701f-22adea63ea4f" Number="4.0" Order="7">
+      <Text>Provide communications training</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14596" UniqueId="f22c00b5-5eb4-eb78-5fbc-62f53015fb00" Order="8" Number="4.0.1">
+          <Text>Provide opportunities to improve communication skills within teams and across the stakeholders, as required. This could include:|~|- Active listening|~|- Conflict management|~|- Cultural awareness|~|- Meeting management|~|- Networking|~|- Political awareness</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4246" PublishedDate="2020-12-19T22:35:09.0389949Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T22:35:09.3202556Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T22:35:09.3202556Z" />
+  </Metadata>
+</Process>

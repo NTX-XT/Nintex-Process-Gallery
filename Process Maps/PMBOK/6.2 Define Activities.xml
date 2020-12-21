@@ -1,0 +1,90 @@
+<Process Id="840" Name="6.2 Define Activities" ReferenceNo="" Objective="Identify and document the specific actions performed in order to produce the project deliverables" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="06bc52fb-4ec5-4d25-96c2-16570fcdb480" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5264" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14513" UniqueId="62f53c0c-7cd4-0796-9d50-ed3540edde7c" Number="1.0" Order="0">
+      <Text>Decompose the work schedule</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14517" UniqueId="e768476e-4bbe-710a-e822-b64c96a151a1" Order="1" Number="1.0.1">
+          <Text>Divide and subdivide the project scope and project deliverables into smaller, more manageable parts</Text>
+        </Task>
+        <Task Id="14518" UniqueId="030d91a6-09c0-6ce2-f96b-3700c4c06eba" Order="2" Number="1.0.2">
+          <Text>Each work package within the WBS is decomposed into the activities required to produce the work package deliverables</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14514" UniqueId="4c296edd-7e2e-1259-ad11-180afb416751" Number="2.0" Order="3">
+      <Text>Define the Activity List</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14519" UniqueId="4cbd7d8c-f730-e695-47a2-8c3abc223585" Order="4" Number="2.0.1">
+          <Text>The Activity List describes the scheduled activities required by the project</Text>
+        </Task>
+        <Task Id="14520" UniqueId="957e63b0-4d9f-cca4-d2c1-16b35bb390b1" Order="5" Number="2.0.2">
+          <Text>Where rolling wave planning or agile development is in play, the activity list will need updating periodically as the project develops and proceeds</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14515" UniqueId="fed1b310-d745-511f-cbe9-f07b4a04eafe" Number="3.0" Order="6">
+      <Text>Define activity attributes</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14521" UniqueId="c23a2863-3444-1a36-fed9-985b6c658a65" Order="7" Number="3.0.1">
+          <Text>Expand the description of the activities by identifying the components associated with each activity</Text>
+        </Task>
+        <Task Id="14522" UniqueId="8bfdf594-206f-1d17-eed4-1e9686279fd0" Order="8" Number="3.0.2">
+          <Text>This may include details such as:|~|- activity descriptions|~|- predecessor and successor activities|~|- logical relationships|~|- leads or lags|~|- resource requirements|~|- imposed dates|~|- constraints or assumptions</Text>
+        </Task>
+        <Task Id="14523" UniqueId="01c3753d-f01c-76de-65f7-28318554bf25" Order="9" Number="3.0.3">
+          <Text>Identify where activity attributes can be used to assist scheduling or sorting planned activities within reporting frameworks</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14516" UniqueId="7def41fa-ae03-26f6-0fa9-7256ac59723a" Number="4.0" Order="10">
+      <Text>Establish milestones</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14524" UniqueId="afade1a1-8854-2f4f-1854-67a07defb849" Order="11" Number="4.0.1">
+          <Text>Create a milestone list that identifies the project milestones and indicates whether they are mandatory (e.g. required by contract), or optional (internal)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4240" PublishedDate="2020-12-19T09:17:10.9892643Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T09:17:11.3018330Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T09:17:11.3018330Z" />
+  </Metadata>
+</Process>

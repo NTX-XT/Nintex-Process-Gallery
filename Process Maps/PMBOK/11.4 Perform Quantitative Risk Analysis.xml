@@ -1,0 +1,78 @@
+<Process Id="850" Name="11.4 Perform Quantitative Risk Analysis" ReferenceNo="" Objective="Numerically analyze the combined effect of identified individual project risks and other sources of uncertainty on overall project objectives. Quantitative Risk Analysis is not required for all projects. Undertaking a robust analysis depends on the availability of high-quality data about individual project risks and other sources of uncertainty, as well as a sound underlying project baseline for scope, schedule, and cost." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="2b5f4534-9bbb-4760-831c-da4f0d79ebe6" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5294" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14633" UniqueId="84a0db4b-83c7-4412-dc85-dd8eba231918" Number="1.0" Order="0">
+      <Text>Gather qualitative risk analysis data</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14637" UniqueId="d9494437-357a-106d-f0c8-8c48e860a354" Order="1" Number="1.0.1">
+          <Text>Collect the information produced by 11.3 Qualitative Risk Analysis</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14634" UniqueId="50950598-d2b6-ae6b-d48a-f72f2f2aaa74" Number="2.0" Order="2">
+      <Text>Define probabilities and uncertainties</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14638" UniqueId="133df9c7-436a-9cb5-f38b-4473510bb2a2" Order="3" Number="2.0.1">
+          <Text>Where the duration, cost, or resource requirement for a planned activity is uncertain, the range of possible values can be represented in the model as a probability distribution, such as triangular, normal, lognormal, beta, uniform, or discrete distributions</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14635" UniqueId="4458033c-c061-9b89-c499-c76fc9a2f829" Number="3.0" Order="4">
+      <Text>Analyze risk data</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14639" UniqueId="68e2f7bd-ab86-d195-68d8-0ff64d6217de" Order="5" Number="3.0.1">
+          <Text>Use data analysis to evaluate the potential of risks to impact on project objectives. This analysis could include:|~|- Simulation models|~|- Sensitivity analysis|~|- Decision tree analysis|~|- Influence diagrams</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14636" UniqueId="24bd6d4a-3940-07c5-a787-ed318d6ee1ad" Number="4.0" Order="6">
+      <Text>Produce risk analysis report</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14640" UniqueId="69cd06cc-755f-6222-58b5-29954172922b" Order="7" Number="4.0.1">
+          <Text>Update the Risk Register and produce the risk analysis report, including:|~|- Assessment of overall project risk exposure|~|- Detailed probabilistic analysis of the project|~|- Prioritized list of individual project risks|~|- Trends in quantitative risk analysis results|~|- Recommended risk responses</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4250" PublishedDate="2020-12-20T00:04:37.2159533Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-20T00:04:37.4972239Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-20T00:04:37.4972239Z" />
+  </Metadata>
+</Process>

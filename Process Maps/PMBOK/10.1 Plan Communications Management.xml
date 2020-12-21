@@ -1,0 +1,84 @@
+<Process Id="845" Name="10.1 Plan Communications Management" ReferenceNo="" Objective="Develop an appropriate approach and plan for project communications based on the needs of the project and stakeholders." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="1a04b704-673b-4e78-a584-dcb2d4c9b841" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5279" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14578" UniqueId="3f1d0108-4d41-cf07-8fdf-9c2b66a31655" Number="1.0" Order="0">
+      <Text>Analyze communications requirements</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14582" UniqueId="3cd32c0a-47c2-c85a-87a3-4a4dc9b5473a" Order="1" Number="1.0.1">
+          <Text>Define the communications needs from the type and format of information required by stakeholders and the value of that information</Text>
+        </Task>
+        <Task Id="14583" UniqueId="401650e4-5184-9670-f792-dceadc52029c" Order="2" Number="1.0.2">
+          <Text>Consider all the sources of information that could be relevant:|~|- The number of potential communication channels or paths|~|- Organizational charts|~|- Project organization and stakeholder responsibility, relationships, and interdependencies|~|- Development approach|~|- Disciplines, departments, and specialties involved|~|- Logistics of how many persons will be involved with the project and at which locations|~|- Internal information needs|~|- External information needs|~|- Legal requirements</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14579" UniqueId="6e750f7e-27f4-d7c4-9c15-03823a32792d" Number="2.0" Order="3">
+      <Text>Identify the technologies and channels available</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14584" UniqueId="0e12d801-82e0-dd53-89f8-f15f366e6280" Order="4" Number="2.0.1">
+          <Text>The choice of communications technologies and channels must be weighed according to several factors, such as:|~|- urgency of the need for information|~|- availability and reliability of technology|~|- ease of use|~|- project environment|~|- sensitivity and confidentiality of the information</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14580" UniqueId="b0cf4da7-2085-1410-22d3-93438d6e9788" Number="3.0" Order="5">
+      <Text>Define the communication structure</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14585" UniqueId="cd542ce4-7f13-2581-4278-f797f4b0bcbc" Order="6" Number="3.0.1">
+          <Text>Decide on the appropriate modes of communication for various content:|~|- Interactive communication (real-time communication between two or more parties interacting)|~|- Push communication (sent or distributed content to specific recipients)|~|- Pull communication (self initiated access of communication content)</Text>
+        </Task>
+        <Task Id="14586" UniqueId="28417497-6285-85a0-e98e-4e16ed9e5cd5" Order="7" Number="3.0.2">
+          <Text>Select the appropriate channels for each communication need. Some of the possible approaches include:|~|- Notice boards|~|- Newsletters/in-house magazines/e-magazines|~|- Direct mail/email|~|- Press releases|~|- Intranets, web portals, or other information repositories|~|- Phonecalls|~|- Presentations, briefings, or group meetings|~|- Focus groups|~|- Face-to-face meetings|~|- Consultation groups or staff forums|~|- Social computing technology and media</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14581" UniqueId="7a53f1ad-b2bc-8109-3342-99fad93d51c6" Number="4.0" Order="8">
+      <Text>Produce communications management plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14587" UniqueId="4e141a5f-e0f0-dd32-5f05-8ce65f2087fb" Order="9" Number="4.0.1">
+          <Text>The Communications Plan will include guidelines and templates for project comms, including:|~|- Stakeholder communication requirements|~|- Information to be communicated, including language, format, content, and level of detail|~|- Escalation processes|~|- Reason for the distribution of that information|~|- Timeframe and frequency for the distribution|~|- Persons responsible for communicating the information|~|- Persons responsible for authorizing release of confidential information|~|- Persons or groups who will receive the information|~|- Methods or technologies used to convey the information|~|- Resources allocated for communication activities|~|- Method for updating and refining the communications management plan |~|- Glossary of common terminology|~|- Flow charts of the information flow in the project, including possible sequences of authorization|~|- Constraints derived from specific legislation or regulations</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4245" PublishedDate="2020-12-19T22:19:18.4794802Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T22:19:18.7920206Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T22:19:18.7920206Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,129 @@
+<Process Id="843" Name="6.5 Develop Schedule" ReferenceNo="" Objective="Analyze the activity sequences, durations, resource requirements, and schedule constraints to create a model for project execution, monitoring and control." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="90bad8df-3eb7-4922-b8a1-89a67536bf67" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5273" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14547" UniqueId="8945bac7-49e3-955d-06bf-f3adcffd0305" Number="1.0" Order="0">
+      <Text>Analyze the schedule network</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14565" UniqueId="d99419a2-c586-8fef-896c-1bb7fe295631" Order="1" Number="1.0.1">
+          <Text>Review the network for high-risk activities or long-lead items that will have a significant impact on the schedule</Text>
+        </Task>
+        <Task Id="14563" UniqueId="e4612293-2e93-2c17-c16d-3e4cdd68d5dc" Order="2" Number="1.0.2">
+          <Text>Consider any external agreements which will have input into the project schedule through contractual obligations</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14548" UniqueId="2839dacd-2291-e363-d0b2-cb622fe0d50c" Number="2.0" Order="3">
+      <Text>Conduct a critical path analysis</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14562" UniqueId="0262d00c-d0c8-698b-3081-8a5da29a3f91" Order="4" Number="2.0.1">
+          <Text>Estimate the minimum project duration and determine the amount of schedule flexibility on the logical network paths within the schedule model</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14549" UniqueId="aed91428-4399-dd4d-bcf1-820913b5ebfc" Number="3.0" Order="5">
+      <Text>Determine resource optimization</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14561" UniqueId="865872c4-be98-13c3-9eba-58d2de292e6a" Order="6" Number="3.0.1">
+          <Text>Adjust the schedule model and activity scheduling due to the demand and supply of resources</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14550" UniqueId="87a959df-e671-41ba-7af3-75dc06e30b22" Number="4.0" Order="7" ParallelGroupingRef="1">
+      <Text>Consider what-if scenarios and simulations</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14564" UniqueId="77e37e05-545a-e9dd-956c-1e06c43547da" Order="8" Number="4.0.1">
+          <Text>Review the possible effects on the project outcomes based on scenarios modelling the proposed schedule</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14551" UniqueId="25ad1357-d5c4-b8c5-a91a-0a5581114f1e" Number="4.1" Order="9" ParallelGroupingRef="1">
+      <Text>Consider agile development or schedule compression</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14560" UniqueId="312e1058-c83f-fe23-756c-ffa21d6185b4" Order="10" Number="4.1.1">
+          <Text>Analyze the impact of using schedule a compression approach (e.g. fast tracking, or crashing)</Text>
+        </Task>
+        <Task Id="14559" UniqueId="7afdb327-871f-e82e-1aaa-91f926a8a76e" Order="11" Number="4.1.2">
+          <Text>Consider the value of using an agile development cycle within the schedule for iterative development</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14552" UniqueId="84cb2abe-8b71-11ce-bf8c-71b825c96cad" Number="5.0" Order="12" ParallelGroupingRef="2">
+      <Text>Produce the schedule baseline</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14558" UniqueId="73053cfb-7753-2259-f07c-df2c04e6f140" Order="13" Number="5.0.1">
+          <Text>Also produce the Project Calendar, which identifies working days and shifts that are available for scheduled activities</Text>
+        </Task>
+        <Task Id="14557" UniqueId="a2505d74-19fe-2dd0-fa19-d9423b6500b3" Order="14" Number="5.0.2">
+          <Text>Update the Project Management Plan according to the schedule baseline</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14553" UniqueId="045c8268-4225-88a9-5615-73323e134207" Number="5.1" Order="15" ParallelGroupingRef="2">
+      <Text>Produce the project schedule</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14556" UniqueId="53df90b1-983b-74b1-9ff1-13366f7c6b6e" Order="16" Number="5.1.1">
+          <Text>Produce a model that presents linked activities with planned dates, durations, milestones, and resources</Text>
+        </Task>
+        <Task Id="14555" UniqueId="389be507-f805-c572-2558-6c076d8288b3" Order="17" Number="5.1.2">
+          <Text>Include at minimum:|~|- schedule milestones|~|- schedule activities|~|- activity attributes|~|- identified assumptions and constraints</Text>
+        </Task>
+        <Task Id="14554" UniqueId="a6d5bacf-113b-6fa9-b6eb-5a9cabb82e4a" Order="18" Number="5.1.3">
+          <Text>Provide supporting information as required, such as:|~|-  resource requirements by period|~|- best-case and worst-case alternative schedules|~|- any applied schedule reserves|~|- cash-flow projections|~|- order and delivery schedules</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4243" PublishedDate="2020-12-19T10:10:34.9726705Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T10:10:35.3953505Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T10:10:35.3953505Z" />
+  </Metadata>
+</Process>

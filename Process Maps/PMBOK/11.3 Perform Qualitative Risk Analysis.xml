@@ -1,0 +1,80 @@
+<Process Id="849" Name="11.3 Perform Qualitative Risk Analysis" ReferenceNo="" Objective="This process defines the priority of identified individual project risks using their probability of occurrence, the corresponding impact on project objectives if the risks occur, and other factors. Perform Qualitative Risk Analysis establishes the relative priorities of individual project risks for Plan Risk Responses." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="7b2ba8b2-5140-49ec-b0cd-fb2335fc3f3f" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5291" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14624" UniqueId="509db2bf-f68a-a58e-c612-e317c42fe562" Number="1.0" Order="0">
+      <Text>Review Risk Management Plan and Risk Register for identified risks</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures />
+    </Activity>
+    <Activity Id="14625" UniqueId="8b8408d6-3f4c-581c-5900-e392a114ae89" Number="2.0" Order="1">
+      <Text>Perform risk data quality assessment</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14628" UniqueId="a5260149-0d63-2382-e954-96ae0371497c" Order="2" Number="2.0.1">
+          <Text>Evaluate the degree to which the data about individual project risks is accurate and reliable as a basis for qualitative risk analysis</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14626" UniqueId="2b713041-1749-9ca6-393e-2ef89e314c9d" Number="3.0" Order="3">
+      <Text>Perform risk probability and impact assessment</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14629" UniqueId="83d476e9-fad9-e61f-02ec-e86a3897e1d0" Order="4" Number="3.0.1">
+          <Text>Consider the likelihood that a specific risk will occur. |~|Risk impact assessment considers the potential effect on one or more project objectives such as schedule, cost, quality, or performance. Impacts will be negative for threats and positive for opportunities. |~|Probability and impact are assessed for each identified individual project risk.</Text>
+        </Task>
+        <Task Id="14630" UniqueId="51d244ba-2fa8-e3ff-3500-007a50371c40" Order="5" Number="3.0.2">
+          <Text>Consider other factors that may influence the analysis of any risk, such as:|~|- Urgency|~|- Proximity (period of time before the risk might have an impact)|~|- Dormancy (eriod of time that may elapse after a risk has occurred before its impact)|~|- Manageability|~|- Controllability|~|- Detectability|~|- Connectivity|~|- Strategic impact|~|- Propinquity (degree to which a risk is perceived to matter by one or more stakeholders)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14627" UniqueId="fd25380e-7c67-a53e-ebe3-fa91c697b06a" Number="4.0" Order="6">
+      <Text>Update risk reports</Text>
+      <Ownerships>
+        <Role Id="905" Name="Risk Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14631" UniqueId="9356cc6d-328f-c743-e989-801f37e8e033" Order="7" Number="4.0.1">
+          <Text>Update existing risk register and reporting</Text>
+        </Task>
+        <Task Id="14632" UniqueId="7faa9639-1d8e-80fa-207e-d12d8040720c" Order="8" Number="4.0.2">
+          <Text>Revise risk diagrams and charts in line with analysis outcomes</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4249" PublishedDate="2020-12-19T23:53:19.2650303Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T23:53:19.5462668Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T23:53:19.5462668Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,90 @@
+<Process Id="841" Name="6.3 Sequence Activities" ReferenceNo="" Objective="Convert the project activities from a list to a diagram, describing the relationships between the project activities." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="e7fa56c6-e15f-4279-9aec-d1950fe525f9" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5267" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14525" UniqueId="d4b05f02-6c66-a04b-3c37-7118ea047975" Number="1.0" Order="0">
+      <Text>Determine the precedence diagramming methodology</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14529" UniqueId="15b990f3-7206-484f-8adc-9c2c7466f107" Order="1" Number="1.0.1">
+          <Text>Construct a schedule model which represents activities as nodes, graphically linked by one or more logical relationships, to show the sequence in which they are performed</Text>
+        </Task>
+        <Task Id="14530" UniqueId="b3d1f8de-35f5-ed2f-5a68-a97ae05b86e4" Order="2" Number="1.0.2">
+          <Text>Determine the dependencies/logical relationships between the activities, depending on their location as a predecessor or successor:|~|- Finish-to-start (FS)|~|- Finish-to-finish (FF)|~|- Start-to-start (SS)|~|- Start-to-finish (SF)</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14526" UniqueId="46a9eab5-b8cf-5fc0-6751-745fed2dd781" Number="2.0" Order="3">
+      <Text>Identify dependencies and integrations</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14531" UniqueId="e55aee8a-fca6-879a-9a8c-3401cabd5c95" Order="4" Number="2.0.1">
+          <Text>Determine if any dependencies are present.</Text>
+        </Task>
+        <Task Id="14532" UniqueId="07c8defa-af84-321c-fe30-c3649d6ed6dd" Order="5" Number="2.0.2">
+          <Text>Identify the dependency types:|~|- Internal / external|~|- Mandatory / discretionary</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14527" UniqueId="264a278f-d19e-7d5b-3f04-18431b25ed4b" Number="3.0" Order="6">
+      <Text>Identify leads and lags</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14533" UniqueId="568b2709-dab4-277c-153b-ba0464997f90" Order="7" Number="3.0.1">
+          <Text>Determine the dependencies that may require a lead or a lag to accurately define the logical relationship</Text>
+        </Task>
+        <Task Id="14534" UniqueId="81a9e6a8-f577-8fbd-8097-e695fffe6723" Order="8" Number="3.0.2">
+          <Text>Document any assumptions used when deciding lead or lag periods</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14528" UniqueId="920574f6-9a05-5c71-3daa-f37eb62ab11a" Number="4.0" Order="9">
+      <Text>Produce schedule network diagrams</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14535" UniqueId="80c9c228-f1e0-4e18-deb2-64f7b145b058" Order="10" Number="4.0.1">
+          <Text>Update the Project Management Information System with the sequenced activities, leads, lags, and relationships</Text>
+        </Task>
+        <Task Id="14536" UniqueId="fdd5d1f7-f597-7711-c5d9-45260aea64b7" Order="11" Number="4.0.2">
+          <Text>Illustrate the project schedule with a network diagram, graphically depicting the logical relationships between the schedule activities</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4241" PublishedDate="2020-12-19T09:34:39.2766449Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T09:34:39.5938956Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T09:34:39.5938956Z" />
+  </Metadata>
+</Process>

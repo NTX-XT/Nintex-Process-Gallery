@@ -1,0 +1,93 @@
+<Process Id="854" Name="13.3 Manage Stakeholder Engagement" ReferenceNo="" Objective="Managing stakeholder engagement helps to ensure that stakeholders clearly understand the project goals, objectives, benefits, and risks for the project, as well as how their contribution will enhance project success." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="98638aca-68fa-4670-9ed1-527fbf08d1fb" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5307" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14668" UniqueId="ff66d599-429f-475e-bd88-4a4d698343ea" Number="1.0" Order="0">
+      <Text>Review stakeholder expectations in Project Charter</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14673" UniqueId="ade0a55a-596d-7e40-7e6a-c1b235634298" Order="1" Number="1.0.1">
+          <Text>Clarify the obligations on both sides for project stakeholders, and review the ground rules established in the charter</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14669" UniqueId="37dd2cc6-c6d9-043b-b606-a503abcb42eb" Number="2.0" Order="2">
+      <Text>Engage stakeholders as the project proceeds</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14674" UniqueId="b6d3885a-672d-b9ec-951d-f3be3522e546" Order="3" Number="2.0.1">
+          <Text>Communicate with the stakeholders at appropriate project stages</Text>
+        </Task>
+        <Task Id="14675" UniqueId="82becf46-debf-2448-f8e3-1313cf44079b" Order="4" Number="2.0.2">
+          <Text>Consider the right way to engage the stakeholders. Review the Communication management plan to decide if informal conversations, meetings, emails, formal reports, or other modes of communication are right</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14670" UniqueId="b40dab4f-7e8e-b3c5-8340-38d3a26948a5" Number="3.0" Order="5" ParallelGroupingRef="1">
+      <Text>Manage stakeholder expectations</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14676" UniqueId="d90cbbf7-8b47-072a-9b9b-9018a4b60abb" Order="6" Number="3.0.1">
+          <Text>Communicate progress and negotiate expectations to ensure a clear understanding of the project's position</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14671" UniqueId="db825666-6a78-7894-dbb4-5fec4bba9232" Number="3.1" Order="7" ParallelGroupingRef="1">
+      <Text>Address stakeholder concerns</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14677" UniqueId="209a71e0-d049-c8d3-6a96-d16ee89b3017" Order="8" Number="3.1.1">
+          <Text>Address known risks and potential concerns with stakeholders to maintain transparent operations</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14672" UniqueId="15d58384-5b57-5305-940e-8975db1cd1c9" Number="3.2" Order="9" ParallelGroupingRef="1">
+      <Text>Resolve issues with stakeholders</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14678" UniqueId="0f1c3163-386c-8b9b-f50e-70922176f091" Order="10" Number="3.2.1">
+          <Text>Clarify any issues that have arisen and work with stakeholders to ensure they are resolved</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4254" PublishedDate="2020-12-20T04:35:37.8640365Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-20T04:35:38.1630281Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-20T04:35:38.1630281Z" />
+  </Metadata>
+</Process>

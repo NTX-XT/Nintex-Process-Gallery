@@ -1,0 +1,93 @@
+<Process Id="847" Name="11.1 Plan Risk Management" ReferenceNo="" Objective="This process describes how to conduct risk management activities for a project." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="2dbc1add-4ed4-40d8-84ee-5baecf5e0d2b" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5285" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14597" UniqueId="b58dff4b-1c56-a9d7-8a73-fea5e30c8502" Number="1.0" Order="0">
+      <Text>Decide the risk approach</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14601" UniqueId="a11642b0-278e-f307-612b-f035859f409a" Order="1" Number="1.0.1">
+          <Text>Review the Project Charter and Management Plan for content, policies and methodologies relevant to risk management</Text>
+        </Task>
+        <Task Id="14602" UniqueId="93be4c64-d628-03b9-b8f7-78eb4f7e6b43" Order="2" Number="1.0.2">
+          <Text>Meet with relevant stakeholders to decide key aspects of the risk approach, identify and overcome sources of bias, and resolve any concerns</Text>
+        </Task>
+        <Task Id="14603" UniqueId="d66c9d09-cbb2-c451-b10e-ee24d4618928" Order="3" Number="1.0.3">
+          <Text>Define risk categories for grouping individual project risks. |~|This can be through a risk breakdown structure (RBS), which is a hierarchical representation of potential sources of risk</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14598" UniqueId="0a7ea970-6447-cccc-428c-acc5537cf492" Number="2.0" Order="4">
+      <Text>Define the risk strategy</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14604" UniqueId="a41f76b9-9c50-88ce-f912-1e51cc04a05b" Order="5" Number="2.0.1">
+          <Text>Decide the general approach to managing risk on this project</Text>
+        </Task>
+        <Task Id="14605" UniqueId="735c7501-46dc-b44b-7c58-5c730630d32a" Order="6" Number="2.0.2">
+          <Text>Clarify the key stakeholder risk appetites.|~|Risk appetites are expressed as measurable risk thresholds around each project objective</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14599" UniqueId="6056f55b-3a7c-4c17-47cf-d313b49e090f" Number="3.0" Order="7">
+      <Text>Define the methodologies to be used</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14606" UniqueId="c2e4319e-2e1e-1811-fdee-ef4da5c3ad3f" Order="8" Number="3.0.1">
+          <Text>Describe the risk probabilities and impacts.|~|These are specific to the project context and reflect the risk appetite and thresholds of the organization and key stakeholders</Text>
+        </Task>
+        <Task Id="14607" UniqueId="55aa4a7b-9377-494a-8171-0f5f8e2d8c7c" Order="9" Number="3.0.2">
+          <Text>Develop the Risk Probability and Impact matrix for the project</Text>
+        </Task>
+        <Task Id="14608" UniqueId="6e0af359-41df-75f6-a1b0-02ea195dda71" Order="10" Number="3.0.3">
+          <Text>Determine reporting formats and risk tracking procedures</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14600" UniqueId="bafda244-9ab6-284d-15a2-0607fe23a9ce" Number="4.0" Order="11">
+      <Text>Assign roles and responsibilities</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14609" UniqueId="8c19a742-8c07-9ab2-7fee-9772fe31049e" Order="12" Number="4.0.1">
+          <Text>Identify the lead, support, and risk management team members for each type of risk or activity described in the risk management plan, and clarify their responsibilities</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4247" PublishedDate="2020-12-19T23:00:22.7078812Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T23:00:23.0046177Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T23:00:23.0046177Z" />
+  </Metadata>
+</Process>

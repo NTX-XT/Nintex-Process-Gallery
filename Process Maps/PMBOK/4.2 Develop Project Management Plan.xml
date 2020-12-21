@@ -1,0 +1,102 @@
+<Process Id="831" Name="4.2 Develop Project Management Plan" ReferenceNo="" Objective="The project management plan defines how the project is executed, monitored and controlled, and closed." IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="c2994e49-580a-48f2-a03e-10f0436a1a76" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5237" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14414" UniqueId="deb45b69-642c-9c84-b1ad-98f6b76a832b" Number="1.0" Order="0">
+      <Text>Collect high level project baselines and inputs</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14419" UniqueId="5f49b529-e002-6ef7-6456-90747110823e" Order="1" Number="1.0.1">
+          <Text>Draw on the Project Charter (4.1) to establish high level direction</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14415" UniqueId="3c334502-8d27-8b74-8d27-9d4ba233bd73" Number="2.0" Order="2">
+      <Text>Review existing subsidiary plans for inputs</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14420" UniqueId="0685b9b1-f2fb-15ed-8648-9ef401c6ec1b" Order="3" Number="2.0.1">
+          <Text>Review any existing subsidiary plans such as the Scope Management Plan (5.1), Schedule Management Plan (6.1) or Cost Management Plan (7.1)</Text>
+        </Task>
+        <Task Id="14421" UniqueId="d78e9180-dac0-2f51-6fef-9d84283e229d" Order="4" Number="2.0.2">
+          <Text>Incorporate the relevant content at the appropriate level for the detail of the Project Management Plan</Text>
+        </Task>
+        <Task Id="14422" UniqueId="cfd5b82b-7a52-189d-779e-f8a3a267ccd1" Order="5" Number="2.0.3">
+          <Text>Consider relevant documentation from similar projects either completed or underway</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14416" UniqueId="f799af87-06a9-4052-8792-9f234ec442c8" Number="3.0" Order="6">
+      <Text>Define change management procedures</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14423" UniqueId="34c77ca8-16a6-ea14-8f49-489e3e9d9bf1" Order="7" Number="3.0.1">
+          <Text>Decide project change control guidelines and processes as they apply to the Project Management Plan</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14417" UniqueId="99f2e7c1-49f5-3794-40c6-1f651b50f505" Number="4.0" Order="8">
+      <Text>Capture the project closure guidelines and requirements</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14424" UniqueId="f998dea4-b73e-a18e-35d4-07e3763b5392" Order="9" Number="4.0.1">
+          <Text>Include definitions of the product validation and acceptance criteria</Text>
+        </Task>
+        <Task Id="14425" UniqueId="106edc8b-3618-64a1-8ead-80fd0b733d56" Order="10" Number="4.0.2">
+          <Text>Outline monitoring and reporting methods and expectations for the life of the project</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14418" UniqueId="fbad2d35-ab12-a649-b266-520a12ed0c7d" Number="5.0" Order="11">
+      <Text>Publish the Project Management Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14426" UniqueId="48587ecb-c26c-ac7a-bff8-39f17fe9ca9e" Order="12" Number="5.0.1">
+          <Text>Make the plan available as required</Text>
+        </Task>
+        <Task Id="14427" UniqueId="39bfd772-78d6-bd8a-5262-e9798e2cdffb" Order="13" Number="5.0.2">
+          <Text>Plan the project kick-off meeting</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4231" PublishedDate="2020-12-19T01:12:39.3317631Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T01:12:39.8793970Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T01:12:39.8793970Z" />
+  </Metadata>
+</Process>

@@ -1,0 +1,114 @@
+<Process Id="832" Name="9.1 Plan Resource Management" ReferenceNo="" Objective="Resource management planning ensures there are sufficient resources - team members, supplies, materials, services, etc - to complete the project successfully.|~|" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Richard Roe" OwnerId="1051" Expert="Richard Roe" ExpertId="1051" Group="PMBOK Processes" GroupId="288" GroupUniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" State="Active" StateId="1" Version="1.0" PromappVersion="4.8.6.5" UniqueId="e4340d7d-53ee-4f96-bf3a-c72e29ea684d" IsPolicyModeOn="false" IsVirtualVariation="false">
+  <ProcessGroupItems>
+    <ProcessGroup Id="288" UniqueId="cc019b2b-4580-4f03-9368-e3d38a161ffd" Name="PMBOK Processes" ProcessGroupItemId="5240" />
+  </ProcessGroupItems>
+  <Triggers />
+  <Inputs />
+  <ProcessProcedures>
+    <Activity Id="14428" UniqueId="a687612d-80dc-bcd3-1bd5-b7ed52af781b" Number="1.0" Order="0">
+      <Text>Review Project Management Plan outline</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14443" UniqueId="3dc0d9b6-d332-eaa1-8494-e659099f2188" Order="1" Number="1.0.1">
+          <Text>Review the Project Charter for the high-level project outline, key requirements, stakeholders and pre-approved financial resources</Text>
+        </Task>
+        <Task Id="14441" UniqueId="e30f4c98-0021-1635-9a49-e3cd86dc323c" Order="2" Number="1.0.2">
+          <Text>Review the Project Management Plan for the Quality Management requirements, to capture the quantity of resources required to achieve and maintain the quality defined there</Text>
+        </Task>
+        <Task Id="14440" UniqueId="95a585d7-58fd-4206-1348-61741c1ba5ce" Order="3" Number="1.0.3">
+          <Text>Review the Project Management Plan for the Scope Baseline description which will identify the deliverables driving the types and quantities of resources needed</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14429" UniqueId="7f8e9e70-3274-ff1b-c833-5ae40bcda4e8" Number="2.0" Order="4">
+      <Text>Assess project schedules and requirements</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14439" UniqueId="c688add0-cfcc-b3ac-7265-131ce2b28f60" Order="5" Number="2.0.1">
+          <Text>Review the project schedule to understand the timeline of resource allocation</Text>
+        </Task>
+        <Task Id="14442" UniqueId="100ae393-4cf4-7fac-29de-d1c5cb766a5b" Order="6" Number="2.0.2">
+          <Text>Review the project requirements documentation to understand the types and amounts of resources required for the project's success</Text>
+        </Task>
+        <Task Id="14437" UniqueId="2b5905ab-57e4-1c53-0eb0-78c37dc49fd9" Order="7" Number="2.0.3">
+          <Text>Consider any threats and opportunities in the risk register that may impact on project resourcing</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14430" UniqueId="4e0707a0-767d-abba-5f23-866cc99a81ef" Number="3.0" Order="8">
+      <Text>Map team responsibilities, roles, and requirements</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14438" UniqueId="55af3219-85d6-035b-95eb-a32112372db6" Order="9" Number="3.0.1">
+          <Text>Define the roles and responsibilities of teams and individuals. Describe these using a chart or matrix such as:|~|- Work, Organizational, or Resource Breakdown structure chart|~|- Resource Assignment Matrix|~|- RACI Chart</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14431" UniqueId="ba5c90d5-2dfd-1e6e-3394-55499c3179e1" Number="4.0" Order="10">
+      <Text>Identify key resources</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14436" UniqueId="0e1d354a-bca0-d5d6-6104-ffeb19d918cf" Order="11" Number="4.0.1">
+          <Text>Identify the key resources required for the project's success</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14432" UniqueId="adb2ce4f-f90b-b137-0d55-8a4f2b39cf8d" Number="5.0" Order="12">
+      <Text>Determine resource acquisition</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14435" UniqueId="6ec1f3c0-3da3-9989-32df-4249b3684b05" Order="13" Number="5.0.1">
+          <Text>Define how the resources are to be acquired across the timeframe of the project</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+    <Activity Id="14433" UniqueId="cb0fdba0-bd04-f916-5d90-65ed72c44d7c" Number="6.0" Order="14">
+      <Text>Publish the Resource Management Plan</Text>
+      <Ownerships>
+        <Role Id="294" Name="Project Manager" IsVirtual="false" />
+      </Ownerships>
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" />
+      <ChildProcessProcedures>
+        <Task Id="14434" UniqueId="e7a20592-1a7e-18b3-d115-9e3e092dd957" Order="15" Number="6.0.1">
+          <Text>This is a component of the Project Management Plan. It includes:|~|- The resourcing information gathered|~|- An organizational chart for the project |~|- Guidelines for defining, staffing, managing and eventually releasing resources|~|- Outlines for ensuring adequate materials and supplies are available, including inventory, equipment, and supplies throughout the project timeframe|~|- Team training and development plans|~|- A team charter</Text>
+        </Task>
+      </ChildProcessProcedures>
+    </Activity>
+  </ProcessProcedures>
+  <SearchKeywords />
+  <Outputs />
+  <LinkedStakeholders />
+  <Stakeholders />
+  <Approvals />
+  <SystemStakeholders />
+  <RiskManagers />
+  <Targets />
+  <Timeframe TotalCycleTimeDisplay="-" TotalLeadTimeDisplay="-" ProcessTotalCost="0" />
+  <RiskControls />
+  <ProcessApproval>
+    <Published ProcessRevisionId="4232" PublishedDate="2020-12-19T01:57:01.8083479Z" PublisherId="1051" Publisher="Richard Roe" isPublishNowUsed="false" />
+    <Approved />
+  </ProcessApproval>
+  <Metadata>
+    <ProcessXmlGenerationOptions>
+      <StubProcesses>false</StubProcesses>
+    </ProcessXmlGenerationOptions>
+    <MetadataItem Name="GenerationDate" Value="2020-12-19T01:57:02.2458792Z" />
+    <MetadataItem Name="CachedOn" Value="2020-12-19T01:57:02.2458792Z" />
+  </Metadata>
+</Process>
