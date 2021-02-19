@@ -1,6 +1,6 @@
-<Process Id="433" Name="Property Tax Rebate" ReferenceNo="" Objective="Provide citizens with rebate for unused property taxes after selling a property" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Shannon Tillman" OwnerId="1051" Expert="Shannon Tillman" ExpertId="1051" Group="My Processes" GroupId="218" GroupUniqueId="f708469e-dd93-4bcd-96c7-433eeb10ea26" State="Active" StateId="1" Version="1.2" PromappVersion="4.8.5.10" UniqueId="a5128e69-0905-4b0a-af41-ad8c10dd726b" IsPolicyModeOn="false" IsVirtualVariation="false" ProcessRevisionEditId="3142">
+<Process Id="433" Name="Property Tax Rebate" ReferenceNo="" Objective="Provide citizens with rebate for unused property taxes after selling a property" IsTouchModeEnabled="false" IsTextModeOn="false" UseDynamicMapperImage="true" Background="" Owner="Shannon Tillman" OwnerId="1051" Expert="Shannon Tillman" ExpertId="1051" Group="My Processes" GroupId="218" GroupUniqueId="f708469e-dd93-4bcd-96c7-433eeb10ea26" State="Active" StateId="1" Version="2.0" PromappVersion="4.8.7.8" UniqueId="a5128e69-0905-4b0a-af41-ad8c10dd726b" IsPolicyModeOn="false" IsVirtualVariation="false">
   <ProcessGroupItems>
-    <ProcessGroup Id="218" UniqueId="f708469e-dd93-4bcd-96c7-433eeb10ea26" Name="My Processes" ProcessGroupItemId="3510" />
+    <ProcessGroup Id="218" UniqueId="f708469e-dd93-4bcd-96c7-433eeb10ea26" Name="My Processes" ProcessGroupItemId="3511" />
   </ProcessGroupItems>
   <Triggers>
     <Trigger Id="138" Trigger="Citizen Complete Web Form" Frequency="Adhoc" Volume="10 per week" UniqueId="92569314-9091-43bc-9d10-ccfbf88f47dd" />
@@ -22,25 +22,23 @@
         <WebLink Id="9719" UniqueId="a3857535-8e6e-84f1-eb34-c5062984a785" Order="1" Number="">
           <Text>Public Web Form</Text>
           <Attachment>http://harringtoncounty.org/property-taxes/</Attachment>
-          <Ownerships />
         </WebLink>
         <Form Id="9720" UniqueId="40ad32b5-1f70-af5c-2782-4cdbc9233f8d" Order="2" DocumentId="345" DocumentUniqueId="76a0d64b-4cf8-4049-8dec-ec1f7f612a4f" UploadId="386" Number="">
           <Text>Harrington County Tax Refund Claim.pdf</Text>
-          <Ownerships />
         </Form>
       </ChildProcessProcedures>
     </Activity>
     <Activity Id="9721" UniqueId="6cf84040-96c4-3c12-b2c2-50700eb333a0" Number="2.0" Order="3">
       <Text>Create a Case</Text>
       <Ownerships>
-        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
         <Tag Id="49" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
       <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1m" LeadTimeDisplay="1m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0.4340277777777786458333333333" AverageCostPerHour="26.04" />
       <ChildProcessProcedures>
         <Note Id="9732" UniqueId="41972709-0e4a-3806-39bd-0feaf2be2924" Order="4" Number="">
           <Ownerships>
-            <Tag Id="2" IsDisassociated="False" Name="CRM" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="False" />
+            <Tag Id="2" Name="CRM" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
           </Ownerships>
           <Text>Add case in CRM for tracking</Text>
         </Note>
@@ -55,24 +53,20 @@
       <ChildProcessProcedures>
         <Task Id="9727" UniqueId="2da46d43-7022-0ca8-b898-a7374eb77acc" Order="6" Number="3.0.1">
           <Text>Verify that Property Tax Rebate form date is correct and legible</Text>
-          <Ownerships />
         </Task>
         <Task Id="9728" UniqueId="93a109df-82b7-7279-be72-1bdfd27e188e" Order="7" Number="3.0.2">
           <Text>Verify Valid Form of ID Provided</Text>
-          <Ownerships />
         </Task>
         <Task Id="9729" UniqueId="476a798f-ac30-3103-4c8b-1a1c7e0b812f" Order="8" Number="3.0.3">
           <Text>Verify Valid 1098 Form Received</Text>
-          <Ownerships />
         </Task>
         <Note Id="9730" UniqueId="92f77e54-88a6-50ce-6914-2a2cb6b4fea2" Order="9" Number="">
           <Text>What if data is missing?</Text>
           <Attachment>Reject task and ask citizen for missing data</Attachment>
-          <Ownerships />
         </Note>
         <Task Id="9731" UniqueId="23322318-57d2-4f7b-f982-ac07df1e2bb0" Order="10" Number="3.0.4">
           <Ownerships>
-            <Tag Id="49" IsDisassociated="False" Name="Nintex-Automation" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="False" />
+            <Tag Id="49" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="false" />
           </Ownerships>
           <Text>Press Approve on Nintex Task Form #Nintex-Automation</Text>
         </Task>
@@ -81,8 +75,8 @@
     <Activity Id="9723" UniqueId="ae5c4751-9f69-e610-5215-2012a07bc330" Number="4.0" Order="11">
       <Text>Generate Property Tax Rebate Document</Text>
       <Ownerships>
-        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
         <Tag Id="49" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
       <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1m" LeadTimeDisplay="1m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0.4340277777777786458333333333" AverageCostPerHour="26.04" />
       <ChildProcessProcedures />
@@ -95,15 +89,7 @@
       <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="15m" LeadTimeDisplay="1h" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="6.5104166666666666666666666668" AverageCostPerHour="26.04" />
       <ChildProcessProcedures />
     </Activity>
-    <Activity Id="9799" UniqueId="378c13bb-9aff-4207-f99f-21bc16e7c870" Number="6.0" Order="13">
-      <Text>Test</Text>
-      <Ownerships>
-        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
-      </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1" ProcessProcedureCost="" AverageCostPerHour="" />
-      <ChildProcessProcedures />
-    </Activity>
-    <Activity Id="9725" UniqueId="4bd72c85-1357-7589-9d2f-9cd8fa4ec197" Number="7.0" Order="14">
+    <Activity Id="9725" UniqueId="4bd72c85-1357-7589-9d2f-9cd8fa4ec197" Number="6.0" Order="13">
       <Text>Generate Property Tax Rebate Check</Text>
       <Ownerships>
         <Role Id="199" Name="Accounts Payable Team" IsVirtual="false" />
@@ -111,33 +97,24 @@
       <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="30m" LeadTimeDisplay="2.8w" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="13.020833333333333333333333334" AverageCostPerHour="26.04" />
       <ChildProcessProcedures />
     </Activity>
-    <Activity Id="9726" UniqueId="192f50ef-78a7-746e-dff8-b116902e77b9" Number="8.0" Order="15">
+    <Activity Id="9726" UniqueId="192f50ef-78a7-746e-dff8-b116902e77b9" Number="7.0" Order="14">
       <Text>Close Case</Text>
       <Ownerships>
-        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
         <Tag Id="49" Name="Nintex-Automation" IsDisassociated="false" TagFamilyId="3" TagFamilyName="System" IsSwimlaneParticipant="true" />
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
       </Ownerships>
       <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="1m" LeadTimeDisplay="1m" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="0.4340277777777786458333333333" AverageCostPerHour="26.04" />
       <ChildProcessProcedures />
     </Activity>
-    <Activity Id="9758" UniqueId="7620e743-a084-fe83-9c61-4c456d4b30cd" Number="9.0" Order="16">
-      <Text>Do something</Text>
-      <Ownerships>
-        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
-      </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
-      <ChildProcessProcedures />
-    </Activity>
-    <Activity Id="9759" UniqueId="2ad69440-77e6-0594-2c16-aaeb734e3df0" Number="10.0" Order="17">
+    <Activity Id="9759" UniqueId="2ad69440-77e6-0594-2c16-aaeb734e3df0" Number="8.0" Order="15">
       <Text>Send to AP for processing</Text>
       <Ownerships>
         <Role Id="199" Name="Accounts Payable Team" IsVirtual="false" />
       </Ownerships>
-      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" ProcessProcedureCost="" AverageCostPerHour="" />
+      <ProcessProcedureTimeframe TimeframeTypeId="-1" TimeframeType="" CycleTimeDisplay="-" LeadTimeDisplay="-" ProportionOfTimeInTotal="1.00000000000" />
       <ChildProcessProcedures>
-        <Task Id="9760" UniqueId="a847cbe2-c36b-7d5a-392d-15d34dacc287" Order="18" Number="10.0.1">
+        <Task Id="9760" UniqueId="a847cbe2-c36b-7d5a-392d-15d34dacc287" Order="16" Number="8.0.1">
           <Text>@TODO: Enter some text here</Text>
-          <Ownerships />
         </Task>
       </ChildProcessProcedures>
     </Activity>
@@ -156,14 +133,14 @@
   <Timeframe TotalCycleTimeDisplay="1.3h *" TotalLeadTimeDisplay="2w 4d 1h 33m *" ProcessTotalCost="33.854166666666669270833333334" />
   <RiskControls />
   <ProcessApproval>
-    <Published ProcessRevisionId="3105" PublishedDate="2020-10-22T18:18:44.1820994Z" PublisherId="1051" Publisher="Shannon Tillman" isPublishNowUsed="false" />
+    <Published ProcessRevisionId="3134" PublishedDate="2021-02-19T21:27:38.6531042Z" PublisherId="1051" Publisher="Shannon Tillman" isPublishNowUsed="false" />
     <Approved />
   </ProcessApproval>
   <Metadata>
     <ProcessXmlGenerationOptions>
       <StubProcesses>false</StubProcesses>
     </ProcessXmlGenerationOptions>
-    <MetadataItem Name="GenerationDate" Value="2020-10-22T18:18:44.8226937Z" />
-    <MetadataItem Name="CachedOn" Value="2020-10-22T18:18:44.8226937Z" />
+    <MetadataItem Name="GenerationDate" Value="2021-02-19T21:27:39.3309721Z" />
+    <MetadataItem Name="CachedOn" Value="2021-02-19T21:27:39.3309721Z" />
   </Metadata>
 </Process>
