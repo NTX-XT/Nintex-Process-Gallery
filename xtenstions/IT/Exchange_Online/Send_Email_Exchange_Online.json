@@ -71,8 +71,7 @@
               "properties": {
                 "contentType": {
                   "type": "string",
-                  "enum": ["Text"],
-                  "x-ntx-visibility": "internal"
+                  "enum": ["Text","HTML"]
                 },
                 "content": {
                   "type": "string",
@@ -152,8 +151,8 @@
     "auth": {
       "type": "oauth2",
       "flow": "accessCode",
-      "authorizationUrl": "https://login.microsoftonline.com/nintexo365support01.onmicrosoft.com/oauth2/v2.0/authorize",
-      "tokenUrl": "https://login.microsoftonline.com/nintexo365support01.onmicrosoft.com/oauth2/v2.0/token",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
       "scopes": {
         "Mail.Send": "Send Mail as User"
       }
