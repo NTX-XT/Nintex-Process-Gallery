@@ -1,0 +1,1367 @@
+<ProcessGroup Id="139" UniqueId="9f57c0dc-e2c8-413a-ada9-2bf505923041" Name="APQC PCF for City Government" Objective="Based on APQC's Process Classification Framework® (PCF), the City Government PCF is customized to define processes used primarily by the governments of cities and other local municipalities.|~||~|The City Government PCF addresses the processes used primarily by those providing government services, including the legislative (i.e., city councils), executive (i.e., mayors) and judicial courts, as well as related city service providers, such as public order and safety, health and zoning licensing, etc.|~||~|Note that this framework excludes educational services or healthcare services provided at the local level, however, an Education Framework as well as a Healthcare Provider PCF are available." Background="This APQC Process Classification Framework® (“PCF”) is an open standard developed by APQC, a nonprofit that promotes benchmarking and best practices worldwide. The PCF is intended to facilitate organizational improvement through process management and benchmarking, regardless of industry, size, or geography. To download the full PCF or industry-specific versions of the PCF, as well as associated measures and benchmarking, please visit www.apqc.org/pcf" PromappVersion="4.8.8.10" Champion="Lindsey Bradfield" ChampionId="27">
+  <ProcessGroupProcedures>
+    <ProcessGroupLink Id="9061" UniqueId="cf8722c3-7e9d-4ebc-9a75-9f0e9f52a6f1" Number="0.0" Order="0" LinkedProcessGroupId="140" LinkedProcessGroupName="1.0 Develop Vision and Strategy (10002)" LinkedProcessGroupUniqueId="de6dd17d-fda4-45a5-9f7e-5e509129d8e6">
+      <Text>1.0 Develop Vision and Strategy (10002)</Text>
+      <Ownerships>
+        <Role Id="197" Name="OPERATING PROCESSES" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9062" UniqueId="4902edd4-edbc-4c4f-a5f3-df2858f27818" Number="0.0" Order="1" LinkedProcessGroupId="144" LinkedProcessGroupName="2.0 Develop and Manage City Services (10003)" LinkedProcessGroupUniqueId="b5eeea89-b710-41fd-9c53-fd1430487839">
+      <Text>2.0 Develop and Manage City Services (10003)</Text>
+      <Ownerships>
+        <Role Id="197" Name="OPERATING PROCESSES" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9063" UniqueId="69d6588b-f6ad-4955-89dd-6dcb986df95f" Number="0.0" Order="2" LinkedProcessGroupId="147" LinkedProcessGroupName="3.0 Promote the City (10004)" LinkedProcessGroupUniqueId="23878956-a6a6-410a-8113-c9bca85dcf10">
+      <Text>3.0 Promote the City (10004)</Text>
+      <Ownerships>
+        <Role Id="197" Name="OPERATING PROCESSES" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9064" UniqueId="ed3ce72c-ed46-4e3a-b7ac-5bba84d531c3" Number="0.0" Order="3" LinkedProcessGroupId="153" LinkedProcessGroupName="4.0 Deliver City Products (20022)" LinkedProcessGroupUniqueId="b210fcef-8f9d-4763-8e4c-15b1dd8f38ae">
+      <Text>4.0 Deliver City Products (20022)</Text>
+      <Ownerships>
+        <Role Id="197" Name="OPERATING PROCESSES" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="21363" UniqueId="f4a35b05-3c3c-4c5b-8fff-58d115ca0056" Number="0.0" Order="4" LinkedProcessGroupId="258" LinkedProcessGroupName="5.0 Deliver Service (20025)" LinkedProcessGroupUniqueId="cdc62a84-ce4f-4955-8c1c-c24a7a83ad7b">
+      <Text>5.0 Deliver Service (20025)</Text>
+      <Ownerships>
+        <Role Id="197" Name="OPERATING PROCESSES" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9065" UniqueId="912c3133-5dcd-4a7a-a508-6f210c663cea" Number="0.0" Order="5" LinkedProcessGroupId="159" LinkedProcessGroupName="6.0 Engage Constituents (20085)" LinkedProcessGroupUniqueId="2a1f0369-6114-4e19-a2a6-75078253d002">
+      <Text>6.0 Engage Constituents (20085)</Text>
+      <Ownerships>
+        <Role Id="197" Name="OPERATING PROCESSES" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9066" UniqueId="247966c4-9391-4690-876f-d9d79a5389c8" Number="0.0" Order="6" LinkedProcessGroupId="163" LinkedProcessGroupName="7.0 Develop and Manage Human Capital (10007)" LinkedProcessGroupUniqueId="44a77a67-7c97-423f-be69-8703fabd19a6">
+      <Text>7.0 Develop and Manage Human Capital (10007)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9067" UniqueId="5c478cc0-3888-4e7a-afe2-1b8bb02193bf" Number="0.0" Order="7" LinkedProcessGroupId="172" LinkedProcessGroupName="8.0 Manage Information Technology (IT) (20607)" LinkedProcessGroupUniqueId="a856af0f-1851-452d-adf4-21015c9fed8f">
+      <Text>8.0 Manage Information Technology (IT) (20607)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9068" UniqueId="0c66ea6a-40af-4abd-af9a-b9fd8ad2de6e" Number="0.0" Order="8" LinkedProcessGroupId="180" LinkedProcessGroupName="9.0 Manage Financial Resources (17058)" LinkedProcessGroupUniqueId="b608a94e-ba29-4d12-a741-910e928e36d9">
+      <Text>9.0 Manage Financial Resources (17058)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9069" UniqueId="461efd08-ba7b-489d-b84c-a30c13bbf66b" Number="0.0" Order="9" LinkedProcessGroupId="192" LinkedProcessGroupName="10.0 Acquire, Construct, and Manage Assets (19207)" LinkedProcessGroupUniqueId="a4bc45d4-09e8-4935-b4bb-5b844104d66d">
+      <Text>10.0 Acquire, Construct, and Manage Assets (19207)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9070" UniqueId="144ddfd8-6844-46a9-8205-6ddfa8705584" Number="0.0" Order="10" LinkedProcessGroupId="197" LinkedProcessGroupName="11.0 Manage Enterprise Risk, Compliance, Remediation, and Resiliency (16437)" LinkedProcessGroupUniqueId="8e98b197-ae80-4448-bba9-e37fb94a6d12">
+      <Text>11.0 Manage Enterprise Risk, Compliance, Remediation, and Resiliency (16437)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9071" UniqueId="98728520-a6ba-45aa-a9c7-0b2057a2f5fc" Number="0.0" Order="11" LinkedProcessGroupId="202" LinkedProcessGroupName="12.0 Manage External Relationships (10012)" LinkedProcessGroupUniqueId="d1a5599b-3915-414c-b776-ff4ff39b6033">
+      <Text>12.0 Manage External Relationships (10012)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+    <ProcessGroupLink Id="9072" UniqueId="7e7ec2e0-6a20-4e98-befb-b518a3bb8d2c" Number="0.0" Order="12" LinkedProcessGroupId="208" LinkedProcessGroupName="13.0 Develop and Manage Business Capabilities (10013)" LinkedProcessGroupUniqueId="93675627-5311-4618-9c8b-fd995badfd49">
+      <Text>13.0 Develop and Manage Business Capabilities (10013)</Text>
+      <Ownerships>
+        <Role Id="2" Name="UNASSIGNED" IsVirtual="false" />
+      </Ownerships>
+    </ProcessGroupLink>
+  </ProcessGroupProcedures>
+  <ProcessGroupItems>
+    <ProcessGroup Id="140" UniqueId="de6dd17d-fda4-45a5-9f7e-5e509129d8e6" Name="1.0 Develop Vision and Strategy (10002)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="141" UniqueId="894d5421-0aa4-454e-a505-2e535881b0d5" Name="1.1 Define the city’s comprehensive plan (17040)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="142" UniqueId="9078648c-eb7e-4262-a328-475b9cfa0b13" Name="1.2 Develop city strategy (10015)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="143" UniqueId="3bc6c0b1-b490-4c35-aad1-1a1725cb14b1" Name="1.3 Set city agenda (10016)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="352" UniqueId="9880edea-1f11-4513-8682-869ba69fdf34" Name="1.4 Develop and maintain business models (20944)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="144" UniqueId="b5eeea89-b710-41fd-9c53-fd1430487839" Name="2.0 Develop and Manage City Services (10003)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="145" UniqueId="ee3264ec-d55f-47fe-af61-26d907b031d4" Name="2.1 Govern and manage product/service development program (19696)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="146" UniqueId="863d62a8-113d-4abb-b9b2-12b57f5fc168" Name="2.2 Generate and define new product/service ideas (19698)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="353" UniqueId="9b42125c-d8be-417f-8b93-1f91a67aab0f" Name="2.3 Develop city services (10062)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="147" UniqueId="23878956-a6a6-410a-8113-c9bca85dcf10" Name="3.0 Promote the City (10004)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="148" UniqueId="772f5860-a3c9-4684-acb7-c6096ed735b4" Name="3.1 Assess constituent needs and align to city capabilities (10101)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="149" UniqueId="a7de7ccb-5e2f-4c54-8265-e13584b8ec0f" Name="3.2 Develop promotional strategy (10102)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="150" UniqueId="c2119f10-c2dd-4b75-9d35-ceb8cc447f67" Name="3.3 Develop and manage service promotional plans (20008)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="151" UniqueId="0a76f78f-c534-4050-b1f3-88d4cb3ca1a2" Name="3.4 Develop service enrollment strategy (10103)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="152" UniqueId="03719a93-510e-4429-af68-a67febc4ea8c" Name="3.5 Develop and manage service enrollment plans (10105)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="153" UniqueId="b210fcef-8f9d-4763-8e4c-15b1dd8f38ae" Name="4.0 Deliver City Products (20022)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="154" UniqueId="6da8b84f-cb56-4802-ad99-01f06d57379b" Name="4.1 Plan for and align supply chain resources (10215)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="155" UniqueId="6f7eb337-7946-4080-a923-4514e667a108" Name="4.2 Procure materials and services (10216)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="156" UniqueId="d6fcf32c-1bc4-48f9-b48e-a4bb1888e58d" Name="4.3 Produce/assemble/test product (10217)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="157" UniqueId="19b67fc5-3725-4e2a-bbda-e8b1d1e602ec" Name="4.4 Manage logistics and warehousing (10219)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="258" UniqueId="cdc62a84-ce4f-4955-8c1c-c24a7a83ad7b" Name="5.0 Deliver Service (20025)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="354" UniqueId="c874be9e-fe40-455a-bb65-322a68dc4507" Name="5.1 Establish service delivery governance and strategies (20026)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="355" UniqueId="3c968e03-d6f3-4375-aca1-8659c8a3f9b1" Name="5.2 Manage service delivery resources (20040)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="356" UniqueId="ae367d3e-3b9b-4530-961f-b2a7a025c138" Name="5.3 Deliver service to customer (20058)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="357" UniqueId="3036fca0-a9df-42c8-83d5-d1539d9688c9" Name="5.4 Manage licenses and permits (18397)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="358" UniqueId="eeca31de-1d5a-451a-a203-99ec5734b5f2" Name="5.5 Manage certificate issuance (18409)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="359" UniqueId="8fb8dfa1-4a7e-45ed-90cb-66d0ce8eb216" Name="5.6 Conduct inspections, investigations, and surveillance (18413)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="360" UniqueId="b957f43f-4e90-4e0c-957a-7d6a355294b3" Name="5.7 Operate waste handling, storage, and disposal (18429)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="361" UniqueId="4bc27bf9-e35c-4b6d-956b-d63b5c94f5e1" Name="5.8 Maintain parks, greenspaces, and recreational services (18450)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="362" UniqueId="b5b291a8-0a3c-4684-9488-cb9f7d15753a" Name="5.9 Provide public safety services (18471)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="363" UniqueId="65de7732-dd71-46fe-8531-aa05861da548" Name="5.10 Manage corrections and detentions (18501)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="364" UniqueId="64fd52e1-215e-47e4-afbb-e9f93395732a" Name="5.11 Manage transportation systems (18517)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="159" UniqueId="2a1f0369-6114-4e19-a2a6-75078253d002" Name="6.0 Engage Constituents (20085)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="160" UniqueId="1f06482d-c197-4f94-9ba6-21fd0cddf53a" Name="6.1 Develop constituent service strategy (10378)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="161" UniqueId="031e845d-a4d1-4674-96a1-ce2b8dd0d225" Name="6.2 Plan and manage constituent service center operations (10379)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="162" UniqueId="97f0f8c5-b83d-4f5d-a4c0-fed1a3ae15a7" Name="6.3 Service products after sales (12658)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="365" UniqueId="5ffa9ce9-7b29-439e-ae48-3b360062e751" Name="6.4 Manage product recalls and regulatory audits (20110)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="366" UniqueId="46f1925e-0002-44db-b7e5-ecf40c8b49e5" Name="6.5 Measure and evaluate constituent service operations (20595)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="163" UniqueId="44a77a67-7c97-423f-be69-8703fabd19a6" Name="7.0 Develop and Manage Human Capital (10007)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="164" UniqueId="c45c2855-f298-4ece-9651-95976c38cbf7" Name="7.1 Develop and manage human resources planning, policies, and strategies (17043)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="165" UniqueId="c5a4492d-6f53-4858-8c5f-9ab7efa2bc70" Name="7.2 Recruit, source, and select employees (10410)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="166" UniqueId="649a646f-b83a-46b9-848f-6d49c4ccdd47" Name="7.3 Manage employee on-boarding, development, and training (20599)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="167" UniqueId="e78cf386-f7f8-478e-a78e-c6bb9f5003af" Name="7.4 Manage employee relations (17052)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="168" UniqueId="769d325d-4d81-41e8-af02-ec3edd36ad55" Name="7.5 Manage union relations (13269)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="169" UniqueId="bbb8d5f6-1c6d-4a86-a557-6ad43be24550" Name="7.6 Reward and retain employees (10412)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="170" UniqueId="0a26a761-a326-4678-b005-4668e836d429" Name="7.7 Redeploy and retire employees (10413)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="171" UniqueId="ba6097f6-9b16-4c8f-9dee-bc95f9920bc6" Name="7.8 Manage employee information and analytics (17056)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="368" UniqueId="0db06c75-101d-455e-a1a8-4c8825e45fe6" Name="7.9 Manage employee communication (17057)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="369" UniqueId="025be667-38ea-4f02-a47e-01201a762048" Name="7.10 Deliver employee communications (10532)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="172" UniqueId="a856af0f-1851-452d-adf4-21015c9fed8f" Name="8.0 Manage Information Technology (IT) (20607)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="173" UniqueId="e0088742-21cd-4ef4-922a-57ce9efd852d" Name="8.1 Develop and manage IT customer relationships (20608)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="174" UniqueId="33493714-53b7-45f9-a814-58676304c261" Name="8.2 Develop and manage IT business strategy (20652)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="175" UniqueId="7915d0c2-6fff-4816-bb00-6f9300f88c1c" Name="8.3 Develop and manage IT resilience and risk (20706)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="176" UniqueId="2506371f-44f4-40b7-8c6a-6880b17edacc" Name="8.4 Manage information (20765)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="177" UniqueId="6b4a82a3-1a6e-43df-9f5d-e3be9b43c1ca" Name="8.5 Develop and manage services/solutions (20784)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="178" UniqueId="eb808e50-48ec-4e24-858e-feff18a83864" Name="8.6 Deploy services/solutions (20824)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="179" UniqueId="8fae0213-74bc-4c2d-964f-dc5ecd0f345f" Name="8.7 Create and manage support services/solutions (20866)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="180" UniqueId="b608a94e-ba29-4d12-a741-910e928e36d9" Name="9.0 Manage Financial Resources (17058)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="181" UniqueId="c9046ee2-c7a7-45f0-b5fe-074177a7af8d" Name="9.1 Perform planning and management accounting (10728)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="182" UniqueId="fdb4a992-1867-4bf0-a244-dfa287462169" Name="9.2 Perform revenue accounting (10729)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="183" UniqueId="9529e623-3e77-4377-8f7b-c99d4d19a5f1" Name="9.3 Manage tax revenue (18577)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="184" UniqueId="92d6e0bc-4bd0-42c2-9f22-07024aca4921" Name="9.4 Perform general accounting and reporting (10730)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="185" UniqueId="f0dc6b7d-b918-49e6-ac67-5c0f8626c764" Name="9.5 Manage fixed-asset project accounting (10731)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="186" UniqueId="3603243f-2100-49c4-a976-c6b6fd0ed128" Name="9.6 Process payroll (10732)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="187" UniqueId="507970f8-d4ea-4726-9cf9-db9ddd3daa31" Name="9.7 Process accounts payable and expense reimbursements (10733)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="188" UniqueId="03088734-ec3d-4ccd-b218-836255404ef8" Name="9.8 Manage treasury operations (10734)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="189" UniqueId="610cb5eb-e4c7-4153-beb9-be3e98a8beba" Name="9.9 Manage internal controls (10735)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="190" UniqueId="be451914-1fa0-4267-bafe-3de98c25b16a" Name="9.10 Manage taxes paid (10736)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="191" UniqueId="fec86f5c-2248-43f8-9775-20630f64b30b" Name="9.11 Manage international funds/consolidation (10737)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="370" UniqueId="c09fff0d-06c4-4df1-bcfc-acc4def89655" Name="9.12 Perform global trade services (17059)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="371" UniqueId="5a33fa4a-1275-4dcf-a115-f8abbb4d9890" Name="9.13 Manage grants (18584)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="192" UniqueId="a4bc45d4-09e8-4935-b4bb-5b844104d66d" Name="10.0 Acquire, Construct, and Manage Assets (19207)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="193" UniqueId="b3f9c2db-79a5-4a64-b6b1-f9a54dc7bb0e" Name="10.1 Plan and acquire assets (10937)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="194" UniqueId="29a8258f-6074-4d03-be2b-1911cef6670e" Name="10.2 Design and construct productive assets (19208)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="195" UniqueId="3db45407-bd66-4aff-b5a5-6104b46ab15d" Name="10.3 Maintain productive assets (19238)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="196" UniqueId="4875883a-62c5-49e0-a2ce-9aa905c83494" Name="10.4 Dispose of assets (10940)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="197" UniqueId="8e98b197-ae80-4448-bba9-e37fb94a6d12" Name="11.0 Manage Enterprise Risk, Compliance, Remediation, and Resiliency (16437)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="198" UniqueId="c9030fba-bb21-4860-8103-a85a392e4114" Name="11.1 Manage enterprise risk (17060)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="199" UniqueId="bb12379e-bd65-42d2-b1f5-43eca3a231de" Name="11.2 Manage compliance (17467)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="200" UniqueId="a2e7bd70-ecdb-4a03-9976-4f1639e34670" Name="11.3 Manage remediation efforts (11185)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="201" UniqueId="39081d2f-463e-4c0e-87f8-af367e492e13" Name="11.4 Manage business resiliency (11216)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="202" UniqueId="d1a5599b-3915-414c-b776-ff4ff39b6033" Name="12.0 Manage External Relationships (10012)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="203" UniqueId="29d43f6e-5ecc-4466-9af3-29526b7c0dcd" Name="12.1 Build investor relationships (11010)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="204" UniqueId="6ff195d0-bb69-4157-9a4c-d1fa6b8bfb30" Name="12.2 Manage government and industry relationships (11011)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="205" UniqueId="1c8b9619-ab66-4a90-9686-f6b2ae23dcc6" Name="12.3 Manage relations with board/council (11012)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="206" UniqueId="504bb63c-2ca9-4826-acbf-86b80a836bb4" Name="12.4 Manage legal and ethical issues (11013)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="207" UniqueId="d2779e21-5d57-442d-af7b-8fca709ebf55" Name="12.5 Manage public relations program (11014)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+    <ProcessGroup Id="208" UniqueId="93675627-5311-4618-9c8b-fd995badfd49" Name="13.0 Develop and Manage Business Capabilities (10013)" Objective="" Background="" PromappVersion="4.8.8.10">
+      <ProcessGroupProcedures />
+      <ProcessGroupItems>
+        <ProcessGroup Id="209" UniqueId="f5d34067-9b62-48eb-bb73-5041ba3be2cb" Name="13.1 Manage business processes (16378)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="210" UniqueId="e0795128-5dd2-4196-bd7a-42dbd61f5412" Name="13.2 Manage portfolio, program, and project (16400)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="211" UniqueId="d0d8319a-f716-4de6-a58b-a9f64883c875" Name="13.3 Manage enterprise quality (17471)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="212" UniqueId="59959c04-ddd7-42f5-b932-4d4850db15f0" Name="13.4 Manage change (11074)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="213" UniqueId="5249b1ac-042b-407e-8f2c-5c58ed9da804" Name="13.5 Develop and manage enterprise-wide knowledge management (KM) capability (11073)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="214" UniqueId="7ec57502-ead1-4652-94fc-7a1076f37acc" Name="13.6 Measure and benchmark (16436)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="215" UniqueId="fdbdc4fc-e5a7-4553-ac6b-5f8239396bcc" Name="13.7 Manage environmental health and safety (EHS) (11179)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="372" UniqueId="f4e214a9-c89e-4ac5-ae32-83e5779a9642" Name="13.8 Manage sustainability (18602)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+        <ProcessGroup Id="373" UniqueId="ed6d8153-f7e2-42e3-bd89-5ebe9dcd2e08" Name="13.9 Develop, manage, and deliver analytics (20959)" Objective="" Background="" PromappVersion="4.8.8.10">
+          <ProcessGroupProcedures />
+          <ProcessGroupItems />
+          <Metadata>
+            <ProcessGroupXmlGenerationOptions>
+              <RecursionLevel>Full</RecursionLevel>
+              <IncludeOverviewOnly>false</IncludeOverviewOnly>
+              <IncludeUnpublished>true</IncludeUnpublished>
+              <IncludeEmbedded>false</IncludeEmbedded>
+              <StubProcesses>false</StubProcesses>
+            </ProcessGroupXmlGenerationOptions>
+          </Metadata>
+        </ProcessGroup>
+      </ProcessGroupItems>
+      <Metadata>
+        <ProcessGroupXmlGenerationOptions>
+          <RecursionLevel>Full</RecursionLevel>
+          <IncludeOverviewOnly>false</IncludeOverviewOnly>
+          <IncludeUnpublished>true</IncludeUnpublished>
+          <IncludeEmbedded>false</IncludeEmbedded>
+          <StubProcesses>false</StubProcesses>
+        </ProcessGroupXmlGenerationOptions>
+      </Metadata>
+    </ProcessGroup>
+  </ProcessGroupItems>
+  <Metadata>
+    <ProcessGroupXmlGenerationOptions>
+      <RecursionLevel>Full</RecursionLevel>
+      <IncludeOverviewOnly>false</IncludeOverviewOnly>
+      <IncludeUnpublished>true</IncludeUnpublished>
+      <IncludeEmbedded>false</IncludeEmbedded>
+      <StubProcesses>false</StubProcesses>
+    </ProcessGroupXmlGenerationOptions>
+  </Metadata>
+</ProcessGroup>
