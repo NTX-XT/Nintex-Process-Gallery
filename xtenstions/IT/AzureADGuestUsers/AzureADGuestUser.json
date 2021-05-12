@@ -1,0 +1,254 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Guest User Management for Azure Active Directory",
+      "description": "Graph Create Invitation for Guest User"
+    },
+    "host": "graph.microsoft.com",
+    "basePath": "/v1.0",
+    "x-ntx-render-version": 2,
+    "schemes": [
+      "https",
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/invitations": {
+        "post": {
+          "summary": "Add Guest User to Azure Active Directory",
+          "parameters": [
+            {
+                "name": "body",
+                "in": "body",
+                "schema": {
+                    "additionalProperties": false,
+                    "type": "object",
+                    "required": ["invitedUserEmailAddress", "inviteRedirectUrl"],
+                    "properties": {
+                        "invitedUserEmailAddress": {
+                            "x-ntx-summary": "Invited User Email Address",
+                            "type": "string"
+                        },
+                        "inviteRedirectUrl": {
+                            "x-ntx-summary": "Invite Redirect URL",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+          ],
+          "responses": {
+            "201": {
+                "description": "Created",
+                "schema": {
+                    "type": "object",
+                    "title": "Created User",
+                    "properties": {
+                        "id": {
+                            "x-ntx-summary": "Id",
+                            "type": "string"
+                        },
+                        "inviteRedeemUrl": {
+                            "x-ntx-summary": "Invite Redeem URL",
+                            "type": "string"
+                        },
+                        "invitedUserDisplayName": {
+                            "x-ntx-summary": "Invited User Name",
+                            "type": "string"
+                        },
+                        "invitedUserEmailAddress": {
+                            "x-ntx-summary": "Invited User Email",
+                            "type": "string"
+                        },
+                        "sendInvitationMessage": {
+                            "x-ntx-summary": "Invitation Message",
+                            "type": "string"
+                        },
+                        "invitedUserMessageInfo": {
+                            "x-ntx-summary": "Invited User Message Information",
+                            "type": "object",
+                            "properties": {
+                                "messageLanguage": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Message Language"
+                                },
+                                "ccRecipients": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "x-ntx-summary": "emailAddress",
+                                        "properties": {
+                                          "name": {
+                                            "type": "string",
+                                            "x-ntx-summary": "name"
+                                          },
+                                          "address": {
+                                            "type": "string",
+                                            "x-ntx-summary": "address"
+                                          }
+                                        }
+                                    }
+                                },
+                                "customizedMessageBody": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Customized Message Body"
+                                }
+                            }
+                        },
+                        "inviteRedirectUrl": {
+                            "x-ntx-summary": "Invite Redirect URL",
+                            "type": "string"
+                        },
+                        "status": {
+                            "x-ntx-summary": "Status",
+                            "type": "string"
+                        },
+                        "invitedUser": {
+                            "x-ntx-summary": "Invited User",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+          },
+          "security": [
+            {
+              "auth": [
+                "User.ReadBasic.All",
+                "User.Read.All",
+                "Directory.Read.All"
+              ]
+            }
+          ]
+        }
+      },
+      "/users/{userPrincipalNameOrId}": {
+        "patch": {
+          "summary": "Update Guest User Information in Azure Active Directory",
+          "parameters": [
+            {
+              "name": "userPrincipalNameOrId",
+              "type": "string",
+              "in": "path",
+              "required": true,
+              "minLength": 1,
+              "x-ntx-summary": "User Principal Name or Id"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "additionalProperties": false,
+                "type": "object",
+                "required": ["accountEnabled"],
+                "properties": {
+                  "accountEnabled": {
+                    "x-ntx-summary": "Account Enabled",
+                    "type": "boolean"
+                  },
+                  "givenName": {
+                    "x-ntx-summary": "First Name",
+                    "type": "string"
+                  },
+                  "surname": {
+                    "x-ntx-summary": "Last Name",
+                    "type": "string"
+                  },
+                  "displayName": {
+                    "x-ntx-summary": "Display Name",
+                    "type": "string"
+                  },
+                  "companyName": {
+                    "x-ntx-summary": "Company Name",
+                    "type": "string"
+                  },
+                  "jobTitle": {
+                    "x-ntx-summary": "Title",
+                    "type": "string"
+                  },
+                  "streetAddress": {
+                    "x-ntx-summary": "Street Address",
+                    "type": "string"
+                  },
+                  "city": {
+                    "x-ntx-summary": "City",
+                    "type": "string"
+                  },
+                  "state": {
+                    "x-ntx-summary": "State",
+                    "type": "string"
+                  },
+                  "postalCode": {
+                    "x-ntx-summary": "Postal Code",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Updated"
+            }
+          },
+          "security": [
+            {
+              "auth": [
+                "User.ReadBasic.All",
+                "User.Read.All",
+                "Directory.Read.All"
+              ]
+            }
+          ]
+        },
+        "delete" :{
+          "summary": "Delete Guest User in Azure Active Directory",
+          "parameters": [
+            {
+              "name": "userPrincipalNameOrId",
+              "type": "string",
+              "in": "path",
+              "required": true,
+              "minLength": 1,
+              "x-ntx-summary": "User Principal Name or Id"
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Deleted"
+            }
+          },
+          "security": [
+            {
+              "auth": [
+                "User.ReadBasic.All",
+                "User.Read.All",
+                "Directory.Read.All"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "securityDefinitions": {
+      "auth": {
+        "type": "oauth2",
+        "flow": "accessCode",
+        "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+        "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+        "scopes": {
+          "User.ReadBasic.All": "Read Basic User Information",
+          "User.Read.All": "Read User Properties",
+          "Directory.Read.All": "Read Directory Properties",
+          "Directory.ReadWrite.All": "Read Write Directory",
+          "Directory.AccessAsUser.All": "Access Directory as User"
+        }
+      }
+    }
+  }
