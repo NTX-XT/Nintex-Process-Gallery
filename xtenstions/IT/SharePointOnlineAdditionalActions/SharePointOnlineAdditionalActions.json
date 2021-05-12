@@ -1,0 +1,134 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "SPO Additional Web Actions",
+    "description": "SPO Additional Web Actions"
+  },
+  "host": "{TenantName}.sharepoint.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "x-ntx-render-version" : 2,
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/{RelativeSiteURL}/_api/web/roleassignments/addroleassignment(principalid={PrincipalID}, roledefid={roledefID})": {
+      "post" : {
+        "summary" : "Add permissions to Web",
+        "parameters" : [
+          {
+            "in" : "path",
+            "name": "RelativeSiteURL",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in" : "path",
+            "name": "PrincipalID",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in" : "path",
+            "name": "roledefID",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses" : {
+          "200" : {
+              "description" : "OK"
+          }
+        },
+        "security" : [
+          {
+            "auth" : [
+              "https://{TenantName}.sharepoint.com/.default"  
+            ]
+          }
+        ]
+      }
+    },
+    "/{RelativeWebURL}/_api/web/breakroleinheritance(copyRoleAssignments=true, clearSubscopes=true)": {
+      "post" : {
+        "summary" : "Break Inheritance",
+        "parameters" : [
+          {
+            "in" : "path",
+            "name": "RelativeWebURL",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses" : {
+          "200" : {
+              "description" : "OK"
+          }
+        },
+        "security" : [
+          {
+            "auth" : [
+              "https://{TenantName}.sharepoint.com/.default" 
+            ]
+          }
+        ]
+      }
+    },
+  "/{RelativeWebURL}/_api/web/ensureuser('{logonName}')" : {
+    "post" : {
+      "summary" : "Ensure User",
+      "parameters" : [
+        {
+          "in": "path",
+          "name" : "RelativeWebURL",
+          "type" : "string",
+          "required": true
+        },
+        {
+          "in" : "path",
+          "name" : "logonName",
+          "type" : "string",
+          "required" : true
+        }
+      ],
+      "responses" : {
+        "200" : {
+          "description": "OK",
+          "schema": {
+            "type" : "object",
+            "properties" : {
+              "Id": {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      },
+	  "security" : [
+        {
+          "auth" : [
+            "https://{TenantName}.sharepoint.com/.default" 
+          ]
+        }
+      ]
+    }
+    }
+  },
+  "securityDefinitions": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.microsoftonline.com/{TenantName}.onmicrosoft.com/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/{TenantName}.onmicrosoft.com/oauth2/v2.0/token",
+      "scopes": {
+        "https://{TenantName}.sharepoint.com/.default": "Full Control"
+      }
+    }
+  }
+}
