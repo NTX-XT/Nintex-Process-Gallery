@@ -1,0 +1,1880 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Microsoft",
+        "description": "API for graph.microsoft.com",
+        "version": "1.0.0"
+    },
+    "host": "graph.microsoft.com",
+    "x-ntx-render-version": 2,
+    "schemes": [
+        "https"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/v1.0/teams/{team_id}/channels": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Get Channels",
+                "operationId": "getChannels",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Channels"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "Team.ReadBasic.All",
+                            "TeamSettings.Read.AllTeamSettings.Read.All",
+                            "TeamSettings.ReadWrite.AllTeamSettings.ReadWrite.All"
+                        ]
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Create a Channel",
+                "operationId": "createChannel",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel",
+                        "description": "Create Channel Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                                "displayName"
+                            ],
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Description"
+                                },
+                                "membershipType": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Membership Type",
+                                    "enum": [
+                                        "standard",
+                                        "private"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Channel"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "Channel.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Get Channel",
+                "operationId": "getChannel",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Channel"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "Channel.ReadBasic.All"
+                        ]
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Delete Channel",
+                "operationId": "deleteChannel",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "Channel.Delete.All"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/members": {
+            "post": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Add Channel Member",
+                "operationId": "addChannelMember",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "member",
+                        "description": "Channel Member Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                                "@odata.type",
+                                "user@odata.bind"
+                            ],
+                            "properties": {
+                                "@odata.type": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Member Type",
+                                    "x-ntx-initial": "#microsoft.graph.aadUserConversationMember",
+                                    "x-ntx-visibility": "internal"
+                                },
+                                "user@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "User Binding",
+                                    "x-ntx-initial": "​https://graph.microsoft.com/v1.0/users('​‍{user_id}')​"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/ChannelUser"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "ChannelMember.ReadWrite.All"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/members": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Get Team Members",
+                "operationId": "getTeamMembers",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/TeamMembers"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamMember.Read.All"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/filesFolder": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Get Channel Files Folder",
+                "operationId": "getChannelFilesFolder",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Folder"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "Group.Read.All"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/beta/teams/{team_id}/channels/{channel_id}/messages": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Get Channel Messages",
+                "operationId": "getChannelMessages",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Channel Messages",
+                        "schema": {
+                            "$ref": "#/definitions/ChannelMessages"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "ChannelMessage.Read.All"
+                        ]
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Send Adaptive Card",
+                "operationId": "sendAdaptiveCard",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "message",
+                        "description": "Channel Message Body",
+                        "in": "body",
+                        "required": false,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "body"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "subject": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Subject"
+                                },
+                                "body": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Body",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentType": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content Type"
+                                        },
+                                        "content": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content"
+                                        }
+                                    }
+                                },
+                                "attachments": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Attachment"
+                                    },
+                                    "x-ntx-summary": "Attachment"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/ChannelMessage"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "ChannelMessage.Send"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "description": "Get Tabs",
+                "operationId": "getTabs",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tabs",
+                        "schema": {
+                            "$ref": "#/definitions/Tabs"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.ReadWrite.All"
+                        ]
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create Website Tab",
+                "operationId": "createWebTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.web",
+                                    "x-ntx-visibility": "internal"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=2": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create OneNote Tab",
+                "operationId": "createOnenoteTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/0d820ecd-def2-4297-adad-78056cde7c78"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=3": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create SharePoint Tab",
+                "operationId": "createSPTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/2a527703-1f6f-4559-a332-d8a7d288cd88"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=4": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create PowerPoint Tab",
+                "operationId": "createPPTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.powerpoint"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=5": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create Excel Tab",
+                "operationId": "createExcelTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.excel"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=6": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create Word Tab",
+                "operationId": "createWordTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=7": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create PDF Tab",
+                "operationId": "createPDFTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.pdf"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs?t=8": {
+            "post": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Create Document Library Tab",
+                "operationId": "createDocLibTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab",
+                        "description": "Tab Body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "displayName",
+                                "configuration"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "displayName": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Display Name"
+                                },
+                                "teamsApp@odata.bind": {
+                                    "type": "string",
+                                    "x-ntx-summary": "Tab Type",
+                                    "x-ntx-visibility": "internal",
+                                    "x-ntx-initial": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint"
+                                },
+                                "configuration": {
+                                    "type": "object",
+                                    "x-ntx-summary": "Configuration",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "contentUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Content URL"
+                                        },
+                                        "websiteUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Website URL"
+                                        },
+                                        "removeUrl": {
+                                            "type": "string",
+                                            "x-ntx-summary": "Remove URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tab",
+                        "schema": {
+                            "$ref": "#/definitions/Tab"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.Create"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/teams/{team_id}/channels/{channel_id}/tabs/{tab_id}": {
+            "delete": {
+                "tags": [
+                    "Tabs"
+                ],
+                "description": "Delete Tab",
+                "operationId": "deleteTab",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "path",
+                        "description": "Team ID",
+                        "x-ntx-summary": "Team",
+                        "x-ntx-sublabel": "Team ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "path",
+                        "description": "Channel ID",
+                        "x-ntx-summary": "Channel",
+                        "x-ntx-sublabel": "Channel ID",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tab_id",
+                        "in": "path",
+                        "description": "Tab ID",
+                        "x-ntx-summary": "Tab",
+                        "x-ntx-sublabel": "Tab ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "TeamsTab.ReadWrite.All"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/v1.0/users/{principal_name}": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "description": "Get User",
+                "operationId": "getUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "principal_name",
+                        "in": "path",
+                        "description": "Principal Name",
+                        "x-ntx-summary": "User",
+                        "x-ntx-sublabel": "Principal Name",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "auth": [
+                            "User.ReadWrite.All"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "Channels": {
+            "description": "Model for Channels",
+            "required": [
+                "value"
+            ],
+            "properties": {
+                "@odata.context": {
+                    "type": "string"
+                },
+                "@odata.count": {
+                    "type": "number"
+                },
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Channel"
+                    }
+                }
+            }
+        },
+        "Channel": {
+            "description": "Model for Channel",
+            "type": "object",
+            "required": [
+                "description"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "displayName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "isFavoriteByDefault": {
+                    "type": "boolean"
+                },
+                "membershipType": {
+                    "type": "string"
+                },
+                "webUrl": {
+                    "type": "string"
+                }
+            }
+        },
+        "ChannelUser": {
+            "description": "Model for ChannelUser",
+            "type": "object",
+            "required": [
+                "displayName"
+            ],
+            "properties": {
+                "displayName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "roles": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "tenantId": {
+                    "type": "string"
+                },
+                "userId": {
+                    "type": "string"
+                },
+                "visibleHistoryStartDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "User": {
+            "description": "Model for User",
+            "type": "object",
+            "required": [
+                "id"
+            ],
+            "properties": {
+                "businessPhones": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "displayName": {
+                    "type": "string"
+                },
+                "givenName": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "jobTitle": {
+                    "type": "string"
+                },
+                "mail": {
+                    "type": "string"
+                },
+                "mobilePhone": {
+                    "type": "string"
+                },
+                "officeLocation": {
+                    "type": "string"
+                },
+                "preferredLanguage": {
+                    "type": "string"
+                },
+                "surname": {
+                    "type": "string"
+                },
+                "userPrincipalName": {
+                    "type": "string"
+                }
+            }
+        },
+        "FolderCount": {
+            "description": "Model for Folder Count",
+            "type": "object",
+            "required": [
+                "childCount"
+            ],
+            "properties": {
+                "childCount": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "FileSystemInfo": {
+            "description": "Model for FileSystemInfo",
+            "type": "object",
+            "required": [
+                "createdDateTime"
+            ],
+            "properties": {
+                "createdDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "ParentReference": {
+            "description": "Model for ParentReference",
+            "type": "object",
+            "required": [
+                "driveId"
+            ],
+            "properties": {
+                "driveId": {
+                    "type": "string"
+                },
+                "driveType": {
+                    "type": "string"
+                }
+            }
+        },
+        "Folder": {
+            "description": "Model for Folder",
+            "type": "object",
+            "required": [
+                "id"
+            ],
+            "properties": {
+                "createdDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "fileSystemInfo": {
+                    "$ref": "#/definitions/FileSystemInfo"
+                },
+                "folder": {
+                    "$ref": "#/definitions/FolderCount"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "lastModifiedDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "parentReference": {
+                    "$ref": "#/definitions/ParentReference"
+                },
+                "size": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "webUrl": {
+                    "type": "string"
+                }
+            }
+        },
+        "ChannelMessage": {
+            "description": "Model for ChannelMessage",
+            "type": "object",
+            "required": [
+                "attachments"
+            ],
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "body": {
+                    "$ref": "#/definitions/MessageBody"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "deletedDateTime": {
+                    "type": "string"
+                },
+                "etag": {
+                    "type": "string"
+                },
+                "from": {
+                    "$ref": "#/definitions/From"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "importance": {
+                    "type": "string"
+                },
+                "lastEditedDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "mentions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "messageType": {
+                    "type": "string"
+                },
+                "policyViolation": {
+                    "type": "string"
+                },
+                "reactions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Reaction"
+                    }
+                },
+                "replyToId": {
+                    "type": "string"
+                },
+                "subject": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "webUrl": {
+                    "type": "string"
+                }
+            }
+        },
+        "Reaction": {
+            "description": "Model for Reaction",
+            "type": "object",
+            "required": [
+                "createdDateTime"
+            ],
+            "properties": {
+                "createdDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "reactionType": {
+                    "type": "string"
+                },
+                "user": {
+                    "$ref": "#/definitions/MessageUserInfo"
+                }
+            }
+        },
+        "MessageUserInfo": {
+            "description": "Model for MessageUserInfo",
+            "type": "object",
+            "required": [
+                "displayName"
+            ],
+            "properties": {
+                "displayName": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "userIdentityType": {
+                    "type": "string"
+                }
+            }
+        },
+        "MessageBody": {
+            "description": "Model for Body",
+            "type": "object",
+            "required": [
+                "content"
+            ],
+            "properties": {
+                "content": {
+                    "type": "string"
+                },
+                "contentType": {
+                    "type": "string"
+                }
+            }
+        },
+        "From": {
+            "description": "Model for From",
+            "type": "object",
+            "required": [
+                "application"
+            ],
+            "properties": {
+                "application": {
+                    "type": "string"
+                },
+                "conversation": {
+                    "type": "string"
+                },
+                "device": {
+                    "type": "string"
+                },
+                "user": {
+                    "$ref": "#/definitions/MessageUserInfo"
+                }
+            }
+        },
+        "ChannelMessages": {
+            "description": "Model for ChannelMessages",
+            "type": "object",
+            "required": [
+                "value"
+            ],
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ChannelMessage"
+                    }
+                }
+            }
+        },
+        "Attachment": {
+            "description": "Adaptive Card Attachment",
+            "type": "object",
+            "required": [
+                "id"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "x-ntx-summary": "ID"
+                },
+                "contentType": {
+                    "type": "string",
+                    "x-ntx-summary": "Content Type"
+                },
+                "content": {
+                    "type": "string",
+                    "x-ntx-summary": "Content"
+                }
+            }
+        },
+        "Configuration": {
+            "description": "Model for Configuration",
+            "type": "object",
+            "required": [
+                "contentUrl"
+            ],
+            "properties": {
+                "contentUrl": {
+                    "type": "string"
+                },
+                "entityId": {
+                    "type": "string"
+                },
+                "removeUrl": {
+                    "type": "string"
+                },
+                "websiteUrl": {
+                    "type": "string"
+                },
+                "dateAdded": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "Tabs": {
+            "description": "Model for Tabs",
+            "type": "object",
+            "required": [
+                "value"
+            ],
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Tab"
+                    }
+                }
+            }
+        },
+        "Tab": {
+            "description": "Model for Tab",
+            "type": "object",
+            "required": [
+                "configuration"
+            ],
+            "properties": {
+                "configuration": {
+                    "$ref": "#/definitions/Configuration"
+                },
+                "displayName": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "messageId": {
+                    "type": "string"
+                },
+                "sortOrderIndex": {
+                    "type": "string"
+                },
+                "teamsAppId": {
+                    "type": "string"
+                },
+                "webUrl": {
+                    "type": "string"
+                }
+            }
+        },
+        "TeamMembers": {
+            "description": "Model for TeamMembers",
+            "type": "object",
+            "required": [
+                "value"
+            ],
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ChannelUser"
+                    }
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "auth": {
+            "type": "oauth2",
+            "flow": "accessCode",
+            "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+            "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+            "scopes": {
+                "Team.ReadBasic.All": "Read the names and descriptions of teams, on your behalf.Read the names and descriptions of teams, on your behalf.",
+                "TeamSettings.Read.AllTeamSettings.Read.All": "Read all teams' settings, on your behalf.Read all teams' settings, on your behalf.",
+                "TeamSettings.ReadWrite.AllTeamSettings.ReadWrite.All": "Read and change all teams' settings, on your behalf.Read and change all teams' settings, on your behalf.",
+                "User.Read.All": "Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on your behalf.Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on your behalf.",
+                "User.ReadWrite.All": "Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on your behalf.",
+                "Directory.Read.All": "Allows the app to read data in your organization's directory.",
+                "Directory.AccessAsUser.All": "Allows the app to have the same access to information in your work or school directory as you do.",
+                "Directory.ReadWrite.All": "Allows the app to read and write all directories"
+            }
+        }
+    }
+}
