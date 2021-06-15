@@ -1,0 +1,494 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Amazon S3",
+    "contact": {}
+  },
+  "host": "andys.azurewebsites.net",
+  "basePath": "/api",
+  "x-ntx-host": "{{azureHost}}.azurewebsites.net",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "x-ntx-render-version": 2,
+  "securityDefinitions": {
+    "access": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "access",
+      "x-ntx-connection-properties": {
+        "type": "object",
+        "properties": {
+          "azureHost": {
+            "type": "string",
+            "title": "Azure Function Host",
+            "description": "Please provide the {{azureHost}} for your Azure function site. Example {{azureHost}}.azurewebsites.net"
+          }
+        }
+      }
+    },
+    "secret": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "secret"
+    },
+    "region": {
+      "type": "apiKey",
+      "in": "query",
+      "name": "region",
+      "description": "Region where your AWS S3 tenant is configured"
+    }
+  },
+  "security": [
+    {
+      "access": [],
+      "secret": [],
+      "region": []
+    }
+  ],
+  "paths": {
+    "/s3Upload": {
+      "post": {
+        "summary": "Amazon S3 Upload",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "AmazonS3Upload",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "name": "bucket",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to store your file",
+            "x-ntx-summary": "Bucket Name",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "filename",
+            "x-ntx-summary": "File Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Name of the file to be stored"
+          },
+          {
+            "name": "file",
+            "x-ntx-summary": "File",
+            "in": "formData",
+            "required": true,
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/s3createbucket": {
+      "post": {
+        "summary": "Create Bucket",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "CreateBucket",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketname",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Name for new bucket"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/s3ListBuckets": {
+      "get": {
+        "summary": "List Buckets",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ListBuckets",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "schema": {
+              "$ref": "#/definitions/response"
+            }
+          }
+        }
+      }
+    },
+    "/S3ListFiles": {
+      "get": {
+        "summary": "List Files",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ListFiles",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket for files list",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/response"
+            }
+          }
+        }
+      }
+    },
+    "/S3ListFolderContents": {
+      "get": {
+        "summary": "List Folder Contents",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ListFolderContents",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to retrieve folders from",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "prefix",
+            "x-ntx-summary": "Folder Path",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Folder path to retrieve folders from"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/response"
+            }
+          }
+        }
+      }
+    },
+    "/S3CreateFolder": {
+      "post": {
+        "summary": "Create Folder",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "CreateFolder",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to create folder in",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "folderName",
+            "x-ntx-summary": "Folder Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Name of the new folder"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/S3DeleteFile": {
+      "post": {
+        "summary": "Delete File",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "DeleteFile",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to delete the file",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "filepath",
+            "x-ntx-summary": "File path",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Path of the file to delete"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/S3DeleteFolder": {
+      "post": {
+        "summary": "Delete Folder",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "DeleteFolder",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to delete the folder",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "folderPath",
+            "x-ntx-summary": "Folder Path",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Path of the folder to delete"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/S3GetObject": {
+      "get": {
+        "summary": "Get Object",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "GetObject",
+        "deprecated": false,
+        "produces": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to get object from",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "key",
+            "x-ntx-summary": "File Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "File name with logical path. Example FolderName/filename.txt"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "file"
+            }
+          }
+        }
+      }
+    },
+    "/S3CreateObject": {
+      "post": {
+        "summary": "Create Object",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "CreateObject",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "bucketName",
+            "x-ntx-summary": "Bucket Name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Bucket to create object in",
+            "x-ntx-dynamic-values": {
+              "operationId": "ListBuckets",
+              "value-path": "value",
+              "value-title": "value"
+            }
+          },
+          {
+            "name": "key",
+            "x-ntx-summary": "Key",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "File name with logical path. Example FolderName/filename.txt"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "example": "\"hey\"",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ],
+  "definitions": {
+    "response": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

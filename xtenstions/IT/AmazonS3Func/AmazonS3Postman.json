@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "2d4eb392-afef-4d98-b785-5cf3d611c5b7",
+		"name": "Amazon S3 Localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Amazon S3 Upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/andy/Desktop/download.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/s3Upload?region=&bucket=&filename=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"s3Upload"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": ""
+						},
+						{
+							"key": "bucket",
+							"value": ""
+						},
+						{
+							"key": "filename",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bucket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/s3createbucket?region=&bucketname=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"s3createbucket"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": ""
+						},
+						{
+							"key": "bucketname",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Buckets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/s3ListBuckets?region=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"s3ListBuckets"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Files",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/S3ListFiles?bucketName=&region=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3ListFiles"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "folder",
+							"value": "/dsadfs",
+							"disabled": true
+						},
+						{
+							"key": "region",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Folder Contents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/S3ListFolderContents?bucketName=&region=&prefix=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3ListFolderContents"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "region",
+							"value": ""
+						},
+						{
+							"key": "prefix",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Folder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/S3CreateFolder?bucketName=&folderName=&region=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3CreateFolder"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "folderName",
+							"value": ""
+						},
+						{
+							"key": "region",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/S3DeleteFile?bucketName=&region=&filepath=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3DeleteFile"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "region",
+							"value": ""
+						},
+						{
+							"key": "filepath",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Folder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/S3DeleteFolder?bucketName=&region=&folderPath=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3DeleteFolder"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "region",
+							"value": ""
+						},
+						{
+							"key": "folderPath",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Object",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7071/api/S3GetObject?bucketName=&region=&key=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3GetObject"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "region",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Object",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"hey\""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/S3CreateObject?bucketName=&key=&region=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"S3CreateObject"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "region",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
